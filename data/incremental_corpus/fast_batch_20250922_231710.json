@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:17:10.539050",
+    "collector": "fast_corpus_collector",
+    "count": 5,
+    "quality_score": 0.7
+  },
+  "documents": [
+    {
+      "title": "Phonetics",
+      "content": "Phonetics is a branch of linguistics that studies how humans produce and perceive sounds or, in the case of sign languages, the equivalent aspects of sign. Linguists who specialize in studying the physical properties of speech are phoneticians. The field of phonetics is traditionally divided into three sub-disciplines: articulatory phonetics, acoustic phonetics, and auditory phonetics. Traditionally, the minimal linguistic unit of phonetics is the phone—a speech sound in a language which differs from the phonological unit of phoneme; the phoneme is an abstract categorization of phones and it is also defined as the smallest unit that discerns meaning between sounds in any given language.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Phonetics",
+      "timestamp": "2025-09-22T23:17:05.423517"
+    },
+    {
+      "title": "Literature",
+      "content": "Literature is any collection of written work, but it is also used more narrowly for writings specifically considered to be an art form, especially novels, plays, and poems. It includes both print and digital writing. In recent centuries, the definition has expanded to include oral literature, much of which has been transcribed. Literature is a method of recording, preserving, and transmitting knowledge and entertainment. It can also have a social, psychological, spiritual, or political role.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Literature",
+      "timestamp": "2025-09-22T23:17:06.450936"
+    },
+    {
+      "title": "Literature",
+      "content": "Literature is any collection of written work, but it is also used more narrowly for writings specifically considered to be an art form, especially novels, plays, and poems. It includes both print and digital writing. In recent centuries, the definition has expanded to include oral literature, much of which has been transcribed. Literature is a method of recording, preserving, and transmitting knowledge and entertainment. It can also have a social, psychological, spiritual, or political role.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Literature",
+      "timestamp": "2025-09-22T23:17:07.478103"
+    },
+    {
+      "title": "Linguistics",
+      "content": "Linguistics is the scientific study of language. The areas of linguistic analysis are syntax, semantics (meaning), morphology, phonetics, phonology, and pragmatics. Subdisciplines such as biolinguistics and psycholinguistics bridge many of these divisions.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Linguistics",
+      "timestamp": "2025-09-22T23:17:08.510174"
+    },
+    {
+      "title": "Language",
+      "content": "Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time. Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Language",
+      "timestamp": "2025-09-22T23:17:09.538597"
+    }
+  ]
+}
