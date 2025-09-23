@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:58:18.132050",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 14,
+    "avg_quality_score": 0.746,
+    "avg_dhatu_potential": 0.014,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Grammar",
+      "content": "In linguistics, grammar is the set of rules for how a natural language is structured, as demonstrated by its speakers or writers. Grammar rules may concern the use of clauses, phrases, and words. The term may also refer to the study of such rules, a subject that includes phonology, morphology, and syntax, together with phonetics, semantics, and pragmatics. There are, broadly speaking, two different ways to study grammar: traditional grammar and theoretical grammar.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Grammar",
+      "timestamp": "2025-09-22T23:58:17.971939",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Etymology",
+      "content": "Etymology is the study of the origin and evolution of words—including their constituent units of sound and meaning—across time. In the 21st century a subfield within linguistics, etymology has become a more rigorously scientific study. Most directly tied to historical linguistics, philology, and semiotics, it additionally draws upon comparative semantics, morphology, pragmatics, and phonetics in order to attempt a comprehensive and chronological catalogue of all meanings and changes that a word carries throughout its history. The origin of any particular word is also known as its etymology.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Etymology",
+      "timestamp": "2025-09-22T23:58:17.891553",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ashtadhyayi",
+      "content": "Ashtadhyayi est un traité de grammaire en huit chapitres composé en sanskrit entre les VIe et Ve siècles av. J.-C., et attribué au célèbre grammairien indien Pāṇini. Ce traité en huit partie comprend 3 996 règles composées dans le style du sūtra, et il est le plus ancien connu à ce jour. L'Aṣṭādhyāyī est accompagné de trois autres traités, généralement attribués à Panini.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Ashtadhyayi",
+      "timestamp": "2025-09-22T23:58:18.063206",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Dhātu",
+      "content": "Dhātu est un mot sanskrit signifiant élément, partie d'un tout; racine verbale. Dans le bouddhisme ce sont les quatre éléments physiques (bhūta) constitutifs de la matière. Leur analyse englobe les phénomènes physiques et partiellement mentaux sous forme de dix-huit éléments. En grammaire sanskrite, le terme désigne les racines verbales.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Dh%C4%81tu",
+      "timestamp": "2025-09-22T23:58:17.910365",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Logic",
+      "content": "Logic is the study of correct reasoning. It includes both formal and informal logic. Formal logic is the study of deductively valid inferences or logical truths. It examines how conclusions follow from premises based on the structure of arguments alone, independent of their topic and content. Informal logic is associated with informal fallacies, critical thinking, and argumentation theory. Informal logic examines arguments expressed in natural language whereas formal logic uses formal language. When used as a countable noun, the term \"a logic\" refers to a specific logical formal system that articulates a proof system. Logic plays a central role in many fields, such as philosophy, mathematics, computer science, and linguistics.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:58:18.026089",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.85,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Panini",
+      "content": "Panini peut avoir l'un des sens suivants :Giovanni Paolo Panini, peintre baroque italien du XVIIIe siècle ;\nPāṇini, grammairien indien du Ve siècle av. J.-C. ;\nPanini, maison d'édition italienne d'autocollants et de bandes dessinées ;\nPanini, la tribu, dans la famille des hominidés, comprenant le chimpanzé et le bonobo ;\nPanini, une municipalité du Népal ;\nPanini, type de sandwich grillé ;\nPanino désigne, en italien, des petits pains et les sandwichs faits à partir de ceux-ci.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:58:18.111975",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Historical linguistics",
+      "content": "Historical linguistics, also known as diachronic linguistics, is the scientific study of how languages change over time. It seeks to understand the nature and causes of linguistic change and to trace the evolution of languages. Historical linguistics involves several key areas of study, including the reconstruction of ancestral languages, the classification of languages into families, and the analysis of the cultural and social influences on language development.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Historical_linguistics",
+      "timestamp": "2025-09-22T23:58:17.927778",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philosophy of language",
+      "content": "Philosophy of language refers to the philosophical study of the nature of language. It investigates the relationship between language, language users, and the world. Investigations may include inquiry into the nature of meaning, intentionality, reference, the constitution of sentences, concepts, learning, and thought.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_language",
+      "timestamp": "2025-09-22T23:58:17.979485",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Aṣṭādhyāyī",
+      "content": "The Aṣṭādhyāyī is a grammar text that describes a form of the Sanskrit language.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/A%E1%B9%A3%E1%B9%AD%C4%81dhy%C4%81y%C4%AB",
+      "timestamp": "2025-09-22T23:58:18.057088",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini puede hacer referencia a:El panini (sándwich), variedad de sándwich de origen italiano.\nLa editorial Panini, editorial italiana fundada en 1961.\nPanini (gramático), gramático del sánscrito de la India antigua.\nGiovanni Pannini (1691-1756), pintor y arquitecto italiano.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:58:18.129043",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishaden",
+      "content": "Die Upanishaden sind eine Sammlung philosophischer Schriften des Hinduismus und Bestandteil des Veda. Sie wurden zwischen 700 und 200 v. Chr. niedergeschrieben. Der Singular lautet die Upanishad. Im Sanskrit bedeutet उपनिषद्, upaniṣad, f., wörtlich „das Sich-in-der-Nähe-Niedersetzen“, gemeint ist „sich zu Füßen eines Lehrers (Guru) setzen“, aber auch eine geheime, belehrende Sitzung. Die Upanishaden wurden am Ende in den Kanon der Veda aufgenommen.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Upanishaden",
+      "timestamp": "2025-09-22T23:58:17.987855",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:58:18.002569",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Astadhiai",
+      "content": "El Aṣṭādhyāyī es un texto sobre la gramática del sánscrito compuesto por el lingüista indio Pāṇini. Estos ocho libros contienen unos 8000 sutras o ‘aforismos’, cuyo encadenamiento posee un notable rigor.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Astadhiai",
+      "timestamp": "2025-09-22T23:58:18.087577",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Se conoce como Upaniṣad a cada uno de los más de 200 libros sagrados hinduistas escritos en idioma sánscrito, de los cuales los más antiguos y representativos datarían aproximadamente de entre el 800 y el 400 a. C.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-22T23:58:17.993112",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
