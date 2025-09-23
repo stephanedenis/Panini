@@ -236,42 +236,85 @@ class HotReloadManager:
         
         if self.reload_thread and self.reload_thread.is_alive():
             print("⚠️ Surveillance déjà active")
-            return
+            return {'status': 'already_running'}
         
         def monitor_loop():
+            print(f"🚀 Démarrage monitoring continu (intervalle: {check_interval_minutes}min)")
+            
             while self.auto_reload_enabled:
                 try:
                     # Vérification périodique GitHub
+                    print(f"🔍 Vérification GitHub à {datetime.now().strftime('%H:%M:%S')}")
                     version_check = self.github_loader.check_remote_versions()
                     
                     if version_check.get('updates_available'):
-                        print(f"🔔 Nouvelles versions détectées à {datetime.now().strftime('%H:%M:%S')}")
+                        print(f"🔔 Nouvelles versions détectées!")
                         
-                        # Préparer pour prochain cycle
+                        # Télécharger et valider immédiatement
                         download_result = self.github_loader.download_module_updates()
                         if download_result['downloaded']:
                             validation_result = self.github_loader.validate_new_modules()
                             if validation_result['valid']:
                                 self.reload_queue.extend(validation_result['valid'])
-                                print(f"📥 {len(validation_result['valid'])} modules prêts pour hot-reload")
+                                print(f"✅ {len(validation_result['valid'])} modules prêts pour reload")
+                                
+                                # Hot-reload immédiat si possible
+                                if not self.reload_in_progress:
+                                    reload_result = self.hot_reload_between_cycles()
+                                    if reload_result.get('status') == 'success':
+                                        print(f"🔄 Hot-reload automatique réussi!")
+                            else:
+                                print(f"❌ Validation modules échouée")
+                        else:
+                            print(f"❌ Téléchargement modules échoué")
+                    else:
+                        print(f"✅ Modules à jour")
                     
-                    # Attente avant prochaine vérification
-                    time.sleep(check_interval_minutes * 60)
-                    
+                    # Attendre avant prochaine vérification
+                    for _ in range(check_interval_minutes * 60):
+                        if not self.auto_reload_enabled:
+                            break
+                        time.sleep(1)
+                        
                 except Exception as e:
-                    print(f"❌ Erreur surveillance GitHub: {e}")
-                    time.sleep(60)  # Attente réduite en cas d'erreur
+                    print(f"❌ Erreur monitoring: {e}")
+                    time.sleep(30)  # Retry plus rapidement en cas d'erreur
+            
+            print("⏹️ Arrêt monitoring continu")
         
+        # Lancer thread monitoring
         self.reload_thread = threading.Thread(target=monitor_loop, daemon=True)
         self.reload_thread.start()
         
-        print(f"🔄 Surveillance GitHub démarrée (vérification toutes les {check_interval_minutes} min)")
+        print(f"🎯 Monitoring continu démarré!")
+        return {'status': 'started', 'thread_id': self.reload_thread.name}
     
     def stop_background_monitoring(self):
         """Arrête la surveillance en arrière-plan"""
         self.auto_reload_enabled = False
-        if self.reload_thread:
+        
+        if self.reload_thread and self.reload_thread.is_alive():
+            print("⏹️ Arrêt monitoring en cours...")
             self.reload_thread.join(timeout=5)
+            print("✅ Monitoring arrêté")
+            return {'status': 'stopped'}
+        else:
+            print("⚠️ Aucun monitoring actif")
+            return {'status': 'not_running'}
+    
+    def get_monitoring_status(self):
+        """Statut du monitoring continu"""
+        is_running = self.reload_thread and self.reload_thread.is_alive()
+        
+        return {
+            'monitoring_active': is_running,
+            'auto_reload_enabled': self.auto_reload_enabled,
+            'queue_length': len(self.reload_queue),
+            'reload_in_progress': self.reload_in_progress,
+            'last_reload': self.reload_stats.get('last_reload_time'),
+            'total_reloads': self.reload_stats['total_reloads'],
+            'thread_name': self.reload_thread.name if is_running else None
+        }
         print("⏹️ Surveillance GitHub arrêtée")
     
     def get_reload_statistics(self) -> Dict[str, Any]:
