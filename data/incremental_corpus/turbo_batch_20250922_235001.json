@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:50:01.578624",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 15,
+    "avg_quality_score": 0.647,
+    "avg_dhatu_potential": 0.047,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Semantics",
+      "content": "Semantics is the study of linguistic meaning. It examines what meaning is, how words get their meaning, and how the meaning of a complex expression depends on its parts. Part of this process involves the distinction between sense and reference. Sense is given by the ideas and concepts associated with an expression while reference is the object to which an expression points. Semantics contrasts with syntax, which studies the rules that dictate how to create grammatically correct sentences, and pragmatics, which investigates how people use language in communication. Semantics, together with syntactics and pragmatics, is a part of semiotics.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Semantics",
+      "timestamp": "2025-09-22T23:50:01.388798",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "Le Râmâyana, c'est-à-dire la « Geste de Rāma », est l'une des deux épopées mythologiques composées en langue sanskrite entre les IIIe siècle av. J.-C. et IIIe siècle de notre ère. Constitué de sept chapitres et 24 000 couplets (48 000 vers), c'est le plus court des deux textes et comme le Mahabharata est un des textes fondamentaux de l'hindouisme et de la mythologie hindoue. Le Râmâyana est traditionnellement attribué à l'ermite légendaire Vâlmîki, qui apparaît comme personnage dans les premier et dernier chapitres du poème, lesquels sont considérés comme des compositions un peu plus récentes que les autres.Il existe de nombreuses versions du Ramayana en langues indiennes, notamment des adaptations bouddhistes et jaïnes.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-22T23:50:01.503018",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Verb",
+      "content": "A verb is a word that generally conveys an action, an occurrence, or a state of being. In the usual description of English, the basic form, with or without the particle to, is the infinitive. In many languages, verbs are inflected to encode tense, aspect, mood, and voice. A verb may also agree with the person, gender or number of some of its arguments, such as its subject, or object. In English, three tenses exist: present, to indicate that an action is being carried out; past, to indicate that an action has been done; and future, to indicate that an action will be done, expressed with the auxiliary verb will or shall.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:50:01.511829",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.5
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit is a classical language belonging to the Indo-Aryan branch of the Indo-European languages. It arose in northwest South Asia after its predecessor languages had diffused there from the northwest in the late Bronze Age. Sanskrit is the sacred language of Hinduism, the language of classical Hindu philosophy, and of historical texts of Buddhism and Jainism. It was a link language in ancient and medieval South Asia, and upon transmission of Hindu and Buddhist culture to Southeast Asia, East Asia and Central Asia in the early medieval era, it became a language of religion and high culture, and of the political elites in some of these regions. As a result, Sanskrit had a lasting effect on the languages of South Asia, Southeast Asia and East Asia, especially in their formal and learned vocabularies.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-22T23:50:01.340958",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini peut avoir l'un des sens suivants :Giovanni Paolo Panini, peintre baroque italien du XVIIIe siècle ;\nPāṇini, grammairien indien du Ve siècle av. J.-C. ;\nPanini, maison d'édition italienne d'autocollants et de bandes dessinées ;\nPanini, la tribu, dans la famille des hominidés, comprenant le chimpanzé et le bonobo ;\nPanini, une municipalité du Népal ;\nPanini, type de sandwich grillé ;\nPanino désigne, en italien, des petits pains et les sandwichs faits à partir de ceux-ci.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:50:01.408392",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Epistemology",
+      "content": "\n\nEpistemology is the branch of philosophy that examines the nature, origin, and limits of knowledge. Also called \"the theory of knowledge\", it explores different types of knowledge, such as propositional knowledge about facts, practical knowledge in the form of skills, and knowledge by acquaintance as a familiarity through experience. Epistemologists study the concepts of belief, truth, and justification to understand the nature of knowledge. To discover how knowledge arises, they investigate sources of justification, such as perception, introspection, memory, reason, and testimony.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Epistemology",
+      "timestamp": "2025-09-22T23:50:01.348924",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Panini",
+      "content": "Panini puede hacer referencia a:El panini (sándwich), variedad de sándwich de origen italiano.\nLa editorial Panini, editorial italiana fundada en 1961.\nPanini (gramático), gramático del sánscrito de la India antigua.\nGiovanni Pannini (1691-1756), pintor y arquitecto italiano.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:50:01.421514",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Verb",
+      "content": "Das Verb, deutsch auch Zeitwort, Tätigkeitswort und im Schulgebrauch unterer Klassen Tu(n)wort, ist in der Grammatik eine Wortart. Die Trennung zwischen Verb und Substantiv wird als die fundamentalste Unterscheidung im Bereich der Wortarten angesehen, da hierin die Aufteilung elementarer Sätze in das Prädikat und sein Subjekt angelegt ist. Bei Autoren der Antike wurden anfangs Bezeichnungen für „Verb“ und „Prädikat“ auch nicht eindeutig unterschieden.",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:50:01.545004",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Panini",
+      "content": "Panini steht füreine Tribus aus der Familie der Menschenaffen, einzige Gattung dieser Tribus sind die Schimpansen\nitalienische Brötchen (Plural), siehe Panino\nitalienisches gegrilltes Sandwich: Panini (Sandwich)",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:50:01.426297",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "The Ramayana, also known as Valmiki Ramayana, as traditionally attributed to Valmiki, is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, the seventh avatar of the Hindu deity Vishnu, who is a prince of Ayodhya in the kingdom of Kosala. The epic follows his fourteen-year exile to the forest urged by his father King Dasharatha, on the request of Rama's stepmother Kaikeyi; his travels across the forests in the Indian subcontinent with his wife Sita and brother Lakshmana; the kidnapping of Sita by Ravana, the king of Lanka, that resulted in bloodbath; and Rama's eventual return to Ayodhya along with Sita to be crowned as a king amidst jubilation and celebration.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-22T23:50:01.497421",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Morphology",
+      "content": "Morphology, from the Greek and meaning \"study of shape\", may refer to:",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Morphology",
+      "timestamp": "2025-09-22T23:50:01.431358",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.5499999999999999,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Trishanku",
+      "content": "Trishanku ist in der indischen Mythologie ein König von Ayodhya aus der Suryavamsha, der Sonnendynastie, Vater von Harishchandra, der mit Hilfe des Rishis Vishvamitra körperlich in den Himmel aufsteigen wollte.\nDer Vater von Trishanku Vater war Trayyaruna. Seine Frau war Satyaratha, eine Prinzessin aus dem Geschlecht der Kekaya.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Trishanku",
+      "timestamp": "2025-09-22T23:50:01.465998",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "Se denomina Vedas a los cuatro textos más antiguos de la literatura india, base de la religión védica .\nEl más antiguo de los cuatro, el Rig-veda, fue compuesto oralmente en sánscrito a mediados del II milenio a. C. Los otros tres son en gran parte copias del Rig-veda original.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-22T23:50:01.484360",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sánscrito",
+      "content": "El sánscrito es la lengua clásica de la India, además de una de las lenguas indoeuropeas documentadas más antiguas, después del hitita y el griego micénico. El sánscrito pertenece a la subfamilia indoeuropea de las lenguas indoiranias y específicamente la indoaria.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/S%C3%A1nscrito",
+      "timestamp": "2025-09-22T23:50:01.378887",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Se conoce como Upaniṣad a cada uno de los más de 200 libros sagrados hinduistas escritos en idioma sánscrito, de los cuales los más antiguos y representativos datarían aproximadamente de entre el 800 y el 400 a. C.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-22T23:50:01.575784",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
