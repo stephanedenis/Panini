@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "batch_number": 1,
+    "timestamp": "20250922_225816",
+    "collector_version": "intelligent_v1.0",
+    "colab_adaptation": true,
+    "document_count": 4,
+    "high_quality_count": 3,
+    "total_words": 312,
+    "average_dhatu_potential": 0.825,
+    "total_dhatu_potential": 3.3,
+    "quality_threshold": 0.3,
+    "sources": [
+      "enhanced_academic"
+    ],
+    "languages": [
+      "en"
+    ],
+    "domains": [
+      "sanskrit_studies",
+      "theoretical_linguistics",
+      "cognitive_science",
+      "computational_linguistics"
+    ],
+    "dhatu_distribution": {
+      "high": 3,
+      "medium": 1,
+      "low": 0
+    }
+  },
+  "documents": [
+    {
+      "id": "enhanced_sample_0_1758596292",
+      "title": "Verbal Root Analysis in Sanskrit Grammar",
+      "content": "Sanskrit verbal roots, known as dhātus, form the fundamental building blocks of the language's verbal system. Each dhātu carries a core semantic meaning that manifests through various grammatical transformations. The root √gam, meaning \"to go,\" exemplifies this principle through its diverse applications. When combined with different prefixes and suffixes, √gam generates numerous derived forms: गच्छति (gacchati) \"he goes,\" आगत: (āgataḥ) \"having come,\" and गमन (gamana) \"the act of going.\" This systematic approach to verbal morphology demonstrates the sophisticated grammatical framework developed by ancient Sanskrit grammarians.",
+      "source": "enhanced_academic",
+      "language": "en",
+      "domain": "sanskrit_studies",
+      "url": "",
+      "timestamp": "2025-09-22T22:58:12.451281",
+      "word_count": 85,
+      "dhatu_potential": 1.0,
+      "linguistic_features": {}
+    },
+    {
+      "id": "enhanced_sample_1_1758596292",
+      "title": "Movement Semantics in Natural Language Processing",
+      "content": "Natural language processing systems must accurately capture movement semantics to understand spatial relationships and temporal sequences. Verbs of motion like \"go,\" \"come,\" \"move,\" and \"travel\" require sophisticated semantic representation to handle their contextual variations. Machine learning models trained on large corpora can learn these patterns automatically, identifying subtle distinctions between \"walking towards\" versus \"walking away.\" The computational complexity of movement semantics parallels traditional grammatical analyses, where root meanings undergo systematic transformations through morphological processes.",
+      "source": "enhanced_academic",
+      "language": "en",
+      "domain": "computational_linguistics",
+      "url": "",
+      "timestamp": "2025-09-22T22:58:12.451381",
+      "word_count": 74,
+      "dhatu_potential": 1.0,
+      "linguistic_features": {}
+    },
+    {
+      "id": "enhanced_sample_2_1758596292",
+      "title": "Cognitive Architecture of Language Processing",
+      "content": "Human cognitive systems process language through hierarchical neural networks that decompose complex utterances into constituent elements. Research in cognitive linguistics reveals how speakers mentally represent verbal concepts and their transformations. The brain's language processing modules must rapidly access lexical items, apply grammatical rules, and generate appropriate outputs. This cognitive architecture mirrors formal grammatical systems where abstract rules operate on concrete linguistic materials. Understanding these cognitive mechanisms provides insights into both human language acquisition and artificial intelligence development.",
+      "source": "enhanced_academic",
+      "language": "en",
+      "domain": "cognitive_science",
+      "url": "",
+      "timestamp": "2025-09-22T22:58:12.451439",
+      "word_count": 77,
+      "dhatu_potential": 0.8,
+      "linguistic_features": {}
+    },
+    {
+      "id": "enhanced_sample_3_1758596292",
+      "title": "Transformational Grammar and Generative Systems",
+      "content": "Transformational grammar theory proposes that linguistic competence involves systematic rule-based transformations of underlying structures. These transformations operate on abstract representations to generate surface forms observable in actual speech. Generative systems must account for the infinite creativity of language while maintaining grammatical constraints. The interplay between lexical items and transformational rules creates the rich expressive power of human language. Contemporary linguistic theory continues to explore how these generative mechanisms function across different language families and grammatical systems.",
+      "source": "enhanced_academic",
+      "language": "en",
+      "domain": "theoretical_linguistics",
+      "url": "",
+      "timestamp": "2025-09-22T22:58:12.451493",
+      "word_count": 76,
+      "dhatu_potential": 0.5,
+      "linguistic_features": {}
+    }
+  ],
+  "colab_insights": {
+    "optimized_for": "Tesla T4 GPU processing",
+    "target_throughput": "527 docs/min",
+    "dominant_pattern": "√gam movement semantics",
+    "confidence_target": 0.87
+  }
+}
