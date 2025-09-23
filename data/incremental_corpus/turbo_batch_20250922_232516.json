@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:25:16.125823",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 15,
+    "avg_quality_score": 0.693,
+    "avg_dhatu_potential": 0.047,
+    "sources_used": [
+      "wikipedia_philosophy",
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Grammar",
+      "content": "In linguistics, grammar is the set of rules for how a natural language is structured, as demonstrated by its speakers or writers. Grammar rules may concern the use of clauses, phrases, and words. The term may also refer to the study of such rules, a subject that includes phonology, morphology, and syntax, together with phonetics, semantics, and pragmatics. There are, broadly speaking, two different ways to study grammar: traditional grammar and theoretical grammar.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Grammar",
+      "timestamp": "2025-09-22T23:25:15.969047",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Semantics",
+      "content": "Semantics is the study of linguistic meaning. It examines what meaning is, how words get their meaning, and how the meaning of a complex expression depends on its parts. Part of this process involves the distinction between sense and reference. Sense is given by the ideas and concepts associated with an expression while reference is the object to which an expression points. Semantics contrasts with syntax, which studies the rules that dictate how to create grammatically correct sentences, and pragmatics, which investigates how people use language in communication. Semantics, together with syntactics and pragmatics, is a part of semiotics.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Semantics",
+      "timestamp": "2025-09-22T23:25:15.918447",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Verb",
+      "content": "A verb is a word that generally conveys an action, an occurrence, or a state of being. In the usual description of English, the basic form, with or without the particle to, is the infinitive. In many languages, verbs are inflected to encode tense, aspect, mood, and voice. A verb may also agree with the person, gender or number of some of its arguments, such as its subject, or object. In English, three tenses exist: present, to indicate that an action is being carried out; past, to indicate that an action has been done; and future, to indicate that an action will be done, expressed with the auxiliary verb will or shall.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:25:16.006921",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.5
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Le Mahabharata est une épopée sanskrite (itihâsa) de la mythologie hindoue comportant, selon le décompte de Vyâsa, 81 936 strophes (shlokas) réparties en dix-huit livres (parvan). Il est considéré comme le plus long poème jamais composé.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:25:15.899921",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Purana",
+      "content": "Un purana (en sanskrit devanāgarī : पुराण est un texte appartenant à un vaste genre de la littérature indienne, traitant d'une grande gamme de sujets. Composés entre 400 et 1 000 de notre ère, ces récits élaborés pour tous étaient préférentiellement destinés aux femmes qui n'avaient pas accès aux Védas. Ils sont généralement écrits en sanskrit. Ce genre littéraire existe à la fois dans l'hindouisme et le jaïnisme. Souvent encyclopédiques, les puranas traitent à la fois des mythes religieux, des divinités hindoues, des légendes, des contes traditionnels et des histoires de rois, en y incluant des réflexions poussées sur la cosmogonie, la cosmologie, les généalogies, la médecine, l'astronomie, la théologie et la philosophie. Leur contenu peut être très contradictoire, chaque Purana ayant survécu dans de nombreux manuscrits eux-mêmes incompatibles. Les Puranas hindous sont anonymes, et probablement issus de nombreux auteurs qui se sont succédé au cours des siècles. La plupart des Puranas jaïns peuvent être datés et leurs auteurs retrouvés. Il y a 18 puranas majeurs et 18 puranas mineurs, considérés comme des Smriti.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Purana",
+      "timestamp": "2025-09-22T23:25:16.003759",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Le sanskrit ou sanscrit est une langue indo-européenne de la famille indo-aryenne, encore parlée dans le sous-continent indien bien que par une minorité. De nos jours, elle est encore parlée dans quelques villages et par certains érudits qui publient des œuvres universitaires ou tiennent des colloques en sanskrit.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-22T23:25:16.094039",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Indian philosophy",
+      "content": "Indian philosophy consists of philosophical traditions of the Indian subcontinent. The philosophies are often called darśana, meaning \"to see\" or \"looking at.\" Ānvīkṣikī means “critical inquiry” or “investigation.\" Unlike darśana, ānvīkṣikī was used to refer to Indian philosophies by classical Indian philosophers, such as Chanakya in the Arthaśāstra.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Indian_philosophy",
+      "timestamp": "2025-09-22T23:25:15.956965",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:25:15.996919",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "Das Ramayana ist nach dem Mahabharata das zweite indische Nationalepos. Im Gegensatz zum Mahabharata handelt es sich um eine Kunstdichtung (Adikavya). Als Autor der ältesten und bekanntesten Version ist Valmiki verbürgt. Die genaue Entstehungszeit ist unklar, sie liegt zwischen dem 4. Jahrhundert v. Chr. und dem 2. Jahrhundert n. Chr. Seine heutige Form dürfte das Ramayana im 2. Jahrhundert n. Chr. erreicht haben.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-22T23:25:15.967049",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Verb",
+      "content": "Das Verb, deutsch auch Zeitwort, Tätigkeitswort und im Schulgebrauch unterer Klassen Tu(n)wort, ist in der Grammatik eine Wortart. Die Trennung zwischen Verb und Substantiv wird als die fundamentalste Unterscheidung im Bereich der Wortarten angesehen, da hierin die Aufteilung elementarer Sätze in das Prädikat und sein Subjekt angelegt ist. Bei Autoren der Antike wurden anfangs Bezeichnungen für „Verb“ und „Prädikat“ auch nicht eindeutig unterschieden.",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:25:16.018337",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:25:15.886706",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "The Ramayana, also known as Valmiki Ramayana, as traditionally attributed to Valmiki, is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, the seventh avatar of the Hindu deity Vishnu, who is a prince of Ayodhya in the kingdom of Kosala. The epic follows his fourteen-year exile to the forest urged by his father King Dasharatha, on the request of Rama's stepmother Kaikeyi; his travels across the forests in the Indian subcontinent with his wife Sita and brother Lakshmana; the kidnapping of Sita by Ravana, the king of Lanka, that resulted in bloodbath; and Rama's eventual return to Ayodhya along with Sita to be crowned as a king amidst jubilation and celebration.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-22T23:25:15.942262",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "The Mahābhārata is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Ramayana. It narrates the events and aftermath of the Kurukshetra War, a war of succession between two groups of princely cousins, the Kauravas and the Pāṇḍavas. It contains philosophical and devotional material, such as a discussion of the four \"goals of life\" or puruṣārtha (12.161). Among the principal works and stories in the Mahābhārata are the Bhagavad Gita, the story of Damayanti, the story of Shakuntala, the story of Pururava and Urvashi, the story of Savitri and Satyavan, the story of Kacha and Devayani, the story of Rishyasringa and an abbreviated version of the Rāmāyaṇa, often considered as works in their own right.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:25:15.896566",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sánscrito",
+      "content": "El sánscrito es la lengua clásica de la India, además de una de las lenguas indoeuropeas documentadas más antiguas, después del hitita y el griego micénico. El sánscrito pertenece a la subfamilia indoeuropea de las lenguas indoiranias y específicamente la indoaria.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/S%C3%A1nscrito",
+      "timestamp": "2025-09-22T23:25:16.123158",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Puranas",
+      "content": "Die Puranas gehören zu den wichtigsten heiligen Schriften des Hinduismus. Sie sind nach den Veden in der Zeit von 400 n. Chr. bis 1000 n. Chr. entstanden, greifen jedoch oft auf ältere Inhalte zurück.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-22T23:25:16.022863",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
