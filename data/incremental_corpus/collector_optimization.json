@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-09-22T23:00:33.632601",
+  "colab_insights": {
+    "dominant_dhatu": "\u221agam",
+    "confidence_score": 0.87,
+    "patterns_detected": 9
+  },
+  "corpus_analysis": {
+    "batch_count": 1,
+    "total_docs": 4,
+    "avg_quality": 0.825,
+    "domain_distribution": {
+      "sanskrit_studies": 1,
+      "theoretical_linguistics": 1,
+      "cognitive_science": 1,
+      "computational_linguistics": 1
+    },
+    "recent_batches": [
+      {
+        "batch_number": 1,
+        "timestamp": "20250922_225816",
+        "document_count": 4,
+        "quality": 0.825
+      }
+    ]
+  },
+  "optimizations": [
+    "\ud83c\udfaf Confidence \u00e9lev\u00e9e d\u00e9tect\u00e9e - augmenter rate limit collecteur",
+    "\ud83e\udde0 Patterns riches - focus sur domaines linguistiques",
+    "\ud83d\udeb6 Dh\u0101tu mouvement dominant - prioriser textes with movement verbs"
+  ],
+  "recommended_settings": {
+    "quality_threshold": 0.9899999999999999,
+    "rate_limit": 1.0,
+    "focus_domains": [
+      "linguistics",
+      "sanskrit_studies",
+      "cognitive_science"
+    ]
+  }
+}

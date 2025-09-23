@@ -1,6 +1,6 @@
 {
-  "timestamp": 1758595312.484534,
-  "total_events": 4770,
+  "timestamp": 1758596422.5349927,
+  "total_events": 5436,
   "cpu_allocation": {
     "corpus_processor": [
       1,
@@ -27,9 +27,9 @@
         2
       ],
       "queue_size": 0,
-      "events_processed": 3975,
-      "total_processing_time": 0.4606449604034424,
-      "average_processing_time": 0.00011588552462979683
+      "events_processed": 4530,
+      "total_processing_time": 0.5265965461730957,
+      "average_processing_time": 0.00011624647818390634
     },
     {
       "name": "research_processor",
@@ -38,9 +38,9 @@
         4
       ],
       "queue_size": 0,
-      "events_processed": 795,
-      "total_processing_time": 0.08758425712585449,
-      "average_processing_time": 0.00011016887688786728
+      "events_processed": 906,
+      "total_processing_time": 0.09960675239562988,
+      "average_processing_time": 0.00010994122780974601
     },
     {
       "name": "optimization_processor",
