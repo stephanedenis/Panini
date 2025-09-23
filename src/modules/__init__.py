@@ -14,11 +14,18 @@ Structure:
 __version__ = "1.0.0"
 
 # Import des interfaces principales
-from .interfaces import BaseAnalyzer, BaseLoader
+from .interfaces import AnalyzerInterface, LoaderInterface, GPUOptimizerInterface
 from .dynamic_manager import DynamicModuleManager
 
+# Aliases pour compatibilité
+BaseAnalyzer = AnalyzerInterface
+BaseLoader = LoaderInterface
+
 __all__ = [
-    'BaseAnalyzer',
-    'BaseLoader', 
+    'AnalyzerInterface',
+    'LoaderInterface',
+    'GPUOptimizerInterface',
+    'BaseAnalyzer',  # Alias pour compatibilité
+    'BaseLoader',    # Alias pour compatibilité
     'DynamicModuleManager'
 ]
