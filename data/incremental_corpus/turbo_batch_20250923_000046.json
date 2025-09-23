@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-23T00:00:46.271078",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 14,
+    "avg_quality_score": 0.775,
+    "avg_dhatu_potential": 0.007,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Syntax",
+      "content": "In linguistics, syntax is the study of how words and morphemes combine to form larger units such as phrases and sentences. Central concerns of syntax include word order, grammatical relations, hierarchical sentence structure (constituency), agreement, the nature of crosslinguistic variation, and the relationship between form and meaning (semantics). Diverse approaches, such as generative grammar and functional grammar, offer unique perspectives on syntax, reflecting its complexity and centrality to understanding human language.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-23T00:00:46.165089",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vyākaraṇa",
+      "content": "Vyākaraṇa refers to one of the six ancient Vedangas, ancillary science connected with the Vedas, which are scriptures in Hinduism. Vyākaraṇa is the study of grammar and linguistic analysis in Sanskrit language.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vy%C4%81kara%E1%B9%87a",
+      "timestamp": "2025-09-23T00:00:46.011258",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Etymology",
+      "content": "Etymology is the study of the origin and evolution of words—including their constituent units of sound and meaning—across time. In the 21st century a subfield within linguistics, etymology has become a more rigorously scientific study. Most directly tied to historical linguistics, philology, and semiotics, it additionally draws upon comparative semantics, morphology, pragmatics, and phonetics in order to attempt a comprehensive and chronological catalogue of all meanings and changes that a word carries throughout its history. The origin of any particular word is also known as its etymology.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Etymology",
+      "timestamp": "2025-09-23T00:00:46.006260",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philology",
+      "content": "Philology is the study of language in oral and written historical sources. It is the intersection of textual criticism, literary criticism, history, and linguistics with strong ties to etymology. Philology is also defined as the study of literary texts and oral and written records, the establishment of their authenticity and their original form, and the determination of their meaning. A person who pursues this kind of study is known as a philologist. In older usage, especially British, philology is more general, covering comparative and historical linguistics.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Philology",
+      "timestamp": "2025-09-23T00:00:46.128881",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic is the study of correct reasoning. It includes both formal and informal logic. Formal logic is the study of deductively valid inferences or logical truths. It examines how conclusions follow from premises based on the structure of arguments alone, independent of their topic and content. Informal logic is associated with informal fallacies, critical thinking, and argumentation theory. Informal logic examines arguments expressed in natural language whereas formal logic uses formal language. When used as a countable noun, the term \"a logic\" refers to a specific logical formal system that articulates a proof system. Logic plays a central role in many fields, such as philosophy, mathematics, computer science, and linguistics.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-23T00:00:46.117983",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.85,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Ramayana",
+      "content": "Le Râmâyana, c'est-à-dire la « Geste de Rāma », est l'une des deux épopées mythologiques composées en langue sanskrite entre les IIIe siècle av. J.-C. et IIIe siècle de notre ère. Constitué de sept chapitres et 24 000 couplets (48 000 vers), c'est le plus court des deux textes et comme le Mahabharata est un des textes fondamentaux de l'hindouisme et de la mythologie hindoue. Le Râmâyana est traditionnellement attribué à l'ermite légendaire Vâlmîki, qui apparaît comme personnage dans les premier et dernier chapitres du poème, lesquels sont considérés comme des compositions un peu plus récentes que les autres.Il existe de nombreuses versions du Ramayana en langues indiennes, notamment des adaptations bouddhistes et jaïnes.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-23T00:00:46.082266",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Syntax",
+      "content": "Syntax est un groupe de musique britannique basé à Londres. Formé autour des musiciens Jan Burton et Mike Tournier, le groupe emprunte sa musique comme un son Rock en fusionnant l'Electro et le Trip hop. Ils ont participé à plusieurs projets musicaux comme dans une apparition dans la B.O du jeu vidéo Driver 3, en plus de leurs divers projets individuels comme leur album Meccano Mind sorti en 2004.",
+      "source": "wikipedia_linguistics_fr",
+      "url": "https://fr.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-23T00:00:46.194230",
+      "language": "fr",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "The Vedas, sometimes collectively called the Veda, are a large body of religious texts originating in ancient India. Composed in Vedic Sanskrit, the texts constitute the oldest layer of Sanskrit literature and the oldest scriptures of Hinduism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-23T00:00:46.122080",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-23T00:00:46.138852",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philosophy of language",
+      "content": "Philosophy of language refers to the philosophical study of the nature of language. It investigates the relationship between language, language users, and the world. Investigations may include inquiry into the nature of meaning, intentionality, reference, the constitution of sentences, concepts, learning, and thought.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_language",
+      "timestamp": "2025-09-23T00:00:46.017078",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Indian philosophy",
+      "content": "Indian philosophy consists of philosophical traditions of the Indian subcontinent. The philosophies are often called darśana, meaning \"to see\" or \"looking at.\" Ānvīkṣikī means “critical inquiry” or “investigation.\" Unlike darśana, ānvīkṣikī was used to refer to Indian philosophies by classical Indian philosophers, such as Chanakya in the Arthaśāstra.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Indian_philosophy",
+      "timestamp": "2025-09-23T00:00:46.064347",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vyakarana",
+      "content": "Vyākaraṇa signifie en sanskrit « séparation », « distinction » ou encore« analyse ». Vyākaraṇa désigne aussi l'une des six disciplines annexes du Veda (Vedāṅga): la grammaire.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Vyakarana",
+      "timestamp": "2025-09-23T00:00:46.020552",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "The Ramayana, also known as Valmiki Ramayana, as traditionally attributed to Valmiki, is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, the seventh avatar of the Hindu deity Vishnu, who is a prince of Ayodhya in the kingdom of Kosala. The epic follows his fourteen-year exile to the forest urged by his father King Dasharatha, on the request of Rama's stepmother Kaikeyi; his travels across the forests in the Indian subcontinent with his wife Sita and brother Lakshmana; the kidnapping of Sita by Ravana, the king of Lanka, that resulted in bloodbath; and Rama's eventual return to Ayodhya along with Sita to be crowned as a king amidst jubilation and celebration.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-23T00:00:46.067865",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "Se denomina Vedas a los cuatro textos más antiguos de la literatura india, base de la religión védica .\nEl más antiguo de los cuatro, el Rig-veda, fue compuesto oralmente en sánscrito a mediados del II milenio a. C. Los otros tres son en gran parte copias del Rig-veda original.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-23T00:00:46.157254",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
