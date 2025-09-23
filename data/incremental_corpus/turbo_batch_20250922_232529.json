@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:25:29.647446",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 14,
+    "avg_quality_score": 0.664,
+    "avg_dhatu_potential": 0.0,
+    "sources_used": [
+      "wikipedia_philosophy",
+      "wikipedia_sanskrit",
+      "wikipedia_linguistics"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Syntax",
+      "content": "In linguistics, syntax is the study of how words and morphemes combine to form larger units such as phrases and sentences. Central concerns of syntax include word order, grammatical relations, hierarchical sentence structure (constituency), agreement, the nature of crosslinguistic variation, and the relationship between form and meaning (semantics). Diverse approaches, such as generative grammar and functional grammar, offer unique perspectives on syntax, reflecting its complexity and centrality to understanding human language.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-22T23:25:29.486522",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ashtadhyayi",
+      "content": "Ashtadhyayi est un traité de grammaire en huit chapitres composé en sanskrit entre les VIe et Ve siècles av. J.-C., et attribué au célèbre grammairien indien Pāṇini. Ce traité en huit partie comprend 3 996 règles composées dans le style du sūtra, et il est le plus ancien connu à ce jour. L'Aṣṭādhyāyī est accompagné de trois autres traités, généralement attribués à Panini.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Ashtadhyayi",
+      "timestamp": "2025-09-22T23:25:29.462695",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "The Vedas, sometimes collectively called the Veda, are a large body of religious texts originating in ancient India. Composed in Vedic Sanskrit, the texts constitute the oldest layer of Sanskrit literature and the oldest scriptures of Hinduism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-22T23:25:29.566064",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Le Mahabharata est une épopée sanskrite (itihâsa) de la mythologie hindoue comportant, selon le décompte de Vyâsa, 81 936 strophes (shlokas) réparties en dix-huit livres (parvan). Il est considéré comme le plus long poème jamais composé.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:25:29.534612",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Metaphysics",
+      "content": "Metaphysics is the branch of philosophy that examines the basic structure of reality. It is traditionally seen as the study of mind-independent features of the world, but some theorists view it as an inquiry into the conceptual framework of human understanding. Some philosophers, including Aristotle, designate metaphysics as first philosophy to suggest that it is more fundamental than other forms of philosophical inquiry.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Metaphysics",
+      "timestamp": "2025-09-22T23:25:29.387369",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:25:29.460136",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini puede hacer referencia a:El panini (sándwich), variedad de sándwich de origen italiano.\nLa editorial Panini, editorial italiana fundada en 1961.\nPanini (gramático), gramático del sánscrito de la India antigua.\nGiovanni Pannini (1691-1756), pintor y arquitecto italiano.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:25:29.418566",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:25:29.474510",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "The Mahābhārata is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Ramayana. It narrates the events and aftermath of the Kurukshetra War, a war of succession between two groups of princely cousins, the Kauravas and the Pāṇḍavas. It contains philosophical and devotional material, such as a discussion of the four \"goals of life\" or puruṣārtha (12.161). Among the principal works and stories in the Mahābhārata are the Bhagavad Gita, the story of Damayanti, the story of Shakuntala, the story of Pururava and Urvashi, the story of Savitri and Satyavan, the story of Kacha and Devayani, the story of Rishyasringa and an abbreviated version of the Rāmāyaṇa, often considered as works in their own right.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:25:29.505377",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "The Ramayana, also known as Valmiki Ramayana, as traditionally attributed to Valmiki, is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, the seventh avatar of the Hindu deity Vishnu, who is a prince of Ayodhya in the kingdom of Kosala. The epic follows his fourteen-year exile to the forest urged by his father King Dasharatha, on the request of Rama's stepmother Kaikeyi; his travels across the forests in the Indian subcontinent with his wife Sita and brother Lakshmana; the kidnapping of Sita by Ravana, the king of Lanka, that resulted in bloodbath; and Rama's eventual return to Ayodhya along with Sita to be crowned as a king amidst jubilation and celebration.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-22T23:25:29.611355",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Morphology",
+      "content": "Morphology, from the Greek and meaning \"study of shape\", may refer to:",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Morphology",
+      "timestamp": "2025-09-22T23:25:29.411882",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.5499999999999999,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Das Mahabharata ist das bekannteste indische Epos. Man nimmt an, dass es erstmals zwischen 400 v. Chr. und 400 n. Chr. niedergeschrieben wurde, aber auf älteren Traditionen beruht. Es umfasst etwa 100.000 Doppelverse.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:25:29.541335",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Trishanku",
+      "content": "Trishanku ist in der indischen Mythologie ein König von Ayodhya aus der Suryavamsha, der Sonnendynastie, Vater von Harishchandra, der mit Hilfe des Rishis Vishvamitra körperlich in den Himmel aufsteigen wollte.\nDer Vater von Trishanku Vater war Trayyaruna. Seine Frau war Satyaratha, eine Prinzessin aus dem Geschlecht der Kekaya.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Trishanku",
+      "timestamp": "2025-09-22T23:25:29.576232",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "Se denomina Vedas a los cuatro textos más antiguos de la literatura india, base de la religión védica .\nEl más antiguo de los cuatro, el Rig-veda, fue compuesto oralmente en sánscrito a mediados del II milenio a. C. Los otros tres son en gran parte copias del Rig-veda original.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-22T23:25:29.598369",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
