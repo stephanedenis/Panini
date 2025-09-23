@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-23T00:03:24.930738",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 13,
+    "avg_quality_score": 0.692,
+    "avg_dhatu_potential": 0.008,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Semantics",
+      "content": "Semantics is the study of linguistic meaning. It examines what meaning is, how words get their meaning, and how the meaning of a complex expression depends on its parts. Part of this process involves the distinction between sense and reference. Sense is given by the ideas and concepts associated with an expression while reference is the object to which an expression points. Semantics contrasts with syntax, which studies the rules that dictate how to create grammatically correct sentences, and pragmatics, which investigates how people use language in communication. Semantics, together with syntactics and pragmatics, is a part of semiotics.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Semantics",
+      "timestamp": "2025-09-23T00:03:24.819032",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit bezeichnet die verschiedenen Varietäten des Altindischen. Die älteste Form ist die Sprache der Veden, einer Sammlung religiöser mündlicher Überlieferungen im Hinduismus. Ihre Entstehung und Konsolidierung wird grob auf 1200 v. Chr. datiert, jedenfalls ins zweite vorchristliche Jahrtausend. Das klassische Sanskrit wurde um 400 v. Chr. durch die Grammatik des Panini kodifiziert.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-23T00:03:24.880879",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.8,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Puranas",
+      "content": "Puranas are a vast genre of Indian literature that include a wide range of topics, especially legends and other traditional lore. The Puranas are known for the intricate layers of symbolism depicted within their stories. Composed originally in Sanskrit and in other Indian languages, several of these texts are named after major Hindu deities such as Vishnu, Shiva, Brahma, and Devi. The Puranic genre of literature is found in both Hinduism and Jainism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-23T00:03:24.892244",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Syntax",
+      "content": "Syntax est un groupe de musique britannique basé à Londres. Formé autour des musiciens Jan Burton et Mike Tournier, le groupe emprunte sa musique comme un son Rock en fusionnant l'Electro et le Trip hop. Ils ont participé à plusieurs projets musicaux comme dans une apparition dans la B.O du jeu vidéo Driver 3, en plus de leurs divers projets individuels comme leur album Meccano Mind sorti en 2004.",
+      "source": "wikipedia_linguistics_fr",
+      "url": "https://fr.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-23T00:03:24.783829",
+      "language": "fr",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Le Mahabharata est une épopée sanskrite (itihâsa) de la mythologie hindoue comportant, selon le décompte de Vyâsa, 81 936 strophes (shlokas) réparties en dix-huit livres (parvan). Il est considéré comme le plus long poème jamais composé.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-23T00:03:24.807465",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Historical linguistics",
+      "content": "Historical linguistics, also known as diachronic linguistics, is the scientific study of how languages change over time. It seeks to understand the nature and causes of linguistic change and to trace the evolution of languages. Historical linguistics involves several key areas of study, including the reconstruction of ancestral languages, the classification of languages into families, and the analysis of the cultural and social influences on language development.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Historical_linguistics",
+      "timestamp": "2025-09-23T00:03:24.702924",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-23T00:03:24.718812",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "Das Ramayana ist nach dem Mahabharata das zweite indische Nationalepos. Im Gegensatz zum Mahabharata handelt es sich um eine Kunstdichtung (Adikavya). Als Autor der ältesten und bekanntesten Version ist Valmiki verbürgt. Die genaue Entstehungszeit ist unklar, sie liegt zwischen dem 4. Jahrhundert v. Chr. und dem 2. Jahrhundert n. Chr. Seine heutige Form dürfte das Ramayana im 2. Jahrhundert n. Chr. erreicht haben.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-23T00:03:24.761706",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Upanishaden",
+      "content": "Die Upanishaden sind eine Sammlung philosophischer Schriften des Hinduismus und Bestandteil des Veda. Sie wurden zwischen 700 und 200 v. Chr. niedergeschrieben. Der Singular lautet die Upanishad. Im Sanskrit bedeutet उपनिषद्, upaniṣad, f., wörtlich „das Sich-in-der-Nähe-Niedersetzen“, gemeint ist „sich zu Füßen eines Lehrers (Guru) setzen“, aber auch eine geheime, belehrende Sitzung. Die Upanishaden wurden am Ende in den Kanon der Veda aufgenommen.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Upanishaden",
+      "timestamp": "2025-09-23T00:03:24.692445",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-23T00:03:24.765860",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Les Upanishad ou Upaniṣad sont un ensemble de textes philosophiques qui forment la base théorique de la religion hindoue. Elles constituent une partie des textes en Inde liés à la śruti et consistent en des spéculations philosophiques qui éclairent le texte auquel elles se réfèrent, chacune se réclamant d'une partie du Veda. Par exemple, la Kauṣītaki fait partie du cycle du Rig-Veda.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-23T00:03:24.698327",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "The Ramayana, also known as Valmiki Ramayana, as traditionally attributed to Valmiki, is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, the seventh avatar of the Hindu deity Vishnu, who is a prince of Ayodhya in the kingdom of Kosala. The epic follows his fourteen-year exile to the forest urged by his father King Dasharatha, on the request of Rama's stepmother Kaikeyi; his travels across the forests in the Indian subcontinent with his wife Sita and brother Lakshmana; the kidnapping of Sita by Ravana, the king of Lanka, that resulted in bloodbath; and Rama's eventual return to Ayodhya along with Sita to be crowned as a king amidst jubilation and celebration.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-23T00:03:24.744878",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Se conoce como Upaniṣad a cada uno de los más de 200 libros sagrados hinduistas escritos en idioma sánscrito, de los cuales los más antiguos y representativos datarían aproximadamente de entre el 800 y el 400 a. C.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-23T00:03:24.727110",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
