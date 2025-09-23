@@ -1,0 +1,14 @@
+{
+  "autonomous_corpus_processor.py": {
+    "restart_count": 3,
+    "pid": 283142,
+    "command": "autonomous_corpus_processor.py",
+    "restarted_at": "2025-09-20T14:31:20.555443"
+  },
+  "autonomous_dhatu_optimizer.py": {
+    "restart_count": 3,
+    "pid": 283143,
+    "command": "autonomous_dhatu_optimizer.py",
+    "restarted_at": "2025-09-20T14:31:20.556590"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "travaux_pertinents": {
+    "miller_1956": {
+      "titre": "The Magical Number Seven, Plus or Minus Two",
+      "auteurs": [
+        "George A. Miller"
+      ],
+      "annee": 1956,
+      "domaine": "psycholinguistique",
+      "pertinence": 9.5,
+      "relation_dhatu": "Justifie limite hexaire pour opérateurs n-aires"
+    },
+    "kleene_1936": {
+      "titre": "General Recursive Functions of Natural Numbers",
+      "auteurs": [
+        "Stephen Cole Kleene"
+      ],
+      "annee": 1936,
+      "domaine": "mathématiques",
+      "pertinence": 8.0,
+      "relation_dhatu": "Composition dhātu = composition fonctions récursives"
+    },
+    "curry_1930": {
+      "titre": "Grundlagen der kombinatorischen Logik",
+      "auteurs": [
+        "Haskell Curry"
+      ],
+      "annee": 1930,
+      "domaine": "logique",
+      "pertinence": 8.5,
+      "relation_dhatu": "Dhātu = combinateurs sémantiques universels"
+    },
+    "minsky_1975": {
+      "titre": "A Framework for Representing Knowledge",
+      "auteurs": [
+        "Marvin Minsky"
+      ],
+      "annee": 1975,
+      "domaine": "informatique",
+      "pertinence": 7.5,
+      "relation_dhatu": "Dhātu = primitives pour frames sémantiques"
+    },
+    "schank_1972": {
+      "titre": "Conceptual Dependency: A Theory of Natural Language Understanding",
+      "auteurs": [
+        "Roger Schank"
+      ],
+      "annee": 1972,
+      "domaine": "informatique",
+      "pertinence": 9.0,
+      "relation_dhatu": "Primitives Schank ≈ dhātu (ACT, TRANS, etc.)"
+    },
+    "quillian_1968": {
+      "titre": "Semantic Memory",
+      "auteurs": [
+        "M. Ross Quillian"
+      ],
+      "annee": 1968,
+      "domaine": "informatique",
+      "pertinence": 7.0,
+      "relation_dhatu": "Dhātu = nœuds primitifs dans réseau sémantique"
+    },
+    "jackendoff_1972": {
+      "titre": "Semantic Interpretation in Generative Grammar",
+      "auteurs": [
+        "Ray Jackendoff"
+      ],
+      "annee": 1972,
+      "domaine": "sémantique",
+      "pertinence": 8.5,
+      "relation_dhatu": "Décomposition lexicale = combinaison dhātu"
+    },
+    "fodor_1970": {
+      "titre": "Three Reasons for Not Deriving 'Kill' from 'Cause to Die'",
+      "auteurs": [
+        "Jerry Fodor"
+      ],
+      "annee": 1970,
+      "domaine": "sémantique",
+      "pertinence": 6.5,
+      "relation_dhatu": "Critique à considérer pour limites décomposition dhātu"
+    },
+    "wierzbicka_1972": {
+      "titre": "Semantic Primitives",
+      "auteurs": [
+        "Anna Wierzbicka"
+      ],
+      "annee": 1972,
+      "domaine": "sémantique",
+      "pertinence": 9.5,
+      "relation_dhatu": "~60 primitives universelles ≈ approche dhātu étendue"
+    },
+    "lukasiewicz_1920": {
+      "titre": "O logice trójwartościowej",
+      "auteurs": [
+        "Jan Łukasiewicz"
+      ],
+      "annee": 1920,
+      "domaine": "logique",
+      "pertinence": 8.0,
+      "relation_dhatu": "Logique trinaire = base opérateurs dhātu trinaires"
+    },
+    "zadeh_1965": {
+      "titre": "Fuzzy Sets",
+      "auteurs": [
+        "Lotfi Zadeh"
+      ],
+      "annee": 1965,
+      "domaine": "mathématiques",
+      "pertinence": 8.5,
+      "relation_dhatu": "Intensité dhātu = degrés d'appartenance floue"
+    },
+    "pulvermuller_2013": {
+      "titre": "How neurons make meaning: brain mechanisms for embodied and abstract-symbolic semantics",
+      "auteurs": [
+        "Friedemann Pulvermüller"
+      ],
+      "annee": 2013,
+      "domaine": "neurologie",
+      "pertinence": 7.5,
+      "relation_dhatu": "Dhātu = patterns activation neuronale pour concepts"
+    },
+    "barsalou_1999": {
+      "titre": "Perceptual Symbol Systems",
+      "auteurs": [
+        "Lawrence Barsalou"
+      ],
+      "annee": 1999,
+      "domaine": "psycholinguistique",
+      "pertinence": 7.0,
+      "relation_dhatu": "Dhātu = primitives perceptuelles réutilisables"
+    },
+    "mikolov_2013": {
+      "titre": "Efficient Estimation of Word Representations in Vector Space",
+      "auteurs": [
+        "Tomas Mikolov",
+        "Kai Chen",
+        "Greg Corrado",
+        "Jeffrey Dean"
+      ],
+      "annee": 2013,
+      "domaine": "informatique",
+      "pertinence": 8.0,
+      "relation_dhatu": "Dhātu = dimensions sémantiques dans espace vectoriel"
+    },
+    "bengio_2003": {
+      "titre": "A Neural Probabilistic Language Model",
+      "auteurs": [
+        "Yoshua Bengio",
+        "Réjean Ducharme",
+        "Pascal Vincent"
+      ],
+      "annee": 2003,
+      "domaine": "informatique",
+      "pertinence": 7.0,
+      "relation_dhatu": "Dhātu = composants de représentations continues"
+    },
+    "melcuk_1996": {
+      "titre": "Lexical Functions: A Tool for the Description of Lexical Relations in a Lexicon",
+      "auteurs": [
+        "Igor Mel'čuk"
+      ],
+      "annee": 1996,
+      "domaine": "sémantique",
+      "pertinence": 10.0,
+      "relation_dhatu": "FL = cibles de remplacement par dhātu"
+    },
+    "pustejovsky_1995": {
+      "titre": "The Generative Lexicon",
+      "auteurs": [
+        "James Pustejovsky"
+      ],
+      "annee": 1995,
+      "domaine": "sémantique",
+      "pertinence": 8.0,
+      "relation_dhatu": "Qualia = aspects dhātu (QUAL, FUNC, etc.)"
+    }
+  },
+  "synergies": {
+    "Primitives sémantiques": [
+      "schank_1972",
+      "wierzbicka_1972",
+      "jackendoff_1972"
+    ],
+    "Logiques multivaluées": [
+      "lukasiewicz_1920",
+      "zadeh_1965"
+    ],
+    "Représentations vectorielles": [
+      "mikolov_2013",
+      "bengio_2003"
+    ],
+    "Décomposition fonctionnelle": [
+      "kleene_1936",
+      "curry_1930"
+    ],
+    "Limitation cognitive": [
+      "miller_1956",
+      "barsalou_1999"
+    ]
+  },
+  "lacunes": {
+    "Opérateurs n-aires sémantiques": {
+      "description": "Pas de formalisme pour gradations sémantiques fines",
+      "impact": "Dhātu n-aires = innovation pure",
+      "recherche_necessaire": "Validation cognitive des niveaux trinaires+"
+    },
+    "Composition dhātu": {
+      "description": "Peu de travaux sur composition primitives sémantiques",
+      "impact": "Règles composition dhātu à développer",
+      "recherche_necessaire": "Formalisation mathématique composition"
+    },
+    "Validation cross-linguistique primitives": {
+      "description": "Wierzbicka limitée, pas validation computationnelle",
+      "impact": "Universalité dhātu à prouver empiriquement",
+      "recherche_necessaire": "Tests sur 10+ langues typologiquement diverses"
+    },
+    "Neurobiologie sémantique fine": {
+      "description": "Peu de données neuronales sur primitives sémantiques",
+      "impact": "Réalité cérébrale dhātu inconnue",
+      "recherche_necessaire": "IRMf pendant tâches décomposition dhātu"
+    },
+    "Applications industrielles": {
+      "description": "Gap entre théorie et applications TAL/IA",
+      "impact": "Potentiel dhātu non exploité",
+      "recherche_necessaire": "Prototypes dans traduction, sentiment, génération"
+    }
+  },
+  "collaborations": {
+    "Laboratoires Wierzbicka (Primitives universelles)": {
+      "institution": "ANU (Australian National University)",
+      "collaboration": "Validation dhātu vs NSM (Natural Semantic Metalanguage)",
+      "benefice_mutuel": "Extension NSM avec gradations, validation dhātu"
+    },
+    "Équipes Mel'čuk (Fonctions lexicales)": {
+      "institution": "OLST (Université de Montréal)",
+      "collaboration": "Comparaison FL vs dhātu sur corpus étendus",
+      "benefice_mutuel": "Validation empirique, économie conceptuelle"
+    },
+    "Groupes Pulvermüller (Neurosémantique)": {
+      "institution": "Freie Universität Berlin",
+      "collaboration": "IRMf pendant décomposition dhātu",
+      "benefice_mutuel": "Validation neurologique, modèles cérébraux"
+    },
+    "Labs Google/OpenAI (NLP industriel)": {
+      "institution": "Big Tech",
+      "collaboration": "Intégration dhātu dans LLMs",
+      "benefice_mutuel": "Applications pratiques, validation échelle"
+    },
+    "Centres logique floue (Systèmes gradués)": {
+      "institution": "Berkeley, CMU",
+      "collaboration": "Formalisation mathématique opérateurs n-aires",
+      "benefice_mutuel": "Rigueur formelle, applications logiques"
+    }
+  },
+  "conclusion": "Innovation dhātu n-aires = GAP MAJEUR dans littérature"
+}

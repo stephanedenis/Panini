@@ -1,0 +1,639 @@
+{
+  "optimisation_qualite_corpus": {
+    "timestamp": "2025-09-22",
+    "statistiques_globales": {
+      "documents_traites": 150,
+      "expressions_detectees": 17,
+      "coverage_avant": {
+        "MODAL": 0.1,
+        "ASPECT": 0.1,
+        "QUANT": 0.1
+      },
+      "coverage_apres": {
+        "MODAL": 0.019829059829059827,
+        "ASPECT": 0.0,
+        "QUANT": 0.003578457684737878
+      },
+      "amelioration_factor": {
+        "MODAL": 0.19829059829059825,
+        "ASPECT": 0.0,
+        "QUANT": 0.03578457684737878
+      },
+      "corpus_optimises": [
+        "corpus_unifie/panini_corpus_unifie.json",
+        "corpus_multilingue_dev/dhatu_connections.json",
+        "corpus_multilingue_dev/corpus_multilingue_developpemental.json"
+      ]
+    },
+    "resultats_par_corpus": {
+      "corpus_unifie/panini_corpus_unifie.json": {
+        "corpus": "corpus_unifie/panini_corpus_unifie.json",
+        "documents_analyses": 50,
+        "expressions_detectees": 10,
+        "coverage_avant": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        },
+        "coverage_apres": {
+          "MODAL": 0.015384615384615384,
+          "ASPECT": 0.0,
+          "QUANT": 0.003578457684737878
+        },
+        "amelioration": {
+          "MODAL": -0.08461538461538462,
+          "ASPECT": -0.1,
+          "QUANT": -0.09642154231526212
+        },
+        "annotations": [
+          {
+            "document_id": "2509.15191v1",
+            "texte_original": "Albert Visser has shown that Robinson's    mathsf Q    and Gregorczyk's    mathsf TC    are not sequential by showing that these theories are not even poly-pair theories, which, in a strong sense, mea...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15086v1",
+            "texte_original": "We initiate the study of definability (in the model-theoretic sense) of C -tensor norms. We show that neither the minimal nor maximal tensor norms are definable uniformly over all C -algebras. The pro...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15000v1",
+            "texte_original": "We show that a one-ended, locally finite, measurable graph on a standard probability space admits a measurable one-ended spanning subtree if and only if it is measure-hyperfinite. This answers a quest...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.14614v1",
+            "texte_original": "The countable condensation on a linear order  L  is the equivalence relation   sim_ omega  defined by declaring  x  sim_ omega y  when the set of points between  x  and  y  is countable. We characteri...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.14517v1",
+            "texte_original": "We observe that the definition of Shelah's classical   mathrm NSOP _ n   hierarchy for first-order theories, for integers  n  geq 3 , can be restated so that it extends to the case where  n  is replac...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15214v1",
+            "texte_original": "We introduce a   non-orientable'' variation of Serre's definition of a graph, which we call an abstract isogeny graph. These objects capture the combinatorics of the graphs  G(p, ell,H) , the   ell -i...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15079v1",
+            "texte_original": "For a field  L  of characteristic  p , a polynomial  f  in  overline  mathbb F  _p x   and   alpha,  beta  in L , let   mathrm Prep (f; alpha, beta)  be the set of all   lambda  in  overline L   such ...",
+            "expressions_detectees": [
+              {
+                "phrase": "certain families",
+                "decomposition": "QUANT+",
+                "dhatu_impliques": [
+                  "QUANT"
+                ],
+                "complexite": 1,
+                "expressivite": 0.6,
+                "type": "pattern_specialise"
+              }
+            ],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0823045267489712,
+            "score_qualite": 0.06371742112482853,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.14974v1",
+            "texte_original": "We revisit the effective Erdos-Wintner theorem for Zeckendorf expansions. Drmota and the author obtained a uniform Kolmogorov bound whose error involves  T sum_ j L-2h  f(F_j)  , which assumes absolut...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.14881v1",
+            "texte_original": "This expository note introduces a normalization of the indexing of the lower and upper numbering ramification subgroups of local class field theory. We then look at how this normalization interacts wi...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.14871v1",
+            "texte_original": "A maximal curve over a finite field   mathbb F_q  is a curve whose number of points reaches the upper Hasse-Weil-Serre bound. We define the discriminant of   mathbb F_q  as  d( mathbb F_q):   lfloor2 ...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          }
+        ],
+        "top_expressions": [
+          {
+            "phrase": "certain families",
+            "decomposition": "QUANT+",
+            "dhatu_impliques": [
+              "QUANT"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "certain correlation",
+            "decomposition": "QUANT+",
+            "dhatu_impliques": [
+              "QUANT"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "possible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "possible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "impossible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "impossible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "possible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "impossible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "possible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "impossible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          }
+        ]
+      },
+      "corpus_multilingue_dev/dhatu_connections.json": {
+        "corpus": "corpus_multilingue_dev/dhatu_connections.json",
+        "documents_analyses": 50,
+        "expressions_detectees": 0,
+        "coverage_avant": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        },
+        "coverage_apres": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        },
+        "amelioration": {
+          "MODAL": -0.1,
+          "ASPECT": -0.1,
+          "QUANT": -0.1
+        },
+        "annotations": [
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "unknown",
+            "texte_original": "Texte vide",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          }
+        ],
+        "top_expressions": []
+      },
+      "corpus_multilingue_dev/corpus_multilingue_developpemental.json": {
+        "corpus": "corpus_multilingue_dev/corpus_multilingue_developpemental.json",
+        "documents_analyses": 50,
+        "expressions_detectees": 7,
+        "coverage_avant": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        },
+        "coverage_apres": {
+          "MODAL": 0.013333333333333332,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        },
+        "amelioration": {
+          "MODAL": -0.08666666666666667,
+          "ASPECT": -0.1,
+          "QUANT": -0.1
+        },
+        "annotations": [
+          {
+            "document_id": "2509.15218v1",
+            "texte_original": "The problem of data contamination is now almost inevitable during the development of large language models (LLMs), with the training data commonly integrating those evaluation benchmarks even unintent...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15216v1",
+            "texte_original": "Traditional efforts to measure historical structural oppression struggle with cross-national validity due to the unique, locally specified histories of exclusion, colonization, and social status in ea...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15211v1",
+            "texte_original": "Slide decks, serving as digital reports that bridge the gap between presentation slides and written documents, are a prevalent medium for conveying information in both academic and corporate settings....",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15207v1",
+            "texte_original": "We propose FlowRL: matching the full reward distribution via flow balancing instead of maximizing rewards in large language model (LLM) reinforcement learning (RL). Recent advanced reasoning models ad...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15206v1",
+            "texte_original": "High memory demands of generative language models have drawn attention to quantization, which reduces computational cost, memory usage, and latency by mapping model weights to lower-precision integers...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15194v1",
+            "texte_original": "Large language models (LLMs) are increasingly trained with reinforcement learning from verifiable rewards (RLVR), yet real-world deployment demands models that can self-improve without labels or exter...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15188v1",
+            "texte_original": "Autoregressive (AR) language models generate text one token at a time, which limits their inference speed. Diffusion-based language models offer a promising alternative, as they can decode multiple to...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15174v1",
+            "texte_original": "WARNING: This paper contains examples of offensive materials. Toxic content has become pervasive on social media platforms. We introduce SMARTER, a data-efficient two-stage framework for explainable c...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15160v1",
+            "texte_original": "Recent advances in multi-modal large language models (MLLMs) have enabled increasingly sophisticated autonomous visualization agents capable of translating user intentions into data visualizations. Ho...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          },
+          {
+            "document_id": "2509.15159v1",
+            "texte_original": "Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by retrieving relevant documents from external sources to improve factual accuracy and verifiability. However, this reliance ...",
+            "expressions_detectees": [],
+            "decompositions_dhatu": [],
+            "coverage_modal": 0.0,
+            "coverage_aspect": 0.0,
+            "coverage_quant": 0.0,
+            "score_qualite": 0.0,
+            "timestamp_annotation": "2025-09-22"
+          }
+        ],
+        "top_expressions": [
+          {
+            "phrase": "possible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "impossible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "impossible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "possible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "impossible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "possible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          },
+          {
+            "phrase": "impossible",
+            "decomposition": "MODAL+",
+            "dhatu_impliques": [
+              "MODAL"
+            ],
+            "complexite": 1,
+            "expressivite": 0.6,
+            "type": "pattern_specialise"
+          }
+        ]
+      }
+    },
+    "seuils_utilises": {
+      "coverage_minimal": 0.3,
+      "expressions_minimum": 3,
+      "score_qualite_minimal": 0.6,
+      "longueur_text_minimal": 50
+    },
+    "patterns_enrichissement": {
+      "modal_patterns": [
+        "\\b(probablement|certainement|peut-être|sûrement|forcément)\\b",
+        "\\b(possible|impossible|obligatoire|interdit|permis)\\b",
+        "\\b(va|pourrait|devrait|doit|peut)\\s+\\w+",
+        "\\b(très|assez|plutôt|vraiment)\\s+(probable|certain|possible)\\b"
+      ],
+      "aspect_patterns": [
+        "\\b(commencer|finir|continuer|arrêter|reprendre)\\s+[àde]?\\s*\\w+",
+        "\\b(progresser|évoluer|développer|diminuer|augmenter)\\b",
+        "\\b(déjà|encore|toujours|jamais|bientôt)\\b",
+        "\\b(en cours|en train|sur le point)\\s+de\\b"
+      ],
+      "quant_patterns": [
+        "\\b(beaucoup|peu|assez|trop|énormément)\\s+(de\\s+)?\\w+",
+        "\\b(plusieurs|nombreux|quelques|aucun|certain)\\s+\\w+",
+        "\\b(plus|moins|autant)\\s+(de\\s+)?\\w+",
+        "\\b(environ|vers|près de)\\s+\\d+\\b"
+      ]
+    }
+  }
+}

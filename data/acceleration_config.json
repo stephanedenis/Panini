@@ -1,0 +1,9 @@
+{
+  "research_cycle_interval": 300,
+  "corpus_collection_frequency": 60,
+  "optimization_iterations": 10,
+  "validation_frequency": 120,
+  "concurrent_processes": 4,
+  "gpu_utilization_target": 50,
+  "memory_limit_mb": 2048
+}

@@ -1,0 +1,259 @@
+{
+  "version": "v3.0_hybride",
+  "objectif": "100% fidélité",
+  "corpus_size": 3,
+  "tests_total": 18,
+  "fidelite_moyenne": 0.22807963958057043,
+  "fidelite_maximum": 0.7244897959183673,
+  "fidelite_minimum": 0.023255813953488372,
+  "tests_100_pourcent": 0,
+  "amelioration_vs_v1": 0.10007963958057042,
+  "amelioration_vs_v2": 0.11807963958057043,
+  "resultats_detailles": {
+    "tortoise_hare": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.34012471655328796,
+      "fidelite_max_texte": 0.5555555555555556,
+      "reconstitutions_parfaites": 0,
+      "reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.5555555555555556,
+          "confiance": 0.8252157598499062,
+          "reconstitue": "\"you are so slow\" \"you are so slow\" \"you are so slow\" a little girl a little girl slowly but surely slowly but surely slowly but surely slowly but surely because of its slowness because of its slowness because of its slowness by a window said hare mocked first slowness window",
+          "debug": {
+            "patterns_narratifs_count": 13,
+            "vocab_detections_count": 41,
+            "fragments_prioritaires_count": 13,
+            "fragments_secondaires_count": 6
+          },
+          "attendu_preview": "A hare mocked a tortoise because of its slowness. \"You are so slow!\" he said. \"I..."
+        },
+        "fr->de": {
+          "fidelite": 0.1520408163265306,
+          "confiance": 0.4132926829268293,
+          "reconstitue": "sagte hase verspottete zuerst langsamkeit fenster",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 41,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 6
+          },
+          "attendu_preview": "Ein Hase verspottete eine Schildkröte wegen ihrer Langsamkeit. \"Du bist so langs..."
+        },
+        "en->fr": {
+          "fidelite": 0.51,
+          "confiance": 0.8193555093555094,
+          "reconstitue": "\"tu es si lente\" \"tu es si lente\" \"tu es si lente\" une petite fille une petite fille lentement mais sûrement lentement mais sûrement lentement mais sûrement lentement mais sûrement à cause de sa lenteur à cause de sa lenteur à cause de sa lenteur près d'une fenêtre dit lièvre moquait début lenteur fenêtre",
+          "debug": {
+            "patterns_narratifs_count": 13,
+            "vocab_detections_count": 37,
+            "fragments_prioritaires_count": 13,
+            "fragments_secondaires_count": 6
+          },
+          "attendu_preview": "Un lièvre se moquait d'une tortue à cause de sa lenteur. \"Tu es si lente !\" dit-..."
+        },
+        "en->de": {
+          "fidelite": 0.1520408163265306,
+          "confiance": 0.40743243243243243,
+          "reconstitue": "sagte hase verspottete zuerst langsamkeit fenster",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 37,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 6
+          },
+          "attendu_preview": "Ein Hase verspottete eine Schildkröte wegen ihrer Langsamkeit. \"Du bist so langs..."
+        },
+        "de->fr": {
+          "fidelite": 0.51,
+          "confiance": 0.8194871794871794,
+          "reconstitue": "\"tu es si lente\" \"tu es si lente\" \"tu es si lente\" une petite fille une petite fille lentement mais sûrement lentement mais sûrement lentement mais sûrement lentement mais sûrement à cause de sa lenteur à cause de sa lenteur à cause de sa lenteur près d'une fenêtre dit lièvre moquait début lenteur fenêtre",
+          "debug": {
+            "patterns_narratifs_count": 13,
+            "vocab_detections_count": 39,
+            "fragments_prioritaires_count": 13,
+            "fragments_secondaires_count": 6
+          },
+          "attendu_preview": "Un lièvre se moquait d'une tortue à cause de sa lenteur. \"Tu es si lente !\" dit-..."
+        },
+        "de->en": {
+          "fidelite": 0.1611111111111111,
+          "confiance": 0.4075641025641025,
+          "reconstitue": "said hare mocked first slowness window",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 39,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 6
+          },
+          "attendu_preview": "A hare mocked a tortoise because of its slowness. \"You are so slow!\" he said. \"I..."
+        }
+      }
+    },
+    "ant_grasshopper": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.08801509587923295,
+      "fidelite_max_texte": 0.175,
+      "reconstitutions_parfaites": 0,
+      "reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.15526315789473683,
+          "confiance": 0.8246666666666667,
+          "reconstitue": "in the middle of winter a little girl mocked because of because of its slowness by a window time said hare mocked window first slowness",
+          "debug": {
+            "patterns_narratifs_count": 5,
+            "vocab_detections_count": 21,
+            "fragments_prioritaires_count": 5,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "During the summer, an ant worked hard to collect food for winter. A grasshopper ..."
+        },
+        "fr->de": {
+          "fidelite": 0.023255813953488372,
+          "confiance": 0.4066666666666666,
+          "reconstitue": "einmal sagte hase verspottete fenster zuerst langsamkeit",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 21,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Während des Sommers arbeitete eine Ameise hart, um Futter für den Winter zu samm..."
+        },
+        "en->fr": {
+          "fidelite": 0.175,
+          "confiance": 0.8177727272727273,
+          "reconstitue": "il était une fois une petite fille collectait de la nourriture à cause de sa lenteur près d'une fenêtre fois lièvre moquait dit fenêtre début lenteur",
+          "debug": {
+            "patterns_narratifs_count": 5,
+            "vocab_detections_count": 22,
+            "fragments_prioritaires_count": 5,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Pendant l'été, une fourmi travaillait dur pour collecter de la nourriture pour l..."
+        },
+        "en->de": {
+          "fidelite": 0.023255813953488372,
+          "confiance": 0.3997727272727273,
+          "reconstitue": "einmal hase verspottete sagte fenster zuerst langsamkeit",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 22,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Während des Sommers arbeitete eine Ameise hart, um Futter für den Winter zu samm..."
+        },
+        "de->fr": {
+          "fidelite": 0.125,
+          "confiance": 0.8230500000000001,
+          "reconstitue": "il était une fois une petite fille à cause de sa lenteur près d'une fenêtre fois dit lièvre moquait fenêtre début lenteur",
+          "debug": {
+            "patterns_narratifs_count": 4,
+            "vocab_detections_count": 25,
+            "fragments_prioritaires_count": 4,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Pendant l'été, une fourmi travaillait dur pour collecter de la nourriture pour l..."
+        },
+        "de->en": {
+          "fidelite": 0.02631578947368421,
+          "confiance": 0.4068,
+          "reconstitue": "time said hare mocked window first slowness",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 25,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "During the summer, an ant worked hard to collect food for winter. A grasshopper ..."
+        }
+      }
+    },
+    "snow_white_opening": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.25609910630919036,
+      "fidelite_max_texte": 0.7244897959183673,
+      "reconstitutions_parfaites": 0,
+      "reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.7244897959183673,
+          "confiance": 0.8593103448275863,
+          "reconstitue": "in the middle of winter in the middle of winter \"you are so slow\" a little girl a little girl mocked because of by a window time hare said mocked first window slowness",
+          "debug": {
+            "patterns_narratifs_count": 7,
+            "vocab_detections_count": 29,
+            "fragments_prioritaires_count": 7,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Once upon a time, in the middle of winter, a queen was sewing by a window. Snow ..."
+        },
+        "fr->de": {
+          "fidelite": 0.0392156862745098,
+          "confiance": 0.4143103448275862,
+          "reconstitue": "einmal hase sagte verspottete zuerst fenster langsamkeit",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 29,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Es war einmal mitten im Winter, und die Schneeflocken fielen wie Federn vom Himm..."
+        },
+        "en->fr": {
+          "fidelite": 0.3642857142857143,
+          "confiance": 0.8576923076923078,
+          "reconstitue": "il était une fois il était une fois \"tu es si lente\" une petite fille une petite fille collectait de la nourriture près d'une fenêtre fois lièvre dit moquait début fenêtre lenteur",
+          "debug": {
+            "patterns_narratifs_count": 7,
+            "vocab_detections_count": 26,
+            "fragments_prioritaires_count": 7,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Il était une fois, en plein hiver, une reine qui cousait près d'une fenêtre. La ..."
+        },
+        "en->de": {
+          "fidelite": 0.0392156862745098,
+          "confiance": 0.4126923076923077,
+          "reconstitue": "einmal hase sagte verspottete zuerst fenster langsamkeit",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 26,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Es war einmal mitten im Winter, und die Schneeflocken fielen wie Federn vom Himm..."
+        },
+        "de->fr": {
+          "fidelite": 0.3285714285714286,
+          "confiance": 0.8543461538461539,
+          "reconstitue": "il était une fois il était une fois \"tu es si lente\" une petite fille près d'une fenêtre fois lièvre dit moquait début fenêtre lenteur",
+          "debug": {
+            "patterns_narratifs_count": 5,
+            "vocab_detections_count": 26,
+            "fragments_prioritaires_count": 5,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Il était une fois, en plein hiver, une reine qui cousait près d'une fenêtre. La ..."
+        },
+        "de->en": {
+          "fidelite": 0.04081632653061224,
+          "confiance": 0.4063461538461538,
+          "reconstitue": "time hare said mocked first window slowness",
+          "debug": {
+            "patterns_narratifs_count": 0,
+            "vocab_detections_count": 26,
+            "fragments_prioritaires_count": 0,
+            "fragments_secondaires_count": 7
+          },
+          "attendu_preview": "Once upon a time, in the middle of winter, a queen was sewing by a window. Snow ..."
+        }
+      }
+    }
+  },
+  "analyse_progression": {
+    "pourcentage_100": 0.0,
+    "progression_vers_objectif": 22.807963958057044,
+    "ecart_a_100": 77.19203604194296
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "session_date": "2025-09-22",
+  "session_theme": "Validation nouveaux concepts dhātu et analyses onomastiques",
+  "heure_debut": "08:53:36",
+  "fichiers_generes": [
+    {
+      "fichier": "analyse_20250922_085336_fr.json",
+      "taille": 12390,
+      "heure": "20250922",
+      "type": "analyse_linguistique",
+      "phrase": "Il était une fois une reine.",
+      "langue": "fr"
+    },
+    {
+      "fichier": "analyse_20250922_085336_en.json",
+      "taille": 16117,
+      "heure": "20250922",
+      "type": "analyse_linguistique",
+      "phrase": "Dr. Smith's cat—what a story!",
+      "langue": "en"
+    },
+    {
+      "fichier": "analyse_onomastique_20250922_090407_en.json",
+      "taille": 3893,
+      "heure": "onomastique",
+      "type": "analyse_linguistique",
+      "phrase": "The species Homo sapiens evolved in Africa.",
+      "langue": "unknown"
+    },
+    {
+      "fichier": "analyse_onomastique_20250922_090407_fr.json",
+      "taille": 5166,
+      "heure": "onomastique",
+      "type": "analyse_linguistique",
+      "phrase": "Marie et Jean visitent Berlin chaque été.",
+      "langue": "unknown"
+    },
+    {
+      "fichier": "marquage_onomastique_20250922_090851_en.json",
+      "taille": 2103,
+      "heure": "onomastique"
+    },
+    {
+      "fichier": "marquage_onomastique_20250922_090851_fr.json",
+      "taille": 2949,
+      "heure": "onomastique"
+    }
+  ],
+  "concepts_explores": [],
+  "analyses_effectuees": []
+}

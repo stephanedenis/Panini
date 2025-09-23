@@ -1,0 +1,275 @@
+{
+  "version": "v4.0_final",
+  "mission": "100% fidélité garantie",
+  "corpus_size": 3,
+  "tests_total": 18,
+  "fidelite_moyenne": 0.2114146204290683,
+  "fidelite_maximum": 0.6068627450980393,
+  "fidelite_minimum": 0.0,
+  "tests_100_pourcent": 0,
+  "tests_90_plus": 0,
+  "tests_80_plus": 0,
+  "amelioration_vs_v3": -0.016585379570931702,
+  "mission_accomplie": false,
+  "resultats_detailles": {
+    "tortoise_hare": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.19863189720332575,
+      "fidelite_max_texte": 0.2336734693877551,
+      "tests_parfaits": 0,
+      "reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.22222222222222218,
+          "confiance": 0.8534999999999999,
+          "reconstitue": "a hare he said mocked because of because of its slowness hare race",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 2,
+            "fragments_traduits": 4,
+            "mots_traduits": 2,
+            "longueur_finale": 6
+          },
+          "attendu_preview": "A hare mocked a tortoise because of its slowness. \"You are s..."
+        },
+        "fr->de": {
+          "fidelite": 0.2336734693877551,
+          "confiance": 0.8534999999999999,
+          "reconstitue": "ein hase sagte er verspottete wegen wegen ihrer langsamkeit hase rennen",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 2,
+            "fragments_traduits": 4,
+            "mots_traduits": 2,
+            "longueur_finale": 6
+          },
+          "attendu_preview": "Ein Hase verspottete eine Schildkröte wegen ihrer Langsamkei..."
+        },
+        "en->fr": {
+          "fidelite": 0.13999999999999999,
+          "confiance": 0.8459999999999999,
+          "reconstitue": "un lièvre dit-il se moquait de à cause de sa lenteur lièvre course",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 2,
+            "fragments_traduits": 4,
+            "mots_traduits": 2,
+            "longueur_finale": 6
+          },
+          "attendu_preview": "Un lièvre se moquait d'une tortue à cause de sa lenteur. \"Tu..."
+        },
+        "en->de": {
+          "fidelite": 0.2336734693877551,
+          "confiance": 0.8459999999999999,
+          "reconstitue": "ein hase sagte er verspottete wegen wegen ihrer langsamkeit hase rennen",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 2,
+            "fragments_traduits": 4,
+            "mots_traduits": 2,
+            "longueur_finale": 6
+          },
+          "attendu_preview": "Ein Hase verspottete eine Schildkröte wegen ihrer Langsamkei..."
+        },
+        "de->fr": {
+          "fidelite": 0.13999999999999999,
+          "confiance": 0.8534999999999999,
+          "reconstitue": "un lièvre dit-il se moquait de à cause de sa lenteur lièvre course",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 2,
+            "fragments_traduits": 4,
+            "mots_traduits": 2,
+            "longueur_finale": 6
+          },
+          "attendu_preview": "Un lièvre se moquait d'une tortue à cause de sa lenteur. \"Tu..."
+        },
+        "de->en": {
+          "fidelite": 0.22222222222222218,
+          "confiance": 0.8534999999999999,
+          "reconstitue": "a hare he said mocked because of because of its slowness hare race",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 2,
+            "fragments_traduits": 4,
+            "mots_traduits": 2,
+            "longueur_finale": 6
+          },
+          "attendu_preview": "A hare mocked a tortoise because of its slowness. \"You are s..."
+        }
+      }
+    },
+    "ant_grasshopper": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.00526315789473684,
+      "fidelite_max_texte": 0.03157894736842104,
+      "tests_parfaits": 0,
+      "reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.03157894736842104,
+          "confiance": 0.8971666666666667,
+          "reconstitue": "in the middle of winter a hare worked hard hare winter",
+          "debug": {
+            "patterns_detectes": 3,
+            "vocab_critique": 2,
+            "fragments_traduits": 3,
+            "mots_traduits": 2,
+            "longueur_finale": 5
+          },
+          "attendu_preview": "During the summer, an ant worked hard to collect food for wi..."
+        },
+        "fr->de": {
+          "fidelite": 0.0,
+          "confiance": 0.8971666666666667,
+          "reconstitue": "mitten im winter ein hase arbeitete hart hase winter",
+          "debug": {
+            "patterns_detectes": 3,
+            "vocab_critique": 2,
+            "fragments_traduits": 3,
+            "mots_traduits": 2,
+            "longueur_finale": 5
+          },
+          "attendu_preview": "Während des Sommers arbeitete eine Ameise hart, um Futter fü..."
+        },
+        "en->fr": {
+          "fidelite": 0.0,
+          "confiance": 0.8971666666666667,
+          "reconstitue": "en plein hiver un lièvre travaillait dur lièvre hiver",
+          "debug": {
+            "patterns_detectes": 3,
+            "vocab_critique": 2,
+            "fragments_traduits": 3,
+            "mots_traduits": 2,
+            "longueur_finale": 5
+          },
+          "attendu_preview": "Pendant l'été, une fourmi travaillait dur pour collecter de ..."
+        },
+        "en->de": {
+          "fidelite": 0.0,
+          "confiance": 0.8971666666666667,
+          "reconstitue": "mitten im winter ein hase arbeitete hart hase winter",
+          "debug": {
+            "patterns_detectes": 3,
+            "vocab_critique": 2,
+            "fragments_traduits": 3,
+            "mots_traduits": 2,
+            "longueur_finale": 5
+          },
+          "attendu_preview": "Während des Sommers arbeitete eine Ameise hart, um Futter fü..."
+        },
+        "de->fr": {
+          "fidelite": 0.0,
+          "confiance": 0.917,
+          "reconstitue": "en plein hiver un lièvre lièvre hiver",
+          "debug": {
+            "patterns_detectes": 2,
+            "vocab_critique": 2,
+            "fragments_traduits": 2,
+            "mots_traduits": 2,
+            "longueur_finale": 4
+          },
+          "attendu_preview": "Pendant l'été, une fourmi travaillait dur pour collecter de ..."
+        },
+        "de->en": {
+          "fidelite": 0.0,
+          "confiance": 0.917,
+          "reconstitue": "in the middle of winter a hare hare winter",
+          "debug": {
+            "patterns_detectes": 2,
+            "vocab_critique": 2,
+            "fragments_traduits": 2,
+            "mots_traduits": 2,
+            "longueur_finale": 4
+          },
+          "attendu_preview": "During the summer, an ant worked hard to collect food for wi..."
+        }
+      }
+    },
+    "snow_white_opening": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.43034880618914234,
+      "fidelite_max_texte": 0.6068627450980393,
+      "tests_parfaits": 0,
+      "reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.6040816326530613,
+          "confiance": 0.8744999999999999,
+          "reconstitue": "once upon a time a hare thought was sewing by hare winter window",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 3,
+            "fragments_traduits": 4,
+            "mots_traduits": 3,
+            "longueur_finale": 7
+          },
+          "attendu_preview": "Once upon a time, in the middle of winter, a queen was sewin..."
+        },
+        "fr->de": {
+          "fidelite": 0.6068627450980393,
+          "confiance": 0.8744999999999999,
+          "reconstitue": "es war einmal ein hase dachte nähte am hase winter fenster",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 3,
+            "fragments_traduits": 4,
+            "mots_traduits": 3,
+            "longueur_finale": 7
+          },
+          "attendu_preview": "Es war einmal mitten im Winter, und die Schneeflocken fielen..."
+        },
+        "en->fr": {
+          "fidelite": 0.12857142857142856,
+          "confiance": 0.8744999999999999,
+          "reconstitue": "il était une fois un lièvre pensa cousait près lièvre hiver fenêtre",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 3,
+            "fragments_traduits": 4,
+            "mots_traduits": 3,
+            "longueur_finale": 7
+          },
+          "attendu_preview": "Il était une fois, en plein hiver, une reine qui cousait prè..."
+        },
+        "en->de": {
+          "fidelite": 0.6068627450980393,
+          "confiance": 0.8744999999999999,
+          "reconstitue": "es war einmal ein hase dachte nähte am hase winter fenster",
+          "debug": {
+            "patterns_detectes": 4,
+            "vocab_critique": 3,
+            "fragments_traduits": 4,
+            "mots_traduits": 3,
+            "longueur_finale": 7
+          },
+          "attendu_preview": "Es war einmal mitten im Winter, und die Schneeflocken fielen..."
+        },
+        "de->fr": {
+          "fidelite": 0.09285714285714285,
+          "confiance": 0.8896666666666666,
+          "reconstitue": "il était une fois un lièvre pensa lièvre hiver fenêtre",
+          "debug": {
+            "patterns_detectes": 3,
+            "vocab_critique": 3,
+            "fragments_traduits": 3,
+            "mots_traduits": 3,
+            "longueur_finale": 6
+          },
+          "attendu_preview": "Il était une fois, en plein hiver, une reine qui cousait prè..."
+        },
+        "de->en": {
+          "fidelite": 0.5428571428571429,
+          "confiance": 0.8896666666666666,
+          "reconstitue": "once upon a time a hare thought hare winter window",
+          "debug": {
+            "patterns_detectes": 3,
+            "vocab_critique": 3,
+            "fragments_traduits": 3,
+            "mots_traduits": 3,
+            "longueur_finale": 6
+          },
+          "attendu_preview": "Once upon a time, in the middle of winter, a queen was sewin..."
+        }
+      }
+    }
+  },
+  "top_performances": []
+}

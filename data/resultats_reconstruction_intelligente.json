@@ -1,0 +1,98 @@
+[
+  {
+    "test_id": 1,
+    "langue": "fr",
+    "dhatu_sequence": [
+      "EXIST",
+      "TRANS",
+      "EVAL",
+      "LOCATE"
+    ],
+    "texte_reference": "Un lièvre se moquait d'une tortue.",
+    "texte_reconstruit": "Cause parce lenteur cousait",
+    "qualite": {
+      "precision": 0.0,
+      "rappel": 0.0,
+      "f1_score": 0,
+      "fidelite": 0.0,
+      "repetitions_detectees": 0,
+      "mots_manquants": [
+        "d",
+        "lièvre",
+        "moquait",
+        "un",
+        "une",
+        "se",
+        "tortue"
+      ],
+      "mots_en_trop": [
+        "cause",
+        "parce",
+        "lenteur",
+        "cousait"
+      ],
+      "longueur_originale": 7,
+      "longueur_reconstruite": 4
+    }
+  },
+  {
+    "test_id": 2,
+    "langue": "en",
+    "dhatu_sequence": [
+      "EXIST",
+      "TRANS",
+      "EVAL",
+      "LOCATE",
+      "EVAL"
+    ],
+    "texte_reference": "The hare mocked the slow tortoise.",
+    "texte_reconstruit": "Laughed mocked",
+    "qualite": {
+      "precision": 0.5,
+      "rappel": 0.2,
+      "f1_score": 0.28571428571428575,
+      "fidelite": 0.16666666666666666,
+      "repetitions_detectees": 0,
+      "mots_manquants": [
+        "slow",
+        "hare",
+        "tortoise",
+        "the"
+      ],
+      "mots_en_trop": [
+        "laughed"
+      ],
+      "longueur_originale": 5,
+      "longueur_reconstruite": 2
+    }
+  },
+  {
+    "test_id": 3,
+    "langue": "de",
+    "dhatu_sequence": [
+      "EVID_NARR",
+      "EXIST",
+      "LOCATE",
+      "TRANS"
+    ],
+    "texte_reference": "Es war einmal eine Königin.",
+    "texte_reconstruit": "War nähte einmal",
+    "qualite": {
+      "precision": 0.6666666666666666,
+      "rappel": 0.4,
+      "f1_score": 0.5,
+      "fidelite": 0.3333333333333333,
+      "repetitions_detectees": 0,
+      "mots_manquants": [
+        "eine",
+        "königin",
+        "es"
+      ],
+      "mots_en_trop": [
+        "nähte"
+      ],
+      "longueur_originale": 5,
+      "longueur_reconstruite": 3
+    }
+  }
+]

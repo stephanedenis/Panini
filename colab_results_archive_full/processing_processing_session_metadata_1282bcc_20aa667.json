@@ -1,0 +1,15 @@
+{
+  "source_file": "colab_results_archive/processing_session_metadata_1282bcc.json",
+  "commit_hash": "20aa667",
+  "processed_at": "2025-09-22T22:15:38.515886",
+  "data_size": 271,
+  "keys": [
+    "source_file",
+    "commit_hash",
+    "processed_at",
+    "data_size",
+    "keys",
+    "status"
+  ],
+  "status": "processed"
+}

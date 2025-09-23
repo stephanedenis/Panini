@@ -1,0 +1,28 @@
+{
+  "demarrage": "2025-09-21T18:09:30.542319",
+  "processus_actifs": 3,
+  "derniere_verification": "2025-09-21T18:52:00.486995",
+  "erreurs_totales": 0,
+  "redemarrages_totaux": 0,
+  "timestamp": "2025-09-21T18:52:00.487035",
+  "processus_details": {
+    "orchestrateur_pipeline": {
+      "demarrage": "2025-09-21T18:09:30.543985",
+      "redemarrages": 0,
+      "pid": 1330220,
+      "actif": true
+    },
+    "collecteur_corpus": {
+      "demarrage": "2025-09-21T18:09:32.547191",
+      "redemarrages": 0,
+      "pid": 1330275,
+      "actif": true
+    },
+    "moniteur_pipeline": {
+      "demarrage": "2025-09-21T18:09:36.554146",
+      "redemarrages": 0,
+      "pid": 1330468,
+      "actif": true
+    }
+  }
+}

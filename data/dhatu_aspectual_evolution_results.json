@@ -1,0 +1,143 @@
+{
+  "tests_effectues": 3,
+  "ameliorations_detectees": 6,
+  "molecules_identifiees": 6,
+  "fidélité_amelioree": {
+    "taux": 0.3333333333333333,
+    "progression": "+33.3%"
+  },
+  "details_par_exemple": [
+    {
+      "numero": 1,
+      "textes": {
+        "fr": "Il était une fois, en plein hiver",
+        "en": "Once upon a time, in the middle of winter",
+        "de": "Es war einmal mitten im Winter"
+      },
+      "molecules_par_langue": {
+        "fr": [
+          {
+            "dhatu_principal": "EVID_NARR",
+            "modificateurs_aspectuels": [
+              "narratif",
+              "traditionnel"
+            ],
+            "modalite": "narratif",
+            "evidentialite": "rapporte",
+            "temporalite": "atemporel",
+            "force_semantique": 0.9
+          },
+          {
+            "dhatu_principal": "EVID_NARR",
+            "modificateurs_aspectuels": [
+              "narratif",
+              "traditionnel"
+            ],
+            "modalite": "narratif",
+            "evidentialite": "rapporte",
+            "temporalite": "atemporel",
+            "force_semantique": 0.9
+          }
+        ],
+        "en": [
+          {
+            "dhatu_principal": "EVID_NARR",
+            "modificateurs_aspectuels": [
+              "narratif",
+              "traditionnel"
+            ],
+            "modalite": "narratif",
+            "evidentialite": "rapporte",
+            "temporalite": "atemporel",
+            "force_semantique": 0.9
+          },
+          {
+            "dhatu_principal": "EVID_NARR",
+            "modificateurs_aspectuels": [
+              "narratif",
+              "traditionnel"
+            ],
+            "modalite": "narratif",
+            "evidentialite": "rapporte",
+            "temporalite": "atemporel",
+            "force_semantique": 0.9
+          }
+        ],
+        "de": [
+          {
+            "dhatu_principal": "EVID_NARR",
+            "modificateurs_aspectuels": [
+              "narratif",
+              "traditionnel"
+            ],
+            "modalite": "narratif",
+            "evidentialite": "rapporte",
+            "temporalite": "atemporel",
+            "force_semantique": 0.9
+          },
+          {
+            "dhatu_principal": "EVID_NARR",
+            "modificateurs_aspectuels": [
+              "narratif",
+              "traditionnel"
+            ],
+            "modalite": "narratif",
+            "evidentialite": "rapporte",
+            "temporalite": "atemporel",
+            "force_semantique": 0.9
+          }
+        ]
+      },
+      "reconstructions": {
+        "fr->en": "Once upon a time Once upon a time",
+        "fr->de": "Es war einmal Es war einmal",
+        "en->fr": "Il était une fois Il était une fois",
+        "en->de": "Es war einmal Es war einmal",
+        "de->fr": "Il était une fois Il était une fois",
+        "de->en": "Once upon a time Once upon a time"
+      }
+    },
+    {
+      "numero": 2,
+      "textes": {
+        "fr": "Une fourmi travaillait dur pour collecter",
+        "en": "An ant worked hard to collect",
+        "de": "Eine Ameise arbeitete hart, um zu sammeln"
+      },
+      "molecules_par_langue": {
+        "fr": [],
+        "en": [],
+        "de": []
+      },
+      "reconstructions": {
+        "fr->en": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "fr->de": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "en->fr": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "en->de": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "de->fr": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "de->en": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]"
+      }
+    },
+    {
+      "numero": 3,
+      "textes": {
+        "fr": "Un lièvre se moquait d'une tortue",
+        "en": "A hare mocked a tortoise",
+        "de": "Ein Hase verspottete eine Schildkröte"
+      },
+      "molecules_par_langue": {
+        "fr": [],
+        "en": [],
+        "de": []
+      },
+      "reconstructions": {
+        "fr->en": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "fr->de": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "en->fr": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "en->de": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "de->fr": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]",
+        "de->en": "[RECONSTRUCTION_ASPECTUELLE_PARTIELLE]"
+      }
+    }
+  ]
+}

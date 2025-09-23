@@ -1,0 +1,161 @@
+{
+  "tests_individuels": [
+    {
+      "texte_original": "Un lièvre se moquait d'une tortue.",
+      "texte_reconstitue": "été printemps automne hiver matin soir nuit",
+      "langue": "fr",
+      "dhatu_sequence": [
+        "EXIST",
+        "EXIST",
+        "EXIST",
+        "TRANS",
+        "EXIST",
+        "EXIST",
+        "EXIST"
+      ],
+      "fidelite_atteinte": 0.0,
+      "molecules_analysees": 4,
+      "repetitions_eliminees": 0,
+      "mots_manquants": [
+        "se",
+        "une",
+        "moquait",
+        "lièvre",
+        "d",
+        "tortue",
+        "un"
+      ],
+      "mots_en_trop": [
+        "été",
+        "hiver",
+        "nuit",
+        "matin",
+        "printemps",
+        "automne",
+        "soir"
+      ],
+      "contexte_detecte": "contexte_temporel",
+      "temps_traitement_ms": 7.234096527099609,
+      "succes_100_pourcent": false
+    },
+    {
+      "texte_original": "The hare mocked the tortoise.",
+      "texte_reconstitue": "Laughed ran mocked walked worked",
+      "langue": "en",
+      "dhatu_sequence": [
+        "EXIST",
+        "EXIST",
+        "EVAL",
+        "EXIST",
+        "EXIST"
+      ],
+      "fidelite_atteinte": 0.125,
+      "molecules_analysees": 4,
+      "repetitions_eliminees": 0,
+      "mots_manquants": [
+        "the",
+        "hare",
+        "tortoise"
+      ],
+      "mots_en_trop": [
+        "laughed",
+        "worked",
+        "walked",
+        "ran"
+      ],
+      "contexte_detecte": "action_durative",
+      "temps_traitement_ms": 4.475593566894531,
+      "succes_100_pourcent": false
+    },
+    {
+      "texte_original": "Der Hase verspottete die Schildkröte.",
+      "texte_reconstitue": "Lachte lief verspottete ging arbeitete",
+      "langue": "de",
+      "dhatu_sequence": [
+        "EXIST",
+        "EXIST",
+        "EVAL",
+        "EXIST",
+        "TRANS"
+      ],
+      "fidelite_atteinte": 0.1111111111111111,
+      "molecules_analysees": 5,
+      "repetitions_eliminees": 0,
+      "mots_manquants": [
+        "schildkröte",
+        "hase",
+        "der",
+        "die"
+      ],
+      "mots_en_trop": [
+        "lief",
+        "arbeitete",
+        "ging",
+        "lachte"
+      ],
+      "contexte_detecte": "action_durative",
+      "temps_traitement_ms": 6.65736198425293,
+      "succes_100_pourcent": false
+    },
+    {
+      "texte_original": "Il était une fois une reine.",
+      "texte_reconstitue": "était",
+      "langue": "fr",
+      "dhatu_sequence": [
+        "EXIST",
+        "EVID_NARR",
+        "EVID_NARR",
+        "EVID_NARR",
+        "EVID_NARR",
+        "EVID_NARR"
+      ],
+      "fidelite_atteinte": 0.2,
+      "molecules_analysees": 4,
+      "repetitions_eliminees": 0,
+      "mots_manquants": [
+        "reine",
+        "fois",
+        "une",
+        "il"
+      ],
+      "mots_en_trop": [],
+      "contexte_detecte": "ouverture_conte",
+      "temps_traitement_ms": 7.8563690185546875,
+      "succes_100_pourcent": false
+    },
+    {
+      "texte_original": "Once upon a time there was a queen.",
+      "texte_reconstitue": "There was time once",
+      "langue": "en",
+      "dhatu_sequence": [
+        "EVID_NARR",
+        "EVID_NARR",
+        "EXIST",
+        "EVID_NARR",
+        "EVID_NARR",
+        "EVID_NARR",
+        "EXIST",
+        "EVID_NARR"
+      ],
+      "fidelite_atteinte": 0.5714285714285714,
+      "molecules_analysees": 6,
+      "repetitions_eliminees": 0,
+      "mots_manquants": [
+        "a",
+        "queen",
+        "upon"
+      ],
+      "mots_en_trop": [],
+      "contexte_detecte": "ouverture_conte",
+      "temps_traitement_ms": 7.729291915893555,
+      "succes_100_pourcent": false
+    }
+  ],
+  "test_corpus": {},
+  "pipeline_stats": {
+    "reconstructions_totales": 5,
+    "succes_100_pourcent": 0,
+    "temps_total_ms": 33.95271301269531,
+    "mots_ajoutes_dynamiquement": 12
+  }
+}

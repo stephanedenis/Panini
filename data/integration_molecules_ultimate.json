@@ -1,0 +1,326 @@
+{
+  "test_1_fr": {
+    "texte_original": "Un lièvre se moquait d'une tortue.",
+    "molecules_analysees": 4,
+    "mappings_dhatu_mot": 6,
+    "vocabulaire_contexts": {
+      "narratif_general": 3,
+      "ouverture_conte": 3,
+      "action_durative": 3,
+      "evaluation_qualitative": 3,
+      "dialogue_direct": 3,
+      "relation_causale": 3
+    },
+    "reconstitution_test": "sont faisait si dit dans",
+    "ecarts_analyses": {
+      "mots_manquants": [
+        "tortue",
+        "moquait",
+        "lièvre",
+        "se",
+        "un",
+        "d",
+        "une"
+      ],
+      "mots_en_trop": [
+        "faisait",
+        "dans",
+        "sont",
+        "si",
+        "dit"
+      ],
+      "repetitions_detectees": [],
+      "ordre_perturbe": true,
+      "fidélité_calculée": 0.0
+    },
+    "mappings_gaps_100pourcent": {
+      "EXIST": [
+        "tortue",
+        "lièvre",
+        "se",
+        "un",
+        "d",
+        "une"
+      ],
+      "TRANS": [
+        "moquait"
+      ]
+    },
+    "molecules_details": {
+      "lièvre": {
+        "dhatu_principaux": [
+          "EXIST",
+          "TRANS"
+        ],
+        "complexite": 1,
+        "patterns_cross": {}
+      },
+      "moquait": {
+        "dhatu_principaux": [
+          "TRANS",
+          "ITER",
+          "EXIST"
+        ],
+        "complexite": 2,
+        "patterns_cross": {}
+      },
+      "une": {
+        "dhatu_principaux": [
+          "EXIST",
+          "TRANS"
+        ],
+        "complexite": 1,
+        "patterns_cross": {}
+      },
+      "tortue": {
+        "dhatu_principaux": [
+          "EXIST",
+          "TRANS"
+        ],
+        "complexite": 1,
+        "patterns_cross": {}
+      }
+    }
+  },
+  "test_2_en": {
+    "texte_original": "The hare mocked the slow tortue because of its slowness.",
+    "molecules_analysees": 8,
+    "mappings_dhatu_mot": 5,
+    "vocabulaire_contexts": {
+      "narratif_general": 3,
+      "ouverture_conte": 3,
+      "action_durative": 3,
+      "evaluation_qualitative": 3,
+      "dialogue_direct": 3,
+      "relation_causale": 3
+    },
+    "reconstitution_test": "being did quite mocked by",
+    "ecarts_analyses": {
+      "mots_manquants": [
+        "tortue",
+        "of",
+        "slowness",
+        "its",
+        "the",
+        "because",
+        "hare",
+        "slow"
+      ],
+      "mots_en_trop": [
+        "did",
+        "by",
+        "quite",
+        "being"
+      ],
+      "repetitions_detectees": [],
+      "ordre_perturbe": true,
+      "fidélité_calculée": 0.1111111111111111
+    },
+    "mappings_gaps_100pourcent": {
+      "EXIST": [
+        "tortue",
+        "of",
+        "its",
+        "the",
+        "because",
+        "hare",
+        "slow"
+      ],
+      "EVAL": [
+        "slowness"
+      ]
+    },
+    "molecules_details": {
+      "the": {
+        "dhatu_principaux": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "hare": {
+        "dhatu_principaux": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "mocked": {
+        "dhatu_principaux": [
+          "EVAL",
+          "TRANS"
+        ],
+        "complexite": 2,
+        "patterns_cross": {
+          "fr": "verspottete",
+          "de": "verspottete"
+        }
+      },
+      "slow": {
+        "dhatu_principaux": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "tortue": {
+        "dhatu_principaux": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "because": {
+        "dhatu_principaux": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "its": {
+        "dhatu_principaux": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "slowness": {
+        "dhatu_principaux": [
+          "EVAL"
+        ],
+        "complexite": 2,
+        "patterns_cross": {}
+      }
+    }
+  },
+  "test_3_de": {
+    "texte_original": "Es war einmal eine Königin, die nähte am Fenster.",
+    "molecules_analysees": 7,
+    "mappings_dhatu_mot": 8,
+    "vocabulaire_contexts": {
+      "narratif_general": 3,
+      "ouverture_conte": 3,
+      "action_durative": 3,
+      "evaluation_qualitative": 3,
+      "dialogue_direct": 3,
+      "relation_causale": 3
+    },
+    "reconstitution_test": "waren ändert so sagt zu",
+    "ecarts_analyses": {
+      "mots_manquants": [
+        "eine",
+        "nähte",
+        "einmal",
+        "königin",
+        "die",
+        "es",
+        "fenster",
+        "war",
+        "am"
+      ],
+      "mots_en_trop": [
+        "zu",
+        "ändert",
+        "so",
+        "waren",
+        "sagt"
+      ],
+      "repetitions_detectees": [],
+      "ordre_perturbe": true,
+      "fidélité_calculée": 0.0
+    },
+    "mappings_gaps_100pourcent": {
+      "EXIST": [
+        "eine",
+        "einmal",
+        "königin",
+        "die",
+        "es",
+        "fenster",
+        "war",
+        "am"
+      ],
+      "TRANS": [
+        "nähte"
+      ]
+    },
+    "molecules_details": {
+      "war": {
+        "dhatu_principaux": [
+          "EVID_NARR",
+          "SEQ",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "einmal": {
+        "dhatu_principaux": [
+          "EVID_NARR",
+          "SEQ",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "eine": {
+        "dhatu_principaux": [
+          "EVID_NARR",
+          "SEQ",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "königin": {
+        "dhatu_principaux": [
+          "EVID_NARR",
+          "SEQ",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "die": {
+        "dhatu_principaux": [
+          "EVID_NARR",
+          "SEQ",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      },
+      "nähte": {
+        "dhatu_principaux": [
+          "LOCATE"
+        ],
+        "complexite": 2,
+        "patterns_cross": {
+          "fr": "cousait",
+          "en": "sewing"
+        }
+      },
+      "fenster": {
+        "dhatu_principaux": [
+          "EVID_NARR",
+          "SEQ",
+          "LOCATE"
+        ],
+        "complexite": 3,
+        "patterns_cross": {}
+      }
+    }
+  }
+}

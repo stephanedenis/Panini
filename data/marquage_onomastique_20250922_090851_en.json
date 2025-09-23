@@ -1,0 +1,67 @@
+{
+  "texte_original": "The species Homo sapiens evolved in Africa.",
+  "texte_avec_marqueurs": "The species ⟨🔬#ONO_0ED25DE1:Homo:TAXO#🔬⟩ sapiens evolved in ⟨🗺️#ONO_88F9F4FA:Africa:LIEU#🗺️⟩.",
+  "texte_semantique_pur": "The species [ESPÈCE] sapiens evolved in [LIEU].",
+  "marqueurs_onomastiques": [
+    {
+      "id_marqueur": "ONO_0ED25DE1",
+      "nom_original": "Homo",
+      "type_onomastique": "taxonyme",
+      "marqueur_ouverture": "⟨🔬#ONO_0ED25DE1:",
+      "marqueur_fermeture": ":TAXO#🔬⟩",
+      "contenu_semantique_isole": {
+        "dhatus_associes": [
+          "QUALITY",
+          "EXIST"
+        ],
+        "representation_universelle": "QUALITY+EXIST[Homo]",
+        "niveau_analyse": "basique",
+        "necessite_approfondissement": true,
+        "timestamp_isolation": "2025-09-22T09:08:51.207326"
+      },
+      "position_debut": 12,
+      "position_fin": 16,
+      "langue_detectee": "en",
+      "niveau_isolation": "complet",
+      "interference_possible": false,
+      "priorite_traitement": 1
+    },
+    {
+      "id_marqueur": "ONO_88F9F4FA",
+      "nom_original": "Africa",
+      "type_onomastique": "toponyme",
+      "marqueur_ouverture": "⟨🗺️#ONO_88F9F4FA:",
+      "marqueur_fermeture": ":LIEU#🗺️⟩",
+      "contenu_semantique_isole": {
+        "dhatus_associes": [
+          "SPACE",
+          "EXIST",
+          "COMMUNICATE"
+        ],
+        "representation_universelle": "SPACE+EXIST+COMMUNICATE[Africa]",
+        "niveau_analyse": "basique",
+        "necessite_approfondissement": true,
+        "timestamp_isolation": "2025-09-22T09:08:51.207360"
+      },
+      "position_debut": 60,
+      "position_fin": 66,
+      "langue_detectee": "en",
+      "niveau_isolation": "complet",
+      "interference_possible": false,
+      "priorite_traitement": 1
+    }
+  ],
+  "mapping_positions": {
+    "ONO_0ED25DE1": [
+      12,
+      40
+    ],
+    "ONO_88F9F4FA": [
+      60,
+      92
+    ]
+  },
+  "nombre_noms_marques": 2,
+  "pourcentage_contenu_onomastique": 23.25581395348837,
+  "pourcentage_contenu_semantique": 76.74418604651163
+}

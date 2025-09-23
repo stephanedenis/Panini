@@ -1,0 +1,298 @@
+{
+  "date_analyse": "2025-09-22T15:09:22.557265",
+  "synthese_quantitative": {
+    "total_fl": 36,
+    "mappees": 15,
+    "precision_mapping": 0.4166666666666667,
+    "extensions_proposees": 7
+  },
+  "gaps_par_categorie": {
+    "non_mappes": [],
+    "problematiques": [
+      {
+        "fonction": "Anti-Magn",
+        "description": "Intensité faible, atténuation",
+        "probleme": "Négation d'intensité (opérateur !)",
+        "solution_proposee": "EVAL + TRANS + !INTENSE"
+      },
+      {
+        "fonction": "Fact0",
+        "description": "Faire devenir, rendre",
+        "probleme": "Factualité causative complexe",
+        "solution_proposee": "ACT + TRANS + EXIST"
+      },
+      {
+        "fonction": "Fact1",
+        "description": "Faire que X existe",
+        "probleme": "Factualité existentielle",
+        "solution_proposee": "ACT + EXIST + TRANS"
+      },
+      {
+        "fonction": "Fact2",
+        "description": "Faire que X soit caractérisé par",
+        "probleme": "Factualité qualificative",
+        "solution_proposee": "ACT + QUAL + TRANS"
+      },
+      {
+        "fonction": "Gener",
+        "description": "Général, générique",
+        "probleme": "Généricité = niveau conceptuel méta",
+        "solution_proposee": "ASPECT + QUAL (approximatif)"
+      }
+    ],
+    "ambigus": [
+      {
+        "fonction": "Func2",
+        "description": "Être caractérisé par",
+        "probleme": "Caractérisation trop générale",
+        "solution_proposee": "EXIST + QUAL + REL"
+      },
+      {
+        "fonction": "Real3",
+        "description": "Réaliser conformément à",
+        "probleme": "Conformité = modalité + réalisation",
+        "solution_proposee": "ACT + TRANS + MODAL"
+      },
+      {
+        "fonction": "Adv",
+        "description": "Adverbe de manière",
+        "probleme": "Catégorie trop générale (manière)",
+        "solution_proposee": "Décomposition selon type d'adverbe"
+      }
+    ],
+    "necessitent_extensions": [
+      {
+        "fonction": "Oper3",
+        "description": "Faire avec, utiliser comme instrument",
+        "probleme": "Instrumentalité nécessite précision",
+        "solution_proposee": "ACT + REL + MODAL"
+      },
+      {
+        "fonction": "Perm",
+        "description": "Permettre, autoriser",
+        "probleme": "Modalité de permission non couverte",
+        "solution_proposee": "MODAL + ACT"
+      },
+      {
+        "fonction": "Excess",
+        "description": "Excès, trop de",
+        "probleme": "Excès = quantité + intensité",
+        "solution_proposee": "QUANT + INTENSE + EVAL"
+      },
+      {
+        "fonction": "Culm",
+        "description": "Culminer, atteindre le point culminant",
+        "probleme": "Culmination = aspect + temporalité",
+        "solution_proposee": "ASPECT + TEMP + TRANS"
+      },
+      {
+        "fonction": "Prox",
+        "description": "Être sur le point de",
+        "probleme": "Proximité temporelle spécialisée",
+        "solution_proposee": "TEMP + LOCATE + MODAL"
+      },
+      {
+        "fonction": "Plus",
+        "description": "Plus, davantage",
+        "probleme": "Nécessite dhātu QUANT pour quantification",
+        "solution_proposee": "EVAL + QUANT + INTENSE"
+      },
+      {
+        "fonction": "Minus",
+        "description": "Moins",
+        "probleme": "Négation de quantité non gérée",
+        "solution_proposee": "EVAL + QUANT + !INTENSE"
+      },
+      {
+        "fonction": "Equ",
+        "description": "Égal, autant",
+        "probleme": "Comparaison d'égalité spécifique",
+        "solution_proposee": "EVAL + REL + QUANT"
+      },
+      {
+        "fonction": "Mult",
+        "description": "Multiple, plusieurs fois",
+        "probleme": "Multiplicité nécessite QUANT",
+        "solution_proposee": "QUANT + TRANS"
+      },
+      {
+        "fonction": "Sing",
+        "description": "Une seule fois",
+        "probleme": "Unicité nécessite QUANT",
+        "solution_proposee": "QUANT + !QUANT"
+      },
+      {
+        "fonction": "Centr",
+        "description": "Central, principal",
+        "probleme": "Centralité = perspective spatiale",
+        "solution_proposee": "ASPECT + LOCATE"
+      },
+      {
+        "fonction": "Distr",
+        "description": "Distributif, réparti",
+        "probleme": "Distribution nécessite dhātu DISTR",
+        "solution_proposee": "DISTR + QUANT"
+      },
+      {
+        "fonction": "Figur",
+        "description": "Figuré, métaphorique",
+        "probleme": "Métaphore nécessite dhātu FIGUR",
+        "solution_proposee": "FIGUR + REL"
+      }
+    ]
+  },
+  "extensions_dhatu": {
+    "QUANT": {
+      "definition": "Quantité, nombre, mesure, multiplicité",
+      "justification": "Nécessaire pour Plus, Minus, Mult, Sing, Excess",
+      "exemples": [
+        "beaucoup",
+        "peu",
+        "plusieurs",
+        "unique"
+      ],
+      "fonctions_couvertes": [
+        "Plus",
+        "Minus",
+        "Mult",
+        "Sing",
+        "Excess",
+        "Equ"
+      ]
+    },
+    "MODAL": {
+      "definition": "Modalité, possibilité, nécessité, permission",
+      "justification": "Nécessaire pour Perm, Real3, Oper3",
+      "exemples": [
+        "pouvoir",
+        "devoir",
+        "permettre",
+        "autoriser"
+      ],
+      "fonctions_couvertes": [
+        "Perm",
+        "Real3",
+        "Oper3"
+      ]
+    },
+    "ASPECT": {
+      "definition": "Aspect, perspective, point de vue, focalisation",
+      "justification": "Nécessaire pour Centr, Gener, Culm",
+      "exemples": [
+        "principalement",
+        "généralement",
+        "surtout"
+      ],
+      "fonctions_couvertes": [
+        "Centr",
+        "Gener",
+        "Culm"
+      ]
+    },
+    "TEMP": {
+      "definition": "Temporalité spécialisée, durée, fréquence",
+      "justification": "Aspect temporel fin pour Prox, Culm",
+      "exemples": [
+        "bientôt",
+        "longtemps",
+        "souvent"
+      ],
+      "fonctions_couvertes": [
+        "Prox",
+        "Culm"
+      ]
+    },
+    "INTENSE": {
+      "definition": "Intensité, degré, force, gradation",
+      "justification": "Gestion fine de l'intensité (Magn, Anti-Magn)",
+      "exemples": [
+        "très",
+        "peu",
+        "extrêmement",
+        "à peine"
+      ],
+      "fonctions_couvertes": [
+        "Magn",
+        "Anti-Magn",
+        "Excess"
+      ]
+    },
+    "DISTR": {
+      "definition": "Distribution, répartition, dispersion",
+      "justification": "Fonctions distributives Distr",
+      "exemples": [
+        "partout",
+        "çà et là",
+        "respectivement"
+      ],
+      "fonctions_couvertes": [
+        "Distr"
+      ]
+    },
+    "FIGUR": {
+      "definition": "Figuré, métaphorique, symbolique",
+      "justification": "Expressions figurées Figur",
+      "exemples": [
+        "métaphoriquement",
+        "au sens figuré"
+      ],
+      "fonctions_couvertes": [
+        "Figur"
+      ]
+    }
+  },
+  "cas_limites": {
+    "Negation": {
+      "description": "Gestion des dhātu négatifs (!INTENSE, !EXIST)",
+      "exemple": "Anti-Magn nécessite !INTENSE",
+      "probleme": "Pas de formalisme pour négation dhātu",
+      "impact": "Limite théorique majeure"
+    },
+    "Polysemie": {
+      "description": "Mots avec plusieurs décompositions dhātu possibles",
+      "exemple": "'tenir' = Real1 vs maintien physique",
+      "probleme": "Choix contextuel de décomposition",
+      "impact": "Ambiguïté computationnelle"
+    },
+    "Granularite": {
+      "description": "Niveau optimal de décomposition dhātu",
+      "exemple": "Faut-il TEMP en plus de LOCATE pour temporalité ?",
+      "probleme": "Arbitraire du niveau d'analyse",
+      "impact": "Cohérence théorique"
+    },
+    "Compositionnalite": {
+      "description": "Sens compositionnel vs idiomatique",
+      "exemple": "FL idiomatiques non décomposables",
+      "probleme": "Limite de la décomposition sémantique",
+      "impact": "Couverture incomplète"
+    },
+    "Cross_linguistique": {
+      "description": "Universalité des dhātu vs spécificités langues",
+      "exemple": "Dhātu valides pour langues agglutinantes ?",
+      "probleme": "Validation empirique limitée",
+      "impact": "Généralisation prématurée"
+    },
+    "Evolution_diachronique": {
+      "description": "Stabilité des mappings dans le temps",
+      "exemple": "FL évoluent, dhātu sont-ils stables ?",
+      "probleme": "Pas de données diachroniques",
+      "impact": "Robustesse temporelle inconnue"
+    }
+  },
+  "recommandations": [
+    "Implémenter extensions QUANT, MODAL, ASPECT",
+    "Formaliser opérateurs de négation",
+    "Validation cross-linguistique",
+    "Tests sur corpus large",
+    "Étude psycholinguistique"
+  ],
+  "conclusion": {
+    "viabilite": "Prometteuse avec extensions",
+    "couverture_projetee": 0.85,
+    "defis_majeurs": [
+      "Négation",
+      "Polysémie",
+      "Cross-linguistique"
+    ]
+  }
+}

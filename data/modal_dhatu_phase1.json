@@ -1,0 +1,219 @@
+{
+  "implementation": "MODAL dhātu Phase 1",
+  "statistiques": {
+    "nb_expressions_mappees": 11,
+    "nb_operateurs": 6,
+    "repartition_modalites": {
+      "épistémique": 6,
+      "déontique": 3,
+      "dynamique": 2
+    },
+    "repartition_operateurs": {
+      "!": 3,
+      "?": 2,
+      "+": 3,
+      "+·": 1,
+      "++": 1,
+      "+++": 1
+    },
+    "nb_compositions": 6
+  },
+  "expressions_mappees": {
+    "impossible": {
+      "forme_surface": "impossible",
+      "decomposition": "MODAL!",
+      "modalite_type": "ModaliteType.EPISTEMIQUE",
+      "operateur": "OperateurModal.IMPOSSIBLE",
+      "glose_semantique": "négation de possibilité épistémique",
+      "exemples_contexte": [
+        "Il est impossible qu'il pleuve demain",
+        "C'est impossible à croire",
+        "Mission impossible à réaliser"
+      ],
+      "langue": "français"
+    },
+    "possible": {
+      "forme_surface": "possible",
+      "decomposition": "MODAL?",
+      "modalite_type": "ModaliteType.EPISTEMIQUE",
+      "operateur": "OperateurModal.INCERTAIN",
+      "glose_semantique": "possibilité épistémique indéterminée",
+      "exemples_contexte": [
+        "Il est possible qu'il vienne",
+        "C'est tout à fait possible",
+        "Dans la mesure du possible"
+      ],
+      "langue": "français"
+    },
+    "certain": {
+      "forme_surface": "certain",
+      "decomposition": "MODAL+",
+      "modalite_type": "ModaliteType.EPISTEMIQUE",
+      "operateur": "OperateurModal.CERTAIN",
+      "glose_semantique": "certitude épistémique",
+      "exemples_contexte": [
+        "Il est certain qu'il viendra",
+        "C'est certain et prouvé",
+        "J'en suis certain"
+      ],
+      "langue": "français"
+    },
+    "probable": {
+      "forme_surface": "probable",
+      "decomposition": "MODAL+·",
+      "modalite_type": "ModaliteType.EPISTEMIQUE",
+      "operateur": "OperateurModal.PROBABLE_FAIBLE",
+      "glose_semantique": "probabilité faible à modérée",
+      "exemples_contexte": [
+        "Il est probable qu'il pleuve",
+        "C'est assez probable",
+        "Très probable selon les données"
+      ],
+      "langue": "français"
+    },
+    "quasi_certain": {
+      "forme_surface": "quasi-certain",
+      "decomposition": "MODAL++",
+      "modalite_type": "ModaliteType.EPISTEMIQUE",
+      "operateur": "OperateurModal.PROBABLE_NORMAL",
+      "glose_semantique": "probabilité très élevée",
+      "exemples_contexte": [
+        "Il est quasi-certain qu'il gagne",
+        "C'est quasi-certain maintenant",
+        "Quasi-certain à 95%"
+      ],
+      "langue": "français"
+    },
+    "absolument_certain": {
+      "forme_surface": "absolument certain",
+      "decomposition": "MODAL+++",
+      "modalite_type": "ModaliteType.EPISTEMIQUE",
+      "operateur": "OperateurModal.CERTITUDE_ABSOLUE",
+      "glose_semantique": "certitude épistémique maximale",
+      "exemples_contexte": [
+        "Il est absolument certain qu'il réussira",
+        "C'est absolument certain",
+        "J'en suis absolument certain"
+      ],
+      "langue": "français"
+    },
+    "interdit": {
+      "forme_surface": "interdit",
+      "decomposition": "MODAL!",
+      "modalite_type": "ModaliteType.DEONTIQUE",
+      "operateur": "OperateurModal.IMPOSSIBLE",
+      "glose_semantique": "interdiction déontique",
+      "exemples_contexte": [
+        "Il est interdit de fumer",
+        "Strictement interdit",
+        "Interdit aux moins de 18 ans"
+      ],
+      "langue": "français"
+    },
+    "permis": {
+      "forme_surface": "permis",
+      "decomposition": "MODAL?",
+      "modalite_type": "ModaliteType.DEONTIQUE",
+      "operateur": "OperateurModal.INCERTAIN",
+      "glose_semantique": "permission déontique conditionnelle",
+      "exemples_contexte": [
+        "Il est permis d'entrer",
+        "C'est permis sous conditions",
+        "Permis de circuler"
+      ],
+      "langue": "français"
+    },
+    "obligatoire": {
+      "forme_surface": "obligatoire",
+      "decomposition": "MODAL+",
+      "modalite_type": "ModaliteType.DEONTIQUE",
+      "operateur": "OperateurModal.CERTAIN",
+      "glose_semantique": "obligation déontique",
+      "exemples_contexte": [
+        "Il est obligatoire de voter",
+        "C'est obligatoire pour tous",
+        "Masque obligatoire"
+      ],
+      "langue": "français"
+    },
+    "incapable": {
+      "forme_surface": "incapable",
+      "decomposition": "MODAL!",
+      "modalite_type": "ModaliteType.DYNAMIQUE",
+      "operateur": "OperateurModal.IMPOSSIBLE",
+      "glose_semantique": "incapacité dynamique",
+      "exemples_contexte": [
+        "Il est incapable de mentir",
+        "Totalement incapable",
+        "Incapable de comprendre"
+      ],
+      "langue": "français"
+    },
+    "capable": {
+      "forme_surface": "capable",
+      "decomposition": "MODAL+",
+      "modalite_type": "ModaliteType.DYNAMIQUE",
+      "operateur": "OperateurModal.CERTAIN",
+      "glose_semantique": "capacité dynamique",
+      "exemples_contexte": [
+        "Il est capable de réussir",
+        "Parfaitement capable",
+        "Capable de tout faire"
+      ],
+      "langue": "français"
+    }
+  },
+  "compositions": {
+    "probablement_faire": {
+      "decomposition": "MODAL+· + ACTION+",
+      "glose": "action avec probabilité faible",
+      "exemples": [
+        "Il va probablement venir",
+        "Elle fera probablement du sport"
+      ]
+    },
+    "obligatoirement_faire": {
+      "decomposition": "MODAL+ + ACTION+",
+      "glose": "action avec obligation",
+      "exemples": [
+        "Il doit obligatoirement venir",
+        "Elle doit faire ses devoirs"
+      ]
+    },
+    "certainement_bon": {
+      "decomposition": "MODAL+ + EVAL+",
+      "glose": "évaluation positive certaine",
+      "exemples": [
+        "C'est certainement bon",
+        "Sûrement excellent"
+      ]
+    },
+    "probablement_mauvais": {
+      "decomposition": "MODAL+· + EVAL!",
+      "glose": "évaluation négative probable",
+      "exemples": [
+        "C'est probablement mauvais",
+        "Sûrement pas terrible"
+      ]
+    },
+    "probablement_commencer": {
+      "decomposition": "MODAL+· + ASPECT+·",
+      "glose": "initiation probable d'aspect",
+      "exemples": [
+        "Il va probablement commencer",
+        "Elle commencera peut-être"
+      ]
+    },
+    "certainement_beaucoup": {
+      "decomposition": "MODAL+ + QUANT++",
+      "glose": "quantité élevée certaine",
+      "exemples": [
+        "Il y en a certainement beaucoup",
+        "Sûrement énormément"
+      ]
+    }
+  },
+  "validation": "Contraintes cognitives respectées",
+  "score_priorite": 8.8,
+  "justification": "Modalité = catégorie cognitive universelle (Kratzer 1991)"
+}

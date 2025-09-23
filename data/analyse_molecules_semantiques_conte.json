@@ -1,0 +1,706 @@
+{
+  "molecules_analysees": {
+    "lièvre": {
+      "mot_source": "lièvre",
+      "langue": "fr",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_lièvre",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        },
+        {
+          "interpretation_id": "contextuel_relation_causale_lièvre",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EVAL",
+            "TRANS",
+            "LOCATE"
+          ],
+          "force_semantique": 0.7,
+          "evidences": [
+            "contexte_narratif_relation_causale"
+          ],
+          "ambiguites": [
+            "interpretation_biaisee_par_relation_causale"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "TRANS",
+        "EVAL",
+        "LOCATE"
+      ],
+      "niveau_complexite": 3,
+      "patterns_cross_linguistiques": {}
+    },
+    "moquait": {
+      "mot_source": "moquait",
+      "langue": "fr",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "morpho_.*ait$_moquait",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "TRANS",
+            "ITER",
+            "EXIST"
+          ],
+          "force_semantique": 0.6,
+          "evidences": [
+            "pattern_morphologique_.*ait$"
+          ],
+          "ambiguites": [
+            "analyse_morpho_ambigue_.*ait$"
+          ]
+        },
+        {
+          "interpretation_id": "contextuel_relation_causale_moquait",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EVAL",
+            "TRANS",
+            "LOCATE"
+          ],
+          "force_semantique": 0.7,
+          "evidences": [
+            "contexte_narratif_relation_causale"
+          ],
+          "ambiguites": [
+            "interpretation_biaisee_par_relation_causale"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "TRANS"
+      ],
+      "niveau_complexite": 2,
+      "patterns_cross_linguistiques": {}
+    },
+    "une": {
+      "mot_source": "une",
+      "langue": "fr",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_une",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        },
+        {
+          "interpretation_id": "contextuel_relation_causale_une",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EVAL",
+            "TRANS",
+            "LOCATE"
+          ],
+          "force_semantique": 0.7,
+          "evidences": [
+            "contexte_narratif_relation_causale"
+          ],
+          "ambiguites": [
+            "interpretation_biaisee_par_relation_causale"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "TRANS",
+        "EVAL",
+        "LOCATE"
+      ],
+      "niveau_complexite": 3,
+      "patterns_cross_linguistiques": {}
+    },
+    "tortue": {
+      "mot_source": "tortue",
+      "langue": "fr",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_tortue",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        },
+        {
+          "interpretation_id": "contextuel_relation_causale_tortue",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EVAL",
+            "TRANS",
+            "LOCATE"
+          ],
+          "force_semantique": 0.7,
+          "evidences": [
+            "contexte_narratif_relation_causale"
+          ],
+          "ambiguites": [
+            "interpretation_biaisee_par_relation_causale"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "TRANS",
+        "EVAL",
+        "LOCATE"
+      ],
+      "niveau_complexite": 3,
+      "patterns_cross_linguistiques": {}
+    },
+    "cause": {
+      "mot_source": "cause",
+      "langue": "fr",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_cause",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        },
+        {
+          "interpretation_id": "contextuel_relation_causale_cause",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EVAL",
+            "TRANS",
+            "LOCATE"
+          ],
+          "force_semantique": 0.7,
+          "evidences": [
+            "contexte_narratif_relation_causale"
+          ],
+          "ambiguites": [
+            "interpretation_biaisee_par_relation_causale"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "TRANS",
+        "EVAL",
+        "LOCATE"
+      ],
+      "niveau_complexite": 3,
+      "patterns_cross_linguistiques": {}
+    },
+    "lenteur": {
+      "mot_source": "lenteur",
+      "langue": "fr",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "morpho_.*eur$_lenteur",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EVAL",
+            "EXIST"
+          ],
+          "force_semantique": 0.6,
+          "evidences": [
+            "pattern_morphologique_.*eur$"
+          ],
+          "ambiguites": [
+            "analyse_morpho_ambigue_.*eur$"
+          ]
+        },
+        {
+          "interpretation_id": "contextuel_relation_causale_lenteur",
+          "contexte": "relation_causale",
+          "dhatu_constituants": [
+            "EVAL",
+            "TRANS",
+            "LOCATE"
+          ],
+          "force_semantique": 0.7,
+          "evidences": [
+            "contexte_narratif_relation_causale"
+          ],
+          "ambiguites": [
+            "interpretation_biaisee_par_relation_causale"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EVAL"
+      ],
+      "niveau_complexite": 2,
+      "patterns_cross_linguistiques": {}
+    },
+    "the": {
+      "mot_source": "the",
+      "langue": "en",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_the",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "hare": {
+      "mot_source": "hare",
+      "langue": "en",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_hare",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "worked": {
+      "mot_source": "worked",
+      "langue": "en",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "verbo_nominal_worked",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "TRANS",
+            "ITER",
+            "EXIST"
+          ],
+          "force_semantique": 0.9,
+          "evidences": [
+            "pattern_verbo_nominal",
+            "contexte_narratif_general"
+          ],
+          "ambiguites": []
+        }
+      ],
+      "dhatu_principaux": [
+        "TRANS",
+        "ITER",
+        "EXIST"
+      ],
+      "niveau_complexite": 2,
+      "patterns_cross_linguistiques": {
+        "fr": "arbeitete",
+        "de": "arbeitete"
+      }
+    },
+    "hard": {
+      "mot_source": "hard",
+      "langue": "en",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_hard",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "collect": {
+      "mot_source": "collect",
+      "langue": "en",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_collect",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "food": {
+      "mot_source": "food",
+      "langue": "en",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_food",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "for": {
+      "mot_source": "for",
+      "langue": "en",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_for",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "winter": {
+      "mot_source": "winter",
+      "langue": "en",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_winter",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "die": {
+      "mot_source": "die",
+      "langue": "de",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_die",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "königin": {
+      "mot_source": "königin",
+      "langue": "de",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_königin",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "nähte": {
+      "mot_source": "nähte",
+      "langue": "de",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "verbo_nominal_nähte",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "TRANS",
+            "ITER",
+            "LOCATE"
+          ],
+          "force_semantique": 0.9,
+          "evidences": [
+            "pattern_verbo_nominal",
+            "contexte_narratif_general"
+          ],
+          "ambiguites": []
+        }
+      ],
+      "dhatu_principaux": [
+        "TRANS",
+        "ITER",
+        "LOCATE"
+      ],
+      "niveau_complexite": 2,
+      "patterns_cross_linguistiques": {
+        "fr": "cousait",
+        "en": "sewing"
+      }
+    },
+    "fenster": {
+      "mot_source": "fenster",
+      "langue": "de",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_fenster",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "während": {
+      "mot_source": "während",
+      "langue": "de",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_während",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "des": {
+      "mot_source": "des",
+      "langue": "de",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_des",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    },
+    "winters": {
+      "mot_source": "winters",
+      "langue": "de",
+      "interpretations_possibles": [
+        {
+          "interpretation_id": "generique_winters",
+          "contexte": "narratif_general",
+          "dhatu_constituants": [
+            "EXIST",
+            "TRANS"
+          ],
+          "force_semantique": 0.3,
+          "evidences": [
+            "analyse_generique"
+          ],
+          "ambiguites": [
+            "interpretation_incertaine",
+            "dhatu_non_confirmes"
+          ]
+        }
+      ],
+      "dhatu_principaux": [
+        "EXIST",
+        "TRANS"
+      ],
+      "niveau_complexite": 1,
+      "patterns_cross_linguistiques": {}
+    }
+  },
+  "statistiques": {
+    "total_molecules": 21,
+    "complexite_moyenne": 1.5714285714285714,
+    "dhatu_utilises": [
+      "TRANS",
+      "LOCATE",
+      "EXIST",
+      "EVAL",
+      "ITER"
+    ]
+  }
+}

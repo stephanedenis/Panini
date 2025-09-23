@@ -1,0 +1,146 @@
+{
+  "optimization_summary": {
+    "total_iterations": 10,
+    "final_fidelity": 0.275,
+    "convergence_achieved": false,
+    "total_dhatu_added": 30,
+    "total_molecules_created": 0
+  },
+  "iteration_details": [
+    {
+      "iteration": 1,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 2,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 3,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 4,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 5,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 6,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 7,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 8,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 9,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    },
+    {
+      "iteration": 10,
+      "fidelity_before": 0.125,
+      "fidelity_after": 0.275,
+      "improvement": 0.15000000000000002,
+      "new_dhatu": [
+        "PERF",
+        "PROG",
+        "ITER_PERF"
+      ],
+      "ambiguities_resolved": 0
+    }
+  ],
+  "final_dhatu_model": [
+    "DECIDE",
+    "GROUP",
+    "TRANS",
+    "COMM",
+    "PERF",
+    "EXIST",
+    "EVAL",
+    "SEQ",
+    "PROG",
+    "LOCATE",
+    "ITER_PERF",
+    "ITER"
+  ],
+  "discovered_molecules": []
+}

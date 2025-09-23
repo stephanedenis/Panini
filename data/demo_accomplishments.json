@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2025-09-20T22:03:26.615877",
+    "type": "optimization_completed",
+    "description": "Optimisation RX 480 #5 termin\u00e9e avec succ\u00e8s",
+    "age_minutes": 0,
+    "performance_gain": "10.0x"
+  },
+  {
+    "timestamp": "2025-09-20T21:48:26.615911",
+    "type": "optimization_completed",
+    "description": "Optimisation RX 480 #4 termin\u00e9e avec succ\u00e8s",
+    "age_minutes": 15,
+    "performance_gain": "12.1x"
+  },
+  {
+    "timestamp": "2025-09-20T21:33:26.615923",
+    "type": "optimization_completed",
+    "description": "Optimisation RX 480 #3 termin\u00e9e avec succ\u00e8s",
+    "age_minutes": 30,
+    "performance_gain": "14.2x"
+  },
+  {
+    "timestamp": "2025-09-20T21:18:26.615932",
+    "type": "optimization_completed",
+    "description": "Optimisation RX 480 #2 termin\u00e9e avec succ\u00e8s",
+    "age_minutes": 45,
+    "performance_gain": "16.3x"
+  },
+  {
+    "timestamp": "2025-09-20T21:03:26.615940",
+    "type": "optimization_completed",
+    "description": "Optimisation RX 480 #1 termin\u00e9e avec succ\u00e8s",
+    "age_minutes": 60,
+    "performance_gain": "18.4x"
+  }
+]

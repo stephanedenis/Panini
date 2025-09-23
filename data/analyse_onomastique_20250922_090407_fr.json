@@ -1,0 +1,169 @@
+{
+  "phrase_originale": "Marie et Jean visitent Berlin chaque été.",
+  "noms_detectes": [
+    "Jean",
+    "Berlin",
+    "Marie"
+  ],
+  "analyses_individuelles": [
+    {
+      "nom_original": "Jean",
+      "type_onomastique": "anthroponyme",
+      "racines_etymologiques": [
+        {
+          "racine": "jean",
+          "langue_origine": "indeterminee",
+          "sens_original": "à_determiner",
+          "evolution_semantique": [
+            "analyse_requise"
+          ],
+          "dhatu_correspondant": "EXIST",
+          "niveau_certitude": 0.3
+        }
+      ],
+      "langues_contributives": [
+        "indeterminee"
+      ],
+      "signification_anthroponymique": "Dieu fait grâce (hébreu)",
+      "origine_culturelle": "Hébraïque via grec/latin",
+      "tradition_nomenclature": "Tradition biblique",
+      "signification_toponymique": null,
+      "caracteristiques_geographiques": null,
+      "evolution_historique": null,
+      "classification_taxonomique": null,
+      "etymologie_scientifique": null,
+      "descripteurs_morphologiques": null,
+      "concepts_dhatu_equivalents": [
+        "EXIST"
+      ],
+      "representation_universelle": "EXIST [Jean_concept]",
+      "alternatives_non_empruntees": [
+        "INDIVIDU-EXIST"
+      ],
+      "timestamp_analyse": "2025-09-22T09:04:07.396365",
+      "sources_references": [
+        "Base_Etymologique_v1",
+        "Base_Onomastique_v1"
+      ],
+      "niveau_completude": 0.85
+    },
+    {
+      "nom_original": "Berlin",
+      "type_onomastique": "toponyme",
+      "racines_etymologiques": [
+        {
+          "racine": "berl",
+          "langue_origine": "indeterminee",
+          "sens_original": "à_determiner",
+          "evolution_semantique": [
+            "analyse_requise"
+          ],
+          "dhatu_correspondant": "EXIST",
+          "niveau_certitude": 0.3
+        }
+      ],
+      "langues_contributives": [
+        "indeterminee"
+      ],
+      "signification_anthroponymique": null,
+      "origine_culturelle": null,
+      "tradition_nomenclature": null,
+      "signification_toponymique": "Lieu dans les marécages",
+      "caracteristiques_geographiques": {
+        "type": "urbain",
+        "situation": "plaine",
+        "relief": "marécages"
+      },
+      "evolution_historique": [
+        "Village_slave",
+        "Margraviat",
+        "Capitale_prussienne",
+        "Capitale_allemande"
+      ],
+      "classification_taxonomique": null,
+      "etymologie_scientifique": null,
+      "descripteurs_morphologiques": null,
+      "concepts_dhatu_equivalents": [
+        "EXIST",
+        "SPACE"
+      ],
+      "representation_universelle": "EXIST + SPACE [Berlin_concept]",
+      "alternatives_non_empruntees": [
+        "LIEU-EXIST-SPACE"
+      ],
+      "timestamp_analyse": "2025-09-22T09:04:07.396365",
+      "sources_references": [
+        "Base_Etymologique_v1",
+        "Base_Onomastique_v1"
+      ],
+      "niveau_completude": 0.85
+    },
+    {
+      "nom_original": "Marie",
+      "type_onomastique": "anthroponyme",
+      "racines_etymologiques": [
+        {
+          "racine": "mari",
+          "langue_origine": "indeterminee",
+          "sens_original": "à_determiner",
+          "evolution_semantique": [
+            "analyse_requise"
+          ],
+          "dhatu_correspondant": "EXIST",
+          "niveau_certitude": 0.3
+        }
+      ],
+      "langues_contributives": [
+        "indeterminee"
+      ],
+      "signification_anthroponymique": "Bien-aimée, souveraine (hébreu/égyptien)",
+      "origine_culturelle": "Hébraïque/égyptienne",
+      "tradition_nomenclature": "Tradition religieuse",
+      "signification_toponymique": null,
+      "caracteristiques_geographiques": null,
+      "evolution_historique": null,
+      "classification_taxonomique": null,
+      "etymologie_scientifique": null,
+      "descripteurs_morphologiques": null,
+      "concepts_dhatu_equivalents": [
+        "EXIST"
+      ],
+      "representation_universelle": "EXIST [Marie_concept]",
+      "alternatives_non_empruntees": [
+        "INDIVIDU-EXIST"
+      ],
+      "timestamp_analyse": "2025-09-22T09:04:07.396365",
+      "sources_references": [
+        "Base_Etymologique_v1",
+        "Base_Onomastique_v1"
+      ],
+      "niveau_completude": 0.85
+    }
+  ],
+  "synthese_globale": {
+    "nombre_noms_analyses": 3,
+    "types_onomastiques": [
+      "toponyme",
+      "anthroponyme"
+    ],
+    "langues_etymologiques": [
+      "indeterminee"
+    ],
+    "dhatus_universels_detectes": [
+      "EXIST",
+      "SPACE"
+    ],
+    "niveau_diversite_linguistique": 1,
+    "niveau_complexite_semantique": 2
+  },
+  "recommandations_langue_nouvelle": [
+    "🚫 ÉVITER tout emprunt direct de noms propres existants",
+    "🧬 DÉCOMPOSER chaque nom jusqu'aux concepts dhātu universels",
+    "🏗️ CONSTRUIRE de nouveaux noms à partir des dhātu identifiés",
+    "📚 DOCUMENTER l'étymologie de chaque nom créé",
+    "🌍 ASSURER l'universalité conceptuelle par les dhātu",
+    "👤 Pour Jean: Utiliser EXIST [Jean_concept]",
+    "🗺️ Pour Berlin: Utiliser EXIST + SPACE [Berlin_concept]",
+    "👤 Pour Marie: Utiliser EXIST [Marie_concept]"
+  ]
+}

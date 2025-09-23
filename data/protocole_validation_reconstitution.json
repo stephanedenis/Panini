@@ -1,0 +1,218 @@
+{
+  "protocol": {
+    "methodology": {
+      "name": "Dhātu Reconstitution Fidelity Testing",
+      "description": "Test bidirectionnel de reconstitution sémantique",
+      "steps": [
+        "1. Extraction dhātu depuis texte source (langue A)",
+        "2. Reconstitution sémantique vers langue B",
+        "3. Mesure fidélité avec version authentique langue B",
+        "4. Test bidirectionnel (B→A) pour validation croisée",
+        "5. Analyse patterns échecs et optimisation modèle"
+      ]
+    },
+    "corpus_design": {
+      "size_target": {
+        "total_texts": 200,
+        "per_domain": 50,
+        "per_language": 40
+      },
+      "selection_criteria": [
+        "Textes parallèles disponibles (min 3 langues)",
+        "Domaine public confirmé",
+        "Longueur optimale (100-500 mots)",
+        "Complexité linguistique adaptée (niveau enfant)",
+        "Diversité culturelle (contes européens, africains, asiatiques)"
+      ],
+      "quality_control": [
+        "Validation manuelle traductions",
+        "Vérification authenticité sources",
+        "Normalisation format et encodage"
+      ]
+    },
+    "testing_framework": {
+      "test_types": {
+        "fidelity_preservation": {
+          "description": "Mesure préservation sens original",
+          "metrics": [
+            "semantic_similarity",
+            "bleu_score"
+          ],
+          "target_score": ">0.75"
+        },
+        "cross_linguistic_consistency": {
+          "description": "Cohérence dhātu entre langues",
+          "metrics": [
+            "dhatu_overlap_ratio",
+            "semantic_distance"
+          ],
+          "target_score": ">0.70"
+        },
+        "reconstruction_completeness": {
+          "description": "Complétude reconstruction",
+          "metrics": [
+            "coverage_ratio",
+            "missing_concepts"
+          ],
+          "target_score": ">0.80"
+        }
+      },
+      "validation_scenarios": {
+        "direct_translation": "FR→EN avec version EN authentique",
+        "triangular_validation": "FR→dhātu→EN→dhātu→DE comparé FR→dhātu→DE",
+        "cultural_adaptation": "Concepts culturels spécifiques",
+        "semantic_edge_cases": "Expressions idiomatiques, métaphores"
+      }
+    },
+    "success_metrics": {
+      "min_global_fidelity": 0.7,
+      "min_cross_linguistic": 0.65,
+      "max_reconstruction_gaps": 0.25,
+      "min_language_pairs": 0.6
+    },
+    "implementation_phases": {
+      "phase_1_pilot": {
+        "duration": "1-2 semaines",
+        "scope": "20 textes, 3 langues (FR/EN/DE)",
+        "deliverable": "Proof of concept + métriques baseline"
+      },
+      "phase_2_scaling": {
+        "duration": "3-4 semaines",
+        "scope": "100 textes, 5 langues",
+        "deliverable": "Validation statistiquement significative"
+      },
+      "phase_3_optimization": {
+        "duration": "2-3 semaines",
+        "scope": "Analyse échecs + amélioration modèle",
+        "deliverable": "Modèle dhātu optimisé v2.0"
+      }
+    }
+  },
+  "sample_cases": [
+    {
+      "domain": "fairy_tales",
+      "source": "Brothers Grimm - Cinderella",
+      "text_fr": "Il était une fois une jeune fille dont la mère était morte. Son père épousa une femme qui avait deux filles. La belle-mère et ses filles étaient très méchantes avec Cendrillon.",
+      "text_en": "Once upon a time there was a young girl whose mother had died. Her father married a woman who had two daughters. The stepmother and her daughters were very mean to Cinderella.",
+      "text_de": "Es war einmal ein junges Mädchen, dessen Mutter gestorben war. Ihr Vater heiratete eine Frau, die zwei Töchter hatte. Die Stiefmutter und ihre Töchter waren sehr gemein zu Aschenputtel.",
+      "expected_dhatu": [
+        "EXIST",
+        "TRANS",
+        "GROUP",
+        "EVAL"
+      ],
+      "test_scenarios": [
+        "FR→dhātu→EN vs authentic EN",
+        "EN→dhātu→DE vs authentic DE",
+        "Triangular: FR→EN→DE consistency"
+      ]
+    },
+    {
+      "domain": "fables",
+      "source": "Aesop - The Tortoise and the Hare",
+      "text_fr": "Un lièvre se moquait d'une tortue à cause de sa lenteur. La tortue lui proposa une course. Le lièvre accepta en riant.",
+      "text_en": "A hare mocked a tortoise because of its slowness. The tortoise proposed a race. The hare accepted while laughing.",
+      "text_de": "Ein Hase verspottete eine Schildkröte wegen ihrer Langsamkeit. Die Schildkröte schlug ein Rennen vor. Der Hase nahm lachend an.",
+      "expected_dhatu": [
+        "COMM",
+        "EVAL",
+        "DECIDE",
+        "ITER"
+      ],
+      "test_scenarios": [
+        "Cultural humor preservation",
+        "Action sequence fidelity",
+        "Character motivation consistency"
+      ]
+    }
+  ],
+  "roadmap": {
+    "immediate_actions": [
+      {
+        "task": "Collecter corpus pilote littérature jeunesse",
+        "duration": "3-5 jours",
+        "tools": [
+          "project_gutenberg_scraper.py",
+          "wikisource_extractor.py"
+        ],
+        "deliverable": "20 textes parallèles FR/EN/DE"
+      },
+      {
+        "task": "Implémenter reconstitution_analyzer.py",
+        "duration": "5-7 jours",
+        "dependencies": [
+          "optimal_dhatu_analyzer.py"
+        ],
+        "deliverable": "Script complet décomposition→reconstitution"
+      },
+      {
+        "task": "Développer métriques fidélité sémantique",
+        "duration": "3-4 jours",
+        "libraries": [
+          "sentence-transformers",
+          "nltk",
+          "scipy"
+        ],
+        "deliverable": "Suite métriques validation complète"
+      }
+    ],
+    "validation_pipeline": [
+      {
+        "stage": "Corpus Preparation",
+        "scripts": [
+          "corpus_collector.py",
+          "text_normalizer.py"
+        ],
+        "output": "corpus_children_literature.json"
+      },
+      {
+        "stage": "Dhātu Extraction",
+        "scripts": [
+          "optimal_dhatu_analyzer.py"
+        ],
+        "output": "dhatu_extractions.json"
+      },
+      {
+        "stage": "Cross-lingual Reconstitution",
+        "scripts": [
+          "reconstitution_engine.py"
+        ],
+        "output": "reconstructed_texts.json"
+      },
+      {
+        "stage": "Fidelity Assessment",
+        "scripts": [
+          "fidelity_evaluator.py"
+        ],
+        "output": "validation_results.json"
+      },
+      {
+        "stage": "Model Optimization",
+        "scripts": [
+          "model_optimizer.py"
+        ],
+        "output": "dhatu_model_v2.json"
+      }
+    ],
+    "success_criteria_detailed": {
+      "technical_thresholds": {
+        "min_global_fidelity": 0.7,
+        "min_cross_linguistic": 0.65,
+        "max_reconstruction_gaps": 0.25,
+        "min_language_pairs": 0.6
+      },
+      "research_validation": [
+        "Publication métriques dans journal spécialisé",
+        "Reproduction résultats par équipe indépendante",
+        "Validation sur corpus externe (non-litterature jeunesse)"
+      ],
+      "practical_applications": [
+        "Démonstrateur traduction automatique dhātu-basée",
+        "Système détection plagiat cross-linguistique",
+        "Outil analyse sémantique comparative"
+      ]
+    }
+  },
+  "generated_date": "2025-09-21",
+  "version": "1.0"
+}

@@ -1,0 +1,287 @@
+{
+  "implementation": "ASPECT dhātu Phase 2",
+  "statistiques": {
+    "nb_expressions": 11,
+    "nb_operateurs": 6,
+    "nb_compositions": 7,
+    "nb_patterns": 12,
+    "repartition_phases": {
+      "inchoatif": 3,
+      "progressif": 3,
+      "terminatif": 3,
+      "itératif": 1,
+      "habituel": 1
+    },
+    "repartition_telicite": {
+      "télique": 7,
+      "atélique": 4
+    },
+    "repartition_duree": {
+      "ponctuel": 6,
+      "duratif": 4,
+      "permanent": 1
+    }
+  },
+  "expressions_mappees": {
+    "commencer": {
+      "forme_surface": "commencer",
+      "decomposition": "ASPECT+·",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.INCHOATIF",
+      "operateur": "OperateurAspect.INCHOATIF",
+      "telicite": true,
+      "duree": "ponctuel",
+      "glose_semantique": "initiation d'action/processus",
+      "exemples_contexte": [
+        "Il commence à travailler",
+        "Elle commença son discours",
+        "Commencer par le commencement"
+      ],
+      "langue": "français"
+    },
+    "débuter": {
+      "forme_surface": "débuter",
+      "decomposition": "ASPECT+·",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.INCHOATIF",
+      "operateur": "OperateurAspect.INCHOATIF",
+      "telicite": true,
+      "duree": "ponctuel",
+      "glose_semantique": "initiation formelle d'activité",
+      "exemples_contexte": [
+        "La séance débute à 9h",
+        "Il débute sa carrière",
+        "Débuter un nouveau projet"
+      ],
+      "langue": "français"
+    },
+    "entamer": {
+      "forme_surface": "entamer",
+      "decomposition": "ASPECT+·",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.INCHOATIF",
+      "operateur": "OperateurAspect.INCHOATIF",
+      "telicite": true,
+      "duree": "ponctuel",
+      "glose_semantique": "initiation avec engagement",
+      "exemples_contexte": [
+        "Entamer une discussion",
+        "Il entame le pain",
+        "Entamer des négociations"
+      ],
+      "langue": "français"
+    },
+    "continuer": {
+      "forme_surface": "continuer",
+      "decomposition": "ASPECT++",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.PROGRESSIF",
+      "operateur": "OperateurAspect.PROGRESSIF",
+      "telicite": false,
+      "duree": "duratif",
+      "glose_semantique": "maintien/prolongation d'action",
+      "exemples_contexte": [
+        "Il continue son travail",
+        "Elle continue à sourire",
+        "Continuer malgré tout"
+      ],
+      "langue": "français"
+    },
+    "poursuivre": {
+      "forme_surface": "poursuivre",
+      "decomposition": "ASPECT++",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.PROGRESSIF",
+      "operateur": "OperateurAspect.PROGRESSIF",
+      "telicite": true,
+      "duree": "duratif",
+      "glose_semantique": "continuation orientée vers but",
+      "exemples_contexte": [
+        "Poursuivre ses études",
+        "Il poursuit son chemin",
+        "Poursuivre un objectif"
+      ],
+      "langue": "français"
+    },
+    "maintenir": {
+      "forme_surface": "maintenir",
+      "decomposition": "ASPECT++",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.PROGRESSIF",
+      "operateur": "OperateurAspect.PROGRESSIF",
+      "telicite": false,
+      "duree": "duratif",
+      "glose_semantique": "conservation d'état/action",
+      "exemples_contexte": [
+        "Maintenir la pression",
+        "Elle maintient son niveau",
+        "Maintenir l'équilibre"
+      ],
+      "langue": "français"
+    },
+    "finir": {
+      "forme_surface": "finir",
+      "decomposition": "ASPECT+++",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.TERMINATIF",
+      "operateur": "OperateurAspect.CULMINATIF",
+      "telicite": true,
+      "duree": "ponctuel",
+      "glose_semantique": "accomplissement/achèvement",
+      "exemples_contexte": [
+        "Il finit son travail",
+        "Elle finit par accepter",
+        "Finir en beauté"
+      ],
+      "langue": "français"
+    },
+    "achever": {
+      "forme_surface": "achever",
+      "decomposition": "ASPECT+++",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.TERMINATIF",
+      "operateur": "OperateurAspect.CULMINATIF",
+      "telicite": true,
+      "duree": "ponctuel",
+      "glose_semantique": "accomplissement complet/parfait",
+      "exemples_contexte": [
+        "Achever un projet",
+        "Il achève sa mission",
+        "Achever un rêve"
+      ],
+      "langue": "français"
+    },
+    "terminer": {
+      "forme_surface": "terminer",
+      "decomposition": "ASPECT+++",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.TERMINATIF",
+      "operateur": "OperateurAspect.CULMINATIF",
+      "telicite": true,
+      "duree": "ponctuel",
+      "glose_semantique": "clôture/finalisation d'action",
+      "exemples_contexte": [
+        "Terminer ses études",
+        "Elle termine sa phrase",
+        "Terminer sur une note positive"
+      ],
+      "langue": "français"
+    },
+    "répéter": {
+      "forme_surface": "répéter",
+      "decomposition": "ASPECT++",
+      "aspect_type": "AspectType.ACTIONNEL",
+      "phase": "PhaseAspectuelle.ITERATIF",
+      "operateur": "OperateurAspect.PROGRESSIF",
+      "telicite": false,
+      "duree": "duratif",
+      "glose_semantique": "réitération d'action",
+      "exemples_contexte": [
+        "Il répète la leçon",
+        "Elle répète ses erreurs",
+        "Répéter inlassablement"
+      ],
+      "langue": "français"
+    },
+    "être": {
+      "forme_surface": "être",
+      "decomposition": "ASPECT?",
+      "aspect_type": "AspectType.LEXICAL",
+      "phase": "PhaseAspectuelle.HABITUATIF",
+      "operateur": "OperateurAspect.NEUTRE",
+      "telicite": false,
+      "duree": "permanent",
+      "glose_semantique": "état non-aspectuel neutre",
+      "exemples_contexte": [
+        "Il est grand",
+        "Elle est médecin",
+        "Être ou ne pas être"
+      ],
+      "langue": "français"
+    }
+  },
+  "compositions_temporelles": {
+    "commencer_action": {
+      "decomposition": "ASPECT+· + ACTION+",
+      "glose": "initiation d'action spécifique",
+      "exemples": [
+        "commencer à travailler",
+        "débuter l'exercice",
+        "entamer la discussion"
+      ],
+      "telicite": true
+    },
+    "finir_action": {
+      "decomposition": "ASPECT+++ + ACTION+",
+      "glose": "accomplissement d'action spécifique",
+      "exemples": [
+        "finir de manger",
+        "achever le projet",
+        "terminer les devoirs"
+      ],
+      "telicite": true
+    },
+    "probablement_commencer": {
+      "decomposition": "MODAL+· + ASPECT+·",
+      "glose": "initiation probable/incertaine",
+      "exemples": [
+        "Il va probablement commencer",
+        "Elle pourrait débuter bientôt"
+      ],
+      "telicite": true
+    },
+    "certainement_finir": {
+      "decomposition": "MODAL+ + ASPECT+++",
+      "glose": "accomplissement certain",
+      "exemples": [
+        "Il va certainement finir",
+        "Elle terminera sûrement"
+      ],
+      "telicite": true
+    },
+    "bien_commencer": {
+      "decomposition": "ASPECT+· + EVAL+",
+      "glose": "initiation positive/réussie",
+      "exemples": [
+        "bien commencer la journée",
+        "débuter parfaitement"
+      ],
+      "telicite": true
+    },
+    "mal_finir": {
+      "decomposition": "ASPECT+++ + EVAL!",
+      "glose": "accomplissement négatif/raté",
+      "exemples": [
+        "mal finir l'histoire",
+        "terminer en catastrophe"
+      ],
+      "telicite": true
+    },
+    "commencer_peu": {
+      "decomposition": "ASPECT+· + QUANT+·",
+      "glose": "initiation avec quantité faible",
+      "exemples": [
+        "commencer peu à peu",
+        "débuter doucement"
+      ],
+      "telicite": true
+    }
+  },
+  "patterns_verbaux": {
+    "commencer [àde] (.+)": "ASPECT+· + ACTION",
+    "se mettre à (.+)": "ASPECT+· + ACTION",
+    "entamer (.+)": "ASPECT+· + ACTION",
+    "continuer [àde] (.+)": "ASPECT++ + ACTION",
+    "être en train de (.+)": "ASPECT++ + ACTION",
+    "aller en (.+)ant": "ASPECT++ + ACTION",
+    "finir [de] (.+)": "ASPECT+++ + ACTION",
+    "venir de (.+)": "ASPECT+++ + ACTION",
+    "achever [de] (.+)": "ASPECT+++ + ACTION",
+    "répéter (.+)": "ASPECT++ + ACTION",
+    "refaire (.+)": "ASPECT++ + ACTION",
+    "recommencer (.+)": "ASPECT+· + ACTION"
+  },
+  "validation": "Cohérence temporelle + télicité validées",
+  "score_priorite": 7.5,
+  "justification": "Aspect = structuration temporelle universelle (Comrie 1976)"
+}

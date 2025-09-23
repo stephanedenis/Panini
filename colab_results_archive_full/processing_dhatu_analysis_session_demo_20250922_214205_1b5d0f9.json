@@ -1,0 +1,16 @@
+{
+  "source_file": "colab_integration/results/demo_20250922_214205/dhatu_analysis_session_demo_20250922_214205.json",
+  "commit_hash": "1b5d0f9",
+  "processed_at": "2025-09-22T22:15:31.300892",
+  "data_size": 532,
+  "keys": [
+    "session_id",
+    "timestamp",
+    "source",
+    "gpu_info",
+    "corpus_stats",
+    "dhatu_analysis",
+    "performance_metrics"
+  ],
+  "status": "processed"
+}

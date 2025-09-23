@@ -1,0 +1,15 @@
+{
+  "source_file": "colab_results_archive/processing_processing_processing_processing_dhatu_analysis_session_demo_20250922_214205_43fe486_2fe1ad4_1282bcc_59d1e3c.json",
+  "commit_hash": "1b5d0f9",
+  "processed_at": "2025-09-22T22:15:30.883395",
+  "data_size": 338,
+  "keys": [
+    "source_file",
+    "commit_hash",
+    "processed_at",
+    "data_size",
+    "keys",
+    "status"
+  ],
+  "status": "processed"
+}

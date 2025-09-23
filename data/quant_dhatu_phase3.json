@@ -1,0 +1,394 @@
+{
+  "implementation": "QUANT dhātu Phase 3",
+  "statistiques": {
+    "nb_expressions": 14,
+    "nb_operateurs": 6,
+    "nb_compositions": 8,
+    "repartition_echelles": {
+      "nulle": 3,
+      "faible": 2,
+      "minimale": 1,
+      "moyenne": 3,
+      "élevée": 3,
+      "maximale": 1,
+      "infinie": 1
+    },
+    "repartition_types": {
+      "cardinale": 8,
+      "approximative": 5,
+      "comparative": 1
+    },
+    "repartition_precision": {
+      "exact": 5,
+      "vague": 4,
+      "approximatif": 5
+    },
+    "valeurs_numeriques": [
+      0.0,
+      0.0,
+      0.0,
+      0.2,
+      0.3,
+      0.1,
+      1.0,
+      1.0,
+      0.7,
+      0.8,
+      0.6,
+      0.95
+    ]
+  },
+  "expressions_mappees": {
+    "aucun": {
+      "forme_surface": "aucun",
+      "decomposition": "QUANT!",
+      "type_quantif": "TypeQuantification.CARDINALE",
+      "echelle": "EchelleQuantite.NULLE",
+      "operateur": "OperateurQuant.NEANT",
+      "valeur_approximative": 0.0,
+      "precision": "exact",
+      "portee": "globale",
+      "glose_semantique": "absence totale de quantité",
+      "exemples_contexte": [
+        "Aucun problème détecté",
+        "Il n'y a aucune solution",
+        "Aucun doute possible"
+      ],
+      "langue": "français"
+    },
+    "rien": {
+      "forme_surface": "rien",
+      "decomposition": "QUANT!",
+      "type_quantif": "TypeQuantification.CARDINALE",
+      "echelle": "EchelleQuantite.NULLE",
+      "operateur": "OperateurQuant.NEANT",
+      "valeur_approximative": 0.0,
+      "precision": "exact",
+      "portee": "globale",
+      "glose_semantique": "néant, absence complète",
+      "exemples_contexte": [
+        "Il ne reste rien",
+        "Rien à signaler",
+        "Partir de rien"
+      ],
+      "langue": "français"
+    },
+    "zéro": {
+      "forme_surface": "zéro",
+      "decomposition": "QUANT!",
+      "type_quantif": "TypeQuantification.CARDINALE",
+      "echelle": "EchelleQuantite.NULLE",
+      "operateur": "OperateurQuant.NEANT",
+      "valeur_approximative": 0.0,
+      "precision": "exact",
+      "portee": "locale",
+      "glose_semantique": "valeur numérique nulle",
+      "exemples_contexte": [
+        "Zéro erreur trouvée",
+        "Commencer à zéro",
+        "Zéro pointé"
+      ],
+      "langue": "français"
+    },
+    "peu": {
+      "forme_surface": "peu",
+      "decomposition": "QUANT+·",
+      "type_quantif": "TypeQuantification.APPROXIMATIVE",
+      "echelle": "EchelleQuantite.FAIBLE",
+      "operateur": "OperateurQuant.FAIBLE",
+      "valeur_approximative": 0.2,
+      "precision": "vague",
+      "portee": "globale",
+      "glose_semantique": "quantité réduite, insuffisante",
+      "exemples_contexte": [
+        "Il y en a peu",
+        "Peu de chances",
+        "Un peu fatigué"
+      ],
+      "langue": "français"
+    },
+    "quelque": {
+      "forme_surface": "quelque",
+      "decomposition": "QUANT+·",
+      "type_quantif": "TypeQuantification.APPROXIMATIVE",
+      "echelle": "EchelleQuantite.FAIBLE",
+      "operateur": "OperateurQuant.FAIBLE",
+      "valeur_approximative": 0.3,
+      "precision": "approximatif",
+      "portee": "locale",
+      "glose_semantique": "quantité indéterminée petite",
+      "exemples_contexte": [
+        "Quelques exemples",
+        "Dans quelque temps",
+        "Quelque part"
+      ],
+      "langue": "français"
+    },
+    "rare": {
+      "forme_surface": "rare",
+      "decomposition": "QUANT+·",
+      "type_quantif": "TypeQuantification.COMPARATIVE",
+      "echelle": "EchelleQuantite.MINIMALE",
+      "operateur": "OperateurQuant.FAIBLE",
+      "valeur_approximative": 0.1,
+      "precision": "approximatif",
+      "portee": "globale",
+      "glose_semantique": "occurrence peu fréquente",
+      "exemples_contexte": [
+        "C'est assez rare",
+        "Un événement rare",
+        "De rares exceptions"
+      ],
+      "langue": "français"
+    },
+    "un": {
+      "forme_surface": "un",
+      "decomposition": "QUANT+",
+      "type_quantif": "TypeQuantification.CARDINALE",
+      "echelle": "EchelleQuantite.MOYENNE",
+      "operateur": "OperateurQuant.UNITE",
+      "valeur_approximative": 1.0,
+      "precision": "exact",
+      "portee": "locale",
+      "glose_semantique": "unité cardinale exacte",
+      "exemples_contexte": [
+        "Un seul problème",
+        "Une solution unique",
+        "Un à la fois"
+      ],
+      "langue": "français"
+    },
+    "unique": {
+      "forme_surface": "unique",
+      "decomposition": "QUANT+",
+      "type_quantif": "TypeQuantification.CARDINALE",
+      "echelle": "EchelleQuantite.MOYENNE",
+      "operateur": "OperateurQuant.UNITE",
+      "valeur_approximative": 1.0,
+      "precision": "exact",
+      "portee": "globale",
+      "glose_semantique": "singularité absolue",
+      "exemples_contexte": [
+        "Solution unique",
+        "Exemplaire unique",
+        "Chance unique"
+      ],
+      "langue": "français"
+    },
+    "beaucoup": {
+      "forme_surface": "beaucoup",
+      "decomposition": "QUANT++",
+      "type_quantif": "TypeQuantification.APPROXIMATIVE",
+      "echelle": "EchelleQuantite.ELEVEE",
+      "operateur": "OperateurQuant.MULTIPLE",
+      "valeur_approximative": 0.7,
+      "precision": "vague",
+      "portee": "globale",
+      "glose_semantique": "quantité importante, abondante",
+      "exemples_contexte": [
+        "Beaucoup de travail",
+        "Il y en a beaucoup",
+        "Beaucoup mieux"
+      ],
+      "langue": "français"
+    },
+    "nombreux": {
+      "forme_surface": "nombreux",
+      "decomposition": "QUANT++",
+      "type_quantif": "TypeQuantification.CARDINALE",
+      "echelle": "EchelleQuantite.ELEVEE",
+      "operateur": "OperateurQuant.MULTIPLE",
+      "valeur_approximative": 0.8,
+      "precision": "approximatif",
+      "portee": "globale",
+      "glose_semantique": "multiplicité cardinale élevée",
+      "exemples_contexte": [
+        "Nombreux participants",
+        "De nombreuses fois",
+        "Très nombreux"
+      ],
+      "langue": "français"
+    },
+    "plusieurs": {
+      "forme_surface": "plusieurs",
+      "decomposition": "QUANT++",
+      "type_quantif": "TypeQuantification.CARDINALE",
+      "echelle": "EchelleQuantite.ELEVEE",
+      "operateur": "OperateurQuant.MULTIPLE",
+      "valeur_approximative": 0.6,
+      "precision": "approximatif",
+      "portee": "locale",
+      "glose_semantique": "pluralité indéterminée",
+      "exemples_contexte": [
+        "Plusieurs solutions",
+        "À plusieurs reprises",
+        "Plusieurs fois"
+      ],
+      "langue": "français"
+    },
+    "énormément": {
+      "forme_surface": "énormément",
+      "decomposition": "QUANT+++",
+      "type_quantif": "TypeQuantification.APPROXIMATIVE",
+      "echelle": "EchelleQuantite.MAXIMALE",
+      "operateur": "OperateurQuant.EXTREME",
+      "valeur_approximative": 0.95,
+      "precision": "vague",
+      "portee": "globale",
+      "glose_semantique": "quantité excessive, démesurée",
+      "exemples_contexte": [
+        "Énormément de succès",
+        "Il travaille énormément",
+        "Énormément mieux"
+      ],
+      "langue": "français"
+    },
+    "innombrable": {
+      "forme_surface": "innombrable",
+      "decomposition": "QUANT+++",
+      "type_quantif": "TypeQuantification.CARDINALE",
+      "echelle": "EchelleQuantite.INFINIE",
+      "operateur": "OperateurQuant.EXTREME",
+      "valeur_approximative": Infinity,
+      "precision": "vague",
+      "portee": "globale",
+      "glose_semantique": "quantité non-dénombrable",
+      "exemples_contexte": [
+        "Innombrables étoiles",
+        "Foule innombrable",
+        "Détails innombrables"
+      ],
+      "langue": "français"
+    },
+    "environ": {
+      "forme_surface": "environ",
+      "decomposition": "QUANT?",
+      "type_quantif": "TypeQuantification.APPROXIMATIVE",
+      "echelle": "EchelleQuantite.MOYENNE",
+      "operateur": "OperateurQuant.INDEFINI",
+      "valeur_approximative": null,
+      "precision": "approximatif",
+      "portee": "locale",
+      "glose_semantique": "approximation quantitative",
+      "exemples_contexte": [
+        "Environ dix personnes",
+        "Vers environ midi",
+        "Environ la moitié"
+      ],
+      "langue": "français"
+    }
+  },
+  "compositions_graduees": {
+    "trop_peu": {
+      "decomposition": "QUANT+· + EVAL!",
+      "glose": "quantité insuffisante négativement évaluée",
+      "exemples": [
+        "Il y en a trop peu",
+        "Beaucoup trop peu",
+        "Bien trop peu"
+      ],
+      "echelle_resultat": "EchelleQuantite.FAIBLE"
+    },
+    "suffisamment": {
+      "decomposition": "QUANT+ + EVAL+",
+      "glose": "quantité adéquate positivement évaluée",
+      "exemples": [
+        "Suffisamment de preuves",
+        "Assez suffisant",
+        "Plus que suffisant"
+      ],
+      "echelle_resultat": "EchelleQuantite.MOYENNE"
+    },
+    "beaucoup_trop": {
+      "decomposition": "QUANT++ + EVAL!",
+      "glose": "quantité excessive négativement évaluée",
+      "exemples": [
+        "Beaucoup trop cher",
+        "Bien trop nombreux",
+        "Énormément trop"
+      ],
+      "echelle_resultat": "EchelleQuantite.ELEVEE"
+    },
+    "probablement_peu": {
+      "decomposition": "MODAL+· + QUANT+·",
+      "glose": "quantité faible avec probabilité",
+      "exemples": [
+        "Probablement peu nombreux",
+        "Sûrement pas beaucoup"
+      ],
+      "echelle_resultat": "EchelleQuantite.FAIBLE"
+    },
+    "certainement_beaucoup": {
+      "decomposition": "MODAL+ + QUANT++",
+      "glose": "quantité élevée avec certitude",
+      "exemples": [
+        "Certainement beaucoup",
+        "Sûrement nombreux"
+      ],
+      "echelle_resultat": "EchelleQuantite.ELEVEE"
+    },
+    "de_plus_en_plus": {
+      "decomposition": "QUANT++ + ASPECT++",
+      "glose": "augmentation progressive de quantité",
+      "exemples": [
+        "De plus en plus nombreux",
+        "Toujours plus",
+        "Sans cesse davantage"
+      ],
+      "echelle_resultat": "EchelleQuantite.ELEVEE"
+    },
+    "de_moins_en_moins": {
+      "decomposition": "QUANT+· + ASPECT++",
+      "glose": "diminution progressive de quantité",
+      "exemples": [
+        "De moins en moins",
+        "Toujours moins",
+        "Sans cesse moins"
+      ],
+      "echelle_resultat": "EchelleQuantite.FAIBLE"
+    },
+    "multiplier": {
+      "decomposition": "QUANT++ + ACTION+",
+      "glose": "action d'augmentation quantitative",
+      "exemples": [
+        "Multiplier les efforts",
+        "Multiplier par deux",
+        "Se multiplier"
+      ],
+      "echelle_resultat": "EchelleQuantite.ELEVEE"
+    }
+  },
+  "echelle_floue": {
+    "nulle": [
+      0.0,
+      0.0
+    ],
+    "minimale": [
+      0.0,
+      0.15
+    ],
+    "faible": [
+      0.1,
+      0.35
+    ],
+    "moyenne": [
+      0.3,
+      0.7
+    ],
+    "élevée": [
+      0.65,
+      0.9
+    ],
+    "maximale": [
+      0.85,
+      1.0
+    ],
+    "infinie": [
+      1.0,
+      Infinity
+    ]
+  },
+  "validation": "Logique floue + cohérence quantitative validées",
+  "score_priorite": 7.1,
+  "justification": "Quantité = cognition numérique universelle (Dehaene 1997)"
+}

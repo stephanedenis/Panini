@@ -1,0 +1,499 @@
+{
+  "phrase_originale": "Dr. Smith's cat—what a story!",
+  "langue": "en",
+  "elements": [
+    {
+      "id": "91df9379",
+      "contenu": "Dr",
+      "type_element": "mot_majuscule",
+      "position_absolue": 0,
+      "position_relative": 0,
+      "contexte_gauche": "",
+      "contexte_droit": ". Smith",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "debut_phrase_ou_nom_propre",
+      "niveau_certitude": 0.6,
+      "etiquettes_temporaires": [
+        "INCERTAIN"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "Dr",
+          "position_phrase": "debut",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "0dd0f5a2",
+      "contenu": ".",
+      "type_element": "ponctuation",
+      "position_absolue": 2,
+      "position_relative": 1,
+      "contexte_gauche": "Dr",
+      "contexte_droit": " Smith'",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "ponctuation_finale",
+      "niveau_certitude": 1.0,
+      "etiquettes_temporaires": [],
+      "variables_inconnues": {
+        "choix_ponctuation_finale": {
+          "type_choisi": ".",
+          "alternatives_possibles": [
+            ".",
+            "!",
+            "?"
+          ],
+          "intention_locuteur_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "dfcefd44",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 3,
+      "position_relative": 2,
+      "contexte_gauche": "Dr.",
+      "contexte_droit": "Smith's",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "7f7e742a",
+      "contenu": "Smith",
+      "type_element": "mot_majuscule",
+      "position_absolue": 4,
+      "position_relative": 3,
+      "contexte_gauche": "Dr. ",
+      "contexte_droit": "'s ",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "debut_phrase_ou_nom_propre",
+      "niveau_certitude": 0.6,
+      "etiquettes_temporaires": [
+        "INCERTAIN"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "Smith",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "da430770",
+      "contenu": "'",
+      "type_element": "ponctuation",
+      "position_absolue": 9,
+      "position_relative": 4,
+      "contexte_gauche": ". Smith",
+      "contexte_droit": "s cat",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {
+        "contraction_apostrophe": {
+          "forme_contractee": "'",
+          "forme_complete_possible": "à_determiner",
+          "registre_langue": "à_analyser"
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "3758ad78",
+      "contenu": "s",
+      "type_element": "mot_minuscule",
+      "position_absolue": 10,
+      "position_relative": 5,
+      "contexte_gauche": " Smith'",
+      "contexte_droit": " cat—",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "s",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "60c357a2",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 11,
+      "position_relative": 6,
+      "contexte_gauche": "Smith's",
+      "contexte_droit": "cat—what",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "918bb564",
+      "contenu": "cat",
+      "type_element": "mot_minuscule",
+      "position_absolue": 12,
+      "position_relative": 7,
+      "contexte_gauche": "'s ",
+      "contexte_droit": "—what ",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "cat",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "e3520a2b",
+      "contenu": "—",
+      "type_element": "element_special",
+      "position_absolue": 15,
+      "position_relative": 8,
+      "contexte_gauche": "s cat",
+      "contexte_droit": "what a",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "ELEMENT_SPECIAL_NON_CATEGORISE",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "5b6e5ad4",
+      "contenu": "what",
+      "type_element": "mot_minuscule",
+      "position_absolue": 16,
+      "position_relative": 9,
+      "contexte_gauche": " cat—",
+      "contexte_droit": " a ",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "what",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "a3990516",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 20,
+      "position_relative": 10,
+      "contexte_gauche": "cat—what",
+      "contexte_droit": "a story",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "de044d9b",
+      "contenu": "a",
+      "type_element": "mot_minuscule",
+      "position_absolue": 21,
+      "position_relative": 11,
+      "contexte_gauche": "—what ",
+      "contexte_droit": " story!",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "article",
+      "niveau_certitude": 0.9,
+      "etiquettes_temporaires": [
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "a",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "7bf053bd",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 22,
+      "position_relative": 12,
+      "contexte_gauche": "what a",
+      "contexte_droit": "story!",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "983e3b65",
+      "contenu": "story",
+      "type_element": "mot_minuscule",
+      "position_absolue": 23,
+      "position_relative": 13,
+      "contexte_gauche": " a ",
+      "contexte_droit": "!",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "story",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "7b9c969f",
+      "contenu": "!",
+      "type_element": "ponctuation",
+      "position_absolue": 28,
+      "position_relative": 14,
+      "contexte_gauche": "a story",
+      "contexte_droit": "",
+      "langue_detectee": "en",
+      "probable_fonction_grammaticale": "ponctuation_finale",
+      "niveau_certitude": 1.0,
+      "etiquettes_temporaires": [],
+      "variables_inconnues": {
+        "choix_ponctuation_finale": {
+          "type_choisi": "!",
+          "alternatives_possibles": [
+            ".",
+            "!",
+            "?"
+          ],
+          "intention_locuteur_inconnue": true
+        }
+      },
+      "locuteur": "narrateur_moderne",
+      "contexte_situationnel": "anecdote_informelle",
+      "moment_traitement": "2025-09-22T08:53:36.987096",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    }
+  ],
+  "structure_syntaxique": {
+    "nombre_elements_total": 15,
+    "nombre_mots": 7,
+    "nombre_ponctuation": 3,
+    "nombre_espaces": 4,
+    "elements_majuscules": [
+      "Dr",
+      "Smith"
+    ],
+    "structure_ponctuation": [
+      ".",
+      "'",
+      "!"
+    ],
+    "pattern_syntaxique": "MP_MPM_MM_M_MP"
+  },
+  "elements_non_compris": [
+    "Dr (certitude: 0.6)",
+    "  (certitude: 0.5)",
+    "Smith (certitude: 0.6)",
+    "' (certitude: 0.5)",
+    "s (certitude: 0.5)",
+    "  (certitude: 0.5)",
+    "cat (certitude: 0.5)",
+    "— (certitude: 0.5)",
+    "what (certitude: 0.5)",
+    "  (certitude: 0.5)",
+    "  (certitude: 0.5)",
+    "story (certitude: 0.5)"
+  ],
+  "hypotheses_semantiques": [
+    {
+      "type": "intention_communicative",
+      "hypothese": "Intention exclamative/emphase",
+      "niveau_confiance": 0.8,
+      "elements_support": [
+        "!"
+      ]
+    },
+    {
+      "type": "registre_langue",
+      "hypothese": "Registre formel possible (plusieurs majuscules)",
+      "niveau_confiance": 0.6,
+      "elements_support": [
+        "Dr",
+        "Smith"
+      ]
+    }
+  ],
+  "timestamp_analyse": "2025-09-22T08:53:36.987096",
+  "version_analyseur": "v7.1-Enhanced"
+}

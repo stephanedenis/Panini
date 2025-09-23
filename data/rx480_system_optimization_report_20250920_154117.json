@@ -1,0 +1,4595 @@
+{
+  "averages": {
+    "gpu": 0.0,
+    "vram": 0.0,
+    "cpu": 15.30909090909091,
+    "memory": 11.927272727272726
+  },
+  "potential": {
+    "gpu": 100.0,
+    "cpu": 84.69090909090909,
+    "memory": 88.07272727272728,
+    "total": 90.92121212121212
+  },
+  "history": [
+    {
+      "timestamp": "2025-09-20T15:38:17.922668",
+      "gpu": {
+        "timestamp": "2025-09-20T15:38:14.558387",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:38:17.563659",
+        "cpu": {
+          "percent_total": 32.7,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            30.0,
+            100.0,
+            18.2,
+            10.0,
+            30.0,
+            0.0,
+            100.0,
+            27.3,
+            10.0,
+            27.3,
+            20.0,
+            11.1,
+            100.0,
+            10.0,
+            10.0
+          ],
+          "frequency": {
+            "current_mhz": 2395.0736250000004,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 3.22021484375,
+            "5min": 3.21826171875,
+            "15min": 3.0146484375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 3,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 13,
+            "efficiency_percent": 18.75
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.16,
+          "used_gb": 7.59,
+          "free_gb": 48.37,
+          "percent_used": 12.1,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.59,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.79,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 12.091509645186198,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.54239229674344
+          },
+          "io": {
+            "read_count": 1749172,
+            "write_count": 2611451,
+            "read_bytes": 42272407552,
+            "write_bytes": 261536658432
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 570,
+          "significant_count": 4,
+          "top_cpu_users": [
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.119486846439901
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.2403962892248221
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 2.031368611120787
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.448967965654399
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 2.031368611120787
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.448967965654399
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.2403962892248221
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.119486846439901
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 18.8% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 12.1% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 18.75,
+          "memory_efficiency": 18.15,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:38:26.241015",
+      "gpu": {
+        "timestamp": "2025-09-20T15:38:22.922950",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:38:25.928736",
+        "cpu": {
+          "percent_total": 10.6,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            10.0,
+            0.0,
+            0.0,
+            18.2,
+            9.1,
+            9.1,
+            0.0,
+            10.0,
+            0.0,
+            10.0,
+            100.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2319.9869375,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 3.259765625,
+            "5min": 3.2275390625,
+            "15min": 3.01953125
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.16,
+          "used_gb": 7.59,
+          "free_gb": 48.37,
+          "percent_used": 12.1,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.57,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.79,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 12.090111426480354,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542399765689495
+          },
+          "io": {
+            "read_count": 1749180,
+            "write_count": 2611877,
+            "read_bytes": 42272448512,
+            "write_bytes": 261543347200
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 570,
+          "significant_count": 10,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 100.8,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 264603,
+              "name": "python",
+              "cpu_percent": 35.1,
+              "memory_percent": 0.35785887973136693
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 27.7,
+              "memory_percent": 1.261229747941898
+            },
+            {
+              "pid": 4814,
+              "name": "msedge",
+              "cpu_percent": 23.0,
+              "memory_percent": 0.1507705309723377
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.8,
+              "memory_percent": 0.17374995144229605
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 4.8,
+              "memory_percent": 2.041739746391091
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 2.8,
+              "memory_percent": 1.4487430348191108
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 27.7,
+              "memory_percent": 1.261229747941898
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.5,
+              "memory_percent": 1.1204959955928147
+            },
+            {
+              "pid": 264603,
+              "name": "python",
+              "cpu_percent": 35.1,
+              "memory_percent": 0.35785887973136693
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 12.1% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 18.15,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:38:34.552869",
+      "gpu": {
+        "timestamp": "2025-09-20T15:38:31.241289",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:38:34.246563",
+        "cpu": {
+          "percent_total": 10.0,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            16.7,
+            0.0,
+            100.0,
+            0.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            9.1,
+            9.1,
+            10.0,
+            10.0,
+            10.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2211.854125,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 3.3994140625,
+            "5min": 3.25732421875,
+            "15min": 3.0302734375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 54.78,
+          "used_gb": 7.97,
+          "free_gb": 47.98,
+          "percent_used": 12.7,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.79,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 12.7086408274634,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542399765689495
+          },
+          "io": {
+            "read_count": 1749181,
+            "write_count": 2612249,
+            "read_bytes": 42272452608,
+            "write_bytes": 261614789632
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 571,
+          "significant_count": 9,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.3,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 88.6,
+              "memory_percent": 1.6434115539431866
+            },
+            {
+              "pid": 4814,
+              "name": "msedge",
+              "cpu_percent": 24.3,
+              "memory_percent": 0.15110488761938737
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 13.0,
+              "memory_percent": 2.047022581414476
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 10.1,
+              "memory_percent": 0.17362836720700525
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 13.0,
+              "memory_percent": 2.047022581414476
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 88.6,
+              "memory_percent": 1.6434115539431866
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.4488403022073435
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 5.2,
+              "memory_percent": 1.227453647378118
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 10.1,
+              "memory_percent": 0.17362836720700525
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 12.7% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 19.049999999999997,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:38:42.869811",
+      "gpu": {
+        "timestamp": "2025-09-20T15:38:39.553124",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:38:42.558649",
+        "cpu": {
+          "percent_total": 11.3,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            11.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            10.0,
+            0.0,
+            10.0,
+            9.1,
+            0.0,
+            10.0,
+            9.1,
+            0.0,
+            100.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2212.444375,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.12646484375,
+            "5min": 3.4150390625,
+            "15min": 3.083984375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.2,
+          "used_gb": 7.55,
+          "free_gb": 48.4,
+          "percent_used": 12.0,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.79,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 12.039368245881745,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542399765689495
+          },
+          "io": {
+            "read_count": 1749181,
+            "write_count": 2612281,
+            "read_bytes": 42272452608,
+            "write_bytes": 261615330304
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 567,
+          "significant_count": 9,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.1,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 53.1,
+              "memory_percent": 1.0311376618658525
+            },
+            {
+              "pid": 4814,
+              "name": "msedge",
+              "cpu_percent": 22.4,
+              "memory_percent": 0.15123863027820722
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.5,
+              "memory_percent": 0.1736405256305343
+            },
+            {
+              "pid": 1903,
+              "name": "Xorg.bin",
+              "cpu_percent": 6.6,
+              "memory_percent": 0.0780327622096257
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 1.8,
+              "memory_percent": 2.0458918480262716
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4488403022073435
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.2256177254252272
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 53.1,
+              "memory_percent": 1.0311376618658525
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.5,
+              "memory_percent": 0.1736405256305343
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 12.0% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 18.0,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:38:51.189914",
+      "gpu": {
+        "timestamp": "2025-09-20T15:38:47.870086",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:38:50.875601",
+        "cpu": {
+          "percent_total": 13.7,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            18.2,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            18.2,
+            0.0,
+            10.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            18.2,
+            0.0,
+            100.0,
+            10.0
+          ],
+          "frequency": {
+            "current_mhz": 2319.8016249999996,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 3.953125,
+            "5min": 3.40087890625,
+            "15min": 3.0830078125
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.21,
+          "used_gb": 7.54,
+          "free_gb": 48.42,
+          "percent_used": 12.0,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.79,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 12.020401105176381,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542399765689495
+          },
+          "io": {
+            "read_count": 1749183,
+            "write_count": 2612375,
+            "read_bytes": 42272460800,
+            "write_bytes": 261616104448
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 567,
+          "significant_count": 8,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 100.8,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 4814,
+              "name": "msedge",
+              "cpu_percent": 21.2,
+              "memory_percent": 0.1530927898663917
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.0,
+              "memory_percent": 0.17436395183051448
+            },
+            {
+              "pid": 1903,
+              "name": "Xorg.bin",
+              "cpu_percent": 6.9,
+              "memory_percent": 0.07802060378609661
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 6.3,
+              "memory_percent": 1.0326696232305164
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.8,
+              "memory_percent": 2.022742209626906
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4488403022073435
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.4,
+              "memory_percent": 1.225411032225233
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 6.3,
+              "memory_percent": 1.0326696232305164
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.0,
+              "memory_percent": 0.17436395183051448
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 12.0% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 18.0,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:38:59.503145",
+      "gpu": {
+        "timestamp": "2025-09-20T15:38:56.190165",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:38:59.195660",
+        "cpu": {
+          "percent_total": 8.1,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            10.0,
+            10.0,
+            0.0,
+            10.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2095.450375,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 3.95703125,
+            "5min": 3.4111328125,
+            "15min": 3.08837890625
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.29,
+          "used_gb": 7.46,
+          "free_gb": 48.49,
+          "percent_used": 11.9,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.59,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.77,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.891959519015197,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542439307168614
+          },
+          "io": {
+            "read_count": 1749302,
+            "write_count": 2613099,
+            "read_bytes": 42273759232,
+            "write_bytes": 261694522368
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 567,
+          "significant_count": 10,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.3,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 66.9,
+              "memory_percent": 1.0539833396769909
+            },
+            {
+              "pid": 4449,
+              "name": "msedge",
+              "cpu_percent": 11.5,
+              "memory_percent": 0.4298975391411569
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.6,
+              "memory_percent": 0.17500834827755565
+            },
+            {
+              "pid": 1903,
+              "name": "Xorg.bin",
+              "cpu_percent": 7.3,
+              "memory_percent": 0.07802060378609661
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.5,
+              "memory_percent": 1.9106962575946833
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4488403022073435
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 7.1,
+              "memory_percent": 1.1224413433574671
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 66.9,
+              "memory_percent": 1.0539833396769909
+            },
+            {
+              "pid": 4449,
+              "name": "msedge",
+              "cpu_percent": 11.5,
+              "memory_percent": 0.4298975391411569
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.9% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.85,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:39:07.810163",
+      "gpu": {
+        "timestamp": "2025-09-20T15:39:04.503393",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:39:07.508864",
+        "cpu": {
+          "percent_total": 8.1,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            10.0,
+            0.0,
+            0.0,
+            0.0,
+            10.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2314.2835625,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.45068359375,
+            "5min": 3.53076171875,
+            "15min": 3.130859375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.4,
+          "used_gb": 7.35,
+          "free_gb": 48.61,
+          "percent_used": 11.7,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.77,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.706567877043808,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542439307168614
+          },
+          "io": {
+            "read_count": 1749304,
+            "write_count": 2613259,
+            "read_bytes": 42273767424,
+            "write_bytes": 261696881664
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 567,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.2,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 49.1,
+              "memory_percent": 1.0236541521837046
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.4,
+              "memory_percent": 0.17359797114818254
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.2,
+              "memory_percent": 1.9106658615358607
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.1225203731104063
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.2,
+              "memory_percent": 1.9106658615358607
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4488403022073435
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.1225203731104063
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 49.1,
+              "memory_percent": 1.0236541521837046
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.4,
+              "memory_percent": 0.17359797114818254
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.7% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.549999999999997,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:39:16.118186",
+      "gpu": {
+        "timestamp": "2025-09-20T15:39:12.810433",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:39:15.816074",
+        "cpu": {
+          "percent_total": 6.9,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            10.0,
+            10.0,
+            10.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2208.337375,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.2275390625,
+            "5min": 3.5126953125,
+            "15min": 3.12890625
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.42,
+          "used_gb": 7.33,
+          "free_gb": 48.62,
+          "percent_used": 11.7,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.77,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.681673504868021,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542439307168614
+          },
+          "io": {
+            "read_count": 1749304,
+            "write_count": 2613260,
+            "read_bytes": 42273767424,
+            "write_bytes": 261696885760
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 558,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 100.7,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.1,
+              "memory_percent": 0.17368915932465062
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 4.9,
+              "memory_percent": 1.0250098164071968
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.122629798922168
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.9106840991711542
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.9106840991711542
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4488403022073435
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.122629798922168
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 4.9,
+              "memory_percent": 1.0250098164071968
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.1,
+              "memory_percent": 0.17368915932465062
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.7% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.549999999999997,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:39:24.425814",
+      "gpu": {
+        "timestamp": "2025-09-20T15:39:21.118432",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:39:24.124016",
+        "cpu": {
+          "percent_total": 8.1,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            10.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            9.1
+          ],
+          "frequency": {
+            "current_mhz": 2138.0805625,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.12890625,
+            "5min": 3.50390625,
+            "15min": 3.1279296875
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.41,
+          "used_gb": 7.33,
+          "free_gb": 48.62,
+          "percent_used": 11.7,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.77,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.689059747161936,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542468304253298
+          },
+          "io": {
+            "read_count": 1749304,
+            "write_count": 2613898,
+            "read_bytes": 42273767424,
+            "write_bytes": 261707658240
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 557,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.3,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.3,
+              "memory_percent": 0.17342775321877546
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.8,
+              "memory_percent": 1.0270220355012591
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.6,
+              "memory_percent": 1.9111765153240818
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.1227149078868714
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.6,
+              "memory_percent": 1.9111765153240818
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4488403022073435
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.1227149078868714
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.8,
+              "memory_percent": 1.0270220355012591
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.3,
+              "memory_percent": 0.17342775321877546
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.7% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.549999999999997,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:39:32.745692",
+      "gpu": {
+        "timestamp": "2025-09-20T15:39:29.426075",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:39:32.432618",
+        "cpu": {
+          "percent_total": 58.1,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            10.0,
+            10.0,
+            10.0,
+            100.0,
+            10.0,
+            0.0,
+            30.0,
+            10.0,
+            83.3,
+            11.1,
+            20.0,
+            10.0,
+            11.1,
+            33.3,
+            20.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2394.669,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.03466796875,
+            "5min": 3.50390625,
+            "15min": 3.1318359375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 2,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 14,
+            "efficiency_percent": 12.5
+          },
+          "status": "medium"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 54.96,
+          "used_gb": 7.79,
+          "free_gb": 48.16,
+          "percent_used": 12.4,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.64,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.77,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 12.411020857106852,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542468304253298
+          },
+          "io": {
+            "read_count": 1749308,
+            "write_count": 2613994,
+            "read_bytes": 42273783808,
+            "write_bytes": 261708620800
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 559,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 100.6,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 40.5,
+              "memory_percent": 1.4735097435478437
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.7,
+              "memory_percent": 0.17343383243054
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 1.7,
+              "memory_percent": 1.2117206473314905
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.9108178418299742
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.9108178418299742
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 40.5,
+              "memory_percent": 1.4735097435478437
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4487308763955817
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 1.7,
+              "memory_percent": 1.2117206473314905
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.7,
+              "memory_percent": 0.17343383243054
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 12.5% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 12.4% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 12.5,
+          "memory_efficiency": 18.6,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:39:41.059740",
+      "gpu": {
+        "timestamp": "2025-09-20T15:39:37.746016",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:39:40.750650",
+        "cpu": {
+          "percent_total": 58.6,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            10.0,
+            40.0,
+            80.0,
+            100.0,
+            100.0,
+            88.9,
+            45.5,
+            0.0,
+            11.1,
+            70.0,
+            11.1,
+            66.7,
+            80.0,
+            10.0,
+            10.0,
+            70.0
+          ],
+          "frequency": {
+            "current_mhz": 2397.5895,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.18359375,
+            "5min": 3.5537109375,
+            "15min": 3.15234375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 3,
+            "cores_medium_usage": 6,
+            "cores_low_usage": 7,
+            "efficiency_percent": 56.25
+          },
+          "status": "medium"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.29,
+          "used_gb": 7.46,
+          "free_gb": 48.49,
+          "percent_used": 11.9,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.77,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.895023441744526,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542468304253298
+          },
+          "io": {
+            "read_count": 1749308,
+            "write_count": 2614188,
+            "read_bytes": 42273783808,
+            "write_bytes": 261778084864
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 558,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.3,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 64.0,
+              "memory_percent": 1.0453994926654613
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.4,
+              "memory_percent": 0.17343991164230452
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 2.8,
+              "memory_percent": 1.1384114326629118
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.2,
+              "memory_percent": 1.9107752873476225
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.2,
+              "memory_percent": 1.9107752873476225
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4487308763955817
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 2.8,
+              "memory_percent": 1.1384114326629118
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 64.0,
+              "memory_percent": 1.0453994926654613
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.4,
+              "memory_percent": 0.17343991164230452
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.9% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 56.25,
+          "memory_efficiency": 17.85,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:39:49.367314",
+      "gpu": {
+        "timestamp": "2025-09-20T15:39:46.060021",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:39:49.065587",
+        "cpu": {
+          "percent_total": 11.3,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            40.0,
+            45.5,
+            0.0,
+            10.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2281.4550625,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.08837890625,
+            "5min": 3.54443359375,
+            "15min": 3.1513671875
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 1,
+            "cores_low_usage": 14,
+            "efficiency_percent": 12.5
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.37,
+          "used_gb": 7.38,
+          "free_gb": 48.57,
+          "percent_used": 11.8,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.77,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.755590640713052,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542468304253298
+          },
+          "io": {
+            "read_count": 1749308,
+            "write_count": 2614190,
+            "read_bytes": 42273783808,
+            "write_bytes": 261779076096
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 558,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.2,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 45.7,
+              "memory_percent": 1.0488160096771326
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.0,
+              "memory_percent": 0.17343991164230452
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.4,
+              "memory_percent": 1.138660680345258
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.9108300002535032
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.9108300002535032
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.4487308763955817
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.4,
+              "memory_percent": 1.138660680345258
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 45.7,
+              "memory_percent": 1.0488160096771326
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.0,
+              "memory_percent": 0.17343991164230452
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 12.5% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.8% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 12.5,
+          "memory_efficiency": 17.700000000000003,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:39:57.696524",
+      "gpu": {
+        "timestamp": "2025-09-20T15:39:54.367570",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:39:57.373132",
+        "cpu": {
+          "percent_total": 7.5,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            18.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            27.3,
+            0.0,
+            9.1
+          ],
+          "frequency": {
+            "current_mhz": 1922.149,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.2158203125,
+            "5min": 3.591796875,
+            "15min": 3.17138671875
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.43,
+          "used_gb": 7.32,
+          "free_gb": 48.63,
+          "percent_used": 11.7,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.58,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.77,
+            "percent": 4.4
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.661727611068565,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.54248939304216
+          },
+          "io": {
+            "read_count": 1749310,
+            "write_count": 2614612,
+            "read_bytes": 42273792000,
+            "write_bytes": 261785994240
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 558,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 100.7,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.4,
+              "memory_percent": 0.17343991164230452
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 7.2,
+              "memory_percent": 1.0388521815950527
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 4.6,
+              "memory_percent": 1.3932459106206323
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 1.1,
+              "memory_percent": 1.1258457019456092
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.9109272676417357
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 4.6,
+              "memory_percent": 1.3932459106206323
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 1.1,
+              "memory_percent": 1.1258457019456092
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 7.2,
+              "memory_percent": 1.0388521815950527
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.4,
+              "memory_percent": 0.17343991164230452
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.7% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.549999999999997,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:40:06.004373",
+      "gpu": {
+        "timestamp": "2025-09-20T15:40:02.696789",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:40:05.702388",
+        "cpu": {
+          "percent_total": 11.3,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            9.1,
+            10.0,
+            0.0,
+            0.0,
+            0.0,
+            10.0,
+            9.1,
+            0.0,
+            9.1,
+            0.0,
+            100.0,
+            0.0,
+            22.2,
+            10.0
+          ],
+          "frequency": {
+            "current_mhz": 2087.1426874999997,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.66943359375,
+            "5min": 3.705078125,
+            "15min": 3.212890625
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.26,
+          "used_gb": 7.49,
+          "free_gb": 48.41,
+          "percent_used": 11.9,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.62,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.943383571331434,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.54248939304216
+          },
+          "io": {
+            "read_count": 1754374,
+            "write_count": 2614714,
+            "read_bytes": 42341982208,
+            "write_bytes": 261786801152
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 555,
+          "significant_count": 7,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.2,
+              "memory_percent": 0.011477551811450087
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.7,
+              "memory_percent": 0.1735736543011244
+            },
+            {
+              "pid": 4449,
+              "name": "msedge",
+              "cpu_percent": 8.5,
+              "memory_percent": 0.4443539047172313
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.7,
+              "memory_percent": 1.0385543002185902
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.910963742912323
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.910963742912323
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932459106206323
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.1259247316985481
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.7,
+              "memory_percent": 1.0385543002185902
+            },
+            {
+              "pid": 4449,
+              "name": "msedge",
+              "cpu_percent": 8.5,
+              "memory_percent": 0.4443539047172313
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.9% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.85,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:40:14.312437",
+      "gpu": {
+        "timestamp": "2025-09-20T15:40:11.004614",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:40:14.009543",
+        "cpu": {
+          "percent_total": 8.1,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            10.0,
+            10.0,
+            0.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2144.94875,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.6962890625,
+            "5min": 3.72705078125,
+            "15min": 3.22265625
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.27,
+          "used_gb": 7.48,
+          "free_gb": 48.42,
+          "percent_used": 11.9,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.62,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.92445290589666,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.54248939304216
+          },
+          "io": {
+            "read_count": 1754377,
+            "write_count": 2614756,
+            "read_bytes": 42341994496,
+            "write_bytes": 261787603968
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 553,
+          "significant_count": 7,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.2,
+              "memory_percent": 0.011483631023214626
+            },
+            {
+              "pid": 307101,
+              "name": "msedge",
+              "cpu_percent": 17.9,
+              "memory_percent": 0.5152131970447007
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.1,
+              "memory_percent": 0.1734520700658336
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.2,
+              "memory_percent": 1.0398430931126725
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.2,
+              "memory_percent": 1.9110002181829102
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.2,
+              "memory_percent": 1.9110002181829102
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932459106206323
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.1260219990867808
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.2,
+              "memory_percent": 1.0398430931126725
+            },
+            {
+              "pid": 307101,
+              "name": "msedge",
+              "cpu_percent": 17.9,
+              "memory_percent": 0.5152131970447007
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.9% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.85,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:40:22.621483",
+      "gpu": {
+        "timestamp": "2025-09-20T15:40:19.312712",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:40:22.317493",
+        "cpu": {
+          "percent_total": 8.1,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            10.0,
+            0.0,
+            100.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2068.383375,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.81005859375,
+            "5min": 3.78564453125,
+            "15min": 3.24755859375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.29,
+          "used_gb": 7.46,
+          "free_gb": 48.44,
+          "percent_used": 11.9,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.62,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.895145025979815,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.54248939304216
+          },
+          "io": {
+            "read_count": 1754377,
+            "write_count": 2614758,
+            "read_bytes": 42341994496,
+            "write_bytes": 261788595200
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 553,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 100.6,
+              "memory_percent": 0.011483631023214626
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 7.9,
+              "memory_percent": 0.17345814927759814
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.3,
+              "memory_percent": 1.0393810730185675
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.12610102883972
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.9110366934534975
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.9110366934534975
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932459106206323
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.12610102883972
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.3,
+              "memory_percent": 1.0393810730185675
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 7.9,
+              "memory_percent": 0.17345814927759814
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.9% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.85,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:40:30.931084",
+      "gpu": {
+        "timestamp": "2025-09-20T15:40:27.621816",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:40:30.626527",
+        "cpu": {
+          "percent_total": 8.8,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            16.7,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2081.4894375,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.85205078125,
+            "5min": 3.826171875,
+            "15min": 3.2666015625
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.28,
+          "used_gb": 7.47,
+          "free_gb": 48.42,
+          "percent_used": 11.9,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.63,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.91189325439112,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542474455150053
+          },
+          "io": {
+            "read_count": 1754381,
+            "write_count": 2615637,
+            "read_bytes": 42342010880,
+            "write_bytes": 261802869760
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 556,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.3,
+              "memory_percent": 0.011483631023214626
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.4,
+              "memory_percent": 0.1734642284893627
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.3,
+              "memory_percent": 1.0412169949714585
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 1.3,
+              "memory_percent": 1.912045842606411
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.1261679001691298
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 1.3,
+              "memory_percent": 1.912045842606411
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932459106206323
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.1261679001691298
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.3,
+              "memory_percent": 1.0412169949714585
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.4,
+              "memory_percent": 0.1734642284893627
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.9% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.85,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:40:39.242641",
+      "gpu": {
+        "timestamp": "2025-09-20T15:40:35.931348",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:40:38.936923",
+        "cpu": {
+          "percent_total": 14.9,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            18.2,
+            0.0,
+            10.0,
+            100.0,
+            10.0,
+            27.3,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            10.0,
+            9.1,
+            10.0,
+            10.0,
+            88.9,
+            9.1
+          ],
+          "frequency": {
+            "current_mhz": 2215.5878125000004,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.70361328125,
+            "5min": 3.81201171875,
+            "15min": 3.26513671875
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 2,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 14,
+            "efficiency_percent": 12.5
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.29,
+          "used_gb": 7.46,
+          "free_gb": 48.44,
+          "percent_used": 11.9,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.63,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.88927250741527,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542474455150053
+          },
+          "io": {
+            "read_count": 1754383,
+            "write_count": 2615896,
+            "read_bytes": 42342047744,
+            "write_bytes": 261879981056
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 557,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.2,
+              "memory_percent": 0.011483631023214626
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 83.0,
+              "memory_percent": 1.0772424038881179
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.0,
+              "memory_percent": 0.1734642284893627
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 4.6,
+              "memory_percent": 1.1417428407098793
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.912076238665234
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.912076238665234
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932155145618095
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 4.6,
+              "memory_percent": 1.1417428407098793
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 83.0,
+              "memory_percent": 1.0772424038881179
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.0,
+              "memory_percent": 0.1734642284893627
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 12.5% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.9% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 12.5,
+          "memory_efficiency": 17.85,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:40:47.555528",
+      "gpu": {
+        "timestamp": "2025-09-20T15:40:44.242965",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:40:47.248678",
+        "cpu": {
+          "percent_total": 10.0,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2134.2803124999996,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.74951171875,
+            "5min": 3.8515625,
+            "15min": 3.2841796875
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.33,
+          "used_gb": 7.42,
+          "free_gb": 48.48,
+          "percent_used": 11.8,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.63,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.823568386664132,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.542474455150053
+          },
+          "io": {
+            "read_count": 1754383,
+            "write_count": 2615930,
+            "read_bytes": 42342047744,
+            "write_bytes": 261880341504
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 557,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 100.7,
+              "memory_percent": 0.011483631023214626
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 78.8,
+              "memory_percent": 1.0490895742065367
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.1,
+              "memory_percent": 0.17347030770112723
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.5,
+              "memory_percent": 1.1419799299686961
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.912149189206408
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.912149189206408
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932155145618095
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.5,
+              "memory_percent": 1.1419799299686961
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 78.8,
+              "memory_percent": 1.0490895742065367
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 9.1,
+              "memory_percent": 0.17347030770112723
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.8% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.700000000000003,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:40:55.861448",
+      "gpu": {
+        "timestamp": "2025-09-20T15:40:52.555859",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:40:55.560729",
+        "cpu": {
+          "percent_total": 15.0,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0,
+            9.1,
+            10.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2161.8722499999994,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.48046875,
+            "5min": 3.8232421875,
+            "15min": 3.2802734375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.35,
+          "used_gb": 7.4,
+          "free_gb": 48.5,
+          "percent_used": 11.8,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.63,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.789901711912112,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.543254300988192
+          },
+          "io": {
+            "read_count": 1754384,
+            "write_count": 2616455,
+            "read_bytes": 42342051840,
+            "write_bytes": 261889811456
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 557,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.3,
+              "memory_percent": 0.011489710234979165
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 7.9,
+              "memory_percent": 0.17360405035994708
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 7.5,
+              "memory_percent": 1.0418370745714414
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.2,
+              "memory_percent": 1.1432565644392496
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.912252535806405
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.912252535806405
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932155145618095
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.2,
+              "memory_percent": 1.1432565644392496
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 7.5,
+              "memory_percent": 1.0418370745714414
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 7.9,
+              "memory_percent": 0.17360405035994708
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.8% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.700000000000003,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:41:04.173324",
+      "gpu": {
+        "timestamp": "2025-09-20T15:41:00.861706",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:41:03.866797",
+        "cpu": {
+          "percent_total": 7.5,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0,
+            10.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2266.4829375,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.36181640625,
+            "5min": 3.8095703125,
+            "15min": 3.2783203125
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.34,
+          "used_gb": 7.41,
+          "free_gb": 48.49,
+          "percent_used": 11.8,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.63,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.806248712346958,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.543254300988192
+          },
+          "io": {
+            "read_count": 1754586,
+            "write_count": 2616505,
+            "read_bytes": 42343088128,
+            "write_bytes": 261890352128
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 555,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 101.2,
+              "memory_percent": 0.011489710234979165
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.3,
+              "memory_percent": 0.1734824661246563
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.4,
+              "memory_percent": 1.039320280900922
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.1425878511451504
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.9122646942299344
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.9122646942299344
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932155145618095
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.1425878511451504
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.4,
+              "memory_percent": 1.039320280900922
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.3,
+              "memory_percent": 0.1734824661246563
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.8% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.700000000000003,
+          "system_balance": "needs_optimization"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-20T15:41:12.485683",
+      "gpu": {
+        "timestamp": "2025-09-20T15:41:09.173668",
+        "gpu_utilization": 0,
+        "vram_usage": {
+          "used_mb": 0,
+          "total_mb": 8192,
+          "percent": 0
+        },
+        "memory_bandwidth_usage": 0,
+        "shader_utilization": 0,
+        "rop_utilization": 0,
+        "tmu_utilization": 0,
+        "temperature": 0,
+        "power_usage": 0,
+        "clocks": {
+          "gpu_mhz": 0,
+          "memory_mhz": 0
+        },
+        "source": "error: Command '['amdgpu_top', '--smi']' timed out after 3 seconds"
+      },
+      "system": {
+        "timestamp": "2025-09-20T15:41:12.178642",
+        "cpu": {
+          "percent_total": 8.1,
+          "cores_physical": 16,
+          "cores_logical": 16,
+          "per_core_usage": [
+            10.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            9.1,
+            0.0,
+            0.0,
+            0.0,
+            18.2,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frequency": {
+            "current_mhz": 2151.39975,
+            "min_mhz": 1200.0,
+            "max_mhz": 2800.0
+          },
+          "load_average": {
+            "1min": 4.2197265625,
+            "5min": 3.798828125,
+            "15min": 3.2802734375
+          },
+          "utilization_analysis": {
+            "cores_high_usage": 1,
+            "cores_medium_usage": 0,
+            "cores_low_usage": 15,
+            "efficiency_percent": 6.25
+          },
+          "status": "low"
+        },
+        "memory": {
+          "total_gb": 62.75,
+          "available_gb": 55.35,
+          "used_gb": 7.39,
+          "free_gb": 48.5,
+          "percent_used": 11.8,
+          "buffers_gb": 0.0,
+          "cached_gb": 7.63,
+          "swap": {
+            "total_gb": 62.75,
+            "used_gb": 2.44,
+            "percent": 3.9
+          },
+          "utilization_analysis": {
+            "high_usage_threshold_gb": 51.2,
+            "current_efficiency": 11.784685748218138,
+            "memory_pressure": "low"
+          },
+          "status": "low"
+        },
+        "disk": {
+          "usage": {
+            "total_gb": 868.26,
+            "used_gb": 161.0,
+            "free_gb": 701.46,
+            "percent": 18.543254300988192
+          },
+          "io": {
+            "read_count": 1754586,
+            "write_count": 2616554,
+            "read_bytes": 42343088128,
+            "write_bytes": 261890569216
+          },
+          "status": "low"
+        },
+        "processes": {
+          "total_count": 560,
+          "significant_count": 6,
+          "top_cpu_users": [
+            {
+              "pid": 298201,
+              "name": "amdgpu_top",
+              "cpu_percent": 100.7,
+              "memory_percent": 0.011489710234979165
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.2,
+              "memory_percent": 0.17349462454818537
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.3,
+              "memory_percent": 1.0408096877832342
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.142666880898089
+            },
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.912307248712286
+            }
+          ],
+          "top_memory_users": [
+            {
+              "pid": 263448,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.912307248712286
+            },
+            {
+              "pid": 264593,
+              "name": "code",
+              "cpu_percent": 0.0,
+              "memory_percent": 1.3932155145618095
+            },
+            {
+              "pid": 4399,
+              "name": "code",
+              "cpu_percent": 0.1,
+              "memory_percent": 1.142666880898089
+            },
+            {
+              "pid": 263416,
+              "name": "code",
+              "cpu_percent": 5.3,
+              "memory_percent": 1.0408096877832342
+            },
+            {
+              "pid": 262812,
+              "name": "code",
+              "cpu_percent": 8.2,
+              "memory_percent": 0.17349462454818537
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "bottlenecks": [
+          {
+            "component": "GPU RX 480",
+            "issue": "Sous-utilisation shaders",
+            "severity": "medium",
+            "detail": "Seulement 0.0% des 2304 shaders utilis\u00e9s"
+          },
+          {
+            "component": "VRAM RX 480",
+            "issue": "Sous-utilisation m\u00e9moire",
+            "severity": "low",
+            "detail": "Seulement 0.0% des 8GB VRAM utilis\u00e9s"
+          },
+          {
+            "component": "CPU 16-cores",
+            "issue": "Sous-utilisation cores",
+            "severity": "high",
+            "detail": "Efficacit\u00e9 6.2% sur 16 cores disponibles"
+          },
+          {
+            "component": "RAM 64GB",
+            "issue": "Sous-utilisation m\u00e9moire syst\u00e8me",
+            "severity": "medium",
+            "detail": "Seulement 11.8% des 64GB RAM utilis\u00e9s"
+          }
+        ],
+        "recommendations": [
+          "Augmenter charge GPU ou parall\u00e9lisme",
+          "Augmenter taille datasets ou batch size",
+          "Augmenter parall\u00e9lisme CPU ou threading",
+          "Augmenter cache en m\u00e9moire ou datasets"
+        ],
+        "overall_efficiency": {
+          "gpu_efficiency": 0.0,
+          "cpu_efficiency": 6.25,
+          "memory_efficiency": 17.700000000000003,
+          "system_balance": "needs_optimization"
+        }
+      }
+    }
+  ]
+}

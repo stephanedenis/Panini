@@ -1,0 +1,1059 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "timestamp": "2025-09-21",
+    "description": "Dictionnaire dhātu→mot exhaustif par contexte narratif",
+    "contextes_disponibles": [
+      "narratif_general",
+      "action_durative",
+      "evaluation_qualitative",
+      "contexte_temporel",
+      "relation_causale",
+      "ouverture_conte",
+      "contexte_ouverture",
+      "contexte_narratif",
+      "contexte_action",
+      "contexte_transformation",
+      "contexte_qualite",
+      "contexte_jugement",
+      "contexte_dialogue",
+      "contexte_narration",
+      "contexte_spatial"
+    ],
+    "dhatu_couverts": [
+      "TRANS",
+      "EVAL",
+      "LOCATE",
+      "EXIST",
+      "COMM",
+      "ITER"
+    ],
+    "langues_supportees": [
+      "fr",
+      "en",
+      "de"
+    ],
+    "statistiques": {
+      "nb_contextes": 15,
+      "nb_dhatu_total": 6,
+      "mots_par_langue": {
+        "fr": 251,
+        "en": 237,
+        "de": 238
+      },
+      "mots_par_contexte": {
+        "narratif_general": 91,
+        "action_durative": 105,
+        "evaluation_qualitative": 78,
+        "contexte_temporel": 99,
+        "relation_causale": 99,
+        "ouverture_conte": 85,
+        "contexte_ouverture": 15,
+        "contexte_narratif": 18,
+        "contexte_action": 18,
+        "contexte_transformation": 15,
+        "contexte_qualite": 24,
+        "contexte_jugement": 18,
+        "contexte_dialogue": 21,
+        "contexte_narration": 17,
+        "contexte_spatial": 23
+      },
+      "couverture_par_dhatu": {
+        "EXIST": 279,
+        "TRANS": 277,
+        "ITER": 26,
+        "LOCATE": 43,
+        "EVAL": 61,
+        "COMM": 40
+      }
+    }
+  },
+  "dictionnaire": {
+    "narratif_general": {
+      "EXIST": {
+        "fr": [
+          "lièvre",
+          "tortue",
+          "reine",
+          "roi",
+          "princesse",
+          "prince",
+          "sorcière",
+          "fée",
+          "nain",
+          "géant",
+          "loup",
+          "ours",
+          "renard",
+          "chat",
+          "souris"
+        ],
+        "en": [
+          "hare",
+          "tortoise",
+          "queen",
+          "princess",
+          "prince",
+          "witch",
+          "fairy",
+          "dwarf",
+          "giant",
+          "wolf",
+          "bear",
+          "fox",
+          "cat",
+          "mouse"
+        ],
+        "de": [
+          "hase",
+          "schildkröte",
+          "königin",
+          "könig",
+          "prinzessin",
+          "prinz",
+          "hexe",
+          "fee",
+          "zwerg",
+          "riese",
+          "wolf",
+          "bär",
+          "fuchs",
+          "katze",
+          "maus"
+        ]
+      },
+      "TRANS": {
+        "fr": [
+          "lièvre",
+          "tortue",
+          "reine",
+          "roi",
+          "princesse",
+          "prince",
+          "sorcière",
+          "fée",
+          "nain",
+          "géant",
+          "loup",
+          "ours",
+          "renard",
+          "chat",
+          "souris"
+        ],
+        "en": [
+          "hare",
+          "tortoise",
+          "queen",
+          "king",
+          "princess",
+          "prince",
+          "witch",
+          "fairy",
+          "dwarf",
+          "giant",
+          "wolf",
+          "bear",
+          "fox",
+          "cat",
+          "mouse"
+        ],
+        "de": [
+          "hase",
+          "schildkröte",
+          "königin",
+          "könig",
+          "prinzessin",
+          "prinz",
+          "hexe",
+          "fee",
+          "zwerg",
+          "riese",
+          "wolf",
+          "bär",
+          "fuchs",
+          "katze",
+          "maus"
+        ]
+      },
+      "ITER": {
+        "en": [
+          "king"
+        ],
+        "de": [
+          "schildkröte"
+        ]
+      }
+    },
+    "action_durative": {
+      "TRANS": {
+        "fr": [
+          "moquait",
+          "riait",
+          "courait",
+          "marchait",
+          "travaillait",
+          "cousait",
+          "filait",
+          "chantait",
+          "dansait",
+          "dormait",
+          "mangeait",
+          "buvait",
+          "parlait",
+          "criait"
+        ],
+        "en": [
+          "mocked",
+          "laughed",
+          "ran",
+          "walked",
+          "worked",
+          "sewed",
+          "spun",
+          "sang",
+          "danced",
+          "slept",
+          "ate",
+          "drank",
+          "spoke",
+          "cried"
+        ],
+        "de": [
+          "verspottete",
+          "lachte",
+          "lief",
+          "ging",
+          "arbeitete",
+          "nähte",
+          "spann",
+          "sang",
+          "tanzte",
+          "schlief",
+          "aß",
+          "trank",
+          "sprach",
+          "schrie"
+        ]
+      },
+      "ITER": {
+        "fr": [
+          "moquait",
+          "riait",
+          "courait",
+          "marchait",
+          "travaillait",
+          "cousait",
+          "filait",
+          "chantait",
+          "dansait",
+          "dormait",
+          "mangeait",
+          "buvait",
+          "parlait",
+          "criait"
+        ],
+        "en": [
+          "worked"
+        ],
+        "de": [
+          "lachte",
+          "arbeitete",
+          "nähte",
+          "tanzte"
+        ]
+      },
+      "EXIST": {
+        "fr": [
+          "moquait",
+          "riait",
+          "courait",
+          "marchait",
+          "travaillait",
+          "filait",
+          "chantait",
+          "dansait",
+          "dormait",
+          "mangeait",
+          "buvait",
+          "parlait",
+          "criait"
+        ],
+        "en": [
+          "laughed",
+          "ran",
+          "walked",
+          "worked",
+          "sewed",
+          "spun",
+          "sang",
+          "danced",
+          "slept",
+          "ate",
+          "drank",
+          "spoke",
+          "cried"
+        ],
+        "de": [
+          "lachte",
+          "lief",
+          "ging",
+          "arbeitete",
+          "spann",
+          "sang",
+          "tanzte",
+          "schlief",
+          "aß",
+          "trank",
+          "sprach",
+          "schrie"
+        ]
+      },
+      "LOCATE": {
+        "fr": [
+          "cousait"
+        ],
+        "de": [
+          "nähte"
+        ]
+      },
+      "EVAL": {
+        "en": [
+          "mocked"
+        ],
+        "de": [
+          "verspottete"
+        ]
+      },
+      "COMM": {
+        "en": [
+          "mocked"
+        ],
+        "de": [
+          "verspottete"
+        ]
+      }
+    },
+    "evaluation_qualitative": {
+      "EVAL": {
+        "fr": [
+          "lenteur",
+          "laideur",
+          "peur"
+        ],
+        "en": [
+          "slowness",
+          "ugliness",
+          "kindness",
+          "madness",
+          "weakness"
+        ],
+        "de": [
+          "langsamkeit",
+          "schnelligkeit",
+          "schönheit",
+          "hässlichkeit",
+          "freundlichkeit",
+          "grausamkeit",
+          "weisheit"
+        ]
+      },
+      "EXIST": {
+        "fr": [
+          "lenteur",
+          "rapidité",
+          "beauté",
+          "laideur",
+          "gentillesse",
+          "méchanceté",
+          "courage",
+          "peur",
+          "sagesse",
+          "folie",
+          "force",
+          "faiblesse",
+          "patience"
+        ],
+        "en": [
+          "slowness",
+          "speed",
+          "beauty",
+          "ugliness",
+          "kindness",
+          "cruelty",
+          "courage",
+          "fear",
+          "wisdom",
+          "madness",
+          "strength",
+          "weakness",
+          "patience"
+        ],
+        "de": [
+          "langsamkeit",
+          "schnelligkeit",
+          "schönheit",
+          "hässlichkeit",
+          "freundlichkeit",
+          "grausamkeit",
+          "mut",
+          "angst",
+          "weisheit",
+          "wahnsinn",
+          "stärke",
+          "schwäche",
+          "geduld"
+        ]
+      },
+      "TRANS": {
+        "fr": [
+          "rapidité",
+          "beauté",
+          "gentillesse",
+          "méchanceté",
+          "courage",
+          "sagesse",
+          "folie",
+          "force",
+          "faiblesse",
+          "patience"
+        ],
+        "en": [
+          "speed",
+          "beauty",
+          "cruelty",
+          "courage",
+          "fear",
+          "wisdom",
+          "strength",
+          "patience"
+        ],
+        "de": [
+          "mut",
+          "angst",
+          "wahnsinn",
+          "stärke",
+          "schwäche",
+          "geduld"
+        ]
+      }
+    },
+    "contexte_temporel": {
+      "TRANS": {
+        "fr": [
+          "hiver",
+          "été",
+          "printemps",
+          "automne",
+          "matin",
+          "soir",
+          "nuit",
+          "jour",
+          "hier",
+          "aujourd'hui",
+          "demain",
+          "autrefois",
+          "maintenant",
+          "bientôt"
+        ],
+        "en": [
+          "winter",
+          "summer",
+          "spring",
+          "autumn",
+          "morning",
+          "evening",
+          "night",
+          "day",
+          "yesterday",
+          "today",
+          "tomorrow",
+          "once",
+          "now",
+          "soon"
+        ],
+        "de": [
+          "winter",
+          "sommer",
+          "frühling",
+          "herbst",
+          "morgen",
+          "abend",
+          "nacht",
+          "tag",
+          "gestern",
+          "heute",
+          "einst",
+          "jetzt",
+          "bald"
+        ]
+      },
+      "EXIST": {
+        "fr": [
+          "été",
+          "printemps",
+          "automne",
+          "matin",
+          "soir",
+          "nuit",
+          "jour",
+          "aujourd'hui",
+          "demain",
+          "autrefois",
+          "maintenant",
+          "bientôt"
+        ],
+        "en": [
+          "winter",
+          "summer",
+          "autumn",
+          "night",
+          "day",
+          "yesterday",
+          "today",
+          "tomorrow",
+          "once",
+          "now",
+          "soon"
+        ],
+        "de": [
+          "winter",
+          "sommer",
+          "frühling",
+          "herbst",
+          "morgen",
+          "abend",
+          "nacht",
+          "tag",
+          "gestern",
+          "heute",
+          "einst",
+          "jetzt",
+          "bald"
+        ]
+      },
+      "ITER": {
+        "en": [
+          "spring",
+          "morning",
+          "evening"
+        ],
+        "de": [
+          "heute"
+        ]
+      },
+      "LOCATE": {
+        "fr": [
+          "pendant",
+          "durant",
+          "après",
+          "avant",
+          "lors",
+          "au cours de"
+        ],
+        "en": [
+          "during",
+          "while",
+          "after",
+          "before",
+          "when",
+          "in the course of"
+        ],
+        "de": [
+          "während",
+          "währenddessen",
+          "nach",
+          "vor",
+          "bei",
+          "im verlauf von"
+        ]
+      }
+    },
+    "relation_causale": {
+      "EXIST": {
+        "fr": [
+          "cause",
+          "parce",
+          "car",
+          "donc",
+          "ainsi",
+          "pourquoi",
+          "quand",
+          "où",
+          "qui",
+          "que",
+          "dont",
+          "pour",
+          "avec",
+          "sans",
+          "contre",
+          "vers"
+        ],
+        "en": [
+          "cause",
+          "because",
+          "for",
+          "so",
+          "thus",
+          "why",
+          "how",
+          "when",
+          "where",
+          "who",
+          "that",
+          "which",
+          "with",
+          "without",
+          "against",
+          "towards"
+        ],
+        "de": [
+          "ursache",
+          "weil",
+          "denn",
+          "also",
+          "so",
+          "warum",
+          "wie",
+          "wann",
+          "wo",
+          "wer",
+          "dass",
+          "welcher",
+          "für",
+          "mit",
+          "ohne",
+          "gegen",
+          "zu"
+        ]
+      },
+      "TRANS": {
+        "fr": [
+          "cause",
+          "parce",
+          "car",
+          "donc",
+          "ainsi",
+          "pourquoi",
+          "comment",
+          "quand",
+          "où",
+          "qui",
+          "que",
+          "dont",
+          "pour",
+          "avec",
+          "sans",
+          "contre",
+          "vers"
+        ],
+        "en": [
+          "cause",
+          "because",
+          "for",
+          "so",
+          "thus",
+          "why",
+          "how",
+          "when",
+          "where",
+          "who",
+          "that",
+          "which",
+          "with",
+          "without",
+          "against",
+          "towards"
+        ],
+        "de": [
+          "ursache",
+          "weil",
+          "denn",
+          "also",
+          "so",
+          "warum",
+          "wie",
+          "wann",
+          "wo",
+          "wer",
+          "dass",
+          "welcher",
+          "für",
+          "mit",
+          "ohne",
+          "gegen",
+          "zu"
+        ]
+      }
+    },
+    "ouverture_conte": {
+      "TRANS": {
+        "fr": [
+          "était",
+          "une",
+          "fois",
+          "alors",
+          "soudain",
+          "enfin",
+          "ensuite",
+          "puis",
+          "mais",
+          "cependant",
+          "néanmoins",
+          "toutefois",
+          "pourtant",
+          "quand",
+          "si"
+        ],
+        "en": [
+          "was",
+          "once",
+          "upon",
+          "then",
+          "suddenly",
+          "finally",
+          "next",
+          "but",
+          "however",
+          "nevertheless",
+          "yet",
+          "though",
+          "when",
+          "if"
+        ],
+        "de": [
+          "war",
+          "einmal",
+          "einst",
+          "dann",
+          "plötzlich",
+          "endlich",
+          "aber",
+          "jedoch",
+          "dennoch",
+          "trotzdem",
+          "obwohl",
+          "wenn",
+          "falls"
+        ]
+      },
+      "ITER": {
+        "fr": [
+          "était"
+        ]
+      },
+      "EXIST": {
+        "fr": [
+          "était",
+          "une",
+          "fois",
+          "alors",
+          "soudain",
+          "enfin",
+          "ensuite",
+          "puis",
+          "mais",
+          "cependant",
+          "néanmoins",
+          "toutefois",
+          "pourtant",
+          "quand",
+          "si"
+        ],
+        "en": [
+          "was",
+          "once",
+          "upon",
+          "then",
+          "next",
+          "but",
+          "however",
+          "nevertheless",
+          "yet",
+          "though",
+          "when",
+          "if"
+        ],
+        "de": [
+          "war",
+          "einmal",
+          "einst",
+          "dann",
+          "plötzlich",
+          "endlich",
+          "aber",
+          "jedoch",
+          "dennoch",
+          "trotzdem",
+          "obwohl",
+          "wenn",
+          "falls"
+        ]
+      },
+      "EVAL": {
+        "en": [
+          "suddenly",
+          "finally"
+        ]
+      }
+    },
+    "contexte_ouverture": {
+      "EXIST": {
+        "fr": [
+          "était",
+          "vivait",
+          "habitait",
+          "se trouvait",
+          "existait"
+        ],
+        "en": [
+          "was",
+          "lived",
+          "dwelt",
+          "existed",
+          "there was"
+        ],
+        "de": [
+          "war",
+          "lebte",
+          "wohnte",
+          "befand sich",
+          "existierte"
+        ]
+      }
+    },
+    "contexte_narratif": {
+      "EXIST": {
+        "fr": [
+          "est",
+          "sont",
+          "était",
+          "étaient",
+          "sera",
+          "seront"
+        ],
+        "en": [
+          "is",
+          "are",
+          "was",
+          "were",
+          "will be",
+          "shall be"
+        ],
+        "de": [
+          "ist",
+          "sind",
+          "war",
+          "waren",
+          "wird sein",
+          "werden sein"
+        ]
+      }
+    },
+    "contexte_action": {
+      "TRANS": {
+        "fr": [
+          "fait",
+          "faisait",
+          "fera",
+          "ferait",
+          "a fait",
+          "avait fait"
+        ],
+        "en": [
+          "does",
+          "did",
+          "will do",
+          "would do",
+          "has done",
+          "had done"
+        ],
+        "de": [
+          "macht",
+          "machte",
+          "wird machen",
+          "würde machen",
+          "hat gemacht",
+          "hatte gemacht"
+        ]
+      }
+    },
+    "contexte_transformation": {
+      "TRANS": {
+        "fr": [
+          "devient",
+          "devenait",
+          "deviendra",
+          "changeait",
+          "transformait"
+        ],
+        "en": [
+          "becomes",
+          "became",
+          "will become",
+          "changed",
+          "transformed"
+        ],
+        "de": [
+          "wird",
+          "wurde",
+          "wird werden",
+          "änderte",
+          "verwandelte"
+        ]
+      }
+    },
+    "contexte_qualite": {
+      "EVAL": {
+        "fr": [
+          "très",
+          "si",
+          "tellement",
+          "fort",
+          "bien",
+          "mal",
+          "mieux",
+          "pire"
+        ],
+        "en": [
+          "very",
+          "so",
+          "quite",
+          "really",
+          "well",
+          "badly",
+          "better",
+          "worse"
+        ],
+        "de": [
+          "sehr",
+          "so",
+          "ziemlich",
+          "wirklich",
+          "gut",
+          "schlecht",
+          "besser",
+          "schlechter"
+        ]
+      }
+    },
+    "contexte_jugement": {
+      "EVAL": {
+        "fr": [
+          "juge",
+          "pense",
+          "croit",
+          "trouve",
+          "considère",
+          "estime"
+        ],
+        "en": [
+          "judges",
+          "thinks",
+          "believes",
+          "finds",
+          "considers",
+          "deems"
+        ],
+        "de": [
+          "urteilt",
+          "denkt",
+          "glaubt",
+          "findet",
+          "betrachtet",
+          "hält für"
+        ]
+      }
+    },
+    "contexte_dialogue": {
+      "COMM": {
+        "fr": [
+          "dit",
+          "parle",
+          "répond",
+          "demande",
+          "crie",
+          "chuchote",
+          "murmure"
+        ],
+        "en": [
+          "says",
+          "speaks",
+          "answers",
+          "asks",
+          "shouts",
+          "whispers",
+          "murmurs"
+        ],
+        "de": [
+          "sagt",
+          "spricht",
+          "antwortet",
+          "fragt",
+          "ruft",
+          "flüstert",
+          "murmelt"
+        ]
+      }
+    },
+    "contexte_narration": {
+      "COMM": {
+        "fr": [
+          "raconte",
+          "explique",
+          "décrit",
+          "narre",
+          "relate",
+          "expose"
+        ],
+        "en": [
+          "tells",
+          "explains",
+          "describes",
+          "narrates",
+          "relates",
+          "expounds"
+        ],
+        "de": [
+          "erzählt",
+          "erklärt",
+          "beschreibt",
+          "berichtet",
+          "erläutert"
+        ]
+      }
+    },
+    "contexte_spatial": {
+      "LOCATE": {
+        "fr": [
+          "dans",
+          "sur",
+          "sous",
+          "par",
+          "vers",
+          "depuis",
+          "jusqu'à",
+          "à travers"
+        ],
+        "en": [
+          "in",
+          "on",
+          "under",
+          "by",
+          "towards",
+          "from",
+          "until",
+          "through"
+        ],
+        "de": [
+          "in",
+          "auf",
+          "unter",
+          "durch",
+          "zu",
+          "von",
+          "bis"
+        ]
+      }
+    }
+  }
+}

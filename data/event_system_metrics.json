@@ -1,0 +1,68 @@
+{
+  "timestamp": "2025-09-22T20:06:52.370717",
+  "total_events_processed": 252,
+  "event_stats": {
+    "data_threshold_reached": 42,
+    "corpus_data_ready": 210
+  },
+  "processors": {
+    "corpus_processor": {
+      "allocated_cores": [
+        1,
+        2
+      ],
+      "events_processed": 252,
+      "queue_size": 0,
+      "avg_processing_time": 0.08439346075057984,
+      "last_activity_ago": 1.6364099979400635
+    },
+    "research_processor": {
+      "allocated_cores": [
+        3,
+        4
+      ],
+      "events_processed": 0,
+      "queue_size": 0,
+      "avg_processing_time": 0,
+      "last_activity_ago": 210.0137140750885
+    },
+    "optimization_processor": {
+      "allocated_cores": [
+        5,
+        6,
+        7
+      ],
+      "events_processed": 0,
+      "queue_size": 0,
+      "avg_processing_time": 0,
+      "last_activity_ago": 210.0130271911621
+    },
+    "validation_processor": {
+      "allocated_cores": [
+        8
+      ],
+      "events_processed": 0,
+      "queue_size": 0,
+      "avg_processing_time": 0,
+      "last_activity_ago": 210.0123574733734
+    }
+  },
+  "cpu_allocation": {
+    "corpus_processor": [
+      1,
+      2
+    ],
+    "research_processor": [
+      3,
+      4
+    ],
+    "optimization_processor": [
+      5,
+      6,
+      7
+    ],
+    "validation_processor": [
+      8
+    ]
+  }
+}

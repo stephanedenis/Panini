@@ -1,0 +1,217 @@
+{
+  "extensions_prioritaires": {
+    "MODAL": {
+      "definition": "Modalité épistémique, déontique, aléthique",
+      "fonctions_lexicales": [
+        "Poss",
+        "Necess",
+        "Prob",
+        "Cert",
+        "Dub",
+        "Perm",
+        "Oblig",
+        "Inter"
+      ],
+      "operateurs": [
+        "!",
+        "?",
+        "+",
+        "+·",
+        "+",
+        "++",
+        "+++"
+      ],
+      "exemples": {
+        "MODAL!": "impossible, inconcevable, exclu",
+        "MODAL?": "possible, envisageable, peut-être",
+        "MODAL+": "nécessaire, obligatoire, inévitable",
+        "MODAL+·": "peu probable, douteux, improbable",
+        "MODAL++": "très probable, quasi-certain",
+        "MODAL+++": "absolument certain, indubitabl"
+      },
+      "score_priorite": 8.8,
+      "justification": "Modalité = catégorie cognitive universelle (Kratzer 1991)"
+    },
+    "ASPECT": {
+      "definition": "Aspects temporels et perfectivité",
+      "fonctions_lexicales": [
+        "Incep",
+        "Cont",
+        "Fin",
+        "Iter",
+        "Semel",
+        "Degrad",
+        "Culm",
+        "Result"
+      ],
+      "operateurs": [
+        "!",
+        "?",
+        "+",
+        "+·",
+        "++",
+        "+++"
+      ],
+      "exemples": {
+        "ASPECT!": "non-aspectuel, statif, permanent",
+        "ASPECT?": "aspect neutre, non-marqué",
+        "ASPECT+": "aspectuel marqué, télique",
+        "ASPECT+·": "commencer, débuter, amorcer",
+        "ASPECT++": "continuer, poursuivre, maintenir",
+        "ASPECT+++": "achever, accomplir, finaliser"
+      },
+      "score_priorite": 7.5,
+      "justification": "Aspect = structuration temporelle universelle (Comrie 1976)"
+    },
+    "QUANT": {
+      "definition": "Quantification et mesure",
+      "fonctions_lexicales": [
+        "Mult",
+        "Sing",
+        "Plus",
+        "Minus",
+        "Equ",
+        "Centr",
+        "Distr",
+        "Cumul"
+      ],
+      "operateurs": [
+        "!",
+        "?",
+        "+",
+        "+·",
+        "+",
+        "++",
+        "+++"
+      ],
+      "exemples": {
+        "QUANT!": "aucun, zéro, vide, néant",
+        "QUANT?": "quelque, environ, approximativement",
+        "QUANT+": "un, une unité, singulier",
+        "QUANT+·": "peu, quelques, rare",
+        "QUANT++": "beaucoup, nombreux, multiple",
+        "QUANT+++": "énormément, innombrable, infini"
+      },
+      "score_priorite": 7.1,
+      "justification": "Quantité = cognition numérique universelle (Dehaene 1997)"
+    }
+  },
+  "impact_couverture": {
+    "couverture_actuelle": 32.30769230769231,
+    "couverture_nouvelle": 69.23076923076923,
+    "amelioration": 36.92307692307692,
+    "facteur": 2.142857142857143
+  },
+  "compositions_exemples": {
+    "probablement": {
+      "decomposition": "MODAL+· + EVAL+",
+      "explication": "modalité probabiliste + évaluation positive",
+      "FL_cible": "Prob + Bon"
+    },
+    "obligatoirement": {
+      "decomposition": "MODAL+ + ACTION+",
+      "explication": "modalité nécessaire + action obligée",
+      "FL_cible": "Oblig + Oper1"
+    },
+    "impossiblement": {
+      "decomposition": "MODAL! + ACTION∅",
+      "explication": "modalité négative + action exclue",
+      "FL_cible": "Poss + Anti(Oper1)"
+    },
+    "commencer_à": {
+      "decomposition": "ASPECT+· + ACTION+",
+      "explication": "aspect inchoatif + action initiée",
+      "FL_cible": "Incep + Oper1"
+    },
+    "finir_de": {
+      "decomposition": "ASPECT+++ + ACTION+",
+      "explication": "aspect terminatif + action achevée",
+      "FL_cible": "Fin + Oper1"
+    },
+    "sans_cesse": {
+      "decomposition": "ASPECT++ + QUANT!",
+      "explication": "aspect continuatif + quantité nulle d'arrêt",
+      "FL_cible": "Cont + Anti(Fin)"
+    },
+    "un_peu": {
+      "decomposition": "QUANT+· + EVAL?",
+      "explication": "quantité faible + évaluation neutre",
+      "FL_cible": "Minus + A1"
+    },
+    "énormément": {
+      "decomposition": "QUANT+++ + INTENSE++",
+      "explication": "quantité extrême + intensification forte",
+      "FL_cible": "Mult + Magn"
+    },
+    "trop_peu": {
+      "decomposition": "QUANT+· + EVAL!",
+      "explication": "quantité faible + évaluation négative",
+      "FL_cible": "Minus + Anti(Bon)"
+    },
+    "probablement_commencer": {
+      "decomposition": "MODAL+· + ASPECT+· + ACTION+",
+      "explication": "modalité possible + aspect inchoatif + action",
+      "FL_cible": "Prob + Incep + Oper1"
+    },
+    "beaucoup_trop": {
+      "decomposition": "QUANT++ + EVAL! + INTENSE++",
+      "explication": "quantité élevée + évaluation négative + intensité",
+      "FL_cible": "Mult + Anti(Bon) + Magn"
+    }
+  },
+  "plan_implementation": {
+    "Phase 1 - MODAL (2 semaines)": {
+      "taches": [
+        "Définir classe ModalDhatu avec opérateurs trinaires/quaternaires",
+        "Implémenter mappings FL → MODAL avec exemples",
+        "Tests unitaires expressions modales français/anglais",
+        "Validation contraintes cognitives"
+      ],
+      "delivrables": [
+        "modal_dhatu.py",
+        "tests_modal_comprehensive.py",
+        "exemples_modal_multilingue.json"
+      ]
+    },
+    "Phase 2 - ASPECT (2 semaines)": {
+      "taches": [
+        "Définir classe AspectDhatu avec temporalité",
+        "Implémenter composition ASPECT + ACTION/EVAL",
+        "Tests aspects verbaux cross-linguistiques",
+        "Optimisation performance compositions"
+      ],
+      "delivrables": [
+        "aspect_dhatu.py",
+        "tests_aspect_temporel.py",
+        "benchmarks_composition.json"
+      ]
+    },
+    "Phase 3 - QUANT (2 semaines)": {
+      "taches": [
+        "Définir classe QuantDhatu avec gradations",
+        "Implémenter logique quantification floue",
+        "Tests expressions quantitatives précises",
+        "Intégration complète avec dhātu existants"
+      ],
+      "delivrables": [
+        "quant_dhatu.py",
+        "tests_quantification.py",
+        "integration_complete.py"
+      ]
+    },
+    "Phase 4 - Validation (1 semaine)": {
+      "taches": [
+        "Tests intégration complète 3 extensions",
+        "Benchmarking couverture FL vs Mel'čuk",
+        "Validation performance + mémoire",
+        "Documentation utilisateur complète"
+      ],
+      "delivrables": [
+        "tests_integration_complete.py",
+        "rapport_couverture_fl.md",
+        "documentation_utilisateur.md"
+      ]
+    }
+  },
+  "validation_cognitive": true
+}

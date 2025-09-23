@@ -1,0 +1,33 @@
+{
+  "total_mismatches": 182,
+  "conceptual_gaps": 1,
+  "mismatch_types_distribution": {
+    "lexical_gap": 98,
+    "modal_mismatch": 10,
+    "aspectual_mismatch": 22,
+    "structural_mismatch": 31,
+    "semantic_drift": 21
+  },
+  "semantic_distance_distribution": {
+    "mean_distance": 0.9942848817848818,
+    "max_distance": 1.0,
+    "min_distance": 0.8
+  },
+  "most_problematic_concepts": [
+    "past_continuous_aspect"
+  ],
+  "language_pair_difficulty": {
+    "fr-en": 0.9736803519061583,
+    "en-fr": 1.0,
+    "fr-de": 0.9925252525252526,
+    "de-fr": 1.0,
+    "en-de": 1.0,
+    "de-en": 1.0
+  },
+  "blocking_factors": [
+    "Concepts cross-linguistiquement complexes: ['past_continuous_aspect']"
+  ],
+  "improvement_recommendations": [
+    "Ajouter dhātu aspectuels: PERF, PROG, ITER_PERF"
+  ]
+}

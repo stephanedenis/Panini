@@ -1,0 +1,359 @@
+[
+  {
+    "id": "2509.15191v1",
+    "title": "A non-sequential arithmetical theory with pairing",
+    "abstract": "Albert Visser has shown that Robinson's $ \\mathsf{Q} $ and Gregorczyk's $\n\\mathsf{TC} $ are not sequential by showing that these theories are not even\npoly-pair theories, which, in a strong sense, means these theories lack\npairing. In this paper, we use Ehrenfeucht-Fra\\\"iss\\'e games to show that the\ntheory $ \\mathsf{Q} + \\Theta $ we obtain by extending Robinson's $ \\mathsf{Q} $\nwith an axiom $ \\Theta $ which says that the map $ \\pi (x, y ) = (x+y)^2 + x $\nis a pairing function is not sequential; in fact, we show that this theory is\nnot even a Vaught theory. As a corollary, we get that the tree theory $\n\\mathsf{T} $ of [Kristiansen & Murwanashyaka, 2020] is also not a Vaught\ntheory.",
+    "categories": [],
+    "primary_category": "math.LO",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 8,
+      "unicode_math": 0,
+      "equations": 7,
+      "math_density": 0.11363636363636363
+    },
+    "content_hash": "d9876887f9d4bf58088686ee9d452bb3",
+    "url": "https://arxiv.org/abs/2509.15191v1",
+    "content_length": 740
+  },
+  {
+    "id": "2509.15086v1",
+    "title": "On definability of C*-tensor norms",
+    "abstract": "We initiate the study of definability (in the model-theoretic sense) of\nC*-tensor norms. We show that neither the minimal nor maximal tensor norms are\ndefinable uniformly over all C*-algebras. The proof in the case of the minimal\ntensor product norm uses a deep theorem of Kirchberg characterizing exactness\nin terms of tensor products with matrix ultraproducts while the case of maximal\ntensor products uses Pisier's recent characterization of the lifting property\nin terms of maximal tensor products and ultraproducts. We also study the\nquestion of when one of these tensor products can be definable in a particular\nC*-algebra. We establish some negative results along these lines for particular\nC*-algebras and when the definability condition is strengthened to be\ncomputable and of a restricted quantifier-complexity; these results use the\nquantum complexity results MIP$^*$=RE and MIP$^{co}=$coRE. As a byproduct of\nour arguments, we answer a question of Fritz, Netzer, and Thom by showing that\nthe norm on $C^*(\\mathbb{F}_n\\times \\mathbb{F}_n)$ is not computable for any\n$n\\in \\{2,3,\\ldots,\\infty\\}$.",
+    "categories": [],
+    "primary_category": "math.LO",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 6,
+      "unicode_math": 0,
+      "equations": 4,
+      "math_density": 0.05917159763313609
+    },
+    "content_hash": "4e302ee0b9fd01d65f38389c17d41205",
+    "url": "https://arxiv.org/abs/2509.15086v1",
+    "content_length": 1141
+  },
+  {
+    "id": "2509.15000v1",
+    "title": "Measurable one-ended spanning trees",
+    "abstract": "We show that a one-ended, locally finite, measurable graph on a standard\nprobability space admits a measurable one-ended spanning subtree if and only if\nit is measure-hyperfinite. This answers a question posed by Bowen, Poulin, and\nZomback and extends recent results of Tim\\'ar and Conley, Gaboriau, Marks, and\nTucker-Drob.",
+    "categories": [],
+    "primary_category": "math.LO",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 0,
+      "math_density": 0.0
+    },
+    "content_hash": "187661ef88ffc261971f246a8d511758",
+    "url": "https://arxiv.org/abs/2509.15000v1",
+    "content_length": 359
+  },
+  {
+    "id": "2509.14614v1",
+    "title": "The countable condensation on linear orders",
+    "abstract": "The countable condensation on a linear order $L$ is the equivalence relation\n$\\sim_\\omega$ defined by declaring $x \\sim_\\omega y$ when the set of points\nbetween $x$ and $y$ is countable. We characterize the linear orders $L$ that\ncondense to $1$ under the countable condensation by constructing a linear order\n$U$ that is universal for the order types $L$ such that $L/\\!\\!\\sim_\\omega\\,\n\\cong 1$. We define a multiplication operation $\\cdot_\\omega$ on the class of\nlinear orders by setting $M \\cdot_\\omega L$ to be the order type of\n$(ML)/\\!\\!\\sim_\\omega$ (where $ML$ denotes the lexicographic product), and show\nthat the right identities for $\\cdot_\\omega$ are exactly the uncountable\nsuborders of $U$. The order types of these uncountable suborders of $U$ form a\nleft regular band under $\\cdot_\\omega$, and the order types of all suborders of\n$U$ form a semigroup.",
+    "categories": [],
+    "primary_category": "math.LO",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 17,
+      "unicode_math": 0,
+      "equations": 19,
+      "math_density": 0.2535211267605634
+    },
+    "content_hash": "fc8aba02661ceae8ad312bbc030bd251",
+    "url": "https://arxiv.org/abs/2509.14614v1",
+    "content_length": 910
+  },
+  {
+    "id": "2509.14517v1",
+    "title": "Approximations of the strict order property",
+    "abstract": "We observe that the definition of Shelah's classical $\\mathrm{NSOP}_{n}$\nhierarchy for first-order theories, for integers $n \\geq 3$, can be restated so\nthat it extends to the case where $n$ is replaced with any real number $r \\geq\n3$. Using this observation, we define a potentially larger family of properties\n$\\mathrm{NSOP}_{r}$ for real numbers $r \\geq 3$. Motivated by the question of\nwhether the integer-valued and real-valued hierarchies are distinct, we\ntranslate these hierarchies into the setting of hereditary classes, obtaining a\nnew real-valued quantity of independent combinatorial interest,\n$\\mathfrak{o}(\\mathcal{H})$, associated with any hereditary class\n$\\mathcal{H}$. We show that, when $\\mathcal{H}$ is defined by a finite family\nof forbidden weakly embedded substructures, $\\mathfrak{o}(\\mathcal{H})$ is an\ninteger.\n  While Malliaris implicitly showed that the properties $\\mathrm{NSOP}_{n}$ are\nequivalent to closure under helix maps between graphs, both our observation\nthat the properties $\\mathrm{NSOP}_{n}$ can be restated so that $n$ can be\nreplaced with any real number at least $3$, and our result that\n$\\mathfrak{o}(\\mathcal{H})$ is an integer when $\\mathcal{H}$ is a hereditary\nclass defined by a finite family of forbidden weakly embedded substructures,\nare even exhibited by a special class of helix maps, the interval helix maps.\nThese are helix maps that respect the direction of edges, and whose regions are\ndisjoint unions of linearly ordered sets without any edges between them. Toward\nshowing the conjectural claim that $\\mathfrak{o}(\\mathcal{H})$ is not an\ninteger in general, and therefore that the real-valued $\\mathrm{NSOP}_{r}$\nhierarchy is distinct from the integer-valued $\\mathrm{NSOP}_{n}$ hierarchy at\nthe level of hereditary classes, we show that the statement that\n$\\mathfrak{o}(\\mathcal{H})$ is an integer in general cannot be exhibited by\ninterval helix maps.",
+    "categories": [],
+    "primary_category": "math.LO",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 22,
+      "unicode_math": 0,
+      "equations": 20,
+      "math_density": 0.15162454873646208
+    },
+    "content_hash": "d429b437776bf70a8a1df8ffdad7ea9e",
+    "url": "https://arxiv.org/abs/2509.14517v1",
+    "content_length": 1956
+  },
+  {
+    "id": "2509.15214v1",
+    "title": "Zeta functions of abstract isogeny graphs and modular curves",
+    "abstract": "We introduce a ``non-orientable'' variation of Serre's definition of a graph,\nwhich we call an abstract isogeny graph. These objects capture the\ncombinatorics of the graphs $G(p,\\ell,H)$, the $\\ell$-isogeny graphs of\nsupersingular elliptic curves with $H$-level structure. In particular they\nallow for the study of non-backtracking walks, primes, and zeta functions. We\nprove an analogue of Ihara's determinant formula for the zeta function of an\nabstract isogeny graph. For $B_1(N) \\subseteq H \\subseteq B_0(N)$ and $p > 3$,\nwe use this formula to relate the Ihara zeta function of $G(p,\\ell,H)$ to the\nHasse-Weil zeta functions of the modular curves $X_{H, {\\mathbb{F}_{\\ell}}}$\nand $X_{H \\times B_0(p), \\mathbb{F}_{\\ell}}$. As applications, we give an\nexplicit formula relating point counts on $X_0(pN)_{\\mathbb{F}_{\\ell}}$ and\n$X_0(N)_{\\mathbb{F}_{\\ell}}$ to cycle counts in $G(p,\\ell,B_0(N))$ and prove\nthat the number of non-backtracking cycles of length $r$ in $G(p,\\ell,B_0(N))$\nis asymptotic to $\\ell^r$.",
+    "categories": [],
+    "primary_category": "math.NT",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 17,
+      "unicode_math": 0,
+      "equations": 14,
+      "math_density": 0.2052980132450331
+    },
+    "content_hash": "0f01f5ea53ad05f1b14e520bb06cd4ed",
+    "url": "https://arxiv.org/abs/2509.15214v1",
+    "content_length": 1074
+  },
+  {
+    "id": "2509.15079v1",
+    "title": "On simultaneously preperiodic points for one-parameter families of\n  polynomials in characteristic $p$",
+    "abstract": "For a field $L$ of characteristic $p$, a polynomial $f \\in\n\\overline{\\mathbb{F}}_p[x]$ and $\\alpha, \\beta \\in L$, let\n$\\mathrm{Prep}(f;\\alpha,\\beta)$ be the set of all $\\lambda \\in \\overline{L}$\nsuch that both $\\alpha$ and $\\beta$ are preperiodic under the action of\n$f_{\\lambda}(x) := f(x) + \\lambda$. Ghioca and Hsia proved that for certain\nfamilies of polynomials, this set is infinite if and only if\n$f(\\alpha)=f(\\beta)$ or $\\alpha, \\beta \\in \\overline{\\mathbb{F}}_p$. Building\non their earlier work, we determine the condition that\n$\\mathrm{Prep}(f;\\alpha,\\beta)$ is infinite for two classes of binomials that\nwere left open. Specifically, let $f(x)=c_1 x^{d_1} + c_2 x^{d_2} \\in\n\\overline{\\mathbb{F}}_p[x]$, where $c_i \\in \\overline{\\mathbb{F}}_p^*$, $1 \\le\nd_1 < d_2$ and $d_i=p^{\\ell_i}s_i$ with $\\ell_i \\ge 0$ and $p \\nmid s_i$. We\nprove that if $p \\nmid s_1-1$ or $s_2=1$, then $\\mathrm{Prep}(f;\\alpha,\\beta)$\nis infinite if and only if $f(\\alpha)=f(\\beta)$ or $\\alpha, \\beta \\in\n\\overline{\\mathbb{F}}_p$. The key idea of the proof is to use the parameters\n$\\lambda_{\\overline{\\alpha}} := \\overline{\\alpha} - f(\\overline{\\alpha})$\nassociated to suitable elements $\\overline{\\alpha} \\in \\overline{L}$ satisfying\n$f(\\overline{\\alpha})=f(\\alpha)$.",
+    "categories": [],
+    "primary_category": "math.NT",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 62,
+      "unicode_math": 0,
+      "equations": 27,
+      "math_density": 0.5
+    },
+    "content_hash": "fe899710a289c84f24163cebfa76bc95",
+    "url": "https://arxiv.org/abs/2509.15079v1",
+    "content_length": 1357
+  },
+  {
+    "id": "2509.14974v1",
+    "title": "Improvement of Drmota-Verwee's effective Erdos-Wintner theorem for\n  Zeckendorf expansions",
+    "abstract": "We revisit the effective Erdos-Wintner theorem for Zeckendorf expansions.\nDrmota and the author obtained a uniform Kolmogorov bound whose error involves\n$T\\sum_{j>L-2h}|f(F_j)|$, which assumes absolute convergence of the linear tail\n$\\sum_j f(F_j)$. We remove this assumption. Grouping the transfer matrices in\npairs and working to second order on the logarithm of the product, after\nextracting the common linear phase along the dominant direction, yields a\nquadratic tail $T^2\\sum_{j>L-2h} f(F_j)^2$, or, in a flexible variant, the\nsplit tail $T\\sum_{|f(F_j)|>1/T}|f(F_j)| + T^2\\sum_{|f(F_j)|\\le 1/T} f(F_j)^2$.\nEither form requires only $\\sum f(F_j)^2<\\infty$.",
+    "categories": [],
+    "primary_category": "math.NT",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 8,
+      "unicode_math": 0,
+      "equations": 5,
+      "math_density": 0.13402061855670103
+    },
+    "content_hash": "e6c6e8316725e80f846c6b625eb594cd",
+    "url": "https://arxiv.org/abs/2509.14974v1",
+    "content_length": 753
+  },
+  {
+    "id": "2509.14881v1",
+    "title": "Normalized Indexing for Ramification Subgroups",
+    "abstract": "This expository note introduces a normalization of the indexing of the lower\nand upper numbering ramification subgroups of local class field theory. We then\nlook at how this normalization interacts with base change for Langlands\nparameters.",
+    "categories": [],
+    "primary_category": "math.NT",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 0,
+      "math_density": 0.0
+    },
+    "content_hash": "c7df432362cb18527515ecdbdd36b635",
+    "url": "https://arxiv.org/abs/2509.14881v1",
+    "content_length": 287
+  },
+  {
+    "id": "2509.14871v1",
+    "title": "Maximal curves of genus 5 over finite fields",
+    "abstract": "A maximal curve over a finite field $\\mathbb F_q$ is a curve whose number of\npoints reaches the upper Hasse-Weil-Serre bound. We define the discriminant of\n$\\mathbb F_q$ as $d(\\mathbb F_q):= \\lfloor2\\sqrt{q}\\rfloor^2-4q$, which arises\nas the discriminant of the characteristic polynomial of the Frobenius for a\nmaximal elliptic curve defined over $\\mathbb F_q$. In this article we\ninvestigate the existence of a maximal curve of genus $5$ defined over a finite\nfield $\\mathbb F_q$ of discriminant $-19$. Using the knowledge on the\nautomorphism group of such a curve, we prove that such curve does not exist\nwhen $q\\equiv 2,3,4 \\mod 5$. In the case $q\\equiv 1\\mod 5$ we give models of\nthe potential maximal curve. Finally, for the case $q\\equiv 0\\bmod 5$, we prove\nthat such a curve might exist only for $q=5^7$.",
+    "categories": [],
+    "primary_category": "math.NT",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 14,
+      "unicode_math": 0,
+      "equations": 11,
+      "math_density": 0.1773049645390071
+    },
+    "content_hash": "fc2d51235a2ae5ba424be60256a322f7",
+    "url": "https://arxiv.org/abs/2509.14871v1",
+    "content_length": 856
+  },
+  {
+    "id": "2509.15217v1",
+    "title": "Generalizable Geometric Image Caption Synthesis",
+    "abstract": "Multimodal large language models have various practical applications that\ndemand strong reasoning abilities. Despite recent advancements, these models\nstill struggle to solve complex geometric problems. A key challenge stems from\nthe lack of high-quality image-text pair datasets for understanding geometric\nimages. Furthermore, most template-based data synthesis pipelines typically\nfail to generalize to questions beyond their predefined templates. In this\npaper, we bridge this gap by introducing a complementary process of\nReinforcement Learning with Verifiable Rewards (RLVR) into the data generation\npipeline. By adopting RLVR to refine captions for geometric images synthesized\nfrom 50 basic geometric relations and using reward signals derived from\nmathematical problem-solving tasks, our pipeline successfully captures the key\nfeatures of geometry problem-solving. This enables better task generalization\nand yields non-trivial improvements. Furthermore, even in out-of-distribution\nscenarios, the generated dataset enhances the general reasoning capabilities of\nmultimodal large language models, yielding accuracy improvements of\n$2.8\\%\\text{-}4.8\\%$ in statistics, arithmetic, algebraic, and numerical tasks\nwith non-geometric input images of MathVista and MathVerse, along with\n$2.4\\%\\text{-}3.9\\%$ improvements in Art, Design, Tech, and Engineering tasks\nin MMMU.",
+    "categories": [],
+    "primary_category": "cs.AI",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 2,
+      "unicode_math": 0,
+      "equations": 2,
+      "math_density": 0.022222222222222223
+    },
+    "content_hash": "4534c7151f1256a92e84129068e1b05a",
+    "url": "https://arxiv.org/abs/2509.15217v1",
+    "content_length": 1424
+  },
+  {
+    "id": "2509.15210v1",
+    "title": "Explicit Context-Driven Neural Acoustic Modeling for High-Fidelity RIR\n  Generation",
+    "abstract": "Realistic sound simulation plays a critical role in many applications. A key\nelement in sound simulation is the room impulse response (RIR), which\ncharacterizes how sound propagates from a source to a listener within a given\nspace. Recent studies have applied neural implicit methods to learn RIR using\ncontext information collected from the environment, such as scene images.\nHowever, these approaches do not effectively leverage explicit geometric\ninformation from the environment. To further exploit the potential of neural\nimplicit models with direct geometric features, we present Mesh-infused Neural\nAcoustic Field (MiNAF), which queries a rough room mesh at given locations and\nextracts distance distributions as an explicit representation of local context.\nOur approach demonstrates that incorporating explicit local geometric features\ncan better guide the neural network in generating more accurate RIR\npredictions. Through comparisons with conventional and state-of-the-art\nbaseline methods, we show that MiNAF performs competitively across various\nevaluation metrics. Furthermore, we verify the robustness of MiNAF in datasets\nwith limited training samples, demonstrating an advance in high-fidelity sound\nsimulation.",
+    "categories": [],
+    "primary_category": "cs.AI",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 0,
+      "math_density": 0.0
+    },
+    "content_hash": "4f785428f5a7c69f3bc4960a71299db5",
+    "url": "https://arxiv.org/abs/2509.15210v1",
+    "content_length": 1312
+  },
+  {
+    "id": "2509.15207v1",
+    "title": "FlowRL: Matching Reward Distributions for LLM Reasoning",
+    "abstract": "We propose FlowRL: matching the full reward distribution via flow balancing\ninstead of maximizing rewards in large language model (LLM) reinforcement\nlearning (RL). Recent advanced reasoning models adopt reward-maximizing methods\n(\\eg, PPO and GRPO), which tend to over-optimize dominant reward signals while\nneglecting less frequent but valid reasoning paths, thus reducing diversity. In\ncontrast, we transform scalar rewards into a normalized target distribution\nusing a learnable partition function, and then minimize the reverse KL\ndivergence between the policy and the target distribution. We implement this\nidea as a flow-balanced optimization method that promotes diverse exploration\nand generalizable reasoning trajectories. We conduct experiments on math and\ncode reasoning tasks: FlowRL achieves a significant average improvement of\n$10.0\\%$ over GRPO and $5.1\\%$ over PPO on math benchmarks, and performs\nconsistently better on code reasoning tasks. These results highlight reward\ndistribution-matching as a key step toward efficient exploration and diverse\nreasoning in LLM reinforcement learning.",
+    "categories": [],
+    "primary_category": "cs.AI",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 1,
+      "unicode_math": 0,
+      "equations": 2,
+      "math_density": 0.018867924528301886
+    },
+    "content_hash": "e2e4dbd9a62907625f09c4211e32388a",
+    "url": "https://arxiv.org/abs/2509.15207v1",
+    "content_length": 1165
+  },
+  {
+    "id": "2509.15195v1",
+    "title": "Orion: Fuzzing Workflow Automation",
+    "abstract": "Fuzz testing is one of the most effective techniques for finding software\nvulnerabilities. While modern fuzzers can generate inputs and monitor\nexecutions automatically, the overall workflow, from analyzing a codebase, to\nconfiguring harnesses, to triaging results, still requires substantial manual\neffort. Prior attempts focused on single stages such as harness synthesis or\ninput minimization, leaving researchers to manually connect the pieces into a\ncomplete fuzzing campaign.\n  We introduce Orion, a framework that automates the the manual bottlenecks of\nfuzzing by integrating LLM reasoning with traditional tools, allowing campaigns\nto scale to settings where human effort alone was impractical. Orion uses LLMs\nfor code reasoning and semantic guidance, while relying on deterministic tools\nfor verification, iterative refinement, and tasks that require precision.\nAcross our benchmark suite, Orion reduces human effort by 46-204x depending on\nthe workflow stage, and we demonstrate its effectiveness through the discovery\nof two previously unknown vulnerabilities in the widely used open-source clib\nlibrary.",
+    "categories": [],
+    "primary_category": "cs.AI",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 0,
+      "math_density": 0.0
+    },
+    "content_hash": "3326913d1d9bf39f33a3b76785119e41",
+    "url": "https://arxiv.org/abs/2509.15195v1",
+    "content_length": 1152
+  },
+  {
+    "id": "2509.15193v1",
+    "title": "TITAN: A Trajectory-Informed Technique for Adaptive Parameter Freezing\n  in Large-Scale VQE",
+    "abstract": "Variational quantum Eigensolver (VQE) is a leading candidate for harnessing\nquantum computers to advance quantum chemistry and materials simulations, yet\nits training efficiency deteriorates rapidly for large Hamiltonians. Two issues\nunderlie this bottleneck: (i) the no-cloning theorem imposes a linear growth in\ncircuit evaluations with the number of parameters per gradient step; and (ii)\ndeeper circuits encounter barren plateaus (BPs), leading to exponentially\nincreasing measurement overheads. To address these challenges, here we propose\na deep learning framework, dubbed Titan, which identifies and freezes inactive\nparameters of a given ansatze at initialization for a specific class of\nHamiltonians, reducing the optimization overhead without sacrificing accuracy.\nThe motivation of Titan starts with our empirical findings that a subset of\nparameters consistently has a negligible influence on training dynamics. Its\ndesign combines a theoretically grounded data construction strategy, ensuring\neach training example is informative and BP-resilient, with an adaptive neural\narchitecture that generalizes across ansatze of varying sizes. Across benchmark\ntransverse-field Ising models, Heisenberg models, and multiple molecule systems\nup to 30 qubits, Titan achieves up to 3 times faster convergence and 40% to 60%\nfewer circuit evaluations than state-of-the-art baselines, while matching or\nsurpassing their estimation accuracy. By proactively trimming parameter space,\nTitan lowers hardware demands and offers a scalable path toward utilizing VQE\nto advance practical quantum chemistry and materials science.",
+    "categories": [],
+    "primary_category": "cs.AI",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 0,
+      "math_density": 0.0
+    },
+    "content_hash": "44e0c64f28fa169a5bdcd6ff695eb229",
+    "url": "https://arxiv.org/abs/2509.15193v1",
+    "content_length": 1712
+  },
+  {
+    "id": "2509.15219v1",
+    "title": "Out-of-Sight Trajectories: Tracking, Fusion, and Prediction",
+    "abstract": "Trajectory prediction is a critical task in computer vision and autonomous\nsystems, playing a key role in autonomous driving, robotics, surveillance, and\nvirtual reality. Existing methods often rely on complete and noise-free\nobservational data, overlooking the challenges associated with out-of-sight\nobjects and the inherent noise in sensor data caused by limited camera\ncoverage, obstructions, and the absence of ground truth for denoised\ntrajectories. These limitations pose safety risks and hinder reliable\nprediction in real-world scenarios. In this extended work, we present\nadvancements in Out-of-Sight Trajectory (OST), a novel task that predicts the\nnoise-free visual trajectories of out-of-sight objects using noisy sensor data.\nBuilding on our previous research, we broaden the scope of Out-of-Sight\nTrajectory Prediction (OOSTraj) to include pedestrians and vehicles, extending\nits applicability to autonomous driving, robotics, surveillance, and virtual\nreality. Our enhanced Vision-Positioning Denoising Module leverages camera\ncalibration to establish a vision-positioning mapping, addressing the lack of\nvisual references, while effectively denoising noisy sensor data in an\nunsupervised manner. Through extensive evaluations on the Vi-Fi and JRDB\ndatasets, our approach achieves state-of-the-art performance in both trajectory\ndenoising and prediction, significantly surpassing previous baselines.\nAdditionally, we introduce comparisons with traditional denoising methods, such\nas Kalman filtering, and adapt recent trajectory prediction models to our task,\nproviding a comprehensive benchmark. This work represents the first initiative\nto integrate vision-positioning projection for denoising noisy sensor\ntrajectories of out-of-sight agents, paving the way for future advances. The\ncode and preprocessed datasets are available at github.com/Hai-chao-Zhang/OST",
+    "categories": [],
+    "primary_category": "cs.LG",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 0,
+      "math_density": 0.0
+    },
+    "content_hash": "cb20220543659d04179d8a93dfabc1e5",
+    "url": "https://arxiv.org/abs/2509.15219v1",
+    "content_length": 1939
+  },
+  {
+    "id": "2509.15199v1",
+    "title": "CausalPre: Scalable and Effective Data Pre-processing for Causal\n  Fairness",
+    "abstract": "Causal fairness in databases is crucial to preventing biased and inaccurate\noutcomes in downstream tasks. While most prior work assumes a known causal\nmodel, recent efforts relax this assumption by enforcing additional\nconstraints. However, these approaches often fail to capture broader attribute\nrelationships that are critical to maintaining utility. This raises a\nfundamental question: Can we harness the benefits of causal reasoning to design\nefficient and effective fairness solutions without relying on strong\nassumptions about the underlying causal model? In this paper, we seek to answer\nthis question by introducing CausalPre, a scalable and effective\ncausality-guided data pre-processing framework that guarantees justifiable\nfairness, a strong causal notion of fairness. CausalPre extracts causally fair\nrelationships by reformulating the originally complex and computationally\ninfeasible extraction task into a tailored distribution estimation problem. To\nensure scalability, CausalPre adopts a carefully crafted variant of\nlow-dimensional marginal factorization to approximate the joint distribution,\ncomplemented by a heuristic algorithm that efficiently tackles the associated\ncomputational challenge. Extensive experiments on benchmark datasets\ndemonstrate that CausalPre is both effective and scalable, challenging the\nconventional belief that achieving causal fairness requires trading off\nrelationship coverage for relaxed model assumptions.",
+    "categories": [],
+    "primary_category": "cs.LG",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 0,
+      "math_density": 0.0
+    },
+    "content_hash": "d693fb0bc8f9ee563ef055bfea4ec4cf",
+    "url": "https://arxiv.org/abs/2509.15199v1",
+    "content_length": 1537
+  },
+  {
+    "id": "2509.15204v1",
+    "title": "Circuit-based chatacterization of finite-temperature quantum phases and\n  self-correcting quantum memory",
+    "abstract": "Quantum phases at zero temperature can be characterized as equivalence\nclasses under local unitary transformations: two ground states within a gapped\nphase can be transformed into each other via a local unitary circuit. We\ngeneralize this circuit-based characterization of phases to systems at\nfinite-temperature thermal equilibrium described by Gibbs states. We construct\na channel circuit that approximately transforms one Gibbs state into another\nprovided the two are connected by a path in parameter space along which a\ncertain correlation-decay condition holds. For finite-dimensional systems of\nlinear size $L$ and approximation error $\\epsilon$, the locality of the circuit\nis ${\\rm polylog}({\\rm poly}(L)/\\epsilon)$. The correlation-decay condition,\nwhich we specify, is expected to be satisfied in the interior of many\nnoncritical thermal phases, including those displaying discrete symmetry\nbreaking and topological order. As an application, we show that any system in\nthe same thermal phase as a zero-temperature topological code coherently\npreserves quantum information for a macroscopically long time, establishing\nself-correction as a universal property of thermal phases. As part of the\nproof, we provide explicit encoding and decoding channel circuits to encode\ninformation into, and decode it from, a system in thermal equilibrium.",
+    "categories": [],
+    "primary_category": "quant-ph",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 4,
+      "unicode_math": 0,
+      "equations": 3,
+      "math_density": 0.03482587064676617
+    },
+    "content_hash": "d238321fc789653b2447790c0f496556",
+    "url": "https://arxiv.org/abs/2509.15204v1",
+    "content_length": 1453
+  },
+  {
+    "id": "2509.15201v1",
+    "title": "Positive maps and extendibility hierarchies from copositive matrices",
+    "abstract": "The characterization of positive, non-CP linear maps is a central problem in\noperator algebras and quantum information theory, where such maps serve as\nentanglement witnesses. This work introduces and systematically studies a new\nconvex cone of PCOP (pairwise copositive). We establish that this cone is dual\nto the cone of PCP (pairwise completely positive) and, critically, provides a\ncomplete characterization for the positivity of the broad class of covariant\nmaps. We provide a way to lift matrices from the classical cone of COP to PCOP,\nthereby creating a powerful bridge between the well-studied theory of\ncopositive forms and the structure of positive maps. We develop an analogous\nframework for decomposable maps, introducing the cone PDEC. As a primary\napplication of this framework, we define a novel family of linear maps\n$\\Phi_t^G$ parameterized by a graph $G$ and a real parameter $t$. We derive\nexact thresholds on $t$ that determine when these maps are positive or\ndecomposable, linking these properties to fundamental graph-theoretic\nparameters. This construction yields vast new families of positive\nindecomposable maps, for which we provide explicit examples derived from\ninfinite classes of graphs, most notably rank 3 strongly regular graphs such as\nPaley graphs.\n  On the dual side, we investigate the entanglement properties of large classes\nof symmetric states, such as the Dicke states. We prove that the sum-of-squares\n(SOS) hierarchies used in polynomial optimization to approximate the cone of\ncopositive matrices correspond precisely to dual cones of witnesses for\ndifferent levels of the PPT bosonic extendibility hierarchy. Leveraging this\nduality, we provide an explicit construction of bipartite (mixture of) Dicke\nstates that are simultaneously entangled and $\\mathcal{K}_r$-PPT bosonic\nextendible for any desired hierarchy level $r \\geq 2$ and local dimension $n\n\\geq 5$.",
+    "categories": [],
+    "primary_category": "quant-ph",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 4,
+      "unicode_math": 0,
+      "equations": 7,
+      "math_density": 0.03741496598639456
+    },
+    "content_hash": "897538e6405964ca3b1147eaf561f8de",
+    "url": "https://arxiv.org/abs/2509.15201v1",
+    "content_length": 1976
+  },
+  {
+    "id": "2509.15200v1",
+    "title": "Strong converse exponent of channel interconversion",
+    "abstract": "In their seminal work, Bennett et al. [IEEE Trans. Inf. Theory (2002)] showed\nthat, with sufficient shared randomness, one noisy channel can simulate another\nat a rate equal to the ratio of their capacities. We establish that when coding\nabove this channel interconversion capacity, the exact strong converse exponent\nis characterized by a simple optimization involving the difference of the\ncorresponding R\\'enyi channel capacities with H\\\"older dual parameters. We\nfurther extend this result to the entanglement-assisted interconversion of\nclassical-quantum channels, showing that the strong converse exponent is\nlikewise determined by differences of sandwiched R\\'enyi channel capacities.\nThe converse bound is obtained by relaxing to non-signaling assisted codes and\napplying H\\\"older duality together with the data processing inequality for\nR\\'enyi divergences. Achievability is proven by concatenating refined channel\ncoding and simulation protocols that go beyond first-order capacities,\nattaining an exponentially small conversion error, remaining robust under small\nvariations in the input distribution, and tolerating a sublinear gap between\nthe conversion rates.",
+    "categories": [],
+    "primary_category": "quant-ph",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 0,
+      "math_density": 0.0
+    },
+    "content_hash": "33d2cde5e31c26dd134f9b6e1312a520",
+    "url": "https://arxiv.org/abs/2509.15200v1",
+    "content_length": 1225
+  },
+  {
+    "id": "2509.15138v1",
+    "title": "Sampled-Based Guided Quantum Walk: Non-variational quantum algorithm for\n  combinatorial optimization",
+    "abstract": "We introduce SamBa-GQW, a novel quantum algorithm for solving binary\ncombinatorial optimization problems of arbitrary degree with no use of any\nclassical optimizer. The algorithm is based on a continuous-time quantum walk\non the solution space represented as a graph. The walker explores the solution\nspace to find its way to vertices that minimize the cost function of the\noptimization problem. The key novelty of our algorithm is an offline classical\nsampling protocol that gives information about the spectrum of the problem\nHamiltonian. Then, the extracted information is used to guide the walker to\nhigh quality solutions via a quantum walk with a time-dependent hopping rate.\nWe investigate the performance of SamBa-GQW on several quadratic problems,\nnamely MaxCut, maximum independent set, portfolio optimization, and\nhigher-order polynomial problems such as LABS, MAX-$k$-SAT and a quartic\nreformulation of the travelling salesperson problem. We empirically demonstrate\nthat SamBa-GQW finds high quality approximate solutions on problems up to a\nsize of $n=20$ qubits by only sampling $n^2$ states among $2^n$ possible\ndecisions. SamBa-GQW compares very well also to other guided quantum walks and\nQAOA.",
+    "categories": [],
+    "primary_category": "quant-ph",
+    "language": "en",
+    "mathematical_analysis": {
+      "latex_commands": 0,
+      "unicode_math": 0,
+      "equations": 4,
+      "math_density": 0.021052631578947368
+    },
+    "content_hash": "8e27b2c15ac8bef8dbd600dc4d60009e",
+    "url": "https://arxiv.org/abs/2509.15138v1",
+    "content_length": 1313
+  }
+]

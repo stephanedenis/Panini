@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-09-22T19:39:13.234742",
+  "autonomous_processes": 10,
+  "active_processes": 1,
+  "idle_processes": 9,
+  "total_cpu_autonomous": 89.9,
+  "total_memory_autonomous": 346.8828125,
+  "system_cpu": 28.7,
+  "system_memory_percent": 15.9,
+  "recent_files_count": 55,
+  "bottlenecks": [
+    "🔥 GOULOT MAJEUR: Trop de processus inactifs"
+  ],
+  "health_score": 75
+}

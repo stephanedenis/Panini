@@ -1,0 +1,344 @@
+[
+  {
+    "phrase_originale": "Un lièvre se moquait d'une tortue.",
+    "langue_detectee": "fr",
+    "reconstruction_finale": "un lièvre se moquait de une tortue",
+    "fidelite_finale": 100.0,
+    "fidelite_initiale": 0.0,
+    "cycles_adaptation": 1,
+    "patterns_appris": [
+      {
+        "pattern": "un",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "lièvre",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "se",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "moquait",
+        "dhatu_associe": "MOVE",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "de",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "une",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "tortue",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      }
+    ],
+    "temps_traitement_ms": 2.1,
+    "garantie_100_respectee": true,
+    "apprentissage_effectue": true
+  },
+  {
+    "phrase_originale": "The hare mocked the tortoise.",
+    "langue_detectee": "en",
+    "reconstruction_finale": "the hare mocked the tortoise",
+    "fidelite_finale": 100.0,
+    "fidelite_initiale": 0.0,
+    "cycles_adaptation": 1,
+    "patterns_appris": [
+      {
+        "pattern": "the",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "hare",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "mocked",
+        "dhatu_associe": "MOVE",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "the",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "tortoise",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      }
+    ],
+    "temps_traitement_ms": 1.3,
+    "garantie_100_respectee": true,
+    "apprentissage_effectue": true
+  },
+  {
+    "phrase_originale": "Der Hase verspottete die Schildkröte.",
+    "langue_detectee": "de",
+    "reconstruction_finale": "der hase verspottete die schildkröte",
+    "fidelite_finale": 100.0,
+    "fidelite_initiale": 0.0,
+    "cycles_adaptation": 1,
+    "patterns_appris": [
+      {
+        "pattern": "der",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "hase",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "verspottete",
+        "dhatu_associe": "MOVE",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "die",
+        "dhatu_associe": "COMMUNICATE",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "schildkröte",
+        "dhatu_associe": "MOVE",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      }
+    ],
+    "temps_traitement_ms": 1.1,
+    "garantie_100_respectee": true,
+    "apprentissage_effectue": true
+  },
+  {
+    "phrase_originale": "Il était une fois une reine.",
+    "langue_detectee": "fr",
+    "reconstruction_finale": "il était une fois une reine",
+    "fidelite_finale": 100.0,
+    "fidelite_initiale": 0.0,
+    "cycles_adaptation": 1,
+    "patterns_appris": [
+      {
+        "pattern": "il",
+        "dhatu_associe": "TIME",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "était",
+        "dhatu_associe": "MOVE",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "une",
+        "dhatu_associe": "TIME",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "fois",
+        "dhatu_associe": "TIME",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "une",
+        "dhatu_associe": "TIME",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "reine",
+        "dhatu_associe": "TIME",
+        "langue": "fr",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      }
+    ],
+    "temps_traitement_ms": 1.4,
+    "garantie_100_respectee": true,
+    "apprentissage_effectue": true
+  },
+  {
+    "phrase_originale": "Once upon a time there was a queen.",
+    "langue_detectee": "en",
+    "reconstruction_finale": "once upon time there was queen",
+    "fidelite_finale": 100.0,
+    "fidelite_initiale": 0.0,
+    "cycles_adaptation": 1,
+    "patterns_appris": [
+      {
+        "pattern": "once",
+        "dhatu_associe": "TIME",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "upon",
+        "dhatu_associe": "TIME",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "time",
+        "dhatu_associe": "TIME",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "there",
+        "dhatu_associe": "TIME",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "was",
+        "dhatu_associe": "TIME",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "queen",
+        "dhatu_associe": "MOVE",
+        "langue": "en",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      }
+    ],
+    "temps_traitement_ms": 1.4,
+    "garantie_100_respectee": true,
+    "apprentissage_effectue": true
+  },
+  {
+    "phrase_originale": "Es war einmal eine Königin.",
+    "langue_detectee": "de",
+    "reconstruction_finale": "es war einmal eine königin",
+    "fidelite_finale": 100.0,
+    "fidelite_initiale": 20.0,
+    "cycles_adaptation": 1,
+    "patterns_appris": [
+      {
+        "pattern": "es",
+        "dhatu_associe": "TIME",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "war",
+        "dhatu_associe": "TIME",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "einmal",
+        "dhatu_associe": "TIME",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      },
+      {
+        "pattern": "königin",
+        "dhatu_associe": "TIME",
+        "langue": "de",
+        "contexte": "adaptatif",
+        "fiabilite": 0.9,
+        "occurrences": 1
+      }
+    ],
+    "temps_traitement_ms": 1.1,
+    "garantie_100_respectee": true,
+    "apprentissage_effectue": true
+  }
+]

@@ -1,0 +1,388 @@
+{
+  "audit_corpus": {
+    "timestamp": "2025-09-22",
+    "statistiques_globales": {
+      "nb_corpus_total": 14,
+      "nb_documents_total": 1274,
+      "nb_langues_total": 5,
+      "taille_totale_lignes": 12468,
+      "coverage_dhatu_moyenne": {
+        "MODAL": 0.10092857142857144,
+        "ASPECT": 0.09942857142857142,
+        "QUANT": 0.10242857142857142
+      },
+      "qualite_moyenne": 0.37857142857142856,
+      "corpus_utilisables": 6,
+      "langues_detectees": [
+        "de",
+        "en",
+        "fr",
+        "multilingual",
+        "sa"
+      ]
+    },
+    "corpus_analyses": [
+      {
+        "nom": "corpus_prescolaire.json",
+        "taille_docs": 0,
+        "langues": [
+          "fr"
+        ],
+        "type": "prescolaire",
+        "qualite": 0.0,
+        "utilisable": false,
+        "coverage_dhatu": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        }
+      },
+      {
+        "nom": "corpus_multilingue_dev.json",
+        "taille_docs": 139,
+        "langues": [
+          "fr",
+          "multilingual",
+          "en"
+        ],
+        "type": "multilingue",
+        "qualite": 0.9,
+        "utilisable": true,
+        "coverage_dhatu": {
+          "MODAL": 0.25,
+          "ASPECT": 0.25,
+          "QUANT": 0.25
+        }
+      },
+      {
+        "nom": "corpus_scientifique.json",
+        "taille_docs": 21,
+        "langues": [
+          "en"
+        ],
+        "type": "scientifique",
+        "qualite": 0.5,
+        "utilisable": true,
+        "coverage_dhatu": {
+          "MODAL": 0.06,
+          "ASPECT": 0.04,
+          "QUANT": 0.08
+        }
+      },
+      {
+        "nom": "corpus_complet_unifie.json",
+        "taille_docs": 0,
+        "langues": [
+          "fr"
+        ],
+        "type": "scientifique_multilingue_dhatu",
+        "qualite": 0.1,
+        "utilisable": false,
+        "coverage_dhatu": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        }
+      },
+      {
+        "nom": "scientific_corpus_pilot.json",
+        "taille_docs": 0,
+        "langues": [
+          "fr"
+        ],
+        "type": "scientifique",
+        "qualite": 0.0,
+        "utilisable": false,
+        "coverage_dhatu": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        }
+      },
+      {
+        "nom": "corpus_multilingue_developpemental.json",
+        "taille_docs": 139,
+        "langues": [
+          "fr",
+          "multilingual",
+          "en"
+        ],
+        "type": "multilingue",
+        "qualite": 0.9,
+        "utilisable": true,
+        "coverage_dhatu": {
+          "MODAL": 0.25,
+          "ASPECT": 0.25,
+          "QUANT": 0.25
+        }
+      },
+      {
+        "nom": "metadata_multilingue_dev.json",
+        "taille_docs": 0,
+        "langues": [
+          "fr",
+          "en",
+          "de"
+        ],
+        "type": "multilingue",
+        "qualite": 0.0,
+        "utilisable": false,
+        "coverage_dhatu": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        }
+      },
+      {
+        "nom": "dhatu_connections.json",
+        "taille_docs": 671,
+        "langues": [
+          "fr",
+          "multilingual",
+          "en"
+        ],
+        "type": "dhatu",
+        "qualite": 0.9,
+        "utilisable": true,
+        "coverage_dhatu": {
+          "MODAL": 0.5,
+          "ASPECT": 0.5,
+          "QUANT": 0.5
+        }
+      },
+      {
+        "nom": "research_insights.json",
+        "taille_docs": 0,
+        "langues": [
+          "fr"
+        ],
+        "type": "general",
+        "qualite": 0.0,
+        "utilisable": false,
+        "coverage_dhatu": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        }
+      },
+      {
+        "nom": "panini_corpus_unifie.json",
+        "taille_docs": 165,
+        "langues": [
+          "fr",
+          "multilingual",
+          "en",
+          "sa"
+        ],
+        "type": "scientific",
+        "qualite": 1.0,
+        "utilisable": true,
+        "coverage_dhatu": {
+          "MODAL": 0.1,
+          "ASPECT": 0.1,
+          "QUANT": 0.1
+        }
+      },
+      {
+        "nom": "metadata_corpus_unifie.json",
+        "taille_docs": 0,
+        "langues": [
+          "fr"
+        ],
+        "type": "general",
+        "qualite": 0.1,
+        "utilisable": false,
+        "coverage_dhatu": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        }
+      },
+      {
+        "nom": "corpus_pilot.json",
+        "taille_docs": 0,
+        "langues": [
+          "fr"
+        ],
+        "type": "general",
+        "qualite": 0.0,
+        "utilisable": false,
+        "coverage_dhatu": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        }
+      },
+      {
+        "nom": "corpus_multilingue_developpemental.json",
+        "taille_docs": 139,
+        "langues": [
+          "fr",
+          "multilingual",
+          "en"
+        ],
+        "type": "multilingue",
+        "qualite": 0.9,
+        "utilisable": true,
+        "coverage_dhatu": {
+          "MODAL": 0.25,
+          "ASPECT": 0.25,
+          "QUANT": 0.25
+        }
+      },
+      {
+        "nom": "corpus_pilot.json",
+        "taille_docs": 0,
+        "langues": [
+          "fr"
+        ],
+        "type": "general",
+        "qualite": 0.0,
+        "utilisable": false,
+        "coverage_dhatu": {
+          "MODAL": 0.0,
+          "ASPECT": 0.0,
+          "QUANT": 0.0
+        }
+      }
+    ],
+    "analyse_par_type": {
+      "prescolaire": {
+        "nb_corpus": 1,
+        "nb_docs_total": 0,
+        "qualite_moyenne": 0.0
+      },
+      "multilingue": {
+        "nb_corpus": 4,
+        "nb_docs_total": 417,
+        "qualite_moyenne": 0.67
+      },
+      "scientifique": {
+        "nb_corpus": 2,
+        "nb_docs_total": 21,
+        "qualite_moyenne": 0.25
+      },
+      "scientifique_multilingue_dhatu": {
+        "nb_corpus": 1,
+        "nb_docs_total": 0,
+        "qualite_moyenne": 0.1
+      },
+      "dhatu": {
+        "nb_corpus": 1,
+        "nb_docs_total": 671,
+        "qualite_moyenne": 0.9
+      },
+      "general": {
+        "nb_corpus": 4,
+        "nb_docs_total": 0,
+        "qualite_moyenne": 0.02
+      },
+      "scientific": {
+        "nb_corpus": 1,
+        "nb_docs_total": 165,
+        "qualite_moyenne": 1.0
+      }
+    },
+    "top_corpus_qualite": [
+      {
+        "nom": "panini_corpus_unifie.json",
+        "qualite": 1.0,
+        "docs": 165
+      },
+      {
+        "nom": "corpus_multilingue_dev.json",
+        "qualite": 0.9,
+        "docs": 139
+      },
+      {
+        "nom": "corpus_multilingue_developpemental.json",
+        "qualite": 0.9,
+        "docs": 139
+      },
+      {
+        "nom": "dhatu_connections.json",
+        "qualite": 0.9,
+        "docs": 671
+      },
+      {
+        "nom": "corpus_multilingue_developpemental.json",
+        "qualite": 0.9,
+        "docs": 139
+      }
+    ]
+  },
+  "gaps_identifies": {
+    "langues_manquantes": [
+      "es",
+      "it"
+    ],
+    "types_manquantes": [
+      "litteraire",
+      "journalistique"
+    ],
+    "dhatu_sous_representes": [
+      "MODAL",
+      "ASPECT",
+      "QUANT"
+    ],
+    "qualite_insuffisante": [
+      "corpus_prescolaire.json",
+      "corpus_complet_unifie.json",
+      "scientific_corpus_pilot.json",
+      "metadata_multilingue_dev.json",
+      "research_insights.json",
+      "metadata_corpus_unifie.json",
+      "corpus_pilot.json",
+      "corpus_pilot.json"
+    ],
+    "taille_insuffisante": [
+      "corpus_prescolaire.json",
+      "corpus_scientifique.json",
+      "corpus_complet_unifie.json",
+      "scientific_corpus_pilot.json",
+      "metadata_multilingue_dev.json",
+      "research_insights.json",
+      "metadata_corpus_unifie.json",
+      "corpus_pilot.json",
+      "corpus_pilot.json"
+    ]
+  },
+  "planification_extension": {
+    "objectif_total": 1000,
+    "documents_manquants": -274,
+    "repartition_langues": {
+      "fr": 0,
+      "en": 0,
+      "de": 0,
+      "es": 0
+    },
+    "repartition_types": {
+      "dhatu_specialise": 0,
+      "scientifique": 0,
+      "prescolaire": 0,
+      "litteraire": 0,
+      "journalistique": 0
+    },
+    "repartition_dhatu": {
+      "MODAL": 0,
+      "ASPECT": 0,
+      "QUANT": 0
+    },
+    "priorites_collecte": [
+      "Corpus dhātu spécialisé français (expressions modales)",
+      "Corpus scientifique anglais (modalité épistémique)",
+      "Corpus développemental allemand (aspects temporels)",
+      "Corpus littéraire multilingue (quantifications)",
+      "Validation croisée compositions inter-dhātu"
+    ],
+    "timeline_semaines": 4,
+    "effort_estime": "Moyen"
+  },
+  "recommandations_immediates": [
+    "Prioriser collecte corpus dhātu spécialisé français",
+    "Enrichir corpus scientifique anglais (modalité épistémique)",
+    "Développer corpus aspectuel allemand",
+    "Créer corpus validation compositions inter-dhātu",
+    "Automatiser pipeline collecte → validation → intégration"
+  ]
+}

@@ -1,0 +1,1647 @@
+{
+  "metadata": {
+    "date_test": "2025-09-22T15:03:56.228289",
+    "corpus_size": 33,
+    "fonctions_testees": 10,
+    "dhatu_utilises": 9
+  },
+  "metriques_performance": {
+    "precision": 1.606060606060606,
+    "couverture": 1.0,
+    "gaps": [
+      {
+        "fonction": "Incep",
+        "keyword": "travail",
+        "result": "entamer",
+        "dhatu_predits": [
+          "TRANS",
+          "LOCATE"
+        ],
+        "probleme": "Analyse non implémentée pour Incep(entamer)"
+      },
+      {
+        "fonction": "Incep",
+        "keyword": "carrière",
+        "result": "débuter",
+        "dhatu_predits": [
+          "TRANS",
+          "LOCATE"
+        ],
+        "probleme": "Analyse non implémentée pour Incep(débuter)"
+      },
+      {
+        "fonction": "Incep",
+        "keyword": "négociation",
+        "result": "ouvrir",
+        "dhatu_predits": [
+          "TRANS",
+          "LOCATE"
+        ],
+        "probleme": "Analyse non implémentée pour Incep(ouvrir)"
+      },
+      {
+        "fonction": "Incep",
+        "keyword": "négociation",
+        "result": "entamer",
+        "dhatu_predits": [
+          "TRANS",
+          "LOCATE"
+        ],
+        "probleme": "Analyse non implémentée pour Incep(entamer)"
+      },
+      {
+        "fonction": "Cont",
+        "keyword": "effort",
+        "result": "maintenir",
+        "dhatu_predits": [
+          "TRANS",
+          "LOCATE"
+        ],
+        "probleme": "Analyse non implémentée pour Cont(maintenir)"
+      },
+      {
+        "fonction": "Cont",
+        "keyword": "lutte",
+        "result": "continuer",
+        "dhatu_predits": [
+          "TRANS",
+          "LOCATE"
+        ],
+        "probleme": "Analyse non implémentée pour Cont(continuer)"
+      },
+      {
+        "fonction": "Fin",
+        "keyword": "étude",
+        "result": "achever",
+        "dhatu_predits": [
+          "TRANS",
+          "EXIST"
+        ],
+        "probleme": "Analyse non implémentée pour Fin(achever)"
+      },
+      {
+        "fonction": "Fin",
+        "keyword": "discussion",
+        "result": "clore",
+        "dhatu_predits": [
+          "TRANS",
+          "EXIST"
+        ],
+        "probleme": "Analyse non implémentée pour Fin(clore)"
+      },
+      {
+        "fonction": "Caus",
+        "keyword": "changement",
+        "result": "entraîner",
+        "dhatu_predits": [
+          "ACT",
+          "TRANS"
+        ],
+        "probleme": "Analyse non implémentée pour Caus(entraîner)"
+      },
+      {
+        "fonction": "Caus",
+        "keyword": "réaction",
+        "result": "susciter",
+        "dhatu_predits": [
+          "ACT",
+          "TRANS"
+        ],
+        "probleme": "Analyse non implémentée pour Caus(susciter)"
+      },
+      {
+        "fonction": "Caus",
+        "keyword": "réaction",
+        "result": "déclencher",
+        "dhatu_predits": [
+          "ACT",
+          "TRANS"
+        ],
+        "probleme": "Analyse non implémentée pour Caus(déclencher)"
+      },
+      {
+        "fonction": "Liqu",
+        "keyword": "doute",
+        "result": "lever",
+        "dhatu_predits": [
+          "TRANS",
+          "EXIST"
+        ],
+        "probleme": "Analyse non implémentée pour Liqu(lever)"
+      },
+      {
+        "fonction": "Liqu",
+        "keyword": "tension",
+        "result": "détendre",
+        "dhatu_predits": [
+          "TRANS",
+          "EXIST"
+        ],
+        "probleme": "Analyse non implémentée pour Liqu(détendre)"
+      },
+      {
+        "fonction": "Liqu",
+        "keyword": "tension",
+        "result": "relâcher",
+        "dhatu_predits": [
+          "TRANS",
+          "EXIST"
+        ],
+        "probleme": "Analyse non implémentée pour Liqu(relâcher)"
+      }
+    ],
+    "total_tests": 33,
+    "validees": 53
+  },
+  "mapping_theorique": {
+    "Magn": [
+      "EVAL",
+      "TRANS"
+    ],
+    "Ver": [
+      "EVAL",
+      "EXIST"
+    ],
+    "Bon": [
+      "EVAL",
+      "QUAL"
+    ],
+    "AntiBon": [
+      "EVAL",
+      "QUAL"
+    ],
+    "Oper1": [
+      "ACT",
+      "REL"
+    ],
+    "Oper2": [
+      "FEEL",
+      "TRANS"
+    ],
+    "Func0": [
+      "EXIST",
+      "LOCATE"
+    ],
+    "Func1": [
+      "EXIST",
+      "QUAL"
+    ],
+    "Real1": [
+      "ACT",
+      "TRANS"
+    ],
+    "Real2": [
+      "ACT",
+      "KNOW"
+    ],
+    "Caus": [
+      "ACT",
+      "TRANS"
+    ],
+    "Liqu": [
+      "TRANS",
+      "EXIST"
+    ],
+    "Incep": [
+      "TRANS",
+      "LOCATE"
+    ],
+    "Cont": [
+      "TRANS",
+      "LOCATE"
+    ],
+    "Fin": [
+      "TRANS",
+      "EXIST"
+    ]
+  },
+  "corpus_teste": {
+    "Magn": [
+      {
+        "keyword": "pluie",
+        "results": [
+          "battante",
+          "torrentielle",
+          "diluvienne"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "boire",
+        "results": [
+          "lampé",
+          "siffler",
+          "descendre"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "silence",
+        "results": [
+          "absolu",
+          "total",
+          "parfait"
+        ],
+        "source": "Polguère_2003"
+      },
+      {
+        "keyword": "erreur",
+        "results": [
+          "monumentale",
+          "grossière",
+          "énorme"
+        ],
+        "source": "Wanner_1996"
+      },
+      {
+        "keyword": "fatigue",
+        "results": [
+          "extrême",
+          "écrasante",
+          "accablante"
+        ],
+        "source": "Jousse_2010"
+      }
+    ],
+    "Oper1": [
+      {
+        "keyword": "décision",
+        "results": [
+          "prendre"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "attention",
+        "results": [
+          "faire",
+          "porter"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "guerre",
+        "results": [
+          "faire",
+          "mener"
+        ],
+        "source": "Polguère_2003"
+      },
+      {
+        "keyword": "discours",
+        "results": [
+          "tenir",
+          "prononcer"
+        ],
+        "source": "Wanner_1996"
+      },
+      {
+        "keyword": "examen",
+        "results": [
+          "passer",
+          "subir"
+        ],
+        "source": "Jousse_2010"
+      }
+    ],
+    "Oper2": [
+      {
+        "keyword": "critique",
+        "results": [
+          "essuyer",
+          "subir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "échec",
+        "results": [
+          "essuyer",
+          "subir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "succès",
+        "results": [
+          "remporter",
+          "obtenir"
+        ],
+        "source": "Polguère_2003"
+      },
+      {
+        "keyword": "punition",
+        "results": [
+          "recevoir",
+          "subir"
+        ],
+        "source": "Wanner_1996"
+      }
+    ],
+    "Real1": [
+      {
+        "keyword": "promesse",
+        "results": [
+          "tenir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "menace",
+        "results": [
+          "mettre à exécution"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "projet",
+        "results": [
+          "réaliser",
+          "mener à bien"
+        ],
+        "source": "Polguère_2003"
+      },
+      {
+        "keyword": "objectif",
+        "results": [
+          "atteindre",
+          "réaliser"
+        ],
+        "source": "Wanner_1996"
+      }
+    ],
+    "Real2": [
+      {
+        "keyword": "conseil",
+        "results": [
+          "suivre"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "ordre",
+        "results": [
+          "exécuter",
+          "obéir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "règle",
+        "results": [
+          "respecter",
+          "observer"
+        ],
+        "source": "Polguère_2003"
+      },
+      {
+        "keyword": "méthode",
+        "results": [
+          "appliquer",
+          "utiliser"
+        ],
+        "source": "Wanner_1996"
+      }
+    ],
+    "Incep": [
+      {
+        "keyword": "travail",
+        "results": [
+          "commencer",
+          "entamer"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "carrière",
+        "results": [
+          "débuter",
+          "commencer"
+        ],
+        "source": "Polguère_2003"
+      },
+      {
+        "keyword": "négociation",
+        "results": [
+          "ouvrir",
+          "entamer"
+        ],
+        "source": "Wanner_1996"
+      }
+    ],
+    "Cont": [
+      {
+        "keyword": "effort",
+        "results": [
+          "poursuivre",
+          "maintenir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "lutte",
+        "results": [
+          "continuer",
+          "poursuivre"
+        ],
+        "source": "Polguère_2003"
+      }
+    ],
+    "Fin": [
+      {
+        "keyword": "étude",
+        "results": [
+          "terminer",
+          "achever"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "discussion",
+        "results": [
+          "clore",
+          "terminer"
+        ],
+        "source": "Polguère_2003"
+      }
+    ],
+    "Caus": [
+      {
+        "keyword": "changement",
+        "results": [
+          "provoquer",
+          "entraîner"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "réaction",
+        "results": [
+          "susciter",
+          "déclencher"
+        ],
+        "source": "Polguère_2003"
+      }
+    ],
+    "Liqu": [
+      {
+        "keyword": "doute",
+        "results": [
+          "dissiper",
+          "lever"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      {
+        "keyword": "tension",
+        "results": [
+          "détendre",
+          "relâcher"
+        ],
+        "source": "Polguère_2003"
+      }
+    ]
+  },
+  "resultats_detailles": [
+    {
+      "fonction": "Magn",
+      "exemple": {
+        "keyword": "pluie",
+        "results": [
+          "battante",
+          "torrentielle",
+          "diluvienne"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "EVAL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Évaluation intensive + transformation"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Magn",
+      "exemple": {
+        "keyword": "boire",
+        "results": [
+          "lampé",
+          "siffler",
+          "descendre"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "EVAL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Magn",
+      "exemple": {
+        "keyword": "silence",
+        "results": [
+          "absolu",
+          "total",
+          "parfait"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "EVAL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "EVAL",
+            "EXIST"
+          ],
+          "valide": true,
+          "interpretation": "Évaluation totale + existence"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Magn",
+      "exemple": {
+        "keyword": "erreur",
+        "results": [
+          "monumentale",
+          "grossière",
+          "énorme"
+        ],
+        "source": "Wanner_1996"
+      },
+      "dhatu_predits": [
+        "EVAL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "QUAL"
+          ],
+          "valide": true,
+          "interpretation": "Évaluation + qualité dimensionnelle"
+        }
+      ]
+    },
+    {
+      "fonction": "Magn",
+      "exemple": {
+        "keyword": "fatigue",
+        "results": [
+          "extrême",
+          "écrasante",
+          "accablante"
+        ],
+        "source": "Jousse_2010"
+      },
+      "dhatu_predits": [
+        "EVAL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "EVAL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Intensification (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper1",
+      "exemple": {
+        "keyword": "décision",
+        "results": [
+          "prendre"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "REL"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "REL"
+          ],
+          "valide": true,
+          "interpretation": "Action établissant relation"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper1",
+      "exemple": {
+        "keyword": "attention",
+        "results": [
+          "faire",
+          "porter"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "REL"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT"
+          ],
+          "valide": true,
+          "interpretation": "Action générique"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "REL"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper1",
+      "exemple": {
+        "keyword": "guerre",
+        "results": [
+          "faire",
+          "mener"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "REL"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT"
+          ],
+          "valide": true,
+          "interpretation": "Action générique"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Action avec transformation"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper1",
+      "exemple": {
+        "keyword": "discours",
+        "results": [
+          "tenir",
+          "prononcer"
+        ],
+        "source": "Wanner_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "REL"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "REL"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "REL"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper1",
+      "exemple": {
+        "keyword": "examen",
+        "results": [
+          "passer",
+          "subir"
+        ],
+        "source": "Jousse_2010"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "REL"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "REL"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "REL"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper2",
+      "exemple": {
+        "keyword": "critique",
+        "results": [
+          "essuyer",
+          "subir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "FEEL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "FEEL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "FEEL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper2",
+      "exemple": {
+        "keyword": "échec",
+        "results": [
+          "essuyer",
+          "subir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "FEEL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "FEEL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "FEEL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper2",
+      "exemple": {
+        "keyword": "succès",
+        "results": [
+          "remporter",
+          "obtenir"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "FEEL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "FEEL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "FEEL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Oper2",
+      "exemple": {
+        "keyword": "punition",
+        "results": [
+          "recevoir",
+          "subir"
+        ],
+        "source": "Wanner_1996"
+      },
+      "dhatu_predits": [
+        "FEEL",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "FEEL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "FEEL",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Opération (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Real1",
+      "exemple": {
+        "keyword": "promesse",
+        "results": [
+          "tenir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Action réalisatrice"
+        }
+      ]
+    },
+    {
+      "fonction": "Real1",
+      "exemple": {
+        "keyword": "menace",
+        "results": [
+          "mettre à exécution"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Réalisation (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Real1",
+      "exemple": {
+        "keyword": "projet",
+        "results": [
+          "réaliser",
+          "mener à bien"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Action + transformation"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Réalisation (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Real1",
+      "exemple": {
+        "keyword": "objectif",
+        "results": [
+          "atteindre",
+          "réaliser"
+        ],
+        "source": "Wanner_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Réalisation (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Action + transformation"
+        }
+      ]
+    },
+    {
+      "fonction": "Real2",
+      "exemple": {
+        "keyword": "conseil",
+        "results": [
+          "suivre"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "KNOW"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "KNOW"
+          ],
+          "valide": true,
+          "interpretation": "Action basée sur connaissance"
+        }
+      ]
+    },
+    {
+      "fonction": "Real2",
+      "exemple": {
+        "keyword": "ordre",
+        "results": [
+          "exécuter",
+          "obéir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "KNOW"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "KNOW"
+          ],
+          "valide": true,
+          "interpretation": "Réalisation (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "KNOW"
+          ],
+          "valide": true,
+          "interpretation": "Réalisation (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Real2",
+      "exemple": {
+        "keyword": "règle",
+        "results": [
+          "respecter",
+          "observer"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "KNOW"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "KNOW"
+          ],
+          "valide": true,
+          "interpretation": "Réalisation (analyse générique)"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "KNOW"
+          ],
+          "valide": true,
+          "interpretation": "Réalisation (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Real2",
+      "exemple": {
+        "keyword": "méthode",
+        "results": [
+          "appliquer",
+          "utiliser"
+        ],
+        "source": "Wanner_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "KNOW"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "KNOW"
+          ],
+          "valide": true,
+          "interpretation": "Action + connaissance"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "KNOW"
+          ],
+          "valide": true,
+          "interpretation": "Réalisation (analyse générique)"
+        }
+      ]
+    },
+    {
+      "fonction": "Incep",
+      "exemple": {
+        "keyword": "travail",
+        "results": [
+          "commencer",
+          "entamer"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "LOCATE"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": true,
+          "interpretation": "Transformation + localisation temporelle"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Incep(entamer)"
+        }
+      ]
+    },
+    {
+      "fonction": "Incep",
+      "exemple": {
+        "keyword": "carrière",
+        "results": [
+          "débuter",
+          "commencer"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "LOCATE"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Incep(débuter)"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": true,
+          "interpretation": "Transformation + localisation temporelle"
+        }
+      ]
+    },
+    {
+      "fonction": "Incep",
+      "exemple": {
+        "keyword": "négociation",
+        "results": [
+          "ouvrir",
+          "entamer"
+        ],
+        "source": "Wanner_1996"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "LOCATE"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Incep(ouvrir)"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Incep(entamer)"
+        }
+      ]
+    },
+    {
+      "fonction": "Cont",
+      "exemple": {
+        "keyword": "effort",
+        "results": [
+          "poursuivre",
+          "maintenir"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "LOCATE"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": true,
+          "interpretation": "Transformation continue"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Cont(maintenir)"
+        }
+      ]
+    },
+    {
+      "fonction": "Cont",
+      "exemple": {
+        "keyword": "lutte",
+        "results": [
+          "continuer",
+          "poursuivre"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "LOCATE"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Cont(continuer)"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "LOCATE"
+          ],
+          "valide": true,
+          "interpretation": "Transformation continue"
+        }
+      ]
+    },
+    {
+      "fonction": "Fin",
+      "exemple": {
+        "keyword": "étude",
+        "results": [
+          "terminer",
+          "achever"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "EXIST"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "EXIST"
+          ],
+          "valide": true,
+          "interpretation": "Transformation d'existence"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "EXIST"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Fin(achever)"
+        }
+      ]
+    },
+    {
+      "fonction": "Fin",
+      "exemple": {
+        "keyword": "discussion",
+        "results": [
+          "clore",
+          "terminer"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "EXIST"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "EXIST"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Fin(clore)"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "EXIST"
+          ],
+          "valide": true,
+          "interpretation": "Transformation d'existence"
+        }
+      ]
+    },
+    {
+      "fonction": "Caus",
+      "exemple": {
+        "keyword": "changement",
+        "results": [
+          "provoquer",
+          "entraîner"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": true,
+          "interpretation": "Action causative"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Caus(entraîner)"
+        }
+      ]
+    },
+    {
+      "fonction": "Caus",
+      "exemple": {
+        "keyword": "réaction",
+        "results": [
+          "susciter",
+          "déclencher"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "ACT",
+        "TRANS"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Caus(susciter)"
+        },
+        {
+          "dhatu": [
+            "ACT",
+            "TRANS"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Caus(déclencher)"
+        }
+      ]
+    },
+    {
+      "fonction": "Liqu",
+      "exemple": {
+        "keyword": "doute",
+        "results": [
+          "dissiper",
+          "lever"
+        ],
+        "source": "Mel'čuk_1996"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "EXIST"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "EXIST"
+          ],
+          "valide": true,
+          "interpretation": "Transformation vers non-existence"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "EXIST"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Liqu(lever)"
+        }
+      ]
+    },
+    {
+      "fonction": "Liqu",
+      "exemple": {
+        "keyword": "tension",
+        "results": [
+          "détendre",
+          "relâcher"
+        ],
+        "source": "Polguère_2003"
+      },
+      "dhatu_predits": [
+        "TRANS",
+        "EXIST"
+      ],
+      "validations": [
+        {
+          "dhatu": [
+            "TRANS",
+            "EXIST"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Liqu(détendre)"
+        },
+        {
+          "dhatu": [
+            "TRANS",
+            "EXIST"
+          ],
+          "valide": false,
+          "probleme": "Analyse non implémentée pour Liqu(relâcher)"
+        }
+      ]
+    }
+  ],
+  "gaps_identifies": {
+    "fonctions_non_mappees": [
+      "Anti-Magn",
+      "Oper3",
+      "Func2",
+      "Real3",
+      "Fact0",
+      "Fact1",
+      "Fact2",
+      "Perm",
+      "Excess",
+      "Adv",
+      "Culm",
+      "Prox",
+      "Plus",
+      "Minus",
+      "Equ",
+      "Centr",
+      "Distr"
+    ],
+    "dhatu_insuffisants": [],
+    "cas_ambigus": [],
+    "extensions_necessaires": []
+  },
+  "extensions_proposees": {
+    "QUANT": "Quantité, nombre, mesure",
+    "TEMP": "Temporalité, durée, fréquence",
+    "MODAL": "Modalité, possibilité, nécessité",
+    "ASPECT": "Aspect, perspective, point de vue",
+    "INTENSE": "Intensité, degré, force"
+  },
+  "conclusions": {
+    "viabilite_approche": true,
+    "points_forts": [
+      "Couverture satisfaisante fonctions principales",
+      "Correspondances théoriques cohérentes",
+      "Base universelle solide (9 dhātu)"
+    ],
+    "ameliorations_necessaires": [
+      "Étendre mapping pour fonctions complexes",
+      "Ajouter dhātu spécialisés si nécessaire",
+      "Validation empirique sur corpus plus large"
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "phrase_originale": "The species Homo sapiens evolved in Africa.",
+  "noms_detectes": [
+    "Africa",
+    "Homo"
+  ],
+  "analyses_individuelles": [
+    {
+      "nom_original": "Africa",
+      "type_onomastique": "taxonyme",
+      "racines_etymologiques": [
+        {
+          "racine": "afri",
+          "langue_origine": "indeterminee",
+          "sens_original": "à_determiner",
+          "evolution_semantique": [
+            "analyse_requise"
+          ],
+          "dhatu_correspondant": "EXIST",
+          "niveau_certitude": 0.3
+        }
+      ],
+      "langues_contributives": [
+        "indeterminee"
+      ],
+      "signification_anthroponymique": null,
+      "origine_culturelle": null,
+      "tradition_nomenclature": null,
+      "signification_toponymique": null,
+      "caracteristiques_geographiques": null,
+      "evolution_historique": null,
+      "classification_taxonomique": {
+        "classification": "à_determiner"
+      },
+      "etymologie_scientifique": "Étymologie scientifique à rechercher",
+      "descripteurs_morphologiques": [
+        "Descripteurs à identifier"
+      ],
+      "concepts_dhatu_equivalents": [
+        "EXIST",
+        "QUALITY"
+      ],
+      "representation_universelle": "EXIST + QUALITY [Africa_concept]",
+      "alternatives_non_empruntees": [
+        "ESPECE-EXIST-QUALITY"
+      ],
+      "timestamp_analyse": "2025-09-22T09:04:07.395259",
+      "sources_references": [
+        "Base_Etymologique_v1",
+        "Base_Onomastique_v1"
+      ],
+      "niveau_completude": 0.85
+    },
+    {
+      "nom_original": "Homo",
+      "type_onomastique": "taxonyme",
+      "racines_etymologiques": [
+        {
+          "racine": "homo",
+          "langue_origine": "indeterminee",
+          "sens_original": "à_determiner",
+          "evolution_semantique": [
+            "analyse_requise"
+          ],
+          "dhatu_correspondant": "EXIST",
+          "niveau_certitude": 0.3
+        }
+      ],
+      "langues_contributives": [
+        "indeterminee"
+      ],
+      "signification_anthroponymique": null,
+      "origine_culturelle": null,
+      "tradition_nomenclature": null,
+      "signification_toponymique": null,
+      "caracteristiques_geographiques": null,
+      "evolution_historique": null,
+      "classification_taxonomique": {
+        "regne": "Animalia",
+        "embranchement": "Chordata",
+        "classe": "Mammalia",
+        "ordre": "Primates"
+      },
+      "etymologie_scientifique": "homme (latin) - caractérise l'humanité",
+      "descripteurs_morphologiques": [
+        "bipède",
+        "cerveau_développé",
+        "opposable_pouce"
+      ],
+      "concepts_dhatu_equivalents": [
+        "EXIST",
+        "QUALITY"
+      ],
+      "representation_universelle": "EXIST + QUALITY [Homo_concept]",
+      "alternatives_non_empruntees": [
+        "ESPECE-EXIST-QUALITY"
+      ],
+      "timestamp_analyse": "2025-09-22T09:04:07.395259",
+      "sources_references": [
+        "Base_Etymologique_v1",
+        "Base_Onomastique_v1"
+      ],
+      "niveau_completude": 0.85
+    }
+  ],
+  "synthese_globale": {
+    "nombre_noms_analyses": 2,
+    "types_onomastiques": [
+      "taxonyme"
+    ],
+    "langues_etymologiques": [
+      "indeterminee"
+    ],
+    "dhatus_universels_detectes": [
+      "EXIST",
+      "QUALITY"
+    ],
+    "niveau_diversite_linguistique": 1,
+    "niveau_complexite_semantique": 2
+  },
+  "recommandations_langue_nouvelle": [
+    "🚫 ÉVITER tout emprunt direct de noms propres existants",
+    "🧬 DÉCOMPOSER chaque nom jusqu'aux concepts dhātu universels",
+    "🏗️ CONSTRUIRE de nouveaux noms à partir des dhātu identifiés",
+    "📚 DOCUMENTER l'étymologie de chaque nom créé",
+    "🌍 ASSURER l'universalité conceptuelle par les dhātu",
+    "🔬 Pour Africa: Utiliser EXIST + QUALITY [Africa_concept]",
+    "🔬 Pour Homo: Utiliser EXIST + QUALITY [Homo_concept]"
+  ]
+}

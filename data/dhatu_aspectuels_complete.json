@@ -1,0 +1,350 @@
+{
+  "dhatu_base": {
+    "EXIST": "existence, être, présence ontologique",
+    "COMM": "communication, expression, transmission d'information",
+    "TRANS": "transformation, changement d'état, évolution",
+    "DECIDE": "décision, choix, volition",
+    "EVAL": "évaluation, jugement, appréciation",
+    "GROUP": "groupement, relation, association",
+    "ITER": "répétition, itération, processus cyclique",
+    "LOCATE": "localisation, positionnement spatial/temporel",
+    "SEQ": "séquence, ordre, progression temporelle"
+  },
+  "dhatu_aspectuels": {
+    "PERF": {
+      "nom": "PERF",
+      "semantique_base": "perfectivité, action accomplie, résultat atteint",
+      "dimensions": {
+        "temporalite": [
+          "accompli",
+          "resultatif",
+          "anteriorite"
+        ],
+        "modalite": [
+          "certitude",
+          "realise",
+          "confirme"
+        ],
+        "evidentialite": [
+          "direct",
+          "accompli"
+        ]
+      },
+      "marqueurs_linguistiques": {
+        "fr": [
+          "a fait",
+          "avait fait",
+          "eut fait",
+          "passé composé",
+          "plus-que-parfait"
+        ],
+        "en": [
+          "has done",
+          "had done",
+          "will have done",
+          "perfect tenses"
+        ],
+        "de": [
+          "hat gemacht",
+          "hatte gemacht",
+          "wird gemacht haben",
+          "Perfekt",
+          "Plusquamperfekt"
+        ]
+      },
+      "portee_universelle": 0.95,
+      "exemples_multilingues": {
+        "fr": [
+          "Il a mangé",
+          "Elle avait fini",
+          "Nous aurons terminé"
+        ],
+        "en": [
+          "He has eaten",
+          "She had finished",
+          "We will have completed"
+        ],
+        "de": [
+          "Er hat gegessen",
+          "Sie hatte beendet",
+          "Wir werden beendet haben"
+        ]
+      }
+    },
+    "PROG": {
+      "nom": "PROG",
+      "semantique_base": "progressivité, action en cours, durée",
+      "dimensions": {
+        "temporalite": [
+          "duratif",
+          "en_cours",
+          "simultane"
+        ],
+        "modalite": [
+          "processuel",
+          "non_fini",
+          "continu"
+        ],
+        "evidentialite": [
+          "observable",
+          "en_cours"
+        ]
+      },
+      "marqueurs_linguistiques": {
+        "fr": [
+          "était en train de",
+          "étais en train de",
+          "imparfait duratif"
+        ],
+        "en": [
+          "was doing",
+          "were doing",
+          "continuous tenses",
+          "-ing forms"
+        ],
+        "de": [
+          "war dabei",
+          "während",
+          "gerade",
+          "kontinuierliche Formen"
+        ]
+      },
+      "portee_universelle": 0.92,
+      "exemples_multilingues": {
+        "fr": [
+          "Il mangeait",
+          "Elle était en train de lire",
+          "Nous travaillions"
+        ],
+        "en": [
+          "He was eating",
+          "She was reading",
+          "We were working"
+        ],
+        "de": [
+          "Er war am Essen",
+          "Sie war beim Lesen",
+          "Wir arbeiteten gerade"
+        ]
+      }
+    },
+    "ITER_PERF": {
+      "nom": "ITER_PERF",
+      "semantique_base": "itération perfectivisée, répétition avec accomplissement",
+      "dimensions": {
+        "temporalite": [
+          "repetitif",
+          "accompli",
+          "cyclique"
+        ],
+        "modalite": [
+          "habituel",
+          "realise",
+          "confirme"
+        ],
+        "evidentialite": [
+          "pattern_etabli",
+          "observe"
+        ]
+      },
+      "marqueurs_linguistiques": {
+        "fr": [
+          "avait l'habitude de",
+          "faisait toujours",
+          "répétait"
+        ],
+        "en": [
+          "used to",
+          "would always",
+          "kept doing"
+        ],
+        "de": [
+          "pflegte zu",
+          "hatte die Gewohnheit",
+          "wiederholte immer"
+        ]
+      },
+      "portee_universelle": 0.88,
+      "exemples_multilingues": {
+        "fr": [
+          "Il travaillait dur",
+          "Elle collectait toujours",
+          "Nous répétions"
+        ],
+        "en": [
+          "He worked hard",
+          "She always collected",
+          "We kept repeating"
+        ],
+        "de": [
+          "Er arbeitete hart",
+          "Sie sammelte immer",
+          "Wir wiederholten immer"
+        ]
+      }
+    },
+    "MODAL_POSS": {
+      "nom": "MODAL_POSS",
+      "semantique_base": "possibilité, potentialité, capacité",
+      "dimensions": {
+        "modalite": [
+          "possible",
+          "potentiel",
+          "capable"
+        ],
+        "evidentialite": [
+          "hypothetique",
+          "infere"
+        ],
+        "force": [
+          "faible",
+          "moyenne",
+          "forte"
+        ]
+      },
+      "marqueurs_linguistiques": {
+        "fr": [
+          "peut",
+          "pourrait",
+          "serait capable de",
+          "il se peut que"
+        ],
+        "en": [
+          "can",
+          "could",
+          "might",
+          "may",
+          "able to"
+        ],
+        "de": [
+          "kann",
+          "könnte",
+          "mag",
+          "imstande sein"
+        ]
+      },
+      "portee_universelle": 0.93,
+      "exemples_multilingues": {
+        "fr": [
+          "Il peut courir",
+          "Elle pourrait gagner"
+        ],
+        "en": [
+          "He can run",
+          "She might win"
+        ],
+        "de": [
+          "Er kann laufen",
+          "Sie könnte gewinnen"
+        ]
+      }
+    },
+    "EVID_NARR": {
+      "nom": "EVID_NARR",
+      "semantique_base": "évidence narrative, source d'information narrative",
+      "dimensions": {
+        "evidentialite": [
+          "narratif",
+          "rapporte",
+          "traditionnel"
+        ],
+        "modalite": [
+          "narratif",
+          "culturel",
+          "transmis"
+        ],
+        "temporalite": [
+          "atemporel",
+          "mythique",
+          "traditionnel"
+        ]
+      },
+      "marqueurs_linguistiques": {
+        "fr": [
+          "il était une fois",
+          "on raconte que",
+          "selon la légende"
+        ],
+        "en": [
+          "once upon a time",
+          "it is said that",
+          "legend tells"
+        ],
+        "de": [
+          "es war einmal",
+          "man erzählt",
+          "der Legende nach"
+        ]
+      },
+      "portee_universelle": 0.85,
+      "exemples_multilingues": {
+        "fr": [
+          "Il était une fois",
+          "Pendant l'été"
+        ],
+        "en": [
+          "Once upon a time",
+          "During the summer"
+        ],
+        "de": [
+          "Es war einmal",
+          "Während des Sommers"
+        ]
+      }
+    }
+  },
+  "patterns_multilingues": {
+    "formules_narratives": {
+      "fr": [
+        "il était une fois",
+        "pendant l\\'été",
+        "en plein hiver"
+      ],
+      "en": [
+        "once upon a time",
+        "during the summer",
+        "in the middle of winter"
+      ],
+      "de": [
+        "es war einmal",
+        "während des sommers",
+        "mitten im winter"
+      ]
+    },
+    "aspects_temporels": {
+      "fr": [
+        "était en train de",
+        "avait l\\'habitude",
+        "se moquait"
+      ],
+      "en": [
+        "was \\w+ing",
+        "used to",
+        "would \\w+"
+      ],
+      "de": [
+        "war dabei",
+        "pflegte zu",
+        "verspottete"
+      ]
+    },
+    "modalites": {
+      "fr": [
+        "pourrait",
+        "devrait",
+        "il se peut"
+      ],
+      "en": [
+        "could",
+        "should",
+        "might",
+        "may"
+      ],
+      "de": [
+        "könnte",
+        "sollte",
+        "mag"
+      ]
+    }
+  }
+}

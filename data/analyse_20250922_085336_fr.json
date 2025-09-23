@@ -1,0 +1,383 @@
+{
+  "phrase_originale": "Il était une fois une reine.",
+  "langue": "fr",
+  "elements": [
+    {
+      "id": "92d69b9f",
+      "contenu": "Il",
+      "type_element": "mot_majuscule",
+      "position_absolue": 0,
+      "position_relative": 0,
+      "contexte_gauche": "",
+      "contexte_droit": " était ",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "debut_phrase_ou_nom_propre",
+      "niveau_certitude": 0.6,
+      "etiquettes_temporaires": [
+        "INCERTAIN"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "Il",
+          "position_phrase": "debut",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "ca08f943",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 2,
+      "position_relative": 1,
+      "contexte_gauche": "Il",
+      "contexte_droit": "était une",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "83862de3",
+      "contenu": "était",
+      "type_element": "mot_minuscule",
+      "position_absolue": 3,
+      "position_relative": 2,
+      "contexte_gauche": "Il ",
+      "contexte_droit": " une ",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "était",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "88aa753e",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 8,
+      "position_relative": 3,
+      "contexte_gauche": "Il était",
+      "contexte_droit": "une fois",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "dd319408",
+      "contenu": "une",
+      "type_element": "mot_minuscule",
+      "position_absolue": 9,
+      "position_relative": 4,
+      "contexte_gauche": " était ",
+      "contexte_droit": " fois ",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "article",
+      "niveau_certitude": 0.9,
+      "etiquettes_temporaires": [],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "une",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "4f4fd80f",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 12,
+      "position_relative": 5,
+      "contexte_gauche": "était une",
+      "contexte_droit": "fois une",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "5db66684",
+      "contenu": "fois",
+      "type_element": "mot_minuscule",
+      "position_absolue": 13,
+      "position_relative": 6,
+      "contexte_gauche": " une ",
+      "contexte_droit": " une ",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "fois",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "33bb3b70",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 17,
+      "position_relative": 7,
+      "contexte_gauche": "une fois",
+      "contexte_droit": "une reine",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "52edb557",
+      "contenu": "une",
+      "type_element": "mot_minuscule",
+      "position_absolue": 18,
+      "position_relative": 8,
+      "contexte_gauche": " fois ",
+      "contexte_droit": " reine.",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "article",
+      "niveau_certitude": 0.9,
+      "etiquettes_temporaires": [],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "une",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "8fb524fb",
+      "contenu": " ",
+      "type_element": "espace",
+      "position_absolue": 21,
+      "position_relative": 9,
+      "contexte_gauche": "fois une",
+      "contexte_droit": "reine.",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER",
+        "CARACTERE_ISOLE_SIGNIFICATION_INCONNUE"
+      ],
+      "variables_inconnues": {},
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "e26e5e91",
+      "contenu": "reine",
+      "type_element": "mot_minuscule",
+      "position_absolue": 22,
+      "position_relative": 10,
+      "contexte_gauche": " une ",
+      "contexte_droit": ".",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "element_lexical",
+      "niveau_certitude": 0.5,
+      "etiquettes_temporaires": [
+        "INCERTAIN",
+        "SEMANTIQUE_A_DETERMINER"
+      ],
+      "variables_inconnues": {
+        "choix_casse": {
+          "casse_originale": "reine",
+          "position_phrase": "milieu",
+          "justification_inconnue": true
+        }
+      },
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    },
+    {
+      "id": "839c0c5e",
+      "contenu": ".",
+      "type_element": "ponctuation",
+      "position_absolue": 27,
+      "position_relative": 11,
+      "contexte_gauche": "une reine",
+      "contexte_droit": "",
+      "langue_detectee": "fr",
+      "probable_fonction_grammaticale": "ponctuation_finale",
+      "niveau_certitude": 1.0,
+      "etiquettes_temporaires": [],
+      "variables_inconnues": {
+        "choix_ponctuation_finale": {
+          "type_choisi": ".",
+          "alternatives_possibles": [
+            ".",
+            "!",
+            "?"
+          ],
+          "intention_locuteur_inconnue": true
+        }
+      },
+      "locuteur": "conteur_traditionnel",
+      "contexte_situationnel": "conte_oral",
+      "moment_traitement": "2025-09-22T08:53:36.984510",
+      "version_pipeline": "v7.1-Enhanced",
+      "etat_modele": "TokenisateurComplet_v7.1-Enhanced_2025-09-22T08:53:36.978952",
+      "traducteur_original": null,
+      "contexte_traduction": null,
+      "moment_traduction": null
+    }
+  ],
+  "structure_syntaxique": {
+    "nombre_elements_total": 12,
+    "nombre_mots": 6,
+    "nombre_ponctuation": 1,
+    "nombre_espaces": 5,
+    "elements_majuscules": [
+      "Il"
+    ],
+    "structure_ponctuation": [
+      "."
+    ],
+    "pattern_syntaxique": "M_M_M_M_M_MP"
+  },
+  "elements_non_compris": [
+    "Il (certitude: 0.6)",
+    "  (certitude: 0.5)",
+    "était (certitude: 0.5)",
+    "  (certitude: 0.5)",
+    "  (certitude: 0.5)",
+    "fois (certitude: 0.5)",
+    "  (certitude: 0.5)",
+    "  (certitude: 0.5)",
+    "reine (certitude: 0.5)"
+  ],
+  "hypotheses_semantiques": [
+    {
+      "type": "intention_communicative",
+      "hypothese": "Intention déclarative/neutre",
+      "niveau_confiance": 0.8,
+      "elements_support": [
+        "."
+      ]
+    }
+  ],
+  "timestamp_analyse": "2025-09-22T08:53:36.984510",
+  "version_analyseur": "v7.1-Enhanced"
+}

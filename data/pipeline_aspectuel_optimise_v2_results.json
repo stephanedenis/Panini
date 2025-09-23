@@ -1,0 +1,139 @@
+{
+  "version": "v2.0_optimise",
+  "corpus_size": 3,
+  "tests_total": 18,
+  "fidelite_moyenne": 0.10998177435103082,
+  "fidelite_maximum": 0.3040816326530612,
+  "amelioration_vs_v1": -0.018018225648969183,
+  "resultats_detailles": {
+    "tortoise_hare": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.1309901738473167,
+      "meilleures_reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.17777777777777778,
+          "confiance": 0.8562500000000001,
+          "reconstitue": "tortoise was working \"you are so slow\" continued by a window slowness",
+          "attendu": "A hare mocked a tortoise because of its slowness. \"You are so slow!\" he said. \"I bet I can win a rac..."
+        },
+        "fr->de": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "Ein Hase verspottete eine Schildkröte wegen ihrer Langsamkeit. \"Du bist so langsam!\" sagte er. \"Ich ..."
+        },
+        "en->fr": {
+          "fidelite": 0.3040816326530612,
+          "confiance": 0.8657692307692308,
+          "reconstitue": "lièvre était en train de \"tu es si lente\" commencèrent près d'une fenêtre se moquait",
+          "attendu": "Un lièvre se moquait d'une tortue à cause de sa lenteur. \"Tu es si lente !\" dit-il. \"Je parie que je..."
+        },
+        "en->de": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "Ein Hase verspottete eine Schildkröte wegen ihrer Langsamkeit. \"Du bist so langsam!\" sagte er. \"Ich ..."
+        },
+        "de->fr": {
+          "fidelite": 0.3040816326530612,
+          "confiance": 0.8585,
+          "reconstitue": "lièvre était en train de \"tu es si lente\" commencèrent près d'une fenêtre se moquait",
+          "attendu": "Un lièvre se moquait d'une tortue à cause de sa lenteur. \"Tu es si lente !\" dit-il. \"Je parie que je..."
+        },
+        "de->en": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "A hare mocked a tortoise because of its slowness. \"You are so slow!\" he said. \"I bet I can win a rac..."
+        }
+      },
+      "progressions": []
+    },
+    "ant_grasshopper": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.08994784257942152,
+      "meilleures_reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.23157894736842105,
+          "confiance": 0.9,
+          "reconstitue": "tortoise in the middle of winter was working continued by a window",
+          "attendu": "During the summer, an ant worked hard to collect food for winter. A grasshopper saw her and mocked h..."
+        },
+        "fr->de": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "Während des Sommers arbeitete eine Ameise hart, um Futter für den Winter zu sammeln. Eine Grille sah..."
+        },
+        "en->fr": {
+          "fidelite": 0.15405405405405406,
+          "confiance": 0.9133333333333332,
+          "reconstitue": "lièvre il était une fois était en train de commencèrent près d'une fenêtre",
+          "attendu": "Pendant l'été, une fourmi travaillait dur pour collecter de la nourriture pour l'hiver. Une cigale l..."
+        },
+        "en->de": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "Während des Sommers arbeitete eine Ameise hart, um Futter für den Winter zu sammeln. Eine Grille sah..."
+        },
+        "de->fr": {
+          "fidelite": 0.15405405405405406,
+          "confiance": 0.9133333333333332,
+          "reconstitue": "lièvre il était une fois était en train de commencèrent près d'une fenêtre",
+          "attendu": "Pendant l'été, une fourmi travaillait dur pour collecter de la nourriture pour l'hiver. Une cigale l..."
+        },
+        "de->en": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "During the summer, an ant worked hard to collect food for winter. A grasshopper saw her and mocked h..."
+        }
+      },
+      "progressions": []
+    },
+    "snow_white_opening": {
+      "paires_testees": 6,
+      "fidelite_moyenne_texte": 0.10900730662635423,
+      "meilleures_reconstitutions": {
+        "fr->en": {
+          "fidelite": 0.2836734693877551,
+          "confiance": 0.9266666666666666,
+          "reconstitue": "tortoise in the middle of winter was working \"you are so slow\" by a window",
+          "attendu": "Once upon a time, in the middle of winter, a queen was sewing by a window. Snow was falling like whi..."
+        },
+        "fr->de": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "Es war einmal mitten im Winter, und die Schneeflocken fielen wie Federn vom Himmel herab. Eine König..."
+        },
+        "en->fr": {
+          "fidelite": 0.18518518518518517,
+          "confiance": 0.9114285714285714,
+          "reconstitue": "lièvre il était une fois était en train de \"tu es si lente\" près d'une fenêtre",
+          "attendu": "Il était une fois, en plein hiver, une reine qui cousait près d'une fenêtre. La neige tombait comme ..."
+        },
+        "en->de": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "Es war einmal mitten im Winter, und die Schneeflocken fielen wie Federn vom Himmel herab. Eine König..."
+        },
+        "de->fr": {
+          "fidelite": 0.18518518518518517,
+          "confiance": 0.9,
+          "reconstitue": "lièvre il était une fois était en train de \"tu es si lente\" près d'une fenêtre",
+          "attendu": "Il était une fois, en plein hiver, une reine qui cousait près d'une fenêtre. La neige tombait comme ..."
+        },
+        "de->en": {
+          "fidelite": 0.0,
+          "confiance": 0.0,
+          "reconstitue": "",
+          "attendu": "Once upon a time, in the middle of winter, a queen was sewing by a window. Snow was falling like whi..."
+        }
+      },
+      "progressions": []
+    }
+  }
+}

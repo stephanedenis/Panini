@@ -1,0 +1,1570 @@
+{
+  "timestamp": 1758562556.359873,
+  "timestamp_human": "2025-09-22 13:35:56",
+  "gpu_allocations": {
+    "hd7750": {
+      "card_path": "/dev/dri/card0",
+      "render_node": "/dev/dri/renderD128",
+      "primary_role": "Display/Desktop",
+      "current_processes": [
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksecretd",
+          "pid": "2555",
+          "command": "/usr/bin/ksecretd --pam-login 13 14",
+          "cpu_percent": 0.0,
+          "memory_mb": 106.33984375,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksecretd",
+          "pid": "2555",
+          "command": "/usr/bin/ksecretd --pam-login 13 14",
+          "cpu_percent": 0.0,
+          "memory_mb": 106.33984375,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksecretd",
+          "pid": "2555",
+          "command": "/usr/bin/ksecretd --pam-login 13 14",
+          "cpu_percent": 0.0,
+          "memory_mb": 106.33984375,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksecretd",
+          "pid": "2555",
+          "command": "/usr/bin/ksecretd --pam-login 13 14",
+          "cpu_percent": 0.0,
+          "memory_mb": 106.33984375,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksmserver",
+          "pid": "2704",
+          "command": "/usr/bin/ksmserver",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.85546875,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksmserver",
+          "pid": "2704",
+          "command": "/usr/bin/ksmserver",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.85546875,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksmserver",
+          "pid": "2704",
+          "command": "/usr/bin/ksmserver",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.85546875,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksmserver",
+          "pid": "2704",
+          "command": "/usr/bin/ksmserver",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.85546875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kded6",
+          "pid": "2706",
+          "command": "/usr/bin/kded6",
+          "cpu_percent": 0.0,
+          "memory_mb": 124.4140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "kded6",
+          "pid": "2706",
+          "command": "/usr/bin/kded6",
+          "cpu_percent": 0.0,
+          "memory_mb": 124.4140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "kded6",
+          "pid": "2706",
+          "command": "/usr/bin/kded6",
+          "cpu_percent": 0.0,
+          "memory_mb": 124.4140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "kded6",
+          "pid": "2706",
+          "command": "/usr/bin/kded6",
+          "cpu_percent": 0.0,
+          "memory_mb": 124.4140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "kwin_x11",
+          "pid": "2707",
+          "command": "/usr/bin/kwin_x11 --replace",
+          "cpu_percent": 0.0,
+          "memory_mb": 202.71875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kwin_x11",
+          "pid": "2707",
+          "command": "/usr/bin/kwin_x11 --replace",
+          "cpu_percent": 0.0,
+          "memory_mb": 202.71875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kwin_x11",
+          "pid": "2707",
+          "command": "/usr/bin/kwin_x11 --replace",
+          "cpu_percent": 0.0,
+          "memory_mb": 202.71875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kwin_x11",
+          "pid": "2707",
+          "command": "/usr/bin/kwin_x11 --replace",
+          "cpu_percent": 0.0,
+          "memory_mb": 202.71875,
+          "status": "sleeping"
+        },
+        {
+          "name": "plasmashe",
+          "pid": "2895",
+          "command": "/usr/bin/plasmashell --no-respawn",
+          "cpu_percent": 0.0,
+          "memory_mb": 537.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "plasmashe",
+          "pid": "2895",
+          "command": "/usr/bin/plasmashell --no-respawn",
+          "cpu_percent": 0.0,
+          "memory_mb": 537.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "plasmashe",
+          "pid": "2895",
+          "command": "/usr/bin/plasmashell --no-respawn",
+          "cpu_percent": 0.0,
+          "memory_mb": 537.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "plasmashe",
+          "pid": "2895",
+          "command": "/usr/bin/plasmashell --no-respawn",
+          "cpu_percent": 0.0,
+          "memory_mb": 537.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "kaccess",
+          "pid": "2929",
+          "command": "/usr/bin/kaccess",
+          "cpu_percent": 0.0,
+          "memory_mb": 73.36328125,
+          "status": "sleeping"
+        },
+        {
+          "name": "kaccess",
+          "pid": "2929",
+          "command": "/usr/bin/kaccess",
+          "cpu_percent": 0.0,
+          "memory_mb": 73.36328125,
+          "status": "sleeping"
+        },
+        {
+          "name": "kaccess",
+          "pid": "2929",
+          "command": "/usr/bin/kaccess",
+          "cpu_percent": 0.0,
+          "memory_mb": 73.36328125,
+          "status": "sleeping"
+        },
+        {
+          "name": "kaccess",
+          "pid": "2929",
+          "command": "/usr/bin/kaccess",
+          "cpu_percent": 0.0,
+          "memory_mb": 73.36328125,
+          "status": "sleeping"
+        },
+        {
+          "name": "polkit-kd",
+          "pid": "2931",
+          "command": "/usr/libexec/polkit-kde-authentication-agent-1",
+          "cpu_percent": 0.0,
+          "memory_mb": 126.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "polkit-kd",
+          "pid": "2931",
+          "command": "/usr/libexec/polkit-kde-authentication-agent-1",
+          "cpu_percent": 0.0,
+          "memory_mb": 126.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "polkit-kd",
+          "pid": "2931",
+          "command": "/usr/libexec/polkit-kde-authentication-agent-1",
+          "cpu_percent": 0.0,
+          "memory_mb": 126.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "polkit-kd",
+          "pid": "2931",
+          "command": "/usr/libexec/polkit-kde-authentication-agent-1",
+          "cpu_percent": 0.0,
+          "memory_mb": 126.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "xdg-deskt",
+          "pid": "2933",
+          "command": "/usr/libexec/xdg-desktop-portal-kde",
+          "cpu_percent": 0.0,
+          "memory_mb": 75.09375,
+          "status": "sleeping"
+        },
+        {
+          "name": "xdg-deskt",
+          "pid": "2933",
+          "command": "/usr/libexec/xdg-desktop-portal-kde",
+          "cpu_percent": 0.0,
+          "memory_mb": 75.09375,
+          "status": "sleeping"
+        },
+        {
+          "name": "xdg-deskt",
+          "pid": "2933",
+          "command": "/usr/libexec/xdg-desktop-portal-kde",
+          "cpu_percent": 0.0,
+          "memory_mb": 75.09375,
+          "status": "sleeping"
+        },
+        {
+          "name": "xdg-deskt",
+          "pid": "2933",
+          "command": "/usr/libexec/xdg-desktop-portal-kde",
+          "cpu_percent": 0.0,
+          "memory_mb": 75.09375,
+          "status": "sleeping"
+        },
+        {
+          "name": "kdeconnec",
+          "pid": "3092",
+          "command": "/usr/bin/kdeconnectd",
+          "cpu_percent": 0.0,
+          "memory_mb": 83.1796875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kdeconnec",
+          "pid": "3092",
+          "command": "/usr/bin/kdeconnectd",
+          "cpu_percent": 0.0,
+          "memory_mb": 83.1796875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kdeconnec",
+          "pid": "3092",
+          "command": "/usr/bin/kdeconnectd",
+          "cpu_percent": 0.0,
+          "memory_mb": 83.1796875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kdeconnec",
+          "pid": "3092",
+          "command": "/usr/bin/kdeconnectd",
+          "cpu_percent": 0.0,
+          "memory_mb": 83.1796875,
+          "status": "sleeping"
+        },
+        {
+          "name": "xdg-deskt",
+          "pid": "3164",
+          "command": "/usr/libexec/xdg-desktop-portal-gtk",
+          "cpu_percent": 0.0,
+          "memory_mb": 46.87109375,
+          "status": "sleeping"
+        },
+        {
+          "name": "xdg-deskt",
+          "pid": "3164",
+          "command": "/usr/libexec/xdg-desktop-portal-gtk",
+          "cpu_percent": 0.0,
+          "memory_mb": 46.87109375,
+          "status": "sleeping"
+        },
+        {
+          "name": "xdg-deskt",
+          "pid": "3164",
+          "command": "/usr/libexec/xdg-desktop-portal-gtk",
+          "cpu_percent": 0.0,
+          "memory_mb": 46.87109375,
+          "status": "sleeping"
+        },
+        {
+          "name": "xdg-deskt",
+          "pid": "3164",
+          "command": "/usr/libexec/xdg-desktop-portal-gtk",
+          "cpu_percent": 0.0,
+          "memory_mb": 46.87109375,
+          "status": "sleeping"
+        },
+        {
+          "name": "DiscoverN",
+          "pid": "3183",
+          "command": "/usr/libexec/DiscoverNotifier --check-delay 20",
+          "cpu_percent": 0.0,
+          "memory_mb": 360.73046875,
+          "status": "sleeping"
+        },
+        {
+          "name": "DiscoverN",
+          "pid": "3183",
+          "command": "/usr/libexec/DiscoverNotifier --check-delay 20",
+          "cpu_percent": 0.0,
+          "memory_mb": 360.73046875,
+          "status": "sleeping"
+        },
+        {
+          "name": "DiscoverN",
+          "pid": "3183",
+          "command": "/usr/libexec/DiscoverNotifier --check-delay 20",
+          "cpu_percent": 0.0,
+          "memory_mb": 360.73046875,
+          "status": "sleeping"
+        },
+        {
+          "name": "DiscoverN",
+          "pid": "3183",
+          "command": "/usr/libexec/DiscoverNotifier --check-delay 20",
+          "cpu_percent": 0.0,
+          "memory_mb": 360.73046875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kalendara",
+          "pid": "3184",
+          "command": "/usr/bin/kalendarac",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.76953125,
+          "status": "sleeping"
+        },
+        {
+          "name": "kalendara",
+          "pid": "3184",
+          "command": "/usr/bin/kalendarac",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.76953125,
+          "status": "sleeping"
+        },
+        {
+          "name": "kalendara",
+          "pid": "3184",
+          "command": "/usr/bin/kalendarac",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.76953125,
+          "status": "sleeping"
+        },
+        {
+          "name": "kalendara",
+          "pid": "3184",
+          "command": "/usr/bin/kalendarac",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.76953125,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksnip",
+          "pid": "3197",
+          "command": "/usr/bin/ksnip -session 1028c1d320b210000175206954300000036630029_1758556906_720248",
+          "cpu_percent": 0.0,
+          "memory_mb": 116.80859375,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksnip",
+          "pid": "3197",
+          "command": "/usr/bin/ksnip -session 1028c1d320b210000175206954300000036630029_1758556906_720248",
+          "cpu_percent": 0.0,
+          "memory_mb": 116.80859375,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksnip",
+          "pid": "3197",
+          "command": "/usr/bin/ksnip -session 1028c1d320b210000175206954300000036630029_1758556906_720248",
+          "cpu_percent": 0.0,
+          "memory_mb": 116.80859375,
+          "status": "sleeping"
+        },
+        {
+          "name": "ksnip",
+          "pid": "3197",
+          "command": "/usr/bin/ksnip -session 1028c1d320b210000175206954300000036630029_1758556906_720248",
+          "cpu_percent": 0.0,
+          "memory_mb": 116.80859375,
+          "status": "sleeping"
+        },
+        {
+          "name": "kwalletd6",
+          "pid": "3200",
+          "command": "/usr/bin/kwalletd6 -session 1028c1d320b210000175262608100000059610011_1758556906_720675",
+          "cpu_percent": 0.0,
+          "memory_mb": 77.296875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kwalletd6",
+          "pid": "3200",
+          "command": "/usr/bin/kwalletd6 -session 1028c1d320b210000175262608100000059610011_1758556906_720675",
+          "cpu_percent": 0.0,
+          "memory_mb": 77.296875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kwalletd6",
+          "pid": "3200",
+          "command": "/usr/bin/kwalletd6 -session 1028c1d320b210000175262608100000059610011_1758556906_720675",
+          "cpu_percent": 0.0,
+          "memory_mb": 77.296875,
+          "status": "sleeping"
+        },
+        {
+          "name": "kwalletd6",
+          "pid": "3200",
+          "command": "/usr/bin/kwalletd6 -session 1028c1d320b210000175262608100000059610011_1758556906_720675",
+          "cpu_percent": 0.0,
+          "memory_mb": 77.296875,
+          "status": "sleeping"
+        },
+        {
+          "name": "dolphin",
+          "pid": "3217",
+          "command": "/usr/bin/dolphin -session 10dd617572000175734179100000084950092_1758556906_720210",
+          "cpu_percent": 0.0,
+          "memory_mb": 131.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "dolphin",
+          "pid": "3217",
+          "command": "/usr/bin/dolphin -session 10dd617572000175734179100000084950092_1758556906_720210",
+          "cpu_percent": 0.0,
+          "memory_mb": 131.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "dolphin",
+          "pid": "3217",
+          "command": "/usr/bin/dolphin -session 10dd617572000175734179100000084950092_1758556906_720210",
+          "cpu_percent": 0.0,
+          "memory_mb": 131.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "dolphin",
+          "pid": "3217",
+          "command": "/usr/bin/dolphin -session 10dd617572000175734179100000084950092_1758556906_720210",
+          "cpu_percent": 0.0,
+          "memory_mb": 131.48828125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_c",
+          "pid": "3571",
+          "command": "/usr/bin/akonadi_control",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.3125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_c",
+          "pid": "3571",
+          "command": "/usr/bin/akonadi_control",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.3125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_c",
+          "pid": "3571",
+          "command": "/usr/bin/akonadi_control",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.3125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_c",
+          "pid": "3571",
+          "command": "/usr/bin/akonadi_control",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.3125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_a",
+          "pid": "3683",
+          "command": "/usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 119.54296875,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_a",
+          "pid": "3683",
+          "command": "/usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 119.54296875,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_a",
+          "pid": "3683",
+          "command": "/usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 119.54296875,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_a",
+          "pid": "3683",
+          "command": "/usr/bin/akonadi_archivemail_agent --identifier akonadi_archivemail_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 119.54296875,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_f",
+          "pid": "3688",
+          "command": "/usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 79.70703125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_f",
+          "pid": "3688",
+          "command": "/usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 79.70703125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_f",
+          "pid": "3688",
+          "command": "/usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 79.70703125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_f",
+          "pid": "3688",
+          "command": "/usr/bin/akonadi_followupreminder_agent --identifier akonadi_followupreminder_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 79.70703125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3697",
+          "command": "/usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 120.140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3697",
+          "command": "/usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 120.140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3697",
+          "command": "/usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 120.140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3697",
+          "command": "/usr/bin/akonadi_mailfilter_agent --identifier akonadi_mailfilter_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 120.140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3714",
+          "command": "/usr/bin/akonadi_mailmerge_agent --identifier akonadi_mailmerge_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 85.140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3714",
+          "command": "/usr/bin/akonadi_mailmerge_agent --identifier akonadi_mailmerge_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 85.140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3714",
+          "command": "/usr/bin/akonadi_mailmerge_agent --identifier akonadi_mailmerge_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 85.140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3714",
+          "command": "/usr/bin/akonadi_mailmerge_agent --identifier akonadi_mailmerge_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 85.140625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3717",
+          "command": "/usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 79.20703125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3717",
+          "command": "/usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 79.20703125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3717",
+          "command": "/usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 79.20703125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_m",
+          "pid": "3717",
+          "command": "/usr/bin/akonadi_migration_agent --identifier akonadi_migration_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 79.20703125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_n",
+          "pid": "3719",
+          "command": "/usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 85.36328125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_n",
+          "pid": "3719",
+          "command": "/usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 85.36328125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_n",
+          "pid": "3719",
+          "command": "/usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 85.36328125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_n",
+          "pid": "3719",
+          "command": "/usr/bin/akonadi_newmailnotifier_agent --identifier akonadi_newmailnotifier_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 85.36328125,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_s",
+          "pid": "3720",
+          "command": "/usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 116.875,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_s",
+          "pid": "3720",
+          "command": "/usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 116.875,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_s",
+          "pid": "3720",
+          "command": "/usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 116.875,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_s",
+          "pid": "3720",
+          "command": "/usr/bin/akonadi_sendlater_agent --identifier akonadi_sendlater_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 116.875,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_u",
+          "pid": "3722",
+          "command": "/usr/bin/akonadi_unifiedmailbox_agent --identifier akonadi_unifiedmailbox_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.91015625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_u",
+          "pid": "3722",
+          "command": "/usr/bin/akonadi_unifiedmailbox_agent --identifier akonadi_unifiedmailbox_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.91015625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_u",
+          "pid": "3722",
+          "command": "/usr/bin/akonadi_unifiedmailbox_agent --identifier akonadi_unifiedmailbox_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.91015625,
+          "status": "sleeping"
+        },
+        {
+          "name": "akonadi_u",
+          "pid": "3722",
+          "command": "/usr/bin/akonadi_unifiedmailbox_agent --identifier akonadi_unifiedmailbox_agent",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.91015625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "3753",
+          "command": "/app/extra/msedge --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=17 --enable-crash-reporter=a2115d01-b16f-48ff-bbf1-674014d1f2e3, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,11339374397052702228,3544314997411123356,262144 --field-trial-handle=3,i,15723861951835779511,11718472202668548559,262144 --enable-features=WebRTCPipeWireCapturer --disable-features=DesktopPWAsRunOnOsLogin,WebAssemblyTrapHandler --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 226.81640625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "3753",
+          "command": "/app/extra/msedge --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=17 --enable-crash-reporter=a2115d01-b16f-48ff-bbf1-674014d1f2e3, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,11339374397052702228,3544314997411123356,262144 --field-trial-handle=3,i,15723861951835779511,11718472202668548559,262144 --enable-features=WebRTCPipeWireCapturer --disable-features=DesktopPWAsRunOnOsLogin,WebAssemblyTrapHandler --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 226.81640625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "3753",
+          "command": "/app/extra/msedge --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=17 --enable-crash-reporter=a2115d01-b16f-48ff-bbf1-674014d1f2e3, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,11339374397052702228,3544314997411123356,262144 --field-trial-handle=3,i,15723861951835779511,11718472202668548559,262144 --enable-features=WebRTCPipeWireCapturer --disable-features=DesktopPWAsRunOnOsLogin,WebAssemblyTrapHandler --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 226.81640625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "3753",
+          "command": "/app/extra/msedge --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=17 --enable-crash-reporter=a2115d01-b16f-48ff-bbf1-674014d1f2e3, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,11339374397052702228,3544314997411123356,262144 --field-trial-handle=3,i,15723861951835779511,11718472202668548559,262144 --enable-features=WebRTCPipeWireCapturer --disable-features=DesktopPWAsRunOnOsLogin,WebAssemblyTrapHandler --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 226.81640625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "3753",
+          "command": "/app/extra/msedge --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=17 --enable-crash-reporter=a2115d01-b16f-48ff-bbf1-674014d1f2e3, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,11339374397052702228,3544314997411123356,262144 --field-trial-handle=3,i,15723861951835779511,11718472202668548559,262144 --enable-features=WebRTCPipeWireCapturer --disable-features=DesktopPWAsRunOnOsLogin,WebAssemblyTrapHandler --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 226.81640625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "3753",
+          "command": "/app/extra/msedge --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=17 --enable-crash-reporter=a2115d01-b16f-48ff-bbf1-674014d1f2e3, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,11339374397052702228,3544314997411123356,262144 --field-trial-handle=3,i,15723861951835779511,11718472202668548559,262144 --enable-features=WebRTCPipeWireCapturer --disable-features=DesktopPWAsRunOnOsLogin,WebAssemblyTrapHandler --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 226.81640625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "3753",
+          "command": "/app/extra/msedge --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=17 --enable-crash-reporter=a2115d01-b16f-48ff-bbf1-674014d1f2e3, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,11339374397052702228,3544314997411123356,262144 --field-trial-handle=3,i,15723861951835779511,11718472202668548559,262144 --enable-features=WebRTCPipeWireCapturer --disable-features=DesktopPWAsRunOnOsLogin,WebAssemblyTrapHandler --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 226.81640625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "3753",
+          "command": "/app/extra/msedge --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=17 --enable-crash-reporter=a2115d01-b16f-48ff-bbf1-674014d1f2e3, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,11339374397052702228,3544314997411123356,262144 --field-trial-handle=3,i,15723861951835779511,11718472202668548559,262144 --enable-features=WebRTCPipeWireCapturer --disable-features=DesktopPWAsRunOnOsLogin,WebAssemblyTrapHandler --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 226.81640625,
+          "status": "sleeping"
+        },
+        {
+          "name": "baloorunn",
+          "pid": "6194",
+          "command": "/usr/libexec/baloorunner",
+          "cpu_percent": 0.0,
+          "memory_mb": 151.234375,
+          "status": "sleeping"
+        },
+        {
+          "name": "baloorunn",
+          "pid": "6194",
+          "command": "/usr/libexec/baloorunner",
+          "cpu_percent": 0.0,
+          "memory_mb": 151.234375,
+          "status": "sleeping"
+        },
+        {
+          "name": "baloorunn",
+          "pid": "6194",
+          "command": "/usr/libexec/baloorunner",
+          "cpu_percent": 0.0,
+          "memory_mb": 151.234375,
+          "status": "sleeping"
+        },
+        {
+          "name": "baloorunn",
+          "pid": "6194",
+          "command": "/usr/libexec/baloorunner",
+          "cpu_percent": 0.0,
+          "memory_mb": 151.234375,
+          "status": "sleeping"
+        },
+        {
+          "name": "code",
+          "pid": "6261",
+          "command": "/usr/share/code/code --type=zygote --no-zygote-sandbox",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.65625,
+          "status": "sleeping"
+        },
+        {
+          "name": "code",
+          "pid": "6261",
+          "command": "/usr/share/code/code --type=zygote --no-zygote-sandbox",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.65625,
+          "status": "sleeping"
+        },
+        {
+          "name": "code",
+          "pid": "6261",
+          "command": "/usr/share/code/code --type=zygote --no-zygote-sandbox",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.65625,
+          "status": "sleeping"
+        },
+        {
+          "name": "code",
+          "pid": "6261",
+          "command": "/usr/share/code/code --type=zygote --no-zygote-sandbox",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.65625,
+          "status": "sleeping"
+        },
+        {
+          "name": "code",
+          "pid": "6261",
+          "command": "/usr/share/code/code --type=zygote --no-zygote-sandbox",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.65625,
+          "status": "sleeping"
+        },
+        {
+          "name": "code",
+          "pid": "6261",
+          "command": "/usr/share/code/code --type=zygote --no-zygote-sandbox",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.65625,
+          "status": "sleeping"
+        },
+        {
+          "name": "code",
+          "pid": "6261",
+          "command": "/usr/share/code/code --type=zygote --no-zygote-sandbox",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.65625,
+          "status": "sleeping"
+        },
+        {
+          "name": "code",
+          "pid": "6261",
+          "command": "/usr/share/code/code --type=zygote --no-zygote-sandbox",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.65625,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "10945",
+          "command": "/opt/microsoft/msedge/msedge http://localhost:8888/",
+          "cpu_percent": 0.0,
+          "memory_mb": 476.734375,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "10945",
+          "command": "/opt/microsoft/msedge/msedge http://localhost:8888/",
+          "cpu_percent": 0.0,
+          "memory_mb": 476.734375,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "10945",
+          "command": "/opt/microsoft/msedge/msedge http://localhost:8888/",
+          "cpu_percent": 0.0,
+          "memory_mb": 476.734375,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "10945",
+          "command": "/opt/microsoft/msedge/msedge http://localhost:8888/",
+          "cpu_percent": 0.0,
+          "memory_mb": 476.734375,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "11010",
+          "command": "/opt/microsoft/msedge/msedge --type=gpu-process --crashpad-handler-pid=10956 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5477150811539385578,3012997542137886597,262144 --field-trial-handle=3,i,6609282586634485190,5594272684442222265,262144 --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 246.67578125,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "11010",
+          "command": "/opt/microsoft/msedge/msedge --type=gpu-process --crashpad-handler-pid=10956 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5477150811539385578,3012997542137886597,262144 --field-trial-handle=3,i,6609282586634485190,5594272684442222265,262144 --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 246.67578125,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "11010",
+          "command": "/opt/microsoft/msedge/msedge --type=gpu-process --crashpad-handler-pid=10956 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5477150811539385578,3012997542137886597,262144 --field-trial-handle=3,i,6609282586634485190,5594272684442222265,262144 --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 246.67578125,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "11010",
+          "command": "/opt/microsoft/msedge/msedge --type=gpu-process --crashpad-handler-pid=10956 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5477150811539385578,3012997542137886597,262144 --field-trial-handle=3,i,6609282586634485190,5594272684442222265,262144 --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 246.67578125,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "11010",
+          "command": "/opt/microsoft/msedge/msedge --type=gpu-process --crashpad-handler-pid=10956 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5477150811539385578,3012997542137886597,262144 --field-trial-handle=3,i,6609282586634485190,5594272684442222265,262144 --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 246.67578125,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "11010",
+          "command": "/opt/microsoft/msedge/msedge --type=gpu-process --crashpad-handler-pid=10956 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5477150811539385578,3012997542137886597,262144 --field-trial-handle=3,i,6609282586634485190,5594272684442222265,262144 --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 246.67578125,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "11010",
+          "command": "/opt/microsoft/msedge/msedge --type=gpu-process --crashpad-handler-pid=10956 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5477150811539385578,3012997542137886597,262144 --field-trial-handle=3,i,6609282586634485190,5594272684442222265,262144 --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 246.67578125,
+          "status": "sleeping"
+        },
+        {
+          "name": "msedge",
+          "pid": "11010",
+          "command": "/opt/microsoft/msedge/msedge --type=gpu-process --crashpad-handler-pid=10956 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5477150811539385578,3012997542137886597,262144 --field-trial-handle=3,i,6609282586634485190,5594272684442222265,262144 --variations-seed-version",
+          "cpu_percent": 0.0,
+          "memory_mb": 246.67578125,
+          "status": "sleeping"
+        },
+        {
+          "name": "dolphin",
+          "pid": "15279",
+          "command": "/usr/bin/dolphin --new-window --select /home/stephane/Downloads/OneDrive_2025-09-22 (1).zip",
+          "cpu_percent": 0.0,
+          "memory_mb": 249.91015625,
+          "status": "sleeping"
+        },
+        {
+          "name": "dolphin",
+          "pid": "15279",
+          "command": "/usr/bin/dolphin --new-window --select /home/stephane/Downloads/OneDrive_2025-09-22 (1).zip",
+          "cpu_percent": 0.0,
+          "memory_mb": 249.91015625,
+          "status": "sleeping"
+        },
+        {
+          "name": "dolphin",
+          "pid": "15279",
+          "command": "/usr/bin/dolphin --new-window --select /home/stephane/Downloads/OneDrive_2025-09-22 (1).zip",
+          "cpu_percent": 0.0,
+          "memory_mb": 249.91015625,
+          "status": "sleeping"
+        },
+        {
+          "name": "dolphin",
+          "pid": "15279",
+          "command": "/usr/bin/dolphin --new-window --select /home/stephane/Downloads/OneDrive_2025-09-22 (1).zip",
+          "cpu_percent": 0.0,
+          "memory_mb": 249.91015625,
+          "status": "sleeping"
+        }
+      ],
+      "utilization": 0,
+      "memory_used": 0,
+      "temperature": 69.0
+    },
+    "rx480": {
+      "card_path": "/dev/dri/card1",
+      "render_node": "/dev/dri/renderD129",
+      "primary_role": "Compute/Research",
+      "current_processes": [
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        },
+        {
+          "name": "Xorg.bin",
+          "pid": "2044",
+          "command": "/usr/bin/Xorg.bin -nolisten tcp -background none -seat seat0 vt2 -auth /run/sddm/xauth_ZoPZij -noreset -displayfd 16",
+          "cpu_percent": 0.0,
+          "memory_mb": 118.2890625,
+          "status": "sleeping"
+        }
+      ],
+      "utilization": 91,
+      "memory_used": 1052684288,
+      "temperature": 79.0
+    }
+  },
+  "cpu_allocations": {
+    "total_cores": 8,
+    "total_threads": 16,
+    "per_core_usage": [
+      17.9,
+      16.0,
+      27.3,
+      15.6,
+      23.2,
+      15.0,
+      38.8,
+      12.2,
+      93.3,
+      10.5,
+      19.7,
+      26.4,
+      8.1,
+      18.4,
+      6.3,
+      31.8
+    ],
+    "thread_assignments": {},
+    "panini_processes": [
+      {
+        "pid": 7600,
+        "name": "python",
+        "command": "/home/stephane/GitHub/PaniniFS-Research/.venv/bin/python /home/stephane/.vscode/extensions/ms-python...",
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "cpu_percent": 0.0,
+        "cores_assigned": 16
+      },
+      {
+        "pid": 7601,
+        "name": "python",
+        "command": "/home/stephane/GitHub/PaniniFS-Research/.venv/bin/python /home/stephane/.vscode/extensions/ms-python...",
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "cpu_percent": 0.0,
+        "cores_assigned": 16
+      },
+      {
+        "pid": 7602,
+        "name": "python",
+        "command": "/home/stephane/GitHub/PaniniFS-Research/.venv/bin/python /home/stephane/.vscode/extensions/ms-python...",
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "cpu_percent": 0.0,
+        "cores_assigned": 16
+      },
+      {
+        "pid": 9088,
+        "name": "python",
+        "command": "/home/stephane/GitHub/PaniniFS-Research/.venv/bin/python /home/stephane/.vscode/extensions/ms-python...",
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "cpu_percent": 0.0,
+        "cores_assigned": 16
+      },
+      {
+        "pid": 10091,
+        "name": "python",
+        "command": "/home/stephane/GitHub/PaniniFS-Research/.venv/bin/python /home/stephane/GitHub/PaniniFS-Research/das...",
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "cpu_percent": 0.0,
+        "cores_assigned": 16
+      }
+    ]
+  },
+  "memory_allocations": {
+    "total_gb": 62.7,
+    "used_gb": 8.9,
+    "available_gb": 53.9,
+    "percent_used": 14.1,
+    "per_process_top10": [
+      {
+        "pid": 7631,
+        "name": "code",
+        "memory_mb": 849.2,
+        "command": "/usr/share/code/code /home/stephane/.vscode/extensions/ms-python.vscode-pylance-..."
+      },
+      {
+        "pid": 6393,
+        "name": "code",
+        "memory_mb": 722.3,
+        "command": "/proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=e..."
+      },
+      {
+        "pid": 2895,
+        "name": "plasmashell",
+        "memory_mb": 537.5,
+        "command": "/usr/bin/plasmashell --no-respawn"
+      },
+      {
+        "pid": 10945,
+        "name": "msedge",
+        "memory_mb": 476.7,
+        "command": "/opt/microsoft/msedge/msedge http://localhost:8888/"
+      },
+      {
+        "pid": 2663,
+        "name": "baloo_file",
+        "memory_mb": 468.5,
+        "command": "/usr/libexec/kf6/baloo_file"
+      },
+      {
+        "pid": 6318,
+        "name": "code",
+        "memory_mb": 455.6,
+        "command": "/usr/share/code/code --type=zygote"
+      },
+      {
+        "pid": 3442,
+        "name": "msedge",
+        "memory_mb": 455.4,
+        "command": "/app/extra/msedge --enable-features=WebRTCPipeWireCapturer --disable-features=We..."
+      },
+      {
+        "pid": 10390,
+        "name": "msedge",
+        "memory_mb": 407.2,
+        "command": "/app/extra/msedge --type=renderer --crashpad-handler-pid=17 --enable-crash-repor..."
+      },
+      {
+        "pid": 4969,
+        "name": "msedge",
+        "memory_mb": 385.4,
+        "command": "/app/extra/msedge --type=renderer --crashpad-handler-pid=17 --enable-crash-repor..."
+      },
+      {
+        "pid": 6003,
+        "name": "msedge",
+        "memory_mb": 365.7,
+        "command": "/app/extra/msedge --type=renderer --crashpad-handler-pid=17 --enable-crash-repor..."
+      }
+    ],
+    "panini_memory_usage": 375.9
+  },
+  "disk_allocations": {
+    "workspace_usage": {
+      "total_mb": 579.8,
+      "file_counts": {
+        "json": 934,
+        "py": 1554,
+        "md": 534,
+        "log": 24,
+        "other": 14456
+      },
+      "largest_files": [
+        {
+          "path": "logs_arriere_plan/orchestrateur_pipeline.log",
+          "size_mb": 25.08,
+          "modified": 1758494971.5255663
+        },
+        {
+          "path": "orchestrateur_pipeline.log",
+          "size_mb": 24.89,
+          "modified": 1758494971.5255663
+        },
+        {
+          "path": ".venv/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-8fb3d286.so",
+          "size_mb": 23.89,
+          "modified": 1758287036.6123276
+        },
+        {
+          "path": "autonomous_results/dhatu_optimization.log",
+          "size_mb": 17.39,
+          "modified": 1758510305.456325
+        },
+        {
+          "path": "logs_arriere_plan/optimiseur_dhatu.log",
+          "size_mb": 16.29,
+          "modified": 1758492576.9808276
+        },
+        {
+          "path": "tech/apps/validator/legacy_archives/interactive-validator_20250910_113749.tar",
+          "size_mb": 14.24,
+          "modified": 1757518669.7406778
+        },
+        {
+          "path": "panini/references/cache/732ebbd8cb7d_Landcover classification and change detection using remote sensing and\n  machine.pdf",
+          "size_mb": 14.21,
+          "modified": 1758467914.3900216
+        },
+        {
+          "path": "panini/references/cache/cf2b2f7553cb_Rest2Visual_ Predicting Visually Evoked fMRI from Resting-State Scans.pdf",
+          "size_mb": 13.99,
+          "modified": 1758467902.122447
+        },
+        {
+          "path": "panini_high_performance_report_20250920_154356.json",
+          "size_mb": 11.46,
+          "modified": 1758397437.0127017
+        },
+        {
+          "path": "panini_high_performance_report_20250920_173923.json",
+          "size_mb": 11.45,
+          "modified": 1758404364.8794005
+        }
+      ]
+    },
+    "system_disks": [
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/.snapshots",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/boot/grub2/i386-pc",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/boot/grub2/x86_64-efi",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/home",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p1",
+        "mountpoint": "/boot/efi",
+        "filesystem": "vfat",
+        "total_gb": 0.5,
+        "used_gb": 0.0,
+        "free_gb": 0.5,
+        "percent_used": 1.2
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/opt",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/root",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/srv",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/usr/local",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      },
+      {
+        "device": "/dev/nvme0n1p2",
+        "mountpoint": "/var",
+        "filesystem": "btrfs",
+        "total_gb": 868.3,
+        "used_gb": 198.7,
+        "free_gb": 664.1,
+        "percent_used": 22.9
+      }
+    ],
+    "io_activity": {}
+  },
+  "executive_summary": {
+    "total_panini_processes": 5,
+    "rx480_active": true,
+    "hd7750_active": true,
+    "memory_pressure": false,
+    "cpu_load_high": true
+  }
+}

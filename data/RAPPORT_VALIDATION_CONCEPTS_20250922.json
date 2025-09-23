@@ -1,0 +1,137 @@
+{
+  "session_date": "2025-09-22",
+  "concepts_analyses": 25,
+  "types_concepts": {
+    "analyse_contextuelle": 1,
+    "analyse_onomastique": 3,
+    "molecule_semantique": 21
+  },
+  "exemples_detailles": [
+    {
+      "type": "analyse_contextuelle",
+      "source": "analyse_20250922_085336_fr.json",
+      "exemple": {
+        "phrase": "Il était une fois une reine.",
+        "elements_analyses": 12,
+        "nouveaux_attributs": [
+          "contexte_situationnel",
+          "locuteur",
+          "variables_inconnues"
+        ]
+      }
+    },
+    {
+      "type": "analyse_onomastique",
+      "source": "analyse_onomastique_20250922_090407_fr.json",
+      "exemple": {
+        "nom": "Jean",
+        "phrase": "Marie et Jean visitent Berlin chaque été.",
+        "types_detectes": "anthroponyme"
+      }
+    },
+    {
+      "type": "analyse_onomastique",
+      "source": "analyse_onomastique_20250922_090407_fr.json",
+      "exemple": {
+        "nom": "Berlin",
+        "phrase": "Marie et Jean visitent Berlin chaque été.",
+        "types_detectes": "toponyme"
+      }
+    },
+    {
+      "type": "analyse_onomastique",
+      "source": "analyse_onomastique_20250922_090407_fr.json",
+      "exemple": {
+        "nom": "Marie",
+        "phrase": "Marie et Jean visitent Berlin chaque été.",
+        "types_detectes": "anthroponyme"
+      }
+    },
+    {
+      "type": "molecule_semantique",
+      "source": "analyse_molecules_semantiques_conte.json",
+      "exemple": {
+        "mot": "lièvre",
+        "dhatu_constituants": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "force_semantique": 0.5,
+        "complexite": 3
+      }
+    },
+    {
+      "type": "molecule_semantique",
+      "source": "analyse_molecules_semantiques_conte.json",
+      "exemple": {
+        "mot": "moquait",
+        "dhatu_constituants": [
+          "TRANS"
+        ],
+        "force_semantique": 0.6499999999999999,
+        "complexite": 2
+      }
+    },
+    {
+      "type": "molecule_semantique",
+      "source": "analyse_molecules_semantiques_conte.json",
+      "exemple": {
+        "mot": "une",
+        "dhatu_constituants": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "force_semantique": 0.5,
+        "complexite": 3
+      }
+    },
+    {
+      "type": "molecule_semantique",
+      "source": "analyse_molecules_semantiques_conte.json",
+      "exemple": {
+        "mot": "tortue",
+        "dhatu_constituants": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "force_semantique": 0.5,
+        "complexite": 3
+      }
+    },
+    {
+      "type": "molecule_semantique",
+      "source": "analyse_molecules_semantiques_conte.json",
+      "exemple": {
+        "mot": "cause",
+        "dhatu_constituants": [
+          "TRANS",
+          "EVAL",
+          "LOCATE"
+        ],
+        "force_semantique": 0.5,
+        "complexite": 3
+      }
+    },
+    {
+      "type": "molecule_semantique",
+      "source": "analyse_molecules_semantiques_conte.json",
+      "exemple": {
+        "mot": "lenteur",
+        "dhatu_constituants": [
+          "EVAL"
+        ],
+        "force_semantique": 0.6499999999999999,
+        "complexite": 2
+      }
+    }
+  ],
+  "recommendations": [
+    "Valider la granularité des dhātu (9 universaux vs sous-dhātu)",
+    "Tester la robustesse cross-linguistique",
+    "Mesurer l'accord inter-annotateur humain",
+    "Optimiser les métriques de force sémantique"
+  ]
+}

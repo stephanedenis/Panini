@@ -1,0 +1,68 @@
+{
+  "timestamp": 1758595282.4833968,
+  "total_events": 4752,
+  "cpu_allocation": {
+    "corpus_processor": [
+      1,
+      2
+    ],
+    "research_processor": [
+      3,
+      4
+    ],
+    "optimization_processor": [
+      5,
+      6,
+      7
+    ],
+    "validation_processor": [
+      8
+    ]
+  },
+  "processors": [
+    {
+      "name": "corpus_processor",
+      "cores": [
+        1,
+        2
+      ],
+      "queue_size": 0,
+      "events_processed": 3960,
+      "total_processing_time": 0.4592561721801758,
+      "average_processing_time": 0.00011597378085357975
+    },
+    {
+      "name": "research_processor",
+      "cores": [
+        3,
+        4
+      ],
+      "queue_size": 0,
+      "events_processed": 792,
+      "total_processing_time": 0.08736038208007812,
+      "average_processing_time": 0.00011030351272737137
+    },
+    {
+      "name": "optimization_processor",
+      "cores": [
+        5,
+        6,
+        7
+      ],
+      "queue_size": 0,
+      "events_processed": 0,
+      "total_processing_time": 0,
+      "average_processing_time": 0
+    },
+    {
+      "name": "validation_processor",
+      "cores": [
+        8
+      ],
+      "queue_size": 0,
+      "events_processed": 0,
+      "total_processing_time": 0,
+      "average_processing_time": 0
+    }
+  ]
+}

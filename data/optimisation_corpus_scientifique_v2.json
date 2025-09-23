@@ -1,0 +1,833 @@
+{
+  "optimisation_corpus_scientifique_v2": {
+    "timestamp": "2025-09-22",
+    "stats_globales": {
+      "modal": 0.07057972871760511,
+      "aspect": 0.04427335805843237,
+      "quant": 0.32351774751520124
+    },
+    "total_documents": 200,
+    "objectif_coverage": 0.2,
+    "resultats_par_corpus": {
+      "corpus_unifie/panini_corpus_unifie.json": {
+        "corpus": "corpus_unifie/panini_corpus_unifie.json",
+        "documents_analyses": 100,
+        "stats_dhatu_global": {
+          "modal": 0.14115945743521022,
+          "aspect": 0.08854671611686474,
+          "quant": 0.6470354950304025
+        },
+        "stats_par_langue": {
+          "en": {
+            "count": 70,
+            "modal": 0.19951351062172887,
+            "aspect": 0.12420225668609662,
+            "quant": 0.7016432876214671
+          },
+          "fr": {
+            "count": 24,
+            "modal": 0.0062499999999999995,
+            "aspect": 0.006688068485821295,
+            "quant": 0.6495216403973978
+          },
+          "multilingual": {
+            "count": 6,
+            "modal": 0.0,
+            "aspect": 0.0,
+            "quant": 0.0
+          }
+        },
+        "top_modalite_epistemique": [
+          {
+            "document_id": "2509.15191v1",
+            "langue": "en",
+            "titre": "A non-sequential arithmetical theory with pairing",
+            "abstract_extrait": "Albert Visser has shown that Robinson's $ \\mathsf{Q} $ and Gregorczyk's $\n\\mathsf{TC} $ are not sequential by showing that these theories are not even\npoly-pair theories, which, in a strong sense, mea...",
+            "expressions_modales": [
+              "we show"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.2,
+            "score_global": 0.46
+          },
+          {
+            "document_id": "2509.15086v1",
+            "langue": "en",
+            "titre": "On definability of C*-tensor norms",
+            "abstract_extrait": "We initiate the study of definability (in the model-theoretic sense) of\nC*-tensor norms. We show that neither the minimal nor maximal tensor norms are\ndefinable uniformly over all C*-algebras. The pro...",
+            "expressions_modales": [
+              "we show",
+              "we establish"
+            ],
+            "expressions_aspect": [
+              "initiate"
+            ],
+            "expressions_quant": [
+              "any",
+              "some",
+              "all"
+            ],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.791715976331361,
+            "score_quantification": 1.0,
+            "score_global": 0.9375147928994083
+          },
+          {
+            "document_id": "2509.15000v1",
+            "langue": "en",
+            "titre": "Measurable one-ended spanning trees",
+            "abstract_extrait": "We show that a one-ended, locally finite, measurable graph on a standard\nprobability space admits a measurable one-ended spanning subtree if and only if\nit is measure-hyperfinite. This answers a quest...",
+            "expressions_modales": [
+              "we show"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.4
+          },
+          {
+            "document_id": "2509.14871v1",
+            "langue": "en",
+            "titre": "Maximal curves of genus 5 over finite fields",
+            "abstract_extrait": "A maximal curve over a finite field $\\mathbb F_q$ is a curve whose number of\npoints reaches the upper Hasse-Weil-Serre bound. We define the discriminant of\n$\\mathbb F_q$ as $d(\\mathbb F_q):= \\lfloor2\\...",
+            "expressions_modales": [
+              "we prove"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.3,
+            "score_global": 0.49
+          },
+          {
+            "document_id": "2509.15201v1",
+            "langue": "en",
+            "titre": "Positive maps and extendibility hierarchies from copositive matrices",
+            "abstract_extrait": "The characterization of positive, non-CP linear maps is a central problem in\noperator algebras and quantum information theory, where such maps serve as\nentanglement witnesses. This work introduces and...",
+            "expressions_modales": [
+              "we prove",
+              "we establish"
+            ],
+            "expressions_aspect": [
+              "complete",
+              "develop"
+            ],
+            "expressions_quant": [
+              "any",
+              "most"
+            ],
+            "score_modalite_epistemique": 0.9802721088435373,
+            "score_aspect_temporel": 0.8802721088435375,
+            "score_quantification": 1.0,
+            "score_global": 0.9561904761904763
+          }
+        ],
+        "top_aspect_temporel": [
+          {
+            "document_id": "2509.15160v1",
+            "langue": "en",
+            "titre": "An Evaluation-Centric Paradigm for Scientific Visualization Agents",
+            "abstract_extrait": "Recent advances in multi-modal large language models (MLLMs) have enabled\nincreasingly sophisticated autonomous visualization agents capable of\ntranslating user intentions into data visualizations. Ho...",
+            "expressions_modales": [],
+            "expressions_aspect": [
+              "progress",
+              "develop"
+            ],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 1.0,
+            "score_quantification": 0.0,
+            "score_global": 0.3
+          },
+          {
+            "document_id": "2509.15201v1",
+            "langue": "en",
+            "titre": "Positive maps and extendibility hierarchies from copositive matrices",
+            "abstract_extrait": "The characterization of positive, non-CP linear maps is a central problem in\noperator algebras and quantum information theory, where such maps serve as\nentanglement witnesses. This work introduces and...",
+            "expressions_modales": [
+              "we prove",
+              "we establish"
+            ],
+            "expressions_aspect": [
+              "complete",
+              "develop"
+            ],
+            "expressions_quant": [
+              "any",
+              "most"
+            ],
+            "score_modalite_epistemique": 0.9802721088435373,
+            "score_aspect_temporel": 0.8802721088435375,
+            "score_quantification": 1.0,
+            "score_global": 0.9561904761904763
+          },
+          {
+            "document_id": "2509.15195v1",
+            "langue": "en",
+            "titre": "Orion: Fuzzing Workflow Automation",
+            "abstract_extrait": "Fuzz testing is one of the most effective techniques for finding software\nvulnerabilities. While modern fuzzers can generate inputs and monitor\nexecutions automatically, the overall workflow, from ana...",
+            "expressions_modales": [
+              "we demonstrate"
+            ],
+            "expressions_aspect": [
+              "complete"
+            ],
+            "expressions_quant": [
+              "most"
+            ],
+            "score_modalite_epistemique": 0.625,
+            "score_aspect_temporel": 0.825,
+            "score_quantification": 1.0,
+            "score_global": 0.7974999999999999
+          },
+          {
+            "document_id": "2509.15086v1",
+            "langue": "en",
+            "titre": "On definability of C*-tensor norms",
+            "abstract_extrait": "We initiate the study of definability (in the model-theoretic sense) of\nC*-tensor norms. We show that neither the minimal nor maximal tensor norms are\ndefinable uniformly over all C*-algebras. The pro...",
+            "expressions_modales": [
+              "we show",
+              "we establish"
+            ],
+            "expressions_aspect": [
+              "initiate"
+            ],
+            "expressions_quant": [
+              "any",
+              "some",
+              "all"
+            ],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.791715976331361,
+            "score_quantification": 1.0,
+            "score_global": 0.9375147928994083
+          },
+          {
+            "document_id": "2509.14886v1",
+            "langue": "en",
+            "titre": "A Multi-To-One Interview Paradigm for Efficient MLLM Evaluation",
+            "abstract_extrait": "The rapid progress of Multi-Modal Large Language Models (MLLMs) has spurred\nthe creation of numerous benchmarks. However, conventional full-coverage\nQuestion-Answering evaluations suffer from high red...",
+            "expressions_modales": [],
+            "expressions_aspect": [
+              "progress"
+            ],
+            "expressions_quant": [
+              "significantly",
+              "numerous"
+            ],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.7194244604316548,
+            "score_quantification": 1.0,
+            "score_global": 0.5158273381294964
+          }
+        ],
+        "top_quantification": [
+          {
+            "document_id": "2509.15086v1",
+            "langue": "en",
+            "titre": "On definability of C*-tensor norms",
+            "abstract_extrait": "We initiate the study of definability (in the model-theoretic sense) of\nC*-tensor norms. We show that neither the minimal nor maximal tensor norms are\ndefinable uniformly over all C*-algebras. The pro...",
+            "expressions_modales": [
+              "we show",
+              "we establish"
+            ],
+            "expressions_aspect": [
+              "initiate"
+            ],
+            "expressions_quant": [
+              "any",
+              "some",
+              "all"
+            ],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.791715976331361,
+            "score_quantification": 1.0,
+            "score_global": 0.9375147928994083
+          },
+          {
+            "document_id": "2509.14517v1",
+            "langue": "en",
+            "titre": "Approximations of the strict order property",
+            "abstract_extrait": "We observe that the definition of Shelah's classical $\\mathrm{NSOP}_{n}$\nhierarchy for first-order theories, for integers $n \\geq 3$, can be restated so\nthat it extends to the case where $n$ is replac...",
+            "expressions_modales": [
+              "we show"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [
+              "any",
+              "least"
+            ],
+            "score_modalite_epistemique": 0.6610108303249098,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 1.0,
+            "score_global": 0.5644043321299639
+          },
+          {
+            "document_id": "2509.15217v1",
+            "langue": "en",
+            "titre": "Generalizable Geometric Image Caption Synthesis",
+            "abstract_extrait": "Multimodal large language models have various practical applications that\ndemand strong reasoning abilities. Despite recent advancements, these models\nstill struggle to solve complex geometric problem...",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [
+              "most"
+            ],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 1.0,
+            "score_global": 0.3
+          },
+          {
+            "document_id": "2509.15210v1",
+            "langue": "en",
+            "titre": "Explicit Context-Driven Neural Acoustic Modeling for High-Fidelity RIR\n  Generation",
+            "abstract_extrait": "Realistic sound simulation plays a critical role in many applications. A key\nelement in sound simulation is the room impulse response (RIR), which\ncharacterizes how sound propagates from a source to a...",
+            "expressions_modales": [
+              "we show"
+            ],
+            "expressions_aspect": [
+              "advance"
+            ],
+            "expressions_quant": [
+              "many",
+              "more"
+            ],
+            "score_modalite_epistemique": 0.8586592178770949,
+            "score_aspect_temporel": 0.5586592178770949,
+            "score_quantification": 1.0,
+            "score_global": 0.8110614525139666
+          },
+          {
+            "document_id": "2509.15207v1",
+            "langue": "en",
+            "titre": "FlowRL: Matching Reward Distributions for LLM Reasoning",
+            "abstract_extrait": "We propose FlowRL: matching the full reward distribution via flow balancing\ninstead of maximizing rewards in large language model (LLM) reinforcement\nlearning (RL). Recent advanced reasoning models ad...",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [
+              "less"
+            ],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 1.0,
+            "score_global": 0.3
+          }
+        ],
+        "sample_analyses": [
+          {
+            "document_id": "2509.15191v1",
+            "langue": "en",
+            "titre": "A non-sequential arithmetical theory with pairing",
+            "abstract_extrait": "Albert Visser has shown that Robinson's $ \\mathsf{Q} $ and Gregorczyk's $\n\\mathsf{TC} $ are not sequential by showing that these theories are not even\npoly-pair theories, which, in a strong sense, mea...",
+            "expressions_modales": [
+              "we show"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.2,
+            "score_global": 0.46
+          },
+          {
+            "document_id": "2509.15086v1",
+            "langue": "en",
+            "titre": "On definability of C*-tensor norms",
+            "abstract_extrait": "We initiate the study of definability (in the model-theoretic sense) of\nC*-tensor norms. We show that neither the minimal nor maximal tensor norms are\ndefinable uniformly over all C*-algebras. The pro...",
+            "expressions_modales": [
+              "we show",
+              "we establish"
+            ],
+            "expressions_aspect": [
+              "initiate"
+            ],
+            "expressions_quant": [
+              "any",
+              "some",
+              "all"
+            ],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.791715976331361,
+            "score_quantification": 1.0,
+            "score_global": 0.9375147928994083
+          },
+          {
+            "document_id": "2509.15000v1",
+            "langue": "en",
+            "titre": "Measurable one-ended spanning trees",
+            "abstract_extrait": "We show that a one-ended, locally finite, measurable graph on a standard\nprobability space admits a measurable one-ended spanning subtree if and only if\nit is measure-hyperfinite. This answers a quest...",
+            "expressions_modales": [
+              "we show"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.4
+          },
+          {
+            "document_id": "2509.14614v1",
+            "langue": "en",
+            "titre": "The countable condensation on linear orders",
+            "abstract_extrait": "The countable condensation on a linear order $L$ is the equivalence relation\n$\\sim_\\omega$ defined by declaring $x \\sim_\\omega y$ when the set of points\nbetween $x$ and $y$ is countable. We characteri...",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [
+              "all"
+            ],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.9042253521126762,
+            "score_global": 0.27126760563380287
+          },
+          {
+            "document_id": "2509.14517v1",
+            "langue": "en",
+            "titre": "Approximations of the strict order property",
+            "abstract_extrait": "We observe that the definition of Shelah's classical $\\mathrm{NSOP}_{n}$\nhierarchy for first-order theories, for integers $n \\geq 3$, can be restated so\nthat it extends to the case where $n$ is replac...",
+            "expressions_modales": [
+              "we show"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [
+              "any",
+              "least"
+            ],
+            "score_modalite_epistemique": 0.6610108303249098,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 1.0,
+            "score_global": 0.5644043321299639
+          },
+          {
+            "document_id": "2509.15214v1",
+            "langue": "en",
+            "titre": "Zeta functions of abstract isogeny graphs and modular curves",
+            "abstract_extrait": "We introduce a ``non-orientable'' variation of Serre's definition of a graph,\nwhich we call an abstract isogeny graph. These objects capture the\ncombinatorics of the graphs $G(p,\\ell,H)$, the $\\ell$-i...",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.3,
+            "score_global": 0.09
+          },
+          {
+            "document_id": "2509.15079v1",
+            "langue": "en",
+            "titre": "On simultaneously preperiodic points for one-parameter families of\n  polynomials in characteristic $...",
+            "abstract_extrait": "For a field $L$ of characteristic $p$, a polynomial $f \\in\n\\overline{\\mathbb{F}}_p[x]$ and $\\alpha, \\beta \\in L$, let\n$\\mathrm{Prep}(f;\\alpha,\\beta)$ be the set of all $\\lambda \\in \\overline{L}$\nsuch ...",
+            "expressions_modales": [
+              "let"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [
+              "all"
+            ],
+            "score_modalite_epistemique": 0.5617977528089888,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.8617977528089888,
+            "score_global": 0.4832584269662922
+          },
+          {
+            "document_id": "2509.14974v1",
+            "langue": "en",
+            "titre": "Improvement of Drmota-Verwee's effective Erdos-Wintner theorem for\n  Zeckendorf expansions",
+            "abstract_extrait": "We revisit the effective Erdos-Wintner theorem for Zeckendorf expansions.\nDrmota and the author obtained a uniform Kolmogorov bound whose error involves\n$T\\sum_{j>L-2h}|f(F_j)|$, which assumes absolut...",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.3,
+            "score_global": 0.09
+          },
+          {
+            "document_id": "2509.14881v1",
+            "langue": "en",
+            "titre": "Normalized Indexing for Ramification Subgroups",
+            "abstract_extrait": "This expository note introduces a normalization of the indexing of the lower\nand upper numbering ramification subgroups of local class field theory. We then\nlook at how this normalization interacts wi...",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "2509.14871v1",
+            "langue": "en",
+            "titre": "Maximal curves of genus 5 over finite fields",
+            "abstract_extrait": "A maximal curve over a finite field $\\mathbb F_q$ is a curve whose number of\npoints reaches the upper Hasse-Weil-Serre bound. We define the discriminant of\n$\\mathbb F_q$ as $d(\\mathbb F_q):= \\lfloor2\\...",
+            "expressions_modales": [
+              "we prove"
+            ],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 1.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.3,
+            "score_global": 0.49
+          }
+        ]
+      },
+      "corpus_multilingue_dev/dhatu_connections.json": {
+        "corpus": "corpus_multilingue_dev/dhatu_connections.json",
+        "documents_analyses": 100,
+        "stats_dhatu_global": {
+          "modal": 0.0,
+          "aspect": 0.0,
+          "quant": 0.0
+        },
+        "stats_par_langue": {
+          "en": {
+            "count": 100,
+            "modal": 0.0,
+            "aspect": 0.0,
+            "quant": 0.0
+          }
+        },
+        "top_modalite_epistemique": [
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          }
+        ],
+        "top_aspect_temporel": [
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          }
+        ],
+        "top_quantification": [
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          }
+        ],
+        "sample_analyses": [
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          },
+          {
+            "document_id": "unknown",
+            "langue": "en",
+            "titre": "",
+            "abstract_extrait": "",
+            "expressions_modales": [],
+            "expressions_aspect": [],
+            "expressions_quant": [],
+            "score_modalite_epistemique": 0.0,
+            "score_aspect_temporel": 0.0,
+            "score_quantification": 0.0,
+            "score_global": 0.0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "corpus_size": 2,
+  "resultats_par_texte": {
+    "tortoise_hare": {
+      "paires_testees": 6,
+      "fidelite_moyenne": 0.0,
+      "resultats_par_paire": {
+        "fr->en": {
+          "fidelite": 0.0,
+          "texte_reconstitue": "evaluate be",
+          "gaps": [
+            "lexical_gaps: ['decided', 'then', 'its', 'bet', 'to', 'so', 'are', 'i', 'ran', 'of', 'calmly.', 'when', 'started', 'had', '\"i', 'against', 'accepted', 'continued', 'fast', '\"you', 'challenge', 'said.', 'win', 'the', 'slow!\"', 'mocked', 'woke', 'at', 'because', 'race.', 'he', 'nap.', 'slowly', 'slowness.', 'a', 'you!\"', 'they', 'first,', 'race', 'hare', 'won!', 'tortoise', 'but', 'up,', 'can', 'surely.', 'take', 'very']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "fr->de": {
+          "fidelite": 0.0,
+          "texte_reconstitue": "bewerten sein",
+          "gaps": [
+            "lexical_gaps: ['gegen', 'schildkröte', 'wegen', 'aber', 'so', 'sicher', 'hase', 'zu', 'nahm', 'ihren', 'gewonnen!', 'rennen.', 'aufwachte,', 'dann', 'langsamkeit.', 'hatte', 'herausforderung', 'machen.', 'ein', 'rennen', 'die', 'kann', 'wette,', 'das', 'der', 'als', 'beschloss', 'dich', 'begannen', 'schnell,', 'sie', 'zuerst', '\"ich', 'langsam', '\"du', 'weg', 'lief', 'nickerchen', 'bist', 'sagte', 'fort.', 'verspottete', 'ruhig', 'sehr', 'er.', 'an.', 'gewinnen!\"', 'ihrer', 'eine', 'setzte', 'ich', 'er,', 'langsam!\"']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "en->fr": {
+          "fidelite": 0.0,
+          "texte_reconstitue": "évaluer être",
+          "gaps": [
+            "lexical_gaps: ['je', 'toi', 'début,', 'mais', 'tortue', 'sieste.', 'lente', 'calmement.', 'quand', 'faire', 'accepta', 'ils', 'course.', '!', '!\"', 'une', 'dit-il.', 'à', 'avait', 'le', 'de', 'commencèrent', 'défi', 'gagné', 'cause', 'puis', 'un', 'que', 'très', 'se', 'contre', 'réveilla,', '\"tu', 'sa', 'lentement', 'courut', 'la', 'vite', 'course', \"d'une\", 'sûrement.', 'lenteur.', 'es', 'continua', 'au', 'peux', 'lièvre', 'décida', 'parie', 'gagner', 'moquait', 'si', '\"je']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "en->de": {
+          "fidelite": 0.0,
+          "texte_reconstitue": "bewerten sein",
+          "gaps": [
+            "lexical_gaps: ['gegen', 'schildkröte', 'wegen', 'aber', 'so', 'sicher', 'hase', 'zu', 'nahm', 'ihren', 'gewonnen!', 'rennen.', 'aufwachte,', 'dann', 'langsamkeit.', 'hatte', 'herausforderung', 'machen.', 'ein', 'rennen', 'die', 'kann', 'wette,', 'das', 'der', 'als', 'beschloss', 'dich', 'begannen', 'schnell,', 'sie', 'zuerst', '\"ich', 'langsam', '\"du', 'weg', 'lief', 'nickerchen', 'bist', 'sagte', 'fort.', 'verspottete', 'ruhig', 'sehr', 'er.', 'an.', 'gewinnen!\"', 'ihrer', 'eine', 'setzte', 'ich', 'er,', 'langsam!\"']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "de->fr": {
+          "fidelite": 0.0,
+          "texte_reconstitue": "évaluer être",
+          "gaps": [
+            "lexical_gaps: ['je', 'toi', 'début,', 'mais', 'tortue', 'sieste.', 'lente', 'calmement.', 'quand', 'faire', 'accepta', 'ils', 'course.', '!', '!\"', 'une', 'dit-il.', 'à', 'avait', 'le', 'de', 'commencèrent', 'défi', 'gagné', 'cause', 'puis', 'un', 'que', 'très', 'se', 'contre', 'réveilla,', '\"tu', 'sa', 'lentement', 'courut', 'la', 'vite', 'course', \"d'une\", 'sûrement.', 'lenteur.', 'es', 'continua', 'au', 'peux', 'lièvre', 'décida', 'parie', 'gagner', 'moquait', 'si', '\"je']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "de->en": {
+          "fidelite": 0.0,
+          "texte_reconstitue": "evaluate be",
+          "gaps": [
+            "lexical_gaps: ['decided', 'then', 'its', 'bet', 'to', 'so', 'are', 'i', 'ran', 'of', 'calmly.', 'when', 'started', 'had', '\"i', 'against', 'accepted', 'continued', 'fast', '\"you', 'challenge', 'said.', 'win', 'the', 'slow!\"', 'mocked', 'woke', 'at', 'because', 'race.', 'he', 'nap.', 'slowly', 'slowness.', 'a', 'you!\"', 'they', 'first,', 'race', 'hare', 'won!', 'tortoise', 'but', 'up,', 'can', 'surely.', 'take', 'very']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        }
+      }
+    },
+    "ant_grasshopper": {
+      "paires_testees": 6,
+      "fidelite_moyenne": 0.022604464093825796,
+      "resultats_par_paire": {
+        "fr->en": {
+          "fidelite": 0.022727272727272728,
+          "texte_reconstitue": "Once upon a time transform",
+          "gaps": [
+            "lexical_gaps: ['sing', 'work.', 'to', 'so', 'for', 'food', 'dance', 'with', 'me!\"', 'work', 'came,', '\"why', 'food,', 'winter.', 'when', 'her', 'had', 'and', 'summer,', 'during', 'continued', 'ant', 'was', 'the', 'asked', 'do', 'mocked', 'hungry', 'worked', 'hard?\"', 'her.', 'grasshopper.', '\"come', 'collect', 'you', 'cold.', 'winter', 'but', 'grasshopper', 'an', 'enough', 'saw', 'hard']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "fr->de": {
+          "fidelite": 0.02127659574468085,
+          "texte_reconstitue": "Es war einmal transformieren",
+          "gaps": [
+            "lexical_gaps: ['sing', 'hart,', 'aber', 'genug', 'sie.', 'so', 'arbeitest', 'zu', 'kam,', 'ameise', 'sah', 'grille.', '\"komm', 'mit', 'hatte', 'und', 'fragte', 'arbeitete', 'die', 'futter', 'für', 'der', 'ihre', 'als', 'sie', 'den', 'hungrig', 'des', 'kalt.', 'um', 'grille', 'tanze', 'fort.', 'verspottete', 'mir!\"', '\"warum', 'winter', 'sammeln.', 'sommers', 'eine', 'während', 'hart?\"', 'arbeit', 'setzte', 'futter,', 'du']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "en->fr": {
+          "fidelite": 0.023809523809523808,
+          "texte_reconstitue": "Il était une fois être évaluer transformer",
+          "gaps": [
+            "lexical_gaps: ['mais', 'avec', 'danser', 'arriva,', 'collecter', 'nourriture', 'quand', \"d'elle.\", '\"pourquoi', '\"viens', '!\"', 'avait', 'de', 'assez', 'vit', 'cigale.', 'pour', 'dur', 'pendant', 'travaillait', 'se', 'demanda', 'travail.', 'nourriture,', \"l'hiver\", 'fourmi', \"l'été,\", 'la', 'son', 'cigale', '?\"', 'faim', 'continua', 'chanter', 'et', 'froid.', 'travailles-tu', 'moi', 'moqua', 'si', \"l'hiver.\"]"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "en->de": {
+          "fidelite": 0.02127659574468085,
+          "texte_reconstitue": "Es war einmal sein bewerten transformieren",
+          "gaps": [
+            "lexical_gaps: ['sing', 'hart,', 'aber', 'genug', 'sie.', 'so', 'arbeitest', 'zu', 'kam,', 'ameise', 'sah', 'grille.', '\"komm', 'mit', 'hatte', 'und', 'fragte', 'arbeitete', 'die', 'futter', 'für', 'der', 'ihre', 'als', 'sie', 'den', 'hungrig', 'des', 'kalt.', 'um', 'grille', 'tanze', 'fort.', 'verspottete', 'mir!\"', '\"warum', 'winter', 'sammeln.', 'sommers', 'eine', 'während', 'hart?\"', 'arbeit', 'setzte', 'futter,', 'du']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "de->fr": {
+          "fidelite": 0.023809523809523808,
+          "texte_reconstitue": "Il était une fois être évaluer transformer",
+          "gaps": [
+            "lexical_gaps: ['mais', 'avec', 'danser', 'arriva,', 'collecter', 'nourriture', 'quand', \"d'elle.\", '\"pourquoi', '\"viens', '!\"', 'avait', 'de', 'assez', 'vit', 'cigale.', 'pour', 'dur', 'pendant', 'travaillait', 'se', 'demanda', 'travail.', 'nourriture,', \"l'hiver\", 'fourmi', \"l'été,\", 'la', 'son', 'cigale', '?\"', 'faim', 'continua', 'chanter', 'et', 'froid.', 'travailles-tu', 'moi', 'moqua', 'si', \"l'hiver.\"]"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        },
+        "de->en": {
+          "fidelite": 0.022727272727272728,
+          "texte_reconstitue": "Once upon a time be evaluate transform",
+          "gaps": [
+            "lexical_gaps: ['sing', 'work.', 'to', 'so', 'for', 'food', 'dance', 'with', 'me!\"', 'work', 'came,', '\"why', 'food,', 'winter.', 'when', 'her', 'had', 'and', 'summer,', 'during', 'continued', 'ant', 'was', 'the', 'asked', 'do', 'mocked', 'hungry', 'worked', 'hard?\"', 'her.', 'grasshopper.', '\"come', 'collect', 'you', 'cold.', 'winter', 'but', 'grasshopper', 'an', 'enough', 'saw', 'hard']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots",
+            "Enrichir détection aspectuelle"
+          ]
+        }
+      }
+    },
+    "snow_white_opening": {
+      "paires_testees": 6,
+      "fidelite_moyenne": 0.35995807127882595,
+      "resultats_par_paire": {
+        "fr->en": {
+          "fidelite": 0.35660377358490564,
+          "texte_reconstitue": "Once upon a time Once upon a time Once upon a time be",
+          "gaps": [
+            "lexical_gaps: ['blood', 'soon', 'by', 'blood,', 'like', 'i', 'with', 'only', 'in', 'needle,', 'fell', 'of', 'when', 'drops', 'her', 'had', 'as', 'snow,', 'exactly', 'and', 'frame!\"', 'winter,', 'was', 'queen', 'falling', 'three', 'snow.', 'black', 'the', 'window', 'feathers.', 'after,', 'wished.', 'middle', '\"if', 'pricked', 'little', 'white', 'sewing', 'thought:', 'on', 'she', 'this', 'time,', 'child', 'red', 'girl', 'window.', 'finger', 'snow']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots"
+          ]
+        },
+        "fr->de": {
+          "fidelite": 0.35660377358490564,
+          "texte_reconstitue": "Es war einmal Es war einmal Es war einmal sein",
+          "gaps": [
+            "lexical_gaps: ['im', 'nähte.', 'fenster', 'sich', 'rahmen!\"', 'bald', 'vom', 'so', 'einem', 'holz', 'weiß', 'drei', 'in', 'töchterlein,', 'schwarz', 'rot', 'und', 'ein', 'winter,', 'mitten', 'die', 'das', 'als', 'bekam', 'stach,', 'da', 'schnee,', 'sie', 'schneeflocken', 'himmel', 'den', 'kind,', 'dachte', 'saß', 'sie:', 'darauf', 'schnee.', 'tropfen', 'wie', 'herab.', 'eine', 'an', '\"hätte', 'federn', 'blut', 'dem', 'fielen', 'königin', 'ich', 'finger']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots"
+          ]
+        },
+        "en->fr": {
+          "fidelite": 0.3833333333333333,
+          "texte_reconstitue": "Il était une fois Il était une fois était en train de était en train de Il était une fois être",
+          "gaps": [
+            "lexical_gaps: ['sur', 'avec', 'fille', 'bientôt', 'blanc', 'petite', '!\"', 'neige,', 'près', 'le', 'ce', 'reine', 'tombèrent', 'sang,', 'fois,', 'comme', '\"si', 'neige', 'piquant', 'bois', \"l'avait\", 'souhaitée.', 'tombait', 'exactement', 'hiver,', 'un', 'se', 'elle', 'neige.', 'noir', 'après,', 'blanches.', 'rouge', 'doigt', 'gouttes', 'seulement', 'sang', 'plein', 'des', 'la', 'qui', 'son', 'cousait', 'pensa', \"d'une\", ':', \"j'avais\", 'eut', 'enfant', 'fenêtre.', 'et', 'aiguille,', 'trois', 'fenêtre', 'plumes']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots"
+          ]
+        },
+        "en->de": {
+          "fidelite": 0.35660377358490564,
+          "texte_reconstitue": "Es war einmal Es war einmal war dabei war dabei Es war einmal sein",
+          "gaps": [
+            "lexical_gaps: ['im', 'nähte.', 'fenster', 'sich', 'rahmen!\"', 'bald', 'vom', 'so', 'einem', 'holz', 'weiß', 'drei', 'in', 'töchterlein,', 'schwarz', 'rot', 'und', 'ein', 'winter,', 'mitten', 'die', 'das', 'als', 'bekam', 'stach,', 'da', 'schnee,', 'sie', 'schneeflocken', 'himmel', 'den', 'kind,', 'dachte', 'saß', 'sie:', 'darauf', 'schnee.', 'tropfen', 'wie', 'herab.', 'eine', 'an', '\"hätte', 'federn', 'blut', 'dem', 'fielen', 'königin', 'ich', 'finger']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots"
+          ]
+        },
+        "de->fr": {
+          "fidelite": 0.35,
+          "texte_reconstitue": "Il était une fois Il était une fois Il était une fois être",
+          "gaps": [
+            "lexical_gaps: ['sur', 'avec', 'fille', 'bientôt', 'blanc', 'petite', '!\"', 'neige,', 'près', 'le', 'ce', 'reine', 'tombèrent', 'sang,', 'fois,', 'comme', 'de', '\"si', 'neige', 'piquant', 'bois', \"l'avait\", 'souhaitée.', 'tombait', 'exactement', 'hiver,', 'un', 'se', 'elle', 'neige.', 'noir', 'après,', 'blanches.', 'en', 'rouge', 'doigt', 'gouttes', 'seulement', 'sang', 'plein', 'des', 'la', 'qui', 'son', 'cousait', 'pensa', \"d'une\", ':', \"j'avais\", 'eut', 'enfant', 'fenêtre.', 'et', 'aiguille,', 'trois', 'fenêtre', 'plumes']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots"
+          ]
+        },
+        "de->en": {
+          "fidelite": 0.35660377358490564,
+          "texte_reconstitue": "Once upon a time Once upon a time Once upon a time be",
+          "gaps": [
+            "lexical_gaps: ['blood', 'soon', 'by', 'blood,', 'like', 'i', 'with', 'only', 'in', 'needle,', 'fell', 'of', 'when', 'drops', 'her', 'had', 'as', 'snow,', 'exactly', 'and', 'frame!\"', 'winter,', 'was', 'queen', 'falling', 'three', 'snow.', 'black', 'the', 'window', 'feathers.', 'after,', 'wished.', 'middle', '\"if', 'pricked', 'little', 'white', 'sewing', 'thought:', 'on', 'she', 'this', 'time,', 'child', 'red', 'girl', 'window.', 'finger', 'snow']"
+          ],
+          "ameliorations": [
+            "Étendre dictionnaire dhātu -> mots"
+          ]
+        }
+      }
+    }
+  },
+  "fidelite_moyenne_globale": 0.12752084512421724,
+  "hypotheses_preservees_total": 0,
+  "gaps_communs": [],
+  "ameliorations_recommandees": []
+}

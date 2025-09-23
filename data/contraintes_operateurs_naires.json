@@ -1,0 +1,143 @@
+{
+  "principe": "Parcimonie cognitive",
+  "contraintes_par_domaine": {
+    "lexique_courant": {
+      "niveau_max": "MODERE",
+      "justification": "Charge cognitive limitée pour usage quotidien",
+      "validation": true
+    },
+    "modalite_epistemique": {
+      "niveau_max": "AVANCE",
+      "justification": "Modalité épistémique naturellement graduée (impossible→certain)",
+      "validation": true
+    },
+    "aspect_temporel": {
+      "niveau_max": "EXPERT",
+      "justification": "Aspects temporels bien établis linguistiquement",
+      "validation": true
+    },
+    "intensite_graduelle": {
+      "niveau_max": "AVANCE",
+      "justification": "Limitation cognitive ~7±2 distinctions",
+      "validation": true
+    },
+    "distribution_spatiale": {
+      "niveau_max": "MODERE",
+      "justification": "Distinction spatial simple : local/distribué/universel",
+      "validation": false
+    }
+  },
+  "limites_cognitives": {
+    "memoire_travail": {
+      "limite": "7±2 éléments (Miller 1956)",
+      "application": "Max 7 niveaux d'opérateurs",
+      "consequence": "Hexaire = limite absolue"
+    },
+    "charge_cognitive": {
+      "limite": "Complexité perçue vs utilité",
+      "application": "Trinaire pour usage courant",
+      "consequence": "N-aires > 3 pour spécialistes uniquement"
+    },
+    "realite_linguistique": {
+      "limite": "Distinctions attestées dans langues naturelles",
+      "application": "Validation cross-linguistique obligatoire",
+      "consequence": "Innovations doivent être motivées empiriquement"
+    },
+    "principle_parcimonie": {
+      "limite": "Rasoir d'Ockham cognitif",
+      "application": "Minimum de complexité pour maximum d'expressivité",
+      "consequence": "Justification systématique de chaque niveau"
+    }
+  },
+  "guide_bonnes_pratiques": {
+    "recommandations": {
+      "Usage quotidien (TAL grand public)": {
+        "niveau": "BASIQUE → MODÉRÉ (binaire/trinaire)",
+        "exemples": [
+          "présent (+)",
+          "absent (∅)",
+          "négatif (!)"
+        ],
+        "justification": "Charge cognitive minimale"
+      },
+      "Applications spécialisées (linguistique)": {
+        "niveau": "MODÉRÉ → AVANCÉ (trinaire/quaternaire)",
+        "exemples": [
+          "modalité épistémique",
+          "intensité graduée"
+        ],
+        "justification": "Expertise justifie complexité"
+      },
+      "Recherche expérimentale": {
+        "niveau": "AVANCÉ → EXPERT (quaternaire/hexaire)",
+        "exemples": [
+          "aspects temporels fins",
+          "distributions complexes"
+        ],
+        "justification": "Innovation contrôlée"
+      },
+      "Développement algorithmique": {
+        "niveau": "EXPERT uniquement (hexaire+)",
+        "exemples": [
+          "optimisation interne",
+          "représentations transitoires"
+        ],
+        "justification": "Usage non-humain"
+      }
+    },
+    "signaux_alarme": [
+      "Plus de 7 distinctions pour un seul dhātu",
+      "Quantification numérique excessive (ex: [2.71828])",
+      "Symboles non-cognitifs (ex: ∿∿∿, ◊◊◊)",
+      "Combinaisons sans justification linguistique",
+      "Usage quaternaire+ pour lexique courant",
+      "Notation incompréhensible par expert humain"
+    ],
+    "criteres_validation": [
+      "Justification cognitive (littérature psycholinguistique)",
+      "Validation empirique (corpus, expériences)",
+      "Attestation cross-linguistique (au moins 3 langues)",
+      "Utilité vs complexité (analyse coût/bénéfice)",
+      "Compréhensibilité expert (test utilisateur)",
+      "Robustesse computationnelle (implémentation stable)"
+    ]
+  },
+  "tests_validation": [
+    [
+      "intensifier",
+      "INTENSE+",
+      "APPROUVÉ"
+    ],
+    [
+      "atténuer",
+      "INTENSE!",
+      "APPROUVÉ"
+    ],
+    [
+      "probablement",
+      "MODAL?+",
+      "APPROUVÉ"
+    ],
+    [
+      "commencer",
+      "TRANS→+",
+      "APPROUVÉ"
+    ],
+    [
+      "super-mega-intensifier",
+      "INTENSE+++++++",
+      "REFUSÉ"
+    ],
+    [
+      "précisément_π_fois",
+      "QUANT[3.14159]",
+      "APPROUVÉ"
+    ],
+    [
+      "bizarrement",
+      "EVAL∿∿∿<alien>@impossible",
+      "REFUSÉ"
+    ]
+  ],
+  "conclusion": "Innovation contrôlée et responsable"
+}

@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-09-22T19:38:13.482208",
+  "cpu_analysis": {
+    "global_cpu_usage": 26.1,
+    "cpu_count": 16,
+    "per_core_usage": [
+      20.0,
+      11.2,
+      36.4,
+      31.0,
+      71.7,
+      21.2,
+      9.2,
+      58.0,
+      18.0,
+      15.2,
+      39.0,
+      17.2,
+      17.0,
+      14.1,
+      31.0,
+      9.0
+    ],
+    "load_average": [
+      5.7470703125,
+      4.92041015625,
+      4.2939453125
+    ],
+    "bottlenecks": [
+      {
+        "type": "cpu_core_imbalance",
+        "severity": "medium",
+        "max_core": 71.7,
+        "min_core": 9.0,
+        "description": "Déséquilibre entre cores: 71.7% max vs 9.0% min",
+        "analysis_type": "cpu_analysis"
+      }
+    ]
+  },
+  "memory_analysis": {
+    "total_mb": 64255.7421875,
+    "used_mb": 10177.60546875,
+    "available_mb": 54078.13671875,
+    "percent": 15.8,
+    "swap_total_mb": 64258.6875,
+    "swap_used_mb": 0.0,
+    "swap_percent": 0.0,
+    "bottlenecks": []
+  },
+  "io_analysis": {
+    "disk_total_gb": 868.259765625,
+    "disk_used_gb": 200.47224807739258,
+    "disk_free_gb": 662.318431854248,
+    "disk_percent": 23.088971298017764,
+    "bottlenecks": [],
+    "read_count": 200471,
+    "write_count": 930970,
+    "read_bytes": 8577953792,
+    "write_bytes": 36464346112,
+    "read_time": 100639,
+    "write_time": 11207977
+  },
+  "coordination_analysis": {
+    "total_processes": 10,
+    "active_processes": 1,
+    "idle_processes": 9,
+    "bottlenecks": [
+      {
+        "type": "excessive_idle_processes",
+        "severity": "medium",
+        "idle_count": 9,
+        "active_count": 1,
+        "description": "Trop de processus inactifs: 9 inactifs vs 1 actifs",
+        "analysis_type": "coordination_analysis"
+      },
+      {
+        "type": "insufficient_active_categories",
+        "severity": "high",
+        "active_categories": 1,
+        "description": "Seulement 1 catégories de processus actives",
+        "analysis_type": "coordination_analysis"
+      }
+    ],
+    "categories": {
+      "coordination": [
+        {
+          "name": "coordinateur_global_autonome",
+          "cmdline": "python3 coordinateur_global_autonome.py",
+          "process_obj": 

@@ -1,0 +1,182 @@
+{
+  "date_analyse": "2025-09-22T14:53:20.041592",
+  "correspondances_fl_dhatu": {
+    "Magn": [
+      "EVAL",
+      "TRANS"
+    ],
+    "Ver": [
+      "EVAL",
+      "EXIST"
+    ],
+    "Bon": [
+      "EVAL",
+      "QUAL"
+    ],
+    "AntiBon": [
+      "EVAL",
+      "QUAL"
+    ],
+    "Oper1": [
+      "ACT",
+      "REL"
+    ],
+    "Oper2": [
+      "FEEL",
+      "TRANS"
+    ],
+    "Func0": [
+      "EXIST",
+      "LOCATE"
+    ],
+    "Func1": [
+      "EXIST",
+      "QUAL"
+    ],
+    "Real1": [
+      "ACT",
+      "TRANS"
+    ],
+    "Real2": [
+      "ACT",
+      "KNOW"
+    ],
+    "Caus": [
+      "ACT",
+      "TRANS"
+    ],
+    "Liqu": [
+      "TRANS",
+      "EXIST"
+    ],
+    "Incep": [
+      "TRANS",
+      "LOCATE"
+    ],
+    "Cont": [
+      "TRANS",
+      "LOCATE"
+    ],
+    "Fin": [
+      "TRANS",
+      "EXIST"
+    ]
+  },
+  "exemples_melcuk_testes": [
+    {
+      "mot_cle": "pluie",
+      "fonction": "Magn",
+      "resultats": [
+        "battante",
+        "torrentielle",
+        "diluvienne"
+      ],
+      "dhatu_proposes": [
+        "EVAL",
+        "TRANS",
+        "LOCATE"
+      ]
+    },
+    {
+      "mot_cle": "décision",
+      "fonction": "Oper1",
+      "resultats": [
+        "prendre"
+      ],
+      "dhatu_proposes": [
+        "ACT",
+        "REL",
+        "TRANS"
+      ]
+    },
+    {
+      "mot_cle": "promesse",
+      "fonction": "Real1",
+      "resultats": [
+        "tenir"
+      ],
+      "dhatu_proposes": [
+        "ACT",
+        "TRANS",
+        "EXIST"
+      ]
+    },
+    {
+      "mot_cle": "conseil",
+      "fonction": "Real2",
+      "resultats": [
+        "suivre"
+      ],
+      "dhatu_proposes": [
+        "ACT",
+        "KNOW",
+        "REL"
+      ]
+    }
+  ],
+  "comparaison_avantages": {
+    "Universalité": {
+      "Mel'čuk": "~60 fonctions lexicales spécialisées",
+      "Dhātu": "9 dhātu universaux combinables",
+      "Avantage": "Dhātu → Plus économique, base universelle"
+    },
+    "Combinabilité": {
+      "Mel'čuk": "Fonctions fixes prédéfinies",
+      "Dhātu": "Combinaisons infinies possibles",
+      "Avantage": "Dhātu → Flexibilité créative"
+    },
+    "Cross-linguistique": {
+      "Mel'čuk": "Adapté aux langues indo-européennes",
+      "Dhātu": "Basé sur universaux cognitifs",
+      "Avantage": "Dhātu → Potentiel multilingue"
+    },
+    "Computabilité": {
+      "Mel'čuk": "Dictionnaire de correspondances",
+      "Dhātu": "Algorithmes de décomposition",
+      "Avantage": "Dhātu → Génération automatique"
+    }
+  },
+  "fonctions_dhatu_proposees": {
+    "Intens": [
+      "EVAL",
+      "TRANS"
+    ],
+    "Agens": [
+      "ACT",
+      "REL"
+    ],
+    "Patiens": [
+      "FEEL",
+      "TRANS"
+    ],
+    "Effectu": [
+      "ACT",
+      "TRANS"
+    ],
+    "Instru": [
+      "ACT",
+      "KNOW"
+    ],
+    "Tempor": [
+      "LOCATE",
+      "TRANS"
+    ],
+    "Spatial": [
+      "LOCATE",
+      "EXIST"
+    ],
+    "Cognitiv": [
+      "KNOW",
+      "EVAL"
+    ],
+    "Emotiv": [
+      "FEEL",
+      "QUAL"
+    ]
+  },
+  "conclusion": {
+    "innovation": "Synthèse Mel'čuk + dhātu universaux",
+    "avantage_principal": "Économie conceptuelle + universalité",
+    "potentiel": "Génération automatique fonctions lexicales"
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "phrase_originale": "Un lièvre se moquait d'une tortue.",
+    "langue_detectee": "fr",
+    "analyse_semantique": {
+      "concepts_detectes": [
+        "PERCEIVE",
+        "MOVE",
+        "COMMUNICATE"
+      ],
+      "intention_communicative": "dialogue_interaction",
+      "contexte_pragmatique": "recit_personnages",
+      "niveau_complexite": 3,
+      "dhatus_inferes": [
+        "PERCEIVE",
+        "MOVE",
+        "COMMUNICATE"
+      ]
+    },
+    "reconstruction": "voir aller parler",
+    "fidelite_semantique": 100.0,
+    "temps_traitement_ms": 5.0,
+    "succes_100_pourcent": true
+  },
+  {
+    "phrase_originale": "The hare mocked the tortoise.",
+    "langue_detectee": "en",
+    "analyse_semantique": {
+      "concepts_detectes": [
+        "PERCEIVE",
+        "MOVE",
+        "COMMUNICATE",
+        "EXIST",
+        "FEEL"
+      ],
+      "intention_communicative": "expression_emotion",
+      "contexte_pragmatique": "recit_personnages",
+      "niveau_complexite": 5,
+      "dhatus_inferes": [
+        "PERCEIVE",
+        "MOVE",
+        "COMMUNICATE",
+        "EXIST",
+        "FEEL"
+      ]
+    },
+    "reconstruction": "see go speak be love",
+    "fidelite_semantique": 100.0,
+    "temps_traitement_ms": 3.4,
+    "succes_100_pourcent": true
+  },
+  {
+    "phrase_originale": "Der Hase verspottete die Schildkröte.",
+    "langue_detectee": "de",
+    "analyse_semantique": {
+      "concepts_detectes": [
+        "MOVE",
+        "COMMUNICATE",
+        "INTERACT"
+      ],
+      "intention_communicative": "dialogue_interaction",
+      "contexte_pragmatique": "discours_general",
+      "niveau_complexite": 3,
+      "dhatus_inferes": [
+        "MOVE",
+        "COMMUNICATE",
+        "INTERACT"
+      ]
+    },
+    "reconstruction": "gehen sprechen treffen",
+    "fidelite_semantique": 0.0,
+    "temps_traitement_ms": 3.5,
+    "succes_100_pourcent": false
+  },
+  {
+    "phrase_originale": "Il était une fois une reine.",
+    "langue_detectee": "fr",
+    "analyse_semantique": {
+      "concepts_detectes": [
+        "EXIST",
+        "MOVE",
+        "COMMUNICATE"
+      ],
+      "intention_communicative": "narration_conte",
+      "contexte_pragmatique": "conte_traditionnel",
+      "niveau_complexite": 3,
+      "dhatus_inferes": [
+        "EXIST",
+        "MOVE",
+        "COMMUNICATE"
+      ]
+    },
+    "reconstruction": "était aller parler",
+    "fidelite_semantique": 100.0,
+    "temps_traitement_ms": 3.2,
+    "succes_100_pourcent": true
+  },
+  {
+    "phrase_originale": "Once upon a time there was a queen.",
+    "langue_detectee": "en",
+    "analyse_semantique": {
+      "concepts_detectes": [
+        "EXIST",
+        "PERCEIVE"
+      ],
+      "intention_communicative": "narration_conte",
+      "contexte_pragmatique": "conte_traditionnel",
+      "niveau_complexite": 3,
+      "dhatus_inferes": [
+        "EXIST",
+        "PERCEIVE"
+      ]
+    },
+    "reconstruction": "was see",
+    "fidelite_semantique": 50.0,
+    "temps_traitement_ms": 3.7,
+    "succes_100_pourcent": false
+  },
+  {
+    "phrase_originale": "Es war einmal eine Königin.",
+    "langue_detectee": "de",
+    "analyse_semantique": {
+      "concepts_detectes": [
+        "EXIST"
+      ],
+      "intention_communicative": "narration_conte",
+      "contexte_pragmatique": "conte_traditionnel",
+      "niveau_complexite": 1,
+      "dhatus_inferes": [
+        "EXIST"
+      ]
+    },
+    "reconstruction": "war",
+    "fidelite_semantique": 100.0,
+    "temps_traitement_ms": 2.7,
+    "succes_100_pourcent": true
+  }
+]

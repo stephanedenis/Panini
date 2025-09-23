@@ -1,0 +1,13 @@
+{
+  "source_file": "colab_integration/results/demo_20250922_214205/session_metadata.json",
+  "commit_hash": "20aa667",
+  "processed_at": "2025-09-22T22:15:38.519788",
+  "data_size": 198,
+  "keys": [
+    "session_id",
+    "imported_at",
+    "source_file",
+    "auto_imported"
+  ],
+  "status": "processed"
+}

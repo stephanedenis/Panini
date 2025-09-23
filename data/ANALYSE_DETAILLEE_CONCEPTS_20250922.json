@@ -1,0 +1,80 @@
+{
+  "date_analyse": "2025-09-22T14:31:21.247054",
+  "concepts_analyses": {
+    "analyse_contextuelle": {
+      "phrase": "Il était une fois une reine.",
+      "innovation": "Détection automatique du contexte situationnel",
+      "nouveaux_attributs": [
+        "contexte_situationnel → 'conte, narration'",
+        "locuteur → 'narrateur externe'",
+        "variables_inconnues → 'identité reine, époque, lieu'"
+      ]
+    },
+    "analyse_onomastique": [
+      {
+        "nom": "Marie",
+        "type": "anthroponyme",
+        "dhatu_propose": "FEEL",
+        "justification": "Identité personnelle, dimension émotionnelle"
+      },
+      {
+        "nom": "Jean",
+        "type": "anthroponyme",
+        "dhatu_propose": "FEEL",
+        "justification": "Identité personnelle, dimension émotionnelle"
+      },
+      {
+        "nom": "Berlin",
+        "type": "toponyme",
+        "dhatu_propose": "LOCATE",
+        "justification": "Référence spatiale, positionnement géographique"
+      }
+    ],
+    "molecules_semantiques": {
+      "mot": "lièvre",
+      "dhatu_constituants": [
+        "TRANS",
+        "EVAL",
+        "LOCATE"
+      ],
+      "force_semantique": 0.5,
+      "complexite": 3,
+      "interpretation_dhatu": {
+        "TRANS": "Transformation → vitesse, fuite, changement de position",
+        "EVAL": "Évaluation → comparaison (vs tortue), jugement de rapidité",
+        "LOCATE": "Localisation → mouvement dans l'espace, position relative"
+      }
+    }
+  },
+  "recommandations": {
+    "Analyse Contextuelle": [
+      "Ajouter détection genre littéraire (conte, roman, essai)",
+      "Distinguer narrateur homodiégétique/hétérodiégétique",
+      "Créer ontologie des contextes situationnels",
+      "Implémenter résolution variables inconnues"
+    ],
+    "Analyse Onomastique": [
+      "Créer base de données noms propres annotés",
+      "Implémenter résolution ambiguïté (Paris personne/lieu)",
+      "Ajouter sous-catégories dhātu (FEEL_PERSON, LOCATE_CITY)",
+      "Tester sur corpus multilingue (noms translittérés)"
+    ],
+    "Molécules Sémantiques": [
+      "Valider décompositions avec experts linguistes",
+      "Créer métriques inter-annotateur agreement",
+      "Implémenter apprentissage machine pour force sémantique",
+      "Ajouter visualisation graphique molécules complexes"
+    ],
+    "Validation Générale": [
+      "Mesurer performance sur corpus de référence",
+      "Comparer avec analyseurs existants (spaCy, NLTK)",
+      "Créer interface validation collaborative",
+      "Documenter cas limites et exceptions"
+    ]
+  },
+  "synthese": {
+    "points_forts": 4,
+    "defis_identifies": 4,
+    "priorite": "validation_linguistique"
+  }
+}
