@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:49:51.558684",
+    "collector": "fast_corpus_collector",
+    "count": 4,
+    "quality_score": 0.8
+  },
+  "documents": [
+    {
+      "title": "Philosophy",
+      "content": "Philosophy is a systematic study of general and fundamental questions concerning topics like existence, reason, knowledge, value, beauty, mind, and language. It is a rational and critical inquiry that reflects on its methods and assumptions.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy",
+      "timestamp": "2025-09-22T23:49:45.843024"
+    },
+    {
+      "title": "Phonetics",
+      "content": "Phonetics is a branch of linguistics that studies how humans produce and perceive sounds or, in the case of sign languages, the equivalent aspects of sign. Linguists who specialize in studying the physical properties of speech are phoneticians. The field of phonetics is traditionally divided into three sub-disciplines: articulatory phonetics, acoustic phonetics, and auditory phonetics. Traditionally, the minimal linguistic unit of phonetics is the phone—a speech sound in a language which differs from the phonological unit of phoneme; the phoneme is an abstract categorization of phones and it is also defined as the smallest unit that discerns meaning between sounds in any given language.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Phonetics",
+      "timestamp": "2025-09-22T23:49:47.899978"
+    },
+    {
+      "title": "Syntax",
+      "content": "In linguistics, syntax is the study of how words and morphemes combine to form larger units such as phrases and sentences. Central concerns of syntax include word order, grammatical relations, hierarchical sentence structure (constituency), agreement, the nature of crosslinguistic variation, and the relationship between form and meaning (semantics). Diverse approaches, such as generative grammar and functional grammar, offer unique perspectives on syntax, reflecting its complexity and centrality to understanding human language.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-22T23:49:48.930030"
+    },
+    {
+      "title": "India",
+      "content": "India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country since 2023; and, since its independence in 1947, the world's most populous democracy. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west; China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is near Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Myanmar, Thailand, and Indonesia.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/India",
+      "timestamp": "2025-09-22T23:49:50.558065"
+    }
+  ]
+}
