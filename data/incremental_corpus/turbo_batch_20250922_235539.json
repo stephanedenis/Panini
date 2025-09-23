@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:55:39.631792",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 15,
+    "avg_quality_score": 0.713,
+    "avg_dhatu_potential": 0.027,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Grammar",
+      "content": "In linguistics, grammar is the set of rules for how a natural language is structured, as demonstrated by its speakers or writers. Grammar rules may concern the use of clauses, phrases, and words. The term may also refer to the study of such rules, a subject that includes phonology, morphology, and syntax, together with phonetics, semantics, and pragmatics. There are, broadly speaking, two different ways to study grammar: traditional grammar and theoretical grammar.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Grammar",
+      "timestamp": "2025-09-22T23:55:39.415743",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philology",
+      "content": "Philology is the study of language in oral and written historical sources. It is the intersection of textual criticism, literary criticism, history, and linguistics with strong ties to etymology. Philology is also defined as the study of literary texts and oral and written records, the establishment of their authenticity and their original form, and the determination of their meaning. A person who pursues this kind of study is known as a philologist. In older usage, especially British, philology is more general, covering comparative and historical linguistics.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Philology",
+      "timestamp": "2025-09-22T23:55:39.388093",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Dhātu",
+      "content": "Dhātu est un mot sanskrit signifiant élément, partie d'un tout; racine verbale. Dans le bouddhisme ce sont les quatre éléments physiques (bhūta) constitutifs de la matière. Leur analyse englobe les phénomènes physiques et partiellement mentaux sous forme de dix-huit éléments. En grammaire sanskrite, le terme désigne les racines verbales.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Dh%C4%81tu",
+      "timestamp": "2025-09-22T23:55:39.611552",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Root",
+      "content": "In vascular plants, the roots are the organs of a plant that are modified to provide anchorage for the plant and take in water and nutrients into the plant body, which allows plants to grow taller and faster. They are most often below the surface of the soil, but roots can also be aerial or aerating, that is, growing up above the ground or especially above water.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Root",
+      "timestamp": "2025-09-22T23:55:39.500782",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Upanishads",
+      "content": "The Upanishads are late Vedic and post-Vedic Sanskrit texts that \"document the transition from the archaic ritualism of the Veda into new religious ideas and institutions\" and the emergence of the central religious concepts of Hinduism. They are the most recent addition to the Vedas, the oldest scriptures of Hinduism, and deal with meditation, philosophy, consciousness, and ontological knowledge. Earlier parts of the Vedas dealt with mantras, benedictions, rituals, ceremonies, and sacrifices.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Upanishads",
+      "timestamp": "2025-09-22T23:55:39.503501",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Indian philosophy",
+      "content": "Indian philosophy consists of philosophical traditions of the Indian subcontinent. The philosophies are often called darśana, meaning \"to see\" or \"looking at.\" Ānvīkṣikī means “critical inquiry” or “investigation.\" Unlike darśana, ānvīkṣikī was used to refer to Indian philosophies by classical Indian philosophers, such as Chanakya in the Arthaśāstra.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Indian_philosophy",
+      "timestamp": "2025-09-22T23:55:39.376398",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philosophy of language",
+      "content": "Philosophy of language refers to the philosophical study of the nature of language. It investigates the relationship between language, language users, and the world. Investigations may include inquiry into the nature of meaning, intentionality, reference, the constitution of sentences, concepts, learning, and thought.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_language",
+      "timestamp": "2025-09-22T23:55:39.455512",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:55:39.503032",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Verb",
+      "content": "Das Verb, deutsch auch Zeitwort, Tätigkeitswort und im Schulgebrauch unterer Klassen Tu(n)wort, ist in der Grammatik eine Wortart. Die Trennung zwischen Verb und Substantiv wird als die fundamentalste Unterscheidung im Bereich der Wortarten angesehen, da hierin die Aufteilung elementarer Sätze in das Prädikat und sein Subjekt angelegt ist. Bei Autoren der Antike wurden anfangs Bezeichnungen für „Verb“ und „Prädikat“ auch nicht eindeutig unterschieden.",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:55:39.581313",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Panini",
+      "content": "Panini steht füreine Tribus aus der Familie der Menschenaffen, einzige Gattung dieser Tribus sind die Schimpansen\nitalienische Brötchen (Plural), siehe Panino\nitalienisches gegrilltes Sandwich: Panini (Sandwich)",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:55:39.472299",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishaden",
+      "content": "Die Upanishaden sind eine Sammlung philosophischer Schriften des Hinduismus und Bestandteil des Veda. Sie wurden zwischen 700 und 200 v. Chr. niedergeschrieben. Der Singular lautet die Upanishad. Im Sanskrit bedeutet उपनिषद्, upaniṣad, f., wörtlich „das Sich-in-der-Nähe-Niedersetzen“, gemeint ist „sich zu Füßen eines Lehrers (Guru) setzen“, aber auch eine geheime, belehrende Sitzung. Die Upanishaden wurden am Ende in den Kanon der Veda aufgenommen.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Upanishaden",
+      "timestamp": "2025-09-22T23:55:39.510152",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "Das Ramayana ist nach dem Mahabharata das zweite indische Nationalepos. Im Gegensatz zum Mahabharata handelt es sich um eine Kunstdichtung (Adikavya). Als Autor der ältesten und bekanntesten Version ist Valmiki verbürgt. Die genaue Entstehungszeit ist unklar, sie liegt zwischen dem 4. Jahrhundert v. Chr. und dem 2. Jahrhundert n. Chr. Seine heutige Form dürfte das Ramayana im 2. Jahrhundert n. Chr. erreicht haben.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-22T23:55:39.407200",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Upanishad",
+      "content": "Les Upanishad ou Upaniṣad sont un ensemble de textes philosophiques qui forment la base théorique de la religion hindoue. Elles constituent une partie des textes en Inde liés à la śruti et consistent en des spéculations philosophiques qui éclairent le texte auquel elles se réfèrent, chacune se réclamant d'une partie du Veda. Par exemple, la Kauṣītaki fait partie du cycle du Rig-Veda.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-22T23:55:39.512334",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Veda",
+      "content": "Le Veda est un ensemble de textes qui, selon la tradition, ont été révélés aux sages indiens nommés Rishi. Cette « connaissance révélée » a été transmise oralement de brahmane à brahmane au sein du védisme, du brahmanisme, et de l'hindouisme jusqu'à nos jours sur une période indéterminée.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Veda",
+      "timestamp": "2025-09-22T23:55:39.555522",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "Se denomina Vedas a los cuatro textos más antiguos de la literatura india, base de la religión védica .\nEl más antiguo de los cuatro, el Rig-veda, fue compuesto oralmente en sánscrito a mediados del II milenio a. C. Los otros tres son en gran parte copias del Rig-veda original.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-22T23:55:39.587501",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
