@@ -1,11 +1,41 @@
 
-# Colab integration
-colab_integration/results/*/dhatu_analysis_detailed.json
-colab_integration/data/temp/
-colab_integration/.colab_cache/
-
-# Logs et temporaires
+# Fichiers temporaires et logs
+temp/logs/
+temp/cache/
+temp/build/
 *.tmp
 *.log
 __pycache__/
 .python-version
+
+# Configuration locale
+config/local_*.json
+config/secrets.json
+.env
+.env.local
+
+# Archives et sauvegardes
+colab_results_archive_full/
+legacy/
+*.backup
+*.bak
+
+# Cache Python et VS Code
+__pycache__/
+*.pyc
+*.pyo
+.vscode/launch.json
+.vscode/.ropeproject/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Git temporaires
+.github_last_check
+github_sync_tracking.json
+
+# Environnements virtuels
+.venv/
+venv/
+env/

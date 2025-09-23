@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-09-23T09:09:06.302679",
+  "buffer_status": {
+    "current_files": 218,
+    "consumption_rate": 5.0,
+    "minutes_remaining": 43.6,
+    "buffer_status": "ok",
+    "action_needed": false
+  },
+  "feeder_active": true,
+  "target_buffer": 50,
+  "minimum_buffer": 20
+}

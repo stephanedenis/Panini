@@ -1,33 +1,46 @@
-# 🧬 PaniniFS Research
+# 🚀 PaniniFS Research - Architecture GitHub-Sync
 
-**Recherche linguistique computationnelle avec accélération GPU**
+## 📋 Vue d'Ensemble
 
-[![Open Main Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/PaniniFS-Research/blob/main/PaniniFS_Colab_GPU.ipynb)
+Projet de recherche sur l'analyse linguistique sanskrite avec **architecture modulaire** et **système GitHub-Sync révolutionnaire** permettant les mises à jour de code sans interruption des sessions Colab.
 
-## 🚀 Démarrage Rapide
+## 🏗️ Structure du Projet
 
-### 📓 Analyse Dhātu GPU (TESTÉ ✅)
-Cliquez sur le badge ci-dessus pour lancer l'analyse dhātu avec accélération GPU dans Colab Pro.
-
-**Performance** : 15x plus rapide que CPU local
-- 500 documents en 3-5 secondes
-- 2000 documents en 12-15 secondes  
-- 10000 documents en 60 secondes
-
-### 🔧 API Locale + Dashboard
-```bash
-# Lancer le système intégré
-python3 scripts/start_colab_integration.py
-
-# Dashboard: http://localhost:5000
+```
+PaniniFS-Research/
+├── 📓 notebooks/                    # Notebooks Jupyter (GitHub-Sync uniquement)
+│   ├── dhatu_github_sync.ipynb     # Notebook 4-cellules avec sync
+│   └── github_sync_master_control.ipynb  # Panneau contrôle complet
+├── � src/                         # Code source principal
+│   ├── modules/                    # Modules modulaires interchangeables
+│   ├── github_sync/               # Système GitHub-Sync révolutionnaire
+│   └── interfaces/                # Interfaces communes
+├── 📚 docs/                        # Documentation organisée
+│   ├── guides/                    # Guides d'utilisation
+│   ├── rapports/                  # Rapports techniques
+│   ├── journaux/                  # Journaux de session
+│   └── architecture/              # Documentation architecture
+├── ⚙️ config/                      # Fichiers de configuration
+├── 🔧 temp/                        # Fichiers temporaires et logs
+├── 🎯 copilotage/                  # Directives et contrôle agent
+│   ├── directives/                # Directives stratégiques
+│   ├── vscode/                    # Configuration VS Code
+│   └── organization/              # Règles d'organisation
+└── 🛠️ tools/                       # Outils et scripts
 ```
 
-## 📁 Structure du Projet
+## 🌟 Innovation Révolutionnaire
 
-### 🧬 Analyse Linguistique
-- **`PaniniFS_Colab_GPU.ipynb`** - Notebook principal GPU-optimisé
-- **`colab_integration/`** - Workflow GitHub ↔ Colab complet
-- **`src/`** - Modules d'analyse dhātu et traitement corpus
+### 🔄 Système GitHub-Sync
+- **Hot-reload sans interruption** des sessions Colab
+- **Mises à jour automatiques** des modules depuis GitHub
+- **Rollback automatique** en cas d'échec
+- **Architecture modulaire** avec notebooks ultra-légers (5-7 cellules max)
+
+### 📓 Notebooks Nouvelle Génération
+- **`dhatu_github_sync.ipynb`** : Notebook 4-cellules avec sync automatique
+- **`github_sync_master_control.ipynb`** : Panneau de contrôle centralisé
+- **Logique externalisée** dans modules Python réutilisables
 
 ### ⚡ Infrastructure Cloud
 - **`src/cloud/`** - API REST + intégration Colab

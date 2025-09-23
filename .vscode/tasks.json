@@ -1,0 +1,97 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🧹 Organiser Fichiers",
+      "type": "shell",
+      "command": "python3",
+      "args": ["${workspaceFolder}/tools/organize_files.py"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "📁 Créer Module Python",
+      "type": "shell",
+      "command": "mkdir",
+      "args": ["-p", "${workspaceFolder}/src/modules/${input:moduleName}"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "📓 Créer Notebook GitHub-Sync",
+      "type": "shell",
+      "command": "cp",
+      "args": [
+        "${workspaceFolder}/notebooks/dhatu_github_sync.ipynb",
+        "${workspaceFolder}/notebooks/${input:notebookName}.ipynb"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "📋 Créer Guide Documentation",
+      "type": "shell",
+      "command": "touch",
+      "args": ["${workspaceFolder}/docs/guides/${input:guideName}.md"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "🔧 Nettoyer Racine Projet",
+      "type": "shell",
+      "command": "python3",
+      "args": ["${workspaceFolder}/tools/clean_root.py"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "🚀 Lancer GitHub-Sync Master Control",
+      "type": "shell",
+      "command": "jupyter",
+      "args": ["notebook", "${workspaceFolder}/notebooks/github_sync_master_control.ipynb"],
+      "group": "test",
+      "isBackground": true
+    }
+  ],
+  "inputs": [
+    {
+      "id": "moduleName",
+      "description": "Nom du module à créer",
+      "default": "new_module",
+      "type": "promptString"
+    },
+    {
+      "id": "notebookName", 
+      "description": "Nom du notebook GitHub-Sync",
+      "default": "new_github_sync_notebook",
+      "type": "promptString"
+    },
+    {
+      "id": "guideName",
+      "description": "Nom du guide de documentation",
+      "default": "new_guide",
+      "type": "promptString"
+    }
+  ]
+}

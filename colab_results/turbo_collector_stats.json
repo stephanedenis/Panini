@@ -1,11 +1,14 @@
 {
-  "start_time": "2025-09-22T23:23:31.782011",
-  "docs_collected": 62,
-  "batches_created": 2,
-  "errors": 1,
+  "start_time": "2025-09-22T23:49:29.222261",
+  "docs_collected": 5200,
+  "batches_created": 171,
+  "errors": 0,
   "sources_used": [
-    "wikipedia_philosophy",
+    "wikipedia_linguistics",
     "wikipedia_sanskrit",
-    "wikipedia_linguistics"
-  ]
+    "wikipedia_philosophy"
+  ],
+  "end_time": "2025-09-23T00:04:33.395906",
+  "total_docs": 2406,
+  "cycles": 171
 }

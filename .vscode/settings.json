@@ -1,0 +1,149 @@
+{{
+
+  "files.defaultLanguage": "markdown",  "folders": [
+
+  "files.autoSave": "afterDelay",    {
+
+  "files.autoSaveDelay": 1000,      "name": "🎯 COPILOTAGE (START HERE)",
+
+        "path": "./copilotage"
+
+  // Organisation automatique des fichiers    },
+
+  "explorer.fileNesting.enabled": true,    {
+
+  "explorer.fileNesting.expand": false,      "name": "📚 Documentation", 
+
+  "explorer.fileNesting.patterns": {      "path": "./docs"
+
+    "*.md": "${capture}.json, ${capture}.yml, ${capture}.yaml",    },
+
+    "*.py": "${capture}.json, ${capture}.yml, ${capture}.yaml, ${capture}_test.py, test_${capture}.py",    {
+
+    "*.ipynb": "${capture}.py, ${capture}.json"      "name": "🔬 Research Panini",
+
+  },      "path": "./panini"
+
+      },
+
+  // Paramètres spécifiques au projet    {
+
+  "python.defaultInterpreterPath": "./.venv/bin/python",      "name": "⚙️ Tech Implementation",
+
+  "python.analysis.extraPaths": ["./src"],      "path": "./tech"
+
+  "python.analysis.include": ["./src", "./notebooks"],    },
+
+  "python.analysis.exclude": ["./temp", "./legacy"],    {
+
+        "name": "🌐 Web Tools",
+
+  // Configuration Jupyter      "path": "./web"
+
+  "jupyter.notebookFileRoot": "${workspaceFolder}/notebooks",    },
+
+  "jupyter.defaultKernel": "python3",    {
+
+        "name": "📊 Corpus Data",
+
+  // Templates de fichiers      "path": "./corpus"
+
+  "files.associations": {    }
+
+    "*.md": "markdown",  ],
+
+    "*.py": "python",  "settings": {
+
+    "*.ipynb": "jupyter-notebook"    "workbench.startupEditor": "readme",
+
+  },    "files.defaultLanguage": "markdown",
+
+      "workbench.tree.expandMode": "singleClick",
+
+  // Dossiers exclus    "explorer.sortOrder": "foldersNestsFiles",
+
+  "files.exclude": {    "copilot.enable": {
+
+    "**/.git": true,      "*": true,
+
+    "**/.venv": true,      "markdown": true,
+
+    "**/temp/logs": true,      "python": true
+
+    "**/colab_results_archive_full": true,    },
+
+    "**/__pycache__": true,    "copilot.chat.enable": true,
+
+    "**/*.pyc": true    "github.copilot.chat.templateVariables": {
+
+  },      "SIMPLIFICATION_DIRECTIVE": "Commande trop complexe pour autoapprobation. Crée un fichier Python au besoin pour exécuter cette commande en un appel plus simple."
+
+      },
+
+  // Configuration recherche    "github.copilot.chat.experimental.codeGeneration.instructions": [
+
+  "search.exclude": {      {
+
+    "**/temp": true,        "text": "DIRECTIVE SYSTÈME OBLIGATOIRE: Si une commande est trop complexe pour autoapprobation (plus de 3 paramètres, chaînage multiple, ou logique conditionnelle), tu DOIS créer un fichier Python dédié pour encapsuler cette logique et fournir un appel simple. Exemple: au lieu de 'find . -name \"*.py\" -exec grep -l \"def main\" {} \\; | xargs wc -l | sort -n', crée 'python3 analyser_fonctions_main.py'. Toujours privilégier la lisibilité et la réutilisabilité."
+
+    "**/legacy": true,      }
+
+    "**/.venv": true,    ],
+
+    "**/colab_results_archive_full": true    "python.defaultInterpreterPath": "./.venv/bin/python",
+
+  },    "copilotage.onboardingRequired": true,
+
+      "copilotage.rulesStudied": false,
+
+  // Auto-organisation des imports Python    "copilotage.contextLearned": false,
+
+  "python.analysis.autoImportCompletions": true,    "files.associations": {
+
+  "python.analysis.packageIndexDepths": [      "*.dhatu": "python",
+
+    { "name": "src", "depth": 3 },      "*.panini": "python"
+
+    { "name": "modules", "depth": 2 }    },
+
+  ],    "python.analysis.extraPaths": [
+
+        "./",
+
+  // Configuration Markdown      "./corpus",
+
+  "markdown.preview.breaks": true,      "./panini", 
+
+  "markdown.preview.linkify": true,      "./dhatu"
+
+      ]
+
+  // Copilot configuration  },
+
+  "github.copilot.enable": {  "extensions": {
+
+    "*": true,    "recommendations": [
+
+    "markdown": true,      "ms-python.python",
+
+    "python": true,      "ms-vscode.vscode-json",
+
+    "jupyter": true      "yzhang.markdown-all-in-one"
+
+  },    ]
+
+    }
+
+  // Workspace recommendations}
+  "workbench.startupEditor": "readme",
+  "workbench.editor.showTabs": true,
+  "workbench.editor.tabSizing": "fit",
+  
+  // Terminal configuration
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  
+  // Git configuration
+  "git.ignoreLimitWarning": true,
+  "git.autofetch": true
+}
