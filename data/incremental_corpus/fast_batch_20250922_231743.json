@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:17:43.327612",
+    "collector": "fast_corpus_collector",
+    "count": 3,
+    "quality_score": 0.8
+  },
+  "documents": [
+    {
+      "title": "Verb",
+      "content": "A verb is a word that generally conveys an action, an occurrence, or a state of being. In the usual description of English, the basic form, with or without the particle to, is the infinitive. In many languages, verbs are inflected to encode tense, aspect, mood, and voice. A verb may also agree with the person, gender or number of some of its arguments, such as its subject, or object. In English, three tenses exist: present, to indicate that an action is being carried out; past, to indicate that an action has been done; and future, to indicate that an action will be done, expressed with the auxiliary verb will or shall.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:17:38.205432"
+    },
+    {
+      "title": "Language",
+      "content": "Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time. Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Language",
+      "timestamp": "2025-09-22T23:17:40.267222"
+    },
+    {
+      "title": "Philosophy",
+      "content": "Philosophy is a systematic study of general and fundamental questions concerning topics like existence, reason, knowledge, value, beauty, mind, and language. It is a rational and critical inquiry that reflects on its methods and assumptions.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy",
+      "timestamp": "2025-09-22T23:17:42.326990"
+    }
+  ]
+}
