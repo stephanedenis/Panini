@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:50:07.888206",
+    "collector": "fast_corpus_collector",
+    "count": 5,
+    "quality_score": 0.62
+  },
+  "documents": [
+    {
+      "title": "Literature",
+      "content": "Literature is any collection of written work, but it is also used more narrowly for writings specifically considered to be an art form, especially novels, plays, and poems. It includes both print and digital writing. In recent centuries, the definition has expanded to include oral literature, much of which has been transcribed. Literature is a method of recording, preserving, and transmitting knowledge and entertainment. It can also have a social, psychological, spiritual, or political role.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Literature",
+      "timestamp": "2025-09-22T23:50:02.756143"
+    },
+    {
+      "title": "Verb",
+      "content": "A verb is a word that generally conveys an action, an occurrence, or a state of being. In the usual description of English, the basic form, with or without the particle to, is the infinitive. In many languages, verbs are inflected to encode tense, aspect, mood, and voice. A verb may also agree with the person, gender or number of some of its arguments, such as its subject, or object. In English, three tenses exist: present, to indicate that an action is being carried out; past, to indicate that an action has been done; and future, to indicate that an action will be done, expressed with the auxiliary verb will or shall.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:50:03.788496"
+    },
+    {
+      "title": "Literature",
+      "content": "Literature is any collection of written work, but it is also used more narrowly for writings specifically considered to be an art form, especially novels, plays, and poems. It includes both print and digital writing. In recent centuries, the definition has expanded to include oral literature, much of which has been transcribed. Literature is a method of recording, preserving, and transmitting knowledge and entertainment. It can also have a social, psychological, spiritual, or political role.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Literature",
+      "timestamp": "2025-09-22T23:50:04.820470"
+    },
+    {
+      "title": "Ancient history",
+      "content": "Ancient history is a time period from the beginning of writing and recorded human history through late antiquity. The span of recorded history is roughly 5,000 years, beginning with the development of Sumerian cuneiform script. Ancient history covers all continents inhabited by humans in the period 3000 BC – AD 500, ending with the expansion of Islam in late antiquity.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_history",
+      "timestamp": "2025-09-22T23:50:05.857381"
+    },
+    {
+      "title": "Linguistics",
+      "content": "Linguistics is the scientific study of language. The areas of linguistic analysis are syntax, semantics (meaning), morphology, phonetics, phonology, and pragmatics. Subdisciplines such as biolinguistics and psycholinguistics bridge many of these divisions.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Linguistics",
+      "timestamp": "2025-09-22T23:50:06.887808"
+    }
+  ]
+}
