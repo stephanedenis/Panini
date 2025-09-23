@@ -175,6 +175,33 @@ def initialize_github_sync_objects():
         return None
 
 
+def initialize_github_sync_system():
+    """
+    Fonction complète d'initialisation GitHub-Sync
+    Combine setup environnement + création objets
+    """
+    
+    # Setup environnement
+    setup_result = setup_github_sync_environment()
+    
+    if not setup_result['success']:
+        setup_result['objects_created'] = False
+        return setup_result
+    
+    # Initialiser objets
+    objects = initialize_github_sync_objects()
+    
+    if objects:
+        setup_result['objects_created'] = True
+        setup_result.update(objects)  # Ajoute config, loader, etc. au result
+        setup_result['messages'].append("✅ Système GitHub-Sync complet")
+    else:
+        setup_result['objects_created'] = False
+        setup_result['messages'].append("❌ Échec création objets GitHub-Sync")
+    
+    return setup_result
+
+
 def print_setup_summary(result: Dict[str, Any]):
     """Affiche un résumé du setup"""
     
@@ -189,7 +216,7 @@ def print_setup_summary(result: Dict[str, Any]):
     if result.get('objects_created'):
         print("📊 OBJETS DISPONIBLES:")
         print("├── config     : Configuration GitHub-Sync")
-        print("├── loader     : Chargeur modules GitHub") 
+        print("├── loader     : Chargeur modules GitHub")
         print("├── updater    : Gestionnaire mises à jour")
         print("└── hot_reload : Manager hot-reload")
         print()
