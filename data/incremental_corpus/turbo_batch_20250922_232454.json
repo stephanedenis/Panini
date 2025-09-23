@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:24:54.951394",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 14,
+    "avg_quality_score": 0.664,
+    "avg_dhatu_potential": 0.014,
+    "sources_used": [
+      "wikipedia_philosophy",
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Philology",
+      "content": "Philology is the study of language in oral and written historical sources. It is the intersection of textual criticism, literary criticism, history, and linguistics with strong ties to etymology. Philology is also defined as the study of literary texts and oral and written records, the establishment of their authenticity and their original form, and the determination of their meaning. A person who pursues this kind of study is known as a philologist. In older usage, especially British, philology is more general, covering comparative and historical linguistics.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Philology",
+      "timestamp": "2025-09-22T23:24:54.820905",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishads",
+      "content": "The Upanishads are late Vedic and post-Vedic Sanskrit texts that \"document the transition from the archaic ritualism of the Veda into new religious ideas and institutions\" and the emergence of the central religious concepts of Hinduism. They are the most recent addition to the Vedas, the oldest scriptures of Hinduism, and deal with meditation, philosophy, consciousness, and ontological knowledge. Earlier parts of the Vedas dealt with mantras, benedictions, rituals, ceremonies, and sacrifices.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Upanishads",
+      "timestamp": "2025-09-22T23:24:54.731268",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Historical linguistics",
+      "content": "Historical linguistics, also known as diachronic linguistics, is the scientific study of how languages change over time. It seeks to understand the nature and causes of linguistic change and to trace the evolution of languages. Historical linguistics involves several key areas of study, including the reconstruction of ancestral languages, the classification of languages into families, and the analysis of the cultural and social influences on language development.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Historical_linguistics",
+      "timestamp": "2025-09-22T23:24:54.783027",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini peut avoir l'un des sens suivants :Giovanni Paolo Panini, peintre baroque italien du XVIIIe siècle ;\nPāṇini, grammairien indien du Ve siècle av. J.-C. ;\nPanini, maison d'édition italienne d'autocollants et de bandes dessinées ;\nPanini, la tribu, dans la famille des hominidés, comprenant le chimpanzé et le bonobo ;\nPanini, une municipalité du Népal ;\nPanini, type de sandwich grillé ;\nPanino désigne, en italien, des petits pains et les sandwichs faits à partir de ceux-ci.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:24:54.773862",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Epistemology",
+      "content": "\n\nEpistemology is the branch of philosophy that examines the nature, origin, and limits of knowledge. Also called \"the theory of knowledge\", it explores different types of knowledge, such as propositional knowledge about facts, practical knowledge in the form of skills, and knowledge by acquaintance as a familiarity through experience. Epistemologists study the concepts of belief, truth, and justification to understand the nature of knowledge. To discover how knowledge arises, they investigate sources of justification, such as perception, introspection, memory, reason, and testimony.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Epistemology",
+      "timestamp": "2025-09-22T23:24:54.813508",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Indian philosophy",
+      "content": "Indian philosophy consists of philosophical traditions of the Indian subcontinent. The philosophies are often called darśana, meaning \"to see\" or \"looking at.\" Ānvīkṣikī means “critical inquiry” or “investigation.\" Unlike darśana, ānvīkṣikī was used to refer to Indian philosophies by classical Indian philosophers, such as Chanakya in the Arthaśāstra.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Indian_philosophy",
+      "timestamp": "2025-09-22T23:24:54.744239",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "Das Ramayana ist nach dem Mahabharata das zweite indische Nationalepos. Im Gegensatz zum Mahabharata handelt es sich um eine Kunstdichtung (Adikavya). Als Autor der ältesten und bekanntesten Version ist Valmiki verbürgt. Die genaue Entstehungszeit ist unklar, sie liegt zwischen dem 4. Jahrhundert v. Chr. und dem 2. Jahrhundert n. Chr. Seine heutige Form dürfte das Ramayana im 2. Jahrhundert n. Chr. erreicht haben.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-22T23:24:54.847455",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Panini",
+      "content": "Panini steht füreine Tribus aus der Familie der Menschenaffen, einzige Gattung dieser Tribus sind die Schimpansen\nitalienische Brötchen (Plural), siehe Panino\nitalienisches gegrilltes Sandwich: Panini (Sandwich)",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:24:54.805841",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini puede hacer referencia a:El panini (sándwich), variedad de sándwich de origen italiano.\nLa editorial Panini, editorial italiana fundada en 1961.\nPanini (gramático), gramático del sánscrito de la India antigua.\nGiovanni Pannini (1691-1756), pintor y arquitecto italiano.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:24:54.810268",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:24:54.828506",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Veda",
+      "content": "Le Veda est un ensemble de textes qui, selon la tradition, ont été révélés aux sages indiens nommés Rishi. Cette « connaissance révélée » a été transmise oralement de brahmane à brahmane au sein du védisme, du brahmanisme, et de l'hindouisme jusqu'à nos jours sur une période indéterminée.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Veda",
+      "timestamp": "2025-09-22T23:24:54.880864",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Les Upanishad ou Upaniṣad sont un ensemble de textes philosophiques qui forment la base théorique de la religion hindoue. Elles constituent une partie des textes en Inde liés à la śruti et consistent en des spéculations philosophiques qui éclairent le texte auquel elles se réfèrent, chacune se réclamant d'une partie du Veda. Par exemple, la Kauṣītaki fait partie du cycle du Rig-Veda.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-22T23:24:54.736828",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Das Mahabharata ist das bekannteste indische Epos. Man nimmt an, dass es erstmals zwischen 400 v. Chr. und 400 n. Chr. niedergeschrieben wurde, aber auf älteren Traditionen beruht. Es umfasst etwa 100.000 Doppelverse.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:24:54.948746",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Se conoce como Upaniṣad a cada uno de los más de 200 libros sagrados hinduistas escritos en idioma sánscrito, de los cuales los más antiguos y representativos datarían aproximadamente de entre el 800 y el 400 a. C.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-22T23:24:54.778352",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
