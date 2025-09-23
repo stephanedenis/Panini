@@ -1,0 +1,26 @@
+{
+  "session_id": "demo_20250922_214205",
+  "timestamp": "2025-09-22T21:42:05.297486",
+  "source": "Google Colab Pro",
+  "gpu_info": {
+    "device_name": "Tesla T4",
+    "memory_total": "15GB",
+    "cuda_version": "12.1"
+  },
+  "corpus_stats": {
+    "total_documents": 1250,
+    "analysis_time": 23.7,
+    "throughput": 52.7
+  },
+  "dhatu_analysis": {
+    "patterns_detected": 9,
+    "dominant_dhatu": "√gam",
+    "confidence_score": 0.87,
+    "vectorization_accuracy": 0.94
+  },
+  "performance_metrics": {
+    "gpu_acceleration": "15.3x",
+    "memory_efficiency": "89%",
+    "processing_speed": "527 docs/min"
+  }
+}
