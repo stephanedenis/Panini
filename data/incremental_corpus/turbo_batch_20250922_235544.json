@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:55:44.931618",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 15,
+    "avg_quality_score": 0.707,
+    "avg_dhatu_potential": 0.013,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Dhātu",
+      "content": "Dhātu est un mot sanskrit signifiant élément, partie d'un tout; racine verbale. Dans le bouddhisme ce sont les quatre éléments physiques (bhūta) constitutifs de la matière. Leur analyse englobe les phénomènes physiques et partiellement mentaux sous forme de dix-huit éléments. En grammaire sanskrite, le terme désigne les racines verbales.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Dh%C4%81tu",
+      "timestamp": "2025-09-22T23:55:44.758213",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Logic",
+      "content": "Logic is the study of correct reasoning. It includes both formal and informal logic. Formal logic is the study of deductively valid inferences or logical truths. It examines how conclusions follow from premises based on the structure of arguments alone, independent of their topic and content. Informal logic is associated with informal fallacies, critical thinking, and argumentation theory. Informal logic examines arguments expressed in natural language whereas formal logic uses formal language. When used as a countable noun, the term \"a logic\" refers to a specific logical formal system that articulates a proof system. Logic plays a central role in many fields, such as philosophy, mathematics, computer science, and linguistics.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:55:44.746809",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.85,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit bezeichnet die verschiedenen Varietäten des Altindischen. Die älteste Form ist die Sprache der Veden, einer Sammlung religiöser mündlicher Überlieferungen im Hinduismus. Ihre Entstehung und Konsolidierung wird grob auf 1200 v. Chr. datiert, jedenfalls ins zweite vorchristliche Jahrtausend. Das klassische Sanskrit wurde um 400 v. Chr. durch die Grammatik des Panini kodifiziert.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-22T23:55:44.889813",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.8,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Syntax",
+      "content": "Syntax est un groupe de musique britannique basé à Londres. Formé autour des musiciens Jan Burton et Mike Tournier, le groupe emprunte sa musique comme un son Rock en fusionnant l'Electro et le Trip hop. Ils ont participé à plusieurs projets musicaux comme dans une apparition dans la B.O du jeu vidéo Driver 3, en plus de leurs divers projets individuels comme leur album Meccano Mind sorti en 2004.",
+      "source": "wikipedia_linguistics_fr",
+      "url": "https://fr.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-22T23:55:44.749859",
+      "language": "fr",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit is a classical language belonging to the Indo-Aryan branch of the Indo-European languages. It arose in northwest South Asia after its predecessor languages had diffused there from the northwest in the late Bronze Age. Sanskrit is the sacred language of Hinduism, the language of classical Hindu philosophy, and of historical texts of Buddhism and Jainism. It was a link language in ancient and medieval South Asia, and upon transmission of Hindu and Buddhist culture to Southeast Asia, East Asia and Central Asia in the early medieval era, it became a language of religion and high culture, and of the political elites in some of these regions. As a result, Sanskrit had a lasting effect on the languages of South Asia, Southeast Asia and East Asia, especially in their formal and learned vocabularies.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-22T23:55:44.851021",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Dhatu",
+      "content": "Dhātu may refer to:Dhātu (ayurveda) – Sanskrit term for the seven fundamental elements of the body\nSkandha#Eighteen dhātus and four paramatthas – a Sanskrit technical term meaning realm or substrate in Buddhism\nA term used to denote the classical elements in Indian thought\nA Theravada Buddhist term for a stupa, a mound-like structure containing Buddhist relics\n\n",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Dhatu",
+      "timestamp": "2025-09-22T23:55:44.737664",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Puranas",
+      "content": "Puranas are a vast genre of Indian literature that include a wide range of topics, especially legends and other traditional lore. The Puranas are known for the intricate layers of symbolism depicted within their stories. Composed originally in Sanskrit and in other Indian languages, several of these texts are named after major Hindu deities such as Vishnu, Shiva, Brahma, and Devi. The Puranic genre of literature is found in both Hinduism and Jainism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-22T23:55:44.690699",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Purana",
+      "content": "Un purana (en sanskrit devanāgarī : पुराण est un texte appartenant à un vaste genre de la littérature indienne, traitant d'une grande gamme de sujets. Composés entre 400 et 1 000 de notre ère, ces récits élaborés pour tous étaient préférentiellement destinés aux femmes qui n'avaient pas accès aux Védas. Ils sont généralement écrits en sanskrit. Ce genre littéraire existe à la fois dans l'hindouisme et le jaïnisme. Souvent encyclopédiques, les puranas traitent à la fois des mythes religieux, des divinités hindoues, des légendes, des contes traditionnels et des histoires de rois, en y incluant des réflexions poussées sur la cosmogonie, la cosmologie, les généalogies, la médecine, l'astronomie, la théologie et la philosophie. Leur contenu peut être très contradictoire, chaque Purana ayant survécu dans de nombreux manuscrits eux-mêmes incompatibles. Les Puranas hindous sont anonymes, et probablement issus de nombreux auteurs qui se sont succédé au cours des siècles. La plupart des Puranas jaïns peuvent être datés et leurs auteurs retrouvés. Il y a 18 puranas majeurs et 18 puranas mineurs, considérés comme des Smriti.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Purana",
+      "timestamp": "2025-09-22T23:55:44.692947",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Metaphysics",
+      "content": "Metaphysics is the branch of philosophy that examines the basic structure of reality. It is traditionally seen as the study of mind-independent features of the world, but some theorists view it as an inquiry into the conceptual framework of human understanding. Some philosophers, including Aristotle, designate metaphysics as first philosophy to suggest that it is more fundamental than other forms of philosophical inquiry.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Metaphysics",
+      "timestamp": "2025-09-22T23:55:44.683408",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:55:44.742138",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishaden",
+      "content": "Die Upanishaden sind eine Sammlung philosophischer Schriften des Hinduismus und Bestandteil des Veda. Sie wurden zwischen 700 und 200 v. Chr. niedergeschrieben. Der Singular lautet die Upanishad. Im Sanskrit bedeutet उपनिषद्, upaniṣad, f., wörtlich „das Sich-in-der-Nähe-Niedersetzen“, gemeint ist „sich zu Füßen eines Lehrers (Guru) setzen“, aber auch eine geheime, belehrende Sitzung. Die Upanishaden wurden am Ende in den Kanon der Veda aufgenommen.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Upanishaden",
+      "timestamp": "2025-09-22T23:55:44.815508",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini steht füreine Tribus aus der Familie der Menschenaffen, einzige Gattung dieser Tribus sind die Schimpansen\nitalienische Brötchen (Plural), siehe Panino\nitalienisches gegrilltes Sandwich: Panini (Sandwich)",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:55:44.923157",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:55:44.764414",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Se conoce como Upaniṣad a cada uno de los más de 200 libros sagrados hinduistas escritos en idioma sánscrito, de los cuales los más antiguos y representativos datarían aproximadamente de entre el 800 y el 400 a. C.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-22T23:55:44.846795",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Puranas",
+      "content": "Die Puranas gehören zu den wichtigsten heiligen Schriften des Hinduismus. Sie sind nach den Veden in der Zeit von 400 n. Chr. bis 1000 n. Chr. entstanden, greifen jedoch oft auf ältere Inhalte zurück.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-22T23:55:44.706304",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
