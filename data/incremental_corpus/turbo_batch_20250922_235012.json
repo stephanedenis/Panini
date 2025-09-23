@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:50:12.117026",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 13,
+    "avg_quality_score": 0.731,
+    "avg_dhatu_potential": 0.062,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Vyākaraṇa",
+      "content": "Vyākaraṇa refers to one of the six ancient Vedangas, ancillary science connected with the Vedas, which are scriptures in Hinduism. Vyākaraṇa is the study of grammar and linguistic analysis in Sanskrit language.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vy%C4%81kara%E1%B9%87a",
+      "timestamp": "2025-09-22T23:50:11.915955",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Grammar",
+      "content": "In linguistics, grammar is the set of rules for how a natural language is structured, as demonstrated by its speakers or writers. Grammar rules may concern the use of clauses, phrases, and words. The term may also refer to the study of such rules, a subject that includes phonology, morphology, and syntax, together with phonetics, semantics, and pragmatics. There are, broadly speaking, two different ways to study grammar: traditional grammar and theoretical grammar.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Grammar",
+      "timestamp": "2025-09-22T23:50:11.938974",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic is the study of correct reasoning. It includes both formal and informal logic. Formal logic is the study of deductively valid inferences or logical truths. It examines how conclusions follow from premises based on the structure of arguments alone, independent of their topic and content. Informal logic is associated with informal fallacies, critical thinking, and argumentation theory. Informal logic examines arguments expressed in natural language whereas formal logic uses formal language. When used as a countable noun, the term \"a logic\" refers to a specific logical formal system that articulates a proof system. Logic plays a central role in many fields, such as philosophy, mathematics, computer science, and linguistics.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:50:12.024405",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.85,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Vedas",
+      "content": "The Vedas, sometimes collectively called the Veda, are a large body of religious texts originating in ancient India. Composed in Vedic Sanskrit, the texts constitute the oldest layer of Sanskrit literature and the oldest scriptures of Hinduism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-22T23:50:12.051331",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Historical linguistics",
+      "content": "Historical linguistics, also known as diachronic linguistics, is the scientific study of how languages change over time. It seeks to understand the nature and causes of linguistic change and to trace the evolution of languages. Historical linguistics involves several key areas of study, including the reconstruction of ancestral languages, the classification of languages into families, and the analysis of the cultural and social influences on language development.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Historical_linguistics",
+      "timestamp": "2025-09-22T23:50:12.032665",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Verb",
+      "content": "A verb is a word that generally conveys an action, an occurrence, or a state of being. In the usual description of English, the basic form, with or without the particle to, is the infinitive. In many languages, verbs are inflected to encode tense, aspect, mood, and voice. A verb may also agree with the person, gender or number of some of its arguments, such as its subject, or object. In English, three tenses exist: present, to indicate that an action is being carried out; past, to indicate that an action has been done; and future, to indicate that an action will be done, expressed with the auxiliary verb will or shall.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:50:12.002367",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.5
+    },
+    {
+      "title": "Philosophy of language",
+      "content": "Philosophy of language refers to the philosophical study of the nature of language. It investigates the relationship between language, language users, and the world. Investigations may include inquiry into the nature of meaning, intentionality, reference, the constitution of sentences, concepts, learning, and thought.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_language",
+      "timestamp": "2025-09-22T23:50:11.939387",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "Das Ramayana ist nach dem Mahabharata das zweite indische Nationalepos. Im Gegensatz zum Mahabharata handelt es sich um eine Kunstdichtung (Adikavya). Als Autor der ältesten und bekanntesten Version ist Valmiki verbürgt. Die genaue Entstehungszeit ist unklar, sie liegt zwischen dem 4. Jahrhundert v. Chr. und dem 2. Jahrhundert n. Chr. Seine heutige Form dürfte das Ramayana im 2. Jahrhundert n. Chr. erreicht haben.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-22T23:50:11.984412",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Verb",
+      "content": "Das Verb, deutsch auch Zeitwort, Tätigkeitswort und im Schulgebrauch unterer Klassen Tu(n)wort, ist in der Grammatik eine Wortart. Die Trennung zwischen Verb und Substantiv wird als die fundamentalste Unterscheidung im Bereich der Wortarten angesehen, da hierin die Aufteilung elementarer Sätze in das Prädikat und sein Subjekt angelegt ist. Bei Autoren der Antike wurden anfangs Bezeichnungen für „Verb“ und „Prädikat“ auch nicht eindeutig unterschieden.",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:50:12.019425",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Panini",
+      "content": "Panini puede hacer referencia a:El panini (sándwich), variedad de sándwich de origen italiano.\nLa editorial Panini, editorial italiana fundada en 1961.\nPanini (gramático), gramático del sánscrito de la India antigua.\nGiovanni Pannini (1691-1756), pintor y arquitecto italiano.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:50:12.115483",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini steht füreine Tribus aus der Familie der Menschenaffen, einzige Gattung dieser Tribus sind die Schimpansen\nitalienische Brötchen (Plural), siehe Panino\nitalienisches gegrilltes Sandwich: Panini (Sandwich)",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:50:12.109629",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:50:11.995363",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "Se denomina Vedas a los cuatro textos más antiguos de la literatura india, base de la religión védica .\nEl más antiguo de los cuatro, el Rig-veda, fue compuesto oralmente en sánscrito a mediados del II milenio a. C. Los otros tres son en gran parte copias del Rig-veda original.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-22T23:50:12.080230",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
