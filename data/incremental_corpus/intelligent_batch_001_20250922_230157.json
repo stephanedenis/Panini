@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "batch_number": 1,
+    "timestamp": "20250922_230157",
+    "collector_version": "intelligent_v1.0",
+    "colab_adaptation": true,
+    "document_count": 12,
+    "high_quality_count": 3,
+    "total_words": 1218,
+    "average_dhatu_potential": 0.5,
+    "total_dhatu_potential": 6.0,
+    "quality_threshold": 0.3,
+    "sources": [
+      "wikipedia",
+      "enhanced_academic"
+    ],
+    "languages": [
+      "en"
+    ],
+    "domains": [
+      "computational_linguistics",
+      "cognitive_science",
+      "general",
+      "theoretical_linguistics",
+      "mathematics",
+      "sanskrit_studies"
+    ],
+    "dhatu_distribution": {
+      "high": 3,
+      "medium": 4,
+      "low": 5
+    }
+  },
+  "documents": [
+    {
+      "id": "enhanced_sample_0_1758596346",
+      "title": "Verbal Root Analysis in Sanskrit Grammar",
+      "content": "Sanskrit verbal roots, known as dhātus, form the fundamental building blocks of the language's verbal system. Each dhātu carries a core semantic meaning that manifests through various grammatical transformations. The root √gam, meaning \"to go,\" exemplifies this principle through its diverse applications. When combined with different prefixes and suffixes, √gam generates numerous derived forms: गच्छति (gacchati) \"he goes,\" आगत: (āgataḥ) \"having come,\" and गमन (gamana) \"the act of going.\" This systematic approach to verbal morphology demonstrates the sophisticated grammatical framework developed by ancient Sanskrit grammarians.",
+      "source": "enhanced_academic",
+      "language": "en",
+      "domain": "sanskrit_studies",
+      "url": "",
+      "timestamp": "2025-09-22T22:59:06.503504",
+      "word_count": 85,
+      "dhatu_potential": 1.0,
+      "linguistic_features": {}
+    },
+    {
+      "id": "enhanced_sample_1_1758596346",
+      "title": "Movement Semantics in Natural Language Processing",
+      "content": "Natural language processing systems must accurately capture movement semantics to understand spatial relationships and temporal sequences. Verbs of motion like \"go,\" \"come,\" \"move,\" and \"travel\" require sophisticated semantic representation to handle their contextual variations. Machine learning models trained on large corpora can learn these patterns automatically, identifying subtle distinctions between \"walking towards\" versus \"walking away.\" The computational complexity of movement semantics parallels traditional grammatical analyses, where root meanings undergo systematic transformations through morphological processes.",
+      "source": "enhanced_academic",
+      "language": "en",
+      "domain": "computational_linguistics",
+      "url": "",
+      "timestamp": "2025-09-22T22:59:06.503603",
+      "word_count": 74,
+      "dhatu_potential": 1.0,
+      "linguistic_features": {}
+    },
+    {
+      "id": "enhanced_sample_2_1758596346",
+      "title": "Cognitive Architecture of Language Processing",
+      "content": "Human cognitive systems process language through hierarchical neural networks that decompose complex utterances into constituent elements. Research in cognitive linguistics reveals how speakers mentally represent verbal concepts and their transformations. The brain's language processing modules must rapidly access lexical items, apply grammatical rules, and generate appropriate outputs. This cognitive architecture mirrors formal grammatical systems where abstract rules operate on concrete linguistic materials. Understanding these cognitive mechanisms provides insights into both human language acquisition and artificial intelligence development.",
+      "source": "enhanced_academic",
+      "language": "en",
+      "domain": "cognitive_science",
+      "url": "",
+      "timestamp": "2025-09-22T22:59:06.503671",
+      "word_count": 77,
+      "dhatu_potential": 0.8,
+      "linguistic_features": {}
+    },
+    {
+      "id": "enhanced_sample_3_1758596346",
+      "title": "Transformational Grammar and Generative Systems",
+      "content": "Transformational grammar theory proposes that linguistic competence involves systematic rule-based transformations of underlying structures. These transformations operate on abstract representations to generate surface forms observable in actual speech. Generative systems must account for the infinite creativity of language while maintaining grammatical constraints. The interplay between lexical items and transformational rules creates the rich expressive power of human language. Contemporary linguistic theory continues to explore how these generative mechanisms function across different language families and grammatical systems.",
+      "source": "enhanced_academic",
+      "language": "en",
+      "domain": "theoretical_linguistics",
+      "url": "",
+      "timestamp": "2025-09-22T22:59:06.503726",
+      "word_count": 76,
+      "dhatu_potential": 0.5,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_6308726_1758596353",
+      "title": "Western Hemisphere Travel Initiative",
+      "content": "The Western Hemisphere Travel Initiative (WHTI) is the implementation of a requirement to show a passport or other acceptable document to enter the United States, for nationals of certain North American jurisdictions who were previously exempt from it when traveling within the Americas. The requirement comes from the Intelligence Reform and Terrorism Prevention Act, enacted in 2004 in response to the terrorist attacks of September 11, 2001, and implemented in phases between 2007 and 2009. According to the United States Department of Homeland Security, the purpose is to strengthen border security and facilitate entry into the United States for both U.S. citizens and foreign visitors.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Western_Hemisphere_Travel_Initiative",
+      "timestamp": "2025-09-22T22:59:13.802922",
+      "word_count": 105,
+      "dhatu_potential": 0.4,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_73232419_1758596379",
+      "title": "Kenney Memorial Hospital",
+      "content": "Kenney Memorial Hospital, located at 130 West Kinney Street in Newark, New Jersey was founded by Dr. John A. Kenney Sr. in 1927. Between 1927 and 1934, Kenney Memorial served 4,543 bed patients, 584 free clinic patients and performed 1,109 operations with only 19 deaths. The hospital was renamed the Booker T. Washington Community Hospital in 1935. It closed in 1953. The building is now the New Salem Baptist Church. The building, listed as the Community Hospital, was added to the National Register of Historic Places on March 22, 2004, for its significance in health/medicine and ethnic heritage. A museum honoring Kenney is planned for the site.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Kenney_Memorial_Hospital",
+      "timestamp": "2025-09-22T22:59:39.820694",
+      "word_count": 107,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_34322425_1758596387",
+      "title": "Bad Creek Hydroelectric Station",
+      "content": "The Bad Creek Hydroelectric Station is a pumped-storage hydroelectric power station located 8 miles (13 km) north of Salem in Oconee County, South Carolina. The 1,065 megawatts (1,428,000 hp) power plant is owned by Duke Energy and its last generator was commissioned in 1991. The power station generates electricity by shifting water between an upper and lower reservoir. The upper Bad Creek Reservoir was created by damming Bad Creek and West Bad Creek while Lake Jocassee serves as the lower reservoir. During periods of low energy demand, the four 266 megawatts (357,000 hp) Francis pump turbines pump water from Lake Jocassee which lies at an elevation of 1,110 feet (340 m) to the Bad Creek Reservoir at an elevation of 2,310 ft (704 m) through a 1 mile (1.6 km) tunnel. When energy demand is high, water is released back from Bad Creek Reservoir back down to the pump turbines which then operate as generators. After electricity is produced, the water is returned to Lake Jocassee. The process is repeated as needed, primarily with the facility serving as a peaking power plant.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Bad_Creek_Hydroelectric_Station",
+      "timestamp": "2025-09-22T22:59:47.999867",
+      "word_count": 182,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_15702481_1758596390",
+      "title": "Inga Nielsen",
+      "content": "Inga Nielsen was a Danish soprano who had an active international opera career from 1971 to 2006. A child prodigy, Nielsen performed on American radio during the 1950s, beginning at the age of six, and also released some commercial recordings of Danish folk songs and Christmas carols as a child. She began her opera career performing parts in the lyric soprano repertory and then became an admired singer of dramatic soprano roles, beginning in the late 1980s. She was a particularly renowned interpreter of the roles of Konstanze in Mozart's Die Entführung aus dem Serail and the title role in Strauss's Salome. She excelled in portraying some of the more rarely heard and demanding dramatic soprano roles such as the woman in Schoenberg's Erwartung, Ursula in Hindemith's Mathis der Maler and Jenny in Weill's Rise and Fall of the City of Mahagonny.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Inga_Nielsen",
+      "timestamp": "2025-09-22T22:59:50.147139",
+      "word_count": 142,
+      "dhatu_potential": 0.4,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_27838345_1758596418",
+      "title": "United States Post Office (Joliet, Illinois)",
+      "content": "The U.S. Post Office in Joliet, Illinois, is a two-story, building designed by James Knox Taylor. Plans for the Post Office were made in 1899 when Congress approved $100,000 for its construction. The property was purchased from the Robinson family for $15,000. Joliet's rapid growth in the early 20th century necessitated an expansion, and Congress allowed $185,000 for additional land purchase and post office expansion. This was the last major structural change to the building. It operated as the post office for Joliet from 1903 until 1981, when a new building was constructed. It was added to the National Register of Historic Places the year it closed.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/United_States_Post_Office_(Joliet%2C_Illinois)",
+      "timestamp": "2025-09-22T23:00:18.349201",
+      "word_count": 107,
+      "dhatu_potential": 0.4,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_11747996_1758596427",
+      "title": "Maryland Route 670",
+      "content": "Maryland Route 670 is a state highway in the U.S. state of Maryland. Known as Lillian Street, the state highway runs 1.48 miles (2.38 km) from MD 347 east to U.S. Route 50 within Hebron in western Wicomico County. MD 670 was constructed in the late 1930s.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Maryland_Route_670",
+      "timestamp": "2025-09-22T23:00:27.673184",
+      "word_count": 47,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_51175318_1758596457",
+      "title": "Kang Mi-na",
+      "content": "Kang Mi-na, known mononymously as Mina, is a South Korean actress, singer and rapper. She is best known for finishing ninth in Mnet's K-pop girl group survival show Produce 101. She is a former member of the girl groups I.O.I and Gugudan, as well as its subgroups 5959 and SeMiNa. Kang is also best known for her roles in the television series Dokgo Rewind (2018), Tale of Fairy (2018), Hotel del Luna (2019), Summer Guys (2021), Moonshine (2021–2022), Café Minamdang (2022), and Welcome to Samdal-ri (2023).",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Kang_Mi-na",
+      "timestamp": "2025-09-22T23:00:57.839151",
+      "word_count": 86,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_23237188_1758596517",
+      "title": "Ichiro Nakayama",
+      "content": "Ichiro Nakayama  was a Japanese economist. He graduated from The Tokyo University of Commerce in 1926, and then studied under Joseph Schumpeter in Germany. He was a pioneer of mathematical economics in Japan. After serving as assistant at The Tokyo University of Commerce, he became an assistant professor in 1933, a professor in 1937 and president in 1949 at the same institution. He became Chairman of Central Labor Relations Commission of Japan in 1950, and served as the first Chairman of The Tax Commission of Japan from 1959 to 1965. In 1965 he was appointed as a professor emeritus of Hitotsubashi University. In 1968, he was recognized as a Person of Cultural Merit, and was appointed a Grand Cordon of the Order of the Rising Sun on 3 November 1974.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "mathematics",
+      "url": "https://en.wikipedia.org/wiki/Ichiro_Nakayama",
+      "timestamp": "2025-09-22T23:01:57.771143",
+      "word_count": 130,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    }
+  ],
+  "colab_insights": {
+    "optimized_for": "Tesla T4 GPU processing",
+    "target_throughput": "527 docs/min",
+    "dominant_pattern": "√gam movement semantics",
+    "confidence_target": 0.87
+  }
+}
