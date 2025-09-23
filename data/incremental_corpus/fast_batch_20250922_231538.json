@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:15:38.923672",
+    "collector": "fast_corpus_collector",
+    "count": 5,
+    "quality_score": 0.82
+  },
+  "documents": [
+    {
+      "title": "Philosophy",
+      "content": "Philosophy is a systematic study of general and fundamental questions concerning topics like existence, reason, knowledge, value, beauty, mind, and language. It is a rational and critical inquiry that reflects on its methods and assumptions.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy",
+      "timestamp": "2025-09-22T23:15:33.723128"
+    },
+    {
+      "title": "Grammar",
+      "content": "In linguistics, grammar is the set of rules for how a natural language is structured, as demonstrated by its speakers or writers. Grammar rules may concern the use of clauses, phrases, and words. The term may also refer to the study of such rules, a subject that includes phonology, morphology, and syntax, together with phonetics, semantics, and pragmatics. There are, broadly speaking, two different ways to study grammar: traditional grammar and theoretical grammar.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Grammar",
+      "timestamp": "2025-09-22T23:15:34.834978"
+    },
+    {
+      "title": "Language",
+      "content": "Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time. Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Language",
+      "timestamp": "2025-09-22T23:15:35.870875"
+    },
+    {
+      "title": "Etymology",
+      "content": "Etymology is the study of the origin and evolution of words—including their constituent units of sound and meaning—across time. In the 21st century a subfield within linguistics, etymology has become a more rigorously scientific study. Most directly tied to historical linguistics, philology, and semiotics, it additionally draws upon comparative semantics, morphology, pragmatics, and phonetics in order to attempt a comprehensive and chronological catalogue of all meanings and changes that a word carries throughout its history. The origin of any particular word is also known as its etymology.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Etymology",
+      "timestamp": "2025-09-22T23:15:36.897036"
+    },
+    {
+      "title": "Syntax",
+      "content": "In linguistics, syntax is the study of how words and morphemes combine to form larger units such as phrases and sentences. Central concerns of syntax include word order, grammatical relations, hierarchical sentence structure (constituency), agreement, the nature of crosslinguistic variation, and the relationship between form and meaning (semantics). Diverse approaches, such as generative grammar and functional grammar, offer unique perspectives on syntax, reflecting its complexity and centrality to understanding human language.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-22T23:15:37.923253"
+    }
+  ]
+}
