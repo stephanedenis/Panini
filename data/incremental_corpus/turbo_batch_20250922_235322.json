@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:53:22.274977",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 15,
+    "avg_quality_score": 0.71,
+    "avg_dhatu_potential": 0.007,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Grammar",
+      "content": "In linguistics, grammar is the set of rules for how a natural language is structured, as demonstrated by its speakers or writers. Grammar rules may concern the use of clauses, phrases, and words. The term may also refer to the study of such rules, a subject that includes phonology, morphology, and syntax, together with phonetics, semantics, and pragmatics. There are, broadly speaking, two different ways to study grammar: traditional grammar and theoretical grammar.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Grammar",
+      "timestamp": "2025-09-22T23:53:22.023311",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Dhātu",
+      "content": "Dhātu est un mot sanskrit signifiant élément, partie d'un tout; racine verbale. Dans le bouddhisme ce sont les quatre éléments physiques (bhūta) constitutifs de la matière. Leur analyse englobe les phénomènes physiques et partiellement mentaux sous forme de dix-huit éléments. En grammaire sanskrite, le terme désigne les racines verbales.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Dh%C4%81tu",
+      "timestamp": "2025-09-22T23:53:22.033267",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Puranas",
+      "content": "Puranas are a vast genre of Indian literature that include a wide range of topics, especially legends and other traditional lore. The Puranas are known for the intricate layers of symbolism depicted within their stories. Composed originally in Sanskrit and in other Indian languages, several of these texts are named after major Hindu deities such as Vishnu, Shiva, Brahma, and Devi. The Puranic genre of literature is found in both Hinduism and Jainism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-22T23:53:22.197425",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Historical linguistics",
+      "content": "Historical linguistics, also known as diachronic linguistics, is the scientific study of how languages change over time. It seeks to understand the nature and causes of linguistic change and to trace the evolution of languages. Historical linguistics involves several key areas of study, including the reconstruction of ancestral languages, the classification of languages into families, and the analysis of the cultural and social influences on language development.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Historical_linguistics",
+      "timestamp": "2025-09-22T23:53:22.159054",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Purana",
+      "content": "Un purana (en sanskrit devanāgarī : पुराण est un texte appartenant à un vaste genre de la littérature indienne, traitant d'une grande gamme de sujets. Composés entre 400 et 1 000 de notre ère, ces récits élaborés pour tous étaient préférentiellement destinés aux femmes qui n'avaient pas accès aux Védas. Ils sont généralement écrits en sanskrit. Ce genre littéraire existe à la fois dans l'hindouisme et le jaïnisme. Souvent encyclopédiques, les puranas traitent à la fois des mythes religieux, des divinités hindoues, des légendes, des contes traditionnels et des histoires de rois, en y incluant des réflexions poussées sur la cosmogonie, la cosmologie, les généalogies, la médecine, l'astronomie, la théologie et la philosophie. Leur contenu peut être très contradictoire, chaque Purana ayant survécu dans de nombreux manuscrits eux-mêmes incompatibles. Les Puranas hindous sont anonymes, et probablement issus de nombreux auteurs qui se sont succédé au cours des siècles. La plupart des Puranas jaïns peuvent être datés et leurs auteurs retrouvés. Il y a 18 puranas majeurs et 18 puranas mineurs, considérés comme des Smriti.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Purana",
+      "timestamp": "2025-09-22T23:53:22.205151",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "The Vedas, sometimes collectively called the Veda, are a large body of religious texts originating in ancient India. Composed in Vedic Sanskrit, the texts constitute the oldest layer of Sanskrit literature and the oldest scriptures of Hinduism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-22T23:53:22.235978",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Dhatu",
+      "content": "Dhātu may refer to:Dhātu (ayurveda) – Sanskrit term for the seven fundamental elements of the body\nSkandha#Eighteen dhātus and four paramatthas – a Sanskrit technical term meaning realm or substrate in Buddhism\nA term used to denote the classical elements in Indian thought\nA Theravada Buddhist term for a stupa, a mound-like structure containing Buddhist relics\n\n",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Dhatu",
+      "timestamp": "2025-09-22T23:53:22.017346",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:53:22.078601",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Metaphysics",
+      "content": "Metaphysics is the branch of philosophy that examines the basic structure of reality. It is traditionally seen as the study of mind-independent features of the world, but some theorists view it as an inquiry into the conceptual framework of human understanding. Some philosophers, including Aristotle, designate metaphysics as first philosophy to suggest that it is more fundamental than other forms of philosophical inquiry.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Metaphysics",
+      "timestamp": "2025-09-22T23:53:22.124978",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philosophy of language",
+      "content": "Philosophy of language refers to the philosophical study of the nature of language. It investigates the relationship between language, language users, and the world. Investigations may include inquiry into the nature of meaning, intentionality, reference, the constitution of sentences, concepts, learning, and thought.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_language",
+      "timestamp": "2025-09-22T23:53:22.029841",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vyakarana",
+      "content": "Vyākaraṇa signifie en sanskrit « séparation », « distinction » ou encore« analyse ». Vyākaraṇa désigne aussi l'une des six disciplines annexes du Veda (Vedāṅga): la grammaire.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Vyakarana",
+      "timestamp": "2025-09-22T23:53:22.147887",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:53:22.042965",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "The Mahābhārata is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Ramayana. It narrates the events and aftermath of the Kurukshetra War, a war of succession between two groups of princely cousins, the Kauravas and the Pāṇḍavas. It contains philosophical and devotional material, such as a discussion of the four \"goals of life\" or puruṣārtha (12.161). Among the principal works and stories in the Mahābhārata are the Bhagavad Gita, the story of Damayanti, the story of Shakuntala, the story of Pururava and Urvashi, the story of Savitri and Satyavan, the story of Kacha and Devayani, the story of Rishyasringa and an abbreviated version of the Rāmāyaṇa, often considered as works in their own right.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:53:22.091943",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Morphology",
+      "content": "Morphology, from the Greek and meaning \"study of shape\", may refer to:",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Morphology",
+      "timestamp": "2025-09-22T23:53:22.057098",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.5499999999999999,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Puranas",
+      "content": "Die Puranas gehören zu den wichtigsten heiligen Schriften des Hinduismus. Sie sind nach den Veden in der Zeit von 400 n. Chr. bis 1000 n. Chr. entstanden, greifen jedoch oft auf ältere Inhalte zurück.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-22T23:53:22.224308",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
