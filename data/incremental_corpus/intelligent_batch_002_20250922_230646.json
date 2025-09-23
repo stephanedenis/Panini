@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "batch_number": 2,
+    "timestamp": "20250922_230646",
+    "collector_version": "intelligent_v1.0",
+    "colab_adaptation": true,
+    "document_count": 12,
+    "high_quality_count": 0,
+    "total_words": 1383,
+    "average_dhatu_potential": 0.367,
+    "total_dhatu_potential": 4.4,
+    "quality_threshold": 0.3,
+    "sources": [
+      "wikipedia"
+    ],
+    "languages": [
+      "en"
+    ],
+    "domains": [
+      "general",
+      "literature"
+    ],
+    "dhatu_distribution": {
+      "high": 0,
+      "medium": 5,
+      "low": 7
+    }
+  },
+  "documents": [
+    {
+      "id": "wiki_40219898_1758596569",
+      "title": "Arnaud Tsamere",
+      "content": "Arnaud Tsedri, better known by the stage name Arnaud Tsamere, is a French comedian, actor, television presenter and sports journalist. Born in Bordeaux and raised in the Yvelines, he joined the Déclic Théâtre group after quitting his sales job. There, he acted in plays and participated in improvisation events. He wrote his first one-man show, Réflexions profondes sur pas mal de trucs, in 2002 with Arnaud Joyet, and his second, Chose Promise, in 2007 with Joyet and François Rollin. His third, Confidences sur pas mal de trucs plus ou moins confidentiels, has been performed since 2014. He has attended numerous comedy festivals and is currently a member of the Ligue Majeure d'Improvisation.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Arnaud_Tsamere",
+      "timestamp": "2025-09-22T23:02:49.494270",
+      "word_count": 112,
+      "dhatu_potential": 0.5,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_14544058_1758596587",
+      "title": "Why Didn't Anybody Tell Me It Would Become This Bad in Afghanistan",
+      "content": "Why Didn't Anybody Tell Me It Would Become This Bad in Afghanistan is the first narrative feature film shot with a mobile phone, directed by Cyrus Frisch. As a recording device, Frisch used the Samsung Sharp 902 and Sharp 903 Camera phones resolution with two Megapixels. The protagonist of Why Didn't Anybody, an Afghanistan veteran played by Frisch himself, films everyday images on his cell phone while he himself slowly loses his mind.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "literature",
+      "url": "https://en.wikipedia.org/wiki/Why_Didn't_Anybody_Tell_Me_It_Would_Become_This_Bad_in_Afghanistan",
+      "timestamp": "2025-09-22T23:03:07.470942",
+      "word_count": 73,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_558824_1758596655",
+      "title": "Ealing comedies",
+      "content": "The Ealing comedies is an informal name for a series of comedy films produced by the London-based Ealing Studios during a ten-year period from 1947 to 1957. Often considered to reflect Britain's post-war spirit, the most celebrated films in the sequence include Kind Hearts and Coronets (1949), Whisky Galore! (1949), The Lavender Hill Mob (1951), The Man in the White Suit (1951) and The Ladykillers (1955). Hue and Cry (1947) is generally considered to be the earliest of the cycle, and Barnacle Bill (1957) the last, although some sources list Davy (1958) as the final Ealing comedy. Many of the Ealing comedies are ranked among the greatest British films, and they also received international acclaim.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Ealing_comedies",
+      "timestamp": "2025-09-22T23:04:15.371590",
+      "word_count": 115,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_1401712_1758596670",
+      "title": "Irish Tour '74",
+      "content": "Irish Tour '74 is the sixth album by Rory Gallagher. It is a live album compiled from performances during Gallagher's Irish Tour in January 1974. The source concerts were recorded at Belfast Ulster Hall, Dublin Carlton Cinema and Cork City Hall using Ronnie Lane's Mobile Studio. \"Back on My Stompin' Ground \" was recorded from a jam session during the tour. Irish Tour '74 has sold in excess of two million copies worldwide. An article in a Belfast daily newspaper stated: \"Rory Gallagher never forgot Northern Ireland, he returned throughout the '70s when few other artists of his calibre dared come near the place.\"",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Irish_Tour_'74",
+      "timestamp": "2025-09-22T23:04:30.775167",
+      "word_count": 104,
+      "dhatu_potential": 0.5,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_34236016_1758596742",
+      "title": "HMS Spider",
+      "content": "Spider has been the name of a number of vessels of the British Royal Navy;HMS Spider (1782), formerly the privateer Victoire built at Dunkirk earlier that year, that the Royal Navy captured in 1782, took into service, and sold at Malta in 1806.\nHMS Spider (1806), formerly Vigilante, a Spanish brig-rigged sloop captured on 4 April 1806 by HMS Renommee, and that served in the Royal Navy for the remainder of the Napoleonic Wars. She was broken up in 1815 at Antigua.\nHMS Spider (1835), a six-gun schooner built at Chatham in 1835 to a design by Sir Robert Seppings, which served in South America before becoming an engine fitters' vessel at Plymouth in 1855. Dimensions: Length Overall: 80' 2\" x Breadth: 23' 3\" x Depth: 9' 10\"\nHMS Spider (1856), a wooden gunboat built on the Tyne by T W Smith in 1856, which later served in South America and South Africa. Dimensions: Length Overall: 106' x Breadth: 22' x Depth: 8' \nHMS Spider (1887), a steel, twin-screw torpedo gunboat built at Devonport in 1887. Of 525 tons displacement, she was armed with one 4\" gun and six 3-pounder Quick-firing guns. She had two fixed torpedo tubes and two launching cradles.\nHMS Spider, a coastal destroyer renamed TB 5 in 1906.\nSpider, a stern-wheeled gunboat launched by Thornycroft in 1909 that in 1912 served the South Nigerian government.\nSpider, formerly the wooden fishing boat Francisco Antonio Quarto, purchased at Gibraltar in 1941 and used as a degaussing vessel.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/HMS_Spider",
+      "timestamp": "2025-09-22T23:05:42.777283",
+      "word_count": 249,
+      "dhatu_potential": 0.4,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_3211776_1758596746",
+      "title": "Leser–Trélat sign",
+      "content": "The Leser–Trélat sign is the explosive onset of multiple seborrheic keratoses, often with an inflammatory base. This can be a sign of internal malignancy as part of a paraneoplastic syndrome. In addition to the development of new lesions, preexisting ones frequently increase in size and become symptomatic.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Leser%E2%80%93Tr%C3%A9lat_sign",
+      "timestamp": "2025-09-22T23:05:46.857471",
+      "word_count": 47,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_56665702_1758596750",
+      "title": "Catinat-class cruiser",
+      "content": "The Catinat class comprised two protected cruisers of the French Navy built in the early 1890s; the two ships were Catinat and Protet. They were ordered as part of a naval construction program directed at France's rivals, Italy and Germany, particularly after Italy made progress in modernizing its own fleet. The plan was also intended to remedy a deficiency in cruisers that had been revealed during training exercises in the 1880s. As such, the Catinat-class cruisers were intended to operate as fleet scouts and in the French colonial empire. The ships were armed with a main battery of four 164 mm (6.5 in) guns supported by ten 100 mm (3.9 in) guns and they had a top speed of 19.5 to 20 knots.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Catinat-class_cruiser",
+      "timestamp": "2025-09-22T23:05:50.410853",
+      "word_count": 123,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_22679532_1758596778",
+      "title": "Leptopterna dolabrata",
+      "content": "Leptopterna dolabrata, commonly known as the meadow plant bug, is an insect in the Miridae family. It is commonly found in grassy areas in almost all of Europe to the northern Mediterranean and east across Asia Minor to the Caspian Sea region. It is an adventive species in North America. It feeds on developing grass seeds, causing seed heads to shrivel and prematurely whiten. It is regarded as a pest wherever grass is grown for seed. The species has long antennae and is black coloured.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Leptopterna_dolabrata",
+      "timestamp": "2025-09-22T23:06:18.733786",
+      "word_count": 85,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_4602931_1758596787",
+      "title": "Ityadi",
+      "content": "Ityadi, pronounced EET-tah-dee, is a popular magazine television program in Bangladesh created and presented by Hanif Sanket that airs on Bangladesh Television. It is the longest running show on Bangladeshi television and also the longest-running magazine show in the world. It is a satire entertainment program being shown in Bangladesh Television for the last 34 years. Regular segments of the show include \nNana-Naati (formerly) / Nani-Naati, Mama-Bhagne, Haba Hashmot (formerly), a foreign filmstrip dubbed in Bengali (formerly), country history, a mail section, a segment where foreigners act as Bangladeshis and represent the Culture of Bangladesh, a quiz round for audiences, live music, dance, and plays. Ityadi also helps to promote Bengali culture among the young generations in the age of cultural diversity due to globalization. It also brings many intellectual persons in music, drama or education into light.\n",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Ityadi",
+      "timestamp": "2025-09-22T23:06:27.546031",
+      "word_count": 138,
+      "dhatu_potential": 0.4,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_24512991_1758596799",
+      "title": "Sweet Disposition",
+      "content": "\"Sweet Disposition\" is a song by Australian indie rock band the Temper Trap. Described by critics as an \"indie anthem\", the song was written by Dougy Mandagi and Lorenzo Silitto. Upon the song's release, it peaked at No. 14 in Australia and reached the top 10 in Flanders, Ireland, and the United Kingdom. Renewed interest in the song was generated after it was included in the soundtrack for the 2009 film 500 Days of Summer—eventually reaching No. 9 on the Billboard Alternative Songs chart in the United States. In 2025 the song was voted 11th in the Triple J Hottest 100 of Australian Songs.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Sweet_Disposition",
+      "timestamp": "2025-09-22T23:06:39.176164",
+      "word_count": 104,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_2891479_1758596804",
+      "title": "Boom Boom Boom",
+      "content": "\"Boom Boom Boom\" is a song by American hip house duo the Outhere Brothers, released in June 1995 by label Aureus as the fourth single from their debut album, 1 Polish, 2 Biscuits & a Fish Sandwich (1994), and is also featured on their compilation albums The Fucking Hits (2002), and Dance History (2005). \"Boom Boom Boom\" peaked at numbers 54 and 65 on the US Cash Box Top 100 and Billboard Hot 100. Outside of the United States, \"Boom Boom Boom\" topped the charts in Germany, Ireland, and the United Kingdom. In the latter two countries, the song became the duo's second chart-topper. The original version contained sexually explicit lyrics which were removed for the radio edit but were retained in remixes of the track on the single.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Boom_Boom_Boom",
+      "timestamp": "2025-09-22T23:06:44.451992",
+      "word_count": 129,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_11009193_1758596806",
+      "title": "Plug It In",
+      "content": "Plug It In is the fourth album by Dutch rock band Krezip. It is their second album on their new label Sony BMG. The album was released on May 11, 2007. It notably features a disco-inspired sound on most of its songs as opposed to the alternative rock sound of earlier albums. This was because the band decided they needed a big change to their sound after ten years. Lead singer Jacqueline Govaert decided to base this new sound on bands such as Blondie and The Sounds; in fact, members Jesper Anderberg and Felix Rodriguez of The Sounds co-wrote some of the album's tracks.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Plug_It_In",
+      "timestamp": "2025-09-22T23:06:46.205586",
+      "word_count": 104,
+      "dhatu_potential": 0.5,
+      "linguistic_features": {}
+    }
+  ],
+  "colab_insights": {
+    "optimized_for": "Tesla T4 GPU processing",
+    "target_throughput": "527 docs/min",
+    "dominant_pattern": "√gam movement semantics",
+    "confidence_target": 0.87
+  }
+}
