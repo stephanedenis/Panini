@@ -1,0 +1,46 @@
+{
+  "repository": {
+    "owner": "stephanedenis",
+    "name": "PaniniFS-Research",
+    "branch": "main"
+  },
+  "sync_strategy": {
+    "mode": "conservative",
+    "check_interval": 600,
+    "auto_rollback": true,
+    "max_retries": 3
+  },
+  "hot_reload": {
+    "enabled": true,
+    "between_cycles": true,
+    "safety_checks": true,
+    "validation_required": true
+  },
+  "modules": {
+    "cache_dir": "src/modules/_cache",
+    "fallback_dir": "src/modules/_fallback",
+    "versions_dir": "src/modules/_versions",
+    "target_modules": [
+      "src/modules/interfaces/base_analyzer.py",
+      "src/modules/analyzers/dhatu_analyzer.py",
+      "src/modules/loaders/corpus_loader.py",
+      "src/modules/gpu/gpu_detector.py"
+    ]
+  },
+  "safety": {
+    "max_rollback_points": 5,
+    "update_history_limit": 20,
+    "emergency_fallback_enabled": true,
+    "validation_timeout": 30
+  },
+  "notifications": {
+    "success_notifications": true,
+    "error_notifications": true,
+    "verbose_logging": false
+  },
+  "_metadata": {
+    "last_updated": "2025-09-23T11:39:10.738247",
+    "version": "1.0.0",
+    "auto_generated": true
+  }
+}

@@ -7,7 +7,17 @@ import os
 import sys
 import subprocess
 from typing import Dict, Any, Optional, List
-from ..interfaces import GPUOptimizerInterface
+
+# Import avec fallback pour éviter les erreurs relatives
+try:
+    from ..interfaces import GPUOptimizerInterface
+except ImportError:
+    try:
+        from modules.interfaces import GPUOptimizerInterface
+    except ImportError:
+        # Fallback minimal si interfaces non disponibles
+        class GPUOptimizerInterface:
+            pass
 
 
 class GPUDetector:

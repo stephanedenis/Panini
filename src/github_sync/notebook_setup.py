@@ -143,61 +143,36 @@ def import_github_sync_modules() -> Tuple[bool, Dict[str, Any]]:
         return False, {'error': str(e)}
 
 
-def initialize_github_sync_system() -> Dict[str, Any]:
-    """
-    Initialisation complète du système GitHub-Sync
-    Setup + Import + Création objets
-    """
+def initialize_github_sync_objects():
+    """Initialise les objets GitHub-Sync de manière standardisée"""
     
-    result = {
-        'setup_success': False,
-        'import_success': False,
-        'objects_created': False,
-        'config': None,
-        'loader': None,
-        'updater': None,
-        'hot_reload': None,
-        'messages': []
-    }
-    
-    # 1. Setup environnement
-    setup_result = setup_github_sync_environment()
-    result['messages'].extend(setup_result['messages'])
-    result['setup_success'] = setup_result['success']
-    
-    if not setup_result['success']:
-        return result
-    
-    # 2. Import modules
-    import_success, modules = import_github_sync_modules()
-    result['import_success'] = import_success
-    
-    if not import_success:
-        result['messages'].append(f"❌ Erreur import: {modules.get('error', 'Inconnue')}")
-        return result
-    
-    result['messages'].append("✅ Modules GitHub-Sync importés")
-    
-    # 3. Création objets
     try:
-        config = modules['GitHubSyncConfig']()
-        loader = modules['GitHubModuleLoader'](config)
-        updater = modules['ModuleUpdater'](config)
-        hot_reload = modules['HotReloadManager'](config, loader, updater)
+        from github_sync.config_manager import GitHubSyncConfig
+        from github_sync.github_loader import GitHubModuleLoader
+        from github_sync.hot_reload import HotReloadManager
+        from github_sync.module_updater import ModuleUpdater
         
-        result['config'] = config
-        result['loader'] = loader  
-        result['updater'] = updater
-        result['hot_reload'] = hot_reload
-        result['objects_created'] = True
-        result['messages'].append("✅ Objets GitHub-Sync créés")
+        print("🔧 Initialisation objets GitHub-Sync...")
+        
+        # Créer objets dans le bon ordre
+        config = GitHubSyncConfig()
+        loader = GitHubModuleLoader(config)
+        hot_reload = HotReloadManager(loader)  # HotReloadManager ne prend que le loader
+        updater = ModuleUpdater(config)
+        
+        objects = {
+            'config': config,
+            'loader': loader, 
+            'hot_reload': hot_reload,
+            'updater': updater
+        }
+        
+        print("✅ Objets GitHub-Sync initialisés")
+        return objects
         
     except Exception as e:
-        result['messages'].append(f"❌ Erreur création objets: {e}")
-        return result
-    
-    result['messages'].append("🎉 Système GitHub-Sync initialisé avec succès!")
-    return result
+        print(f"❌ Erreur initialisation GitHub-Sync: {e}")
+        return None
 
 
 def print_setup_summary(result: Dict[str, Any]):
