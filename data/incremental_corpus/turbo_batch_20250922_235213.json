@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:52:13.529968",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 13,
+    "avg_quality_score": 0.727,
+    "avg_dhatu_potential": 0.008,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Grammar",
+      "content": "In linguistics, grammar is the set of rules for how a natural language is structured, as demonstrated by its speakers or writers. Grammar rules may concern the use of clauses, phrases, and words. The term may also refer to the study of such rules, a subject that includes phonology, morphology, and syntax, together with phonetics, semantics, and pragmatics. There are, broadly speaking, two different ways to study grammar: traditional grammar and theoretical grammar.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Grammar",
+      "timestamp": "2025-09-22T23:52:13.340195",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Etymology",
+      "content": "Etymology is the study of the origin and evolution of words—including their constituent units of sound and meaning—across time. In the 21st century a subfield within linguistics, etymology has become a more rigorously scientific study. Most directly tied to historical linguistics, philology, and semiotics, it additionally draws upon comparative semantics, morphology, pragmatics, and phonetics in order to attempt a comprehensive and chronological catalogue of all meanings and changes that a word carries throughout its history. The origin of any particular word is also known as its etymology.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Etymology",
+      "timestamp": "2025-09-22T23:52:13.418372",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Phonology",
+      "content": "Phonology is the branch of linguistics that studies how languages systematically organize their phonemes or, for sign languages, their constituent parts of signs. The term can also refer specifically to the sound or sign system of a particular language variety. At one time, the study of phonology related only to the study of the systems of phonemes in spoken languages, but now it may relate to any linguistic analysis either:",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Phonology",
+      "timestamp": "2025-09-22T23:52:13.304259",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Puranas",
+      "content": "Puranas are a vast genre of Indian literature that include a wide range of topics, especially legends and other traditional lore. The Puranas are known for the intricate layers of symbolism depicted within their stories. Composed originally in Sanskrit and in other Indian languages, several of these texts are named after major Hindu deities such as Vishnu, Shiva, Brahma, and Devi. The Puranic genre of literature is found in both Hinduism and Jainism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-22T23:52:13.495584",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Le Mahabharata est une épopée sanskrite (itihâsa) de la mythologie hindoue comportant, selon le décompte de Vyâsa, 81 936 strophes (shlokas) réparties en dix-huit livres (parvan). Il est considéré comme le plus long poème jamais composé.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:52:13.358496",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Metaphysics",
+      "content": "Metaphysics is the branch of philosophy that examines the basic structure of reality. It is traditionally seen as the study of mind-independent features of the world, but some theorists view it as an inquiry into the conceptual framework of human understanding. Some philosophers, including Aristotle, designate metaphysics as first philosophy to suggest that it is more fundamental than other forms of philosophical inquiry.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Metaphysics",
+      "timestamp": "2025-09-22T23:52:13.348196",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philosophy of language",
+      "content": "Philosophy of language refers to the philosophical study of the nature of language. It investigates the relationship between language, language users, and the world. Investigations may include inquiry into the nature of meaning, intentionality, reference, the constitution of sentences, concepts, learning, and thought.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_language",
+      "timestamp": "2025-09-22T23:52:13.373011",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini steht füreine Tribus aus der Familie der Menschenaffen, einzige Gattung dieser Tribus sind die Schimpansen\nitalienische Brötchen (Plural), siehe Panino\nitalienisches gegrilltes Sandwich: Panini (Sandwich)",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:52:13.423915",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini puede hacer referencia a:El panini (sándwich), variedad de sándwich de origen italiano.\nLa editorial Panini, editorial italiana fundada en 1961.\nPanini (gramático), gramático del sánscrito de la India antigua.\nGiovanni Pannini (1691-1756), pintor y arquitecto italiano.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-22T23:52:13.428044",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vyakarana",
+      "content": "Vyākaraṇa signifie en sanskrit « séparation », « distinction » ou encore« analyse ». Vyākaraṇa désigne aussi l'une des six disciplines annexes du Veda (Vedāṅga): la grammaire.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Vyakarana",
+      "timestamp": "2025-09-22T23:52:13.307274",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:52:13.388789",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "The Mahābhārata is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Ramayana. It narrates the events and aftermath of the Kurukshetra War, a war of succession between two groups of princely cousins, the Kauravas and the Pāṇḍavas. It contains philosophical and devotional material, such as a discussion of the four \"goals of life\" or puruṣārtha (12.161). Among the principal works and stories in the Mahābhārata are the Bhagavad Gita, the story of Damayanti, the story of Shakuntala, the story of Pururava and Urvashi, the story of Savitri and Satyavan, the story of Kacha and Devayani, the story of Rishyasringa and an abbreviated version of the Rāmāyaṇa, often considered as works in their own right.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:52:13.344806",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Puranas",
+      "content": "Die Puranas gehören zu den wichtigsten heiligen Schriften des Hinduismus. Sie sind nach den Veden in der Zeit von 400 n. Chr. bis 1000 n. Chr. entstanden, greifen jedoch oft auf ältere Inhalte zurück.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-22T23:52:13.521336",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
