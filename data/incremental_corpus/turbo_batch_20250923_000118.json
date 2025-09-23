@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-23T00:01:18.060393",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 15,
+    "avg_quality_score": 0.693,
+    "avg_dhatu_potential": 0.013,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Etymology",
+      "content": "Etymology is the study of the origin and evolution of words—including their constituent units of sound and meaning—across time. In the 21st century a subfield within linguistics, etymology has become a more rigorously scientific study. Most directly tied to historical linguistics, philology, and semiotics, it additionally draws upon comparative semantics, morphology, pragmatics, and phonetics in order to attempt a comprehensive and chronological catalogue of all meanings and changes that a word carries throughout its history. The origin of any particular word is also known as its etymology.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Etymology",
+      "timestamp": "2025-09-23T00:01:17.866868",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit bezeichnet die verschiedenen Varietäten des Altindischen. Die älteste Form ist die Sprache der Veden, einer Sammlung religiöser mündlicher Überlieferungen im Hinduismus. Ihre Entstehung und Konsolidierung wird grob auf 1200 v. Chr. datiert, jedenfalls ins zweite vorchristliche Jahrtausend. Das klassische Sanskrit wurde um 400 v. Chr. durch die Grammatik des Panini kodifiziert.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-23T00:01:17.991241",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.8,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Le Mahabharata est une épopée sanskrite (itihâsa) de la mythologie hindoue comportant, selon le décompte de Vyâsa, 81 936 strophes (shlokas) réparties en dix-huit livres (parvan). Il est considéré comme le plus long poème jamais composé.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-23T00:01:18.027700",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishads",
+      "content": "The Upanishads are late Vedic and post-Vedic Sanskrit texts that \"document the transition from the archaic ritualism of the Veda into new religious ideas and institutions\" and the emergence of the central religious concepts of Hinduism. They are the most recent addition to the Vedas, the oldest scriptures of Hinduism, and deal with meditation, philosophy, consciousness, and ontological knowledge. Earlier parts of the Vedas dealt with mantras, benedictions, rituals, ceremonies, and sacrifices.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Upanishads",
+      "timestamp": "2025-09-23T00:01:17.918555",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit is a classical language belonging to the Indo-Aryan branch of the Indo-European languages. It arose in northwest South Asia after its predecessor languages had diffused there from the northwest in the late Bronze Age. Sanskrit is the sacred language of Hinduism, the language of classical Hindu philosophy, and of historical texts of Buddhism and Jainism. It was a link language in ancient and medieval South Asia, and upon transmission of Hindu and Buddhist culture to Southeast Asia, East Asia and Central Asia in the early medieval era, it became a language of religion and high culture, and of the political elites in some of these regions. As a result, Sanskrit had a lasting effect on the languages of South Asia, Southeast Asia and East Asia, especially in their formal and learned vocabularies.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-23T00:01:17.973476",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Indian philosophy",
+      "content": "Indian philosophy consists of philosophical traditions of the Indian subcontinent. The philosophies are often called darśana, meaning \"to see\" or \"looking at.\" Ānvīkṣikī means “critical inquiry” or “investigation.\" Unlike darśana, ānvīkṣikī was used to refer to Indian philosophies by classical Indian philosophers, such as Chanakya in the Arthaśāstra.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Indian_philosophy",
+      "timestamp": "2025-09-23T00:01:17.811934",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philosophy of language",
+      "content": "Philosophy of language refers to the philosophical study of the nature of language. It investigates the relationship between language, language users, and the world. Investigations may include inquiry into the nature of meaning, intentionality, reference, the constitution of sentences, concepts, learning, and thought.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_language",
+      "timestamp": "2025-09-23T00:01:17.898998",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-23T00:01:17.851189",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini steht füreine Tribus aus der Familie der Menschenaffen, einzige Gattung dieser Tribus sind die Schimpansen\nitalienische Brötchen (Plural), siehe Panino\nitalienisches gegrilltes Sandwich: Panini (Sandwich)",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-23T00:01:17.901346",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Panini",
+      "content": "Panini puede hacer referencia a:El panini (sándwich), variedad de sándwich de origen italiano.\nLa editorial Panini, editorial italiana fundada en 1961.\nPanini (gramático), gramático del sánscrito de la India antigua.\nGiovanni Pannini (1691-1756), pintor y arquitecto italiano.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Panini",
+      "timestamp": "2025-09-23T00:01:17.928851",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Verb",
+      "content": "Das Verb, deutsch auch Zeitwort, Tätigkeitswort und im Schulgebrauch unterer Klassen Tu(n)wort, ist in der Grammatik eine Wortart. Die Trennung zwischen Verb und Substantiv wird als die fundamentalste Unterscheidung im Bereich der Wortarten angesehen, da hierin die Aufteilung elementarer Sätze in das Prädikat und sein Subjekt angelegt ist. Bei Autoren der Antike wurden anfangs Bezeichnungen für „Verb“ und „Prädikat“ auch nicht eindeutig unterschieden.",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-23T00:01:17.925427",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Upanishaden",
+      "content": "Die Upanishaden sind eine Sammlung philosophischer Schriften des Hinduismus und Bestandteil des Veda. Sie wurden zwischen 700 und 200 v. Chr. niedergeschrieben. Der Singular lautet die Upanishad. Im Sanskrit bedeutet उपनिषद्, upaniṣad, f., wörtlich „das Sich-in-der-Nähe-Niedersetzen“, gemeint ist „sich zu Füßen eines Lehrers (Guru) setzen“, aber auch eine geheime, belehrende Sitzung. Die Upanishaden wurden am Ende in den Kanon der Veda aufgenommen.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Upanishaden",
+      "timestamp": "2025-09-23T00:01:17.955365",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Les Upanishad ou Upaniṣad sont un ensemble de textes philosophiques qui forment la base théorique de la religion hindoue. Elles constituent une partie des textes en Inde liés à la śruti et consistent en des spéculations philosophiques qui éclairent le texte auquel elles se réfèrent, chacune se réclamant d'une partie du Veda. Par exemple, la Kauṣītaki fait partie du cycle du Rig-Veda.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-23T00:01:17.938299",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Root",
+      "content": "Root ist der Name folgender Orte:Root LU, Gemeinde im Kanton Luzern, Schweiz\nRoot, Ort im Montgomery County",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Root",
+      "timestamp": "2025-09-23T00:01:17.965272",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.55,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Trishanku",
+      "content": "Trishanku ist in der indischen Mythologie ein König von Ayodhya aus der Suryavamsha, der Sonnendynastie, Vater von Harishchandra, der mit Hilfe des Rishis Vishvamitra körperlich in den Himmel aufsteigen wollte.\nDer Vater von Trishanku Vater war Trayyaruna. Seine Frau war Satyaratha, eine Prinzessin aus dem Geschlecht der Kekaya.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Trishanku",
+      "timestamp": "2025-09-23T00:01:17.805806",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
