@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:55:07.943813",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 14,
+    "avg_quality_score": 0.711,
+    "avg_dhatu_potential": 0.007,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Vyākaraṇa",
+      "content": "Vyākaraṇa refers to one of the six ancient Vedangas, ancillary science connected with the Vedas, which are scriptures in Hinduism. Vyākaraṇa is the study of grammar and linguistic analysis in Sanskrit language.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vy%C4%81kara%E1%B9%87a",
+      "timestamp": "2025-09-22T23:55:07.862659",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Semantics",
+      "content": "Semantics is the study of linguistic meaning. It examines what meaning is, how words get their meaning, and how the meaning of a complex expression depends on its parts. Part of this process involves the distinction between sense and reference. Sense is given by the ideas and concepts associated with an expression while reference is the object to which an expression points. Semantics contrasts with syntax, which studies the rules that dictate how to create grammatically correct sentences, and pragmatics, which investigates how people use language in communication. Semantics, together with syntactics and pragmatics, is a part of semiotics.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Semantics",
+      "timestamp": "2025-09-22T23:55:07.794980",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit bezeichnet die verschiedenen Varietäten des Altindischen. Die älteste Form ist die Sprache der Veden, einer Sammlung religiöser mündlicher Überlieferungen im Hinduismus. Ihre Entstehung und Konsolidierung wird grob auf 1200 v. Chr. datiert, jedenfalls ins zweite vorchristliche Jahrtausend. Das klassische Sanskrit wurde um 400 v. Chr. durch die Grammatik des Panini kodifiziert.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-22T23:55:07.793616",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.8,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Root",
+      "content": "In vascular plants, the roots are the organs of a plant that are modified to provide anchorage for the plant and take in water and nutrients into the plant body, which allows plants to grow taller and faster. They are most often below the surface of the soil, but roots can also be aerial or aerating, that is, growing up above the ground or especially above water.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Root",
+      "timestamp": "2025-09-22T23:55:07.879244",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Upanishads",
+      "content": "The Upanishads are late Vedic and post-Vedic Sanskrit texts that \"document the transition from the archaic ritualism of the Veda into new religious ideas and institutions\" and the emergence of the central religious concepts of Hinduism. They are the most recent addition to the Vedas, the oldest scriptures of Hinduism, and deal with meditation, philosophy, consciousness, and ontological knowledge. Earlier parts of the Vedas dealt with mantras, benedictions, rituals, ceremonies, and sacrifices.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Upanishads",
+      "timestamp": "2025-09-22T23:55:07.826336",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Le sanskrit ou sanscrit est une langue indo-européenne de la famille indo-aryenne, encore parlée dans le sous-continent indien bien que par une minorité. De nos jours, elle est encore parlée dans quelques villages et par certains érudits qui publient des œuvres universitaires ou tiennent des colloques en sanskrit.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-22T23:55:07.804568",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Le Mahabharata est une épopée sanskrite (itihâsa) de la mythologie hindoue comportant, selon le décompte de Vyâsa, 81 936 strophes (shlokas) réparties en dix-huit livres (parvan). Il est considéré comme le plus long poème jamais composé.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:55:07.916733",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Indian philosophy",
+      "content": "Indian philosophy consists of philosophical traditions of the Indian subcontinent. The philosophies are often called darśana, meaning \"to see\" or \"looking at.\" Ānvīkṣikī means “critical inquiry” or “investigation.\" Unlike darśana, ānvīkṣikī was used to refer to Indian philosophies by classical Indian philosophers, such as Chanakya in the Arthaśāstra.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Indian_philosophy",
+      "timestamp": "2025-09-22T23:55:07.817844",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Metaphysics",
+      "content": "Metaphysics is the branch of philosophy that examines the basic structure of reality. It is traditionally seen as the study of mind-independent features of the world, but some theorists view it as an inquiry into the conceptual framework of human understanding. Some philosophers, including Aristotle, designate metaphysics as first philosophy to suggest that it is more fundamental than other forms of philosophical inquiry.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Metaphysics",
+      "timestamp": "2025-09-22T23:55:07.777231",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vyakarana",
+      "content": "Vyākaraṇa signifie en sanskrit « séparation », « distinction » ou encore« analyse ». Vyākaraṇa désigne aussi l'une des six disciplines annexes du Veda (Vedāṅga): la grammaire.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Vyakarana",
+      "timestamp": "2025-09-22T23:55:07.875042",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishad",
+      "content": "Les Upanishad ou Upaniṣad sont un ensemble de textes philosophiques qui forment la base théorique de la religion hindoue. Elles constituent une partie des textes en Inde liés à la śruti et consistent en des spéculations philosophiques qui éclairent le texte auquel elles se réfèrent, chacune se réclamant d'une partie du Veda. Par exemple, la Kauṣītaki fait partie du cycle du Rig-Veda.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-22T23:55:07.832638",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ancient philosophy",
+      "content": "This page lists some links to ancient philosophy, namely philosophical thought extending as far as early post-classical history.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_philosophy",
+      "timestamp": "2025-09-22T23:55:07.814995",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Das Mahabharata ist das bekannteste indische Epos. Man nimmt an, dass es erstmals zwischen 400 v. Chr. und 400 n. Chr. niedergeschrieben wurde, aber auf älteren Traditionen beruht. Es umfasst etwa 100.000 Doppelverse.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:55:07.922785",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Trishanku",
+      "content": "Trishanku ist in der indischen Mythologie ein König von Ayodhya aus der Suryavamsha, der Sonnendynastie, Vater von Harishchandra, der mit Hilfe des Rishis Vishvamitra körperlich in den Himmel aufsteigen wollte.\nDer Vater von Trishanku Vater war Trayyaruna. Seine Frau war Satyaratha, eine Prinzessin aus dem Geschlecht der Kekaya.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Trishanku",
+      "timestamp": "2025-09-22T23:55:07.749734",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
