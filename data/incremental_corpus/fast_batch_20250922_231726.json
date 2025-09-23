@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:17:26.936615",
+    "collector": "fast_corpus_collector",
+    "count": 2,
+    "quality_score": 0.75
+  },
+  "documents": [
+    {
+      "title": "Syntax",
+      "content": "In linguistics, syntax is the study of how words and morphemes combine to form larger units such as phrases and sentences. Central concerns of syntax include word order, grammatical relations, hierarchical sentence structure (constituency), agreement, the nature of crosslinguistic variation, and the relationship between form and meaning (semantics). Diverse approaches, such as generative grammar and functional grammar, offer unique perspectives on syntax, reflecting its complexity and centrality to understanding human language.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-22T23:17:22.846253"
+    },
+    {
+      "title": "Ancient history",
+      "content": "Ancient history is a time period from the beginning of writing and recorded human history through late antiquity. The span of recorded history is roughly 5,000 years, beginning with the development of Sumerian cuneiform script. Ancient history covers all continents inhabited by humans in the period 3000 BC – AD 500, ending with the expansion of Islam in late antiquity.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_history",
+      "timestamp": "2025-09-22T23:17:23.874495"
+    }
+  ]
+}
