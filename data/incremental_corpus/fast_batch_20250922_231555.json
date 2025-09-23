@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:15:55.336330",
+    "collector": "fast_corpus_collector",
+    "count": 3,
+    "quality_score": 0.667
+  },
+  "documents": [
+    {
+      "title": "Language",
+      "content": "Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time. Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Language",
+      "timestamp": "2025-09-22T23:15:50.208480"
+    },
+    {
+      "title": "Ancient history",
+      "content": "Ancient history is a time period from the beginning of writing and recorded human history through late antiquity. The span of recorded history is roughly 5,000 years, beginning with the development of Sumerian cuneiform script. Ancient history covers all continents inhabited by humans in the period 3000 BC – AD 500, ending with the expansion of Islam in late antiquity.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Ancient_history",
+      "timestamp": "2025-09-22T23:15:51.248277"
+    },
+    {
+      "title": "Philosophy",
+      "content": "Philosophy is a systematic study of general and fundamental questions concerning topics like existence, reason, knowledge, value, beauty, mind, and language. It is a rational and critical inquiry that reflects on its methods and assumptions.",
+      "source": "wikipedia_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy",
+      "timestamp": "2025-09-22T23:15:53.306514"
+    }
+  ]
+}
