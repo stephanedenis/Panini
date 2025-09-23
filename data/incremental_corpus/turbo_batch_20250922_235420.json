@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:54:20.404982",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 14,
+    "avg_quality_score": 0.711,
+    "avg_dhatu_potential": 0.021,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Syntax",
+      "content": "In linguistics, syntax is the study of how words and morphemes combine to form larger units such as phrases and sentences. Central concerns of syntax include word order, grammatical relations, hierarchical sentence structure (constituency), agreement, the nature of crosslinguistic variation, and the relationship between form and meaning (semantics). Diverse approaches, such as generative grammar and functional grammar, offer unique perspectives on syntax, reflecting its complexity and centrality to understanding human language.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-22T23:54:20.186114",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Phonology",
+      "content": "Phonology is the branch of linguistics that studies how languages systematically organize their phonemes or, for sign languages, their constituent parts of signs. The term can also refer specifically to the sound or sign system of a particular language variety. At one time, the study of phonology related only to the study of the systems of phonemes in spoken languages, but now it may relate to any linguistic analysis either:",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Phonology",
+      "timestamp": "2025-09-22T23:54:20.296080",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Purana",
+      "content": "Un purana (en sanskrit devanāgarī : पुराण est un texte appartenant à un vaste genre de la littérature indienne, traitant d'une grande gamme de sujets. Composés entre 400 et 1 000 de notre ère, ces récits élaborés pour tous étaient préférentiellement destinés aux femmes qui n'avaient pas accès aux Védas. Ils sont généralement écrits en sanskrit. Ce genre littéraire existe à la fois dans l'hindouisme et le jaïnisme. Souvent encyclopédiques, les puranas traitent à la fois des mythes religieux, des divinités hindoues, des légendes, des contes traditionnels et des histoires de rois, en y incluant des réflexions poussées sur la cosmogonie, la cosmologie, les généalogies, la médecine, l'astronomie, la théologie et la philosophie. Leur contenu peut être très contradictoire, chaque Purana ayant survécu dans de nombreux manuscrits eux-mêmes incompatibles. Les Puranas hindous sont anonymes, et probablement issus de nombreux auteurs qui se sont succédé au cours des siècles. La plupart des Puranas jaïns peuvent être datés et leurs auteurs retrouvés. Il y a 18 puranas majeurs et 18 puranas mineurs, considérés comme des Smriti.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Purana",
+      "timestamp": "2025-09-22T23:54:20.280299",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Puranas",
+      "content": "Puranas are a vast genre of Indian literature that include a wide range of topics, especially legends and other traditional lore. The Puranas are known for the intricate layers of symbolism depicted within their stories. Composed originally in Sanskrit and in other Indian languages, several of these texts are named after major Hindu deities such as Vishnu, Shiva, Brahma, and Devi. The Puranic genre of literature is found in both Hinduism and Jainism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Puranas",
+      "timestamp": "2025-09-22T23:54:20.276233",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "The Vedas, sometimes collectively called the Veda, are a large body of religious texts originating in ancient India. Composed in Vedic Sanskrit, the texts constitute the oldest layer of Sanskrit literature and the oldest scriptures of Hinduism.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-22T23:54:20.314144",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishads",
+      "content": "The Upanishads are late Vedic and post-Vedic Sanskrit texts that \"document the transition from the archaic ritualism of the Veda into new religious ideas and institutions\" and the emergence of the central religious concepts of Hinduism. They are the most recent addition to the Vedas, the oldest scriptures of Hinduism, and deal with meditation, philosophy, consciousness, and ontological knowledge. Earlier parts of the Vedas dealt with mantras, benedictions, rituals, ceremonies, and sacrifices.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Upanishads",
+      "timestamp": "2025-09-22T23:54:20.156965",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:54:20.277026",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Indian philosophy",
+      "content": "Indian philosophy consists of philosophical traditions of the Indian subcontinent. The philosophies are often called darśana, meaning \"to see\" or \"looking at.\" Ānvīkṣikī means “critical inquiry” or “investigation.\" Unlike darśana, ānvīkṣikī was used to refer to Indian philosophies by classical Indian philosophers, such as Chanakya in the Arthaśāstra.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Indian_philosophy",
+      "timestamp": "2025-09-22T23:54:20.199917",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Philosophy of language",
+      "content": "Philosophy of language refers to the philosophical study of the nature of language. It investigates the relationship between language, language users, and the world. Investigations may include inquiry into the nature of meaning, intentionality, reference, the constitution of sentences, concepts, learning, and thought.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_language",
+      "timestamp": "2025-09-22T23:54:20.169251",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Upanishaden",
+      "content": "Die Upanishaden sind eine Sammlung philosophischer Schriften des Hinduismus und Bestandteil des Veda. Sie wurden zwischen 700 und 200 v. Chr. niedergeschrieben. Der Singular lautet die Upanishad. Im Sanskrit bedeutet उपनिषद्, upaniṣad, f., wörtlich „das Sich-in-der-Nähe-Niedersetzen“, gemeint ist „sich zu Füßen eines Lehrers (Guru) setzen“, aber auch eine geheime, belehrende Sitzung. Die Upanishaden wurden am Ende in den Kanon der Veda aufgenommen.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Upanishaden",
+      "timestamp": "2025-09-22T23:54:20.167506",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Verb",
+      "content": "Das Verb, deutsch auch Zeitwort, Tätigkeitswort und im Schulgebrauch unterer Klassen Tu(n)wort, ist in der Grammatik eine Wortart. Die Trennung zwischen Verb und Substantiv wird als die fundamentalste Unterscheidung im Bereich der Wortarten angesehen, da hierin die Aufteilung elementarer Sätze in das Prädikat und sein Subjekt angelegt ist. Bei Autoren der Antike wurden anfangs Bezeichnungen für „Verb“ und „Prädikat“ auch nicht eindeutig unterschieden.",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Verb",
+      "timestamp": "2025-09-22T23:54:20.175708",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.65,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Upanishad",
+      "content": "Les Upanishad ou Upaniṣad sont un ensemble de textes philosophiques qui forment la base théorique de la religion hindoue. Elles constituent une partie des textes en Inde liés à la śruti et consistent en des spéculations philosophiques qui éclairent le texte auquel elles se réfèrent, chacune se réclamant d'une partie du Veda. Par exemple, la Kauṣītaki fait partie du cycle du Rig-Veda.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Upanishad",
+      "timestamp": "2025-09-22T23:54:20.163531",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Root",
+      "content": "Root ist der Name folgender Orte:Root LU, Gemeinde im Kanton Luzern, Schweiz\nRoot, Ort im Montgomery County",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Root",
+      "timestamp": "2025-09-22T23:54:20.301882",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.55,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Das Mahabharata ist das bekannteste indische Epos. Man nimmt an, dass es erstmals zwischen 400 v. Chr. und 400 n. Chr. niedergeschrieben wurde, aber auf älteren Traditionen beruht. Es umfasst etwa 100.000 Doppelverse.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:54:20.248039",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
