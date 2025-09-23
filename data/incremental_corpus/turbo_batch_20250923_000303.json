@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-23T00:03:03.764091",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 15,
+    "avg_quality_score": 0.693,
+    "avg_dhatu_potential": 0.02,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Grammar",
+      "content": "In linguistics, grammar is the set of rules for how a natural language is structured, as demonstrated by its speakers or writers. Grammar rules may concern the use of clauses, phrases, and words. The term may also refer to the study of such rules, a subject that includes phonology, morphology, and syntax, together with phonetics, semantics, and pragmatics. There are, broadly speaking, two different ways to study grammar: traditional grammar and theoretical grammar.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Grammar",
+      "timestamp": "2025-09-23T00:03:03.681892",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Phonology",
+      "content": "Phonology is the branch of linguistics that studies how languages systematically organize their phonemes or, for sign languages, their constituent parts of signs. The term can also refer specifically to the sound or sign system of a particular language variety. At one time, the study of phonology related only to the study of the systems of phonemes in spoken languages, but now it may relate to any linguistic analysis either:",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Phonology",
+      "timestamp": "2025-09-23T00:03:03.565554",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Logic",
+      "content": "Logic is the study of correct reasoning. It includes both formal and informal logic. Formal logic is the study of deductively valid inferences or logical truths. It examines how conclusions follow from premises based on the structure of arguments alone, independent of their topic and content. Informal logic is associated with informal fallacies, critical thinking, and argumentation theory. Informal logic examines arguments expressed in natural language whereas formal logic uses formal language. When used as a countable noun, the term \"a logic\" refers to a specific logical formal system that articulates a proof system. Logic plays a central role in many fields, such as philosophy, mathematics, computer science, and linguistics.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-23T00:03:03.538673",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.85,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Dhatu",
+      "content": "Dhātu may refer to:Dhātu (ayurveda) – Sanskrit term for the seven fundamental elements of the body\nSkandha#Eighteen dhātus and four paramatthas – a Sanskrit technical term meaning realm or substrate in Buddhism\nA term used to denote the classical elements in Indian thought\nA Theravada Buddhist term for a stupa, a mound-like structure containing Buddhist relics\n\n",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Dhatu",
+      "timestamp": "2025-09-23T00:03:03.722922",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "Le Râmâyana, c'est-à-dire la « Geste de Rāma », est l'une des deux épopées mythologiques composées en langue sanskrite entre les IIIe siècle av. J.-C. et IIIe siècle de notre ère. Constitué de sept chapitres et 24 000 couplets (48 000 vers), c'est le plus court des deux textes et comme le Mahabharata est un des textes fondamentaux de l'hindouisme et de la mythologie hindoue. Le Râmâyana est traditionnellement attribué à l'ermite légendaire Vâlmîki, qui apparaît comme personnage dans les premier et dernier chapitres du poème, lesquels sont considérés comme des compositions un peu plus récentes que les autres.Il existe de nombreuses versions du Ramayana en langues indiennes, notamment des adaptations bouddhistes et jaïnes.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-23T00:03:03.604929",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Le Mahabharata est une épopée sanskrite (itihâsa) de la mythologie hindoue comportant, selon le décompte de Vyâsa, 81 936 strophes (shlokas) réparties en dix-huit livres (parvan). Il est considéré comme le plus long poème jamais composé.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-23T00:03:03.542564",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit is a classical language belonging to the Indo-Aryan branch of the Indo-European languages. It arose in northwest South Asia after its predecessor languages had diffused there from the northwest in the late Bronze Age. Sanskrit is the sacred language of Hinduism, the language of classical Hindu philosophy, and of historical texts of Buddhism and Jainism. It was a link language in ancient and medieval South Asia, and upon transmission of Hindu and Buddhist culture to Southeast Asia, East Asia and Central Asia in the early medieval era, it became a language of religion and high culture, and of the political elites in some of these regions. As a result, Sanskrit had a lasting effect on the languages of South Asia, Southeast Asia and East Asia, especially in their formal and learned vocabularies.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-23T00:03:03.641416",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-23T00:03:03.549640",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Epistemology",
+      "content": "\n\nEpistemology is the branch of philosophy that examines the nature, origin, and limits of knowledge. Also called \"the theory of knowledge\", it explores different types of knowledge, such as propositional knowledge about facts, practical knowledge in the form of skills, and knowledge by acquaintance as a familiarity through experience. Epistemologists study the concepts of belief, truth, and justification to understand the nature of knowledge. To discover how knowledge arises, they investigate sources of justification, such as perception, introspection, memory, reason, and testimony.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Epistemology",
+      "timestamp": "2025-09-23T00:03:03.558451",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Veda",
+      "content": "Le Veda est un ensemble de textes qui, selon la tradition, ont été révélés aux sages indiens nommés Rishi. Cette « connaissance révélée » a été transmise oralement de brahmane à brahmane au sein du védisme, du brahmanisme, et de l'hindouisme jusqu'à nos jours sur une période indéterminée.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Veda",
+      "timestamp": "2025-09-23T00:03:03.692131",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Ramayana",
+      "content": "The Ramayana, also known as Valmiki Ramayana, as traditionally attributed to Valmiki, is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, the seventh avatar of the Hindu deity Vishnu, who is a prince of Ayodhya in the kingdom of Kosala. The epic follows his fourteen-year exile to the forest urged by his father King Dasharatha, on the request of Rama's stepmother Kaikeyi; his travels across the forests in the Indian subcontinent with his wife Sita and brother Lakshmana; the kidnapping of Sita by Ravana, the king of Lanka, that resulted in bloodbath; and Rama's eventual return to Ayodhya along with Sita to be crowned as a king amidst jubilation and celebration.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Ramayana",
+      "timestamp": "2025-09-23T00:03:03.572255",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Morphology",
+      "content": "Morphology, from the Greek and meaning \"study of shape\", may refer to:",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Morphology",
+      "timestamp": "2025-09-23T00:03:03.530127",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.5499999999999999,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Das Mahabharata ist das bekannteste indische Epos. Man nimmt an, dass es erstmals zwischen 400 v. Chr. und 400 n. Chr. niedergeschrieben wurde, aber auf älteren Traditionen beruht. Es umfasst etwa 100.000 Doppelverse.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-23T00:03:03.559871",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Sánscrito",
+      "content": "El sánscrito es la lengua clásica de la India, además de una de las lenguas indoeuropeas documentadas más antiguas, después del hitita y el griego micénico. El sánscrito pertenece a la subfamilia indoeuropea de las lenguas indoiranias y específicamente la indoaria.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/S%C3%A1nscrito",
+      "timestamp": "2025-09-23T00:03:03.677488",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Vedas",
+      "content": "Se denomina Vedas a los cuatro textos más antiguos de la literatura india, base de la religión védica .\nEl más antiguo de los cuatro, el Rig-veda, fue compuesto oralmente en sánscrito a mediados del II milenio a. C. Los otros tres son en gran parte copias del Rig-veda original.",
+      "source": "wikipedia_sanskrit_es",
+      "url": "https://es.wikipedia.org/wiki/Vedas",
+      "timestamp": "2025-09-23T00:03:03.729905",
+      "language": "es",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
