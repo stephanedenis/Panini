@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-09-22T23:17:04.954314",
+  "colab_notebook": "notebooks/colab_dhatu_simple.ipynb",
+  "colab_url": "https://colab.research.google.com/github/stephanedenis/PaniniFS-Research/blob/main/notebooks/colab_dhatu_simple.ipynb",
+  "collector_status": "ready_to_start",
+  "data_location": "data/incremental_corpus/",
+  "feedback_location": "colab_results/colab_feedback.json",
+  "instructions": [
+    "1. Ouvrir le lien Colab ci-dessus",
+    "2. Exécuter les cellules dans l'ordre",
+    "3. Le collecteur démarrera automatiquement",
+    "4. Interaction via GitHub synchronisée"
+  ]
+}
