@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "batch_number": 3,
+    "timestamp": "20250922_231124",
+    "collector_version": "intelligent_v1.0",
+    "colab_adaptation": true,
+    "document_count": 12,
+    "high_quality_count": 2,
+    "total_words": 1532,
+    "average_dhatu_potential": 0.408,
+    "total_dhatu_potential": 4.9,
+    "quality_threshold": 0.3,
+    "sources": [
+      "wikipedia"
+    ],
+    "languages": [
+      "en"
+    ],
+    "domains": [
+      "general",
+      "linguistics"
+    ],
+    "dhatu_distribution": {
+      "high": 0,
+      "medium": 7,
+      "low": 5
+    }
+  },
+  "documents": [
+    {
+      "id": "wiki_41050134_1758596812",
+      "title": "Sharon Kwan",
+      "content": "Sharon Kwan is a Chinese American Mandopop singer. In June 2011, Sharon participated in the first season of Taiwan's China Television (CTV)'s (中視) star search show, Chinese Million Star 1 (華人星光大道), which was the Taiwanese equivalence of American Idol and won the overall champion in January 2012. She released her first album in August of that year, titled Home Girl, and became the first female student of Taiwanese Golden Melody Award-winning singer-songwriter David Tao. In 2015, Sharon took part in the fourth season of the Chinese talent show The Voice of China. She ended up being placed in the top four in team Jay Chou.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Sharon_Kwan",
+      "timestamp": "2025-09-22T23:06:52.708551",
+      "word_count": 105,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_1411621_1758596829",
+      "title": "Letchworth-Love Mounds Archaeological State Park",
+      "content": "Letchworth Mounds Archaeological State Park (8LE337) is a 188.2 acre Florida State Park that preserves the state's tallest prehistoric, Native American ceremonial earthwork mound, which is 46 feet (14 m) high. It is estimated to have been built 1100 to 1800 years ago. This is one of three major surviving mound complexes in the Florida Panhandle. The people who built the mound are believed to have been members of the Swift Creek Culture, a group of Native Americans who lived in North Florida between 200 and 450 A.D. The hierarchical society planned and constructed massive earthwork mounds as expression of its religious and political system.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Letchworth-Love_Mounds_Archaeological_State_Park",
+      "timestamp": "2025-09-22T23:07:09.029989",
+      "word_count": 105,
+      "dhatu_potential": 0.4,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_46536356_1758596847",
+      "title": "Daredevil season 2",
+      "content": "The second season of the American streaming television series Daredevil, which is based on the Marvel Comics character of the same name, follows Matt Murdock / Daredevil, a blind lawyer-by-day who fights crime at night, crossing paths with the deadly Frank Castle / Punisher along with the return of an old girlfriend—Elektra Natchios. It is set in the Marvel Cinematic Universe (MCU), sharing continuity with the films and other television series of the franchise. The season is produced by Marvel Television in association with ABC Studios, with Doug Petrie and Marco Ramirez serving as showrunners, and series creator Drew Goddard acting as consultant.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Daredevil_season_2",
+      "timestamp": "2025-09-22T23:07:27.020387",
+      "word_count": 103,
+      "dhatu_potential": 0.4,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_25728191_1758596852",
+      "title": "1927 Michigan Wolverines football team",
+      "content": "The 1927 Michigan Wolverines football team represented the University of Michigan in the 1927 Big Ten Conference football season. The 1927 season was Michigan's first in its new stadium, Michigan Stadium. It was also the first under new head coach Tad Wieman following the retirement of Fielding H. Yost as head coach. Michigan shut out its first four opponents before losing to 1927 Big Ten Conference champion Illinois and later to Big Ten runner up Minnesota. Michigan compiled a record of 6–2 and outscored its opponents by a combined score of 137 to 39. The team was ranked No. 7 in the nation in the Dickinson System ratings released in December 1927.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/1927_Michigan_Wolverines_football_team",
+      "timestamp": "2025-09-22T23:07:32.640592",
+      "word_count": 112,
+      "dhatu_potential": 0.4,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_4740952_1758596900",
+      "title": "Punjab Agricultural University",
+      "content": "Punjab Agricultural University (PAU) is a public funded agricultural university located in Ludhiana district of Punjab. It is a central agricultural university in India established under Harayana and Punjab Agricultural Universities Act 1970 enacted by Parliament in the Twenty first Year of the Republic of India. It was established in 1962 and is the nation's third-oldest agricultural university, after Govind Ballabh Pant University of Agriculture & Technology, Pantnagar and Odisha University of Agriculture and Technology, Bhubaneshwar. It was formally\ninaugurated by the then Prime Minister of India, Pandit Jawaharlal Nehru, on July 8, 1962. PAU pioneered the Green Revolution in India in the 1960s. It was bifurcated in 2005 with the formation of Guru Angad Dev Veterinary and Animal Sciences University (GADVASU). The Farmers Fair, which have been organised by the PAU since 1967, see the footfall of at least one lakh farmers in two days on PAU campus in Ludhiana, Punjab. Farmers not only from Punjab, but also from neighbouring states such as Haryana, Rajasthan, Himachal Pradesh, etc., travel to the PAU campus to buy high-quality seeds, farm equipment and gain knowledge on new agricultural technologies in the two-day main fair event. The National Institutional Ranking Framework (NIRF) ranked the university 3rd in its agriculture and allied sectors ranking 2024. It has its jurisdiction over entire state of Punjab.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Punjab_Agricultural_University",
+      "timestamp": "2025-09-22T23:08:20.917917",
+      "word_count": 220,
+      "dhatu_potential": 0.6000000000000001,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_66234205_1758596924",
+      "title": "1999 East India cyclone",
+      "content": "The 1999 East India Cyclone, was the second strongest, deadliest, and costliest cyclone of the 1999 North Indian Ocean cyclone season. On October 15, a developing area of low pressure, located 220 nm northwest of the Andaman Islands began to intensify. By 1730Z a TCFA was issued and the first advisory on Tropical Storm 04B was issued at 2100Z. 04B was moving to the west-northwest at 8–12 knots as it continued to intensify. On October 17, the storm began to turn to a more northerly direction as it intensified to a cyclone. 04B underwent explosive intensification the same day and reached its peak of 140 mph at 0000Z. The storm held this intensity as it made landfall on the Odisha coastline near Gopalpur beach at around 8am. The storm began to weaken due to the interaction with land and dissipated on October 19.\n04B was responsible for at least 180 fatalities and hundreds of houses and huts in low-lying areas were destroyed by flooding. Several thousand others were injured by the storm and hundreds were left homeless. The Prime Minister of India requested that relief supplies be distributed to the affected region immediately.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/1999_East_India_cyclone",
+      "timestamp": "2025-09-22T23:08:44.711186",
+      "word_count": 193,
+      "dhatu_potential": 0.5,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_18772351_1758596928",
+      "title": "Hydrant No. 3 House",
+      "content": "Hydrant No. 3 House is a historic fire station on Washington Street in the former village of Metcalf in Holliston, Massachusetts. It is referred to locally as the Metcalf Pump House. The single-story wood-frame building was built c. 1871, and was designed to house a single period fire engine. The building's principal ornamentation is its hose tower, which is topped by an Italianate-style cupola. It is the town's oldest surviving fire house, and one of only a few 19th-century municipal buildings in the town. The building remained in service until 1899. The original No. 3 engine is in storage, and was restored in 1950. The building is now maintained by volunteers.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Hydrant_No._3_House",
+      "timestamp": "2025-09-22T23:08:48.280082",
+      "word_count": 111,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_334434_1758596936",
+      "title": "Irish nationalism",
+      "content": "Irish nationalism is a nationalist political movement which, in its broadest sense, asserts that the people of Ireland should govern Ireland as a sovereign state. Since the mid-19th century, Irish nationalism has largely taken the form of cultural nationalism based on the principles of national self-determination and popular sovereignty. Irish nationalists during the 18th, 19th, and 20th centuries such as the United Irishmen in the 1790s, Young Irelanders in the 1840s, the Fenian Brotherhood during the 1880s, Fianna Fáil in the 1920s, and Sinn Féin styled themselves in various ways after French left-wing radicalism and republicanism. Irish nationalism celebrates the culture of Ireland, especially the Irish language, literature, music, and sports. It grew more potent during the period in which all of Ireland was part of the United Kingdom, which led to most of the island gaining independence from the UK in 1922.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "linguistics",
+      "url": "https://en.wikipedia.org/wiki/Irish_nationalism",
+      "timestamp": "2025-09-22T23:08:56.317568",
+      "word_count": 143,
+      "dhatu_potential": 0.6000000000000001,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_614165_1758596980",
+      "title": "Masked shrike",
+      "content": "The  masked shrike is a species of bird in the shrike family, Laniidae. It breeds in southeastern Europe and at the eastern end of the Mediterranean, with a separate population in eastern Iraq and western Iran. It is migratory, wintering mainly in northeast Africa. Although it is a short-range migrant, vagrants have occurred widely elsewhere, including northern and western Europe. It is the smallest member of its genus, long-tailed and with a hooked bill. The male has mainly black upperparts, with white on its crown, forehead and supercilium and large white patches on the shoulders and wings. The throat, neck sides and underparts are white, with orange flanks and breast. The female is a duller version of the male, with brownish black upperparts and a grey or buff tone to the shoulders and underparts. The juvenile has grey-brown upperparts with a paler forehead and barring from the head to rump, barred off-white underparts and brown wings аpart from the white primary patches. The species' calls are short and grating, but the song has melodic warbler-like components.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Masked_shrike",
+      "timestamp": "2025-09-22T23:09:40.433080",
+      "word_count": 176,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_18382410_1758597000",
+      "title": "Akihiko Hirata",
+      "content": "Akihiko Onoda , known professionally as Akihiko Hirata , was a Japanese film actor. He is known for his work in the kaiju genre, including such films as King Kong vs. Godzilla, The Mysterians, Godzilla vs. Mechagodzilla, Terror of Mechagodzilla, and his most famous role of Dr. Daisuke Serizawa, the brilliant but disturbed young scientist in the original Godzilla, released in 1954. He starred in many movies, including Hiroshi Inagaki's Samurai trilogy.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Akihiko_Hirata",
+      "timestamp": "2025-09-22T23:10:00.717310",
+      "word_count": 72,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_13383575_1758597006",
+      "title": "Peppara Wildlife Sanctuary",
+      "content": "The Peppara Wildlife Sanctuary is a wildlife sanctuary in Thiruvananthapuram district of Kerala, India. It consists of the catchment area of the Karamana River, which originates from Chemmunjimottai, the tallest hill within the sanctuary. The sanctuary is named after the Peppara Dam, commissioned in 1983 to augment the drinking water supply to Thiruvananthapuram city and suburban areas. Considering the ecological significance of the area, it was declared a sanctuary in 1983. The terrain is undulating with elevation ranging from 100 m to 1717 m. The area of the sanctuary is 75 km2 with tropical moist evergreen forests and myristica swamps. It is part of the Agasthyamala Biosphere Reserve. Peppara Wildlife Sanctuary is 44 kilometres (27 mi) by car from the nearest railway station, at Thiruvananthapuram, and 49 kilometres (30 mi) from the Thiruvananthapuram airport.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Peppara_Wildlife_Sanctuary",
+      "timestamp": "2025-09-22T23:10:06.677414",
+      "word_count": 134,
+      "dhatu_potential": 0.30000000000000004,
+      "linguistic_features": {}
+    },
+    {
+      "id": "wiki_80411268_1758597084",
+      "title": "Nautical style",
+      "content": "Nautical style, also known as maritime fashion, is an iconic and enduring style of dress that has its roots in the traditional naval uniforms of Britain and France. Over the years it has transitioned into civilian maritime attire, leisurewear, and a globally recognisable fashion genre. Its ongoing appeal lies in its simplicity, durability, and clearly defined visual identity.",
+      "source": "wikipedia",
+      "language": "en",
+      "domain": "general",
+      "url": "https://en.wikipedia.org/wiki/Nautical_style",
+      "timestamp": "2025-09-22T23:11:24.555280",
+      "word_count": 58,
+      "dhatu_potential": 0.5,
+      "linguistic_features": {}
+    }
+  ],
+  "colab_insights": {
+    "optimized_for": "Tesla T4 GPU processing",
+    "target_throughput": "527 docs/min",
+    "dominant_pattern": "√gam movement semantics",
+    "confidence_target": 0.87
+  }
+}
