@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-22T23:52:55.787113",
+    "collector": "turbo_corpus_collector",
+    "version": "1.0",
+    "count": 14,
+    "avg_quality_score": 0.754,
+    "avg_dhatu_potential": 0.029,
+    "sources_used": [
+      "wikipedia_linguistics",
+      "wikipedia_sanskrit",
+      "wikipedia_philosophy"
+    ],
+    "processing_speed": "turbo"
+  },
+  "documents": [
+    {
+      "title": "Vyākaraṇa",
+      "content": "Vyākaraṇa refers to one of the six ancient Vedangas, ancillary science connected with the Vedas, which are scriptures in Hinduism. Vyākaraṇa is the study of grammar and linguistic analysis in Sanskrit language.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Vy%C4%81kara%E1%B9%87a",
+      "timestamp": "2025-09-22T23:52:55.600617",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 1.0,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Dhātu",
+      "content": "Dhātu est un mot sanskrit signifiant élément, partie d'un tout; racine verbale. Dans le bouddhisme ce sont les quatre éléments physiques (bhūta) constitutifs de la matière. Leur analyse englobe les phénomènes physiques et partiellement mentaux sous forme de dix-huit éléments. En grammaire sanskrite, le terme désigne les racines verbales.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Dh%C4%81tu",
+      "timestamp": "2025-09-22T23:52:55.576133",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Philology",
+      "content": "Philology is the study of language in oral and written historical sources. It is the intersection of textual criticism, literary criticism, history, and linguistics with strong ties to etymology. Philology is also defined as the study of literary texts and oral and written records, the establishment of their authenticity and their original form, and the determination of their meaning. A person who pursues this kind of study is known as a philologist. In older usage, especially British, philology is more general, covering comparative and historical linguistics.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Philology",
+      "timestamp": "2025-09-22T23:52:55.702991",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Phonology",
+      "content": "Phonology is the branch of linguistics that studies how languages systematically organize their phonemes or, for sign languages, their constituent parts of signs. The term can also refer specifically to the sound or sign system of a particular language variety. At one time, the study of phonology related only to the study of the systems of phonemes in spoken languages, but now it may relate to any linguistic analysis either:",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Phonology",
+      "timestamp": "2025-09-22T23:52:55.595463",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.9,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Sanskrit",
+      "content": "Sanskrit bezeichnet die verschiedenen Varietäten des Altindischen. Die älteste Form ist die Sprache der Veden, einer Sammlung religiöser mündlicher Überlieferungen im Hinduismus. Ihre Entstehung und Konsolidierung wird grob auf 1200 v. Chr. datiert, jedenfalls ins zweite vorchristliche Jahrtausend. Das klassische Sanskrit wurde um 400 v. Chr. durch die Grammatik des Panini kodifiziert.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Sanskrit",
+      "timestamp": "2025-09-22T23:52:55.678974",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.8,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Le Mahabharata est une épopée sanskrite (itihâsa) de la mythologie hindoue comportant, selon le décompte de Vyâsa, 81 936 strophes (shlokas) réparties en dix-huit livres (parvan). Il est considéré comme le plus long poème jamais composé.",
+      "source": "wikipedia_sanskrit_fr",
+      "url": "https://fr.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:52:55.750208",
+      "language": "fr",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Root",
+      "content": "In vascular plants, the roots are the organs of a plant that are modified to provide anchorage for the plant and take in water and nutrients into the plant body, which allows plants to grow taller and faster. They are most often below the surface of the soil, but roots can also be aerial or aerating, that is, growing up above the ground or especially above water.",
+      "source": "wikipedia_linguistics_en",
+      "url": "https://en.wikipedia.org/wiki/Root",
+      "timestamp": "2025-09-22T23:52:55.560272",
+      "language": "en",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Dhatu",
+      "content": "Dhātu may refer to:Dhātu (ayurveda) – Sanskrit term for the seven fundamental elements of the body\nSkandha#Eighteen dhātus and four paramatthas – a Sanskrit technical term meaning realm or substrate in Buddhism\nA term used to denote the classical elements in Indian thought\nA Theravada Buddhist term for a stupa, a mound-like structure containing Buddhist relics\n\n",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Dhatu",
+      "timestamp": "2025-09-22T23:52:55.548932",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Syntax",
+      "content": "Syntax est un groupe de musique britannique basé à Londres. Formé autour des musiciens Jan Burton et Mike Tournier, le groupe emprunte sa musique comme un son Rock en fusionnant l'Electro et le Trip hop. Ils ont participé à plusieurs projets musicaux comme dans une apparition dans la B.O du jeu vidéo Driver 3, en plus de leurs divers projets individuels comme leur album Meccano Mind sorti en 2004.",
+      "source": "wikipedia_linguistics_fr",
+      "url": "https://fr.wikipedia.org/wiki/Syntax",
+      "timestamp": "2025-09-22T23:52:55.683546",
+      "language": "fr",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.75,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Logic",
+      "content": "Logic, de son vrai nom Sir Robert Bryson Hall II, né le 22 janvier 1990 à Gaithersburg dans le Maryland, est un rappeur américain.\nIl compte beaucoup de followers sur Internet et est membre du RattPack, un groupe d'amis avec lequel il travaille. Il publie officiellement quatre mixtapes, ainsi que trois albums studio. Membre des labels Visionary Music Group et Def Jam Records, il publie son premier album solo intitulé Under Pressure le 21 octobre 2014.",
+      "source": "wikipedia_philosophy_fr",
+      "url": "https://fr.wikipedia.org/wiki/Logic",
+      "timestamp": "2025-09-22T23:52:55.574378",
+      "language": "fr",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Metaphysics",
+      "content": "Metaphysics is the branch of philosophy that examines the basic structure of reality. It is traditionally seen as the study of mind-independent features of the world, but some theorists view it as an inquiry into the conceptual framework of human understanding. Some philosophers, including Aristotle, designate metaphysics as first philosophy to suggest that it is more fundamental than other forms of philosophical inquiry.",
+      "source": "wikipedia_philosophy_en",
+      "url": "https://en.wikipedia.org/wiki/Metaphysics",
+      "timestamp": "2025-09-22T23:52:55.619201",
+      "language": "en",
+      "topic_category": "wikipedia_philosophy",
+      "quality_score": 0.7,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Mahabharata",
+      "content": "The Mahābhārata is a smriti text from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Ramayana. It narrates the events and aftermath of the Kurukshetra War, a war of succession between two groups of princely cousins, the Kauravas and the Pāṇḍavas. It contains philosophical and devotional material, such as a discussion of the four \"goals of life\" or puruṣārtha (12.161). Among the principal works and stories in the Mahābhārata are the Bhagavad Gita, the story of Damayanti, the story of Shakuntala, the story of Pururava and Urvashi, the story of Savitri and Satyavan, the story of Kacha and Devayani, the story of Rishyasringa and an abbreviated version of the Rāmāyaṇa, often considered as works in their own right.",
+      "source": "wikipedia_sanskrit_en",
+      "url": "https://en.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:52:55.754876",
+      "language": "en",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.6,
+      "dhatu_potential": 0.0
+    },
+    {
+      "title": "Root",
+      "content": "Root ist der Name folgender Orte:Root LU, Gemeinde im Kanton Luzern, Schweiz\nRoot, Ort im Montgomery County",
+      "source": "wikipedia_linguistics_de",
+      "url": "https://de.wikipedia.org/wiki/Root",
+      "timestamp": "2025-09-22T23:52:55.588730",
+      "language": "de",
+      "topic_category": "wikipedia_linguistics",
+      "quality_score": 0.55,
+      "dhatu_potential": 0.1
+    },
+    {
+      "title": "Mahabharata",
+      "content": "Das Mahabharata ist das bekannteste indische Epos. Man nimmt an, dass es erstmals zwischen 400 v. Chr. und 400 n. Chr. niedergeschrieben wurde, aber auf älteren Traditionen beruht. Es umfasst etwa 100.000 Doppelverse.",
+      "source": "wikipedia_sanskrit_de",
+      "url": "https://de.wikipedia.org/wiki/Mahabharata",
+      "timestamp": "2025-09-22T23:52:55.778365",
+      "language": "de",
+      "topic_category": "wikipedia_sanskrit",
+      "quality_score": 0.5,
+      "dhatu_potential": 0.0
+    }
+  ]
+}
