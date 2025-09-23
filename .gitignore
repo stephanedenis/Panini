@@ -1,0 +1,11 @@
+
+# Colab integration
+colab_integration/results/*/dhatu_analysis_detailed.json
+colab_integration/data/temp/
+colab_integration/.colab_cache/
+
+# Logs et temporaires
+*.tmp
+*.log
+__pycache__/
+.python-version
