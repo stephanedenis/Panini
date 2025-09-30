@@ -1,0 +1,916 @@
+{
+  "timestamp": "2025-09-30T15:40:36.372036",
+  "total_separations": 9,
+  "separations": [
+    {
+      "content_id": "books_08ef6457",
+      "format_type": "txt",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/books/dhatu_theory.txt",
+        "file_size": 652,
+        "file_extension": "txt",
+        "inode_info": {
+          "inode": 553672,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.685668",
+          "modification_time": "2025-09-30T15:38:48.685668",
+          "access_time": "2025-09-30T15:40:36.359297",
+          "size_bytes": 652,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "plain_file"
+      },
+      "level2_envelope": {
+        "format_type": "txt",
+        "encoding_info": {
+          "encoding": "utf-8",
+          "line_endings": "platform_default",
+          "bom": false
+        },
+        "structure_metadata": {
+          "type": "plain_text",
+          "no_structure": true
+        },
+        "presentation_settings": {},
+        "container_version": null
+      },
+      "level3_content": {
+        "text_preview": "Dhatu Theory and Semantic Roots\n\nDhatu are the fundamental semantic units in Sanskrit grammar.\nThey represent the irreducible roots of meaning in language.\n\nOrigins\nThe concept of dhatu comes from Pan",
+        "semantic_tokens_sample": [
+          "word",
+          "compression",
+          "represent",
+          "form",
+          "panini",
+          "dhatu",
+          "paninifs",
+          "application",
+          "and",
+          "level",
+          "nlp",
+          "addressing",
+          "across",
+          "combined",
+          "analysis",
+          "s",
+          "theory",
+          "to",
+          "of",
+          "content"
+        ],
+        "language": "en",
+        "content_hash": "c1f82be9bc70525b",
+        "semantic_features": {
+          "token_count": 89,
+          "unique_token_count": 60,
+          "lexical_diversity": 0.6741573033707865,
+          "avg_token_length": 6.112359550561798
+        },
+        "pure_meaning": {
+          "main_concepts": [
+            "word",
+            "compression",
+            "represent",
+            "form",
+            "panini",
+            "dhatu",
+            "paninifs",
+            "application",
+            "and",
+            "level",
+            "nlp",
+            "addressing",
+            "across",
+            "combined",
+            "analysis",
+            "s",
+            "theory",
+            "to",
+            "of",
+            "content"
+          ],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "en"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": 1.0,
+        "level3_compression_ratio": 1.0,
+        "total_compression_potential": 0.0
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.366902"
+    },
+    {
+      "content_id": "books_08ef6457",
+      "format_type": "md",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/books/dhatu_theory.md",
+        "file_size": 667,
+        "file_extension": "md",
+        "inode_info": {
+          "inode": 553673,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.685668",
+          "modification_time": "2025-09-30T15:38:48.685668",
+          "access_time": "2025-09-30T15:40:36.360296",
+          "size_bytes": 667,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "plain_file"
+      },
+      "level2_envelope": {
+        "format_type": "md",
+        "encoding_info": {
+          "encoding": "utf-8",
+          "markup_language": "markdown"
+        },
+        "structure_metadata": {
+          "headers": "markdown_syntax",
+          "inline_formatting": true,
+          "extensible": true
+        },
+        "presentation_settings": {},
+        "container_version": null
+      },
+      "level3_content": {
+        "text_preview": "Dhatu Theory and Semantic Roots\n\n## Dhatu are the fundamental semantic units in Sanskrit grammar.\nThey represent the irreducible roots of meaning in language.\n\n## Origins\nThe concept of dhatu comes fr",
+        "semantic_tokens_sample": [
+          "word",
+          "compression",
+          "represent",
+          "form",
+          "panini",
+          "dhatu",
+          "paninifs",
+          "application",
+          "and",
+          "level",
+          "nlp",
+          "addressing",
+          "across",
+          "combined",
+          "analysis",
+          "s",
+          "theory",
+          "to",
+          "of",
+          "content"
+        ],
+        "language": "en",
+        "content_hash": "f9beaeb2b734cab8",
+        "semantic_features": {
+          "token_count": 89,
+          "unique_token_count": 60,
+          "lexical_diversity": 0.6741573033707865,
+          "avg_token_length": 6.112359550561798
+        },
+        "pure_meaning": {
+          "main_concepts": [
+            "word",
+            "compression",
+            "represent",
+            "form",
+            "panini",
+            "dhatu",
+            "paninifs",
+            "application",
+            "and",
+            "level",
+            "nlp",
+            "addressing",
+            "across",
+            "combined",
+            "analysis",
+            "s",
+            "theory",
+            "to",
+            "of",
+            "content"
+          ],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "en"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": 0.9250374812593704,
+        "level3_compression_ratio": 1.0,
+        "total_compression_potential": 0.0
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.367233"
+    },
+    {
+      "content_id": "books_a65b722b",
+      "format_type": "txt",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/books/intro_panini.txt",
+        "file_size": 774,
+        "file_extension": "txt",
+        "inode_info": {
+          "inode": 553669,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.685668",
+          "modification_time": "2025-09-30T15:38:48.685668",
+          "access_time": "2025-09-30T15:40:36.360296",
+          "size_bytes": 774,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "plain_file"
+      },
+      "level2_envelope": {
+        "format_type": "txt",
+        "encoding_info": {
+          "encoding": "utf-8",
+          "line_endings": "platform_default",
+          "bom": false
+        },
+        "structure_metadata": {
+          "type": "plain_text",
+          "no_structure": true
+        },
+        "presentation_settings": {},
+        "container_version": null
+      },
+      "level3_content": {
+        "text_preview": "Introduction to PaniniFS\n\nPaniniFS is a revolutionary filesystem that separates container structure from semantic content.\nThis allows for optimized compression and intelligent content addressing.\n\nCh",
+        "semantic_tokens_sample": [
+          "just",
+          "conclusion",
+          "compression",
+          "chapter",
+          "all",
+          "sequences",
+          "introduction",
+          "opportunities",
+          "storage",
+          "approach",
+          "a",
+          "paninifs",
+          "and",
+          "container",
+          "about",
+          "addressing",
+          "think",
+          "represents",
+          "3",
+          "opaque"
+        ],
+        "language": "en",
+        "content_hash": "9d15657a18e88516",
+        "semantic_features": {
+          "token_count": 103,
+          "unique_token_count": 74,
+          "lexical_diversity": 0.7184466019417476,
+          "avg_token_length": 6.271844660194175
+        },
+        "pure_meaning": {
+          "main_concepts": [
+            "just",
+            "conclusion",
+            "compression",
+            "chapter",
+            "all",
+            "sequences",
+            "introduction",
+            "opportunities",
+            "storage",
+            "approach",
+            "a",
+            "paninifs",
+            "and",
+            "container",
+            "about",
+            "addressing",
+            "think",
+            "represents",
+            "3",
+            "opaque"
+          ],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "en"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": 1.0,
+        "level3_compression_ratio": 1.0,
+        "total_compression_potential": 0.0
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.367599"
+    },
+    {
+      "content_id": "books_a65b722b",
+      "format_type": "md",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/books/intro_panini.md",
+        "file_size": 800,
+        "file_extension": "md",
+        "inode_info": {
+          "inode": 553670,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.685668",
+          "modification_time": "2025-09-30T15:38:48.685668",
+          "access_time": "2025-09-30T15:40:36.360296",
+          "size_bytes": 800,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "plain_file"
+      },
+      "level2_envelope": {
+        "format_type": "md",
+        "encoding_info": {
+          "encoding": "utf-8",
+          "markup_language": "markdown"
+        },
+        "structure_metadata": {
+          "headers": "markdown_syntax",
+          "inline_formatting": true,
+          "extensible": true
+        },
+        "presentation_settings": {},
+        "container_version": null
+      },
+      "level3_content": {
+        "text_preview": "# Introduction to PaniniFS\n\n**PaniniFS** is a revolutionary filesystem that separates container structure from semantic content.\nThis allows for optimized compression and intelligent content addressin",
+        "semantic_tokens_sample": [
+          "just",
+          "conclusion",
+          "compression",
+          "chapter",
+          "all",
+          "sequences",
+          "introduction",
+          "opportunities",
+          "storage",
+          "approach",
+          "a",
+          "paninifs",
+          "and",
+          "container",
+          "about",
+          "addressing",
+          "think",
+          "represents",
+          "3",
+          "opaque"
+        ],
+        "language": "en",
+        "content_hash": "1b165cbc60473310",
+        "semantic_features": {
+          "token_count": 103,
+          "unique_token_count": 74,
+          "lexical_diversity": 0.7184466019417476,
+          "avg_token_length": 6.271844660194175
+        },
+        "pure_meaning": {
+          "main_concepts": [
+            "just",
+            "conclusion",
+            "compression",
+            "chapter",
+            "all",
+            "sequences",
+            "introduction",
+            "opportunities",
+            "storage",
+            "approach",
+            "a",
+            "paninifs",
+            "and",
+            "container",
+            "about",
+            "addressing",
+            "think",
+            "represents",
+            "3",
+            "opaque"
+          ],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "en"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": 0.9375,
+        "level3_compression_ratio": 1.0,
+        "total_compression_potential": 0.0
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.367923"
+    },
+    {
+      "content_id": "books_a65b722b",
+      "format_type": "pdf",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/books/intro_panini.pdf",
+        "file_size": 806,
+        "file_extension": "pdf",
+        "inode_info": {
+          "inode": 553671,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.685668",
+          "modification_time": "2025-09-30T15:38:48.685668",
+          "access_time": "2025-09-30T15:40:36.360296",
+          "size_bytes": 806,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "pdf_container"
+      },
+      "level2_envelope": {
+        "format_type": "pdf",
+        "encoding_info": {
+          "format": "pdf",
+          "binary": true
+        },
+        "structure_metadata": {
+          "pages": "estimated_from_size",
+          "has_bookmarks": "unknown",
+          "has_forms": "unknown",
+          "has_annotations": "unknown"
+        },
+        "presentation_settings": {
+          "fonts": "embedded",
+          "layout": "fixed",
+          "page_size": "standard"
+        },
+        "container_version": "1.4"
+      },
+      "level3_content": {
+        "text_preview": "PDF content placeholder for intro_panini",
+        "semantic_tokens_sample": [
+          "placeholder",
+          "content",
+          "intro_panini",
+          "for",
+          "pdf"
+        ],
+        "language": "unknown",
+        "content_hash": "40151e31bbc98135",
+        "semantic_features": {
+          "token_count": 5,
+          "unique_token_count": 5,
+          "lexical_diversity": 1.0,
+          "avg_token_length": 7.2
+        },
+        "pure_meaning": {
+          "main_concepts": [
+            "placeholder",
+            "content",
+            "intro_panini",
+            "for",
+            "pdf"
+          ],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "unknown"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": -5.20347394540943,
+        "level3_compression_ratio": 0.04962779156327544,
+        "total_compression_potential": 0.9503722084367245
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.368208"
+    },
+    {
+      "content_id": "audio_48430a70",
+      "format_type": "mp3",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/audio/podcast_episode1.mp3",
+        "file_size": 1014,
+        "file_extension": "mp3",
+        "inode_info": {
+          "inode": 553675,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.685668",
+          "modification_time": "2025-09-30T15:38:48.685668",
+          "access_time": "2025-09-30T15:40:36.360296",
+          "size_bytes": 1014,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "mp3_container"
+      },
+      "level2_envelope": {
+        "format_type": "mp3",
+        "encoding_info": {
+          "format": "mp3",
+          "audio_codec": "mpeg_layer3",
+          "binary": true
+        },
+        "structure_metadata": {
+          "id3_tags": true,
+          "frames": true,
+          "bitrate": "variable_or_constant"
+        },
+        "presentation_settings": {},
+        "container_version": null
+      },
+      "level3_content": {
+        "text_preview": "",
+        "semantic_tokens_sample": [],
+        "language": "unknown",
+        "content_hash": "e3b0c44298fc1c14",
+        "semantic_features": {
+          "token_count": 0,
+          "unique_token_count": 0,
+          "lexical_diversity": 0.0,
+          "avg_token_length": 0.0
+        },
+        "pure_meaning": {
+          "main_concepts": [],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "unknown"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": -0.9723865877712031,
+        "level3_compression_ratio": 0.0,
+        "total_compression_potential": 1.0
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.368506"
+    },
+    {
+      "content_id": "audio_48430a70",
+      "format_type": "txt",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/audio/podcast_episode1.txt",
+        "file_size": 516,
+        "file_extension": "txt",
+        "inode_info": {
+          "inode": 553674,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.685668",
+          "modification_time": "2025-09-30T15:38:48.685668",
+          "access_time": "2025-09-30T15:40:36.360296",
+          "size_bytes": 516,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "plain_file"
+      },
+      "level2_envelope": {
+        "format_type": "txt",
+        "encoding_info": {
+          "encoding": "utf-8",
+          "line_endings": "platform_default",
+          "bom": false
+        },
+        "structure_metadata": {
+          "type": "plain_text",
+          "no_structure": true
+        },
+        "presentation_settings": {},
+        "container_version": null
+      },
+      "level3_content": {
+        "text_preview": "Welcome to PaniniFS podcast.\n\nIn this episode, we explore how semantic filesystems work.\nTraditional filesystems only understand bytes and blocks.\nBut what if your filesystem understood meaning?\n\nThat",
+        "semantic_tokens_sample": [
+          "compression",
+          "understood",
+          "impossible",
+          "dhatu",
+          "paninifs",
+          "bytes",
+          "and",
+          "container",
+          "multiple",
+          "blocks",
+          "s",
+          "insight",
+          "next",
+          "time",
+          "to",
+          "this",
+          "content",
+          "theory",
+          "stored",
+          "explore"
+        ],
+        "language": "en",
+        "content_hash": "3dd84cfec3e89d34",
+        "semantic_features": {
+          "token_count": 82,
+          "unique_token_count": 62,
+          "lexical_diversity": 0.7560975609756098,
+          "avg_token_length": 5.109756097560975
+        },
+        "pure_meaning": {
+          "main_concepts": [
+            "compression",
+            "understood",
+            "impossible",
+            "dhatu",
+            "paninifs",
+            "bytes",
+            "and",
+            "container",
+            "multiple",
+            "blocks",
+            "s",
+            "insight",
+            "next",
+            "time",
+            "to",
+            "this",
+            "content",
+            "theory",
+            "stored",
+            "explore"
+          ],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "en"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": 1.0,
+        "level3_compression_ratio": 1.0,
+        "total_compression_potential": 0.0
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.368810"
+    },
+    {
+      "content_id": "video_34fb8092",
+      "format_type": "mp4",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/video/tutorial_video.mp4",
+        "file_size": 1028,
+        "file_extension": "mp4",
+        "inode_info": {
+          "inode": 553678,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.686668",
+          "modification_time": "2025-09-30T15:38:48.686668",
+          "access_time": "2025-09-30T15:40:36.360296",
+          "size_bytes": 1028,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "mp4_container"
+      },
+      "level2_envelope": {
+        "format_type": "mp4",
+        "encoding_info": {
+          "format": "mp4",
+          "container": "mp4",
+          "binary": true
+        },
+        "structure_metadata": {
+          "atoms": true,
+          "tracks": "video_audio_subtitle",
+          "metadata_atoms": true
+        },
+        "presentation_settings": {},
+        "container_version": null
+      },
+      "level3_content": {
+        "text_preview": "",
+        "semantic_tokens_sample": [],
+        "language": "unknown",
+        "content_hash": "e3b0c44298fc1c14",
+        "semantic_features": {
+          "token_count": 0,
+          "unique_token_count": 0,
+          "lexical_diversity": 0.0,
+          "avg_token_length": 0.0
+        },
+        "pure_meaning": {
+          "main_concepts": [],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "unknown"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": -3.8638132295719845,
+        "level3_compression_ratio": 0.0,
+        "total_compression_potential": 1.0
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.369072"
+    },
+    {
+      "content_id": "video_34fb8092",
+      "format_type": "srt",
+      "level1_file": {
+        "file_path": "data/multi_format_corpus/video/tutorial_video.srt",
+        "file_size": 550,
+        "file_extension": "srt",
+        "inode_info": {
+          "inode": 553677,
+          "device": 2065,
+          "nlink": 1,
+          "uid": 1001,
+          "gid": 1001,
+          "mode": "0o100664"
+        },
+        "filesystem_metadata": {
+          "creation_time": "2025-09-30T15:38:48.685668",
+          "modification_time": "2025-09-30T15:38:48.685668",
+          "access_time": "2025-09-30T15:40:36.360296",
+          "size_bytes": 550,
+          "blocks": 8,
+          "block_size": 4096
+        },
+        "container_type": "plain_file"
+      },
+      "level2_envelope": {
+        "format_type": "srt",
+        "encoding_info": {
+          "encoding": "utf-8",
+          "subtitle_format": "srt"
+        },
+        "structure_metadata": {
+          "timing_info": true,
+          "sequential": true,
+          "entry_format": "number_timing_text"
+        },
+        "presentation_settings": {},
+        "container_version": null
+      },
+      "level3_content": {
+        "text_preview": "Welcome to the PaniniFS video tutorial\nIn this video we'll learn about multi-format analysis\nThe same content can exist in many formats\nText files, PDFs, EPUBs all contain the same information\nPaniniF",
+        "semantic_tokens_sample": [
+          "epubs",
+          "pdfs",
+          "invariant",
+          "compression",
+          "all",
+          "tutorial",
+          "paninifs",
+          "formats",
+          "and",
+          "about",
+          "text",
+          "you",
+          "analysis",
+          "cross",
+          "to",
+          "this",
+          "same",
+          "content",
+          "watching",
+          "extracts"
+        ],
+        "language": "en",
+        "content_hash": "aa72c13a357b093d",
+        "semantic_features": {
+          "token_count": 50,
+          "unique_token_count": 40,
+          "lexical_diversity": 0.8,
+          "avg_token_length": 5.38
+        },
+        "pure_meaning": {
+          "main_concepts": [
+            "epubs",
+            "pdfs",
+            "invariant",
+            "compression",
+            "all",
+            "tutorial",
+            "paninifs",
+            "formats",
+            "and",
+            "about",
+            "text",
+            "you",
+            "analysis",
+            "cross",
+            "to",
+            "this",
+            "same",
+            "content",
+            "watching",
+            "extracts"
+          ],
+          "content_type": "text",
+          "human_readable": true,
+          "language": "en"
+        }
+      },
+      "compression_by_level": {
+        "level1_compression_ratio": 1.0,
+        "level2_compression_ratio": 0.6363636363636364,
+        "level3_compression_ratio": 0.5818181818181818,
+        "total_compression_potential": 0.4181818181818182
+      },
+      "redundancy_eliminated": {
+        "filesystem_metadata_redundancy": 0.05,
+        "presentation_envelope_redundancy": 0.15,
+        "format_specific_redundancy": 0.1,
+        "total_redundancy_eliminated": 0.3
+      },
+      "separation_timestamp": "2025-09-30T15:40:36.369401"
+    }
+  ]
+}

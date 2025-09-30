@@ -1,0 +1,20 @@
+Dhatu Theory and Semantic Roots
+
+Dhatu are the fundamental semantic units in Sanskrit grammar.
+They represent the irreducible roots of meaning in language.
+
+Origins
+The concept of dhatu comes from Panini's Ashtadhyayi.
+These roots form the basis of word formation and meaning.
+
+Application to Computing
+In PaniniFS, we apply dhatu theory to content analysis.
+By identifying semantic roots, we can deduplicate content at the meaning level.
+
+Benefits
+- Language-independent content addressing
+- Semantic deduplication across translations
+- Universal content patterns
+
+Implementation
+Modern NLP combined with dhatu theory enables breakthrough compression.

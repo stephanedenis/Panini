@@ -1,0 +1,14 @@
+Welcome to PaniniFS podcast.
+
+In this episode, we explore how semantic filesystems work.
+Traditional filesystems only understand bytes and blocks.
+But what if your filesystem understood meaning?
+
+That's where PaniniFS comes in.
+By analyzing content at multiple levels, we can achieve compression ratios that seem impossible.
+
+The key insight is separating the container from the content.
+The container is how data is stored.
+The content is what the data means.
+
+Join us next time as we dive deeper into dhatu theory.

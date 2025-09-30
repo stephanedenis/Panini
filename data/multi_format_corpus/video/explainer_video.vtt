@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+Container versus content separation explained
+
+00:00:04.500 --> 00:00:08.000
+Every file has a container and content
+
+00:00:08.500 --> 00:00:12.000
+The container is format-specific structure
+
+00:00:12.500 --> 00:00:16.000
+The content is the semantic meaning
+
+00:00:16.500 --> 00:00:20.000
+Separating these enables better optimization

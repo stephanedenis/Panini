@@ -1,0 +1,17 @@
+PaniniFS Technical Deep Dive
+
+This talk covers the architecture of PaniniFS.
+We'll examine the three-level separation model.
+
+Level one is the filesystem container.
+This includes inodes, blocks, and filesystem metadata.
+
+Level two is the presentation envelope.
+For a PDF, this is the PDF structure.
+For an EPUB, this is the ZIP container and metadata.
+
+Level three is pure semantic content.
+This is the meaning, independent of format.
+A book has the same semantic content whether it's PDF, EPUB, or plain text.
+
+By optimizing each level independently, we achieve superior results.

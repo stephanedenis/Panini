@@ -1,0 +1,22 @@
+%PDF-1.4
+% Placeholder PDF file
+Introduction to PaniniFS
+
+PaniniFS is a revolutionary filesystem that separates container structure from semantic content.
+This allows for optimized compression and intelligent content addressing.
+
+Chapter 1: The Problem
+Traditional filesystems treat all files as opaque byte sequences.
+This approach misses opportunities for semantic optimization and deduplication.
+
+Chapter 2: The Solution
+PaniniFS analyzes content at three levels:
+1. File structure (container)
+2. Presentation envelope (metadata)
+3. Pure semantic content (meaning)
+
+By separating these levels, we achieve superior compression and content-based deduplication.
+
+Conclusion
+PaniniFS represents a paradigm shift in how we think about file storage.
+The future of filesystems is semantic, not just structural.
