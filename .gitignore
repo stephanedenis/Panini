@@ -39,3 +39,4 @@ github_sync_tracking.json
 .venv/
 venv/
 env/
+data/multi_format_corpus/analysis_results/
