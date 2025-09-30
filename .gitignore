@@ -39,3 +39,8 @@ github_sync_tracking.json
 .venv/
 venv/
 env/
+
+# Résultats de tests et données générées
+synthesis_validation_results/
+universal_atoms_results/
+molecular_patterns_results/
