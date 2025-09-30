@@ -9,8 +9,13 @@ import hashlib
 import json
 import time
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Any, Tuple, Optional
+
+
+class IntegrityError(Exception):
+    """Exception levée quand l'intégrité n'est pas 100%"""
+    pass
 
 
 class PaniniFSValidator:
@@ -52,7 +57,7 @@ class PaniniFSValidator:
             'total_files': 0,
             'successful_validations': 0,
             'failed_validations': 0,
-            'integrity_score': 0.0,
+            'success_rate': 0.0,  # Taux de réussite (nb_succès / nb_total)
             'by_format': {},
             'performance_metrics': {}
         }
@@ -62,13 +67,13 @@ class PaniniFSValidator:
     
     def log(self, message: str, level: str = "INFO"):
         """
-        Logging avec timestamp ISO 8601
+        Logging avec timestamp ISO 8601 UTC
         
         Args:
             message: Message à logger
             level: Niveau de log (INFO, WARNING, ERROR, SUCCESS)
         """
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        timestamp = datetime.now(timezone.utc).isoformat()
         prefix = {
             "INFO": "ℹ️",
             "WARNING": "⚠️",
@@ -119,31 +124,30 @@ class PaniniFSValidator:
         self,
         original_path: Path,
         restored_path: Path
-    ) -> Dict[str, Any]:
+    ) -> bool:
         """
         Valide l'intégrité bit-à-bit entre fichier original et restitué
+        INTÉGRITÉ 100% OU ÉCHEC - pas de zone grise
         
         Args:
             original_path: Chemin du fichier original
             restored_path: Chemin du fichier restitué
             
         Returns:
-            Résultat de validation avec métriques d'intégrité
+            True si intégrité 100%, sinon lève IntegrityError
+            
+        Raises:
+            IntegrityError: Si intégrité n'est pas 100%
+            FileNotFoundError: Si un fichier est introuvable
         """
         start_time = time.time()
         
         # Vérification existence fichiers
         if not original_path.exists():
-            return {
-                'success': False,
-                'error': f'Fichier original introuvable: {original_path}'
-            }
+            raise FileNotFoundError(f'Fichier original introuvable: {original_path}')
         
         if not restored_path.exists():
-            return {
-                'success': False,
-                'error': f'Fichier restitué introuvable: {restored_path}'
-            }
+            raise FileNotFoundError(f'Fichier restitué introuvable: {restored_path}')
         
         # Calcul des hashes
         original_hash = self.compute_file_hash(original_path)
@@ -153,34 +157,26 @@ class PaniniFSValidator:
         original_size = original_path.stat().st_size
         restored_size = restored_path.stat().st_size
         
-        # Validation bit-à-bit
-        integrity_valid = (original_hash == restored_hash)
-        size_valid = (original_size == restored_size)
-        
         elapsed_time = time.time() - start_time
         
-        result = {
-            'success': integrity_valid and size_valid,
-            'original_hash': original_hash,
-            'restored_hash': restored_hash,
-            'hash_match': integrity_valid,
-            'original_size': original_size,
-            'restored_size': restored_size,
-            'size_match': size_valid,
-            'validation_time': elapsed_time,
-            'timestamp': datetime.now().isoformat()
-        }
+        # Validation bit-à-bit: 100% ou ÉCHEC
+        if original_hash != restored_hash:
+            raise IntegrityError(
+                f"Reconstitution incomplète - Hash mismatch: "
+                f"original={original_hash} != restored={restored_hash}. "
+                f"Fichier inutilisable."
+            )
         
-        if integrity_valid and size_valid:
-            self.log(f"✅ Intégrité validée: {original_path.name}", "SUCCESS")
-        else:
-            self.log(f"❌ Échec intégrité: {original_path.name}", "ERROR")
-            if not integrity_valid:
-                self.log(f"   Hash mismatch: {original_hash} != {restored_hash}", "ERROR")
-            if not size_valid:
-                self.log(f"   Size mismatch: {original_size} != {restored_size}", "ERROR")
+        if original_size != restored_size:
+            raise IntegrityError(
+                f"Reconstitution incomplète - Size mismatch: "
+                f"original={original_size} != restored={restored_size} bytes. "
+                f"Fichier inutilisable."
+            )
         
-        return result
+        # Si on arrive ici, intégrité 100%
+        self.log(f"✅ Intégrité 100% validée: {original_path.name}", "SUCCESS")
+        return True
     
     def validate_format_pipeline(
         self,
@@ -249,8 +245,14 @@ class PaniniFSValidator:
         
         self.log(f"📤 Restitution: {restored_path.name}")
         
-        # Phase 4: Validation intégrité
-        integrity_result = self.validate_file_integrity(file_path, restored_path)
+        # Phase 4: Validation intégrité (100% ou ÉCHEC)
+        try:
+            integrity_valid = self.validate_file_integrity(file_path, restored_path)
+            integrity_status = 'SUCCESS'
+        except (IntegrityError, FileNotFoundError) as e:
+            self.log(f"❌ ÉCHEC intégrité: {str(e)}", "ERROR")
+            integrity_valid = False
+            integrity_status = 'FAILED'
         
         # Résultat complet
         result = {
@@ -263,13 +265,14 @@ class PaniniFSValidator:
             'compression_time': compression_time,
             'decompression_time': decompression_time,
             'total_time': compression_time + decompression_time,
-            'integrity': integrity_result,
-            'timestamp': datetime.now().isoformat()
+            'integrity_valid': integrity_valid,  # bool: True (100%) ou False (échec)
+            'integrity_status': integrity_status,  # 'SUCCESS' ou 'FAILED'
+            'timestamp': datetime.now(timezone.utc).isoformat()
         }
         
         # Mise à jour métriques
         self.validation_metrics['total_files'] += 1
-        if integrity_result['success']:
+        if integrity_valid:
             self.validation_metrics['successful_validations'] += 1
         else:
             self.validation_metrics['failed_validations'] += 1
@@ -283,7 +286,7 @@ class PaniniFSValidator:
             }
         
         self.validation_metrics['by_format'][format_type]['total'] += 1
-        if integrity_result['success']:
+        if integrity_valid:
             self.validation_metrics['by_format'][format_type]['success'] += 1
         else:
             self.validation_metrics['by_format'][format_type]['failed'] += 1
@@ -357,23 +360,23 @@ class PaniniFSValidator:
                         'success': False
                     })
         
-        # Calcul score d'intégrité global
+        # Calcul taux de réussite (nb_succès / nb_total)
         if self.validation_metrics['total_files'] > 0:
-            self.validation_metrics['integrity_score'] = (
+            self.validation_metrics['success_rate'] = (
                 self.validation_metrics['successful_validations'] /
                 self.validation_metrics['total_files']
             )
         
         # Génération rapport
         report = {
-            'timestamp': datetime.now().isoformat(),
+            'timestamp': datetime.now(timezone.utc).isoformat(),
             'corpus_path': str(corpus_dir),
             'metrics': self.validation_metrics,
             'validation_results': validation_results
         }
         
         # Sauvegarde rapport
-        report_file = self.reports_dir / f"validation_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        report_file = self.reports_dir / f"validation_report_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.json"
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
         
@@ -383,7 +386,7 @@ class PaniniFSValidator:
         self.log(f"Total fichiers: {self.validation_metrics['total_files']}")
         self.log(f"Validations réussies: {self.validation_metrics['successful_validations']}")
         self.log(f"Validations échouées: {self.validation_metrics['failed_validations']}")
-        self.log(f"Score d'intégrité: {self.validation_metrics['integrity_score']*100:.2f}%")
+        self.log(f"Taux de réussite: {self.validation_metrics['success_rate']*100:.2f}%")
         self.log(f"📄 Rapport sauvegardé: {report_file}")
         
         return report
@@ -413,7 +416,7 @@ class PaniniFSValidator:
         self.log("🏁 Génération benchmark performance")
         
         benchmark_results = {
-            'timestamp': datetime.now().isoformat(),
+            'timestamp': datetime.now(timezone.utc).isoformat(),
             'test_files_count': len(test_files),
             'total_size': sum(f.stat().st_size for f in test_files if f.exists()),
             'performance_by_format': {},
@@ -481,7 +484,7 @@ class PaniniFSValidator:
                 metrics['avg_compression_ratio'] /= metrics['count']
         
         # Sauvegarde benchmark
-        benchmark_file = self.reports_dir / f"benchmark_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        benchmark_file = self.reports_dir / f"benchmark_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.json"
         with open(benchmark_file, 'w', encoding='utf-8') as f:
             json.dump(benchmark_results, f, indent=2, ensure_ascii=False)
         

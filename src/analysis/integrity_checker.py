@@ -9,8 +9,13 @@ import hashlib
 import json
 import time
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any, List, Tuple, Optional
+
+
+class IntegrityError(Exception):
+    """Exception levée quand l'intégrité n'est pas 100%"""
+    pass
 
 
 class IntegrityChecker:
@@ -36,8 +41,8 @@ class IntegrityChecker:
         self.log("🔒 Vérificateur d'intégrité initialisé")
     
     def log(self, message: str, level: str = "INFO"):
-        """Logging avec timestamp ISO 8601"""
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        """Logging avec timestamp ISO 8601 UTC"""
+        timestamp = datetime.now(timezone.utc).isoformat()
         prefix = {
             "INFO": "ℹ️",
             "SUCCESS": "✅",
@@ -122,9 +127,10 @@ class IntegrityChecker:
         restored_path: Path,
         algorithm: str = None,
         verbose: bool = True
-    ) -> Dict[str, Any]:
+    ) -> bool:
         """
         Vérifie l'intégrité entre deux fichiers
+        INTÉGRITÉ 100% OU ÉCHEC - pas de zone grise
         
         Args:
             original_path: Fichier original
@@ -133,7 +139,11 @@ class IntegrityChecker:
             verbose: Afficher les logs
             
         Returns:
-            Résultat de vérification
+            True si intégrité 100%
+            
+        Raises:
+            IntegrityError: Si intégrité n'est pas 100%
+            FileNotFoundError: Si un fichier est introuvable
         """
         start_time = time.time()
         
@@ -142,16 +152,10 @@ class IntegrityChecker:
         
         # Vérification existence
         if not original_path.exists():
-            return {
-                'success': False,
-                'error': f'Fichier original introuvable: {original_path}'
-            }
+            raise FileNotFoundError(f'Fichier original introuvable: {original_path}')
         
         if not restored_path.exists():
-            return {
-                'success': False,
-                'error': f'Fichier restitué introuvable: {restored_path}'
-            }
+            raise FileNotFoundError(f'Fichier restitué introuvable: {restored_path}')
         
         # Métadonnées fichiers
         original_size = original_path.stat().st_size
@@ -165,11 +169,6 @@ class IntegrityChecker:
         original_hash = self.compute_hash(original_path, algorithm)
         restored_hash = self.compute_hash(restored_path, algorithm)
         
-        # Comparaison
-        hash_match = (original_hash == restored_hash)
-        size_match = (original_size == restored_size)
-        integrity_valid = hash_match and size_match
-        
         verification_time = time.time() - start_time
         
         # Mise à jour statistiques
@@ -177,35 +176,32 @@ class IntegrityChecker:
         self.verification_stats['total_bytes_verified'] += original_size
         self.verification_stats['verification_time'] += verification_time
         
-        if integrity_valid:
-            self.verification_stats['successful_checks'] += 1
-            if verbose:
-                self.log(f"✅ Intégrité validée: {original_path.name}", "SUCCESS")
-        else:
+        # Validation: 100% ou ÉCHEC
+        if original_hash != restored_hash:
             self.verification_stats['failed_checks'] += 1
             if verbose:
-                self.log(f"❌ Échec intégrité: {original_path.name}", "ERROR")
-                if not hash_match:
-                    self.log(f"   Hash mismatch:", "ERROR")
-                    self.log(f"   Original:  {original_hash}", "ERROR")
-                    self.log(f"   Restored:  {restored_hash}", "ERROR")
-                if not size_match:
-                    self.log(f"   Size mismatch: {original_size} != {restored_size}", "ERROR")
+                self.log(f"❌ ÉCHEC intégrité: {original_path.name}", "ERROR")
+                self.log(f"   Original:  {original_hash}", "ERROR")
+                self.log(f"   Restored:  {restored_hash}", "ERROR")
+            raise IntegrityError(
+                f"Reconstitution incomplète - Hash mismatch. Fichier inutilisable."
+            )
         
-        result = {
-            'success': integrity_valid,
-            'hash_match': hash_match,
-            'size_match': size_match,
-            'algorithm': algorithm,
-            'original_hash': original_hash,
-            'restored_hash': restored_hash,
-            'original_size': original_size,
-            'restored_size': restored_size,
-            'verification_time': verification_time,
-            'timestamp': datetime.now().isoformat()
-        }
+        if original_size != restored_size:
+            self.verification_stats['failed_checks'] += 1
+            if verbose:
+                self.log(f"❌ ÉCHEC intégrité: {original_path.name}", "ERROR")
+                self.log(f"   Size mismatch: {original_size} != {restored_size}", "ERROR")
+            raise IntegrityError(
+                f"Reconstitution incomplète - Size mismatch. Fichier inutilisable."
+            )
         
-        return result
+        # Intégrité 100%
+        self.verification_stats['successful_checks'] += 1
+        if verbose:
+            self.log(f"✅ Intégrité 100% validée: {original_path.name}", "SUCCESS")
+        
+        return True
     
     def verify_batch(
         self,
@@ -231,7 +227,7 @@ class IntegrityChecker:
         
         for original, restored in file_pairs:
             try:
-                result = self.verify_file_integrity(
+                integrity_valid = self.verify_file_integrity(
                     original,
                     restored,
                     algorithm,
@@ -240,19 +236,21 @@ class IntegrityChecker:
                 results.append({
                     'original': str(original),
                     'restored': str(restored),
-                    **result
+                    'success': integrity_valid,  # True (100%) ou False (échec)
+                    'status': 'SUCCESS' if integrity_valid else 'FAILED'
                 })
                 
                 # Log résumé
-                status = "✅" if result['success'] else "❌"
+                status = "✅" if integrity_valid else "❌"
                 self.log(f"{status} {original.name}")
                 
-            except Exception as e:
-                self.log(f"❌ Erreur: {original.name} - {e}", "ERROR")
+            except (IntegrityError, FileNotFoundError) as e:
+                self.log(f"❌ ÉCHEC: {original.name} - {e}", "ERROR")
                 results.append({
                     'original': str(original),
                     'restored': str(restored),
                     'success': False,
+                    'status': 'FAILED',
                     'error': str(e)
                 })
         
@@ -266,7 +264,7 @@ class IntegrityChecker:
             'successful': successful,
             'failed': failed,
             'success_rate': success_rate,
-            'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now(timezone.utc).isoformat()
         }
         
         self.log("=" * 60)
@@ -333,7 +331,7 @@ class IntegrityChecker:
             'hash_results': hash_results,
             'bit_by_bit_match': bit_by_bit_match,
             'verification_time': verification_time,
-            'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now(timezone.utc).isoformat()
         }
         
         if result['success']:
@@ -399,7 +397,7 @@ class IntegrityChecker:
         
         manifest = {
             'algorithm': algorithm,
-            'timestamp': datetime.now().isoformat(),
+            'timestamp': datetime.now(timezone.utc).isoformat(),
             'total_files': len(files),
             'files': []
         }
@@ -501,7 +499,7 @@ class IntegrityChecker:
             'failed': total - successful,
             'success_rate': (successful / total * 100) if total > 0 else 0,
             'results': results,
-            'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now(timezone.utc).isoformat()
         }
     
     def get_statistics(self) -> Dict[str, Any]:

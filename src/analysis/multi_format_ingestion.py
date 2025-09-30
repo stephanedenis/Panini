@@ -10,7 +10,7 @@ import json
 import mimetypes
 import struct
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any, Optional, BinaryIO
 
 
@@ -56,7 +56,7 @@ class MultiFormatIngestion:
     
     def log(self, message: str, level: str = "INFO"):
         """Logging avec timestamp ISO 8601"""
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        timestamp = datetime.now(timezone.utc).isoformat()
         prefix = {
             "INFO": "ℹ️",
             "SUCCESS": "✅",

@@ -155,7 +155,7 @@ class TestIntegrityChecker(unittest.TestCase):
         self.assertIn('sha512', hashes)
     
     def test_integrity_verification_identical(self):
-        """Test vérification intégrité - fichiers identiques"""
+        """Test vérification intégrité - fichiers identiques (100% ou échec)"""
         # Création de deux fichiers identiques
         test_content = b"Identical content for integrity test"
         file1 = self.temp_dir / "original.txt"
@@ -164,26 +164,22 @@ class TestIntegrityChecker(unittest.TestCase):
         file1.write_bytes(test_content)
         file2.write_bytes(test_content)
         
+        # Doit retourner True (100% intégrité)
         result = self.checker.verify_file_integrity(file1, file2, verbose=False)
-        
-        self.assertTrue(result['success'])
-        self.assertTrue(result['hash_match'])
-        self.assertTrue(result['size_match'])
-        self.assertEqual(result['original_hash'], result['restored_hash'])
+        self.assertTrue(result)
     
     def test_integrity_verification_different(self):
-        """Test vérification intégrité - fichiers différents"""
+        """Test vérification intégrité - fichiers différents (doit lever exception)"""
         file1 = self.temp_dir / "file1.txt"
         file2 = self.temp_dir / "file2.txt"
         
         file1.write_bytes(b"Content A")
         file2.write_bytes(b"Content B")
         
-        result = self.checker.verify_file_integrity(file1, file2, verbose=False)
-        
-        self.assertFalse(result['success'])
-        self.assertFalse(result['hash_match'])
-        self.assertNotEqual(result['original_hash'], result['restored_hash'])
+        # Doit lever IntegrityError (pas de zone grise)
+        from integrity_checker import IntegrityError
+        with self.assertRaises(IntegrityError):
+            self.checker.verify_file_integrity(file1, file2, verbose=False)
     
     def test_bitwise_comparison(self):
         """Test comparaison bit-à-bit"""
@@ -281,7 +277,8 @@ class TestPaniniFSValidator(unittest.TestCase):
         self.assertEqual(result['file_name'], 'test.txt')
         self.assertEqual(result['category'], 'text')
         self.assertEqual(result['format'], 'txt')
-        self.assertTrue(result['integrity']['success'])
+        self.assertTrue(result['integrity_valid'])  # bool: True (100%)
+        self.assertEqual(result['integrity_status'], 'SUCCESS')
         self.assertEqual(result['original_size'], len(test_content))
     
     def test_corpus_validation(self):
@@ -352,7 +349,8 @@ class TestIntegrationValidation(unittest.TestCase):
         
         # 2. Validation pipeline
         validation_result = self.validator.validate_format_pipeline(test_file)
-        self.assertTrue(validation_result['integrity']['success'])
+        self.assertTrue(validation_result['integrity_valid'])  # bool: True (100%)
+        self.assertEqual(validation_result['integrity_status'], 'SUCCESS')
         
         # 3. Vérification intégrité
         restored_file = self.validator.restitution_dir / test_file.name
@@ -361,7 +359,7 @@ class TestIntegrationValidation(unittest.TestCase):
             restored_file,
             verbose=False
         )
-        self.assertTrue(integrity_result['success'])
+        self.assertTrue(integrity_result)  # bool: True (100%)
 
 
 def run_tests():

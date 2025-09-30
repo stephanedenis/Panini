@@ -52,18 +52,37 @@ python3 src/analysis/benchmark_panini_fs.py
 
 ```python
 from pathlib import Path
-from panini_fs_validator import PaniniFSValidator
+from panini_fs_validator import PaniniFSValidator, IntegrityError
 
 # Créer validateur
 validator = PaniniFSValidator()
 
-# Valider un fichier
+# Valider un fichier (retourne dict avec 'integrity_valid': bool)
 result = validator.validate_format_pipeline(Path("document.pdf"))
-print(f"Intégrité: {result['integrity']['success']}")
+if result['integrity_valid']:
+    print("✅ Intégrité 100%")  # SUCCESS
+else:
+    print("❌ ÉCHEC")  # Fichier inutilisable
 
-# Valider un corpus
+# Valider un corpus (taux de réussite = succès / total)
 report = validator.validate_corpus(Path("corpus_dir"))
-print(f"Score: {report['metrics']['integrity_score']*100}%")
+print(f"Taux: {report['metrics']['success_rate']*100}%")
+```
+
+### ⚠️ Paradigme: 100% OU ÉCHEC
+
+**Pas de zone grise:**
+- ✅ **100% intégrité** = Fichier utilisable
+- ❌ **< 100%** = ÉCHEC TOTAL, fichier inutilisable
+
+```python
+# Les fonctions retournent bool ou lèvent IntegrityError
+try:
+    is_valid = checker.verify_file_integrity(original, restored)
+    # is_valid == True (100% intégrité)
+except IntegrityError:
+    # Reconstitution incomplète
+    pass
 ```
 
 ## 🏁 Benchmarks

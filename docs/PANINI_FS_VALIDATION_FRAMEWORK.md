@@ -45,8 +45,36 @@ Framework exhaustif de validation pour PaniniFS avec support de tous les formats
                                                             ┌──────────────────┐
                                                             │  Validation      │
                                                             │  Intégrité 100%  │
+                                                            │  OU ÉCHEC        │
                                                             └──────────────────┘
 ```
+
+### ⚠️ Paradigme Intégrité: 100% OU ÉCHEC
+
+**Principe fondamental:** Pas de zone grise dans la validation.
+
+- ✅ **100% intégrité** = Fichier parfaitement restitué, utilisable
+- ❌ **< 100% intégrité** = ÉCHEC TOTAL, fichier inutilisable
+
+**Changement par rapport aux approches traditionnelles:**
+
+```python
+# ❌ ANCIEN (à éviter)
+def validate_integrity(original, restored):
+    return similarity_score  # float 0.0-1.0 (90%, 95%, 99.9%)
+
+# ✅ NOUVEAU (implémenté)
+def validate_integrity(original, restored):
+    if hash(original) == hash(restored):
+        return True  # 100% intégrité
+    else:
+        raise IntegrityError("Reconstitution incomplète - fichier inutilisable")
+```
+
+**Métriques:**
+- Pas de pourcentage d'intégrité moyen
+- **Taux de réussite** = nombre_succès / nombre_tentatives
+- Chaque validation: `SUCCESS` (100%) ou `FAILED` (échec)
 
 ## 🏗️ Architecture
 
@@ -115,21 +143,23 @@ Vérificateur d'intégrité avec garantie bit-à-bit.
 
 **Usage:**
 ```python
-from integrity_checker import IntegrityChecker
+from integrity_checker import IntegrityChecker, IntegrityError
 
 checker = IntegrityChecker()
 
-# Vérification intégrité
-result = checker.verify_file_integrity(
-    original_path,
-    restored_path
-)
+# Vérification intégrité (retourne True ou lève IntegrityError)
+try:
+    is_valid = checker.verify_file_integrity(original_path, restored_path)
+    print(f"✅ Intégrité 100% validée")  # is_valid == True
+except IntegrityError as e:
+    print(f"❌ ÉCHEC: {e}")  # Fichier inutilisable
 
 # Génération manifeste
 checker.generate_integrity_manifest(files, manifest_path)
 
 # Vérification contre manifeste
 result = checker.verify_against_manifest(manifest_path)
+print(f"Taux de réussite: {result['success_rate']:.2f}%")
 ```
 
 ## 📊 Métriques de Succès
@@ -291,11 +321,20 @@ panini_fs_validation/              # Workspace (créé automatiquement)
 
 ## 🎯 Conformité
 
-### ISO 8601
+### ISO 8601 Compliant (UTC)
 
-Tous les timestamps utilisent le format ISO 8601:
+Tous les timestamps utilisent le format ISO 8601 avec timezone UTC:
 ```python
-"2025-09-30T15:41:07"
+from datetime import datetime, timezone
+
+timestamp = datetime.now(timezone.utc).isoformat()
+# Format: "2025-09-30T15:41:07+00:00" ou "2025-09-30T15:41:07Z"
+```
+
+**Exemples de timestamps dans les logs:**
+```
+[2025-09-30T18:53:12.608667+00:00] ✅ Intégrité 100% validée: document.pdf
+[2025-09-30T18:53:12.611238+00:00] ℹ️ 🔄 Démarrage pipeline validation
 ```
 
 ### Règles Copilotage
