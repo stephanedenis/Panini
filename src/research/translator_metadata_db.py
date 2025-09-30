@@ -24,13 +24,19 @@ from datetime import datetime
 
 @dataclass
 class TranslatorProfile:
-    """Profil d'un traducteur"""
+    """Profil d'un traducteur - WHO/WHEN/WHERE"""
     translator_id: str
-    name: str
+    name: str  # WHO: Nom du traducteur (auteur de sa traduction)
     languages: Set[str]  # Langues de travail
     specializations: List[str]  # Domaines de spécialisation
+    era: Optional[str] = None  # WHEN: Époque (ex: "2015", "1950s", "contemporary")
+    cultural_context: Optional[str] = None  # WHERE: Contexte culturel (ex: "France, urbain")
+    geographical_location: Optional[str] = None  # WHERE: Localisation géographique
+    birth_year: Optional[int] = None  # Année de naissance
     works_count: int = 0
-    style_markers: Dict[str, float] = field(default_factory=dict)
+    style_markers: Dict[str, float] = field(default_factory=dict)  # Patterns stylistiques
+    cultural_biases: Dict[str, str] = field(default_factory=dict)  # Biais culturels
+    temporal_biases: Dict[str, str] = field(default_factory=dict)  # Biais temporels
     bias_indicators: List[str] = field(default_factory=list)
     metadata: Dict = field(default_factory=dict)
 
@@ -100,14 +106,21 @@ class TranslatorMetadataDB:
         with sqlite3.connect(self.db_path) as conn:
             cursor = conn.cursor()
             
-            # Table des traducteurs
+            # Table des traducteurs - WHO/WHEN/WHERE
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS translators (
                     translator_id TEXT PRIMARY KEY,
                     name TEXT NOT NULL,
                     languages TEXT,
                     specializations TEXT,
+                    era TEXT,
+                    cultural_context TEXT,
+                    geographical_location TEXT,
+                    birth_year INTEGER,
                     works_count INTEGER DEFAULT 0,
+                    style_markers TEXT,
+                    cultural_biases TEXT,
+                    temporal_biases TEXT,
                     metadata TEXT,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -184,15 +197,29 @@ class TranslatorMetadataDB:
     def add_translator(self, translator_id: str, name: str,
                       languages: List[str],
                       specializations: Optional[List[str]] = None,
+                      era: Optional[str] = None,
+                      cultural_context: Optional[str] = None,
+                      geographical_location: Optional[str] = None,
+                      birth_year: Optional[int] = None,
+                      style_markers: Optional[Dict[str, float]] = None,
+                      cultural_biases: Optional[Dict[str, str]] = None,
+                      temporal_biases: Optional[Dict[str, str]] = None,
                       metadata: Optional[Dict] = None) -> TranslatorProfile:
         """
-        Ajoute un traducteur à la base
+        Ajoute un traducteur à la base - WHO/WHEN/WHERE
         
         Args:
             translator_id: ID unique du traducteur
-            name: Nom du traducteur
+            name: WHO - Nom du traducteur (auteur de sa traduction)
             languages: Liste des langues de travail
             specializations: Domaines de spécialisation
+            era: WHEN - Époque (ex: "2015", "1950s", "contemporary")
+            cultural_context: WHERE - Contexte culturel (ex: "France, urbain")
+            geographical_location: WHERE - Localisation géographique
+            birth_year: Année de naissance
+            style_markers: Patterns stylistiques (ex: {'subordinations_complexes': 0.78})
+            cultural_biases: Biais culturels (description milieu/vécu)
+            temporal_biases: Biais temporels (contexte époque)
             metadata: Métadonnées additionnelles
             
         Returns:
@@ -203,6 +230,13 @@ class TranslatorMetadataDB:
             name=name,
             languages=set(languages),
             specializations=specializations or [],
+            era=era,
+            cultural_context=cultural_context,
+            geographical_location=geographical_location,
+            birth_year=birth_year,
+            style_markers=style_markers or {},
+            cultural_biases=cultural_biases or {},
+            temporal_biases=temporal_biases or {},
             metadata=metadata or {}
         )
         
@@ -210,13 +244,22 @@ class TranslatorMetadataDB:
             cursor = conn.cursor()
             cursor.execute("""
                 INSERT OR REPLACE INTO translators 
-                (translator_id, name, languages, specializations, metadata)
-                VALUES (?, ?, ?, ?, ?)
+                (translator_id, name, languages, specializations, era, cultural_context,
+                 geographical_location, birth_year, style_markers, cultural_biases,
+                 temporal_biases, metadata)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 translator_id,
                 name,
                 json.dumps(list(languages)),
                 json.dumps(specializations or []),
+                era,
+                cultural_context,
+                geographical_location,
+                birth_year,
+                json.dumps(style_markers or {}),
+                json.dumps(cultural_biases or {}),
+                json.dumps(temporal_biases or {}),
                 json.dumps(metadata or {})
             ))
             conn.commit()
@@ -225,7 +268,8 @@ class TranslatorMetadataDB:
         self.stats['total_translators'] += 1
         self.stats['languages_covered'].update(languages)
         
-        self.log(f"👤 Added translator: {name} ({len(languages)} languages)")
+        context_info = f" ({era or 'unknown era'}, {cultural_context or 'unknown context'})"
+        self.log(f"👤 Added translator: {name}{context_info} ({len(languages)} languages)")
         
         return profile
     
@@ -409,7 +453,14 @@ class TranslatorMetadataDB:
                     name=row['name'],
                     languages=set(json.loads(row['languages'])),
                     specializations=json.loads(row['specializations']),
+                    era=row.get('era'),
+                    cultural_context=row.get('cultural_context'),
+                    geographical_location=row.get('geographical_location'),
+                    birth_year=row.get('birth_year'),
                     works_count=row['works_count'],
+                    style_markers=json.loads(row['style_markers']) if row.get('style_markers') else {},
+                    cultural_biases=json.loads(row['cultural_biases']) if row.get('cultural_biases') else {},
+                    temporal_biases=json.loads(row['temporal_biases']) if row.get('temporal_biases') else {},
                     metadata=json.loads(row['metadata'])
                 )
                 self.translators_cache[translator_id] = profile
@@ -527,6 +578,157 @@ class TranslatorMetadataDB:
                 )
         
         return bias_report
+    
+    def get_translator_context_report(self, translator_id: str) -> Dict:
+        """
+        Génère rapport contextuel WHO/WHEN/WHERE pour traducteur.
+        
+        Focus: QUI traduit, QUAND, OÙ, avec quels BIAIS.
+        Traducteur = auteur de sa traduction avec interprétation propre.
+        
+        Args:
+            translator_id: ID du traducteur
+            
+        Returns:
+            Rapport contextuel complet
+        """
+        profile = self.get_translator_profile(translator_id)
+        if not profile:
+            return {'error': f'Translator {translator_id} not found'}
+        
+        works = self.get_translator_works(translator_id)
+        patterns = self.get_translator_style_patterns(translator_id)
+        
+        # Construire rapport WHO/WHEN/WHERE
+        report = {
+            'WHO': {
+                'name': profile.name,
+                'translator_id': translator_id,
+                'role': 'Auteur de sa traduction avec interprétation propre'
+            },
+            'WHEN': {
+                'era': profile.era or 'unknown',
+                'birth_year': profile.birth_year,
+                'active_years': self._get_active_years(works),
+                'temporal_context': 'Contemporary' if not profile.era or 'contemporary' in profile.era.lower() else profile.era
+            },
+            'WHERE': {
+                'cultural_context': profile.cultural_context or 'unknown',
+                'geographical_location': profile.geographical_location or 'unknown',
+                'cultural_influence': self._analyze_cultural_influence(profile)
+            },
+            'BIASES': {
+                'cultural': profile.cultural_biases,
+                'temporal': profile.temporal_biases,
+                'detected_indicators': self._detect_bias_patterns(works, patterns)
+            },
+            'STYLE': {
+                'markers': profile.style_markers,
+                'patterns': self._summarize_style_patterns(patterns),
+                'signature': self._generate_style_signature(profile, patterns)
+            },
+            'CORPUS': {
+                'total_works': len(works),
+                'languages': list(profile.languages),
+                'specializations': profile.specializations,
+                'domains': self._get_work_domains(works)
+            },
+            'METADATA': {
+                'works_count': profile.works_count,
+                'style_patterns_count': len(patterns),
+                'languages_covered': len(profile.languages)
+            }
+        }
+        
+        return report
+    
+    def _get_active_years(self, works: List[TranslationWork]) -> Dict:
+        """Détermine les années d'activité du traducteur"""
+        years = [w.year for w in works if w.year]
+        if not years:
+            return {'first': None, 'last': None, 'span': 0}
+        
+        return {
+            'first': min(years),
+            'last': max(years),
+            'span': max(years) - min(years) if len(years) > 1 else 0
+        }
+    
+    def _analyze_cultural_influence(self, profile: TranslatorProfile) -> str:
+        """Analyse l'influence culturelle basée sur le contexte"""
+        if not profile.cultural_context:
+            return "unknown"
+        
+        context = profile.cultural_context.lower()
+        influences = []
+        
+        if 'urban' in context or 'urbain' in context:
+            influences.append('urban_perspective')
+        if 'rural' in context or 'rural' in context:
+            influences.append('rural_perspective')
+        if any(country in context for country in ['france', 'uk', 'usa', 'germany']):
+            influences.append('western_cultural_lens')
+        
+        return ', '.join(influences) if influences else profile.cultural_context
+    
+    def _detect_bias_patterns(self, works: List[TranslationWork], 
+                             patterns: List[StylePattern]) -> List[str]:
+        """Détecte patterns de biais dans les traductions"""
+        bias_patterns = []
+        
+        # Analyser spécialisation langue
+        lang_pairs = Counter()
+        for work in works:
+            lang_pairs[f"{work.source_language}→{work.target_language}"] += 1
+        
+        if lang_pairs:
+            most_common = lang_pairs.most_common(1)[0]
+            if most_common[1] / len(works) > 0.7:
+                bias_patterns.append(f"Language pair specialization: {most_common[0]} ({most_common[1]/len(works):.0%})")
+        
+        # Analyser patterns stylistiques récurrents
+        if patterns:
+            high_freq_patterns = [p for p in patterns if p.frequency > 0.7]
+            if high_freq_patterns:
+                bias_patterns.append(f"Strong stylistic signature: {len(high_freq_patterns)} recurring patterns")
+        
+        return bias_patterns
+    
+    def _summarize_style_patterns(self, patterns: List[StylePattern]) -> Dict:
+        """Résume les patterns stylistiques"""
+        by_type = defaultdict(list)
+        for pattern in patterns:
+            by_type[pattern.pattern_type].append({
+                'description': pattern.description,
+                'frequency': pattern.frequency
+            })
+        
+        return {ptype: plist for ptype, plist in by_type.items()}
+    
+    def _generate_style_signature(self, profile: TranslatorProfile, 
+                                  patterns: List[StylePattern]) -> str:
+        """Génère une signature stylistique du traducteur"""
+        signature_elements = []
+        
+        # Style markers
+        if profile.style_markers:
+            top_markers = sorted(profile.style_markers.items(), 
+                               key=lambda x: x[1], reverse=True)[:3]
+            for marker, value in top_markers:
+                signature_elements.append(f"{marker}={value:.2f}")
+        
+        # Pattern types dominants
+        if patterns:
+            pattern_types = Counter(p.pattern_type for p in patterns)
+            dominant = pattern_types.most_common(1)[0]
+            signature_elements.append(f"dominant_{dominant[0]}")
+        
+        return "; ".join(signature_elements) if signature_elements else "neutral"
+    
+    def _get_work_domains(self, works: List[TranslationWork]) -> Dict:
+        """Liste les domaines de travaux"""
+        domains = Counter(w.domain for w in works if w.domain)
+        return dict(domains.most_common())
     
     def get_semantic_equivalents(self, translator_id: str,
                                 language_pair: Optional[Tuple[str, str]] = None) -> List[Dict]:

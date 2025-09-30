@@ -102,6 +102,18 @@ def run_complete_research_pipeline():
         validation_results[atom_id] = metrics
         print(f"  {atom_id}: ratio={metrics.ratio:.2%}, fidelity={metrics.fidelity_score:.2%}")
     
+    # NEW: Validate by symmetry (composition/decomposition)
+    print("\n🔄 Validating atoms through symmetry (compose ↔ decompose)...")
+    for atom_id in ['EXIST', 'RELATE', 'ACT']:
+        symmetry_score = discovery.validate_atom_symmetry(atom_id, sample_corpus, test_iterations=3)
+        print(f"  {atom_id}: symmetry={symmetry_score:.2%}")
+    
+    # Score universal candidates
+    print("\n⭐ Scoring universal candidates (symmetry + recurrence + generality)...")
+    for atom_id in ['EXIST', 'RELATE', 'ACT']:
+        universal_score = discovery.score_universal_candidate(atom_id)
+        print(f"  {atom_id}: universal_score={universal_score:.2%}")
+    
     discovery_stats = discovery.get_statistics()
     print(f"\n✅ Discovery complete:")
     print(f"  - Dhātu tested: {discovery_stats['dhatu_tested']}")
@@ -164,38 +176,73 @@ def run_complete_research_pipeline():
     
     translator_db = TranslatorMetadataDB()
     
-    # Add translators
-    print("\n👥 Adding translators to database...")
+    # Add translators with WHO/WHEN/WHERE information
+    print("\n👥 Adding translators to database (WHO/WHEN/WHERE)...")
     translators = [
         {
             'id': 'translator_001',
             'name': 'Marie Dupont',
             'languages': ['fr', 'en'],
-            'specializations': ['children_literature', 'education']
+            'specializations': ['children_literature', 'education'],
+            'era': '2015',
+            'cultural_context': 'France, urbain, milieu éducatif',
+            'geographical_location': 'Paris, France',
+            'birth_year': 1975,
+            'style_markers': {'subordinations_complexes': 0.78, 'formalisation': 0.85},
+            'cultural_biases': {'milieu': 'éducation publique', 'vécu': 'urbain moderne'},
+            'temporal_biases': {'époque': 'post-2000', 'contexte': 'numérique'}
         },
         {
             'id': 'translator_002',
             'name': 'John Smith',
             'languages': ['en', 'fr'],
-            'specializations': ['children_literature']
+            'specializations': ['children_literature'],
+            'era': '1990s',
+            'cultural_context': 'UK, rural background',
+            'geographical_location': 'Yorkshire, UK',
+            'birth_year': 1960,
+            'style_markers': {'simple_structures': 0.92, 'direct_language': 0.88},
+            'cultural_biases': {'milieu': 'rural traditionnel', 'vécu': 'pré-numérique'},
+            'temporal_biases': {'époque': '1980-2000', 'contexte': 'analogique'}
         },
         {
             'id': 'translator_003',
             'name': 'Carlos García',
             'languages': ['es', 'en'],
-            'specializations': ['children_literature', 'poetry']
+            'specializations': ['children_literature', 'poetry'],
+            'era': 'contemporary',
+            'cultural_context': 'Spain, urban, literary circles',
+            'geographical_location': 'Barcelona, Spain',
+            'birth_year': 1985,
+            'style_markers': {'poetic_devices': 0.75, 'metaphorical': 0.70},
+            'cultural_biases': {'milieu': 'intellectuel urbain', 'vécu': 'multiculturel'},
+            'temporal_biases': {'époque': 'contemporary', 'contexte': 'digital native'}
         },
         {
             'id': 'translator_004',
             'name': 'Hans Müller',
             'languages': ['de', 'en'],
-            'specializations': ['children_literature']
+            'specializations': ['children_literature'],
+            'era': '1980s',
+            'cultural_context': 'Germany, academic background',
+            'geographical_location': 'Munich, Germany',
+            'birth_year': 1955,
+            'style_markers': {'precision': 0.90, 'compound_words': 0.82},
+            'cultural_biases': {'milieu': 'académique', 'vécu': 'post-guerre'},
+            'temporal_biases': {'époque': '1970-1990', 'contexte': 'réunification'}
         },
         {
             'id': 'translator_005',
             'name': 'Giovanni Rossi',
             'languages': ['it', 'en'],
-            'specializations': ['children_literature']
+            'specializations': ['children_literature'],
+            'era': '2000s',
+            'cultural_context': 'Italy, theatrical background',
+            'geographical_location': 'Rome, Italy',
+            'birth_year': 1980,
+            'style_markers': {'dramatic_emphasis': 0.80, 'expressive': 0.85},
+            'cultural_biases': {'milieu': 'théâtral/artistique', 'vécu': 'expression orale'},
+            'temporal_biases': {'époque': 'millénaire', 'contexte': 'transition numérique'}
         }
     ]
     
@@ -204,7 +251,14 @@ def run_complete_research_pipeline():
             translator_id=t['id'],
             name=t['name'],
             languages=t['languages'],
-            specializations=t['specializations']
+            specializations=t['specializations'],
+            era=t.get('era'),
+            cultural_context=t.get('cultural_context'),
+            geographical_location=t.get('geographical_location'),
+            birth_year=t.get('birth_year'),
+            style_markers=t.get('style_markers'),
+            cultural_biases=t.get('cultural_biases'),
+            temporal_biases=t.get('temporal_biases')
         )
     
     # Add translation works
@@ -220,12 +274,19 @@ def run_complete_research_pipeline():
             quality_score=0.90
         )
     
-    # Analyze translator bias
-    print("\n📊 Analyzing translator bias...")
+    # Analyze translator WHO/WHEN/WHERE context
+    print("\n📊 Analyzing translator context (WHO/WHEN/WHERE)...")
+    context_report = translator_db.get_translator_context_report('translator_001')
+    print(f"  WHO: {context_report['WHO']['name']} - {context_report['WHO']['role']}")
+    print(f"  WHEN: {context_report['WHEN']['era']} (birth: {context_report['WHEN']['birth_year']})")
+    print(f"  WHERE: {context_report['WHERE']['cultural_context']}")
+    print(f"  BIASES: {len(context_report['BIASES']['detected_indicators'])} indicators detected")
+    print(f"  STYLE: {context_report['STYLE']['signature']}")
+    
     bias_report = translator_db.analyze_translator_bias('translator_001')
-    print(f"  Translator: translator_001")
-    print(f"  Works: {bias_report['total_works']}")
-    print(f"  Bias indicators: {len(bias_report['bias_indicators'])}")
+    print(f"\n  Traditional bias analysis:")
+    print(f"  - Works: {bias_report['total_works']}")
+    print(f"  - Bias indicators: {len(bias_report['bias_indicators'])}")
     
     db_stats = translator_db.get_statistics()
     print(f"\n✅ Database complete:")

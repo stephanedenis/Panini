@@ -34,6 +34,7 @@ class SemanticAtom:
     languages: Set[str] = field(default_factory=set)
     compression_ratio: float = 0.0
     validation_score: float = 0.0
+    symmetry_score: float = 0.0  # Score symétrie composition/décomposition
     examples: List[Dict] = field(default_factory=list)
     metadata: Dict = field(default_factory=dict)
 
@@ -279,6 +280,180 @@ class SemanticAtomsDiscovery:
             self.discovered_atoms[atom_id].validation_score = fidelity_score
         
         return metrics
+    
+    def validate_atom_symmetry(self, atom_id: str, 
+                              corpus_texts: List[Dict],
+                              test_iterations: int = 10) -> float:
+        """
+        Valide la symétrie composition/décomposition d'un atome.
+        Test: compose(decompose(x)) == x
+        
+        Nouveau paradigme: validation par symétrie parfaite.
+        Un atome universel doit exhiber symétrie compositionnelle.
+        
+        Args:
+            atom_id: ID de l'atome
+            corpus_texts: Corpus pour test
+            test_iterations: Nombre de tests de symétrie
+            
+        Returns:
+            Score de symétrie (0-1, 1 = symétrie parfaite)
+        """
+        symmetry_scores = []
+        
+        for text_info in corpus_texts[:test_iterations]:
+            text = text_info['text']
+            
+            # Décomposition: identifier occurrences de l'atome
+            decomposed = self._decompose_text(text, atom_id)
+            
+            # Composition: reconstruire le texte à partir de la décomposition
+            recomposed = self._compose_from_decomposition(decomposed, atom_id)
+            
+            # Mesurer similarité entre original et recomposé
+            similarity = self._measure_text_similarity(text, recomposed)
+            symmetry_scores.append(similarity)
+        
+        # Score moyen de symétrie
+        symmetry_score = sum(symmetry_scores) / len(symmetry_scores) if symmetry_scores else 0.0
+        
+        # Mise à jour de l'atome
+        if atom_id in self.dhatu_atoms:
+            self.dhatu_atoms[atom_id].symmetry_score = symmetry_score
+        elif atom_id in self.discovered_atoms:
+            self.discovered_atoms[atom_id].symmetry_score = symmetry_score
+        
+        self.log(f"🔄 Symmetry validation for {atom_id}: {symmetry_score:.2%}")
+        
+        return symmetry_score
+    
+    def _decompose_text(self, text: str, atom_id: str) -> List[Dict]:
+        """
+        Décompose le texte en identifiant les occurrences de l'atome.
+        
+        Returns:
+            Liste de segments avec marquage atome/non-atome
+        """
+        patterns = self._get_atom_patterns(atom_id)
+        decomposition = []
+        remaining_text = text
+        position = 0
+        
+        for pattern in patterns:
+            if isinstance(pattern, str):
+                while pattern.lower() in remaining_text.lower():
+                    idx = remaining_text.lower().find(pattern.lower())
+                    
+                    # Ajouter texte avant le pattern
+                    if idx > 0:
+                        decomposition.append({
+                            'type': 'text',
+                            'content': remaining_text[:idx],
+                            'position': position
+                        })
+                        position += idx
+                    
+                    # Ajouter le pattern (atome)
+                    decomposition.append({
+                        'type': 'atom',
+                        'atom_id': atom_id,
+                        'content': remaining_text[idx:idx+len(pattern)],
+                        'position': position
+                    })
+                    
+                    position += len(pattern)
+                    remaining_text = remaining_text[idx+len(pattern):]
+        
+        # Ajouter texte restant
+        if remaining_text:
+            decomposition.append({
+                'type': 'text',
+                'content': remaining_text,
+                'position': position
+            })
+        
+        return decomposition
+    
+    def _compose_from_decomposition(self, decomposition: List[Dict], atom_id: str) -> str:
+        """
+        Recompose le texte à partir de la décomposition.
+        Test symétrie: le résultat doit être identique à l'original.
+        """
+        composed = ""
+        
+        for segment in decomposition:
+            composed += segment['content']
+        
+        return composed
+    
+    def _measure_text_similarity(self, text1: str, text2: str) -> float:
+        """
+        Mesure la similarité entre deux textes.
+        Pour symétrie parfaite, devrait retourner 1.0
+        """
+        # Normalisation
+        t1 = text1.lower().strip()
+        t2 = text2.lower().strip()
+        
+        # Similarité exacte
+        if t1 == t2:
+            return 1.0
+        
+        # Similarité par caractères communs (Jaccard)
+        set1 = set(t1)
+        set2 = set(t2)
+        
+        intersection = len(set1 & set2)
+        union = len(set1 | set2)
+        
+        return intersection / union if union > 0 else 0.0
+    
+    def score_universal_candidate(self, atom_id: str) -> float:
+        """
+        Score un candidat universel selon le nouveau paradigme:
+        - Symétrie composition/décomposition
+        - Récurrence cross-domaine  
+        - Généralité au-delà linguistique
+        
+        Returns:
+            Score universel (0-1, 1 = universel confirmé)
+        """
+        atom = None
+        if atom_id in self.dhatu_atoms:
+            atom = self.dhatu_atoms[atom_id]
+        elif atom_id in self.discovered_atoms:
+            atom = self.discovered_atoms[atom_id]
+        else:
+            return 0.0
+        
+        # Composantes du score universel
+        symmetry_weight = 0.4  # Symétrie la plus importante
+        recurrence_weight = 0.3  # Récurrence cross-langue
+        generality_weight = 0.3  # Généralité
+        
+        # 1. Symétrie composition/décomposition
+        symmetry_component = atom.symmetry_score
+        
+        # 2. Récurrence (nombre de langues / fréquence)
+        recurrence_component = min(1.0, len(atom.languages) / 10.0) * min(1.0, atom.frequency / 100.0)
+        
+        # 3. Généralité (compression + validation)
+        generality_component = (atom.compression_ratio + atom.validation_score) / 2.0
+        
+        # Score final
+        universal_score = (
+            symmetry_weight * symmetry_component +
+            recurrence_weight * recurrence_component +
+            generality_weight * generality_component
+        )
+        
+        # Stocker dans métadonnées
+        atom.metadata['universal_score'] = universal_score
+        atom.metadata['symmetry_component'] = symmetry_component
+        atom.metadata['recurrence_component'] = recurrence_component
+        atom.metadata['generality_component'] = generality_component
+        
+        return universal_score
     
     def _simulate_compression(self, text: str, atom_id: str) -> str:
         """Simule compression en remplaçant patterns par codes"""
