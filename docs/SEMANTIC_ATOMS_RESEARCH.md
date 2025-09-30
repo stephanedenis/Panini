@@ -6,6 +6,23 @@ This package provides four core modules for researching universal semantic atoms
 
 **Key Principle**: Dhātu as initial hypothesis, NOT final answer. Extension and modification based on empirical validation.
 
+## ⚠️ Critical Updates (CLARIFICATIONS_MISSION_CRITIQUE.md)
+
+### 🧬 NEW PARADIGM: Symmetry-Based Validation
+**FOCUS**: Pure semantic representation through perfect symmetries
+- Model discovers perfect symmetries (composition ↔ decomposition)
+- Validation: `compose(decompose(x)) == x`
+- NOT limited to language or binary data
+- Universal information theory approach
+
+### 👥 NEW PARADIGM: WHO/WHEN/WHERE Translator Metadata
+**FOCUS**: Traducteur = auteur with own interpretation (NOT just counter)
+- WHO: Translator identity (author of translation)
+- WHEN: Era, temporal context
+- WHERE: Cultural context, geographical location
+- BIASES: Cultural and temporal biases
+- STYLE: Patterns and signature
+
 ## Modules
 
 ### 1. semantic_atoms_discovery.py
@@ -17,6 +34,8 @@ This package provides four core modules for researching universal semantic atoms
 - Analyze texts for atom detection across languages
 - Discover new atoms through pattern frequency
 - Validate atoms through compression metrics
+- **NEW: Validate atoms through symmetry (compose ↔ decompose)**
+- **NEW: Score universal candidates (symmetry + recurrence + generality)**
 - Track atom evolution and statistics
 
 **Example Usage**:
@@ -45,6 +64,20 @@ metrics = discovery.validate_atom_by_compression(
     corpus_texts=[...]
 )
 
+# NEW: Validate by symmetry (compose ↔ decompose)
+symmetry_score = discovery.validate_atom_symmetry(
+    'EXIST',
+    corpus_texts=[...],
+    test_iterations=10
+)
+
+# NEW: Score universal candidate
+universal_score = discovery.score_universal_candidate('EXIST')
+# Returns score based on:
+#   - Symmetry (40%): compose(decompose(x)) == x
+#   - Recurrence (30%): cross-language frequency
+#   - Generality (30%): compression + validation
+
 # Get statistics
 stats = discovery.get_statistics()
 ```
@@ -53,6 +86,7 @@ stats = discovery.get_statistics()
 - Base: 50+ dhātu tested empirically
 - Extension: 20+ new atoms discovered
 - Validation: Compression ratio > 0.2, fidelity > 0.75
+- **NEW: Symmetry score > 0.9 for universal atoms**
 
 ---
 
@@ -111,8 +145,15 @@ report = validator.generate_validation_report()
 
 **Purpose**: Build and maintain database of translator metadata for bias analysis.
 
+**Key Focus**: WHO/WHEN/WHERE - NOT just counting translators!
+
 **Features**:
 - SQLite database for translator profiles
+- **NEW: WHO - Translator as author of their translation**
+- **NEW: WHEN - Era, temporal context, active years**
+- **NEW: WHERE - Cultural context, geographical location**
+- **NEW: BIASES - Cultural and temporal biases tracking**
+- **NEW: STYLE - Pattern detection and translator signature**
 - Track translation works and language pairs
 - Identify style patterns by translator
 - Analyze translator bias and specialization
@@ -124,12 +165,19 @@ from src.research.translator_metadata_db import TranslatorMetadataDB
 
 db = TranslatorMetadataDB()
 
-# Add translator
+# Add translator with WHO/WHEN/WHERE
 db.add_translator(
     translator_id='translator_001',
-    name='Marie Dupont',
+    name='Marie Dupont',  # WHO
     languages=['fr', 'en', 'de'],
-    specializations=['literature', 'philosophy']
+    specializations=['literature', 'philosophy'],
+    era='2015',  # WHEN
+    birth_year=1975,  # WHEN
+    cultural_context='France, urbain, milieu éducatif',  # WHERE
+    geographical_location='Paris, France',  # WHERE
+    style_markers={'subordinations_complexes': 0.78, 'formalisation': 0.85'},  # STYLE
+    cultural_biases={'milieu': 'éducation publique', 'vécu': 'urbain moderne'},  # BIASES
+    temporal_biases={'époque': 'post-2000', 'contexte': 'numérique'}  # BIASES
 )
 
 # Add translation work
@@ -143,6 +191,18 @@ db.add_translation_work(
     quality_score=0.95
 )
 
+# NEW: Get complete WHO/WHEN/WHERE context
+context_report = db.get_translator_context_report('translator_001')
+# Returns:
+# {
+#   'WHO': {'name': '...', 'role': 'Auteur de sa traduction...'},
+#   'WHEN': {'era': '...', 'birth_year': ..., 'active_years': {...}},
+#   'WHERE': {'cultural_context': '...', 'geographical_location': '...'},
+#   'BIASES': {'cultural': {...}, 'temporal': {...}, 'detected_indicators': [...]},
+#   'STYLE': {'markers': {...}, 'patterns': {...}, 'signature': '...'},
+#   'CORPUS': {'total_works': ..., 'languages': [...], ...}
+# }
+
 # Analyze bias
 bias_report = db.analyze_translator_bias('translator_001')
 
@@ -153,8 +213,8 @@ equivalents = db.get_semantic_equivalents(
 )
 ```
 
-**Database Schema**:
-- `translators`: Translator profiles and metadata
+**Database Schema** (UPDATED):
+- `translators`: Profiles + WHO/WHEN/WHERE fields (era, cultural_context, geographical_location, birth_year, style_markers, cultural_biases, temporal_biases)
 - `translation_works`: Catalog of translated works
 - `style_patterns`: Identified style patterns
 - `semantic_equivalents`: Normalized term mappings
@@ -162,6 +222,8 @@ equivalents = db.get_semantic_equivalents(
 **Success Metrics**:
 - Base: 100+ translators catalogued
 - Coverage: 10+ language pairs
+- **NEW: WHO/WHEN/WHERE metadata for all major translators**
+- **NEW: Style signatures identified for 80%+ of translators**
 - Patterns: Style/bias indicators for major translators
 
 ---
