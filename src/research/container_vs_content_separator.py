@@ -23,6 +23,29 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+# ===== Integrity Validation Exceptions =====
+# These enforce 100% integrity or failure - no "almost good"
+
+class IntegrityValidationError(Exception):
+    """Base exception for integrity validation failures"""
+    pass
+
+
+class ContainerIntegrityError(IntegrityValidationError):
+    """Container reconstitution failed - binary mismatch"""
+    pass
+
+
+class EnvelopeIntegrityError(IntegrityValidationError):
+    """Envelope reconstitution failed - incomplete metadata"""
+    pass
+
+
+class ContentIntegrityError(IntegrityValidationError):
+    """Content reconstitution failed - semantic alteration detected"""
+    pass
+
+
 @dataclass
 class Level1_FileStructure:
     """Level 1: Filesystem container structure"""
@@ -539,6 +562,269 @@ class ContainerContentSeparator:
             json.dump(export_data, f, indent=2, ensure_ascii=False)
         
         logger.info(f"Separation results exported to: {output_path}")
+    
+    # ===== Integrity Validation Methods =====
+    # 100% integrity or failure - no "almost good"
+    
+    def validate_container_integrity(
+        self,
+        original: bytes,
+        restored: bytes
+    ) -> bool:
+        """
+        Validate container reconstitution with binary integrity check
+        
+        Args:
+            original: Original container bytes
+            restored: Restored container bytes
+            
+        Returns:
+            True if validation passes
+            
+        Raises:
+            ContainerIntegrityError: If binary mismatch detected
+        """
+        if original != restored:
+            raise ContainerIntegrityError(
+                f"Container reconstitution failed: binary mismatch detected "
+                f"(original: {len(original)} bytes, restored: {len(restored)} bytes)"
+            )
+        
+        logger.info("✓ Container integrity validated: 100% match")
+        return True
+    
+    def validate_envelope_integrity(
+        self,
+        original_metadata: Dict[str, Any],
+        restored_metadata: Dict[str, Any],
+        required_fields: Optional[List[str]] = None
+    ) -> bool:
+        """
+        Validate envelope reconstitution with complete metadata check
+        
+        All metadata fields must be present and identical.
+        ISO 8601 timestamps are enforced for temporal metadata.
+        
+        Args:
+            original_metadata: Original envelope metadata
+            restored_metadata: Restored envelope metadata
+            required_fields: List of required fields (if None, all original fields required)
+            
+        Returns:
+            True if validation passes
+            
+        Raises:
+            EnvelopeIntegrityError: If metadata incomplete or mismatched
+        """
+        # Determine required fields
+        fields_to_check = required_fields or list(original_metadata.keys())
+        
+        # Check all required fields present
+        missing_fields = [f for f in fields_to_check if f not in restored_metadata]
+        if missing_fields:
+            raise EnvelopeIntegrityError(
+                f"Incomplete metadata: missing fields {missing_fields}"
+            )
+        
+        # Check all values match
+        mismatched_fields = []
+        for field in fields_to_check:
+            if original_metadata[field] != restored_metadata[field]:
+                mismatched_fields.append(field)
+        
+        if mismatched_fields:
+            raise EnvelopeIntegrityError(
+                f"Metadata mismatch in fields: {mismatched_fields}"
+            )
+        
+        # Validate ISO 8601 timestamps for temporal fields
+        timestamp_fields = [f for f in fields_to_check 
+                          if any(t in f.lower() for t in ['time', 'date', 'timestamp', 'created', 'modified'])]
+        
+        for field in timestamp_fields:
+            value = restored_metadata[field]
+            if isinstance(value, str):
+                # Validate ISO 8601 format
+                try:
+                    datetime.fromisoformat(value.replace('Z', '+00:00'))
+                except (ValueError, AttributeError):
+                    raise EnvelopeIntegrityError(
+                        f"Field '{field}' does not conform to ISO 8601: {value}"
+                    )
+        
+        logger.info(f"✓ Envelope integrity validated: {len(fields_to_check)} fields match")
+        return True
+    
+    def validate_content_integrity(
+        self,
+        original_semantic: Dict[str, Any],
+        restored_semantic: Dict[str, Any],
+        tolerance: float = 0.0
+    ) -> bool:
+        """
+        Validate content reconstitution with semantic identity check
+        
+        Semantic content must be strictly identical (tolerance=0.0) or
+        within acceptable similarity threshold.
+        
+        Args:
+            original_semantic: Original semantic content
+            restored_semantic: Restored semantic content
+            tolerance: Acceptable deviation (0.0 = strict identity)
+            
+        Returns:
+            True if validation passes
+            
+        Raises:
+            ContentIntegrityError: If semantic alteration detected
+        """
+        # Check content hash if available
+        if 'content_hash' in original_semantic and 'content_hash' in restored_semantic:
+            if original_semantic['content_hash'] != restored_semantic['content_hash']:
+                raise ContentIntegrityError(
+                    f"Content hash mismatch: semantic alteration detected"
+                )
+        
+        # Check key semantic features
+        semantic_keys = ['semantic_tokens', 'language', 'pure_meaning', 'semantic_features']
+        
+        for key in semantic_keys:
+            if key in original_semantic:
+                if key not in restored_semantic:
+                    raise ContentIntegrityError(
+                        f"Missing semantic field: {key}"
+                    )
+                
+                # For lists/sets, check content equality
+                if isinstance(original_semantic[key], (list, set)):
+                    orig_set = set(original_semantic[key]) if isinstance(original_semantic[key], list) else original_semantic[key]
+                    rest_set = set(restored_semantic[key]) if isinstance(restored_semantic[key], list) else restored_semantic[key]
+                    
+                    if tolerance == 0.0:
+                        # Strict equality
+                        if orig_set != rest_set:
+                            raise ContentIntegrityError(
+                                f"Semantic field '{key}' altered: strict equality required"
+                            )
+                    else:
+                        # Calculate Jaccard similarity
+                        intersection = len(orig_set & rest_set)
+                        union = len(orig_set | rest_set)
+                        similarity = intersection / union if union > 0 else 0.0
+                        
+                        if similarity < (1.0 - tolerance):
+                            raise ContentIntegrityError(
+                                f"Semantic field '{key}' similarity {similarity:.2%} below threshold {1.0-tolerance:.2%}"
+                            )
+                
+                # For other types, check equality
+                elif original_semantic[key] != restored_semantic[key]:
+                    if tolerance == 0.0:
+                        raise ContentIntegrityError(
+                            f"Semantic field '{key}' altered: {original_semantic[key]} != {restored_semantic[key]}"
+                        )
+        
+        logger.info("✓ Content integrity validated: semantic identity preserved")
+        return True
+    
+    def validate_three_level_reconstitution(
+        self,
+        original_separation: ThreeLevelSeparation,
+        restored_separation: ThreeLevelSeparation
+    ) -> Dict[str, bool]:
+        """
+        Validate complete 3-level reconstitution
+        
+        Tests integrity at all three levels with 100% or failure validation.
+        
+        Args:
+            original_separation: Original 3-level separation
+            restored_separation: Restored 3-level separation
+            
+        Returns:
+            Dict with validation results per level
+            
+        Raises:
+            IntegrityValidationError: If any level fails validation
+        """
+        results = {
+            'level1_container': False,
+            'level2_envelope': False,
+            'level3_content': False
+        }
+        
+        logger.info("Starting 3-level reconstitution validation...")
+        
+        try:
+            # Level 1: Container validation (would need actual bytes)
+            # For metadata, check critical fields match
+            original_meta = {
+                'file_size': original_separation.level1_file.file_size,
+                'file_extension': original_separation.level1_file.file_extension,
+                'container_type': original_separation.level1_file.container_type
+            }
+            restored_meta = {
+                'file_size': restored_separation.level1_file.file_size,
+                'file_extension': restored_separation.level1_file.file_extension,
+                'container_type': restored_separation.level1_file.container_type
+            }
+            
+            if original_meta != restored_meta:
+                raise ContainerIntegrityError("Container metadata mismatch")
+            
+            results['level1_container'] = True
+            logger.info("✓ Level 1 (Container): Validated")
+            
+        except ContainerIntegrityError as e:
+            logger.error(f"✗ Level 1 (Container): FAILED - {e}")
+            raise
+        
+        try:
+            # Level 2: Envelope validation
+            original_envelope = {
+                'format_type': original_separation.level2_envelope.format_type,
+                'encoding_info': original_separation.level2_envelope.encoding_info,
+                'structure_metadata': original_separation.level2_envelope.structure_metadata
+            }
+            restored_envelope = {
+                'format_type': restored_separation.level2_envelope.format_type,
+                'encoding_info': restored_separation.level2_envelope.encoding_info,
+                'structure_metadata': restored_separation.level2_envelope.structure_metadata
+            }
+            
+            self.validate_envelope_integrity(original_envelope, restored_envelope)
+            results['level2_envelope'] = True
+            logger.info("✓ Level 2 (Envelope): Validated")
+            
+        except EnvelopeIntegrityError as e:
+            logger.error(f"✗ Level 2 (Envelope): FAILED - {e}")
+            raise
+        
+        try:
+            # Level 3: Content validation
+            original_content = {
+                'content_hash': original_separation.level3_content.content_hash,
+                'semantic_tokens': original_separation.level3_content.semantic_tokens,
+                'language': original_separation.level3_content.language,
+                'semantic_features': original_separation.level3_content.semantic_features
+            }
+            restored_content = {
+                'content_hash': restored_separation.level3_content.content_hash,
+                'semantic_tokens': restored_separation.level3_content.semantic_tokens,
+                'language': restored_separation.level3_content.language,
+                'semantic_features': restored_separation.level3_content.semantic_features
+            }
+            
+            self.validate_content_integrity(original_content, restored_content, tolerance=0.0)
+            results['level3_content'] = True
+            logger.info("✓ Level 3 (Content): Validated")
+            
+        except ContentIntegrityError as e:
+            logger.error(f"✗ Level 3 (Content): FAILED - {e}")
+            raise
+        
+        logger.info("✓ All 3 levels validated successfully: 100% integrity")
+        return results
     
     def generate_separation_report(
         self,

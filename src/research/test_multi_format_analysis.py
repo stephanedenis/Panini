@@ -13,7 +13,16 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from src.research.multi_format_analyzer import MultiFormatAnalyzer, ContentItem, FormatMetadata
 from src.research.content_invariant_extractor import ContentInvariantExtractor, TextInvariant
-from src.research.container_vs_content_separator import ContainerContentSeparator
+from src.research.container_vs_content_separator import (
+    ContainerContentSeparator,
+    ContainerIntegrityError,
+    EnvelopeIntegrityError,
+    ContentIntegrityError,
+    Level1_FileStructure,
+    Level2_PresentationEnvelope,
+    Level3_SemanticContent,
+    ThreeLevelSeparation
+)
 
 
 class MultiFormatAnalysisTests:
@@ -272,6 +281,198 @@ class MultiFormatAnalysisTests:
         separation = separator.separate_three_levels(test_file, "test_001", text)
         assert separation is not None, "Should complete separation"
     
+    # ===== Integrity Validation Tests =====
+    
+    def test_container_integrity_validation(self):
+        """Test container integrity validation"""
+        from src.research.container_vs_content_separator import ContainerIntegrityError
+        
+        separator = ContainerContentSeparator()
+        
+        # Test successful validation
+        original = b"test content"
+        restored = b"test content"
+        assert separator.validate_container_integrity(original, restored), "Should validate matching containers"
+        
+        # Test failure validation
+        try:
+            restored_bad = b"different content"
+            separator.validate_container_integrity(original, restored_bad)
+            assert False, "Should raise ContainerIntegrityError"
+        except ContainerIntegrityError as e:
+            assert "binary mismatch" in str(e), "Should report binary mismatch"
+    
+    def test_envelope_integrity_validation(self):
+        """Test envelope integrity validation with ISO 8601 timestamps"""
+        from src.research.container_vs_content_separator import EnvelopeIntegrityError
+        
+        separator = ContainerContentSeparator()
+        
+        # Test successful validation with ISO 8601 timestamps
+        original_meta = {
+            'format': 'pdf',
+            'created': '2025-09-30T14:23:45Z',
+            'modified': '2025-09-30T15:12:03Z',
+            'version': '1.4'
+        }
+        restored_meta = {
+            'format': 'pdf',
+            'created': '2025-09-30T14:23:45Z',
+            'modified': '2025-09-30T15:12:03Z',
+            'version': '1.4'
+        }
+        
+        assert separator.validate_envelope_integrity(original_meta, restored_meta), "Should validate matching metadata"
+        
+        # Test missing field
+        try:
+            incomplete_meta = {
+                'format': 'pdf',
+                'created': '2025-09-30T14:23:45Z'
+                # missing 'modified' and 'version'
+            }
+            separator.validate_envelope_integrity(original_meta, incomplete_meta)
+            assert False, "Should raise EnvelopeIntegrityError for missing fields"
+        except EnvelopeIntegrityError as e:
+            assert "missing fields" in str(e).lower(), "Should report missing fields"
+        
+        # Test non-ISO 8601 timestamp (but with matching values to get to ISO check)
+        try:
+            # First it will fail on value mismatch before ISO check
+            bad_timestamp_meta = {
+                'format': 'pdf',
+                'created': '09/30/2025 14:23:45',  # Not ISO 8601
+                'modified': '2025-09-30T15:12:03Z',
+                'version': '1.4'
+            }
+            separator.validate_envelope_integrity(original_meta, bad_timestamp_meta)
+            assert False, "Should raise EnvelopeIntegrityError for mismatched timestamp"
+        except EnvelopeIntegrityError as e:
+            # Will catch mismatch first, which is correct behavior
+            assert "mismatch" in str(e).lower() or "ISO 8601" in str(e), "Should report mismatch or ISO violation"
+        
+        # Test ISO 8601 validation specifically with matching non-ISO format
+        try:
+            matching_bad_format = {
+                'format': 'pdf',
+                'created': '09/30/2025 14:23:45',  # Not ISO 8601
+                'modified': '09/30/2025 15:12:03',  # Not ISO 8601
+                'version': '1.4'
+            }
+            # Use same bad metadata for both to pass the equality check
+            separator.validate_envelope_integrity(matching_bad_format, matching_bad_format)
+            assert False, "Should raise EnvelopeIntegrityError for non-ISO timestamp format"
+        except EnvelopeIntegrityError as e:
+            assert "ISO 8601" in str(e), "Should report ISO 8601 violation"
+    
+    def test_content_integrity_validation(self):
+        """Test content semantic integrity validation"""
+        from src.research.container_vs_content_separator import ContentIntegrityError
+        
+        separator = ContainerContentSeparator()
+        
+        # Test successful validation with strict tolerance
+        original_semantic = {
+            'content_hash': 'abc123',
+            'semantic_tokens': ['test', 'content', 'validation'],
+            'language': 'en',
+            'semantic_features': {'token_count': 3}
+        }
+        restored_semantic = {
+            'content_hash': 'abc123',
+            'semantic_tokens': ['test', 'content', 'validation'],
+            'language': 'en',
+            'semantic_features': {'token_count': 3}
+        }
+        
+        assert separator.validate_content_integrity(original_semantic, restored_semantic, tolerance=0.0), \
+            "Should validate matching content"
+        
+        # Test hash mismatch
+        try:
+            altered_semantic = original_semantic.copy()
+            altered_semantic['content_hash'] = 'xyz789'
+            separator.validate_content_integrity(original_semantic, altered_semantic, tolerance=0.0)
+            assert False, "Should raise ContentIntegrityError for hash mismatch"
+        except ContentIntegrityError as e:
+            assert "hash mismatch" in str(e).lower(), "Should report hash mismatch"
+        
+        # Test semantic alteration
+        try:
+            altered_tokens = original_semantic.copy()
+            altered_tokens['semantic_tokens'] = ['different', 'tokens', 'here']
+            separator.validate_content_integrity(original_semantic, altered_tokens, tolerance=0.0)
+            assert False, "Should raise ContentIntegrityError for semantic alteration"
+        except ContentIntegrityError as e:
+            assert "altered" in str(e).lower(), "Should report semantic alteration"
+    
+    def test_three_level_reconstitution_validation(self):
+        """Test complete 3-level reconstitution validation"""
+        from src.research.container_vs_content_separator import (
+            ContainerContentSeparator,
+            Level1_FileStructure,
+            Level2_PresentationEnvelope,
+            Level3_SemanticContent,
+            ThreeLevelSeparation
+        )
+        
+        separator = ContainerContentSeparator()
+        
+        # Create identical separations for testing
+        level1 = Level1_FileStructure(
+            file_path='/test/file.txt',
+            file_size=1000,
+            file_extension='txt',
+            inode_info={'inode': 12345},
+            filesystem_metadata={'created': '2025-09-30T10:00:00Z'},
+            container_type='plain_file'
+        )
+        
+        level2 = Level2_PresentationEnvelope(
+            format_type='txt',
+            encoding_info={'encoding': 'utf-8'},
+            structure_metadata={'lines': 10},
+            presentation_settings={},
+            container_version=None
+        )
+        
+        level3 = Level3_SemanticContent(
+            text_content='test content',
+            semantic_tokens=['test', 'content'],
+            language='en',
+            content_hash='abc123',
+            semantic_features={'token_count': 2},
+            pure_meaning={'concepts': ['test']}
+        )
+        
+        original = ThreeLevelSeparation(
+            content_id='test_001',
+            format_type='txt',
+            level1_file=level1,
+            level2_envelope=level2,
+            level3_content=level3,
+            separation_timestamp='2025-09-30T10:00:00Z',
+            compression_by_level={},
+            redundancy_eliminated={}
+        )
+        
+        # Test with identical restoration
+        restored = ThreeLevelSeparation(
+            content_id='test_001',
+            format_type='txt',
+            level1_file=level1,
+            level2_envelope=level2,
+            level3_content=level3,
+            separation_timestamp='2025-09-30T10:00:00Z',
+            compression_by_level={},
+            redundancy_eliminated={}
+        )
+        
+        results = separator.validate_three_level_reconstitution(original, restored)
+        assert results['level1_container'], "Level 1 should validate"
+        assert results['level2_envelope'], "Level 2 should validate"
+        assert results['level3_content'], "Level 3 should validate"
+    
     def run_all_tests(self):
         """Run all tests"""
         self.log("=" * 70)
@@ -298,6 +499,13 @@ class MultiFormatAnalysisTests:
         self.run_test("Container Type Detection", self.test_container_type_detection)
         self.run_test("Three-Level Separation", self.test_three_level_separation)
         self.run_test("Compression Metrics", self.test_compression_metrics)
+        
+        # Integrity Validation tests
+        self.log("\n🔒 Testing Integrity Validation (100% or Failure)...")
+        self.run_test("Container Integrity Validation", self.test_container_integrity_validation)
+        self.run_test("Envelope Integrity Validation", self.test_envelope_integrity_validation)
+        self.run_test("Content Integrity Validation", self.test_content_integrity_validation)
+        self.run_test("3-Level Reconstitution Validation", self.test_three_level_reconstitution_validation)
         
         # Integration tests
         self.log("\n🔗 Testing Integration...")
