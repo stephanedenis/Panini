@@ -98,7 +98,8 @@ class ContentInvariantExtractor:
         text = ""
         
         try:
-            if format_type in ['txt', 'md']:
+            if format_type in ['txt', 'md', 'py', 'js', 'java', 'c', 'cpp', 'html', 'css']:
+                # Plain text and code files
                 with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                     text = f.read()
             
