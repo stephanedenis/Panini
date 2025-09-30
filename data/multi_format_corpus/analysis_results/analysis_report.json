@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-09-30T15:40:36.373176",
+  "corpus_root": "data/multi_format_corpus",
+  "summary": {
+    "total_content_items": 4,
+    "total_files_analyzed": 9,
+    "total_invariants_extracted": 4
+  },
+  "content_type_distribution": {
+    "books": 2,
+    "audio": 1,
+    "video": 1
+  },
+  "format_distribution": {
+    "txt": 3,
+    "md": 2,
+    "pdf": 1,
+    "mp3": 1,
+    "mp4": 1,
+    "srt": 1
+  },
+  "invariant_analysis": {
+    "average_cross_format_similarity": 0.8405797101449275,
+    "high_similarity_count": 3,
+    "medium_similarity_count": 0,
+    "low_similarity_count": 1
+  },
+  "separation_analysis": {
+    "summary": {
+      "total_analyzed": 9,
+      "unique_formats": 6,
+      "formats_distribution": {
+        "txt": 3,
+        "md": 2,
+        "pdf": 1,
+        "mp3": 1,
+        "mp4": 1,
+        "srt": 1
+      }
+    },
+    "compression_metrics": {
+      "avg_level2_ratio": -0.5045302939032901,
+      "avg_level3_ratio": 0.6257162192646064,
+      "avg_compression_potential": 0.3742837807353936
+    },
+    "redundancy_metrics": {
+      "avg_redundancy_eliminated": 0.3,
+      "total_space_saved_percentage": 30.0
+    },
+    "by_format": {
+      "txt": {
+        "count": 3,
+        "avg_l3_compression": 1.0,
+        "compression_potential": 0.0
+      },
+      "md": {
+        "count": 2,
+        "avg_l3_compression": 1.0,
+        "compression_potential": 0.0
+      },
+      "pdf": {
+        "count": 1,
+        "avg_l3_compression": 0.04962779156327544,
+        "compression_potential": 0.9503722084367245
+      },
+      "mp3": {
+        "count": 1,
+        "avg_l3_compression": 0.0,
+        "compression_potential": 1.0
+      },
+      "mp4": {
+        "count": 1,
+        "avg_l3_compression": 0.0,
+        "compression_potential": 1.0
+      },
+      "srt": {
+        "count": 1,
+        "avg_l3_compression": 0.5818181818181818,
+        "compression_potential": 0.4181818181818182
+      }
+    }
+  },
+  "success_metrics": {
+    "corpus_size_target": 100,
+    "formats_per_item_target": 3,
+    "current_corpus_size": 4,
+    "current_avg_formats_per_item": 2.25,
+    "invariant_extraction_working": true,
+    "separation_working": true,
+    "compression_optimization_working": true,
+    "avg_level3_compression_ratio": 0.6257162192646064,
+    "meets_corpus_size_target": false,
+    "meets_format_target": false,
+    "all_systems_working": true
+  }
+}

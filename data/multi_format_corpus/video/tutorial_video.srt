@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:03,000
+Welcome to the PaniniFS video tutorial
+
+2
+00:00:03,500 --> 00:00:07,000
+In this video we'll learn about multi-format analysis
+
+3
+00:00:07,500 --> 00:00:11,000
+The same content can exist in many formats
+
+4
+00:00:11,500 --> 00:00:15,000
+Text files, PDFs, EPUBs all contain the same information
+
+5
+00:00:15,500 --> 00:00:19,000
+PaniniFS extracts the invariant semantic content
+
+6
+00:00:19,500 --> 00:00:23,000
+This enables cross-format deduplication and compression
+
+7
+00:00:23,500 --> 00:00:27,000
+Thank you for watching

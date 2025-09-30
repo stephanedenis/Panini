@@ -1,0 +1,174 @@
+{
+  "timestamp": "2025-09-30T15:40:36.371181",
+  "corpus_root": "data/multi_format_corpus",
+  "content_items": [
+    {
+      "content_id": "books_08ef6457",
+      "title": "dhatu_theory",
+      "content_type": "books",
+      "formats": {
+        "txt": "data/multi_format_corpus/books/dhatu_theory.txt",
+        "md": "data/multi_format_corpus/books/dhatu_theory.md"
+      },
+      "metadata_by_format": {
+        "txt": {
+          "format_type": "txt",
+          "file_size": 652,
+          "encoding": "utf-8",
+          "mime_type": "text/plain",
+          "creation_date": "2025-09-30T15:38:48.685668",
+          "container_structure": {
+            "line_count": 20,
+            "char_count": 652,
+            "has_bom": false,
+            "line_endings": "LF",
+            "encoding_confidence": "high"
+          }
+        },
+        "md": {
+          "format_type": "md",
+          "file_size": 667,
+          "encoding": "utf-8",
+          "mime_type": "text/markdown",
+          "creation_date": "2025-09-30T15:38:48.685668",
+          "container_structure": {
+            "header_count": 5,
+            "link_count": 0,
+            "code_block_count": 0,
+            "char_count": 667,
+            "line_count": 20
+          }
+        }
+      }
+    },
+    {
+      "content_id": "books_a65b722b",
+      "title": "intro_panini",
+      "content_type": "books",
+      "formats": {
+        "txt": "data/multi_format_corpus/books/intro_panini.txt",
+        "md": "data/multi_format_corpus/books/intro_panini.md",
+        "pdf": "data/multi_format_corpus/books/intro_panini.pdf"
+      },
+      "metadata_by_format": {
+        "txt": {
+          "format_type": "txt",
+          "file_size": 774,
+          "encoding": "utf-8",
+          "mime_type": "text/plain",
+          "creation_date": "2025-09-30T15:38:48.685668",
+          "container_structure": {
+            "line_count": 20,
+            "char_count": 774,
+            "has_bom": false,
+            "line_endings": "LF",
+            "encoding_confidence": "high"
+          }
+        },
+        "md": {
+          "format_type": "md",
+          "file_size": 800,
+          "encoding": "utf-8",
+          "mime_type": "text/markdown",
+          "creation_date": "2025-09-30T15:38:48.685668",
+          "container_structure": {
+            "header_count": 4,
+            "link_count": 0,
+            "code_block_count": 0,
+            "char_count": 800,
+            "line_count": 23
+          }
+        },
+        "pdf": {
+          "format_type": "pdf",
+          "file_size": 806,
+          "encoding": null,
+          "mime_type": "application/pdf",
+          "creation_date": "2025-09-30T15:38:48.685668",
+          "container_structure": {
+            "is_valid_pdf": true,
+            "pdf_version": "1.4",
+            "file_size": 806,
+            "has_encryption": false,
+            "container_type": "pdf"
+          }
+        }
+      }
+    },
+    {
+      "content_id": "audio_48430a70",
+      "title": "podcast_episode1",
+      "content_type": "audio",
+      "formats": {
+        "mp3": "data/multi_format_corpus/audio/podcast_episode1.mp3",
+        "txt": "data/multi_format_corpus/audio/podcast_episode1.txt"
+      },
+      "metadata_by_format": {
+        "mp3": {
+          "format_type": "mp3",
+          "file_size": 1014,
+          "encoding": null,
+          "mime_type": "audio/mp3",
+          "creation_date": "2025-09-30T15:38:48.685668",
+          "container_structure": {
+            "is_valid_audio": true,
+            "detected_format": "mp3",
+            "file_size": 1014,
+            "container_type": "audio"
+          }
+        },
+        "txt": {
+          "format_type": "txt",
+          "file_size": 516,
+          "encoding": "utf-8",
+          "mime_type": "text/plain",
+          "creation_date": "2025-09-30T15:38:48.685668",
+          "container_structure": {
+            "line_count": 14,
+            "char_count": 516,
+            "has_bom": false,
+            "line_endings": "LF",
+            "encoding_confidence": "high"
+          }
+        }
+      }
+    },
+    {
+      "content_id": "video_34fb8092",
+      "title": "tutorial_video",
+      "content_type": "video",
+      "formats": {
+        "mp4": "data/multi_format_corpus/video/tutorial_video.mp4",
+        "srt": "data/multi_format_corpus/video/tutorial_video.srt"
+      },
+      "metadata_by_format": {
+        "mp4": {
+          "format_type": "mp4",
+          "file_size": 1028,
+          "encoding": null,
+          "mime_type": "video/mp4",
+          "creation_date": "2025-09-30T15:38:48.686668",
+          "container_structure": {
+            "is_valid_video": true,
+            "detected_format": "mp4",
+            "file_size": 1028,
+            "container_type": "video"
+          }
+        },
+        "srt": {
+          "format_type": "srt",
+          "file_size": 550,
+          "encoding": "utf-8",
+          "mime_type": "text/plain",
+          "creation_date": "2025-09-30T15:38:48.685668",
+          "container_structure": {
+            "subtitle_format": "srt",
+            "entry_count": 7,
+            "char_count": 550,
+            "line_count": 27
+          }
+        }
+      }
+    }
+  ]
+}
