@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-30T15:39:35.155718",
+    "corpora_count": 2,
+    "languages_tested": [
+      "fr",
+      "en",
+      "es",
+      "de"
+    ],
+    "min_languages": 3
+  },
+  "statistics": {
+    "total_corpora": 2,
+    "total_languages": 4,
+    "atoms_validated": 1,
+    "divergences_found": 0
+  },
+  "convergence_results": {
+    "EXIST": {
+      "languages_present": [
+        "fr",
+        "en",
+        "es",
+        "de"
+      ],
+      "convergence_score": 1.0,
+      "frequency_variance": 0.19245008972987523,
+      "is_universal": true,
+      "divergences": []
+    }
+  },
+  "universal_atoms": [
+    {
+      "atom_id": "EXIST",
+      "languages": [
+        "fr",
+        "en",
+        "es",
+        "de"
+      ],
+      "score": 1.0
+    }
+  ],
+  "divergent_atoms": [],
+  "divergences": []
+}

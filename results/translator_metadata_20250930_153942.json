@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-30T15:39:42.455183",
+    "statistics": {
+      "total_translators": 2,
+      "total_works": 2,
+      "total_patterns": 1,
+      "languages_covered": 4,
+      "language_list": [
+        "de",
+        "en",
+        "es",
+        "fr"
+      ]
+    }
+  },
+  "translators": [
+    {
+      "translator_id": "translator_001",
+      "name": "Marie Dupont",
+      "languages": "[\"fr\", \"en\", \"de\"]",
+      "specializations": "[\"literature\", \"philosophy\"]",
+      "works_count": 1,
+      "metadata": "{\"birth_year\": 1965, \"country\": \"France\"}",
+      "created_at": "2025-09-30 15:39:42",
+      "updated_at": "2025-09-30 15:39:42"
+    },
+    {
+      "translator_id": "translator_002",
+      "name": "John Smith",
+      "languages": "[\"en\", \"fr\", \"es\"]",
+      "specializations": "[\"technical\", \"scientific\"]",
+      "works_count": 1,
+      "metadata": "{\"birth_year\": 1970, \"country\": \"UK\"}",
+      "created_at": "2025-09-30 15:39:42",
+      "updated_at": "2025-09-30 15:39:42"
+    }
+  ],
+  "works": [
+    {
+      "work_id": "work_001",
+      "title": "Le Petit Prince (EN)",
+      "translator_id": "translator_001",
+      "source_language": "fr",
+      "target_language": "en",
+      "year": 1943,
+      "domain": "literature",
+      "quality_score": 0.95,
+      "metadata": "{}",
+      "created_at": "2025-09-30 15:39:42"
+    },
+    {
+      "work_id": "work_002",
+      "title": "The Little Prince (ES)",
+      "translator_id": "translator_002",
+      "source_language": "en",
+      "target_language": "es",
+      "year": 1945,
+      "domain": "literature",
+      "quality_score": 0.88,
+      "metadata": "{}",
+      "created_at": "2025-09-30 15:39:42"
+    }
+  ],
+  "patterns": [
+    {
+      "pattern_id": "pattern_001",
+      "translator_id": "translator_001",
+      "pattern_type": "lexical",
+      "description": "Prefers \"child\" over \"kid\"",
+      "frequency": 0.85,
+      "examples": "[\"the child walked\", \"a young child\"]",
+      "created_at": "2025-09-30 15:39:42"
+    }
+  ]
+}

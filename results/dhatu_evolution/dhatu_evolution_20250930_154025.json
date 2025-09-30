@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-30T15:40:25.931191",
+    "tracker_version": "1.0"
+  },
+  "statistics": {
+    "total_dhatus_created": 7,
+    "total_dhatus_active": 5,
+    "total_dhatus_validated": 2,
+    "total_dhatus_deprecated": 2,
+    "total_evolution_events": 18,
+    "languages_tested": 6,
+    "validation_rate": 0.2857142857142857,
+    "active_dhatus": [
+      "EXIST",
+      "RELATE",
+      "ACT",
+      "PERCEPT",
+      "TIME"
+    ],
+    "deprecated_dhatus": [
+      "TEMP1",
+      "TEMP2"
+    ]
+  },
+  "active_dhatus": {
+    "EXIST": {
+      "concept": "être/existence",
+      "source": "dhatu",
+      "frequency": 150,
+      "languages": [
+        "fr",
+        "en",
+        "de",
+        "es"
+      ],
+      "compression_ratio": 0.25,
+      "validation_score": 0.92,
+      "last_update": "2025-09-30T15:40:25.930600"
+    },
+    "RELATE": {
+      "concept": "relations/spatial",
+      "source": "dhatu",
+      "frequency": 100,
+      "languages": [
+        "it",
+        "pt",
+        "fr",
+        "en",
+        "de"
+      ],
+      "compression_ratio": 0.22,
+      "validation_score": 0.85,
+      "last_update": "2025-09-30T15:40:25.930699"
+    },
+    "ACT": {
+      "concept": "action/mouvement",
+      "source": "dhatu",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0,
+      "last_update": "2025-09-30T15:40:25.930491"
+    },
+    "PERCEPT": {
+      "concept": "perception/sens",
+      "source": "discovered",
+      "frequency": 80,
+      "languages": [
+        "fr",
+        "en",
+        "es"
+      ],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0,
+      "last_update": "2025-09-30T15:40:25.930806"
+    },
+    "TIME": {
+      "concept": "temps/temporalité",
+      "source": "evolved",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0,
+      "validation_score": 0,
+      "last_update": "2025-09-30T15:40:25.930937"
+    }
+  },
+  "validation_summary": {
+    "EXIST": {
+      "is_validated": true,
+      "tested_languages": [
+        "fr",
+        "en",
+        "es",
+        "de"
+      ],
+      "convergence_score": 0.88,
+      "avg_compression_ratio": 0.25,
+      "validation_date": "2025-09-30T15:40:25.930590"
+    },
+    "RELATE": {
+      "is_validated": true,
+      "tested_languages": [
+        "fr",
+        "en",
+        "de",
+        "it",
+        "pt"
+      ],
+      "convergence_score": 0.9,
+      "avg_compression_ratio": 0.22,
+      "validation_date": "2025-09-30T15:40:25.930689"
+    }
+  },
+  "recent_events": [
+    {
+      "event_id": "evt_18",
+      "dhatu_id": "TIME",
+      "timestamp": "2025-09-30T15:40:25.931022",
+      "type": "merged",
+      "description": "Merged 2 dhātus into 'TIME': Concepts trop similaires, fusion nécessaire"
+    },
+    {
+      "event_id": "evt_17",
+      "dhatu_id": "TEMP2",
+      "timestamp": "2025-09-30T15:40:25.930996",
+      "type": "deprecated",
+      "description": "Deprecated dhātu 'TEMP2': Merged into TIME"
+    },
+    {
+      "event_id": "evt_16",
+      "dhatu_id": "TEMP1",
+      "timestamp": "2025-09-30T15:40:25.930968",
+      "type": "deprecated",
+      "description": "Deprecated dhātu 'TEMP1': Merged into TIME"
+    },
+    {
+      "event_id": "evt_15",
+      "dhatu_id": "TIME",
+      "timestamp": "2025-09-30T15:40:25.930937",
+      "type": "modified",
+      "description": "Updated dhātu 'TIME'"
+    },
+    {
+      "event_id": "evt_14",
+      "dhatu_id": "TIME",
+      "timestamp": "2025-09-30T15:40:25.930903",
+      "type": "created",
+      "description": "Created dhātu 'TIME' (temps/temporalité)"
+    },
+    {
+      "event_id": "evt_13",
+      "dhatu_id": "TEMP2",
+      "timestamp": "2025-09-30T15:40:25.930863",
+      "type": "created",
+      "description": "Created dhātu 'TEMP2' (temps/moment)"
+    },
+    {
+      "event_id": "evt_12",
+      "dhatu_id": "TEMP1",
+      "timestamp": "2025-09-30T15:40:25.930835",
+      "type": "created",
+      "description": "Created dhātu 'TEMP1' (temps/durée)"
+    },
+    {
+      "event_id": "evt_11",
+      "dhatu_id": "PERCEPT",
+      "timestamp": "2025-09-30T15:40:25.930806",
+      "type": "modified",
+      "description": "Updated dhātu 'PERCEPT'"
+    },
+    {
+      "event_id": "evt_10",
+      "dhatu_id": "PERCEPT",
+      "timestamp": "2025-09-30T15:40:25.930772",
+      "type": "created",
+      "description": "Created dhātu 'PERCEPT' (perception/sens)"
+    },
+    {
+      "event_id": "evt_9",
+      "dhatu_id": "RELATE",
+      "timestamp": "2025-09-30T15:40:25.930728",
+      "type": "validated",
+      "description": "Validated dhātu 'RELATE'"
+    },
+    {
+      "event_id": "evt_8",
+      "dhatu_id": "RELATE",
+      "timestamp": "2025-09-30T15:40:25.930699",
+      "type": "modified",
+      "description": "Updated dhātu 'RELATE'"
+    },
+    {
+      "event_id": "evt_7",
+      "dhatu_id": "EXIST",
+      "timestamp": "2025-09-30T15:40:25.930643",
+      "type": "validated",
+      "description": "Validated dhātu 'EXIST'"
+    },
+    {
+      "event_id": "evt_6",
+      "dhatu_id": "EXIST",
+      "timestamp": "2025-09-30T15:40:25.930600",
+      "type": "modified",
+      "description": "Updated dhātu 'EXIST'"
+    },
+    {
+      "event_id": "evt_5",
+      "dhatu_id": "RELATE",
+      "timestamp": "2025-09-30T15:40:25.930558",
+      "type": "modified",
+      "description": "Updated dhātu 'RELATE'"
+    },
+    {
+      "event_id": "evt_4",
+      "dhatu_id": "EXIST",
+      "timestamp": "2025-09-30T15:40:25.930525",
+      "type": "modified",
+      "description": "Updated dhātu 'EXIST'"
+    },
+    {
+      "event_id": "evt_3",
+      "dhatu_id": "ACT",
+      "timestamp": "2025-09-30T15:40:25.930491",
+      "type": "created",
+      "description": "Created dhātu 'ACT' (action/mouvement)"
+    },
+    {
+      "event_id": "evt_2",
+      "dhatu_id": "RELATE",
+      "timestamp": "2025-09-30T15:40:25.930452",
+      "type": "created",
+      "description": "Created dhātu 'RELATE' (relations/spatial)"
+    },
+    {
+      "event_id": "evt_1",
+      "dhatu_id": "EXIST",
+      "timestamp": "2025-09-30T15:40:25.930408",
+      "type": "created",
+      "description": "Created dhātu 'EXIST' (être/existence)"
+    }
+  ]
+}
