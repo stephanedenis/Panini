@@ -1,0 +1,79 @@
+{
+  "timestamp": "2025-09-30T15:43:10.596873",
+  "framework": "PaniniFS Multi-Format Validation",
+  "version": "1.0",
+  "benchmarks": {
+    "small": {
+      "speed_ratio": 0.31774150388011774,
+      "files_ratio": 0.31774150388011774,
+      "panini_results": {
+        "system": "PaniniFS",
+        "total_files": 10,
+        "total_size_mb": 0.0081939697265625,
+        "elapsed_time": 0.004454851150512695,
+        "throughput_mbps": 1.8393363660690394,
+        "files_per_second": 2244.7439122290607,
+        "integrity_score": 100.0,
+        "successful_validations": 10,
+        "failed_validations": 0
+      },
+      "baseline_results": {
+        "system": "Filesystem Baseline",
+        "total_files": 10,
+        "total_size_mb": 0.0081939697265625,
+        "elapsed_time": 0.0014154911041259766,
+        "throughput_mbps": 5.78878221323901,
+        "files_per_second": 7064.685868283645,
+        "operations": "read + hash + copy"
+      }
+    },
+    "medium": {
+      "speed_ratio": 0.34897921317042724,
+      "files_ratio": 0.34897921317042724,
+      "panini_results": {
+        "system": "PaniniFS",
+        "total_files": 100,
+        "total_size_mb": 0.8583984375,
+        "elapsed_time": 0.042403459548950195,
+        "throughput_mbps": 20.243594429107183,
+        "files_per_second": 2358.2981450973557,
+        "integrity_score": 100.0,
+        "successful_validations": 100,
+        "failed_validations": 0
+      },
+      "baseline_results": {
+        "system": "Filesystem Baseline",
+        "total_files": 100,
+        "total_size_mb": 0.8583984375,
+        "elapsed_time": 0.01479792594909668,
+        "throughput_mbps": 58.008023587413604,
+        "files_per_second": 6757.703771730549,
+        "operations": "read + hash + copy"
+      }
+    },
+    "large": {
+      "speed_ratio": 0.33935062016351425,
+      "files_ratio": 0.3393506201635142,
+      "panini_results": {
+        "system": "PaniniFS",
+        "total_files": 1000,
+        "total_size_mb": 87.685546875,
+        "elapsed_time": 0.7850360870361328,
+        "throughput_mbps": 111.69619884106564,
+        "files_per_second": 1273.8267915497406,
+        "integrity_score": 100.0,
+        "successful_validations": 1000,
+        "failed_validations": 0
+      },
+      "baseline_results": {
+        "system": "Filesystem Baseline",
+        "total_files": 1000,
+        "total_size_mb": 87.685546875,
+        "elapsed_time": 0.2664024829864502,
+        "throughput_mbps": 329.14688291197297,
+        "files_per_second": 3753.7187671440065,
+        "operations": "read + hash + copy"
+      }
+    }
+  }
+}
