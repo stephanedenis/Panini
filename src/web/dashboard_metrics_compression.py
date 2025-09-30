@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Dashboard Métriques Compression Temps Réel - Port 8889
-Monitoring PaniniFS, Atomes Sémantiques et Traducteurs
+Monitoring ensemble recherches Panini : PaniniFS, Atomes Sémantiques, Traducteurs
+Architecture modulaire avec support UHD/4K
 """
 
 from flask import Flask, render_template_string, jsonify
@@ -22,49 +23,93 @@ app.config['SECRET_KEY'] = 'panini_metrics_2025'
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')
 
 
+class DataSource:
+    """Source de données modulaire pour architecture extensible"""
+    
+    def __init__(self, name: str, path: Path, glob_pattern: str):
+        self.name = name
+        self.path = path
+        self.glob_pattern = glob_pattern
+        self.enabled = True
+    
+    def get_latest_file(self):
+        """Récupère le fichier le plus récent pour cette source"""
+        if not self.path.exists():
+            return None
+        files = list(self.path.glob(self.glob_pattern))
+        return max(files, key=lambda f: f.stat().st_mtime) if files else None
+
+
 class MetricsCollector:
-    """Collecteur de métriques PaniniFS et atomes sémantiques"""
+    """Collecteur de métriques modulaire pour l'ensemble des recherches Panini"""
     
     def __init__(self, workspace: Path):
         self.workspace = workspace
         self.running = False
         
-        # Chemins des données
+        # Sources de données modulaires (extensibles)
+        self.data_sources = {
+            'panini_fs': DataSource(
+                'PaniniFS',
+                workspace / 'synthesis_validation_results',
+                'synthesis_validation_*.json'
+            ),
+            'semantic_atoms': DataSource(
+                'Semantic Atoms',
+                workspace / 'universal_atoms_results',
+                'universal_atoms_analysis_*.json'
+            ),
+            'translators': DataSource(
+                'Translators',
+                workspace / 'molecular_patterns_results',
+                'molecular_patterns_report_*.json'
+            ),
+            'corpus': DataSource(
+                'Corpus',
+                workspace / 'corpus_results',
+                'corpus_analysis_*.json'
+            )
+        }
+        
+        # Chemins des données (legacy)
         self.monitoring_file = workspace / 'data' / 'monitoring_data_realtime.json'
-        self.atoms_dir = workspace / 'universal_atoms_results'
-        self.synthesis_dir = workspace / 'synthesis_validation_results'
-        self.molecules_dir = workspace / 'molecular_patterns_results'
         
         # Métriques en cache
         self.cache = {
             'panini_fs': {},
             'semantic_atoms': {},
             'translators': {},
-            'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now().isoformat()  # ISO 8601
         }
         
         # Setup logging
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(__name__)
     
+    def add_data_source(self, key: str, source: DataSource):
+        """Ajoute une nouvelle source de données (architecture modulaire)"""
+        self.data_sources[key] = source
+        self.logger.info(f"✅ Source ajoutée: {source.name}")
+    
     def collect_panini_fs_metrics(self):
-        """Collecte métriques PaniniFS (compression, intégrité, scalabilité)"""
+        """Collecte métriques PaniniFS (compression, intégrité binaire, scalabilité)"""
         metrics = {
             'compression_by_format': {},
             'ingestion_time_ms': 0,
             'retrieval_time_ms': 0,
-            'integrity_success_rate': 0.0,
+            'integrity_status': 'unknown',  # 'success' ou 'failed' (binaire, pas pourcentage)
+            'integrity_binary': False,  # True = reconstitution absolue sans perte
             'files_count': 0,
             'total_processed': 0
         }
         
         try:
-            # Chercher résultats de synthèse/validation
-            if self.synthesis_dir.exists():
-                synthesis_files = list(self.synthesis_dir.glob("synthesis_validation_*.json"))
-                if synthesis_files:
-                    latest = max(synthesis_files, key=lambda f: f.stat().st_mtime)
-                    with open(latest, 'r', encoding='utf-8') as f:
+            # Utiliser source modulaire
+            source = self.data_sources.get('panini_fs')
+            if source and source.enabled:
+                latest_file = source.get_latest_file()
+                if latest_file:
+                    with open(latest_file, 'r', encoding='utf-8') as f:
                         data = json.load(f)
                         
                         # Extraire métriques de compression
@@ -74,9 +119,12 @@ class MetricsCollector:
                                     format_name = test.get('format', 'unknown')
                                     metrics['compression_by_format'][format_name] = round(test['compression_ratio'], 3)
                         
-                        # Métriques d'intégrité
+                        # Métriques d'intégrité BINAIRE (succès total ou échec)
                         if 'overall_fidelity' in data:
-                            metrics['integrity_success_rate'] = round(data['overall_fidelity'] * 100, 1)
+                            fidelity = data['overall_fidelity']
+                            # Intégrité absolue requise (>= 0.999 = succès, sinon échec)
+                            metrics['integrity_binary'] = fidelity >= 0.999
+                            metrics['integrity_status'] = 'success' if metrics['integrity_binary'] else 'failed'
                         
                         # Temps de traitement
                         if 'processing_times' in data:
@@ -87,7 +135,7 @@ class MetricsCollector:
                         metrics['files_count'] = len(data.get('test_results', []))
                         metrics['total_processed'] = data.get('total_texts_processed', 0)
             
-            # Si pas de données de synthèse, utiliser données de monitoring
+            # Fallback: données de monitoring si pas de synthèse
             if metrics['files_count'] == 0 and self.monitoring_file.exists():
                 with open(self.monitoring_file, 'r', encoding='utf-8') as f:
                     mon_data = json.load(f)
@@ -101,7 +149,7 @@ class MetricsCollector:
         return metrics
     
     def collect_semantic_atoms_metrics(self):
-        """Collecte métriques atomes sémantiques (découverte, multilangue, compression)"""
+        """Collecte métriques atomes sémantiques et symétries composition/décomposition"""
         metrics = {
             'atoms_discovered': 0,
             'multilingual_languages': 0,
@@ -115,16 +163,21 @@ class MetricsCollector:
                 'morpheme': 0,
                 'syntactic': 0,
                 'semantic': 0
+            },
+            'symmetries': {
+                'perfect_symmetries_found': 0,
+                'universal_candidates': 0,
+                'composition_decomposition_ratio': 0.0
             }
         }
         
         try:
-            # Charger résultats d'extraction d'atomes
-            if self.atoms_dir.exists():
-                atom_files = list(self.atoms_dir.glob("universal_atoms_analysis_*.json"))
-                if atom_files:
-                    latest = max(atom_files, key=lambda f: f.stat().st_mtime)
-                    with open(latest, 'r', encoding='utf-8') as f:
+            # Utiliser source modulaire
+            source = self.data_sources.get('semantic_atoms')
+            if source and source.enabled:
+                latest_file = source.get_latest_file()
+                if latest_file:
+                    with open(latest_file, 'r', encoding='utf-8') as f:
                         data = json.load(f)
                         
                         # Nombre total d'atomes découverts
@@ -150,6 +203,13 @@ class MetricsCollector:
                             stats = data['dhatu_statistics']
                             metrics['dhatu_evolution']['existing_dhatu'] = stats.get('established_count', 0)
                             metrics['dhatu_evolution']['new_dhatu'] = stats.get('newly_discovered', 0)
+                        
+                        # Symétries composition/décomposition (nouveaux universaux)
+                        if 'symmetry_analysis' in data:
+                            sym = data['symmetry_analysis']
+                            metrics['symmetries']['perfect_symmetries_found'] = sym.get('perfect_count', 0)
+                            metrics['symmetries']['universal_candidates'] = sym.get('universal_candidates', 0)
+                            metrics['symmetries']['composition_decomposition_ratio'] = round(sym.get('ratio', 0.0), 3)
             
         except Exception as e:
             self.logger.error(f"Erreur collecte métriques atomes: {e}")
@@ -157,43 +217,65 @@ class MetricsCollector:
         return metrics
     
     def collect_translator_metrics(self):
-        """Collecte métriques traducteurs (identifiés, biais, patterns)"""
+        """Collecte métriques traducteurs - qui/quand/style/biais culturels"""
         metrics = {
-            'translators_identified': 0,
-            'biases_detected': [],
-            'recurring_patterns': [],
+            'translators': [],  # Liste avec qui/quand/où
+            'biases_detected': [],  # Biais culturels propres
+            'stylistic_patterns': [],  # Signatures stylistiques par traducteur
             'translation_quality': 0.0
         }
         
         try:
-            # Chercher patterns moléculaires (peuvent indiquer traductions)
-            if self.molecules_dir.exists():
-                molecule_files = list(self.molecules_dir.glob("molecular_patterns_report_*.json"))
-                if molecule_files:
-                    latest = max(molecule_files, key=lambda f: f.stat().st_mtime)
-                    with open(latest, 'r', encoding='utf-8') as f:
+            # Utiliser source modulaire
+            source = self.data_sources.get('translators')
+            if source and source.enabled:
+                latest_file = source.get_latest_file()
+                if latest_file:
+                    with open(latest_file, 'r', encoding='utf-8') as f:
                         data = json.load(f)
                         
-                        # Patterns récurrents
+                        # Traducteurs identifiés avec métadonnées (qui/quand/où)
+                        if 'translators' in data:
+                            for trans in data['translators']:
+                                metrics['translators'].append({
+                                    'name': trans.get('name', 'Anonyme'),
+                                    'period': trans.get('period', 'unknown'),  # Quand
+                                    'context': trans.get('context', 'unknown'),  # Où/milieu
+                                    'timestamp_iso': trans.get('timestamp', datetime.now().isoformat())  # ISO 8601
+                                })
+                        
+                        # Patterns stylistiques récurrents (signature du traducteur)
                         if 'top_patterns' in data:
                             patterns = data['top_patterns'][:5]  # Top 5
                             for pattern in patterns:
                                 if isinstance(pattern, dict):
-                                    metrics['recurring_patterns'].append({
+                                    metrics['stylistic_patterns'].append({
                                         'pattern': pattern.get('pattern', 'unknown'),
-                                        'frequency': pattern.get('count', 0)
+                                        'frequency': pattern.get('count', 0),
+                                        'translator': pattern.get('source', 'unknown')  # Auteur du pattern
                                     })
                         
-                        # Détection de biais (patterns asymétriques)
-                        if 'asymmetry_score' in data and data['asymmetry_score'] > 0.3:
-                            metrics['biases_detected'].append({
-                                'type': 'structural_asymmetry',
-                                'score': round(data['asymmetry_score'], 3)
-                            })
+                        # Biais culturels détectés (propres au milieu/époque/vécu)
+                        if 'cultural_biases' in data:
+                            for bias in data['cultural_biases']:
+                                metrics['biases_detected'].append({
+                                    'type': bias.get('type', 'cultural_asymmetry'),
+                                    'description': bias.get('description', ''),
+                                    'score': round(bias.get('score', 0), 3),
+                                    'translator': bias.get('translator', 'unknown'),
+                                    'era': bias.get('era', 'unknown')  # Époque
+                                })
                         
-                        # Nombre de "traducteurs" (sources de patterns)
-                        if 'pattern_sources' in data:
-                            metrics['translators_identified'] = len(data['pattern_sources'])
+                        # Fallback: biais structurels si pas de biais culturels explicites
+                        if not metrics['biases_detected'] and 'asymmetry_score' in data:
+                            if data['asymmetry_score'] > 0.3:
+                                metrics['biases_detected'].append({
+                                    'type': 'structural_asymmetry',
+                                    'description': 'Asymétrie structurelle détectée',
+                                    'score': round(data['asymmetry_score'], 3),
+                                    'translator': 'multiple',
+                                    'era': 'contemporary'
+                                })
                         
                         # Qualité de traduction (basée sur fidélité)
                         if 'pattern_fidelity' in data:
@@ -205,11 +287,11 @@ class MetricsCollector:
         return metrics
     
     def collect_all_metrics(self):
-        """Collecte toutes les métriques"""
+        """Collecte toutes les métriques (architecture modulaire)"""
         self.cache['panini_fs'] = self.collect_panini_fs_metrics()
         self.cache['semantic_atoms'] = self.collect_semantic_atoms_metrics()
         self.cache['translators'] = self.collect_translator_metrics()
-        self.cache['timestamp'] = datetime.now().isoformat()
+        self.cache['timestamp'] = datetime.now().isoformat()  # ISO 8601
         return self.cache
     
     def start_background_updates(self):
@@ -246,7 +328,7 @@ DASHBOARD_HTML = """
 <!DOCTYPE html>
 <html>
 <head>
-    <title>🎯 Dashboard Métriques Compression Temps Réel</title>
+    <title>🎯 Dashboard Métriques - Ensemble Recherches Panini</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -258,7 +340,21 @@ DASHBOARD_HTML = """
             padding: 20px;
             min-height: 100vh;
         }
-        .container { max-width: 1400px; margin: 0 auto; }
+        /* Conteneur adaptatif UHD/4K */
+        .container { 
+            max-width: 2400px; /* Support 4K */
+            margin: 0 auto; 
+        }
+        
+        /* Optimisation pour résolutions élevées */
+        @media (min-width: 2560px) {
+            .container { max-width: 95%; }
+            .grid { grid-template-columns: repeat(4, 1fr); } /* 4 colonnes en 4K */
+        }
+        @media (min-width: 1920px) and (max-width: 2559px) {
+            .grid { grid-template-columns: repeat(3, 1fr); } /* 3 colonnes en 1440p */
+        }
+        
         .header {
             text-align: center;
             margin-bottom: 30px;
@@ -289,12 +385,15 @@ DASHBOARD_HTML = """
             align-items: center;
             gap: 10px;
         }
+        /* Animation utilitaire: attirer attention sur nouveau contenu */
         .status-dot {
             width: 12px;
             height: 12px;
             border-radius: 50%;
             background: #4CAF50;
-            animation: pulse 2s infinite;
+        }
+        .status-dot.pulse {
+            animation: pulse 2s infinite; /* Active seulement si nouvelles données */
         }
         @keyframes pulse {
             0%, 100% { opacity: 1; }
@@ -312,11 +411,7 @@ DASHBOARD_HTML = """
             padding: 25px;
             border-left: 4px solid #4CAF50;
             backdrop-filter: blur(10px);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(76, 175, 80, 0.3);
+            /* Pas de transition hover decorative */
         }
         .card h3 {
             color: #4CAF50;
@@ -411,16 +506,16 @@ DASHBOARD_HTML = """
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎯 Dashboard Métriques Compression Temps Réel</h1>
-            <p>Monitoring PaniniFS, Atomes Sémantiques et Traducteurs</p>
+            <h1>🎯 Dashboard Métriques - Ensemble Recherches Panini</h1>
+            <p>Monitoring PaniniFS, Atomes Sémantiques, Traducteurs, Corpus & Symétries</p>
         </div>
         
         <div class="status-bar">
             <div class="status-indicator">
-                <div class="status-dot"></div>
+                <div class="status-dot pulse"></div>
                 <span><strong>Statut:</strong> Opérationnel</span>
             </div>
-            <div id="last-update">Dernière mise à jour: --:--:--</div>
+            <div id="last-update">Dernière mise à jour (ISO 8601): --</div>
         </div>
         
         <!-- PaniniFS Metrics -->
@@ -433,7 +528,7 @@ DASHBOARD_HTML = """
             </div>
             
             <div class="card">
-                <h3>⚡ PaniniFS - Performance</h3>
+                <h3>⚡ PaniniFS - Performance & Intégrité</h3>
                 <div id="panini-performance">
                     <div class="empty-state">Chargement des données...</div>
                 </div>
@@ -491,10 +586,10 @@ DASHBOARD_HTML = """
         }
         
         function updateDashboard(data) {
-            // Mise à jour timestamp
-            const timestamp = new Date(data.timestamp).toLocaleString('fr-FR');
+            // Mise à jour timestamp (ISO 8601 format)
+            const timestamp = data.timestamp; // Déjà en ISO 8601 depuis backend
             document.getElementById('last-update').innerHTML = 
-                `<strong>Dernière mise à jour:</strong> ${timestamp}`;
+                `<strong>Dernière mise à jour (ISO 8601):</strong> ${timestamp}`;
             
             // PaniniFS - Compression
             updatePaniniCompression(data.panini_fs);
@@ -536,6 +631,12 @@ DASHBOARD_HTML = """
         }
         
         function updatePaniniPerformance(panini) {
+            // Intégrité BINAIRE (succès total ou échec)
+            const integrityStatus = panini.integrity_status || 'unknown';
+            const integrityBinary = panini.integrity_binary || false;
+            const integrityClass = integrityBinary ? 'badge-success' : 'badge-warning';
+            const integrityText = integrityBinary ? '✓ Succès Total' : '✗ Échec';
+            
             const html = `
                 <div class="metric">
                     <span class="metric-label">Temps ingestion:</span>
@@ -546,8 +647,8 @@ DASHBOARD_HTML = """
                     <span class="metric-value">${panini.retrieval_time_ms || 0} ms</span>
                 </div>
                 <div class="metric">
-                    <span class="metric-label">Intégrité (% succès):</span>
-                    <span class="metric-value">${panini.integrity_success_rate || 0}%</span>
+                    <span class="metric-label">Intégrité (binaire):</span>
+                    <span class="badge ${integrityClass}">${integrityText}</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Scalabilité (nb fichiers):</span>
@@ -643,48 +744,64 @@ DASHBOARD_HTML = """
         }
         
         function updateTranslators(translators) {
-            const count = translators.translators_identified || 0;
+            const translatorsList = translators.translators || [];
             const biases = translators.biases_detected || [];
-            const patterns = translators.recurring_patterns || [];
+            const patterns = translators.stylistic_patterns || [];
             const quality = translators.translation_quality || 0;
             
-            let html = `
-                <div class="metric">
-                    <span class="metric-label">Traducteurs identifiés:</span>
-                    <span class="metric-value">${count}</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-label">Qualité traduction:</span>
-                    <span class="metric-value">${quality}%</span>
-                </div>
-            `;
+            let html = '';
             
-            // Biais détectés
+            // Traducteurs avec métadonnées (qui/quand/où)
+            if (translatorsList.length > 0) {
+                html += '<div class="metric"><span class="metric-label">Traducteurs identifiés (qui/quand/où):</span></div>';
+                translatorsList.forEach(trans => {
+                    html += `
+                        <div class="pattern-item">
+                            <strong>${trans.name}</strong> | ${trans.period} | ${trans.context}<br>
+                            <small style="color: #888;">Timestamp: ${trans.timestamp_iso}</small>
+                        </div>
+                    `;
+                });
+            }
+            
+            // Qualité
+            if (quality > 0) {
+                html += `
+                    <div class="metric">
+                        <span class="metric-label">Qualité traduction:</span>
+                        <span class="metric-value">${quality}%</span>
+                    </div>
+                `;
+            }
+            
+            // Biais culturels détectés
             if (biases.length > 0) {
-                html += '<div class="metric"><span class="metric-label">Biais détectés:</span></div>';
+                html += '<div class="metric" style="margin-top: 10px;"><span class="metric-label">Biais culturels détectés:</span></div>';
                 biases.forEach(bias => {
                     html += `
                         <div class="pattern-item">
-                            <strong>${bias.type}:</strong> ${bias.score}
-                            <span class="badge badge-warning">Attention</span>
+                            <strong>${bias.type}</strong> (${bias.translator}, ${bias.era})<br>
+                            <small>${bias.description}</small><br>
+                            Score: ${bias.score} <span class="badge badge-warning">Attention</span>
                         </div>
                     `;
                 });
             }
             
-            // Patterns récurrents
+            // Patterns stylistiques (signature du traducteur)
             if (patterns.length > 0) {
-                html += '<div class="metric" style="margin-top: 10px;"><span class="metric-label">Patterns récurrents (Top 5):</span></div>';
+                html += '<div class="metric" style="margin-top: 10px;"><span class="metric-label">Signatures stylistiques (Top 5):</span></div>';
                 patterns.forEach(pattern => {
                     html += `
                         <div class="pattern-item">
-                            <strong>${pattern.pattern}:</strong> ${pattern.frequency} occurrences
+                            <strong>${pattern.pattern}</strong> (${pattern.translator})<br>
+                            ${pattern.frequency} occurrences
                         </div>
                     `;
                 });
             }
             
-            if (biases.length === 0 && patterns.length === 0 && count === 0) {
+            if (translatorsList.length === 0 && biases.length === 0 && patterns.length === 0) {
                 html = '<div class="empty-state">Aucune donnée de traduction disponible</div>';
             }
             
