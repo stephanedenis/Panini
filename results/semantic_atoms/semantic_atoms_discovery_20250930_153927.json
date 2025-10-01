@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-30T15:39:27.968995",
+    "total_dhatu": 15,
+    "total_discovered": 0
+  },
+  "statistics": {
+    "dhatu_tested": 0,
+    "new_atoms_discovered": 0,
+    "languages_analyzed": 3,
+    "total_atoms": 15,
+    "total_compressions": 5,
+    "avg_compression_ratio": -0.020915032679738564,
+    "top_atoms": [
+      {
+        "atom_id": "RELATE",
+        "concept": "relations/spatial",
+        "frequency": 6,
+        "languages": 3,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "EXIST",
+        "concept": "être/existence",
+        "frequency": 4,
+        "languages": 3,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "COMM",
+        "concept": "communication",
+        "frequency": 0,
+        "languages": 0,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "EMOT",
+        "concept": "émotions/affect",
+        "frequency": 0,
+        "languages": 0,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "COGN",
+        "concept": "cognition/pensée",
+        "frequency": 0,
+        "languages": 0,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "ACT",
+        "concept": "action/mouvement",
+        "frequency": 0,
+        "languages": 0,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "TRANS",
+        "concept": "transformation/changement",
+        "frequency": 0,
+        "languages": 0,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "ITER",
+        "concept": "itération/répétition",
+        "frequency": 0,
+        "languages": 0,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "DECIDE",
+        "concept": "décision/volition",
+        "frequency": 0,
+        "languages": 0,
+        "source": "dhatu"
+      },
+      {
+        "atom_id": "PERCEPT",
+        "concept": "perception/sens",
+        "frequency": 0,
+        "languages": 0,
+        "source": "dhatu"
+      }
+    ]
+  },
+  "dhatu_atoms": {
+    "EXIST": {
+      "concept": "être/existence",
+      "frequency": 4,
+      "languages": [
+        "en",
+        "fr",
+        "es"
+      ],
+      "compression_ratio": -0.05228758169934641,
+      "validation_score": 0.842156862745098
+    },
+    "RELATE": {
+      "concept": "relations/spatial",
+      "frequency": 6,
+      "languages": [
+        "en",
+        "fr",
+        "es"
+      ],
+      "compression_ratio": -0.05228758169934641,
+      "validation_score": 0.842156862745098
+    },
+    "COMM": {
+      "concept": "communication",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.85
+    },
+    "EMOT": {
+      "concept": "émotions/affect",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.85
+    },
+    "COGN": {
+      "concept": "cognition/pensée",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.85
+    },
+    "ACT": {
+      "concept": "action/mouvement",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "TRANS": {
+      "concept": "transformation/changement",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "ITER": {
+      "concept": "itération/répétition",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "DECIDE": {
+      "concept": "décision/volition",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "PERCEPT": {
+      "concept": "perception/sens",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "POSSESS": {
+      "concept": "possession/appartenance",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "QUANT": {
+      "concept": "quantité/mesure",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "TIME": {
+      "concept": "temps/temporalité",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "CAUSE": {
+      "concept": "causalité/raison",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    },
+    "MODAL": {
+      "concept": "modalité/possibilité",
+      "frequency": 0,
+      "languages": [],
+      "compression_ratio": 0.0,
+      "validation_score": 0.0
+    }
+  },
+  "discovered_atoms": {},
+  "compression_metrics": {
+    "EXIST": {
+      "ratio": -0.05228758169934641,
+      "fidelity_score": 0.842156862745098,
+      "languages_tested": [
+        "en",
+        "fr",
+        "es"
+      ]
+    },
+    "RELATE": {
+      "ratio": -0.05228758169934641,
+      "fidelity_score": 0.842156862745098,
+      "languages_tested": [
+        "en",
+        "fr",
+        "es"
+      ]
+    },
+    "COMM": {
+      "ratio": 0.0,
+      "fidelity_score": 0.85,
+      "languages_tested": [
+        "en",
+        "fr",
+        "es"
+      ]
+    },
+    "EMOT": {
+      "ratio": 0.0,
+      "fidelity_score": 0.85,
+      "languages_tested": [
+        "en",
+        "fr",
+        "es"
+      ]
+    },
+    "COGN": {
+      "ratio": 0.0,
+      "fidelity_score": 0.85,
+      "languages_tested": [
+        "en",
+        "fr",
+        "es"
+      ]
+    }
+  }
+}

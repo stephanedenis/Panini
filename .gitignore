@@ -39,3 +39,9 @@ github_sync_tracking.json
 .venv/
 venv/
 env/
+
+# Results and generated data
+results/semantic_atoms/*.json
+results/multilingual_validation/*.json
+results/dhatu_evolution/*.json
+results/translator_metadata_*.json
