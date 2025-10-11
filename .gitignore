@@ -1,41 +1,97 @@
+# ========================================
+# PANINI RESEARCH - DONNÉES RECONSTRUCTIBLES  
+# ========================================
+# Ces données représentent ~233GB reconstructibles
+# via scripts automatiques depuis sources publiques
 
-# Fichiers temporaires et logs
-temp/logs/
-temp/cache/
-temp/build/
-*.tmp
+# ==========================================
+# WIKIPEDIA DUMPS & DÉCOMPRESSÉS (~228GB)
+# ==========================================
+# Disponibles publiquement sur dumps.wikimedia.org
+# Reconstructibles via download_wikipedia_dumps.sh
+
+# Répertoires complets
+wikipedia_dumps/
+wikipedia_decompressed/
+wikipedia_metadata/
+wikipedia_classifications/
+
+# Fichiers Wikipedia bruts
+*wiki*.xml
+*wiki*.xml.bz2
+*wiki*.sql
+*wiki*.sql.gz
+*wiki-latest-*.xml*
+*wiki-latest-*.sql*
+
+# Fichiers décompressés
+*wiki_articles.xml
+*wiki_pages.xml
+*wiki_categories.sql
+
+# Corpus Wikipedia (reconstructible)
+corpus_*.json
+*wikipedia*.json
+grand_corpus_*.json
+corpus_complet_*.json
+
+# Analyses volumineuses (reconstructibles)
+analyse_*_*.json
+*_analysis_*.json
+molecules_semantiques_*.json
+dhatu_*_complete.json
+
+# Logs volumineux (reconstructibles)
 *.log
-__pycache__/
-.python-version
+logs/
+autonomous_*.log
+gestionnaire_*.log
 
-# Configuration locale
-config/local_*.json
-config/secrets.json
-.env
-.env.local
-
-# Archives et sauvegardes
-colab_results_archive_full/
-legacy/
-*.backup
-*.bak
-
-# Cache Python et VS Code
+# Cache et temporaires
 __pycache__/
 *.pyc
 *.pyo
-.vscode/launch.json
-.vscode/.ropeproject/
+.cache/
+tmp/
+temp/
+.tmp/
 
-# Jupyter
-.ipynb_checkpoints/
-notebooks/.ipynb_checkpoints/
+# Données d'entraînement volumineuses
+training_data/
+models_cache/
+embeddings_cache/
 
-# Git temporaires
-.github_last_check
-github_sync_tracking.json
+# Sauvegardes automatiques
+backup_*/
+*_backup_*/
+auto_save_*/
 
-# Environnements virtuels
-.venv/
-venv/
-env/
+# ========================================
+# CONSERVATION NÉCESSAIRE
+# ========================================
+# Les fichiers suivants sont CONSERVÉS :
+# - Scripts Python (.py)
+# - Configuration (.json de config, pas de données)
+# - Documentation (.md)
+# - Architecture du système
+# - Résultats d'analyses petites (< 1MB)
+
+# Forcer inclusion des configurations importantes
+!config.json
+!settings.json
+!panini_config.json
+!*_config.json
+
+# Forcer inclusion documentation
+!*.md
+!README*
+!JOURNAL*
+!GUIDE*
+
+# Forcer inclusion scripts
+!*.py
+
+# Exceptions spécifiques (petites analyses)
+!demo_*.json
+!test_*.json
+!sample_*.json
