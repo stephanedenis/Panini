@@ -1,0 +1,98 @@
+{
+  "universalite_linguistique": {
+    "name": "Universalité Linguistique",
+    "description": "Capacité à représenter concepts à travers familles linguistiques diverses",
+    "measurement_method": "Pourcentage couverture familles linguistiques avec mappings cohérents",
+    "target_value": 0.9,
+    "weight": 0.18,
+    "evaluation_function": "evaluate_linguistic_universality"
+  },
+  "precision_semantique": {
+    "name": "Précision Sémantique",
+    "description": "Capacité à résoudre ambiguités et distinguer nuances sémantiques",
+    "measurement_method": "Taux résolution ambiguités + précision mappings concepts",
+    "target_value": 0.92,
+    "weight": 0.16,
+    "evaluation_function": "evaluate_semantic_precision"
+  },
+  "coherence_compositionnelle": {
+    "name": "Cohérence Compositionnelle",
+    "description": "Logique interne composition dhātu sans contradictions",
+    "measurement_method": "Score cohérence règles composition + validité combinaisons",
+    "target_value": 0.88,
+    "weight": 0.14,
+    "evaluation_function": "evaluate_compositional_coherence"
+  },
+  "contraintes_cognitives": {
+    "name": "Respect Contraintes Cognitives",
+    "description": "Conformité limites cognitives humaines (Miller 7±2, etc.)",
+    "measurement_method": "Complexité architecture vs limites cognitives documentées",
+    "target_value": 0.95,
+    "weight": 0.12,
+    "evaluation_function": "evaluate_cognitive_constraints"
+  },
+  "intuitivite_utilisation": {
+    "name": "Intuitivité d'Utilisation",
+    "description": "Facilité apprentissage et utilisation par humains",
+    "measurement_method": "Métriques apprentissage + feedback utilisateurs",
+    "target_value": 0.8,
+    "weight": 0.08,
+    "evaluation_function": "evaluate_usability_intuition"
+  },
+  "richesse_expressive": {
+    "name": "Richesse Expressive",
+    "description": "Capacité exprimer nuances émotionnelles et concepts complexes",
+    "measurement_method": "Nombre expressions uniques générables + diversité stylistique",
+    "target_value": 0.85,
+    "weight": 0.12,
+    "evaluation_function": "evaluate_expressive_richness"
+  },
+  "creativite_generative": {
+    "name": "Créativité Générative",
+    "description": "Capacité générer expressions créatives et oxymores contextuels",
+    "measurement_method": "Qualité + originalité + pertinence générations créatives",
+    "target_value": 0.78,
+    "weight": 0.08,
+    "evaluation_function": "evaluate_generative_creativity"
+  },
+  "validation_neurobiologique": {
+    "name": "Validation Neurobiologique",
+    "description": "Correspondance avec recherche neurosciences affectives",
+    "measurement_method": "Cohérence avec modèles validés (Panksepp, Damasio, etc.)",
+    "target_value": 0.9,
+    "weight": 0.1,
+    "evaluation_function": "evaluate_neurobiological_validity"
+  },
+  "robustesse_empirique": {
+    "name": "Robustesse Empirique",
+    "description": "Validation sur corpus réels diversifiés",
+    "measurement_method": "Performance sur benchmarks + corpus test indépendants",
+    "target_value": 0.86,
+    "weight": 0.12,
+    "evaluation_function": "evaluate_empirical_robustness"
+  },
+  "efficacite_computationnelle": {
+    "name": "Efficacité Computationnelle",
+    "description": "Performance algorithmique et complexité raisonnable",
+    "measurement_method": "Complexité temporelle + mémoire + scalabilité",
+    "target_value": 0.82,
+    "weight": 0.06,
+    "evaluation_function": "evaluate_computational_efficiency"
+  },
+  "extensibilite_maintenance": {
+    "name": "Extensibilité et Maintenabilité",
+    "description": "Facilité d'extension et maintenance du modèle",
+    "measurement_method": "Modularité architecture + facilité ajout concepts",
+    "target_value": 0.85,
+    "weight": 0.08,
+    "evaluation_function": "evaluate_extensibility"
+  },
+  "applications_therapeutiques": {
+    "name": "Applications Thérapeutiques",
+    "description": "Potentiel usage thérapeutique et expressif",
+    "measurement_method": "Capacité expression émotions complexes + outils cliniques",
+    "target_value": 0.75,
+    "weight": 0.06,
+    "evaluation_function": "evaluate_therapeutic_applications"
+  }
+}

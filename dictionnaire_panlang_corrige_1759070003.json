@@ -1,0 +1,282 @@
+{
+  "concepts": {
+    "AMOUR": {
+      "dhatu_decomposition": [
+        "FEEL",
+        "RELAT",
+        "EXIST"
+      ],
+      "description": "Émotion relationnelle d'attachement et d'affection profonde",
+      "category": "emotional",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "JOIE": {
+      "dhatu_decomposition": [
+        "FEEL",
+        "CREAT",
+        "EXIST"
+      ],
+      "description": "Émotion positive de satisfaction et de bonheur créateur",
+      "category": "emotional",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "TRISTESSE": {
+      "dhatu_decomposition": [
+        "FEEL",
+        "DESTR"
+      ],
+      "description": "Émotion de perte, de destruction d'un état positif",
+      "category": "emotional",
+      "coherence_score": 0.8,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "PEUR": {
+      "dhatu_decomposition": [
+        "FEEL",
+        "DESTR",
+        "PERCEP"
+      ],
+      "description": "Émotion de menace perçue, anticipation de destruction",
+      "category": "emotional",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "COLÈRE": {
+      "dhatu_decomposition": [
+        "FEEL",
+        "DESTR"
+      ],
+      "description": "Émotion agressive, impulsion destructrice dirigée",
+      "category": "emotional",
+      "coherence_score": 0.8,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "DÉGOÛT": {
+      "dhatu_decomposition": [
+        "FEEL",
+        "DESTR",
+        "PERCEP"
+      ],
+      "description": "Émotion de rejet perçu, dégoût sensoriel ou moral",
+      "category": "emotional",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "MUSIQUE": {
+      "dhatu_decomposition": [
+        "CREAT",
+        "PERCEP",
+        "FEEL",
+        "MOVE"
+      ],
+      "description": "Art temporel combinant création, perception, émotion et rythme",
+      "category": "creative",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "ART": {
+      "dhatu_decomposition": [
+        "CREAT",
+        "PERCEP",
+        "FEEL"
+      ],
+      "description": "Expression créative perceptuelle chargée émotionnellement",
+      "category": "creative",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "LITTÉRATURE": {
+      "dhatu_decomposition": [
+        "CREAT",
+        "COMM",
+        "THINK",
+        "FEEL"
+      ],
+      "description": "Art de la création linguistique intellectuelle et émotionnelle",
+      "category": "creative",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "COMPRENDRE": {
+      "dhatu_decomposition": [
+        "THINK",
+        "PERCEP",
+        "RELAT"
+      ],
+      "description": "Processus cognitif d'appréhension relationnelle de la réalité",
+      "category": "cognitive",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "APPRENDRE": {
+      "dhatu_decomposition": [
+        "THINK",
+        "PERCEP",
+        "EXIST"
+      ],
+      "description": "Acquisition cognitive de connaissances par perception",
+      "category": "cognitive",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "EXPLORER": {
+      "dhatu_decomposition": [
+        "MOVE",
+        "PERCEP",
+        "THINK"
+      ],
+      "description": "Investigation kinesthésique cognitive du réel",
+      "category": "cognitive",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "PARENT": {
+      "dhatu_decomposition": [
+        "RELAT",
+        "EXIST",
+        "CREAT",
+        "FEEL"
+      ],
+      "description": "Relation créatrice fondamentale d'existence et d'affection",
+      "category": "relational",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "GUERRE": {
+      "dhatu_decomposition": [
+        "DESTR",
+        "RELAT",
+        "MOVE"
+      ],
+      "description": "Conflit destructeur organisé entre groupes sociaux",
+      "category": "relational",
+      "coherence_score": 0.8,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "FAMILLE": {
+      "dhatu_decomposition": [
+        "RELAT",
+        "EXIST",
+        "FEEL"
+      ],
+      "description": "Structure relationnelle existentielle d'affection",
+      "category": "relational",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "EXISTENCE": {
+      "dhatu_decomposition": [
+        "EXIST"
+      ],
+      "description": "Fait d'être, réalité ontologique fondamentale",
+      "category": "existential",
+      "coherence_score": 1.0,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "MOUVEMENT": {
+      "dhatu_decomposition": [
+        "MOVE"
+      ],
+      "description": "Déplacement, changement de position dans l'espace-temps",
+      "category": "kinetic",
+      "coherence_score": 1.0,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "VIVRE": {
+      "dhatu_decomposition": [
+        "EXIST",
+        "MOVE",
+        "PERCEP"
+      ],
+      "description": "Existence dynamique avec perception active du monde",
+      "category": "existential",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "SENTIR": {
+      "dhatu_decomposition": [
+        "PERCEP",
+        "FEEL"
+      ],
+      "description": "Perception sensorielle avec résonance émotionnelle",
+      "category": "sensory",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "VOIR": {
+      "dhatu_decomposition": [
+        "PERCEP"
+      ],
+      "description": "Perception visuelle, modalité sensorielle primaire",
+      "category": "sensory",
+      "coherence_score": 1.0,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "ENTENDRE": {
+      "dhatu_decomposition": [
+        "PERCEP",
+        "COMM"
+      ],
+      "description": "Perception auditive, réception de communication sonore",
+      "category": "sensory",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "TOUCHER": {
+      "dhatu_decomposition": [
+        "PERCEP",
+        "RELAT"
+      ],
+      "description": "Perception tactile, relation directe avec les objets",
+      "category": "sensory",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    }
+  },
+  "integration_report": {
+    "timestamp": "2025-09-28T10:33:23Z",
+    "integration_method": "validated_corrections_v1.0",
+    "integration_summary": {
+      "total_corrections_applied": 22,
+      "concepts_added": 22,
+      "concepts_updated": 0,
+      "integration_success_rate": 1.0
+    },
+    "dictionary_quality": {
+      "total_concepts": 22,
+      "completion_rate": 1.0,
+      "average_coherence": 0.884090909090909,
+      "high_quality_concepts": 22,
+      "concepts_needing_work": 0
+    },
+    "semantic_analysis": {
+      "category_distribution": {
+        "emotional": 6,
+        "creative": 3,
+        "cognitive": 3,
+        "relational": 3,
+        "existential": 2,
+        "kinetic": 1,
+        "sensory": 4
+      },
+      "dhatu_usage_frequency": {
+        "FEEL": 12,
+        "RELAT": 6,
+        "EXIST": 7,
+        "CREAT": 5,
+        "DESTR": 5,
+        "PERCEP": 12,
+        "MOVE": 5,
+        "COMM": 2,
+        "THINK": 4
+      },
+      "most_used_dhatu": "FEEL"
+    },
+    "validation_passed": true,
+    "recommendations": [
+      "Rééquilibrer l'usage des dhātu (déséquilibre détecté)"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "original_remote": "ssh://git@github.com/stephanedenis/PaniniFS-Research.git",
+  "backup_tag": "v-pre-rename-20250928-183534",
+  "pre_rename_status": " M .gitignore\n M copilotage/autonomie/core/__pycache__/autonomous_mode.cpython-313.pyc\n?? ACCOMPLISSEMENTS_FINAUX_CYCLE_DHATU.md\n?? ANALYSE_COMPARATIVE_DIAGRAMMES_DHATU.md\n?? AUDIT_REPOSITORIES_SUMMARY_20250928_181425.md\n?? CONFIGURATION_EXTENSIONS_DIAGRAMMES.md\n?? CORRECTIONS_RENDU_DIAGRAMMES.md\n?? DIAGRAMMES_PLANTUML_UNIQUES.md\n?? DIAGRAMMES_VISUELS_AJOUTES.md\n?? DOCUMENTATION_COMPLETE_TRIPARTITE_DHATU.json\n?? DOCUMENTATION_DIAGRAMMES_CYCLES_DHATU.md\n?? GUIDE_COMPLET_TRIPARTITE_DHATU.md\n?? PLAN_OPTIMISATION_COLAB_PRO.md\n?? PROCESSUS_TRAVAIL_INTEGRE.md\n?? RAPPORT_FINAL_ACCOMPLISSEMENTS_TRIPARTITE.json\n?? RAPPORT_FINAL_ACCOMPLISSEMENTS_TRIPARTITE.md\n?? RAPPORT_FINAL_ANALYSES_CONCURRENTES_20250927.md\n?? RAPPORT_RAFFINEMENT_DEFINITIONS_20250927.md\n?? REFACTORING_COMPLETE_REPORT.md\n?? RESUME_EXECUTIF_DOCUMENTATION_TRIPARTITE.md\n?? RESUME_FINAL_ACCOMPLISSEMENTS.json\n?? SIMPLIFICATION_PLANTUML.md\n?? SIMPLIFICATION_TERMINEE.md\n?? TEST_RENDU_DIAGRAMMES.md\n?? TODO_REPOSITORIES_GITHUB_20250928_182819.json\n?? VALIDATION_VISUELLE_CYCLES_DHATU.md\n?? activateur_ressources_massives.py\n?? agents/\n?? amelioration_panlang_v2.py\n?? analyse_architecture_modulaire_ecosysteme.py\n?? analyse_evolution_comparative_panlang.py\n?? analyse_evolution_panlang/\n?? analyseur_ambiguites_semantiques_ultime.py\n?? analyseur_antagonismes_avance.py\n?? analyseur_composabilite_emotionnelle.py\n?? analyseur_conflits_python_pur.py\n?? analyseur_corpus_geometrique_parallele.py\n?? analyseur_reduction_atomique.py\n?? analyseur_resolution_ambiguites.py\n?? analyseur_semantique_dhatu.py\n?? architecture_corrigee_validation_utilisateur.py\n?? architecture_panksepp_etendue_1759071514.json\n?? arret_processus_optimisation.py\n?? audit_repositories_github_20250928_181425.json\n?? auditeur_repositories_github_autonome.py\n?? comparaison_architectures_1759071514.json\n?? config/github_sync_tracking.json\n?? continuer_refactoring_architecture.py\n?? coordinateur_analyses_concurrentes.py\n?? copilotage/journal/RAPPORT_SESSION_MIGRATION_FEEL_PANKSEPP_20250928.md\n?? copilotage/journal/session_migration_feel_panksepp_20250928_1759074691.json\n?? correcteur_detection_corpus.py\n?? dashboard_dynamique_panlang.py\n?? dashboard_panlang/\n?? dashboard_simplifie_panlang.py\n?? data/gutenberg_corpus/\n?? data/gutenberg_corpus_large/\n?? data/gutenberg_direct_corpus/\n?? data/gutenberg_massive_corpus/\n?? data/gutenberg_multilingual_corpus/\n?? data/gutenberg_multilingual_verified/\n?? data/gutenberg_smart_corpus/\n?? detecteur_activite_avance.py\n?? dhatu_authentiques/\n?? dhatu_semantique_authentique.py\n?? dhatu_tripartite_autonomous_results.json\n?? diagnostic_reparation_mcp.py\n?? diagrams_dhatu_cycles/\n?? dictionnaire_panlang_ULTIME/\n?? dictionnaire_panlang_corrige_1759070003.json\n?? dictionnaire_panlang_panksepp_1759073218.json\n?? dictionnaire_panlang_v2/\n?? dictionnaire_panlang_v25_final/\n?? dictionnaire_raffine_20250927_144213.json\n?? dictionnaire_raffine_20250927_144538.json\n?? dictionnaire_recursif/\n?? dictionnaire_recursif_semantique.py\n?? dictionnaire_universel_final/\n?? domains/\n?? download_wikipedia_dumps.sh\n?? encyclopedie_compositionnelle_universelle.py\n?? etat_art_modeles_emotionnels.py\n?? etat_art_modeles_emotionnels_1759072495.json\n?? evaluateur_progression.py\n?? expansion_corpus_intelligente.py\n?? expansion_corpus_intelligente/\n?? expansion_semantique_directe.py\n?? expansion_semantique_directe/\n?? explorateur_oxymores_emotionnels.py\n?? exploration_ecosysteme_panini.py\n?? exploration_oxymores_emotionnels_1759074193.json\n?? framework_criteres_qualite.py\n?? generate_final_summary.py\n?? generateur_oxymores_raffines.py\n?? generateur_rapport_session_migration.py\n?? integrateur_corrections_ambiguites.py\n?? integrateur_dictionnaire_unifie.py\n?? integrateur_final_panlang_v25.py\n?? integrateur_panlang.py\n?? integration_corpus_tripartite_ultimate_final.json\n?? migrateur_feel_panksepp.py\n?? migration_feel_panksepp_1759073218.json\n?? nettoyage_mcp_complet.py\n?? nettoyage_rapport_1759068497.json\n?? nettoyeur_processus.py\n?? optimisation_hillclimbing/\n?? optimiseur_hillclimbing_panlang.py\n?? optimiseur_hillclimbing_panlang_RESSOURCES_MASSIVES.py\n?? oxymores_emotionnels_raffines_1759074280.json\n?? panlang_integree/\n?? panlang_lite_processor.py\n?? panlang_primitives/\n?? panlang_reconstructeur_universel.py\n?? panlang_universel/\n?? panlang_wikipedia_processor.py\n?? plan_migration_panksepp_1759071514.json\n?? processus_raffinement_definitions.py\n?? propositions_strategiques_ecosysteme_panini.py\n?? qualite_framework/\n?? rapport_analyses_concurrentes_1759003733.md\n?? rapport_detection_automatique_ambiguites.json\n?? rapport_final_demonstration/\n?? rapport_final_demonstration_panlang.py\n?? rapport_integration_corrections_1759070003.json\n?? rapport_panlang_rapide.py\n?? rapport_synthese_decouvertes_autonomie.py\n?? reduction_atomique/\n?? refactoring_architecture_complet_valide.py\n?? refactoring_report_1759089940.json\n?? registre_processus_actifs.json\n?? renommeur_github_repository_autonome.py\n?? resolution_ambiguites_1759069000.json\n?? resolution_ambiguites_analysee_1759069918.json\n?? resolveur_ambiguites_intelligent.py\n?? resume_validation_panksepp_1759073308.json\n?? revision_collaborative_core_mission.py\n?? revision_criteres_ecosysteme_complet.py\n?? revision_interactive_criteres.py\n?? revision_panksepp_etendu.py\n?? src/analyzers/\n?? src/collectors/\n?? src/compression/\n?? src/dashboards/\n?? src/documentation/\n?? src/integrators/\n?? src/reports/\n?? src/visualization/\n?? super_integrateur_panlang_ultime.py\n?? support/\n?? systeme_autonome_refactoring_ecosysteme.py\n?? systeme_detection_automatique_ambiguites.py\n?? systeme_validation_continue.py\n?? systeme_validation_integre.py\n?? test_combinaisons_creatives_1759073308.json\n?? traceur_defilement.py\n?? validateur_coherence_architecturale.py\n?? validateur_concepts_critiques_panksepp.py\n?? validateur_final_ambiguites.py\n?? validation_coherence_architecturale_1759073422.json\n?? validation_concepts_critiques_1759073308.json\n?? validation_continue/\n?? validation_finale_ambiguites_1759070082.json\n?? validation_finale_ultime/\n?? validation_finale_ultime_panlang.py\n?? validation_integree/\n?? validation_panlang_v2.py\n?? validation_panlang_v2/\n?? validation_reconstruction_universelle.py\n?? validation_reconstruction_universelle/\n?? verificateur_activite_terminaux.py\n?? verification_terminaux_1759068749.json\n?? verifier_dashboard.py\n?? visualiseur_representations_intermediaires.html\n?? wikipedia_decompressed/\n?? wikipedia_decompresseur_optimise.py\n?? wikipedia_dumps/\n?? wikipedia_dumps_analyzer.py\n?? wikipedia_metadata/\n",
+  "timestamp": "2025-09-28T18:35:35.675900",
+  "github_impact": {
+    "repository": "PaniniFS-Research",
+    "estimated_impact": "HIGH",
+    "potential_issues": [
+      "GitHub Projects associés au repository",
+      "Issues et Pull Requests avec liens",
+      "Webhooks configurés",
+      "Pages GitHub (github.io)",
+      "Liens externes vers repository"
+    ],
+    "mitigation_steps": [
+      "GitHub devrait créer redirections automatiques",
+      "Notifier collaborateurs du changement",
+      "Mettre à jour documentation externe",
+      "Vérifier webhooks post-renommage"
+    ]
+  },
+  "rename_instructions": {
+    "method": "MANUAL_VIA_GITHUB_WEB",
+    "steps": [
+      "1. Aller sur https://github.com/stephanedenis/PaniniFS-Research",
+      "2. Cliquer 'Settings' dans le menu repository",
+      "3. Descendre à section 'Repository name'",
+      "4. Changer 'PaniniFS-Research' → 'Panini'",
+      "5. Confirmer avec 'Rename repository'",
+      "6. GitHub créera automatiquement redirections"
+    ],
+    "post_rename_local_update": [
+      "7. Mettre à jour remote local après renommage GitHub",
+      "8. Nouveau remote: ssh://git@github.com/stephanedenis/Panini.git",
+      "9. Vérifier fonctionnement push/pull"
+    ],
+    "verification": [
+      "10. Tester accès https://github.com/stephanedenis/Panini",
+      "11. Vérifier redirection https://github.com/stephanedenis/PaniniFS-Research",
+      "12. Contrôler GitHub Projects/Issues migration automatique"
+    ]
+  }
+}

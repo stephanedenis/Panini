@@ -1,0 +1,103 @@
+{
+  "timestamp_creation": "2025-09-27T13:35:00Z",
+  "timestamp_maj": "2025-09-27T13:45:00Z",
+  "processus_locaux": {
+    "dashboard_panlang": {
+      "statut": "actif",
+      "demarrage": "2025-09-27T13:47:40Z",
+      "terminal_id": "10c0afbd-e3a2-4daf-830e-aac3e346613f",
+      "commande": "python3 dashboard_simplifie_panlang.py",
+      "port": 8080,
+      "url": "http://localhost:8080",
+      "log_fichier": "dashboard_log.txt",
+      "notes": "✅ Dashboard relancé après analyses - accessible sur port 8080"
+    },
+    "analyseur_ambiguites": {
+      "statut": "terminé_succès",
+      "fichier": "analyseur_ambiguites_semantiques_ultime.py",
+      "commande": "python3 analyseur_ambiguites_semantiques_ultime.py",
+      "terminal_id": "c724e7ee-5b97-45ee-bfbf-a08693b2222e",
+      "log_fichier": "analyse_ambiguites_log.txt",
+      "resultat": "analyse_ambiguites_dictionnaire_20250927_134112.json",
+      "conflits_detectes": 154,
+      "concepts_analyses": 154,
+      "demarrage": "2025-09-27T13:35:30Z",
+      "fin": "2025-09-27T13:41:12Z",
+      "notes": "✅ Analyse terminée - 154 conflits détectés dans dictionnaire"
+    },
+    "detection_automatique": {
+      "statut": "terminé_succès",
+      "fichier": "systeme_detection_automatique_ambiguites.py",
+      "commande": "python3 systeme_detection_automatique_ambiguites.py",
+      "terminal_id": "014112b3-a7d9-473d-a83f-a068626bc6fb",
+      "log_fichier": "detection_automatique_log.txt",
+      "resultat": "rapport_detection_automatique_ambiguites.json",
+      "priorite": "haute",
+      "demarrage": "2025-09-27T13:45:00Z",
+      "fin": "2025-09-27T13:45:45Z",
+      "notes": "✅ Système scoring terminé - 149 conflits prioritaires identifiés"
+    },
+    "raffinement_definitions": {
+      "statut": "terminé_succès",
+      "fichier": "processus_raffinement_definitions.py",
+      "commande": "python3 processus_raffinement_definitions.py",
+      "terminal_id": "b05e3043-d5f5-459a-a704-c6344e2b6fa3",
+      "log_fichier": "raffinement_v2_log.txt",
+      "resultat": "dictionnaire_raffine_20250927_144538.json",
+      "concepts_raffines": 20,
+      "confiance_moyenne": 0.45,
+      "demarrage": "2025-09-27T14:45:30Z",
+      "fin": "2025-09-27T14:45:38Z",
+      "notes": "✅ Raffinement terminé - 20 concepts améliorés avec dimensions contextuelles"
+    },
+    "analyse_geometrique_parallele": {
+      "statut": "terminé_succès",
+      "fichier": "analyseur_corpus_geometrique_parallele.py",
+      "commande": "python3 analyseur_corpus_geometrique_parallele.py",
+      "terminal_id": "4b770552-d42a-4c46-ac2a-a2fcf37af2cc",
+      "log_fichier": "analyse_geometrique_v2_log.txt",
+      "resultat": "parallel_analysis_result_geometric_parallel_1759003827.json",
+      "experiment_id": "geometric_parallel_1759003827",
+      "dimensions": "[5, 7, 11]D",
+      "workers_utilises": 12,
+      "duree_execution": 0.41,
+      "memoire_max_mb": 41.8,
+      "chunks_traites": 37,
+      "dhatu_dominants": [
+        "EXIST",
+        "RELATE",
+        "MODAL"
+      ],
+      "demarrage": "2025-09-27T16:10:27Z",
+      "fin": "2025-09-27T16:10:27Z",
+      "notes": "✅ Analyse géométrique multi-dimensionnelle terminée - Espaces 5D/7D/11D explorés"
+    }
+  },
+  "processus_distants": {},
+  "fichiers_verrous": [
+    "dictionnaire_panlang_ULTIME/dictionnaire_panlang_ULTIME_complet.json",
+    "analyse_ambiguites_dictionnaire_20250927_134112.json"
+  ],
+  "ports_utilises": [],
+  "resultats_disponibles": [
+    {
+      "fichier": "analyse_ambiguites_dictionnaire_20250927_134112.json",
+      "type": "analyse_conflits",
+      "statut": "complet",
+      "conflits": 154,
+      "concepts": 154
+    }
+  ],
+  "prochaines_actions": [
+    "Attendre fin système détection automatique",
+    "Implémenter processus raffinement définitions",
+    "Tester raffinements sur corpus validation"
+  ],
+  "derniere_maintenance": {
+    "timestamp": "2025-09-28T10:08:17Z",
+    "processus_arretes": 0,
+    "processus_preserves": 2,
+    "fichiers_nettoyes": 12,
+    "type": "nettoyage_stagnants"
+  }
+}

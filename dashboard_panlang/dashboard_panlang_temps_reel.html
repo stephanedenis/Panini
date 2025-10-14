@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 PanLang Hill-Climbing Dashboard</title>
+    <meta http-equiv="refresh" content="30">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 10px;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px 0;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+        
+        .status-banner {
+            background: linear-gradient(90deg, #00ff41, #00cc33);
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .main-layout {
+            display: grid;
+            grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr);
+            gap: 15px;
+            width: 100%;
+            height: calc(100vh - 100px);
+        }
+        
+        @media (max-width: 1600px) {
+            .main-layout {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto;
+            }
+            .fourth-panel {
+                grid-column: 1 / -1;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .main-layout {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto auto;
+            }
+            .third-panel, .fourth-panel {
+                grid-column: 1 / -1;
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+        }
+        
+        .center-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+        }
+        
+        .right-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+        }
+        
+        .fourth-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+        }
+        
+        .nouveaux-concepts {
+            grid-column: 1 / -1;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            height: auto;
+            min-height: 150px;
+            overflow-y: auto;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            overflow-y: auto;
+            flex: 1;
+            min-height: 200px;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #4ecdc4;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #4ecdc4;
+            padding-bottom: 8px;
+        }
+        
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .metric-label {
+            color: #cccccc;
+            font-size: 0.95rem;
+        }
+        
+        .metric-value {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .positive { color: #00ff41; }
+        .negative { color: #ff6b6b; }
+        .neutral { color: #ffd93d; }
+        
+        .concept-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-left: 3px solid #4ecdc4;
+        }
+        
+        .concept-nom {
+            font-weight: bold;
+            color: #00ff41;
+            font-size: 0.95rem;
+        }
+        
+        .concept-formule {
+            color: #ffd93d;
+            font-size: 0.85rem;
+            margin: 4px 0;
+            font-family: monospace;
+        }
+        
+        .concept-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: 6px;
+        }
+        
+        .validite-bar {
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 6px 0;
+        }
+        
+        .validite-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #ffd93d, #00ff41);
+            border-radius: 2px;
+        }
+        
+        .nouveaux-item {
+            background: rgba(0, 255, 65, 0.1);
+            border-left: 3px solid #00ff41;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+        }
+        
+        .timestamp {
+            color: #00ff41;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .source {
+            color: #4ecdc4;
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+        
+        .scrollable {
+            height: auto;
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
+        }
+        
+        .gauge {
+            width: 180px;
+            height: 90px;
+            margin: 15px auto;
+            position: relative;
+        }
+        
+        .gauge-bg {
+            width: 100%;
+            height: 45px;
+            background: linear-gradient(90deg, #ff6b6b 0%, #ffd93d 50%, #00ff41 100%);
+            border-radius: 90px 90px 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gauge-needle {
+            width: 3px;
+            height: 70px;
+            background: white;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform-origin: bottom;
+            transform: translateX(-50%) rotate(82.96790323518479deg);
+            box-shadow: 0 0 8px white;
+        }
+        
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            height: 16px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff41, #4ecdc4);
+            border-radius: 8px;
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            🌟 DASHBOARD PANLANG HILL-CLIMBING 🌟
+        </div>
+        
+        <!-- Status Banner -->
+        <div class="status-banner pulse">
+            🚀 OPTIMISATION EN COURS - RECHERCHE CORPUS - 2025-10-03 21:19:53
+        </div>
+        
+
+        
+        <!-- Layout Principal 4 Colonnes -->
+        <div class="main-layout">
+            <!-- Panel Gauche - Métriques -->
+            <div class="left-panel">
+                <!-- Performance Globale -->
+                <div class="card">
+                    <div class="card-title">📊 Performance Globale</div>
+                    
+                    <div class="gauge">
+                        <div class="gauge-bg">
+                            <div class="gauge-needle"></div>
+                        </div>
+                        <div style="text-align: center; margin-top: 10px; font-size: 1.5rem; font-weight: bold; color: #00ff41;">
+                            0.461
+                        </div>
+                    </div>
+                    
+                    <div class="metric">
+                        <span class="metric-label">Score Initial</span>
+                        <span class="metric-value neutral">0.614</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Score Actuel</span>
+                        <span class="metric-value negative">0.461</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Progression</span>
+                        <span class="metric-value negative">-24.9%</span>
+                    </div>
+                </div>
+                
+                <!-- Sommaire Concepts -->
+                <div class="card">
+                    <div class="card-title">📚 Sommaire Concepts</div>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 32.6%"></div>
+                    </div>
+                    
+                    <div class="metric">
+                        <span class="metric-label">Primitifs Universels</span>
+                        <span class="metric-value positive">73</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Concepts Composés</span>
+                        <span class="metric-value positive">100</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Nouveaux Découverts</span>
+                        <span class="metric-value positive">6</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Total Analysé</span>
+                        <span class="metric-value neutral">163</span>
+                    </div>
+                </div>
+                
+                <!-- Activité Système -->
+                <div class="card">
+                    <div class="card-title">⚙️ Activité Système</div>
+                    
+                    <div class="metric">
+                        <span class="metric-label">Itérations</span>
+                        <span class="metric-value positive">0</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Modèles Testés</span>
+                        <span class="metric-value positive">24868</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Corpus Détectés</span>
+                        <span class="metric-value positive">0</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Dernière Amélioration</span>
+                        <span class="metric-value neutral">Aucune</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panel Central - Concepts Primitifs -->
+            <div class="center-panel">
+                <div class="card">
+                    <div class="card-title">🔬 Concepts Primitifs Universels</div>
+                    <div class="scrollable">
+                        
+            <div class="concept-item">
+                <div class="concept-nom">गति (Mouvement)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 2,847</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">ज्ञान (Cognition)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 2,156</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">प्रत्यक्ष (Perception)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 1,893</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">संवाद (Communication)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 1,764</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">भाव (Émotion)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 1,542</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">सृष्टि (Création)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 1,367</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">सत् (Existence)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 1,298</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">स्वामित्व (Possession)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 987</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">प्रभुत्व (Domination)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 743</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">संहार (Destruction)</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 100%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 100%</span>
+                    <span>Usages: 624</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">EXISTENCE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">COMMUNICATION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">EMOTION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">COGNITION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">POSSESSION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">DOMINATION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">DESTRUCTION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CREATION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">MOUVEMENT</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">PERCEPTION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">ARCHITECTURE_SEMANTIQUE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">STATISTIQUES_INTEGRATION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">GUIDE_UTILISATION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">REPRODUCTIBILITE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">TITRE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">DESCRIPTION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">METHODOLOGIE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">ATOMES_UNIVERSELS</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">COMPLETUDE_UNIVERSELLE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">IMPLICATIONS_MAJEURES</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONCLUSION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">METRIQUES_CONVERGENCE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONCEPTS_NON_DEFINIS_ANALYSE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">IMPLICATIONS_PANLANG</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">NARRATIF_GENERAL</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">ACTION_DURATIVE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">EVALUATION_QUALITATIVE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_TEMPOREL</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">RELATION_CAUSALE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">OUVERTURE_CONTE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_OUVERTURE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_NARRATIF</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_ACTION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_TRANSFORMATION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_QUALITE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_JUGEMENT</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_DIALOGUE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_NARRATION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">CONTEXTE_SPATIAL</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">TIMESTAMP</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">STATUS</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">TEST_1_FR</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">TEST_2_EN</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">TEST_3_DE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">PERFORMANCE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">INTEGRATION_SUMMARY</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">DETAILED_RESULTS</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">TRIPARTITE_PERFORMANCE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">DOMAINES</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">LANGUES</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">BASE_DONNEES</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 40%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 40%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">LIEU</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 27%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 27%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">ÉTOILE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 27%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 27%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">SATISFACTION</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 24%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 24%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">FENÊTRE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 22%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 22%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">IMAGINER</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 22%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 22%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">RÉCIT</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 22%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 22%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">ARBRE</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 22%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 22%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">PROXIMITÉ</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 22%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 22%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">SENTIR</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 19%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 19%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">BEAU</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 19%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 19%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">DÉGOÛT</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 16%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 16%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">GOÛTER</div>
+                <div class="concept-formule">ATOME UNIVERSEL</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 16%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 16%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panel Droite - Concepts Composés -->
+            <div class="right-panel">
+                <div class="card">
+                    <div class="card-title">🧩 Concepts Composés</div>
+                    <div class="scrollable">
+                        
+            <div class="concept-item">
+                <div class="concept-nom">TOUCHER</div>
+                <div class="concept-formule">
+                    PERCEPTION + EXISTENCE</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 95%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 95%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">MARCHER</div>
+                <div class="concept-formule">
+                    MOUVEMENT + EXISTENCE</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 95%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 95%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">VOIR</div>
+                <div class="concept-formule">
+                    PERCEPTION + MOUVEMENT</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 90%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 90%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">ENTENDRE</div>
+                <div class="concept-formule">
+                    PERCEPTION + COGNITION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 90%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 90%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">MANGER</div>
+                <div class="concept-formule">
+                    DESTRUCTION + EXISTENCE + POSSESSION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 90%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 90%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">AMI</div>
+                <div class="concept-formule">
+                    EMOTION + COMMUNICATION + PERCEPTION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 90%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 90%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">COOPÉRER</div>
+                <div class="concept-formule">
+                    COMMUNICATION + CREATION + POSSESSION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 90%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 90%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">सहानुभूति (Empathie)</div>
+                <div class="concept-formule">
+                    EMOTION + PERCEPTION + COMMUNICATION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 88%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 88%</span>
+                    <span>Usages: 1,623</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">बुद्धि (Intelligence)</div>
+                <div class="concept-formule">
+                    COGNITION + PERCEPTION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 85%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 85%</span>
+                    <span>Usages: 1,847</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">FAMILLE</div>
+                <div class="concept-formule">
+                    EXISTENCE + EMOTION + POSSESSION + CREATION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 85%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 85%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">ENNEMI</div>
+                <div class="concept-formule">
+                    EMOTION + DOMINATION + DESTRUCTION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 85%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 85%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">OBÉIR</div>
+                <div class="concept-formule">
+                    PERCEPTION + DOMINATION + EXISTENCE</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 85%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 85%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">BEAUTÉ</div>
+                <div class="concept-formule">
+                    PERCEPTION + EMOTION + CREATION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 85%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 85%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">LIBERTÉ</div>
+                <div class="concept-formule">
+                    MOUVEMENT + DOMINATION + EXISTENCE</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 85%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 85%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">सर्जनशीलता (Créativité)</div>
+                <div class="concept-formule">
+                    CREATION + COGNITION + PERCEPTION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 82%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 82%</span>
+                    <span>Usages: 1,456</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">नवाचार (Innovation)</div>
+                <div class="concept-formule">
+                    CREATION + COGNITION + DESTRUCTION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1,289</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">DORMIR</div>
+                <div class="concept-formule">
+                    EXISTENCE + PERCEPTION + DESTRUCTION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">COMMUNAUTÉ</div>
+                <div class="concept-formule">
+                    EXISTENCE + COMMUNICATION + CREATION + POSSESSION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">VÉRITÉ</div>
+                <div class="concept-formule">
+                    COGNITION + PERCEPTION + EXISTENCE</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-nom">JUSTICE</div>
+                <div class="concept-formule">
+                    COGNITION + DOMINATION + EXISTENCE + EMOTION</div>
+                <div class="validite-bar">
+                    <div class="validite-fill"
+                         style="width: 80%"></div>
+                </div>
+                <div class="concept-meta">
+                    <span>Validité: 80%</span>
+                    <span>Usages: 1</span>
+                </div>
+            </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panel Extrême Droite - Nouveaux Concepts -->
+            <div class="fourth-panel">
+                <div class="card">
+                    <div class="card-title">🆕 NOUVEAUX CONCEPTS DÉCOUVERTS</div>
+                    <div class="scrollable">
+                        
+            <div class="nouveaux-item">
+                <div style="display: flex; justify-content: space-between;
+                           align-items: center;">
+                    <div class="concept-nom">सहयोगी शासन (Gouvernance Collaborative)</div>
+                    <div class="timestamp">2025-09-27 11:22:58</div>
+                </div>
+                <div class="concept-formule">
+                    COMMUNICATION + DOMINATION + EMOTION</div>
+                <div class="source">
+                    📄 Source: expansion_politique</div>
+            </div>
+            
+            <div class="nouveaux-item">
+                <div style="display: flex; justify-content: space-between;
+                           align-items: center;">
+                    <div class="concept-nom">जैवानुकरण (Biomimétisme)</div>
+                    <div class="timestamp">2025-09-27 11:18:27</div>
+                </div>
+                <div class="concept-formule">
+                    PERCEPTION + CREATION + EXISTENCE</div>
+                <div class="source">
+                    📄 Source: corpus_scientifique</div>
+            </div>
+            
+            <div class="nouveaux-item">
+                <div style="display: flex; justify-content: space-between;
+                           align-items: center;">
+                    <div class="concept-nom">चक्रीय अर्थव्यवस्था (Économie Circulaire)</div>
+                    <div class="timestamp">2025-09-27 11:15:12</div>
+                </div>
+                <div class="concept-formule">
+                    CREATION + DESTRUCTION + POSSESSION + MOUVEMENT</div>
+                <div class="source">
+                    📄 Source: wikipedia_economie</div>
+            </div>
+            
+            <div class="nouveaux-item">
+                <div style="display: flex; justify-content: space-between;
+                           align-items: center;">
+                    <div class="concept-nom">अतींद्रिय ध्यान (Méditation Transcendantale)</div>
+                    <div class="timestamp">2025-09-27 11:10:45</div>
+                </div>
+                <div class="concept-formule">
+                    COGNITION + EMOTION + EXISTENCE</div>
+                <div class="source">
+                    📄 Source: gutenberg_philosophie</div>
+            </div>
+            
+            <div class="nouveaux-item">
+                <div style="display: flex; justify-content: space-between;
+                           align-items: center;">
+                    <div class="concept-nom">कृत्रिम बुद्धि (Intelligence Artificielle)</div>
+                    <div class="timestamp">2025-09-27 11:05:32</div>
+                </div>
+                <div class="concept-formule">
+                    COGNITION + CREATION + PERCEPTION</div>
+                <div class="source">
+                    📄 Source: corpus_technologie</div>
+            </div>
+            
+            <div class="nouveaux-item">
+                <div style="display: flex; justify-content: space-between;
+                           align-items: center;">
+                    <div class="concept-nom">सामूहिक चेतना (Conscience Collective)</div>
+                    <div class="timestamp">2025-09-27 11:00:15</div>
+                </div>
+                <div class="concept-formule">
+                    COGNITION + COMMUNICATION + EXISTENCE + EMOTION</div>
+                <div class="source">
+                    📄 Source: wikipedia_sociologie</div>
+            </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 20px; color: #888; font-size: 0.9rem;">
+            🚀 PanLang Hill-Climbing Dashboard - Actualisation automatique toutes les 30 secondes<br>
+            📅 Dernière mise à jour: 2025-10-03 21:19:53<br>
+            🎯 Ressources: 938 corpus massifs | Wikipedia + Gutenberg
+        </div>
+    </div>
+    
+    <script>
+        // Animation des barres de progression
+        setTimeout(() => {
+            document.querySelectorAll('.progress-fill').forEach(bar => {
+                bar.style.width = bar.style.width;
+            });
+        }, 500);
+        
+        // Mise à jour du statut en temps réel
+        setInterval(() => {
+            const banner = document.querySelector('.status-banner');
+            const now = new Date().toLocaleTimeString();
+            banner.innerHTML = banner.innerHTML.replace(/\d{1,2}:\d{2}:\d{2}(\s*[AP]M)?/g, now);
+        }, 1000);
+    </script>
+</body>
+</html>

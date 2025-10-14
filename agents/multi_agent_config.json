@@ -1,0 +1,56 @@
+{
+  "system_name": "Panini Multi-Agent System",
+  "version": "1.0.0",
+  "created": "2025-09-28T16:30:24.488836",
+  "agents": {
+    "Agent-Panini": {
+      "role": "Recherche & Développement Central",
+      "domain": "Linguistique computationnelle, Panini, Dhatu",
+      "capabilities": [
+        "analyse_corpus",
+        "dhatu_processing",
+        "semantic_analysis"
+      ],
+      "workspace": "/home/stephane/GitHub/Panini",
+      "spec_kit": "agent_panini_spec.json"
+    },
+    "Agent-OntoWave": {
+      "role": "Interface Utilisateur & Visualisation",
+      "domain": "TypeScript, Vite, Interface web",
+      "capabilities": [
+        "ui_development",
+        "visualization",
+        "user_interaction"
+      ],
+      "workspace": "/home/stephane/GitHub/Panini-OntoWave",
+      "spec_kit": "agent_ontowave_spec.json"
+    },
+    "Agent-FS": {
+      "role": "Système de Fichiers & Infrastructure",
+      "domain": "Système de fichiers, Performance, Optimisation",
+      "capabilities": [
+        "file_systems",
+        "performance",
+        "infrastructure"
+      ],
+      "workspace": "/home/stephane/GitHub/PaniniFS",
+      "spec_kit": "agent_fs_spec.json"
+    },
+    "Agent-Gest": {
+      "role": "Gestion & Orchestration",
+      "domain": "Gestion de projet, Orchestration, Coordination",
+      "capabilities": [
+        "project_management",
+        "orchestration",
+        "coordination"
+      ],
+      "workspace": "/home/stephane/GitHub/Panini-Gest",
+      "spec_kit": "agent_gest_spec.json"
+    }
+  },
+  "coordination": {
+    "central_hub": "Agent-Panini",
+    "communication_protocol": "JSON-RPC",
+    "shared_memory": "panini_shared_context.json"
+  }
+}

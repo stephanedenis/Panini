@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 Visualiseur Représentations Intermédiaires - Système Tripartite Dhātu</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .controls {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .control-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        select, button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #fff;
+            transform: translateY(-2px);
+        }
+
+        .visualization-panels {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .panel h3 {
+            margin: 0 0 15px 0;
+            color: #ffd700;
+            font-size: 1.3rem;
+        }
+
+        .metrics-panel {
+            grid-column: span 2;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+        .svg-container {
+            width: 100%;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .node {
+            cursor: pointer;
+        }
+
+        .node:hover {
+            stroke: #ffd700;
+            stroke-width: 3px;
+        }
+
+        .link {
+            stroke: rgba(255, 255, 255, 0.6);
+            stroke-width: 2;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+            max-width: 200px;
+            z-index: 1000;
+        }
+
+        .phase-indicator {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .fingerprint-display {
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔬 Visualiseur Représentations Intermédiaires</h1>
+            <p class="subtitle">Système Tripartite Dhātu - Validation des Patterns Sémantiques</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>📝 Exemple de Corpus:</label>
+                <select id="corpusSelect">
+                    <option value="simple_basic">Simple Basic - "The cat sits."</option>
+                    <option value="multilingual_en">Multilingual EN - "The quick brown fox..."</option>
+                    <option value="multilingual_fr">Multilingual FR - "Le renard brun rapide..."</option>
+                    <option value="narrative_complex">Narrative Complex - Alice au pays des merveilles</option>
+                    <option value="technical_doc">Technical Document - Dhātu System specification</option>
+                    <option value="recursive_content">Recursive Content - Pattern répétitif</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>🔍 Phase d'Analyse:</label>
+                <select id="phaseSelect">
+                    <option value="lossless">Phase 1: Lossless Compression</option>
+                    <option value="fractal">Phase 2: Fractal Detection</option>
+                    <option value="anti_recursion">Phase 3: Anti-Recursion</option>
+                    <option value="unified">Phase 4: Pipeline Unifié</option>
+                </select>
+            </div>
+
+            <button onclick="analyzeCorpus()">🚀 Analyser</button>
+            <button onclick="exportVisualization()">📊 Export</button>
+        </div>
+
+        <div class="visualization-panels">
+            <div class="panel">
+                <h3>🧬 Graphe Conceptuel</h3>
+                <div class="phase-indicator" id="currentPhase">Phase: Sélectionner un exemple</div>
+                <div class="svg-container">
+                    <svg id="conceptGraph" width="100%" height="100%"></svg>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3>🔄 Flux de Transformation</h3>
+                <div class="svg-container">
+                    <svg id="transformationFlow" width="100%" height="100%"></svg>
+                </div>
+                <div class="fingerprint-display" id="fingerprintDisplay">
+                    Empreintes cryptographiques s'afficheront ici...
+                </div>
+            </div>
+        </div>
+
+        <div class="metrics-panel">
+            <h3>📊 Métriques de Performance</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value" id="compressionRatio">--</div>
+                    <div class="metric-label">Ratio Compression</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="fidelityScore">--</div>
+                    <div class="metric-label">Fidélité (%)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="processingTime">--</div>
+                    <div class="metric-label">Temps Traitement (ms)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="dhatuCount">--</div>
+                    <div class="metric-label">Dhātu Activés</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="fractalDepth">--</div>
+                    <div class="metric-label">Profondeur Fractale</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="recursionSafety">--</div>
+                    <div class="metric-label">Sécurité Anti-Récursion</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        // Données simulées basées sur les résultats réels du système tripartite
+        const corpusExamples = {
+            simple_basic: {
+                text: "The cat sits.",
+                dhatu_signature: "EXIST|RELATE|EVAL",
+                original_length: 13,
+                phases: {
+                    lossless: {
+                        compressed_length: 47,
+                        fidelity: 1.0,
+                        fingerprint: "a8b2c9d4e5f6...",
+                        dhatus: ["EXIST", "RELATE"],
+                        processing_time: 0.15
+                    },
+                    fractal: {
+                        similarity_threshold: 0.85,
+                        patterns_detected: 1,
+                        compression_improvement: 1.2,
+                        fractal_depth: 2
+                    },
+                    anti_recursion: {
+                        cycles_detected: 0,
+                        safe_explorations: 5,
+                        max_depth_reached: 3,
+                        safety_level: "SAFE"
+                    },
+                    unified: {
+                        final_compression: 0.28,
+                        pipeline_efficiency: 0.94,
+                        total_dhatus: 3
+                    }
+                }
+            },
+            multilingual_en: {
+                text: "The quick brown fox jumps over the lazy dog.",
+                dhatu_signature: "CAUSE|FLOW|RELATE|EXIST",
+                original_length: 44,
+                phases: {
+                    lossless: {
+                        compressed_length: 156,
+                        fidelity: 1.0,
+                        fingerprint: "f9e8d7c6b5a4...",
+                        dhatus: ["CAUSE", "FLOW", "RELATE", "EXIST"],
+                        processing_time: 0.23
+                    },
+                    fractal: {
+                        similarity_threshold: 0.85,
+                        patterns_detected: 2,
+                        compression_improvement: 1.8,
+                        fractal_depth: 3
+                    },
+                    anti_recursion: {
+                        cycles_detected: 0,
+                        safe_explorations: 12,
+                        max_depth_reached: 4,
+                        safety_level: "SAFE"
+                    },
+                    unified: {
+                        final_compression: 0.064,
+                        pipeline_efficiency: 0.97,
+                        total_dhatus: 6
+                    }
+                }
+            },
+            narrative_complex: {
+                text: "Alice was beginning to get very tired of sitting by her sister...",
+                dhatu_signature: "FEEL|ITER|EXIST|EVAL|RELATE",
+                original_length: 285,
+                phases: {
+                    lossless: {
+                        compressed_length: 892,
+                        fidelity: 1.0,
+                        fingerprint: "c3f7a9b2e8d1...",
+                        dhatus: ["FEEL", "ITER", "EXIST", "EVAL", "RELATE", "DECIDE"],
+                        processing_time: 0.45
+                    },
+                    fractal: {
+                        similarity_threshold: 0.85,
+                        patterns_detected: 4,
+                        compression_improvement: 2.3,
+                        fractal_depth: 5
+                    },
+                    anti_recursion: {
+                        cycles_detected: 1,
+                        safe_explorations: 28,
+                        max_depth_reached: 7,
+                        safety_level: "MONITORED"
+                    },
+                    unified: {
+                        final_compression: 0.051,
+                        pipeline_efficiency: 0.89,
+                        total_dhatus: 8
+                    }
+                }
+            }
+        };
+
+        const dhatus = [
+            { name: "EXIST", color: "#e74c3c", concept: "Existence/États" },
+            { name: "RELATE", color: "#3498db", concept: "Relations/Spatial" },
+            { name: "COMM", color: "#2ecc71", concept: "Communication" },
+            { name: "EVAL", color: "#f39c12", concept: "Évaluation/Cognition" },
+            { name: "CAUSE", color: "#9b59b6", concept: "Causation/Action" },
+            { name: "FLOW", color: "#1abc9c", concept: "Mouvement/Flux" },
+            { name: "MODAL", color: "#e67e22", concept: "Modalité/Possibilité" },
+            { name: "ITER", color: "#34495e", concept: "Itération/Répétition" },
+            { name: "DECIDE", color: "#c0392b", concept: "Décision/Volition" }
+        ];
+
+        let currentExample = null;
+        let currentPhase = null;
+
+        function analyzeCorpus() {
+            const corpusId = document.getElementById('corpusSelect').value;
+            const phaseId = document.getElementById('phaseSelect').value;
+            
+            currentExample = corpusExamples[corpusId];
+            currentPhase = phaseId;
+            
+            if (!currentExample) {
+                alert('Exemple non trouvé');
+                return;
+            }
+            
+            document.getElementById('currentPhase').textContent = 
+                `Phase: ${document.getElementById('phaseSelect').selectedOptions[0].text}`;
+            
+            updateMetrics();
+            renderConceptGraph();
+            renderTransformationFlow();
+            updateFingerprint();
+        }
+
+        function updateMetrics() {
+            if (!currentExample || !currentPhase) return;
+            
+            const phase = currentExample.phases[currentPhase];
+            const unified = currentExample.phases.unified;
+            
+            document.getElementById('compressionRatio').textContent = 
+                (unified?.final_compression || 0).toFixed(3);
+            document.getElementById('fidelityScore').textContent = 
+                ((phase?.fidelity || 1.0) * 100).toFixed(1);
+            document.getElementById('processingTime').textContent = 
+                ((phase?.processing_time || 0) * 1000).toFixed(1);
+            document.getElementById('dhatuCount').textContent = 
+                unified?.total_dhatus || 0;
+            document.getElementById('fractalDepth').textContent = 
+                phase?.fractal_depth || phase?.max_depth_reached || 0;
+            document.getElementById('recursionSafety').textContent = 
+                phase?.safety_level || "N/A";
+        }
+
+        function renderConceptGraph() {
+            if (!currentExample) return;
+            
+            const svg = d3.select('#conceptGraph');
+            svg.selectAll('*').remove();
+            
+            const width = svg.node().clientWidth;
+            const height = svg.node().clientHeight;
+            
+            // Créer les nœuds dhātu basés sur la signature
+            const activeDhatus = currentExample.dhatu_signature.split('|');
+            const nodes = activeDhatus.map((name, i) => {
+                const dhatuInfo = dhatus.find(d => d.name === name);
+                return {
+                    id: name,
+                    name: name,
+                    color: dhatuInfo?.color || '#888',
+                    concept: dhatuInfo?.concept || 'Concept inconnu',
+                    x: width * (0.2 + 0.6 * i / Math.max(1, activeDhatus.length - 1)),
+                    y: height * (0.3 + 0.4 * Math.sin(i * Math.PI / activeDhatus.length))
+                };
+            });
+            
+            // Créer les liens (relations entre dhātu)
+            const links = [];
+            for (let i = 0; i < nodes.length - 1; i++) {
+                links.push({
+                    source: nodes[i],
+                    target: nodes[i + 1],
+                    weight: Math.random() * 0.8 + 0.2
+                });
+            }
+            
+            // Dessiner les liens
+            svg.selectAll('.link')
+                .data(links)
+                .enter()
+                .append('line')
+                .attr('class', 'link')
+                .attr('x1', d => d.source.x)
+                .attr('y1', d => d.source.y)
+                .attr('x2', d => d.target.x)
+                .attr('y2', d => d.target.y)
+                .attr('stroke-width', d => d.weight * 4)
+                .attr('opacity', d => d.weight);
+            
+            // Dessiner les nœuds
+            const nodeGroups = svg.selectAll('.node')
+                .data(nodes)
+                .enter()
+                .append('g')
+                .attr('class', 'node')
+                .attr('transform', d => `translate(${d.x}, ${d.y})`);
+            
+            nodeGroups.append('circle')
+                .attr('r', 25)
+                .attr('fill', d => d.color)
+                .attr('stroke', '#fff')
+                .attr('stroke-width', 2);
+            
+            nodeGroups.append('text')
+                .attr('text-anchor', 'middle')
+                .attr('dy', '0.35em')
+                .attr('fill', 'white')
+                .attr('font-size', '10px')
+                .attr('font-weight', 'bold')
+                .text(d => d.name.substring(0, 4));
+            
+            // Tooltip
+            nodeGroups.on('mouseover', function(event, d) {
+                const tooltip = d3.select('#tooltip');
+                tooltip.style('opacity', 1)
+                    .html(`<strong>${d.name}</strong><br/>${d.concept}`)
+                    .style('left', (event.pageX + 10) + 'px')
+                    .style('top', (event.pageY - 10) + 'px');
+            }).on('mouseout', function() {
+                d3.select('#tooltip').style('opacity', 0);
+            });
+        }
+
+        function renderTransformationFlow() {
+            if (!currentExample || !currentPhase) return;
+            
+            const svg = d3.select('#transformationFlow');
+            svg.selectAll('*').remove();
+            
+            const width = svg.node().clientWidth;
+            const height = svg.node().clientHeight;
+            
+            const phases = ['Original', 'Lossless', 'Fractal', 'Anti-Recursion', 'Unified'];
+            const phaseData = phases.map((phase, i) => ({
+                name: phase,
+                x: width * (0.1 + 0.8 * i / (phases.length - 1)),
+                y: height * 0.5,
+                active: i <= phases.indexOf(currentPhase.charAt(0).toUpperCase() + currentPhase.slice(1)) + 1
+            }));
+            
+            // Dessiner les connexions
+            for (let i = 0; i < phaseData.length - 1; i++) {
+                svg.append('line')
+                    .attr('x1', phaseData[i].x)
+                    .attr('y1', phaseData[i].y)
+                    .attr('x2', phaseData[i + 1].x)
+                    .attr('y2', phaseData[i + 1].y)
+                    .attr('stroke', phaseData[i].active ? '#ffd700' : '#666')
+                    .attr('stroke-width', 3)
+                    .attr('opacity', phaseData[i].active ? 1 : 0.3);
+            }
+            
+            // Dessiner les phases
+            const phaseGroups = svg.selectAll('.phase')
+                .data(phaseData)
+                .enter()
+                .append('g')
+                .attr('class', 'phase')
+                .attr('transform', d => `translate(${d.x}, ${d.y})`);
+            
+            phaseGroups.append('circle')
+                .attr('r', 20)
+                .attr('fill', d => d.active ? '#ffd700' : '#666')
+                .attr('stroke', '#fff')
+                .attr('stroke-width', 2);
+            
+            phaseGroups.append('text')
+                .attr('text-anchor', 'middle')
+                .attr('dy', '-35')
+                .attr('fill', 'white')
+                .attr('font-size', '12px')
+                .attr('font-weight', 'bold')
+                .text(d => d.name);
+        }
+
+        function updateFingerprint() {
+            if (!currentExample || !currentPhase) return;
+            
+            const phase = currentExample.phases[currentPhase];
+            if (phase?.fingerprint) {
+                document.getElementById('fingerprintDisplay').textContent = 
+                    `SHA-256: ${phase.fingerprint}\nDhātu Signature: ${currentExample.dhatu_signature}`;
+            }
+        }
+
+        function exportVisualization() {
+            // Simulation d'export
+            const data = {
+                example: document.getElementById('corpusSelect').value,
+                phase: currentPhase,
+                metrics: {
+                    compression: document.getElementById('compressionRatio').textContent,
+                    fidelity: document.getElementById('fidelityScore').textContent,
+                    processing_time: document.getElementById('processingTime').textContent
+                }
+            };
+            
+            console.log('Export Data:', data);
+            alert('Données exportées vers la console (F12)');
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Analyser le premier exemple par défaut
+            setTimeout(() => {
+                analyzeCorpus();
+            }, 500);
+        });
+    </script>
+</body>
+</html>

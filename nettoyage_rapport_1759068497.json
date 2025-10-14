@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "stopped_processes": 0,
+    "preserved_processes": 2,
+    "cleaned_files": 12,
+    "timestamp": "2025-09-28 10:08:17"
+  },
+  "stopped_processes": [],
+  "preserved_processes": [
+    {
+      "pattern": "dashboard_simplifie_panlang",
+      "pid": "838448"
+    },
+    {
+      "pattern": "dashboard_simplifie_panlang",
+      "pid": "1068171"
+    }
+  ],
+  "cleaned_files": [
+    "analyse_ambiguites_log.txt",
+    "detection_automatique_log.txt",
+    "dashboard_log.txt",
+    "raffinement_log.txt",
+    "raffinement_v2_log.txt",
+    "coordinateur_log.txt",
+    "analyse_geometrique_log.txt",
+    "analyse_geometrique_v2_log.txt",
+    "config_geometric_parallel_1759003723.json",
+    "config_geometric_parallel_1759003792.json",
+    "config_geometric_parallel_1759003827.json",
+    "evaluation_strategique_1759068154.json"
+  ]
+}

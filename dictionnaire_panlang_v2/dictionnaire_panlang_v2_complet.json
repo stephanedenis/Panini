@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "date_creation": "2025-09-26 20:20:50",
+    "base_version": "1.0.0",
+    "concepts_v1": 0,
+    "nouveaux_concepts": 18,
+    "total_concepts": 18,
+    "ameliorations": [
+      "Concepts sensoriels de base ajoutés",
+      "Relations sociales fondamentales",
+      "Abstractions philosophiques clés",
+      "Couverture catégorielle améliorée"
+    ],
+    "validation_precedente": {
+      "score_global_v1": "0.400",
+      "objectif_v2": ">0.700",
+      "lacunes_corrigees": 18
+    }
+  },
+  "concepts": {
+    "VOIR": {
+      "formule": "PERCEPTION + MOUVEMENT",
+      "justification": "Perception visuelle active nécessitant mouvement oculaire",
+      "complexite": 2,
+      "categorie": "sensoriel_base",
+      "validite_estimee": 0.9,
+      "source": "reconstruction_base_sensorielle"
+    },
+    "ENTENDRE": {
+      "formule": "PERCEPTION + COGNITION",
+      "justification": "Perception auditive impliquant traitement cognitif",
+      "complexite": 2,
+      "categorie": "sensoriel_base",
+      "validite_estimee": 0.9,
+      "source": "reconstruction_base_sensorielle"
+    },
+    "TOUCHER": {
+      "formule": "PERCEPTION + EXISTENCE",
+      "justification": "Contact physique confirmant existence",
+      "complexite": 2,
+      "categorie": "sensoriel_base",
+      "validite_estimee": 0.95,
+      "source": "reconstruction_base_sensorielle"
+    },
+    "MARCHER": {
+      "formule": "MOUVEMENT + EXISTENCE",
+      "justification": "Déplacement corporel fondamental",
+      "complexite": 2,
+      "categorie": "action_base",
+      "validite_estimee": 0.95,
+      "source": "reconstruction_base_motrice"
+    },
+    "MANGER": {
+      "formule": "DESTRUCTION + EXISTENCE + POSSESSION",
+      "justification": "Destruction pour intégration vitale",
+      "complexite": 3,
+      "categorie": "action_vitale",
+      "validite_estimee": 0.9,
+      "source": "reconstruction_base_vitale"
+    },
+    "DORMIR": {
+      "formule": "EXISTENCE + PERCEPTION + DESTRUCTION",
+      "justification": "État d'existence avec perception réduite et destruction temporaire de conscience",
+      "complexite": 3,
+      "categorie": "etat_vital",
+      "validite_estimee": 0.8,
+      "source": "reconstruction_base_vitale"
+    },
+    "FAMILLE": {
+      "formule": "EXISTENCE + EMOTION + POSSESSION + CREATION",
+      "justification": "Groupe d'existence partagée avec liens émotionnels et créatifs",
+      "complexite": 4,
+      "categorie": "relation_fondamentale",
+      "validite_estimee": 0.85,
+      "source": "reconstruction_sociale_base"
+    },
+    "AMI": {
+      "formule": "EMOTION + COMMUNICATION + PERCEPTION",
+      "justification": "Relation émotionnelle positive avec échange communicatif",
+      "complexite": 3,
+      "categorie": "relation_choisie",
+      "validite_estimee": 0.9,
+      "source": "reconstruction_sociale_base"
+    },
+    "ENNEMI": {
+      "formule": "EMOTION + DOMINATION + DESTRUCTION",
+      "justification": "Relation conflictuelle avec volonté de domination",
+      "complexite": 3,
+      "categorie": "relation_conflictuelle",
+      "validite_estimee": 0.85,
+      "source": "reconstruction_sociale_base"
+    },
+    "COMMUNAUTÉ": {
+      "formule": "EXISTENCE + COMMUNICATION + CREATION + POSSESSION",
+      "justification": "Groupe créatif partageant existence et ressources",
+      "complexite": 4,
+      "categorie": "structure_collective",
+      "validite_estimee": 0.8,
+      "source": "reconstruction_sociale_collective"
+    },
+    "COOPÉRER": {
+      "formule": "COMMUNICATION + CREATION + POSSESSION",
+      "justification": "Action créative partagée avec communication",
+      "complexite": 3,
+      "categorie": "action_sociale_positive",
+      "validite_estimee": 0.9,
+      "source": "reconstruction_sociale_action"
+    },
+    "OBÉIR": {
+      "formule": "PERCEPTION + DOMINATION + EXISTENCE",
+      "justification": "Acceptation de domination par perception de hierarchie",
+      "complexite": 3,
+      "categorie": "action_sociale_soumission",
+      "validite_estimee": 0.85,
+      "source": "reconstruction_sociale_action"
+    },
+    "VÉRITÉ": {
+      "formule": "COGNITION + PERCEPTION + EXISTENCE",
+      "justification": "Connaissance correspondant à la réalité perçue",
+      "complexite": 3,
+      "categorie": "epistemologique",
+      "validite_estimee": 0.8,
+      "source": "reconstruction_philosophique_base"
+    },
+    "BEAUTÉ": {
+      "formule": "PERCEPTION + EMOTION + CREATION",
+      "justification": "Perception émotionnellement positive d'une création",
+      "complexite": 3,
+      "categorie": "esthetique",
+      "validite_estimee": 0.85,
+      "source": "reconstruction_philosophique_esthetique"
+    },
+    "JUSTICE": {
+      "formule": "COGNITION + DOMINATION + EXISTENCE + EMOTION",
+      "justification": "Équilibre cognitif dans l'exercice du pouvoir",
+      "complexite": 4,
+      "categorie": "ethique",
+      "validite_estimee": 0.8,
+      "source": "reconstruction_philosophique_ethique"
+    },
+    "LIBERTÉ": {
+      "formule": "MOUVEMENT + DOMINATION + EXISTENCE",
+      "justification": "Capacité de mouvement sans domination externe",
+      "complexite": 3,
+      "categorie": "politique",
+      "validite_estimee": 0.85,
+      "source": "reconstruction_philosophique_politique"
+    },
+    "TEMPS": {
+      "formule": "PERCEPTION + MOUVEMENT + DESTRUCTION + EXISTENCE",
+      "justification": "Perception du changement par destruction-création continue",
+      "complexite": 4,
+      "categorie": "metaphysique",
+      "validite_estimee": 0.75,
+      "source": "reconstruction_philosophique_metaphysique"
+    },
+    "CAUSE": {
+      "formule": "CREATION + MOUVEMENT + COGNITION",
+      "justification": "Force créatrice générant mouvement selon logique",
+      "complexite": 3,
+      "categorie": "causale",
+      "validite_estimee": 0.8,
+      "source": "reconstruction_philosophique_causale"
+    }
+  },
+  "statistiques_v2": {
+    "repartition_complexite": {
+      "repartition": {
+        "2": 4,
+        "3": 10,
+        "4": 4
+      },
+      "complexite_moyenne": 3.0,
+      "complexite_maximale": 4,
+      "evolution": {
+        "concepts_simples": 4,
+        "concepts_composes": 10,
+        "concepts_complexes": 4
+      }
+    },
+    "couverture_categorielle": {
+      "categories_ajoutees": {
+        "sensoriel_base": 3,
+        "action_base": 1,
+        "action_vitale": 1,
+        "etat_vital": 1,
+        "relation_fondamentale": 1,
+        "relation_choisie": 1,
+        "relation_conflictuelle": 1,
+        "structure_collective": 1,
+        "action_sociale_positive": 1,
+        "action_sociale_soumission": 1,
+        "epistemologique": 1,
+        "esthetique": 1,
+        "ethique": 1,
+        "politique": 1,
+        "metaphysique": 1,
+        "causale": 1
+      },
+      "couverture_sensorielle": 3,
+      "couverture_sociale": 5,
+      "couverture_philosophique": 3,
+      "amelioration_estimee": "Couverture catégorielle critique corrigée"
+    },
+    "validite_moyenne_estimee": 0.8555555555555556
+  }
+}

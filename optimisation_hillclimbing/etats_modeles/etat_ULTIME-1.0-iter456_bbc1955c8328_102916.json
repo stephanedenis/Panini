@@ -1,0 +1,24 @@
+{
+  "etat_modele": {
+    "version": "ULTIME-1.0-iter456",
+    "score": 0.413509994659058,
+    "concepts": 159,
+    "timestamp": "2025-09-27 10:29:16",
+    "hash_modele": "bbc1955c8328"
+  },
+  "contexte_sauvegarde": {
+    "raison": "variation_testee",
+    "iteration": 456,
+    "statut_optimisation": "stagnation",
+    "date_sauvegarde": "2025-09-27 10:29:16"
+  },
+  "metadata_originale": {
+    "version": "ULTIME-1.0-iter456",
+    "date_creation": "2025-09-27 10:29:16",
+    "concepts_totaux": 159,
+    "source_variation": "variation_generique",
+    "concepts_ajoutes": 4,
+    "iteration_hill_climbing": 456,
+    "modele_parent": "ULTIME-1.0"
+  }
+}

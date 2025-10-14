@@ -1,0 +1,1133 @@
+{
+  "MUSIQUE": {
+    "decomposition": [
+      "DESTRUCTION",
+      "MOUVEMENT"
+    ],
+    "formule_complete": "DESTRUCTION + MOUVEMENT",
+    "confiance": 0.47600000000000003,
+    "contextes_count": 4,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Darius Milhaud",
+        "phrase": "| lieu de décès = Genève (Suisse) | date de décès = | activité principale = Compositeur | tessiture = | genre = | style = Néo-classicisme | activités autres = Chef d'orchestre, critique musical | lieux d'activité = | années actives = | collaborations = Groupe des Six | éditeurs = | formation = Conse",
+        "concept_recherche": "MUSIQUE"
+      },
+      {
+        "langue": "fr",
+        "source": "Aries",
+        "phrase": "Musique * Aries, album de Luis Miguel sorti en 1993 ; *Aries, single de Gorillaz sorti en 2020",
+        "concept_recherche": "MUSIQUE"
+      },
+      {
+        "langue": "fr",
+        "source": "Gemini",
+        "phrase": "Musique * Gemini, chanson du groupe de rock The Alan Parsons Project ; * Gemini, album de Macklemore, sorti le ; * Gemini, album d'Adrien Gallo, sorti le 3 novembre 2014",
+        "concept_recherche": "MUSIQUE"
+      }
+    ]
+  },
+  "AFFECTION": {
+    "decomposition": [
+      "EMOTION",
+      "POSSESSION"
+    ],
+    "formule_complete": "EMOTION + POSSESSION",
+    "confiance": 0.408,
+    "contextes_count": 2,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Diagnostic prénatal",
+        "phrase": "Le diagnostic prénatal (DPN) ou diagnostic anténatal (DAN) est l'ensemble des pratiques médicales ayant pour but de détecter in utero chez l'embryon ou le fœtus une affection grave (anomalie génétique ou malformation congénitale, par exemple), afin de donner aux futurs parents le choix d'interrompre",
+        "concept_recherche": "AFFECTION"
+      },
+      {
+        "langue": "en",
+        "source": "Affection",
+        "phrase": "thumb|right|200px|Two children showing affection Affection or fondness is a \"disposition or state of mind or body\" commonly linked to a feeling or type of love",
+        "concept_recherche": "AFFECTION"
+      }
+    ]
+  },
+  "FENÊTRE": {
+    "decomposition": [
+      "EXISTENCE"
+    ],
+    "formule_complete": "EXISTENCE",
+    "confiance": 0.27199999999999996,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Linteau (architecture)",
+        "phrase": "vignette|Cinq parties d'une fenêtre à croisée : 1",
+        "concept_recherche": "FENÊTRE"
+      },
+      {
+        "langue": "fr",
+        "source": "Adessif",
+        "phrase": "Exemples: * en finnois, le suffixe de l'adessif est -lla/-llä: ikkuna « fenêtre » → ikkunalla « à la fenêtre »",
+        "concept_recherche": "FENÊTRE"
+      },
+      {
+        "langue": "fr",
+        "source": "Aide:Boîte de résumé",
+        "phrase": "La boîte de résumé dans l’éditeur visuel (bouton }}) se présente sous la forme d'une fenêtre qui s'affiche quand vous cliquez sur le bouton bleu }}",
+        "concept_recherche": "FENÊTRE"
+      }
+    ]
+  },
+  "DURÉE": {
+    "decomposition": [
+      "MOUVEMENT",
+      "EXISTENCE"
+    ],
+    "formule_complete": "MOUVEMENT + EXISTENCE",
+    "confiance": 0.442,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Année (calendrier)",
+        "phrase": "La durée d'une année et son commencement peuvent varier selon le calendrier considéré ; la durée de l’année tropique est elle-même sujette à variations au cours de longues périodes",
+        "concept_recherche": "DURÉE"
+      },
+      {
+        "langue": "fr",
+        "source": "La Corde",
+        "phrase": "| genre = Thriller | durée = 80 minutes | année de sortie = 1948 }} La Corde (Rope) est un film américain d'Alfred Hitchcock, sorti en 1948",
+        "concept_recherche": "DURÉE"
+      },
+      {
+        "langue": "fr",
+        "source": "Photon",
+        "phrase": "|kg}} (]]}}) (expérimental) | charge électrique = 0 (théorique) (expérimental) | spin = 1 | durée de vie = Stable (théorique) Non applicableUn photon dans le vide se déplace à la « vitesse de la lumière dans le vide », ce qui implique d'après la théorie de la relativité que, dans son « référentiel »",
+        "concept_recherche": "DURÉE"
+      }
+    ]
+  },
+  "INSTRUMENT": {
+    "decomposition": [
+      "EXISTENCE",
+      "MOUVEMENT",
+      "DESTRUCTION",
+      "CREATION"
+    ],
+    "formule_complete": "EXISTENCE + MOUVEMENT + DESTRUCTION + CREATION",
+    "confiance": 0.85,
+    "contextes_count": 15,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Vielle",
+        "phrase": "Musique * vielle à roue, instrument à cordes frottées par une roue en bois",
+        "concept_recherche": "INSTRUMENT"
+      },
+      {
+        "langue": "fr",
+        "source": "Olifant",
+        "phrase": "vignette|Olifant vignette|Olifant du , dit \"cor de Roland\", exposé au musée Paul-Dupuy de Toulouse L'olifant (anciennement « oliphant ») est un instrument de musique à vent de la famille des cuivres, bien qu'il ne soit pas généralement métallique",
+        "concept_recherche": "INSTRUMENT"
+      },
+      {
+        "langue": "fr",
+        "source": "Fermin Muguruza",
+        "phrase": "| lieu de naissance = Irun, Pays basque | date de décès = | lieu de décès = | profession = Musicien, Chanteur | genre = Punk rock, ska, ska punk, rock | instrument = Guitare, chants | années actives = depuis 1983 | label = | site web = }} Fermin Muguruza, né à Irun le , est un chanteur basque",
+        "concept_recherche": "INSTRUMENT"
+      }
+    ]
+  },
+  "RÉCIT": {
+    "decomposition": [
+      "DESTRUCTION"
+    ],
+    "formule_complete": "DESTRUCTION",
+    "confiance": 0.27199999999999996,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Légende",
+        "phrase": "Une légende (de l'adjectif verbal latin '''', « les choses qui doivent être lues ») est, à l’origine, un récit mis par écrit pour être lu publiquement : généralement il s'agit d'une hagiographie lue dans les monastères, pendant les repas ; dans les églises, pour l’édification des fidèles lors de la ",
+        "concept_recherche": "RÉCIT"
+      },
+      {
+        "langue": "fr",
+        "source": "Narratologie",
+        "phrase": "La narratologie (science de la narration) est la discipline qui étudie les techniques et les structures narratives mises en œuvre dans les textes littéraires (ou toutes autres formes de récit)",
+        "concept_recherche": "RÉCIT"
+      },
+      {
+        "langue": "fr",
+        "source": "Roman",
+        "phrase": "* Roman-feuilleton : un roman publié par épisodes ; au sens figuré : un récit dénué de vraisemblance, un tissu de choses fausses",
+        "concept_recherche": "RÉCIT"
+      }
+    ]
+  },
+  "ARCHITECTURE": {
+    "decomposition": [
+      "MOUVEMENT",
+      "EXISTENCE",
+      "DESTRUCTION",
+      "POSSESSION"
+    ],
+    "formule_complete": "MOUVEMENT + EXISTENCE + DESTRUCTION + POSSESSION",
+    "confiance": 0.85,
+    "contextes_count": 12,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Anastylose",
+        "phrase": "L’anastylose (du grec ancien , composé de : « de nouveau » et : « ériger ») est un terme archéologique qui désigne la technique de reconstruction d'un monument en ruines grâce à l'étude méthodique de l'ajustement des différents éléments qui composent son architecture",
+        "concept_recherche": "ARCHITECTURE"
+      },
+      {
+        "langue": "fr",
+        "source": "Eugène Viollet-le-Duc",
+        "phrase": "]], Entretiens sur l'architecture, Histoire d’une maison | signature = Signature d'Eugène Viollet Le Duc - Archives nationales",
+        "concept_recherche": "ARCHITECTURE"
+      },
+      {
+        "langue": "fr",
+        "source": "Alvar Aalto",
+        "phrase": "1, adepte du fonctionnalisme et de l'architecture organique",
+        "concept_recherche": "ARCHITECTURE"
+      }
+    ]
+  },
+  "SATISFACTION": {
+    "decomposition": [
+      "MOUVEMENT"
+    ],
+    "formule_complete": "MOUVEMENT",
+    "confiance": 0.306,
+    "contextes_count": 4,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Tourisme",
+        "phrase": "Le mot tourisme désigne le fait de voyager pour son plaisir hors de ses lieux de vie habituels, et d'y résider de façon temporaire, mais aussi un secteur économique qui comprend en plus de l'hôtellerie l'ensemble des activités liées à la satisfaction et aux déplacements des touristes",
+        "concept_recherche": "SATISFACTION"
+      },
+      {
+        "langue": "fr",
+        "source": "1847",
+        "phrase": "Il demande alors les moyens de réduire les Kabyles, mais n’obtient pas satisfaction",
+        "concept_recherche": "SATISFACTION"
+      },
+      {
+        "langue": "fr",
+        "source": "Nebethetepet",
+        "phrase": "Dans la mythologie égyptienne, Nebethetepet est une déesse coiffée de cornes de vache entourant un disque solaire, son nom signifie la « Dame de la satisfaction »",
+        "concept_recherche": "SATISFACTION"
+      }
+    ]
+  },
+  "ÉTOILE": {
+    "decomposition": [
+      "COMMUNICATION"
+    ],
+    "formule_complete": "COMMUNICATION",
+    "confiance": 0.34,
+    "contextes_count": 5,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Lion (constellation)",
+        "phrase": "Cette constellation contient plusieurs étoiles brillantes, telles Régulus, le cœur du Lion, et Denebola, sa queue",
+        "concept_recherche": "ÉTOILE"
+      },
+      {
+        "langue": "fr",
+        "source": "10BASE-T",
+        "phrase": "10BASE-T est une norme Ethernet spécifiant une couche physique du modèle OSI utilisant une topologie réseau en étoile et des câbles à paires torsadées équipés de connecteurs RJ45",
+        "concept_recherche": "ÉTOILE"
+      },
+      {
+        "langue": "fr",
+        "source": "Balance (constellation)",
+        "phrase": "C'est une constellation modeste qui ne contient aucune étoile de première magnitude",
+        "concept_recherche": "ÉTOILE"
+      }
+    ]
+  },
+  "SENTIR": {
+    "decomposition": [
+      "PERCEPTION"
+    ],
+    "formule_complete": "PERCEPTION",
+    "confiance": 0.23800000000000002,
+    "contextes_count": 2,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Psychologie",
+        "phrase": "La psychologie est la connaissance empirique ou intuitive des sentiments, des idées, des comportements d'une personne et des manières de penser, de sentir, d'agir qui caractérisent un individu ou un groupe",
+        "concept_recherche": "SENTIR"
+      },
+      {
+        "langue": "fr",
+        "source": "Frimaire",
+        "phrase": "Étymologie Il tirait son nom « du froid, tantôt sec, tantôt humide, qui se fait sentir de novembre en décembre», selon les termes du rapport présenté à la Convention nationale le par Fabre d'Églantine, au nom de la « commission chargée de la confection du calendrier »",
+        "concept_recherche": "SENTIR"
+      }
+    ]
+  },
+  "SOLEIL": {
+    "decomposition": [
+      "COMMUNICATION",
+      "POSSESSION",
+      "EXISTENCE"
+    ],
+    "formule_complete": "COMMUNICATION + POSSESSION + EXISTENCE",
+    "confiance": 0.68,
+    "contextes_count": 5,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Hou",
+        "phrase": "Hou et Sia sont les dieux qui guident le soleil dans ses transformations nocturnes jusqu'à ce qu'il sorte régénéré et victorieux à l'aube",
+        "concept_recherche": "SOLEIL"
+      },
+      {
+        "langue": "fr",
+        "source": "Lion (constellation)",
+        "phrase": "Le Lion est une constellation du zodiaque traversée par le Soleil du au",
+        "concept_recherche": "SOLEIL"
+      },
+      {
+        "langue": "fr",
+        "source": "Balance (constellation)",
+        "phrase": "La Balance est une constellation du zodiaque traversée par le Soleil du au",
+        "concept_recherche": "SOLEIL"
+      }
+    ]
+  },
+  "SE_SOUVENIR": {
+    "decomposition": [
+      "MOUVEMENT",
+      "POSSESSION",
+      "EXISTENCE"
+    ],
+    "formule_complete": "MOUVEMENT + POSSESSION + EXISTENCE",
+    "confiance": 0.612,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Georges Perec",
+        "phrase": "| nom de naissance = | surnom = | activités = écrivain | date de naissance = | lieu de naissance = arrondissement de Paris | date de décès = | lieu de décès = Ivry-sur-Seine | langue = français | mouvement = Oulipo | genre = | distinctions = prix Renaudot, prix Médicis | adjectifs dérivés = | œuvres",
+        "concept_recherche": "SE_SOUVENIR"
+      },
+      {
+        "langue": "fr",
+        "source": "27 janvier",
+        "phrase": "Il reste 338 jours avant la fin de l'année, 339 lorsqu'elle est bissextile",
+        "concept_recherche": "SE_SOUVENIR"
+      },
+      {
+        "langue": "fr",
+        "source": "Épigramme",
+        "phrase": "À l’origine, une épigramme (du grec ancien signifiant « inscription ») est une inscription, d’abord en prose, puis en vers, qu’on gravait sur les monuments, les statues, les tombeaux et les trophées, pour perpétuer le souvenir d’un héros ou d’un événement",
+        "concept_recherche": "SE_SOUVENIR"
+      }
+    ]
+  },
+  "LIEU": {
+    "decomposition": [
+      "MOUVEMENT"
+    ],
+    "formule_complete": "MOUVEMENT",
+    "confiance": 0.34,
+    "contextes_count": 5,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Akira Kurosawa",
+        "phrase": "| nom de naissance = | surnom = AK, Sensei, l'Empereur | date de naissance = 23 mars 1910 | lieu de naissance = Shinagawa, Tokyo (empire du Japon) | nationalité = Japonaise | date de décès = 6 septembre 1998 | lieu de décès = Setagaya, Tokyo (Japon) | profession = Réalisateur, producteur, scénariste",
+        "concept_recherche": "LIEU"
+      },
+      {
+        "langue": "fr",
+        "source": "1706",
+        "phrase": "Il se retire dans un monastère sur une île du lac Tana mais son fils le fait assassiner le 13 octobre |lieu=Paris |éditeur=Publications de la Sorbonne |année=2008 |pages totales=496 |isbn=978-2-85944-588-1 |présentation en ligne=}}",
+        "concept_recherche": "LIEU"
+      },
+      {
+        "langue": "fr",
+        "source": "Orson Scott Card",
+        "phrase": "| lieu de naissance = Richland, État de Washington, | date de décès = | lieu de décès = | langue = Anglais américain | mouvement = | genre = Science-fiction, fantasy | distinctions = Prix World FantasyPrix HugoPrix LocusPrix NebulaPrix Astounding du meilleur nouvel écrivain | adjectifs dérivés = | œ",
+        "concept_recherche": "LIEU"
+      }
+    ]
+  },
+  "OBSERVER": {
+    "decomposition": [
+      "DESTRUCTION",
+      "COMMUNICATION",
+      "EXISTENCE"
+    ],
+    "formule_complete": "DESTRUCTION + COMMUNICATION + EXISTENCE",
+    "confiance": 0.714,
+    "contextes_count": 6,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Catabolisme",
+        "phrase": "Cela peut s'observer également en cas de régime hypocalorique ou d'entraînement sportif intense Catabolisme Futura Santé |url=https://www",
+        "concept_recherche": "OBSERVER"
+      },
+      {
+        "langue": "fr",
+        "source": "1778",
+        "phrase": "Les marins de James Cook sont les premiers Européens à observer la pratique du surf à Hawaii}}",
+        "concept_recherche": "OBSERVER"
+      },
+      {
+        "langue": "fr",
+        "source": "Fluide (matière)",
+        "phrase": "Dans certaines conditions de température et de pression cependant on peut observer une transition continue d'un état à l'autre, qui finalement ne constituent pas deux états de la matière fondamentalement différents mais un seul, l'état fluide (voir Diagramme de phase d'un corps pur et Point critique",
+        "concept_recherche": "OBSERVER"
+      }
+    ]
+  },
+  "ANIMAL": {
+    "decomposition": [
+      "DESTRUCTION",
+      "EXISTENCE",
+      "MOUVEMENT",
+      "POSSESSION"
+    ],
+    "formule_complete": "DESTRUCTION + EXISTENCE + MOUVEMENT + POSSESSION",
+    "confiance": 0.816,
+    "contextes_count": 9,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Janus (mythologie)",
+        "phrase": "| mentions= | père= | mère= | fratrie= | conjoint1= Juturne | enfants1= Fontus | conjoint2= inconnu | enfants2= Proca, Canens | attributs= | animal= | végétal= | astre= | nombre= | couleur= | jour= }} Janus est le dieu romain des commencements et des fins, des choix, du passage et des portesVoir jan",
+        "concept_recherche": "ANIMAL"
+      },
+      {
+        "langue": "fr",
+        "source": "Médicament",
+        "phrase": "vignette|Boîtes de médicaments vignette|Ampoules Un médicament est toute substance ou composition présentée comme possédant des propriétés curatives ou préventives à l'égard des maladies humaines ou animales",
+        "concept_recherche": "ANIMAL"
+      },
+      {
+        "langue": "fr",
+        "source": "Gaulois",
+        "phrase": "Autres * Coq gaulois, animal symbolique, emblème national de la France ; * Gaulois, ensemble de peuples celtes, habitant ce que les Romains appelaient la Gaule ; * Gaulois, langue celtique parlée en Gaule ; * Les Gaulois (2013-2017), agence de communication française ; * Gaulois, rappeur français or",
+        "concept_recherche": "ANIMAL"
+      }
+    ]
+  },
+  "DISTANCE": {
+    "decomposition": [
+      "MOUVEMENT",
+      "DESTRUCTION",
+      "COGNITION",
+      "PERCEPTION"
+    ],
+    "formule_complete": "MOUVEMENT + DESTRUCTION + COGNITION + PERCEPTION",
+    "confiance": 0.816,
+    "contextes_count": 9,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Athlétisme",
+        "phrase": "Il s’agit de l’art de dépasser la performance des adversaires en vitesse ou en endurance, en distance ou en hauteur",
+        "concept_recherche": "DISTANCE"
+      },
+      {
+        "langue": "fr",
+        "source": "Télécommunications",
+        "phrase": "Les télécommunications sont définies comme la transmission d’informations à distance en utilisant des technologies électronique, informatique, de transmission filaire, optique ou électromagnétique",
+        "concept_recherche": "DISTANCE"
+      },
+      {
+        "langue": "fr",
+        "source": "Hormone",
+        "phrase": "C'est une substance chimique biologiquement active, synthétisée par une cellule glandulaire et sécrétée dans le milieu intérieur où elle circule, agissant à distance et par voie sanguine sur des récepteurs spécifiques d'une cellule cible",
+        "concept_recherche": "DISTANCE"
+      }
+    ]
+  },
+  "INQUIÉTUDE": {
+    "decomposition": [
+      "MOUVEMENT",
+      "CREATION"
+    ],
+    "formule_complete": "MOUVEMENT + CREATION",
+    "confiance": 0.408,
+    "contextes_count": 2,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Vampire",
+        "phrase": "Le vampire est un type de revenant qui fait partie des grandes créatures légendaires issues des mythologies où se combinent de diverses manières l'inquiétude de l'au-delà et le mystère du sang",
+        "concept_recherche": "INQUIÉTUDE"
+      },
+      {
+        "langue": "fr",
+        "source": "Hyphanet",
+        "phrase": "Freenet a été créé par suite d'une inquiétude croissante à propos des libertés sur internet, ainsi résumée par Mike Godwin en 1996 : » :",
+        "concept_recherche": "INQUIÉTUDE"
+      }
+    ]
+  },
+  "DÉGOÛT": {
+    "decomposition": [
+      "EXISTENCE"
+    ],
+    "formule_complete": "EXISTENCE",
+    "confiance": 0.204,
+    "contextes_count": 1,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Las Vegas Parano",
+        "phrase": "| réalisation = Terry Gilliam | scénario = Terry GilliamTony GrisoniAlex CoxTod Davies | musique = Ray Cooper | acteur = Johnny DeppBenicio del Toro | production = Rhino FilmsSummit Entertainment | pays = | genre = comédie noire | durée = 118 minutes | année de sortie = 1998 }} Las Vegas Parano ou P",
+        "concept_recherche": "DÉGOÛT"
+      }
+    ]
+  },
+  "PARENT": {
+    "decomposition": [
+      "CREATION",
+      "MOUVEMENT",
+      "DESTRUCTION"
+    ],
+    "formule_complete": "CREATION + MOUVEMENT + DESTRUCTION",
+    "confiance": 0.85,
+    "contextes_count": 10,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Conseil de sécurité des Nations unies",
+        "phrase": "| type = Organe principal | acronymes = CS | chef = Hwang Joon-kook () | titre chef = Président | statut = Actif | membres = Membres permanents : * * * * * Membres non permanents : * * * * * * * * * * | siège = Siège des Nations unies, New York (États-Unis) | établi = à Church House (Londres) | site",
+        "concept_recherche": "PARENT"
+      },
+      {
+        "langue": "fr",
+        "source": "Programme des Nations unies pour l'environnement",
+        "phrase": "org/fr | parent = Assemblée générale des Nations unies }} Le '''Programme des Nations unies pour l'environnement (PNUE, en anglais ', UNEP) est une organisation dépendante de l'Organisation des Nations unies, créée en 1972, et ayant pour but de : * coordonner les activités des Nations unies dans le ",
+        "concept_recherche": "PARENT"
+      },
+      {
+        "langue": "fr",
+        "source": "Cétène (groupe)",
+        "phrase": "Le cétène, CH2=C=O, est le composé parent de ce groupe",
+        "concept_recherche": "PARENT"
+      }
+    ]
+  },
+  "MUR": {
+    "decomposition": [
+      "MOUVEMENT",
+      "DESTRUCTION"
+    ],
+    "formule_complete": "MOUVEMENT + DESTRUCTION",
+    "confiance": 0.442,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Arc de décharge",
+        "phrase": "Un arc de décharge est un élément d'architecture qui a pour but l'allègement du poids du mur sur le linteau en repoussant les charges sur les côtés [https://books",
+        "concept_recherche": "MUR"
+      },
+      {
+        "langue": "fr",
+        "source": "Linteau (architecture)",
+        "phrase": "]] Le linteau est un élément architectural qui sert à soutenir les matériaux du mur au-dessus d'une baie, d'une porte ou d'une fenêtre",
+        "concept_recherche": "MUR"
+      },
+      {
+        "langue": "fr",
+        "source": "Attentats du 11 septembre 2001",
+        "phrase": "jpg | légende = De haut en bas : l'incendie du World Trade Center ; le mur du secteur '''' du Pentagone en partie effondré ; le vol UA175 s'écrase dans la tour Sud (WTC 2) ; une demande d'aide aux pompiers à Ground Zero le 15 septembre 2001 ; un moteur du vol UA93 est retrouvé ; le vol AA77 s'écrase",
+        "concept_recherche": "MUR"
+      }
+    ]
+  },
+  "LITTÉRATURE": {
+    "decomposition": [
+      "POSSESSION",
+      "EXISTENCE"
+    ],
+    "formule_complete": "POSSESSION + EXISTENCE",
+    "confiance": 0.442,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Roman",
+        "phrase": "Un roman (nom commun, écrit en minuscules, ou nom propre) peut être : Genre littéraire * Roman (littérature) : genre littéraire produisant des œuvres d'imagination",
+        "concept_recherche": "LITTÉRATURE"
+      },
+      {
+        "langue": "fr",
+        "source": "Hadès (homonymie)",
+        "phrase": "Culture Littérature * Hadès est le nom d'une planète dans l'univers de fiction Honorverse de l'écrivain américain David Weber",
+        "concept_recherche": "LITTÉRATURE"
+      },
+      {
+        "langue": "fr",
+        "source": "Littérature française",
+        "phrase": "La littérature française comprend l'ensemble des œuvres écrites ou orales par des écrivains de nationalité française ou de langue française",
+        "concept_recherche": "LITTÉRATURE"
+      }
+    ]
+  },
+  "ILLUSION": {
+    "decomposition": [
+      "MOUVEMENT",
+      "CREATION",
+      "EXISTENCE"
+    ],
+    "formule_complete": "MOUVEMENT + CREATION + EXISTENCE",
+    "confiance": 0.612,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "en",
+        "source": "ELIZA",
+        "phrase": "Created to explore communication between humans and machines, ELIZA simulated conversation by using a pattern matching and substitution methodology that gave users an illusion of understanding on the part of the program, but had no representation that could be considered really understanding what wa",
+        "concept_recherche": "ILLUSION"
+      },
+      {
+        "langue": "en",
+        "source": "Cinema",
+        "phrase": "Cinema may refer to: Film * Film or movie, a series of still images that create the illusion of moving image ** Film industry, the technological and commercial institutions of filmmaking ** Filmmaking, the process of making a film * Movie theater (US), called a cinema elsewhere, a building in which ",
+        "concept_recherche": "ILLUSION"
+      },
+      {
+        "langue": "en",
+        "source": "Epiphenomenalism",
+        "phrase": "According to epiphenomenalism, the appearance that subjective mental states (such as thoughts and intentions) are causally effective themselves and directly influence physical events is an illusion generated by brain regions such as the prefrontal cortex, with consciousness itself being a by-product",
+        "concept_recherche": "ILLUSION"
+      }
+    ]
+  },
+  "LÉGENDE": {
+    "decomposition": [
+      "DESTRUCTION",
+      "MOUVEMENT"
+    ],
+    "formule_complete": "DESTRUCTION + MOUVEMENT",
+    "confiance": 0.442,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Légende",
+        "phrase": "thumb|La légende médiévale de Renard",
+        "concept_recherche": "LÉGENDE"
+      },
+      {
+        "langue": "fr",
+        "source": "Néonazisme",
+        "phrase": "jpg|légende=Des membres du groupe néonazi Mouvement de résistance nordique lors de la marche 612 en 2018",
+        "concept_recherche": "LÉGENDE"
+      },
+      {
+        "langue": "fr",
+        "source": "Tennis de table",
+        "phrase": "jpg | légende = Compétition de tennis de table durant les Jeux panaméricains de 2007",
+        "concept_recherche": "LÉGENDE"
+      }
+    ]
+  },
+  "MORAL": {
+    "decomposition": [
+      "DESTRUCTION",
+      "EXISTENCE",
+      "COGNITION",
+      "COMMUNICATION"
+    ],
+    "formule_complete": "DESTRUCTION + EXISTENCE + COGNITION + COMMUNICATION",
+    "confiance": 0.782,
+    "contextes_count": 8,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Antispécisme",
+        "phrase": "L'antispécisme est un courant de pensée philosophique et moral, formalisé dans les années 1970 par des philosophes anglo-saxons qui défendent un renouveau de l'animalisme, et considèrent que l'espèce à laquelle appartient un animal n'est un critère pertinent ni pour décider de la manière dont il doi",
+        "concept_recherche": "MORAL"
+      },
+      {
+        "langue": "fr",
+        "source": "Tiramisu",
+        "phrase": "Le tiramisu (littéralement \"le remontant\" ; de l'italien '''', c'est-à-dire « remonte-moi » au sens de « remonte-moi le moral ») est une pâtisserie et un dessert traditionnel de la cuisine italienne",
+        "concept_recherche": "MORAL"
+      },
+      {
+        "langue": "en",
+        "source": "Business ethics",
+        "phrase": "Business ethics (also known as corporate ethics) is a form of applied ethics or professional ethics, that examines ethical principles and moral or ethical problems that can arise in a business environment",
+        "concept_recherche": "MORAL"
+      }
+    ]
+  },
+  "GROUPE": {
+    "decomposition": [
+      "MOUVEMENT",
+      "PERCEPTION",
+      "DESTRUCTION"
+    ],
+    "formule_complete": "MOUVEMENT + PERCEPTION + DESTRUCTION",
+    "confiance": 0.646,
+    "contextes_count": 4,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "1715",
+        "phrase": "* 26 avril : le massacre d'un groupe d'officiels par les Amérindiens déclenche la guerre des Yamasee en Caroline du Sud (fin en 1717)}}",
+        "concept_recherche": "GROUPE"
+      },
+      {
+        "langue": "fr",
+        "source": "Aka",
+        "phrase": "Sigle ou code Sigle AKA est sigle ou un acronyme pouvant signifier : * Abstrackt Keal Agram, un groupe de musique électronique ; * '' traduit, en mot-à-mot, par « également connu sous le nom de »",
+        "concept_recherche": "GROUPE"
+      },
+      {
+        "langue": "fr",
+        "source": "Abréviation",
+        "phrase": "Une abréviation (du latin brevis, « court », et du latin chrétien abbreviatio \"version abrégée d'un texte court\") est le raccourcissement écrit d'un mot ou d'un groupe de mots, représentés alors par un caractère ou un groupe de caractères issus de ce mot",
+        "concept_recherche": "GROUPE"
+      }
+    ]
+  },
+  "GOÛTER": {
+    "decomposition": [
+      "MOUVEMENT"
+    ],
+    "formule_complete": "MOUVEMENT",
+    "confiance": 0.204,
+    "contextes_count": 1,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Mont Blanc",
+        "phrase": "| pays= | région=Auvergne-Rhône-AlpesVallée d'Aoste | lien région=Région | subdivision=Haute-SavoieValdigne - Mont-Blanc | lien subdivision=Département | première ascension= par Jacques Balmat et Michel Paccard | voie=Voie normale depuis le refuge du Goûter (difficulté PD",
+        "concept_recherche": "GOÛTER"
+      }
+    ]
+  },
+  "NATION": {
+    "decomposition": [
+      "DESTRUCTION",
+      "EXISTENCE",
+      "MOUVEMENT",
+      "COMMUNICATION"
+    ],
+    "formule_complete": "DESTRUCTION + EXISTENCE + MOUVEMENT + COMMUNICATION",
+    "confiance": 0.85,
+    "contextes_count": 15,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Politique en Argentine",
+        "phrase": "thumb|Congrès de la Nation argentine",
+        "concept_recherche": "NATION"
+      },
+      {
+        "langue": "fr",
+        "source": "Ethnisme",
+        "phrase": ", notion qui existe depuis le en Europe centrale et orientale : elle définit la nation comme une communauté linguistique et elle a été l'un des piliers idéologiques du nationalisme romantique et des mouvements unionistes allemand et italienMichel Feith (dir",
+        "concept_recherche": "NATION"
+      },
+      {
+        "langue": "fr",
+        "source": "Drapeau",
+        "phrase": "vignette|Drapeaux nationaux occidentaux alignés",
+        "concept_recherche": "NATION"
+      }
+    ]
+  },
+  "SAISIR": {
+    "decomposition": [
+      "POSSESSION",
+      "MOUVEMENT"
+    ],
+    "formule_complete": "POSSESSION + MOUVEMENT",
+    "confiance": 0.442,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Scanner",
+        "phrase": "Outils * Un scanner de documents est un appareil qui permet d'analyser et/ou saisir une image pour attribuer une valeur numérique à chacun de ses points",
+        "concept_recherche": "SAISIR"
+      },
+      {
+        "langue": "fr",
+        "source": "Clavier",
+        "phrase": "* Le clavier est un organe d'entrée muni de touches, qui permet de saisir des informations (texte ou chiffres)",
+        "concept_recherche": "SAISIR"
+      },
+      {
+        "langue": "fr",
+        "source": "Rōmaji",
+        "phrase": "Usages contemporains Ils sont peu utilisés dans la langue japonaise et servent surtout à : * remédier aux incompatibilités techniques, lorsque les caractères traditionnels ne sont pas disponibles (adresses Web ou courriel) ; * saisir des textes à partir d'un clavier latin – QWERTY généralement – dan",
+        "concept_recherche": "SAISIR"
+      }
+    ]
+  },
+  "LUNE": {
+    "decomposition": [
+      "DESTRUCTION",
+      "MOUVEMENT",
+      "POSSESSION"
+    ],
+    "formule_complete": "DESTRUCTION + MOUVEMENT + POSSESSION",
+    "confiance": 0.646,
+    "contextes_count": 4,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Cinéma japonais",
+        "phrase": "]] vignette|Affiche du film Les Contes de la lune vague après la pluie de [[Kenji Mizoguchi",
+        "concept_recherche": "LUNE"
+      },
+      {
+        "langue": "fr",
+        "source": "Io (lune)",
+        "phrase": "C'est la troisième plus grande lune galiléenne et celle ayant l'orbite la plus proche de Jupiter, possédant un demi-grand axe de et une période de révolution d'environ",
+        "concept_recherche": "LUNE"
+      },
+      {
+        "langue": "fr",
+        "source": "Environnement",
+        "phrase": "5|Vue de la Terre depuis la [[Lune, en 1968, une des premières visions de notre planète comme un ensemble fini et fragile",
+        "concept_recherche": "LUNE"
+      }
+    ]
+  },
+  "RACINE": {
+    "decomposition": [
+      "DESTRUCTION",
+      "MOUVEMENT",
+      "CREATION",
+      "EXISTENCE"
+    ],
+    "formule_complete": "DESTRUCTION + MOUVEMENT + CREATION + EXISTENCE",
+    "confiance": 0.68,
+    "contextes_count": 5,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Cellule (biologie)",
+        "phrase": "dont la légende originale était : « Vue générale de cellules situées à la pointe de croissance d'une racine d'[[oignon à partir d'une coupe longitudinale agrandie",
+        "concept_recherche": "RACINE"
+      },
+      {
+        "langue": "fr",
+        "source": "Système de fichiers",
+        "phrase": ", parfois en anglais) désigne de façon ambigüe : * soit l'organisation hiérarchique des fichiers au sein d'un système d'exploitation (on parle par exemple du système de fichiers d'une machine Unix organisé à partir de sa racine) ; * soit l'organisation des fichiers au sein d'un volume physique ou lo",
+        "concept_recherche": "RACINE"
+      },
+      {
+        "langue": "fr",
+        "source": "1er novembre",
+        "phrase": "C'était généralement l'équivalent du 11 brumaire du calendrier républicain ou révolutionnaire français, officiellement dénommé jour du salsifis (trois jours après le 8 brumaire ou 29 octobre jour de la scorsonère, plante dont le salsifis noir est la racine comestible)",
+        "concept_recherche": "RACINE"
+      }
+    ]
+  },
+  "AMOUR": {
+    "decomposition": [
+      "DESTRUCTION",
+      "PERCEPTION",
+      "EXISTENCE"
+    ],
+    "formule_complete": "DESTRUCTION + PERCEPTION + EXISTENCE",
+    "confiance": 0.612,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Années 1640",
+        "phrase": "* 1640-1649 : les Russes atteignent l’Amour et la Kolyma (1640), puis l'océan Pacifique et le Kamtchatka (1649))|éditeur= Média Diffusion|année=|isbn =9782021244793|présentation en ligne=}}",
+        "concept_recherche": "AMOUR"
+      },
+      {
+        "langue": "fr",
+        "source": "I love you (ver informatique)",
+        "phrase": "Il dissimule un script malveillant programmé en VBS derrière une fausse lettre d’amour",
+        "concept_recherche": "AMOUR"
+      },
+      {
+        "langue": "fr",
+        "source": "Maurice Merleau-Ponty",
+        "phrase": "Durant ses études, il se lie d'amitié avec Simone de Beauvoir et d'amour avec Élisabeth Lacoin, à qui il passe une bague au doigt quelques jours avant sa mort",
+        "concept_recherche": "AMOUR"
+      }
+    ]
+  },
+  "FEU": {
+    "decomposition": [
+      "MOUVEMENT",
+      "DESTRUCTION",
+      "POSSESSION",
+      "EXISTENCE"
+    ],
+    "formule_complete": "MOUVEMENT + DESTRUCTION + POSSESSION + EXISTENCE",
+    "confiance": 0.68,
+    "contextes_count": 5,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Jean Mermoz",
+        "phrase": "Il est aussi un des membres fondateurs et vice-président, en 1936 du Parti social français (PSF) avec le colonel François de La Rocque, ancien président des Croix-de-Feu",
+        "concept_recherche": "FEU"
+      },
+      {
+        "langue": "fr",
+        "source": "Couramiaud",
+        "phrase": "Autrefois dans la ville un feu allumé par les habitants célébrait la fête de la Saint-Jean",
+        "concept_recherche": "FEU"
+      },
+      {
+        "langue": "fr",
+        "source": "Hanabi",
+        "phrase": "Hanabi peut faire référence à : * Hana-bi, film japonais réalisé par Takeshi Kitano ; * Hanabi (jeu), jeu de société coopératif du français Antoine Bauza ; * Hanabi (花火, ou はなび), qui veut dire feu d'artifice en japonais",
+        "concept_recherche": "FEU"
+      }
+    ]
+  },
+  "PROXIMITÉ": {
+    "decomposition": [
+      "MOUVEMENT"
+    ],
+    "formule_complete": "MOUVEMENT",
+    "confiance": 0.27199999999999996,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Tête inductive",
+        "phrase": "Fonctionnement En mode lecture Lorsqu'une zone magnétique, grâce à la rotation du disque, passe à proximité de l'électroaimant, il se forme un courant électrique dans le bobinage",
+        "concept_recherche": "PROXIMITÉ"
+      },
+      {
+        "langue": "fr",
+        "source": "Adessif",
+        "phrase": "En linguistique, l'adessif est le cas grammatical exprimant la position en un lieu ouvert (par opposition à l'inessif) ou à proximité immédiate de quelque chose",
+        "concept_recherche": "PROXIMITÉ"
+      },
+      {
+        "langue": "fr",
+        "source": "Astéroïde géocroiseur",
+        "phrase": "En astronomie, les astéroïdes géocroiseurs sont des astéroïdes évoluant à proximité de la Terre",
+        "concept_recherche": "PROXIMITÉ"
+      }
+    ]
+  },
+  "POISSON": {
+    "decomposition": [
+      "DESTRUCTION",
+      "POSSESSION",
+      "CREATION"
+    ],
+    "formule_complete": "DESTRUCTION + POSSESSION + CREATION",
+    "confiance": 0.646,
+    "contextes_count": 4,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "1er avril",
+        "phrase": "Une tradition répandue veut que le avril soit le jour des farces (voir aussi l'article poisson d'avril, et ci-après in fine)",
+        "concept_recherche": "POISSON"
+      },
+      {
+        "langue": "fr",
+        "source": "Poisson cru à la tahitienne",
+        "phrase": ") | créateur = | date = | place service = Entrée, plat principal | température = Froid | ingrédients = Poisson cru, jus de citron, lait de coco | variations = Carpaccio, ceviche, blaff de poissons, poisson cru à la chinoise, poisson cru à la marquisienne, poké, ika mata, kinilaw, hoe, '', laksa, sas",
+        "concept_recherche": "POISSON"
+      },
+      {
+        "langue": "fr",
+        "source": "Sushi",
+        "phrase": "| créateur = | date = Inconnue écrit du peu clair, avéré au ère actuelle | place service = Plat principal | température = Froid | ingrédients = Riz vinaigré (shari), poissons et crustacés frais consommés crus, algue | variations = Sashimi, plats à base de poisson cru | accompagnement = Wasabi, gari,",
+        "concept_recherche": "POISSON"
+      }
+    ]
+  },
+  "BUT": {
+    "decomposition": [
+      "MOUVEMENT",
+      "EXISTENCE",
+      "POSSESSION",
+      "DOMINATION"
+    ],
+    "formule_complete": "MOUVEMENT + EXISTENCE + POSSESSION + DOMINATION",
+    "confiance": 0.85,
+    "contextes_count": 12,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Projet:Mathématiques/Liste des mathématiciens",
+        "phrase": "Le but de cette page est de recenser, période par période, les noms des mathématiciens qui ont, par leur travail, contribué à former la discipline",
+        "concept_recherche": "BUT"
+      },
+      {
+        "langue": "fr",
+        "source": "Université libre de Bruxelles",
+        "phrase": "| forme juridique = Personne morale de droit privé poursuivant un but d'utilité publique | rang national = (2024) | ville = Bruxelles | rang international = (2024) | pays = | campus = Solbosch (Ixelles)Plaine (Ixelles)Érasme (Anderlecht)Gosselies - Biopark (Charleroi) | langue = Français | devise = ",
+        "concept_recherche": "BUT"
+      },
+      {
+        "langue": "fr",
+        "source": "Taurus",
+        "phrase": "** Taurus, bovins issus du croisement entre l'aurochs de Heck et d'autres races bovines primitives dans un but de reconstitution de l'aurochs",
+        "concept_recherche": "BUT"
+      }
+    ]
+  },
+  "IMAGINER": {
+    "decomposition": [
+      "POSSESSION"
+    ],
+    "formule_complete": "POSSESSION",
+    "confiance": 0.27199999999999996,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Sacré",
+        "phrase": "Il permet à l'individu de comprendre, et imaginer la réalité qui le dépasse (naturelle ou non)",
+        "concept_recherche": "IMAGINER"
+      },
+      {
+        "langue": "fr",
+        "source": "Pont de diodes",
+        "phrase": "gif|vignette|256x256px|Schéma animé d'un pont de diodes : [ Imaginer une charge entre le + et le - de la sortie (Output) peut aider à la compréhension (retour du courant vers la source) ]",
+        "concept_recherche": "IMAGINER"
+      },
+      {
+        "langue": "fr",
+        "source": "Sia (mythologie)",
+        "phrase": "Avec Hou et Heka, il permet à celui-ci d'imaginer, d'énoncer et d'ordonner la création",
+        "concept_recherche": "IMAGINER"
+      }
+    ]
+  },
+  "ÉTERNITÉ": {
+    "decomposition": [
+      "DESTRUCTION",
+      "MOUVEMENT"
+    ],
+    "formule_complete": "DESTRUCTION + MOUVEMENT",
+    "confiance": 0.408,
+    "contextes_count": 2,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Philip José Farmer",
+        "phrase": "| lieu de naissance = Terre Haute, Indiana, | date de décès = | lieu de décès = Peoria, Illinois, | langue = Anglais américain | mouvement = | genre = Science-fiction, fantastique | distinctions = Prix HugoPrix Damon-Knight Memorial Grand Master | adjectifs dérivés = | œuvres principales = * Saga de",
+        "concept_recherche": "ÉTERNITÉ"
+      },
+      {
+        "langue": "fr",
+        "source": "Heh",
+        "phrase": "Le dieu Heh est, à partir du Nouvel Empire, issu de la fusion de deux divinités, l'une membre de l'Ogdoade d'Hermopolis (association de huit entités divines), qui joue un rôle essentiel dans la cosmologie d'Hermopolis, l'autre, le dieu du temps infini, le génie de l'éternité",
+        "concept_recherche": "ÉTERNITÉ"
+      }
+    ]
+  },
+  "ARBRE": {
+    "decomposition": [
+      "MOUVEMENT"
+    ],
+    "formule_complete": "MOUVEMENT",
+    "confiance": 0.27199999999999996,
+    "contextes_count": 3,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Pomme",
+        "phrase": "L'arbre est originaire d'Asie centrale, où son ancêtre sauvage, le Malus sieversii, peut encore être trouvé de nos jours",
+        "concept_recherche": "ARBRE"
+      },
+      {
+        "langue": "fr",
+        "source": "Poire",
+        "phrase": "), arbre de la famille des Rosaceae",
+        "concept_recherche": "ARBRE"
+      },
+      {
+        "langue": "fr",
+        "source": "Bernard Werber",
+        "phrase": "| lieu de naissance = Toulouse, France | date de décès = | lieu de décès = | langue = Français | mouvement = | genre = Science-fictionContes philosophiques | distinctions = Grand prix des lectrices de EllePrix des lecteurs de Sciences et Avenir | adjectifs dérivés = | œuvres principales = * Les Four",
+        "concept_recherche": "ARBRE"
+      }
+    ]
+  },
+  "BEAU": {
+    "decomposition": [
+      "EXISTENCE"
+    ],
+    "formule_complete": "EXISTENCE",
+    "confiance": 0.23800000000000002,
+    "contextes_count": 2,
+    "source_expansion": "wikipedia_directe_optimisee",
+    "exemples_contextes": [
+      {
+        "langue": "fr",
+        "source": "Années 1870",
+        "phrase": "Gobaze prend le titre de rois des rois sous le nom de Tekle Giyorgis II mais est battu en 1871 par son beau-frère Kassa qui monte sur le trône en 1872 sous le nom de Yohannes IV",
+        "concept_recherche": "BEAU"
+      },
+      {
+        "langue": "fr",
+        "source": "Wikipédia:Wikipédia sur papier",
+        "phrase": "Wikipédia sur papier ce ne serait pas beau ([http://linuxopensource",
+        "concept_recherche": "BEAU"
+      }
+    ]
+  }
+}

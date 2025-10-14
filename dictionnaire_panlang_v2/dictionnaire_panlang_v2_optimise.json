@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "date_creation": "2025-09-26 20:20:50",
+    "base_version": "1.0.0",
+    "concepts_v1": 0,
+    "nouveaux_concepts": 18,
+    "total_concepts": 18,
+    "ameliorations": [
+      "Concepts sensoriels de base ajoutés",
+      "Relations sociales fondamentales",
+      "Abstractions philosophiques clés",
+      "Couverture catégorielle améliorée"
+    ],
+    "validation_precedente": {
+      "score_global_v1": "0.400",
+      "objectif_v2": ">0.700",
+      "lacunes_corrigees": 18
+    }
+  },
+  "concepts": {
+    "VOIR": {
+      "formule": "PERCEPTION + MOUVEMENT",
+      "complexite": 2,
+      "validite": 0.9
+    },
+    "ENTENDRE": {
+      "formule": "PERCEPTION + COGNITION",
+      "complexite": 2,
+      "validite": 0.9
+    },
+    "TOUCHER": {
+      "formule": "PERCEPTION + EXISTENCE",
+      "complexite": 2,
+      "validite": 0.95
+    },
+    "MARCHER": {
+      "formule": "MOUVEMENT + EXISTENCE",
+      "complexite": 2,
+      "validite": 0.95
+    },
+    "MANGER": {
+      "formule": "DESTRUCTION + EXISTENCE + POSSESSION",
+      "complexite": 3,
+      "validite": 0.9
+    },
+    "DORMIR": {
+      "formule": "EXISTENCE + PERCEPTION + DESTRUCTION",
+      "complexite": 3,
+      "validite": 0.8
+    },
+    "FAMILLE": {
+      "formule": "EXISTENCE + EMOTION + POSSESSION + CREATION",
+      "complexite": 4,
+      "validite": 0.85
+    },
+    "AMI": {
+      "formule": "EMOTION + COMMUNICATION + PERCEPTION",
+      "complexite": 3,
+      "validite": 0.9
+    },
+    "ENNEMI": {
+      "formule": "EMOTION + DOMINATION + DESTRUCTION",
+      "complexite": 3,
+      "validite": 0.85
+    },
+    "COMMUNAUTÉ": {
+      "formule": "EXISTENCE + COMMUNICATION + CREATION + POSSESSION",
+      "complexite": 4,
+      "validite": 0.8
+    },
+    "COOPÉRER": {
+      "formule": "COMMUNICATION + CREATION + POSSESSION",
+      "complexite": 3,
+      "validite": 0.9
+    },
+    "OBÉIR": {
+      "formule": "PERCEPTION + DOMINATION + EXISTENCE",
+      "complexite": 3,
+      "validite": 0.85
+    },
+    "VÉRITÉ": {
+      "formule": "COGNITION + PERCEPTION + EXISTENCE",
+      "complexite": 3,
+      "validite": 0.8
+    },
+    "BEAUTÉ": {
+      "formule": "PERCEPTION + EMOTION + CREATION",
+      "complexite": 3,
+      "validite": 0.85
+    },
+    "JUSTICE": {
+      "formule": "COGNITION + DOMINATION + EXISTENCE + EMOTION",
+      "complexite": 4,
+      "validite": 0.8
+    },
+    "LIBERTÉ": {
+      "formule": "MOUVEMENT + DOMINATION + EXISTENCE",
+      "complexite": 3,
+      "validite": 0.85
+    },
+    "TEMPS": {
+      "formule": "PERCEPTION + MOUVEMENT + DESTRUCTION + EXISTENCE",
+      "complexite": 4,
+      "validite": 0.75
+    },
+    "CAUSE": {
+      "formule": "CREATION + MOUVEMENT + COGNITION",
+      "complexite": 3,
+      "validite": 0.8
+    }
+  }
+}

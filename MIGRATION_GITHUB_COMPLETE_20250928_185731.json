@@ -1,0 +1,120 @@
+{
+  "backup_tag": "v-auto-rename-20250928-185726",
+  "existing_projects": [
+    {
+      "title": "PaniniFS Research Strategy 2025",
+      "number": "13",
+      "status": "active"
+    },
+    {
+      "title": "[RESEARCH] dhatu-multimodal-learning",
+      "number": "12",
+      "status": "active"
+    },
+    {
+      "title": "[RESEARCH] dhatu-linguistics-engine",
+      "number": "11",
+      "status": "active"
+    },
+    {
+      "title": "[INTERFACES] dhatu-api-gateway",
+      "number": "10",
+      "status": "active"
+    },
+    {
+      "title": "[INTERFACES] dhatu-dashboard",
+      "number": "9",
+      "status": "active"
+    },
+    {
+      "title": "[TOOLS] dhatu-evolution-simulator",
+      "number": "8",
+      "status": "active"
+    },
+    {
+      "title": "[TOOLS] dhatu-space-visualizer",
+      "number": "7",
+      "status": "active"
+    },
+    {
+      "title": "[TOOLS] dhatu-creative-generator",
+      "number": "6",
+      "status": "active"
+    },
+    {
+      "title": "[TOOLS] dhatu-pattern-analyzer",
+      "number": "5",
+      "status": "active"
+    },
+    {
+      "title": "[CORE] dhatu-gpu-accelerator",
+      "number": "4",
+      "status": "active"
+    },
+    {
+      "title": "[CORE] dhatu-web-framework",
+      "number": "3",
+      "status": "active"
+    },
+    {
+      "title": "[CORE] dhatu-corpus-manager",
+      "number": "2",
+      "status": "active"
+    },
+    {
+      "title": "[CORE] dhatu-universal-compressor",
+      "number": "1",
+      "status": "active"
+    }
+  ],
+  "issues_prs_analysis": {
+    "issues": [
+      {
+        "number": 10,
+        "state": "OPEN",
+        "title": "[COPILOTAGE-AUTONOMIE] Infrastructure autonomie complète missions 10h+"
+      },
+      {
+        "number": 9,
+        "state": "OPEN",
+        "title": "[COPILOTAGE] Conformité Git workflow - Nomenclature branche"
+      },
+      {
+        "number": 8,
+        "state": "OPEN",
+        "title": "📚 Setup documentation dhatu-universal-compressor"
+      },
+      {
+        "number": 5,
+        "state": "OPEN",
+        "title": "Establish formal mathematical foundations for semantic compression"
+      },
+      {
+        "number": 4,
+        "state": "OPEN",
+        "title": "Build panini file system prototype with semantic addressing"
+      },
+      {
+        "number": 3,
+        "state": "OPEN",
+        "title": "Develop cross-modal primitive extraction (audio, visual, gestural)"
+      },
+      {
+        "number": 2,
+        "state": "OPEN",
+        "title": "Optimize semantic hashing algorithms for production deployment"
+      },
+      {
+        "number": 1,
+        "state": "OPEN",
+        "title": "Complete aspectual primitive development for 100% coverage"
+      }
+    ],
+    "pull_requests": []
+  },
+  "rename_completed": true,
+  "new_remote": "ssh://git@github.com/stephanedenis/Panini.git",
+  "rename_timestamp": "2025-09-28T18:57:31.194797",
+  "projects_updated": 13,
+  "issues_verified": true
+}

@@ -1,0 +1,24 @@
+{
+  "validation_triggers": [
+    "dhatu_modification",
+    "architecture_change",
+    "semantic_rule_update",
+    "composition_logic_change",
+    "emotional_system_update"
+  ],
+  "test_corpus_paths": [
+    "corpus_multilingue_dev.json",
+    "corpus_prescolaire.json",
+    "corpus_scientifique.json",
+    "dictionnaire_panlang_panksepp_*.json"
+  ],
+  "quality_thresholds": {
+    "multilingual_coverage": 0.85,
+    "semantic_precision": 0.9,
+    "compositional_coherence": 0.88,
+    "ambiguity_resolution_rate": 0.82,
+    "overall_quality_score": 0.85
+  },
+  "regression_detection_sensitivity": 0.05,
+  "improvement_tracking_window": 10
+}

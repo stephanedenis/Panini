@@ -1,0 +1,157 @@
+{
+  "titre": "Réduction Atomique PanLang - Analyse Dhātu Sanskrit",
+  "description": "Décomposition des primitives en atomes et molécules fondamentaux",
+  "reduction_stats": {
+    "primitives_originales": 538,
+    "atomes_identifies": 31,
+    "molecules_generees": 71,
+    "elements_totaux": 102,
+    "taux_reduction": "81.0%"
+  },
+  "atomes_principaux": {
+    "पा": {
+      "sens": "voyelle_longue",
+      "occurrences": 146,
+      "poids_atomique": 0.0273
+    },
+    "पाठ": {
+      "sens": "connaissance",
+      "occurrences": 111,
+      "poids_atomique": 0.0207
+    },
+    "ाठ": {
+      "sens": "voyelle_longue",
+      "occurrences": 111,
+      "poids_atomique": 0.0207
+    },
+    "ना": {
+      "sens": "voyelle_longue",
+      "occurrences": 60,
+      "poids_atomique": 0.0112
+    },
+    "का": {
+      "sens": "voyelle_longue",
+      "occurrences": 46,
+      "poids_atomique": 0.0086
+    },
+    "पर": {
+      "sens": "indetermine",
+      "occurrences": 45,
+      "poids_atomique": 0.0084
+    },
+    "ाः": {
+      "sens": "voyelle_longue",
+      "occurrences": 37,
+      "poids_atomique": 0.0069
+    },
+    "ति": {
+      "sens": "indetermine",
+      "occurrences": 35,
+      "poids_atomique": 0.0065
+    },
+    "ात": {
+      "sens": "voyelle_longue",
+      "occurrences": 32,
+      "poids_atomique": 0.006
+    },
+    "या": {
+      "sens": "mouvement",
+      "occurrences": 30,
+      "poids_atomique": 0.0056
+    }
+  },
+  "molecules_stables": {
+    "पा+पाठ+ाठ": {
+      "sens": "voyelle_longue_connaissance_voyelle_longue",
+      "atomes": [
+        "पा",
+        "पाठ",
+        "ाठ"
+      ],
+      "stabilite": 0.4444
+    },
+    "भि+िः": {
+      "sens": "indetermine_indetermine",
+      "atomes": [
+        "भि",
+        "िः"
+      ],
+      "stabilite": 0.0667
+    },
+    "का+ाः": {
+      "sens": "voyelle_longue_voyelle_longue",
+      "atomes": [
+        "का",
+        "ाः"
+      ],
+      "stabilite": 0.0533
+    },
+    "का+ार": {
+      "sens": "voyelle_longue_voyelle_longue",
+      "atomes": [
+        "का",
+        "ार"
+      ],
+      "stabilite": 0.0222
+    },
+    "ित+नि": {
+      "sens": "indetermine_indetermine",
+      "atomes": [
+        "ित",
+        "नि"
+      ],
+      "stabilite": 0.0222
+    },
+    "या+रि": {
+      "sens": "mouvement_indetermine",
+      "atomes": [
+        "या",
+        "रि"
+      ],
+      "stabilite": 0.0178
+    },
+    "ति+िः+ृत": {
+      "sens": "indetermine_indetermine_indetermine",
+      "atomes": [
+        "ति",
+        "िः",
+        "ृत"
+      ],
+      "stabilite": 0.0178
+    },
+    "ति+रि+ित": {
+      "sens": "indetermine_indetermine_indetermine",
+      "atomes": [
+        "ति",
+        "रि",
+        "ित"
+      ],
+      "stabilite": 0.0133
+    },
+    "पा+ात": {
+      "sens": "voyelle_longue_voyelle_longue",
+      "atomes": [
+        "पा",
+        "ात"
+      ],
+      "stabilite": 0.0133
+    },
+    "पा+ार+रा": {
+      "sens": "voyelle_longue_voyelle_longue_voyelle_longue",
+      "atomes": [
+        "पा",
+        "ार",
+        "रा"
+      ],
+      "stabilite": 0.0133
+    }
+  },
+  "capacites_reconstruction": {
+    "decomposition_atomique": true,
+    "recombinaison_moleculaire": true,
+    "reduction_semantique": true,
+    "base_etymologique_sanskrit": true
+  },
+  "timestamp": "2025-09-26 14:14:42",
+  "base_donnees": "reduction_atomique/primitives_atomiques.db"
+}

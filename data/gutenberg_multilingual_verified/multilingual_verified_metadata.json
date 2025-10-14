@@ -1,0 +1,138 @@
+{
+  "collection_summary": {
+    "total_works": 6,
+    "total_characters": 4920169,
+    "languages": [
+      "en",
+      "fr",
+      "de"
+    ]
+  },
+  "works": {
+    "alice_wonderland": {
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "original_lang": "en",
+      "versions": {
+        "en": {
+          "gutenberg_id": "11",
+          "url": "https://www.gutenberg.org/files/11/11-0.txt",
+          "file_path": "data/gutenberg_multilingual_verified/alice_wonderland/alice_wonderland_en.txt",
+          "content_length": 144696,
+          "download_success": true
+        },
+        "fr": {
+          "gutenberg_id": "55456",
+          "url": "https://www.gutenberg.org/cache/epub/55456/pg55456.txt",
+          "file_path": "data/gutenberg_multilingual_verified/alice_wonderland/alice_wonderland_fr.txt",
+          "content_length": 180648,
+          "download_success": true
+        }
+      }
+    },
+    "frankenstein": {
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "original_lang": "en",
+      "versions": {
+        "en": {
+          "gutenberg_id": "84",
+          "url": "https://www.gutenberg.org/files/84/84-0.txt",
+          "file_path": "data/gutenberg_multilingual_verified/frankenstein/frankenstein_en.txt",
+          "content_length": 419434,
+          "download_success": true
+        },
+        "de": {
+          "gutenberg_id": "21264",
+          "url": "https://www.gutenberg.org/files/21264/21264-0.txt",
+          "download_success": false,
+          "error": "404 Client Error: Not Found for url: https://www.gutenberg.org/files/21264/21264-0.txt"
+        }
+      }
+    },
+    "pride_prejudice": {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "original_lang": "en",
+      "versions": {
+        "en": {
+          "gutenberg_id": "1342",
+          "url": "https://www.gutenberg.org/files/1342/1342-0.txt",
+          "file_path": "data/gutenberg_multilingual_verified/pride_prejudice/pride_prejudice_en.txt",
+          "content_length": 743383,
+          "download_success": true
+        },
+        "de": {
+          "gutenberg_id": "42671",
+          "url": "https://www.gutenberg.org/files/42671/42671-0.txt",
+          "file_path": "data/gutenberg_multilingual_verified/pride_prejudice/pride_prejudice_de.txt",
+          "content_length": 705366,
+          "download_success": true
+        }
+      }
+    },
+    "around_world_80_days": {
+      "title": "Around the World in Eighty Days",
+      "author": "Jules Verne",
+      "original_lang": "en",
+      "versions": {
+        "en": {
+          "gutenberg_id": "103",
+          "url": "https://www.gutenberg.org/files/103/103-0.txt",
+          "file_path": "data/gutenberg_multilingual_verified/around_world_80_days/around_world_80_days_en.txt",
+          "content_length": 377221,
+          "download_success": true
+        },
+        "fr": {
+          "gutenberg_id": "800",
+          "url": "https://www.gutenberg.org/cache/epub/800/pg800.txt",
+          "file_path": "data/gutenberg_multilingual_verified/around_world_80_days/around_world_80_days_fr.txt",
+          "content_length": 450447,
+          "download_success": true
+        }
+      }
+    },
+    "metamorphosis": {
+      "title": "Metamorphosis",
+      "author": "Franz Kafka",
+      "original_lang": "en",
+      "versions": {
+        "en": {
+          "gutenberg_id": "5200",
+          "url": "https://www.gutenberg.org/files/5200/5200-0.txt",
+          "file_path": "data/gutenberg_multilingual_verified/metamorphosis/metamorphosis_en.txt",
+          "content_length": 140674,
+          "download_success": true
+        },
+        "de": {
+          "gutenberg_id": "915",
+          "url": "https://www.gutenberg.org/cache/epub/915/pg915.txt",
+          "file_path": "data/gutenberg_multilingual_verified/metamorphosis/metamorphosis_de.txt",
+          "content_length": 809116,
+          "download_success": true
+        }
+      }
+    },
+    "dracula": {
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "original_lang": "en",
+      "versions": {
+        "en": {
+          "gutenberg_id": "345",
+          "url": "https://www.gutenberg.org/files/345/345-0.txt",
+          "file_path": "data/gutenberg_multilingual_verified/dracula/dracula_en.txt",
+          "content_length": 861499,
+          "download_success": true
+        },
+        "fr": {
+          "gutenberg_id": "31311",
+          "url": "https://www.gutenberg.org/cache/epub/31311/pg31311.txt",
+          "file_path": "data/gutenberg_multilingual_verified/dracula/dracula_fr.txt",
+          "content_length": 87685,
+          "download_success": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "version": "2.5.0-demo",
+    "concepts": 18
+  },
+  "concepts": {
+    "VOIR": {
+      "formule": "PERCEPTION + MOUVEMENT",
+      "complexite": 2
+    },
+    "ENTENDRE": {
+      "formule": "PERCEPTION + COGNITION",
+      "complexite": 2
+    },
+    "TOUCHER": {
+      "formule": "PERCEPTION + EXISTENCE",
+      "complexite": 2
+    },
+    "MARCHER": {
+      "formule": "MOUVEMENT + EXISTENCE",
+      "complexite": 2
+    },
+    "MANGER": {
+      "formule": "DESTRUCTION + EXISTENCE + POSSESSION",
+      "complexite": 3
+    },
+    "DORMIR": {
+      "formule": "EXISTENCE + PERCEPTION + DESTRUCTION",
+      "complexite": 3
+    },
+    "FAMILLE": {
+      "formule": "EXISTENCE + EMOTION + POSSESSION + CREATION",
+      "complexite": 4
+    },
+    "AMI": {
+      "formule": "EMOTION + COMMUNICATION + PERCEPTION",
+      "complexite": 3
+    },
+    "ENNEMI": {
+      "formule": "EMOTION + DOMINATION + DESTRUCTION",
+      "complexite": 3
+    },
+    "COMMUNAUTÉ": {
+      "formule": "EXISTENCE + COMMUNICATION + CREATION + POSSESSION",
+      "complexite": 4
+    },
+    "COOPÉRER": {
+      "formule": "COMMUNICATION + CREATION + POSSESSION",
+      "complexite": 3
+    },
+    "OBÉIR": {
+      "formule": "PERCEPTION + DOMINATION + EXISTENCE",
+      "complexite": 3
+    },
+    "VÉRITÉ": {
+      "formule": "COGNITION + PERCEPTION + EXISTENCE",
+      "complexite": 3
+    },
+    "BEAUTÉ": {
+      "formule": "PERCEPTION + EMOTION + CREATION",
+      "complexite": 3
+    },
+    "JUSTICE": {
+      "formule": "COGNITION + DOMINATION + EXISTENCE + EMOTION",
+      "complexite": 4
+    },
+    "LIBERTÉ": {
+      "formule": "MOUVEMENT + DOMINATION + EXISTENCE",
+      "complexite": 3
+    },
+    "TEMPS": {
+      "formule": "PERCEPTION + MOUVEMENT + DESTRUCTION + EXISTENCE",
+      "complexite": 4
+    },
+    "CAUSE": {
+      "formule": "CREATION + MOUVEMENT + COGNITION",
+      "complexite": 3
+    }
+  }
+}

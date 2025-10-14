@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "version": "RAFFINÉ-v3.0",
+    "timestamp": "2025-09-27 14:42:13",
+    "source_analysis": "analyse_ambiguites_dictionnaire_20250927_134112.json",
+    "refinement_count": 0,
+    "methodology": "ambiguity_resolution_with_contextual_enrichment"
+  },
+  "concepts_raffines": {},
+  "operations_applied": [],
+  "validation_tests": []
+}

@@ -1,0 +1,105 @@
+@startuml Semantic_Causal_cycle_dhatu
+!theme spacelab
+title Cycle Dhātu Complet - Semantic_Causal
+subtitle 2025-09-25 08:46:20
+
+' Définition des couleurs et styles
+skinparam backgroundColor #f8f9fa
+skinparam rectangle {
+    BackgroundColor #e3f2fd
+    BorderColor #1976d2
+}
+skinparam note {
+    BackgroundColor #fff3e0
+    BorderColor #f57c00
+}
+
+' Phase 1: TEXTE ORIGINAL
+rectangle "📝 TEXTE ORIGINAL" as T1 {
+    **Contenu**: "Because it was raining, Alice decided to stay insi..."
+    **Taille**: 69 caractères
+    **Encoding**: UTF-8
+    **Langue**: AUTO
+}
+
+' Phase 2: SEGMENTATION
+rectangle "🔪 SEGMENTATION" as T2 {
+    **Méthode**: Tokenisation sémantique
+    **Segments**: 10
+    **Unités**: Because, it, was...
+    **Efficacité**: 90.0%
+}
+
+' Phase 3: ANALYSE DHĀTU
+rectangle "🔍 ANALYSE DHĀTU" as T3 {
+    **Racines détectées**: 6
+    **Patterns**: MOVE, SEE
+    **Profondeur**: 3 niveaux
+    **Couverture**: 100.0%
+}
+
+' Phase 4: PROFIL UNIVERSEL
+rectangle "🌐 PROFIL UNIVERSEL" as T4 {
+    **Signature**: b1d9712da2940c11...
+    **Empreinte**: SHA-256
+    **Dimension**: 48D
+    **Invariants**: 4
+}
+
+' Phase 5: RECONSTRUCTION CIBLÉE
+rectangle "🎯 RECONSTRUCTION CIBLÉE" as T5 {
+    **Algorithme**: Tripartite optimisé
+    **Fidélité**: 100.0%
+    **Compression**: 12.232x
+    **Intégrité**: ✓ PRESERVED
+}
+
+' Phase 6: AFFINEMENT ADAPTATIF
+rectangle "🔧 AFFINEMENT ADAPTATIF" as T6 {
+    **Corrections**: 0
+    **Optimisations**: 6
+    **Convergence**: 0.995
+    **Stabilité**: ✓ STABLE
+}
+
+' Phase 7: VALIDATION CROISÉE
+rectangle "✅ VALIDATION CROISÉE" as T7 {
+    **Tests**: 4
+    **Succès**: 100.0%
+    **Métriques**: hash_match, content_identical
+    **Conformité**: ✓ COMPLIANT
+}
+
+' Phase 8: RESTITUTION OPTIMISÉE
+rectangle "🎉 RESTITUTION OPTIMISÉE" as T8 {
+    **Résultat**: "Because it was raining, Alice ..."
+    **Identité**: True
+    **Performance**: 7ms
+    **Qualité**: 100.0%
+}
+
+' Flux du cycle
+T1 -down-> T2 : Tokenisation
+T2 -down-> T3 : Extraction racines
+T3 -down-> T4 : Universalisation
+T4 -down-> T5 : Ciblage optimal
+T5 -down-> T6 : Adaptation fine
+T6 -down-> T7 : Vérifications
+T7 -down-> T8 : Optimisation finale
+
+' Notes explicatives
+note right of T3
+  **Dhātu détectés**:
+    • MOVE
+  • SEE
+  • THINK
+end note
+
+note right of T7
+  **Garanties validées**:
+  • Intégrité cryptographique
+  • Préservation sémantique
+  • Fidélité structurelle
+end note
+
+@enduml

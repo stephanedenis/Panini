@@ -1,0 +1,1791 @@
+{
+ "concepts": {
+  "COLÈRE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "DOMINATION"
+   ],
+   "formule_simple": "EMOTION + DOMINATION",
+   "formule_complete": "EMOTION + DOMINATION",
+   "atomes_finaux": [
+    "EMOTION",
+    "DOMINATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "corpus_emotions_fines_iter_1",
+   "validite": 0.8,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "EXPLORER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "MOUVEMENT",
+    "PERCEPTION"
+   ],
+   "formule_simple": "MOUVEMENT + PERCEPTION",
+   "formule_complete": "MOUVEMENT + PERCEPTION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "PERCEPTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "EXISTENCE": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "EXISTENCE"
+   ],
+   "formule_simple": "EXISTENCE",
+   "formule_complete": "EXISTENCE",
+   "atomes_finaux": [
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "अस्",
+    "भू",
+    "स्था"
+   ],
+   "description": "Être/états/permanence"
+  },
+  "SENTIR": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "PERCEPTION"
+   ],
+   "formule_simple": "PERCEPTION",
+   "formule_complete": "PERCEPTION",
+   "atomes_finaux": [
+    "PERCEPTION"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.23800000000000002,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "GUERRE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "MOUVEMENT",
+    "DOMINATION",
+    "DESTRUCTION"
+   ],
+   "formule_simple": "MOUVEMENT + DOMINATION + DESTRUCTION",
+   "formule_complete": "MOUVEMENT + DOMINATION + DESTRUCTION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "DOMINATION",
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "PARENT": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "CREATION",
+    "MOUVEMENT",
+    "DESTRUCTION"
+   ],
+   "formule_simple": "CREATION + MOUVEMENT + DESTRUCTION",
+   "formule_complete": "CREATION + MOUVEMENT + DESTRUCTION",
+   "atomes_finaux": [
+    "CREATION",
+    "MOUVEMENT",
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.85,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "MUSIQUE": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "MOUVEMENT"
+   ],
+   "formule_simple": "DESTRUCTION + MOUVEMENT",
+   "formule_complete": "DESTRUCTION + MOUVEMENT",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.47600000000000003,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "AMOUR": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "PERCEPTION",
+    "EXISTENCE"
+   ],
+   "formule_simple": "DESTRUCTION + PERCEPTION + EXISTENCE",
+   "formule_complete": "DESTRUCTION + PERCEPTION + EXISTENCE",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "PERCEPTION",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.612,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DÉGOÛT": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "EXISTENCE"
+   ],
+   "formule_simple": "EXISTENCE",
+   "formule_complete": "EXISTENCE",
+   "atomes_finaux": [
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.204,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "LITTÉRATURE": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "POSSESSION",
+    "EXISTENCE"
+   ],
+   "formule_simple": "POSSESSION + EXISTENCE",
+   "formule_complete": "POSSESSION + EXISTENCE",
+   "atomes_finaux": [
+    "POSSESSION",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.442,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "LIEU": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT"
+   ],
+   "formule_simple": "MOUVEMENT",
+   "formule_complete": "MOUVEMENT",
+   "atomes_finaux": [
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.34,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "ART": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "CREATION",
+    "COMMUNICATION",
+    "EMOTION"
+   ],
+   "formule_simple": "CREATION + COMMUNICATION + EMOTION",
+   "formule_complete": "CREATION + COMMUNICATION + EMOTION",
+   "atomes_finaux": [
+    "CREATION",
+    "COMMUNICATION",
+    "EMOTION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "COMMUNICATION": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "COMMUNICATION"
+   ],
+   "formule_simple": "COMMUNICATION",
+   "formule_complete": "COMMUNICATION",
+   "atomes_finaux": [
+    "COMMUNICATION"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "वद्",
+    "वच्",
+    "ब्रू",
+    "कथ्"
+   ],
+   "description": "Expression/partage/échange"
+  },
+  "PARTAGER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "POSSESSION",
+    "COMMUNICATION"
+   ],
+   "formule_simple": "POSSESSION + COMMUNICATION",
+   "formule_complete": "POSSESSION + COMMUNICATION",
+   "atomes_finaux": [
+    "POSSESSION",
+    "COMMUNICATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "INVENTER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COGNITION",
+    "CREATION"
+   ],
+   "formule_simple": "COGNITION + CREATION",
+   "formule_complete": "COGNITION + CREATION",
+   "atomes_finaux": [
+    "COGNITION",
+    "CREATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DISTANCE": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "DESTRUCTION",
+    "COGNITION",
+    "PERCEPTION"
+   ],
+   "formule_simple": "MOUVEMENT + DESTRUCTION + COGNITION + PERCEPTION",
+   "formule_complete": "MOUVEMENT + DESTRUCTION + COGNITION + PERCEPTION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "DESTRUCTION",
+    "COGNITION",
+    "PERCEPTION"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.816,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "ÉTOILE": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "COMMUNICATION"
+   ],
+   "formule_simple": "COMMUNICATION",
+   "formule_complete": "COMMUNICATION",
+   "atomes_finaux": [
+    "COMMUNICATION"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.34,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "NATION": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "EXISTENCE",
+    "MOUVEMENT",
+    "COMMUNICATION"
+   ],
+   "formule_simple": "DESTRUCTION + EXISTENCE + MOUVEMENT + COMMUNICATION",
+   "formule_complete": "DESTRUCTION + EXISTENCE + MOUVEMENT + COMMUNICATION",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "EXISTENCE",
+    "MOUVEMENT",
+    "COMMUNICATION"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.85,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "FENÊTRE": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "EXISTENCE"
+   ],
+   "formule_simple": "EXISTENCE",
+   "formule_complete": "EXISTENCE",
+   "atomes_finaux": [
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.27199999999999996,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "FUIR": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "MOUVEMENT",
+    "EMOTION"
+   ],
+   "formule_simple": "MOUVEMENT + EMOTION",
+   "formule_complete": "MOUVEMENT + EMOTION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "EMOTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "BUT": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "EXISTENCE",
+    "POSSESSION",
+    "DOMINATION"
+   ],
+   "formule_simple": "MOUVEMENT + EXISTENCE + POSSESSION + DOMINATION",
+   "formule_complete": "MOUVEMENT + EXISTENCE + POSSESSION + DOMINATION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "EXISTENCE",
+    "POSSESSION",
+    "DOMINATION"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.85,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "GOUVERNER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "DOMINATION",
+    "COMMUNICATION",
+    "CREATION"
+   ],
+   "formule_simple": "DOMINATION + COMMUNICATION + CREATION",
+   "formule_complete": "DOMINATION + COMMUNICATION + CREATION",
+   "atomes_finaux": [
+    "DOMINATION",
+    "COMMUNICATION",
+    "CREATION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.9,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "EMOTION": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "EMOTION"
+   ],
+   "formule_simple": "EMOTION",
+   "formule_complete": "EMOTION",
+   "atomes_finaux": [
+    "EMOTION"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "प्रीय्",
+    "द्विष्",
+    "भी",
+    "हर्ष्"
+   ],
+   "description": "Affect/ressenti/émotion"
+  },
+  "IMAGINER": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "POSSESSION"
+   ],
+   "formule_simple": "POSSESSION",
+   "formule_complete": "POSSESSION",
+   "atomes_finaux": [
+    "POSSESSION"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.27199999999999996,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "ARCHITECTURE": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "EXISTENCE",
+    "DESTRUCTION",
+    "POSSESSION"
+   ],
+   "formule_simple": "MOUVEMENT + EXISTENCE + DESTRUCTION + POSSESSION",
+   "formule_complete": "MOUVEMENT + EXISTENCE + DESTRUCTION + POSSESSION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "EXISTENCE",
+    "DESTRUCTION",
+    "POSSESSION"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.85,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "ILLUSION": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "CREATION",
+    "EXISTENCE"
+   ],
+   "formule_simple": "MOUVEMENT + CREATION + EXISTENCE",
+   "formule_complete": "MOUVEMENT + CREATION + EXISTENCE",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "CREATION",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.612,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "COGNITION": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "COGNITION"
+   ],
+   "formule_simple": "COGNITION",
+   "formule_complete": "COGNITION",
+   "atomes_finaux": [
+    "COGNITION"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "ज्ञा",
+    "विद्",
+    "बुध्",
+    "मन्"
+   ],
+   "description": "Mental/compréhension/savoir"
+  },
+  "RESSENTIR": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COGNITION",
+    "EMOTION"
+   ],
+   "formule_simple": "COGNITION + EMOTION",
+   "formule_complete": "COGNITION + EMOTION",
+   "atomes_finaux": [
+    "COGNITION",
+    "EMOTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "REALISER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EXISTENCE",
+    "COGNITION"
+   ],
+   "formule_simple": "EXISTENCE + COGNITION",
+   "formule_complete": "EXISTENCE + COGNITION",
+   "atomes_finaux": [
+    "EXISTENCE",
+    "COGNITION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "POSSESSION": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "POSSESSION"
+   ],
+   "formule_simple": "POSSESSION",
+   "formule_complete": "POSSESSION",
+   "atomes_finaux": [
+    "POSSESSION"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "गृह्",
+    "त्यज्",
+    "लभ्"
+   ],
+   "description": "Avoir/contrôle/appropriation"
+  },
+  "ÉTERNITÉ": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "MOUVEMENT"
+   ],
+   "formule_simple": "DESTRUCTION + MOUVEMENT",
+   "formule_complete": "DESTRUCTION + MOUVEMENT",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.408,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "NOSTALGIE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "COGNITION",
+    "POSSESSION"
+   ],
+   "formule_simple": "EMOTION + COGNITION + POSSESSION",
+   "formule_complete": "EMOTION + COGNITION + POSSESSION",
+   "atomes_finaux": [
+    "EMOTION",
+    "COGNITION",
+    "POSSESSION"
+   ],
+   "complexite_atomique": 3,
+   "source": "corpus_emotions_fines_iter_1",
+   "validite": 0.8,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "EUPHORIE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "CREATION",
+    "MOUVEMENT"
+   ],
+   "formule_simple": "EMOTION + CREATION + MOUVEMENT",
+   "formule_complete": "EMOTION + CREATION + MOUVEMENT",
+   "atomes_finaux": [
+    "EMOTION",
+    "CREATION",
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 3,
+   "source": "corpus_emotions_fines_iter_1",
+   "validite": 0.8,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "MÉLANCOLIE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "COGNITION",
+    "DESTRUCTION"
+   ],
+   "formule_simple": "EMOTION + COGNITION + DESTRUCTION",
+   "formule_complete": "EMOTION + COGNITION + DESTRUCTION",
+   "atomes_finaux": [
+    "EMOTION",
+    "COGNITION",
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 3,
+   "source": "corpus_emotions_fines_iter_1",
+   "validite": 0.8,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DESIRER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "POSSESSION",
+    "EMOTION"
+   ],
+   "formule_simple": "POSSESSION + EMOTION",
+   "formule_complete": "POSSESSION + EMOTION",
+   "atomes_finaux": [
+    "POSSESSION",
+    "EMOTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DANSER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "MOUVEMENT",
+    "COMMUNICATION"
+   ],
+   "formule_simple": "MOUVEMENT + COMMUNICATION",
+   "formule_complete": "MOUVEMENT + COMMUNICATION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "COMMUNICATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "RÉCIT": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION"
+   ],
+   "formule_simple": "DESTRUCTION",
+   "formule_complete": "DESTRUCTION",
+   "atomes_finaux": [
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.27199999999999996,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "COMMANDER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COMMUNICATION",
+    "DOMINATION"
+   ],
+   "formule_simple": "COMMUNICATION + DOMINATION",
+   "formule_complete": "COMMUNICATION + DOMINATION",
+   "atomes_finaux": [
+    "COMMUNICATION",
+    "DOMINATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "SOUFFRIR": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "DESTRUCTION",
+    "EMOTION"
+   ],
+   "formule_simple": "DESTRUCTION + EMOTION",
+   "formule_complete": "DESTRUCTION + EMOTION",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "EMOTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "GROUPE": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "PERCEPTION",
+    "DESTRUCTION"
+   ],
+   "formule_simple": "MOUVEMENT + PERCEPTION + DESTRUCTION",
+   "formule_complete": "MOUVEMENT + PERCEPTION + DESTRUCTION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "PERCEPTION",
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.646,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "JOIE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "CREATION"
+   ],
+   "formule_simple": "EMOTION + CREATION",
+   "formule_complete": "EMOTION + CREATION",
+   "atomes_finaux": [
+    "EMOTION",
+    "CREATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "corpus_emotions_fines_iter_1",
+   "validite": 0.8,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "INSTRUMENT": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "EXISTENCE",
+    "MOUVEMENT",
+    "DESTRUCTION",
+    "CREATION"
+   ],
+   "formule_simple": "EXISTENCE + MOUVEMENT + DESTRUCTION + CREATION",
+   "formule_complete": "EXISTENCE + MOUVEMENT + DESTRUCTION + CREATION",
+   "atomes_finaux": [
+    "EXISTENCE",
+    "MOUVEMENT",
+    "DESTRUCTION",
+    "CREATION"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.85,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DOMINATION": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "DOMINATION"
+   ],
+   "formule_simple": "DOMINATION",
+   "formule_complete": "DOMINATION",
+   "atomes_finaux": [
+    "DOMINATION"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "राज्",
+    "शास्",
+    "जि"
+   ],
+   "description": "Pouvoir/hiérarchie/autorité"
+  },
+  "SE_SOUVENIR": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "POSSESSION",
+    "EXISTENCE"
+   ],
+   "formule_simple": "MOUVEMENT + POSSESSION + EXISTENCE",
+   "formule_complete": "MOUVEMENT + POSSESSION + EXISTENCE",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "POSSESSION",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.612,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "ARBRE": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT"
+   ],
+   "formule_simple": "MOUVEMENT",
+   "formule_complete": "MOUVEMENT",
+   "atomes_finaux": [
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.27199999999999996,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "TRISTESSE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "DESTRUCTION"
+   ],
+   "formule_simple": "EMOTION + DESTRUCTION",
+   "formule_complete": "EMOTION + DESTRUCTION",
+   "atomes_finaux": [
+    "EMOTION",
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "corpus_emotions_fines_iter_1",
+   "validite": 0.8,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "POISSON": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "POSSESSION",
+    "CREATION"
+   ],
+   "formule_simple": "DESTRUCTION + POSSESSION + CREATION",
+   "formule_complete": "DESTRUCTION + POSSESSION + CREATION",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "POSSESSION",
+    "CREATION"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.646,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "VIVRE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EXISTENCE",
+    "EMOTION"
+   ],
+   "formule_simple": "EXISTENCE + EMOTION",
+   "formule_complete": "EXISTENCE + EMOTION",
+   "atomes_finaux": [
+    "EXISTENCE",
+    "EMOTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DESTRUCTION": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "DESTRUCTION"
+   ],
+   "formule_simple": "DESTRUCTION",
+   "formule_complete": "DESTRUCTION",
+   "atomes_finaux": [
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "हन्",
+    "नश्",
+    "मृ"
+   ],
+   "description": "Fin/disparition/négation"
+  },
+  "AIMER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "COMMUNICATION",
+    "POSSESSION"
+   ],
+   "formule_simple": "EMOTION + COMMUNICATION + POSSESSION",
+   "formule_complete": "EMOTION + COMMUNICATION + POSSESSION",
+   "atomes_finaux": [
+    "EMOTION",
+    "COMMUNICATION",
+    "POSSESSION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.9,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "CONSOLER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COMMUNICATION",
+    "EMOTION"
+   ],
+   "formule_simple": "COMMUNICATION + EMOTION",
+   "formule_complete": "COMMUNICATION + EMOTION",
+   "atomes_finaux": [
+    "COMMUNICATION",
+    "EMOTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DETRUIRE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "MOUVEMENT",
+    "DESTRUCTION"
+   ],
+   "formule_simple": "MOUVEMENT + DESTRUCTION",
+   "formule_complete": "MOUVEMENT + DESTRUCTION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "SAISIR": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "POSSESSION",
+    "MOUVEMENT"
+   ],
+   "formule_simple": "POSSESSION + MOUVEMENT",
+   "formule_complete": "POSSESSION + MOUVEMENT",
+   "atomes_finaux": [
+    "POSSESSION",
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.442,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "SAVOIR": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COGNITION",
+    "POSSESSION"
+   ],
+   "formule_simple": "COGNITION + POSSESSION",
+   "formule_complete": "COGNITION + POSSESSION",
+   "atomes_finaux": [
+    "COGNITION",
+    "POSSESSION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "BEAU": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "EXISTENCE"
+   ],
+   "formule_simple": "EXISTENCE",
+   "formule_complete": "EXISTENCE",
+   "atomes_finaux": [
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.23800000000000002,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "LÉGENDE": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "MOUVEMENT"
+   ],
+   "formule_simple": "DESTRUCTION + MOUVEMENT",
+   "formule_complete": "DESTRUCTION + MOUVEMENT",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.442,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "CONSTRUIRE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "MOUVEMENT",
+    "CREATION"
+   ],
+   "formule_simple": "MOUVEMENT + CREATION",
+   "formule_complete": "MOUVEMENT + CREATION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "CREATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "PROXIMITÉ": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT"
+   ],
+   "formule_simple": "MOUVEMENT",
+   "formule_complete": "MOUVEMENT",
+   "atomes_finaux": [
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.27199999999999996,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "OBSERVER": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "COMMUNICATION",
+    "EXISTENCE"
+   ],
+   "formule_simple": "DESTRUCTION + COMMUNICATION + EXISTENCE",
+   "formule_complete": "DESTRUCTION + COMMUNICATION + EXISTENCE",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "COMMUNICATION",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.714,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "SOLEIL": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "COMMUNICATION",
+    "POSSESSION",
+    "EXISTENCE"
+   ],
+   "formule_simple": "COMMUNICATION + POSSESSION + EXISTENCE",
+   "formule_complete": "COMMUNICATION + POSSESSION + EXISTENCE",
+   "atomes_finaux": [
+    "COMMUNICATION",
+    "POSSESSION",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.68,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "ORGANISER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "DOMINATION",
+    "CREATION"
+   ],
+   "formule_simple": "DOMINATION + CREATION",
+   "formule_complete": "DOMINATION + CREATION",
+   "atomes_finaux": [
+    "DOMINATION",
+    "CREATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "FEU": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "DESTRUCTION",
+    "POSSESSION",
+    "EXISTENCE"
+   ],
+   "formule_simple": "MOUVEMENT + DESTRUCTION + POSSESSION + EXISTENCE",
+   "formule_complete": "MOUVEMENT + DESTRUCTION + POSSESSION + EXISTENCE",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "DESTRUCTION",
+    "POSSESSION",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.68,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "RACONTER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COMMUNICATION",
+    "CREATION"
+   ],
+   "formule_simple": "COMMUNICATION + CREATION",
+   "formule_complete": "COMMUNICATION + CREATION",
+   "atomes_finaux": [
+    "COMMUNICATION",
+    "CREATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "CREATION": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "CREATION"
+   ],
+   "formule_simple": "CREATION",
+   "formule_complete": "CREATION",
+   "atomes_finaux": [
+    "CREATION"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "कृ",
+    "दा",
+    "धा",
+    "जन्"
+   ],
+   "description": "Génération/construction/émergence"
+  },
+  "PEUR": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "PERCEPTION"
+   ],
+   "formule_simple": "EMOTION + PERCEPTION",
+   "formule_complete": "EMOTION + PERCEPTION",
+   "atomes_finaux": [
+    "EMOTION",
+    "PERCEPTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "corpus_emotions_fines_iter_1",
+   "validite": 0.8,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "RACINE": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "MOUVEMENT",
+    "CREATION",
+    "EXISTENCE"
+   ],
+   "formule_simple": "DESTRUCTION + MOUVEMENT + CREATION + EXISTENCE",
+   "formule_complete": "DESTRUCTION + MOUVEMENT + CREATION + EXISTENCE",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "MOUVEMENT",
+    "CREATION",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.68,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "CHERCHER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "MOUVEMENT",
+    "PERCEPTION",
+    "COGNITION"
+   ],
+   "formule_simple": "MOUVEMENT + PERCEPTION + COGNITION",
+   "formule_complete": "MOUVEMENT + PERCEPTION + COGNITION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "PERCEPTION",
+    "COGNITION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "EXPLIQUER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COGNITION",
+    "COMMUNICATION"
+   ],
+   "formule_simple": "COGNITION + COMMUNICATION",
+   "formule_complete": "COGNITION + COMMUNICATION",
+   "atomes_finaux": [
+    "COGNITION",
+    "COMMUNICATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.9,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "MORAL": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "EXISTENCE",
+    "COGNITION",
+    "COMMUNICATION"
+   ],
+   "formule_simple": "DESTRUCTION + EXISTENCE + COGNITION + COMMUNICATION",
+   "formule_complete": "DESTRUCTION + EXISTENCE + COGNITION + COMMUNICATION",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "EXISTENCE",
+    "COGNITION",
+    "COMMUNICATION"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.782,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "MUR": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "DESTRUCTION"
+   ],
+   "formule_simple": "MOUVEMENT + DESTRUCTION",
+   "formule_complete": "MOUVEMENT + DESTRUCTION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "DESTRUCTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.442,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "INQUIÉTUDE": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "CREATION"
+   ],
+   "formule_simple": "MOUVEMENT + CREATION",
+   "formule_complete": "MOUVEMENT + CREATION",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "CREATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.408,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DURÉE": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT",
+    "EXISTENCE"
+   ],
+   "formule_simple": "MOUVEMENT + EXISTENCE",
+   "formule_complete": "MOUVEMENT + EXISTENCE",
+   "atomes_finaux": [
+    "MOUVEMENT",
+    "EXISTENCE"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.442,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "ANIMAL": {
+   "niveau": 4,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "EXISTENCE",
+    "MOUVEMENT",
+    "POSSESSION"
+   ],
+   "formule_simple": "DESTRUCTION + EXISTENCE + MOUVEMENT + POSSESSION",
+   "formule_complete": "DESTRUCTION + EXISTENCE + MOUVEMENT + POSSESSION",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "EXISTENCE",
+    "MOUVEMENT",
+    "POSSESSION"
+   ],
+   "complexite_atomique": 4,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.816,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "GOÛTER": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT"
+   ],
+   "formule_simple": "MOUVEMENT",
+   "formule_complete": "MOUVEMENT",
+   "atomes_finaux": [
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.204,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "SATISFACTION": {
+   "niveau": 1,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "MOUVEMENT"
+   ],
+   "formule_simple": "MOUVEMENT",
+   "formule_complete": "MOUVEMENT",
+   "atomes_finaux": [
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 1,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.306,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "MOUVEMENT": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "MOUVEMENT"
+   ],
+   "formule_simple": "MOUVEMENT",
+   "formule_complete": "MOUVEMENT",
+   "atomes_finaux": [
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "गम्",
+    "या",
+    "चर्",
+    "पत्"
+   ],
+   "description": "Déplacement spatial/temporel/conceptuel"
+  },
+  "LUNE": {
+   "niveau": 3,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "DESTRUCTION",
+    "MOUVEMENT",
+    "POSSESSION"
+   ],
+   "formule_simple": "DESTRUCTION + MOUVEMENT + POSSESSION",
+   "formule_complete": "DESTRUCTION + MOUVEMENT + POSSESSION",
+   "atomes_finaux": [
+    "DESTRUCTION",
+    "MOUVEMENT",
+    "POSSESSION"
+   ],
+   "complexite_atomique": 3,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.646,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "AFFECTION": {
+   "niveau": 2,
+   "type": "expansion_wikipedia",
+   "decomposition": [
+    "EMOTION",
+    "POSSESSION"
+   ],
+   "formule_simple": "EMOTION + POSSESSION",
+   "formule_complete": "EMOTION + POSSESSION",
+   "atomes_finaux": [
+    "EMOTION",
+    "POSSESSION"
+   ],
+   "complexite_atomique": 2,
+   "source": "wikipedia_directe_optimisee",
+   "validite": 0.408,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "INTIMIDER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "DOMINATION",
+    "EMOTION"
+   ],
+   "formule_simple": "DOMINATION + EMOTION",
+   "formule_complete": "DOMINATION + EMOTION",
+   "atomes_finaux": [
+    "DOMINATION",
+    "EMOTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "PERCEPTION": {
+   "niveau": 0,
+   "type": "atome_primitif",
+   "decomposition": [
+    "PERCEPTION"
+   ],
+   "formule_simple": "PERCEPTION",
+   "formule_complete": "PERCEPTION",
+   "atomes_finaux": [
+    "PERCEPTION"
+   ],
+   "complexite_atomique": 1,
+   "source": "dhatu_sanskrit_authentique",
+   "validite": 1.0,
+   "exemples_dhatu": [
+    "दृश्",
+    "श्रु",
+    "स्पृश्",
+    "घ्रा"
+   ],
+   "description": "Sens/input sensoriel"
+  },
+  "ACCUMULER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "POSSESSION",
+    "CREATION"
+   ],
+   "formule_simple": "POSSESSION + CREATION",
+   "formule_complete": "POSSESSION + CREATION",
+   "atomes_finaux": [
+    "POSSESSION",
+    "CREATION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "COMPRENDRE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "PERCEPTION",
+    "COGNITION"
+   ],
+   "formule_simple": "PERCEPTION + COGNITION",
+   "formule_complete": "PERCEPTION + COGNITION",
+   "atomes_finaux": [
+    "PERCEPTION",
+    "COGNITION"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.9,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "APPRENDRE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "PERCEPTION",
+    "COGNITION",
+    "POSSESSION"
+   ],
+   "formule_simple": "PERCEPTION + COGNITION + POSSESSION",
+   "formule_complete": "PERCEPTION + COGNITION + POSSESSION",
+   "atomes_finaux": [
+    "PERCEPTION",
+    "COGNITION",
+    "POSSESSION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "HAIR": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "DESTRUCTION",
+    "DOMINATION"
+   ],
+   "formule_simple": "EMOTION + DESTRUCTION + DOMINATION",
+   "formule_complete": "EMOTION + DESTRUCTION + DOMINATION",
+   "atomes_finaux": [
+    "EMOTION",
+    "DESTRUCTION",
+    "DOMINATION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "ENSEIGNER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COGNITION",
+    "COMMUNICATION",
+    "CREATION"
+   ],
+   "formule_simple": "COGNITION + COMMUNICATION + CREATION",
+   "formule_complete": "COGNITION + COMMUNICATION + CREATION",
+   "atomes_finaux": [
+    "COGNITION",
+    "COMMUNICATION",
+    "CREATION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.9,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "PHILOSOPHIE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COGNITION",
+    "EXISTENCE",
+    "COMMUNICATION"
+   ],
+   "formule_simple": "COGNITION + EXISTENCE + COMMUNICATION",
+   "formule_complete": "COGNITION + EXISTENCE + COMMUNICATION",
+   "atomes_finaux": [
+    "COGNITION",
+    "EXISTENCE",
+    "COMMUNICATION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "SURPRISE": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EMOTION",
+    "PERCEPTION"
+   ],
+   "formule_simple": "EMOTION + PERCEPTION",
+   "formule_complete": "EMOTION + PERCEPTION",
+   "atomes_finaux": [
+    "EMOTION",
+    "PERCEPTION"
+   ],
+   "complexite_atomique": 2,
+   "source": "corpus_emotions_fines_iter_1",
+   "validite": 0.8,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "DEMEURER": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "EXISTENCE",
+    "MOUVEMENT"
+   ],
+   "formule_simple": "EXISTENCE + MOUVEMENT",
+   "formule_complete": "EXISTENCE + MOUVEMENT",
+   "atomes_finaux": [
+    "EXISTENCE",
+    "MOUVEMENT"
+   ],
+   "complexite_atomique": 2,
+   "source": "combinaison_atomique_2",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  },
+  "PAIX": {
+   "niveau": 1,
+   "type": "compose_recursif",
+   "decomposition": [
+    "COMMUNICATION",
+    "EMOTION",
+    "CREATION"
+   ],
+   "formule_simple": "COMMUNICATION + EMOTION + CREATION",
+   "formule_complete": "COMMUNICATION + EMOTION + CREATION",
+   "atomes_finaux": [
+    "COMMUNICATION",
+    "EMOTION",
+    "CREATION"
+   ],
+   "complexite_atomique": 3,
+   "source": "combinaison_atomique_3",
+   "validite": 0.7,
+   "exemples_dhatu": [],
+   "description": ""
+  }
+ },
+ "atomes": [
+  "EXISTENCE",
+  "COMMUNICATION",
+  "EMOTION",
+  "COGNITION",
+  "POSSESSION",
+  "DOMINATION",
+  "DESTRUCTION",
+  "CREATION",
+  "MOUVEMENT",
+  "PERCEPTION"
+ ],
+ "version": "1.0.0",
+ "total": 89
+}

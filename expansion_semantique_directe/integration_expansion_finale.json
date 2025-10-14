@@ -1,0 +1,135 @@
+{
+  "titre": "Expansion Sémantique Directe - Intégration Finale",
+  "description": "Expansion optimisée via 25,000 articles Wikipedia décompressés",
+  "performance": {
+    "articles_sources": 25000,
+    "langues_traitees": 5,
+    "concepts_traites": 180,
+    "concepts_resolus": 39,
+    "taux_resolution": "21.7%"
+  },
+  "qualite_resolution": {
+    "confiance_moyenne": "0.521",
+    "distribution_confiance": {
+      "haute_confiance_80+": 7,
+      "confiance_moyenne_60-80": 11,
+      "confiance_basse_60-": 21
+    },
+    "seuil_acceptation": "≥60% confiance recommandé"
+  },
+  "impact_dictionnaire": {
+    "concepts_avant": 50,
+    "concepts_apres": 89,
+    "augmentation": "+39",
+    "couverture_estimee": "44.5%"
+  },
+  "concepts_integres": {
+    "MUSIQUE": {
+      "formule": "DESTRUCTION + MOUVEMENT",
+      "confiance": 0.47600000000000003,
+      "contextes": 4
+    },
+    "AFFECTION": {
+      "formule": "EMOTION + POSSESSION",
+      "confiance": 0.408,
+      "contextes": 2
+    },
+    "FENÊTRE": {
+      "formule": "EXISTENCE",
+      "confiance": 0.27199999999999996,
+      "contextes": 3
+    },
+    "DURÉE": {
+      "formule": "MOUVEMENT + EXISTENCE",
+      "confiance": 0.442,
+      "contextes": 3
+    },
+    "INSTRUMENT": {
+      "formule": "EXISTENCE + MOUVEMENT + DESTRUCTION + CREATION",
+      "confiance": 0.85,
+      "contextes": 15
+    },
+    "RÉCIT": {
+      "formule": "DESTRUCTION",
+      "confiance": 0.27199999999999996,
+      "contextes": 3
+    },
+    "ARCHITECTURE": {
+      "formule": "MOUVEMENT + EXISTENCE + DESTRUCTION + POSSESSION",
+      "confiance": 0.85,
+      "contextes": 12
+    },
+    "SATISFACTION": {
+      "formule": "MOUVEMENT",
+      "confiance": 0.306,
+      "contextes": 4
+    },
+    "ÉTOILE": {
+      "formule": "COMMUNICATION",
+      "confiance": 0.34,
+      "contextes": 5
+    },
+    "SENTIR": {
+      "formule": "PERCEPTION",
+      "confiance": 0.23800000000000002,
+      "contextes": 2
+    },
+    "SOLEIL": {
+      "formule": "COMMUNICATION + POSSESSION + EXISTENCE",
+      "confiance": 0.68,
+      "contextes": 5
+    },
+    "SE_SOUVENIR": {
+      "formule": "MOUVEMENT + POSSESSION + EXISTENCE",
+      "confiance": 0.612,
+      "contextes": 3
+    },
+    "LIEU": {
+      "formule": "MOUVEMENT",
+      "confiance": 0.34,
+      "contextes": 5
+    },
+    "OBSERVER": {
+      "formule": "DESTRUCTION + COMMUNICATION + EXISTENCE",
+      "confiance": 0.714,
+      "contextes": 6
+    },
+    "ANIMAL": {
+      "formule": "DESTRUCTION + EXISTENCE + MOUVEMENT + POSSESSION",
+      "confiance": 0.816,
+      "contextes": 9
+    },
+    "DISTANCE": {
+      "formule": "MOUVEMENT + DESTRUCTION + COGNITION + PERCEPTION",
+      "confiance": 0.816,
+      "contextes": 9
+    },
+    "INQUIÉTUDE": {
+      "formule": "MOUVEMENT + CREATION",
+      "confiance": 0.408,
+      "contextes": 2
+    },
+    "DÉGOÛT": {
+      "formule": "EXISTENCE",
+      "confiance": 0.204,
+      "contextes": 1
+    },
+    "PARENT": {
+      "formule": "CREATION + MOUVEMENT + DESTRUCTION",
+      "confiance": 0.85,
+      "contextes": 10
+    },
+    "MUR": {
+      "formule": "MOUVEMENT + DESTRUCTION",
+      "confiance": 0.442,
+      "contextes": 3
+    }
+  },
+  "recommandations": [
+    "Valider concepts confiance <70% manuellement",
+    "Intégrer dans dictionnaire récursif existant",
+    "Tester reconstruction concepts complexes",
+    "Itérer sur concepts non-résolus avec corpus étendus",
+    "Optimiser patterns sémantiques selon résultats"
+  ]
+}

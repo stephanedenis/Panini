@@ -1,0 +1,107 @@
+{
+  "total_combinations": 10,
+  "tested_combinations": {
+    "JALOUSIE": {
+      "composition": [
+        "RAGE",
+        "FEAR",
+        "CARE"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "NOSTALGIE": {
+      "composition": [
+        "GRIEF",
+        "SEEK",
+        "EXIST"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "ADMIRATION": {
+      "composition": [
+        "SEEK",
+        "CARE",
+        "PERCEP"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "FIERTÉ": {
+      "composition": [
+        "PLAY",
+        "CARE",
+        "EXIST"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "HONTE": {
+      "composition": [
+        "GRIEF",
+        "FEAR",
+        "RELAT"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "EUPHORIE": {
+      "composition": [
+        "PLAY",
+        "SEEK",
+        "CREAT"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "MÉLANCOLIE": {
+      "composition": [
+        "GRIEF",
+        "PERCEP",
+        "EXIST"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "PASSION": {
+      "composition": [
+        "LUST",
+        "CARE",
+        "CREAT"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "ÉMERVEILLEMENT": {
+      "composition": [
+        "SEEK",
+        "PLAY",
+        "PERCEP"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    },
+    "COMPASSION": {
+      "composition": [
+        "CARE",
+        "GRIEF",
+        "PERCEP"
+      ],
+      "cognitive_score": 1.0,
+      "neurobiological_score": 1.0,
+      "overall_viability": 1.0
+    }
+  },
+  "cognitive_validation": {},
+  "neurobiological_validation": {}
+}

@@ -1,0 +1,166 @@
+{
+  "experiments": [
+    {
+      "id": "grad_exp_discrete_binary_1759115534",
+      "name": "Gradation discrete_binary",
+      "universal_set": [
+        "containment",
+        "causation",
+        "similarity",
+        "pattern",
+        "transformation"
+      ],
+      "gradation_type": "discrete_binary",
+      "compression_ratio": 0.5,
+      "information_preservation": 0.7,
+      "reconstruction_fidelity": 0.8,
+      "computational_complexity": "O(1)",
+      "results": {
+        "compression": 0.5,
+        "preservation": 0.7,
+        "fidelity": 0.8,
+        "complexity": "O(1)",
+        "entropy_bits": 5.0
+      }
+    },
+    {
+      "id": "grad_exp_discrete_multilevel_1759115534",
+      "name": "Gradation discrete_multilevel",
+      "universal_set": [
+        "containment",
+        "causation",
+        "similarity",
+        "pattern",
+        "transformation"
+      ],
+      "gradation_type": "discrete_multilevel",
+      "compression_ratio": 0.4,
+      "information_preservation": 0.85,
+      "reconstruction_fidelity": 0.9,
+      "computational_complexity": "O(log n)",
+      "results": {
+        "compression": 0.4,
+        "preservation": 0.85,
+        "fidelity": 0.9,
+        "complexity": "O(log n)",
+        "entropy_bits": 11.5
+      }
+    },
+    {
+      "id": "grad_exp_continuous_linear_1759115534",
+      "name": "Gradation continuous_linear",
+      "universal_set": [
+        "containment",
+        "causation",
+        "similarity",
+        "pattern",
+        "transformation"
+      ],
+      "gradation_type": "continuous_linear",
+      "compression_ratio": 0.2,
+      "information_preservation": 0.95,
+      "reconstruction_fidelity": 0.97,
+      "computational_complexity": "O(1)",
+      "results": {
+        "compression": 0.2,
+        "preservation": 0.95,
+        "fidelity": 0.97,
+        "complexity": "O(1)",
+        "entropy_bits": 20.0
+      }
+    },
+    {
+      "id": "grad_exp_continuous_sigmoid_1759115534",
+      "name": "Gradation continuous_sigmoid",
+      "universal_set": [
+        "containment",
+        "causation",
+        "similarity",
+        "pattern",
+        "transformation"
+      ],
+      "gradation_type": "continuous_sigmoid",
+      "compression_ratio": 0.25,
+      "information_preservation": 0.92,
+      "reconstruction_fidelity": 0.94,
+      "computational_complexity": "O(1)",
+      "results": {
+        "compression": 0.25,
+        "preservation": 0.92,
+        "fidelity": 0.94,
+        "complexity": "O(1)",
+        "entropy_bits": 19.0
+      }
+    },
+    {
+      "id": "grad_exp_fuzzy_triangular_1759115534",
+      "name": "Gradation fuzzy_triangular",
+      "universal_set": [
+        "containment",
+        "causation",
+        "similarity",
+        "pattern",
+        "transformation"
+      ],
+      "gradation_type": "fuzzy_triangular",
+      "compression_ratio": 0.3,
+      "information_preservation": 0.88,
+      "reconstruction_fidelity": 0.91,
+      "computational_complexity": "O(n)",
+      "results": {
+        "compression": 0.3,
+        "preservation": 0.88,
+        "fidelity": 0.91,
+        "complexity": "O(n)",
+        "entropy_bits": 16.0
+      }
+    },
+    {
+      "id": "grad_exp_quantum_superposition_1759115534",
+      "name": "Gradation quantum_superposition",
+      "universal_set": [
+        "containment",
+        "causation",
+        "similarity",
+        "pattern",
+        "transformation"
+      ],
+      "gradation_type": "quantum_superposition",
+      "compression_ratio": 0.15,
+      "information_preservation": 0.98,
+      "reconstruction_fidelity": 0.99,
+      "computational_complexity": "O(2^n)",
+      "results": {
+        "compression": 0.15,
+        "preservation": 0.98,
+        "fidelity": 0.99,
+        "complexity": "O(2^n)",
+        "entropy_bits": 26.0
+      }
+    }
+  ],
+  "best_gradation": {
+    "id": "grad_exp_quantum_superposition_1759115534",
+    "name": "Gradation quantum_superposition",
+    "universal_set": [
+      "containment",
+      "causation",
+      "similarity",
+      "pattern",
+      "transformation"
+    ],
+    "gradation_type": "quantum_superposition",
+    "compression_ratio": 0.15,
+    "information_preservation": 0.98,
+    "reconstruction_fidelity": 0.99,
+    "computational_complexity": "O(2^n)",
+    "results": {
+      "compression": 0.15,
+      "preservation": 0.98,
+      "fidelity": 0.99,
+      "complexity": "O(2^n)",
+      "entropy_bits": 26.0
+    }
+  },
+  "analysis_timestamp": "2025-09-28T23:12:14.120870"
+}

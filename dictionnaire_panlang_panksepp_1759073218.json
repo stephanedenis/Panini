@@ -1,0 +1,313 @@
+{
+  "concepts": {
+    "AMOUR": {
+      "dhatu_decomposition": [
+        "CARE",
+        "RELAT",
+        "EXIST"
+      ],
+      "description": "Émotion relationnelle d'attachement et d'affection profonde",
+      "category": "emotional",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "CARE",
+      "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+    },
+    "JOIE": {
+      "dhatu_decomposition": [
+        "PLAY",
+        "CREAT",
+        "EXIST"
+      ],
+      "description": "Émotion positive de satisfaction et de bonheur créateur",
+      "category": "emotional",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "PLAY",
+      "migration_rationale": "FEEL remplacé par PLAY - Jeu, joie, sociabilité, plaisir"
+    },
+    "TRISTESSE": {
+      "dhatu_decomposition": [
+        "GRIEF",
+        "DESTR"
+      ],
+      "description": "Émotion de perte, de destruction d'un état positif",
+      "category": "emotional",
+      "coherence_score": 0.8,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "GRIEF",
+      "migration_rationale": "FEEL remplacé par GRIEF - Détresse séparation, chagrin, tristesse"
+    },
+    "PEUR": {
+      "dhatu_decomposition": [
+        "FEAR",
+        "DESTR",
+        "PERCEP"
+      ],
+      "description": "Émotion de menace perçue, anticipation de destruction",
+      "category": "emotional",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "FEAR",
+      "migration_rationale": "FEEL remplacé par FEAR - Peur, anxiété, évitement des menaces"
+    },
+    "COLÈRE": {
+      "dhatu_decomposition": [
+        "RAGE",
+        "DESTR"
+      ],
+      "description": "Émotion agressive, impulsion destructrice dirigée",
+      "category": "emotional",
+      "coherence_score": 0.8,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "RAGE",
+      "migration_rationale": "FEEL remplacé par RAGE - Colère, frustration face aux obstacles"
+    },
+    "DÉGOÛT": {
+      "dhatu_decomposition": [
+        "CARE",
+        "DESTR",
+        "PERCEP"
+      ],
+      "description": "Émotion de rejet perçu, dégoût sensoriel ou moral",
+      "category": "emotional",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "CARE",
+      "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+    },
+    "MUSIQUE": {
+      "dhatu_decomposition": [
+        "CREAT",
+        "PERCEP",
+        "CARE",
+        "MOVE"
+      ],
+      "description": "Art temporel combinant création, perception, émotion et rythme",
+      "category": "creative",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "CARE",
+      "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+    },
+    "ART": {
+      "dhatu_decomposition": [
+        "CREAT",
+        "PERCEP",
+        "CARE"
+      ],
+      "description": "Expression créative perceptuelle chargée émotionnellement",
+      "category": "creative",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "CARE",
+      "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+    },
+    "LITTÉRATURE": {
+      "dhatu_decomposition": [
+        "CREAT",
+        "COMM",
+        "THINK",
+        "CARE"
+      ],
+      "description": "Art de la création linguistique intellectuelle et émotionnelle",
+      "category": "creative",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "CARE",
+      "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+    },
+    "COMPRENDRE": {
+      "dhatu_decomposition": [
+        "THINK",
+        "PERCEP",
+        "RELAT"
+      ],
+      "description": "Processus cognitif d'appréhension relationnelle de la réalité",
+      "category": "cognitive",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "APPRENDRE": {
+      "dhatu_decomposition": [
+        "THINK",
+        "PERCEP",
+        "EXIST"
+      ],
+      "description": "Acquisition cognitive de connaissances par perception",
+      "category": "cognitive",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "EXPLORER": {
+      "dhatu_decomposition": [
+        "MOVE",
+        "PERCEP",
+        "THINK"
+      ],
+      "description": "Investigation kinesthésique cognitive du réel",
+      "category": "cognitive",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "PARENT": {
+      "dhatu_decomposition": [
+        "RELAT",
+        "EXIST",
+        "CREAT",
+        "CARE"
+      ],
+      "description": "Relation créatrice fondamentale d'existence et d'affection",
+      "category": "relational",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "CARE",
+      "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+    },
+    "GUERRE": {
+      "dhatu_decomposition": [
+        "DESTR",
+        "RELAT",
+        "MOVE"
+      ],
+      "description": "Conflit destructeur organisé entre groupes sociaux",
+      "category": "relational",
+      "coherence_score": 0.8,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "FAMILLE": {
+      "dhatu_decomposition": [
+        "RELAT",
+        "EXIST",
+        "CARE"
+      ],
+      "description": "Structure relationnelle existentielle d'affection",
+      "category": "relational",
+      "coherence_score": 0.85,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "CARE",
+      "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+    },
+    "EXISTENCE": {
+      "dhatu_decomposition": [
+        "EXIST"
+      ],
+      "description": "Fait d'être, réalité ontologique fondamentale",
+      "category": "existential",
+      "coherence_score": 1.0,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "MOUVEMENT": {
+      "dhatu_decomposition": [
+        "MOVE"
+      ],
+      "description": "Déplacement, changement de position dans l'espace-temps",
+      "category": "kinetic",
+      "coherence_score": 1.0,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "VIVRE": {
+      "dhatu_decomposition": [
+        "EXIST",
+        "MOVE",
+        "PERCEP"
+      ],
+      "description": "Existence dynamique avec perception active du monde",
+      "category": "existential",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "SENTIR": {
+      "dhatu_decomposition": [
+        "PERCEP",
+        "CARE"
+      ],
+      "description": "Perception sensorielle avec résonance émotionnelle",
+      "category": "sensory",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z",
+      "panksepp_system": "CARE",
+      "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+    },
+    "VOIR": {
+      "dhatu_decomposition": [
+        "PERCEP"
+      ],
+      "description": "Perception visuelle, modalité sensorielle primaire",
+      "category": "sensory",
+      "coherence_score": 1.0,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "ENTENDRE": {
+      "dhatu_decomposition": [
+        "PERCEP",
+        "COMM"
+      ],
+      "description": "Perception auditive, réception de communication sonore",
+      "category": "sensory",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    },
+    "TOUCHER": {
+      "dhatu_decomposition": [
+        "PERCEP",
+        "RELAT"
+      ],
+      "description": "Perception tactile, relation directe avec les objets",
+      "category": "sensory",
+      "coherence_score": 0.9,
+      "integration_timestamp": "2025-09-28T10:33:23Z"
+    }
+  },
+  "integration_report": {
+    "timestamp": "2025-09-28T10:33:23Z",
+    "integration_method": "validated_corrections_v1.0",
+    "integration_summary": {
+      "total_corrections_applied": 22,
+      "concepts_added": 22,
+      "concepts_updated": 0,
+      "integration_success_rate": 1.0
+    },
+    "dictionary_quality": {
+      "total_concepts": 22,
+      "completion_rate": 1.0,
+      "average_coherence": 0.884090909090909,
+      "high_quality_concepts": 22,
+      "concepts_needing_work": 0
+    },
+    "semantic_analysis": {
+      "category_distribution": {
+        "emotional": 6,
+        "creative": 3,
+        "cognitive": 3,
+        "relational": 3,
+        "existential": 2,
+        "kinetic": 1,
+        "sensory": 4
+      },
+      "dhatu_usage_frequency": {
+        "FEEL": 12,
+        "RELAT": 6,
+        "EXIST": 7,
+        "CREAT": 5,
+        "DESTR": 5,
+        "PERCEP": 12,
+        "MOVE": 5,
+        "COMM": 2,
+        "THINK": 4
+      },
+      "most_used_dhatu": "FEEL"
+    },
+    "validation_passed": true,
+    "recommendations": [
+      "Rééquilibrer l'usage des dhātu (déséquilibre détecté)"
+    ]
+  },
+  "migration_metadata": {
+    "migration_timestamp": "2025-09-28T11:26:58Z",
+    "architecture_version": "Panksepp 7 Systems v1.0",
+    "total_dhatu_count": 13,
+    "emotional_dhatu_count": 7,
+    "validation_score": 1.0
+  }
+}

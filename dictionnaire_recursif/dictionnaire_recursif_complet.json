@@ -1,0 +1,604 @@
+{
+  "titre": "Dictionnaire Récursif de Composés Sémantiques - Expansion Complète",
+  "description": "Construction itérative vers 100% de reconstitution conceptuelle",
+  "methodologie": "Expansion récursive depuis 10 atomes universels",
+  "architecture_semantique": {
+    "atomes_universels": [
+      "MOUVEMENT",
+      "COGNITION",
+      "PERCEPTION",
+      "COMMUNICATION",
+      "CREATION",
+      "EMOTION",
+      "EXISTENCE",
+      "DESTRUCTION",
+      "POSSESSION",
+      "DOMINATION"
+    ],
+    "total_concepts": 86,
+    "distribution_niveaux": {
+      "niveau_0_atomes": 10,
+      "niveau_1_composes": 71,
+      "niveau_2_plus_meta": 5
+    }
+  },
+  "metriques_convergence": {
+    "iterations_effectuees": 3,
+    "couverture_finale": 56.52173913043478,
+    "concepts_non_definis": 118,
+    "taux_reduction_atomique": 11.627906976744185
+  },
+  "progression_iterations": [
+    {
+      "iteration": 1,
+      "concepts_total": 81,
+      "nouveaux_concepts": 39,
+      "couverture_corpus": 39.130434782608695,
+      "convergence": false
+    },
+    {
+      "iteration": 2,
+      "concepts_total": 86,
+      "nouveaux_concepts": 5,
+      "couverture_corpus": 56.52173913043478,
+      "convergence": false
+    },
+    {
+      "iteration": 3,
+      "concepts_total": 86,
+      "nouveaux_concepts": 0,
+      "couverture_corpus": 56.52173913043478,
+      "convergence": true
+    }
+  ],
+  "dictionnaire_recursif": {
+    "MOUVEMENT": {
+      "niveau": 0,
+      "decomposition": [
+        "MOUVEMENT"
+      ],
+      "formule_complete": "MOUVEMENT",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "COGNITION": {
+      "niveau": 0,
+      "decomposition": [
+        "COGNITION"
+      ],
+      "formule_complete": "COGNITION",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "PERCEPTION": {
+      "niveau": 0,
+      "decomposition": [
+        "PERCEPTION"
+      ],
+      "formule_complete": "PERCEPTION",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "COMMUNICATION": {
+      "niveau": 0,
+      "decomposition": [
+        "COMMUNICATION"
+      ],
+      "formule_complete": "COMMUNICATION",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "CREATION": {
+      "niveau": 0,
+      "decomposition": [
+        "CREATION"
+      ],
+      "formule_complete": "CREATION",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "EMOTION": {
+      "niveau": 0,
+      "decomposition": [
+        "EMOTION"
+      ],
+      "formule_complete": "EMOTION",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "EXISTENCE": {
+      "niveau": 0,
+      "decomposition": [
+        "EXISTENCE"
+      ],
+      "formule_complete": "EXISTENCE",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "DESTRUCTION": {
+      "niveau": 0,
+      "decomposition": [
+        "DESTRUCTION"
+      ],
+      "formule_complete": "DESTRUCTION",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "POSSESSION": {
+      "niveau": 0,
+      "decomposition": [
+        "POSSESSION"
+      ],
+      "formule_complete": "POSSESSION",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "DOMINATION": {
+      "niveau": 0,
+      "decomposition": [
+        "DOMINATION"
+      ],
+      "formule_complete": "DOMINATION",
+      "source": "dhatu_sanskrit_authentique",
+      "validite": 1.0
+    },
+    "COMPRENDRE": {
+      "niveau": 1,
+      "decomposition": [
+        "PERCEPTION",
+        "COGNITION"
+      ],
+      "formule_complete": "PERCEPTION + COGNITION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.9
+    },
+    "EXPLIQUER": {
+      "niveau": 1,
+      "decomposition": [
+        "COGNITION",
+        "COMMUNICATION"
+      ],
+      "formule_complete": "COGNITION + COMMUNICATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.9
+    },
+    "INVENTER": {
+      "niveau": 1,
+      "decomposition": [
+        "COGNITION",
+        "CREATION"
+      ],
+      "formule_complete": "COGNITION + CREATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "SAVOIR": {
+      "niveau": 1,
+      "decomposition": [
+        "COGNITION",
+        "POSSESSION"
+      ],
+      "formule_complete": "COGNITION + POSSESSION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "RESSENTIR": {
+      "niveau": 1,
+      "decomposition": [
+        "COGNITION",
+        "EMOTION"
+      ],
+      "formule_complete": "COGNITION + EMOTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "CONSTRUIRE": {
+      "niveau": 1,
+      "decomposition": [
+        "MOUVEMENT",
+        "CREATION"
+      ],
+      "formule_complete": "MOUVEMENT + CREATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "DETRUIRE": {
+      "niveau": 1,
+      "decomposition": [
+        "MOUVEMENT",
+        "DESTRUCTION"
+      ],
+      "formule_complete": "MOUVEMENT + DESTRUCTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "EXPLORER": {
+      "niveau": 1,
+      "decomposition": [
+        "MOUVEMENT",
+        "PERCEPTION"
+      ],
+      "formule_complete": "MOUVEMENT + PERCEPTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "DANSER": {
+      "niveau": 1,
+      "decomposition": [
+        "MOUVEMENT",
+        "COMMUNICATION"
+      ],
+      "formule_complete": "MOUVEMENT + COMMUNICATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "FUIR": {
+      "niveau": 1,
+      "decomposition": [
+        "MOUVEMENT",
+        "EMOTION"
+      ],
+      "formule_complete": "MOUVEMENT + EMOTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "CONSOLER": {
+      "niveau": 1,
+      "decomposition": [
+        "COMMUNICATION",
+        "EMOTION"
+      ],
+      "formule_complete": "COMMUNICATION + EMOTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "COMMANDER": {
+      "niveau": 1,
+      "decomposition": [
+        "COMMUNICATION",
+        "DOMINATION"
+      ],
+      "formule_complete": "COMMUNICATION + DOMINATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "RACONTER": {
+      "niveau": 1,
+      "decomposition": [
+        "COMMUNICATION",
+        "CREATION"
+      ],
+      "formule_complete": "COMMUNICATION + CREATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "INTIMIDER": {
+      "niveau": 1,
+      "decomposition": [
+        "DOMINATION",
+        "EMOTION"
+      ],
+      "formule_complete": "DOMINATION + EMOTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "ORGANISER": {
+      "niveau": 1,
+      "decomposition": [
+        "DOMINATION",
+        "CREATION"
+      ],
+      "formule_complete": "DOMINATION + CREATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "VIVRE": {
+      "niveau": 1,
+      "decomposition": [
+        "EXISTENCE",
+        "EMOTION"
+      ],
+      "formule_complete": "EXISTENCE + EMOTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "REALISER": {
+      "niveau": 1,
+      "decomposition": [
+        "EXISTENCE",
+        "COGNITION"
+      ],
+      "formule_complete": "EXISTENCE + COGNITION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "DEMEURER": {
+      "niveau": 1,
+      "decomposition": [
+        "EXISTENCE",
+        "MOUVEMENT"
+      ],
+      "formule_complete": "EXISTENCE + MOUVEMENT",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "SOUFFRIR": {
+      "niveau": 1,
+      "decomposition": [
+        "DESTRUCTION",
+        "EMOTION"
+      ],
+      "formule_complete": "DESTRUCTION + EMOTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "PARTAGER": {
+      "niveau": 1,
+      "decomposition": [
+        "POSSESSION",
+        "COMMUNICATION"
+      ],
+      "formule_complete": "POSSESSION + COMMUNICATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "DESIRER": {
+      "niveau": 1,
+      "decomposition": [
+        "POSSESSION",
+        "EMOTION"
+      ],
+      "formule_complete": "POSSESSION + EMOTION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "ACCUMULER": {
+      "niveau": 1,
+      "decomposition": [
+        "POSSESSION",
+        "CREATION"
+      ],
+      "formule_complete": "POSSESSION + CREATION",
+      "source": "combinaison_atomique_2",
+      "validite": 0.7
+    },
+    "ENSEIGNER": {
+      "niveau": 1,
+      "decomposition": [
+        "COGNITION",
+        "COMMUNICATION",
+        "CREATION"
+      ],
+      "formule_complete": "COGNITION + COMMUNICATION + CREATION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.9
+    },
+    "GOUVERNER": {
+      "niveau": 1,
+      "decomposition": [
+        "DOMINATION",
+        "COMMUNICATION",
+        "CREATION"
+      ],
+      "formule_complete": "DOMINATION + COMMUNICATION + CREATION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.9
+    },
+    "APPRENDRE": {
+      "niveau": 1,
+      "decomposition": [
+        "PERCEPTION",
+        "COGNITION",
+        "POSSESSION"
+      ],
+      "formule_complete": "PERCEPTION + COGNITION + POSSESSION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.7
+    },
+    "CHERCHER": {
+      "niveau": 1,
+      "decomposition": [
+        "MOUVEMENT",
+        "PERCEPTION",
+        "COGNITION"
+      ],
+      "formule_complete": "MOUVEMENT + PERCEPTION + COGNITION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.7
+    },
+    "AIMER": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "COMMUNICATION",
+        "POSSESSION"
+      ],
+      "formule_complete": "EMOTION + COMMUNICATION + POSSESSION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.9
+    },
+    "HAIR": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "DESTRUCTION",
+        "DOMINATION"
+      ],
+      "formule_complete": "EMOTION + DESTRUCTION + DOMINATION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.7
+    },
+    "ART": {
+      "niveau": 1,
+      "decomposition": [
+        "CREATION",
+        "COMMUNICATION",
+        "EMOTION"
+      ],
+      "formule_complete": "CREATION + COMMUNICATION + EMOTION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.7
+    },
+    "PHILOSOPHIE": {
+      "niveau": 1,
+      "decomposition": [
+        "COGNITION",
+        "EXISTENCE",
+        "COMMUNICATION"
+      ],
+      "formule_complete": "COGNITION + EXISTENCE + COMMUNICATION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.7
+    },
+    "GUERRE": {
+      "niveau": 1,
+      "decomposition": [
+        "MOUVEMENT",
+        "DOMINATION",
+        "DESTRUCTION"
+      ],
+      "formule_complete": "MOUVEMENT + DOMINATION + DESTRUCTION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.7
+    },
+    "PAIX": {
+      "niveau": 1,
+      "decomposition": [
+        "COMMUNICATION",
+        "EMOTION",
+        "CREATION"
+      ],
+      "formule_complete": "COMMUNICATION + EMOTION + CREATION",
+      "source": "combinaison_atomique_3",
+      "validite": 0.7
+    },
+    "JOIE": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "CREATION"
+      ],
+      "formule_complete": "EMOTION + CREATION",
+      "source": "corpus_emotions_fines_iter_1",
+      "validite": 0.8
+    },
+    "TRISTESSE": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "DESTRUCTION"
+      ],
+      "formule_complete": "EMOTION + DESTRUCTION",
+      "source": "corpus_emotions_fines_iter_1",
+      "validite": 0.8
+    },
+    "COLÈRE": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "DOMINATION"
+      ],
+      "formule_complete": "EMOTION + DOMINATION",
+      "source": "corpus_emotions_fines_iter_1",
+      "validite": 0.8
+    },
+    "PEUR": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "PERCEPTION"
+      ],
+      "formule_complete": "EMOTION + PERCEPTION",
+      "source": "corpus_emotions_fines_iter_1",
+      "validite": 0.8
+    },
+    "SURPRISE": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "PERCEPTION"
+      ],
+      "formule_complete": "EMOTION + PERCEPTION",
+      "source": "corpus_emotions_fines_iter_1",
+      "validite": 0.8
+    },
+    "NOSTALGIE": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "COGNITION",
+        "POSSESSION"
+      ],
+      "formule_complete": "EMOTION + COGNITION + POSSESSION",
+      "source": "corpus_emotions_fines_iter_1",
+      "validite": 0.8
+    },
+    "MÉLANCOLIE": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "COGNITION",
+        "DESTRUCTION"
+      ],
+      "formule_complete": "EMOTION + COGNITION + DESTRUCTION",
+      "source": "corpus_emotions_fines_iter_1",
+      "validite": 0.8
+    },
+    "EUPHORIE": {
+      "niveau": 1,
+      "decomposition": [
+        "EMOTION",
+        "CREATION",
+        "MOUVEMENT"
+      ],
+      "formule_complete": "EMOTION + CREATION + MOUVEMENT",
+      "source": "corpus_emotions_fines_iter_1",
+      "validite": 0.8
+    }
+  },
+  "concepts_non_definis_analyse": {
+    "liste": [
+      "CONTINUITÉ",
+      "PÉRIPHÉRIE",
+      "PROBABILITÉ",
+      "CHIFFREMENT",
+      "TOUT",
+      "ALGORITHME",
+      "PROGRAMME",
+      "ENTIER",
+      "RÉSEAU",
+      "DIFFÉRENT",
+      "DISPOSITIF",
+      "ORDRE",
+      "RATIO",
+      "LAIDEUR",
+      "CAUSE",
+      "INSTANT",
+      "DIRECTION",
+      "MESURE",
+      "OUTIL",
+      "SÉRÉNITÉ"
+    ],
+    "strategies_expansion": [
+      "Corpus techniques spécialisés",
+      "Corpus émotionnels étendus",
+      "Concepts culturels spécifiques",
+      "Terminologies scientifiques",
+      "Métaphores et abstractions"
+    ]
+  },
+  "implications_panlang": {
+    "reconstruction_universelle_validee": false,
+    "architecture_fractale_confirmee": true,
+    "base_atomique_suffisante": true,
+    "expansion_systematique_possible": true,
+    "convergence_vers_completude": false
+  },
+  "prochaines_etapes": [
+    "Intégration corpus multilingues étendus",
+    "Expansion domaines techniques spécialisés",
+    "Validation cross-culturelle universalité",
+    "Optimisation algorithmes décomposition",
+    "Test sur corpus littéraires complets"
+  ]
+}

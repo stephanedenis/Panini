@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-09-28T10:33:23Z",
+  "integration_method": "validated_corrections_v1.0",
+  "integration_summary": {
+    "total_corrections_applied": 22,
+    "concepts_added": 22,
+    "concepts_updated": 0,
+    "integration_success_rate": 1.0
+  },
+  "dictionary_quality": {
+    "total_concepts": 22,
+    "completion_rate": 1.0,
+    "average_coherence": 0.884090909090909,
+    "high_quality_concepts": 22,
+    "concepts_needing_work": 0
+  },
+  "semantic_analysis": {
+    "category_distribution": {
+      "emotional": 6,
+      "creative": 3,
+      "cognitive": 3,
+      "relational": 3,
+      "existential": 2,
+      "kinetic": 1,
+      "sensory": 4
+    },
+    "dhatu_usage_frequency": {
+      "FEEL": 12,
+      "RELAT": 6,
+      "EXIST": 7,
+      "CREAT": 5,
+      "DESTR": 5,
+      "PERCEP": 12,
+      "MOVE": 5,
+      "COMM": 2,
+      "THINK": 4
+    },
+    "most_used_dhatu": "FEEL"
+  },
+  "validation_passed": true,
+  "recommendations": [
+    "Rééquilibrer l'usage des dhātu (déséquilibre détecté)"
+  ]
+}

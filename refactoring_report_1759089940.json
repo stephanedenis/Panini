@@ -1,0 +1,1197 @@
+{
+  "completion_time": "2025-09-28T16:05:40.530705",
+  "initial_state": {
+    "timestamp": "2025-09-28T16:05:40.530498",
+    "discovered_modules": {
+      "Pensine": {
+        "name": "Pensine",
+        "path": "/home/stephane/GitHub/Pensine",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 7388.062138557434,
+        "last_modified": 1757209622.4356058,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "Pensine",
+          "is_correct": false,
+          "suggested": "Pensine"
+        },
+        "integration_level": 0.0
+      },
+      "915-SPO.com": {
+        "name": "915-SPO.com",
+        "path": "/home/stephane/GitHub/915-SPO.com",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 1400.4307527542114,
+        "last_modified": 1757209627.5846422,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "915-SPO.com",
+          "is_correct": false,
+          "suggested": "915-SPO.com"
+        },
+        "integration_level": 0.0
+      },
+      "azure-devops-markdown-diagrams": {
+        "name": "azure-devops-markdown-diagrams",
+        "path": "/home/stephane/GitHub/azure-devops-markdown-diagrams",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 10.77343463897705,
+        "last_modified": 1757209620.4285915,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "azure-devops-markdown-diagrams",
+          "is_correct": false,
+          "suggested": "azure-devops-markdown-diagrams"
+        },
+        "integration_level": 0.0
+      },
+      "emails": {
+        "name": "emails",
+        "path": "/home/stephane/GitHub/emails",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 15942.652442932129,
+        "last_modified": 1758553732.9067159,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "emails",
+          "is_correct": false,
+          "suggested": "emails"
+        },
+        "integration_level": 0.0
+      },
+      "emails-backup-safe": {
+        "name": "emails-backup-safe",
+        "path": "/home/stephane/GitHub/emails-backup-safe",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 15913.322090148926,
+        "last_modified": 1758553967.8151906,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "emails-backup-safe",
+          "is_correct": false,
+          "suggested": "emails-backup-safe"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS": {
+        "name": "PaniniFS",
+        "path": "/home/stephane/GitHub/PaniniFS",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 1676.2323093414307,
+        "last_modified": 1757339465.3882308,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS",
+          "is_correct": true,
+          "suggested": "PaniniFS"
+        },
+        "integration_level": 0.25
+      },
+      "OntoWave": {
+        "name": "OntoWave",
+        "path": "/home/stephane/GitHub/OntoWave",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 512.4748907089233,
+        "last_modified": 1759088928.7271678,
+        "technologies": [
+          "Node.js/TypeScript",
+          "Python"
+        ],
+        "prefix_analysis": {
+          "current": "OntoWave",
+          "is_correct": true,
+          "suggested": "OntoWave"
+        },
+        "integration_level": 0.25
+      },
+      "PaniniFS-Research": {
+        "name": "PaniniFS-Research",
+        "path": "/home/stephane/GitHub/PaniniFS-Research",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 237559.39981651306,
+        "last_modified": 1759089902.2885137,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-Research",
+          "is_correct": false,
+          "suggested": "Panini-Research"
+        },
+        "integration_level": 0.25
+      },
+      "PaniniFS-CopilotageShared": {
+        "name": "PaniniFS-CopilotageShared",
+        "path": "/home/stephane/GitHub/PaniniFS-CopilotageShared",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.09631538391113281,
+        "last_modified": 1757298588.6712925,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-CopilotageShared",
+          "is_correct": false,
+          "suggested": "Panini-CopilotageShared"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-AttributionRegistry": {
+        "name": "PaniniFS-AttributionRegistry",
+        "path": "/home/stephane/GitHub/PaniniFS-AttributionRegistry",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.03670692443847656,
+        "last_modified": 1757209608.4455068,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-AttributionRegistry",
+          "is_correct": false,
+          "suggested": "Panini-AttributionRegistry"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-DatasetsIngestion": {
+        "name": "PaniniFS-DatasetsIngestion",
+        "path": "/home/stephane/GitHub/PaniniFS-DatasetsIngestion",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.036696434020996094,
+        "last_modified": 1757209608.4455068,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-DatasetsIngestion",
+          "is_correct": false,
+          "suggested": "Panini-DatasetsIngestion"
+        },
+        "integration_level": 0.0
+      },
+      "openkinect-v2": {
+        "name": "openkinect-v2",
+        "path": "/home/stephane/GitHub/openkinect-v2",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.14986515045166016,
+        "last_modified": 1757854868.5916145,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "openkinect-v2",
+          "is_correct": false,
+          "suggested": "openkinect-v2"
+        },
+        "integration_level": 0.0
+      },
+      "libfreenect2": {
+        "name": "libfreenect2",
+        "path": "/home/stephane/GitHub/libfreenect2",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 20.089890480041504,
+        "last_modified": 1757860267.0346541,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "libfreenect2",
+          "is_correct": false,
+          "suggested": "libfreenect2"
+        },
+        "integration_level": 0.0
+      },
+      "Panini-Gest": {
+        "name": "Panini-Gest",
+        "path": "/home/stephane/GitHub/Panini-Gest",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 1605.4183769226074,
+        "last_modified": 1758228943.5827987,
+        "technologies": [
+          "Python"
+        ],
+        "prefix_analysis": {
+          "current": "Panini-Gest",
+          "is_correct": true,
+          "suggested": "Panini-Gest"
+        },
+        "integration_level": 0.0
+      },
+      "vehicule-Ford-E-350-Coachmen-290RF": {
+        "name": "vehicule-Ford-E-350-Coachmen-290RF",
+        "path": "/home/stephane/GitHub/vehicule-Ford-E-350-Coachmen-290RF",
+        "exists": true,
+        "is_git_repo": false,
+        "size_mb": 0.08562850952148438,
+        "last_modified": 1757887884.032538,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "vehicule-Ford-E-350-Coachmen-290RF",
+          "is_correct": false,
+          "suggested": "vehicule-Ford-E-350-Coachmen-290RF"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-ExecutionOrchestrator": {
+        "name": "PaniniFS-ExecutionOrchestrator",
+        "path": "/home/stephane/GitHub/PaniniFS-ExecutionOrchestrator",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.06372547149658203,
+        "last_modified": 1758402447.0403092,
+        "technologies": [
+          "Python"
+        ],
+        "prefix_analysis": {
+          "current": "PaniniFS-ExecutionOrchestrator",
+          "is_correct": false,
+          "suggested": "Panini-ExecutionOrchestrator"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-UltraReactive": {
+        "name": "PaniniFS-UltraReactive",
+        "path": "/home/stephane/GitHub/PaniniFS-UltraReactive",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.05367088317871094,
+        "last_modified": 1758402448.336385,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-UltraReactive",
+          "is_correct": false,
+          "suggested": "Panini-UltraReactive"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-PublicationEngine": {
+        "name": "PaniniFS-PublicationEngine",
+        "path": "/home/stephane/GitHub/PaniniFS-PublicationEngine",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.053071022033691406,
+        "last_modified": 1758402449.6340232,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-PublicationEngine",
+          "is_correct": false,
+          "suggested": "Panini-PublicationEngine"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-SemanticCore": {
+        "name": "PaniniFS-SemanticCore",
+        "path": "/home/stephane/GitHub/PaniniFS-SemanticCore",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.05301666259765625,
+        "last_modified": 1758402451.0054467,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-SemanticCore",
+          "is_correct": false,
+          "suggested": "Panini-SemanticCore"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-AutonomousMissions": {
+        "name": "PaniniFS-AutonomousMissions",
+        "path": "/home/stephane/GitHub/PaniniFS-AutonomousMissions",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.05373096466064453,
+        "last_modified": 1758402452.2952898,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-AutonomousMissions",
+          "is_correct": false,
+          "suggested": "Panini-AutonomousMissions"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-CoLabController": {
+        "name": "PaniniFS-CoLabController",
+        "path": "/home/stephane/GitHub/PaniniFS-CoLabController",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.038521766662597656,
+        "last_modified": 1758402453.627611,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-CoLabController",
+          "is_correct": false,
+          "suggested": "Panini-CoLabController"
+        },
+        "integration_level": 0.0
+      },
+      "PaniniFS-CloudOrchestrator": {
+        "name": "PaniniFS-CloudOrchestrator",
+        "path": "/home/stephane/GitHub/PaniniFS-CloudOrchestrator",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.03855609893798828,
+        "last_modified": 1758402454.9383879,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "PaniniFS-CloudOrchestrator",
+          "is_correct": false,
+          "suggested": "Panini-CloudOrchestrator"
+        },
+        "integration_level": 0.0
+      },
+      "equipment-hauru": {
+        "name": "equipment-hauru",
+        "path": "/home/stephane/GitHub/equipment-hauru",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.39702510833740234,
+        "last_modified": 1758552740.9158425,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "equipment-hauru",
+          "is_correct": false,
+          "suggested": "equipment-hauru"
+        },
+        "integration_level": 0.0
+      },
+      "equipment-router": {
+        "name": "equipment-router",
+        "path": "/home/stephane/GitHub/equipment-router",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.03981304168701172,
+        "last_modified": 1758549748.1260624,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "equipment-router",
+          "is_correct": false,
+          "suggested": "equipment-router"
+        },
+        "integration_level": 0.0
+      },
+      "equipment-mystery": {
+        "name": "equipment-mystery",
+        "path": "/home/stephane/GitHub/equipment-mystery",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 0.04949474334716797,
+        "last_modified": 1758549748.1680627,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "equipment-mystery",
+          "is_correct": false,
+          "suggested": "equipment-mystery"
+        },
+        "integration_level": 0.0
+      },
+      "GitHub-Centralized-backup-1758551421": {
+        "name": "GitHub-Centralized-backup-1758551421",
+        "path": "/home/stephane/GitHub/GitHub-Centralized-backup-1758551421",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 151.20659160614014,
+        "last_modified": 1758550982.0338516,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "GitHub-Centralized-backup-1758551421",
+          "is_correct": false,
+          "suggested": "GitHub-Centralized-backup-1758551421"
+        },
+        "integration_level": 0.5
+      },
+      "GitHub-Centralized-backup-1758551444": {
+        "name": "GitHub-Centralized-backup-1758551444",
+        "path": "/home/stephane/GitHub/GitHub-Centralized-backup-1758551444",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 151.1959342956543,
+        "last_modified": 1758550982.0338516,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "GitHub-Centralized-backup-1758551444",
+          "is_correct": false,
+          "suggested": "GitHub-Centralized-backup-1758551444"
+        },
+        "integration_level": 0.5
+      },
+      "copilotage.old": {
+        "name": "copilotage.old",
+        "path": "/home/stephane/GitHub/copilotage.old",
+        "exists": true,
+        "is_git_repo": true,
+        "size_mb": 7.997846603393555,
+        "last_modified": 1757209620.4265914,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "copilotage.old",
+          "is_correct": false,
+          "suggested": "copilotage.old"
+        },
+        "integration_level": 0.0
+      },
+      "copilotage": {
+        "name": "copilotage",
+        "path": "/home/stephane/GitHub/copilotage",
+        "exists": true,
+        "is_git_repo": false,
+        "size_mb": 0.22006607055664062,
+        "last_modified": 1758467470.9726412,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "copilotage",
+          "is_correct": false,
+          "suggested": "copilotage"
+        },
+        "integration_level": 0.0
+      },
+      "projects": {
+        "name": "projects",
+        "path": "/home/stephane/GitHub/projects",
+        "exists": true,
+        "is_git_repo": false,
+        "size_mb": 70.87044715881348,
+        "last_modified": 1758404511.61486,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "projects",
+          "is_correct": false,
+          "suggested": "projects"
+        },
+        "integration_level": 0.5
+      },
+      "management": {
+        "name": "management",
+        "path": "/home/stephane/GitHub/management",
+        "exists": true,
+        "is_git_repo": false,
+        "size_mb": 0.03793621063232422,
+        "last_modified": 1758405321.0914671,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "management",
+          "is_correct": false,
+          "suggested": "management"
+        },
+        "integration_level": 0.0
+      },
+      "docs": {
+        "name": "docs",
+        "path": "/home/stephane/GitHub/docs",
+        "exists": true,
+        "is_git_repo": false,
+        "size_mb": 0.005415916442871094,
+        "last_modified": 1758405812.0498757,
+        "technologies": [],
+        "prefix_analysis": {
+          "current": "docs",
+          "is_correct": false,
+          "suggested": "docs"
+        },
+        "integration_level": 0.0
+      }
+    },
+    "classification": {
+      "CORE": [
+        "Pensine",
+        "915-SPO.com",
+        "emails",
+        "emails-backup-safe",
+        "PaniniFS",
+        "Panini-Gest"
+      ],
+      "APPLICATIONS": [
+        "azure-devops-markdown-diagrams",
+        "OntoWave",
+        "PaniniFS-CopilotageShared",
+        "PaniniFS-AttributionRegistry",
+        "PaniniFS-DatasetsIngestion",
+        "openkinect-v2",
+        "libfreenect2",
+        "vehicule-Ford-E-350-Coachmen-290RF",
+        "PaniniFS-UltraReactive",
+        "PaniniFS-PublicationEngine",
+        "PaniniFS-SemanticCore",
+        "PaniniFS-AutonomousMissions",
+        "equipment-hauru",
+        "equipment-router",
+        "equipment-mystery",
+        "GitHub-Centralized-backup-1758551421",
+        "GitHub-Centralized-backup-1758551444",
+        "copilotage.old",
+        "copilotage",
+        "projects",
+        "management",
+        "docs"
+      ],
+      "INFRASTRUCTURE": [
+        "PaniniFS-ExecutionOrchestrator",
+        "PaniniFS-CoLabController",
+        "PaniniFS-CloudOrchestrator"
+      ],
+      "RESEARCH": [
+        "PaniniFS-Research"
+      ],
+      "DEPRECATED": []
+    },
+    "identified_issues": [
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "Pensine",
+        "current": "Pensine",
+        "suggested": "Pensine",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "915-SPO.com",
+        "current": "915-SPO.com",
+        "suggested": "915-SPO.com",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "azure-devops-markdown-diagrams",
+        "current": "azure-devops-markdown-diagrams",
+        "suggested": "azure-devops-markdown-diagrams",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "emails",
+        "current": "emails",
+        "suggested": "emails",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "emails-backup-safe",
+        "current": "emails-backup-safe",
+        "suggested": "emails-backup-safe",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-Research",
+        "current": "PaniniFS-Research",
+        "suggested": "Panini-Research",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-CopilotageShared",
+        "current": "PaniniFS-CopilotageShared",
+        "suggested": "Panini-CopilotageShared",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-AttributionRegistry",
+        "current": "PaniniFS-AttributionRegistry",
+        "suggested": "Panini-AttributionRegistry",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-DatasetsIngestion",
+        "current": "PaniniFS-DatasetsIngestion",
+        "suggested": "Panini-DatasetsIngestion",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "openkinect-v2",
+        "current": "openkinect-v2",
+        "suggested": "openkinect-v2",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "libfreenect2",
+        "current": "libfreenect2",
+        "suggested": "libfreenect2",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "vehicule-Ford-E-350-Coachmen-290RF",
+        "current": "vehicule-Ford-E-350-Coachmen-290RF",
+        "suggested": "vehicule-Ford-E-350-Coachmen-290RF",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-ExecutionOrchestrator",
+        "current": "PaniniFS-ExecutionOrchestrator",
+        "suggested": "Panini-ExecutionOrchestrator",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-UltraReactive",
+        "current": "PaniniFS-UltraReactive",
+        "suggested": "Panini-UltraReactive",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-PublicationEngine",
+        "current": "PaniniFS-PublicationEngine",
+        "suggested": "Panini-PublicationEngine",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-SemanticCore",
+        "current": "PaniniFS-SemanticCore",
+        "suggested": "Panini-SemanticCore",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-AutonomousMissions",
+        "current": "PaniniFS-AutonomousMissions",
+        "suggested": "Panini-AutonomousMissions",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-CoLabController",
+        "current": "PaniniFS-CoLabController",
+        "suggested": "Panini-CoLabController",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "PaniniFS-CloudOrchestrator",
+        "current": "PaniniFS-CloudOrchestrator",
+        "suggested": "Panini-CloudOrchestrator",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "equipment-hauru",
+        "current": "equipment-hauru",
+        "suggested": "equipment-hauru",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "equipment-router",
+        "current": "equipment-router",
+        "suggested": "equipment-router",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "equipment-mystery",
+        "current": "equipment-mystery",
+        "suggested": "equipment-mystery",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "GitHub-Centralized-backup-1758551421",
+        "current": "GitHub-Centralized-backup-1758551421",
+        "suggested": "GitHub-Centralized-backup-1758551421",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "GitHub-Centralized-backup-1758551444",
+        "current": "GitHub-Centralized-backup-1758551444",
+        "suggested": "GitHub-Centralized-backup-1758551444",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "copilotage.old",
+        "current": "copilotage.old",
+        "suggested": "copilotage.old",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "copilotage",
+        "current": "copilotage",
+        "suggested": "copilotage",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "projects",
+        "current": "projects",
+        "suggested": "projects",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "management",
+        "current": "management",
+        "suggested": "management",
+        "priority": "HIGH"
+      },
+      {
+        "type": "INCORRECT_PREFIX",
+        "module": "docs",
+        "current": "docs",
+        "suggested": "docs",
+        "priority": "HIGH"
+      },
+      {
+        "type": "FRAGMENTATION",
+        "modules": [
+          "azure-devops-markdown-diagrams",
+          "OntoWave",
+          "PaniniFS-CopilotageShared",
+          "PaniniFS-AttributionRegistry",
+          "PaniniFS-DatasetsIngestion",
+          "openkinect-v2",
+          "libfreenect2",
+          "vehicule-Ford-E-350-Coachmen-290RF",
+          "PaniniFS-UltraReactive",
+          "PaniniFS-PublicationEngine",
+          "PaniniFS-SemanticCore",
+          "PaniniFS-AutonomousMissions",
+          "equipment-hauru",
+          "equipment-router",
+          "equipment-mystery",
+          "GitHub-Centralized-backup-1758551421",
+          "GitHub-Centralized-backup-1758551444",
+          "copilotage.old",
+          "copilotage",
+          "projects",
+          "management",
+          "docs"
+        ],
+        "action": "UNIFY_ARCHITECTURE",
+        "priority": "HIGH"
+      }
+    ],
+    "action_plan": {
+      "tasks": [
+        {
+          "phase": "RENAME",
+          "action": "Rename Pensine to Pensine",
+          "module": "Pensine",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename 915-SPO.com to 915-SPO.com",
+          "module": "915-SPO.com",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename azure-devops-markdown-diagrams to azure-devops-markdown-diagrams",
+          "module": "azure-devops-markdown-diagrams",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename emails to emails",
+          "module": "emails",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename emails-backup-safe to emails-backup-safe",
+          "module": "emails-backup-safe",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-Research to Panini-Research",
+          "module": "PaniniFS-Research",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-CopilotageShared to Panini-CopilotageShared",
+          "module": "PaniniFS-CopilotageShared",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-AttributionRegistry to Panini-AttributionRegistry",
+          "module": "PaniniFS-AttributionRegistry",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-DatasetsIngestion to Panini-DatasetsIngestion",
+          "module": "PaniniFS-DatasetsIngestion",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename openkinect-v2 to openkinect-v2",
+          "module": "openkinect-v2",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename libfreenect2 to libfreenect2",
+          "module": "libfreenect2",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename vehicule-Ford-E-350-Coachmen-290RF to vehicule-Ford-E-350-Coachmen-290RF",
+          "module": "vehicule-Ford-E-350-Coachmen-290RF",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-ExecutionOrchestrator to Panini-ExecutionOrchestrator",
+          "module": "PaniniFS-ExecutionOrchestrator",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-UltraReactive to Panini-UltraReactive",
+          "module": "PaniniFS-UltraReactive",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-PublicationEngine to Panini-PublicationEngine",
+          "module": "PaniniFS-PublicationEngine",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-SemanticCore to Panini-SemanticCore",
+          "module": "PaniniFS-SemanticCore",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-AutonomousMissions to Panini-AutonomousMissions",
+          "module": "PaniniFS-AutonomousMissions",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-CoLabController to Panini-CoLabController",
+          "module": "PaniniFS-CoLabController",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename PaniniFS-CloudOrchestrator to Panini-CloudOrchestrator",
+          "module": "PaniniFS-CloudOrchestrator",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename equipment-hauru to equipment-hauru",
+          "module": "equipment-hauru",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename equipment-router to equipment-router",
+          "module": "equipment-router",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename equipment-mystery to equipment-mystery",
+          "module": "equipment-mystery",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename GitHub-Centralized-backup-1758551421 to GitHub-Centralized-backup-1758551421",
+          "module": "GitHub-Centralized-backup-1758551421",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename GitHub-Centralized-backup-1758551444 to GitHub-Centralized-backup-1758551444",
+          "module": "GitHub-Centralized-backup-1758551444",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename copilotage.old to copilotage.old",
+          "module": "copilotage.old",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename copilotage to copilotage",
+          "module": "copilotage",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename projects to projects",
+          "module": "projects",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename management to management",
+          "module": "management",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        },
+        {
+          "phase": "RENAME",
+          "action": "Rename docs to docs",
+          "module": "docs",
+          "priority": "HIGH",
+          "estimated_duration": 0.5
+        }
+      ],
+      "phases": {
+        "RENAME": [
+          {
+            "phase": "RENAME",
+            "action": "Rename Pensine to Pensine",
+            "module": "Pensine",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename 915-SPO.com to 915-SPO.com",
+            "module": "915-SPO.com",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename azure-devops-markdown-diagrams to azure-devops-markdown-diagrams",
+            "module": "azure-devops-markdown-diagrams",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename emails to emails",
+            "module": "emails",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename emails-backup-safe to emails-backup-safe",
+            "module": "emails-backup-safe",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-Research to Panini-Research",
+            "module": "PaniniFS-Research",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-CopilotageShared to Panini-CopilotageShared",
+            "module": "PaniniFS-CopilotageShared",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-AttributionRegistry to Panini-AttributionRegistry",
+            "module": "PaniniFS-AttributionRegistry",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-DatasetsIngestion to Panini-DatasetsIngestion",
+            "module": "PaniniFS-DatasetsIngestion",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename openkinect-v2 to openkinect-v2",
+            "module": "openkinect-v2",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename libfreenect2 to libfreenect2",
+            "module": "libfreenect2",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename vehicule-Ford-E-350-Coachmen-290RF to vehicule-Ford-E-350-Coachmen-290RF",
+            "module": "vehicule-Ford-E-350-Coachmen-290RF",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-ExecutionOrchestrator to Panini-ExecutionOrchestrator",
+            "module": "PaniniFS-ExecutionOrchestrator",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-UltraReactive to Panini-UltraReactive",
+            "module": "PaniniFS-UltraReactive",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-PublicationEngine to Panini-PublicationEngine",
+            "module": "PaniniFS-PublicationEngine",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-SemanticCore to Panini-SemanticCore",
+            "module": "PaniniFS-SemanticCore",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-AutonomousMissions to Panini-AutonomousMissions",
+            "module": "PaniniFS-AutonomousMissions",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-CoLabController to Panini-CoLabController",
+            "module": "PaniniFS-CoLabController",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename PaniniFS-CloudOrchestrator to Panini-CloudOrchestrator",
+            "module": "PaniniFS-CloudOrchestrator",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename equipment-hauru to equipment-hauru",
+            "module": "equipment-hauru",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename equipment-router to equipment-router",
+            "module": "equipment-router",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename equipment-mystery to equipment-mystery",
+            "module": "equipment-mystery",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename GitHub-Centralized-backup-1758551421 to GitHub-Centralized-backup-1758551421",
+            "module": "GitHub-Centralized-backup-1758551421",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename GitHub-Centralized-backup-1758551444 to GitHub-Centralized-backup-1758551444",
+            "module": "GitHub-Centralized-backup-1758551444",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename copilotage.old to copilotage.old",
+            "module": "copilotage.old",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename copilotage to copilotage",
+            "module": "copilotage",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename projects to projects",
+            "module": "projects",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename management to management",
+            "module": "management",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          },
+          {
+            "phase": "RENAME",
+            "action": "Rename docs to docs",
+            "module": "docs",
+            "priority": "HIGH",
+            "estimated_duration": 0.5
+          }
+        ]
+      },
+      "estimated_total_hours": 14.5,
+      "parallel_execution_possible": true
+    },
+    "metrics": {
+      "total_modules": 32,
+      "incorrect_prefixes": 0,
+      "production_ready": 0,
+      "estimated_tasks": 29
+    }
+  },
+  "completed_tasks": [
+    {
+      "task_id": "analysis_1759089911",
+      "phase": 

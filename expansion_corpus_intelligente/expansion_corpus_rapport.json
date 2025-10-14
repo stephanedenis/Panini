@@ -1,0 +1,70 @@
+{
+  "titre": "Expansion Corpus Intelligente - Complétude Sémantique",
+  "description": "Expansion automatique via Wikipedia 37GB pour dictionnaire récursif",
+  "methodologie": "Extraction contextuelle + analyse sémantique + décomposition atomique",
+  "expansion_metrics": {
+    "concepts_manquants_initiaux": 155,
+    "concepts_traites": 40,
+    "concepts_resolus": 0,
+    "taux_resolution": "0.0%",
+    "couverture_estimee": "33.3%"
+  },
+  "concepts_decouverts": {
+    "count": 0,
+    "exemples": {}
+  },
+  "concepts_problematiques": {
+    "count": 40,
+    "exemples": [
+      "VOIR",
+      "ENTENDRE",
+      "TOUCHER",
+      "MARCHER",
+      "COURIR",
+      "PENSER",
+      "TEMPS",
+      "ESPACE",
+      "FAMILLE",
+      "AMOUR",
+      "BEAUTÉ",
+      "VÉRITÉ",
+      "SOCIÉTÉ",
+      "CULTURE",
+      "LOI",
+      "JUSTICE",
+      "LIBERTÉ",
+      "BIEN",
+      "MAL",
+      "MATHÉMATIQUE"
+    ],
+    "causes_principales": [
+      "Concepts trop abstraits pour contextes Wikipedia",
+      "Ambiguïté sémantique élevée",
+      "Concepts culturellement spécifiques",
+      "Manque de contextes dans corpus multilingue"
+    ]
+  },
+  "qualite_decompositions": {
+    "confiance_moyenne": 0.0,
+    "distribution_niveaux": {
+      "niveau_1": 0,
+      "niveau_2": 0,
+      "niveau_3_plus": 0
+    },
+    "validation_coherence": true
+  },
+  "impact_panlang": {
+    "progression_couverture": "33.3%",
+    "concepts_total_definis": 50,
+    "architecture_scalable": true,
+    "corpus_integration_reussie": false,
+    "completude_approchee": false
+  },
+  "recommandations": [
+    "Intégrer corpus techniques spécialisés pour concepts scientifiques",
+    "Développer heuristiques culturelles pour concepts abstraits",
+    "Enrichir patterns sémantiques avec synonymes étendus",
+    "Valider décompositions par experts domaines",
+    "Itérer expansion avec nouveaux corpus linguistiques"
+  ]
+}

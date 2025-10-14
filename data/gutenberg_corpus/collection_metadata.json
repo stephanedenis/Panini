@@ -1,0 +1,119 @@
+{
+  "collection_date": "2025-09-24 18:32:42",
+  "total_books": 3,
+  "successful_downloads": 3,
+  "total_formats": 3,
+  "books_data": {
+    "11": {
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Carroll",
+      "formats": {
+        "txt": {
+          "path": "data/gutenberg_corpus/11/11.txt",
+          "size_bytes": 151191,
+          "url": "https://www.gutenberg.org/files/11/11-0.txt",
+          "success": true
+        },
+        "txt.utf-8": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "html": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "epub.noimages": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "epub.images": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "kindle.noimages": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "pdf": {
+          "error": "HTTP 404",
+          "success": false
+        }
+      },
+      "successful_formats": 1
+    },
+    "1342": {
+      "title": "Pride and Prejudice",
+      "author": "Austen",
+      "formats": {
+        "txt": {
+          "path": "data/gutenberg_corpus/1342/1342.txt",
+          "size_bytes": 752583,
+          "url": "https://www.gutenberg.org/files/1342/1342-0.txt",
+          "success": true
+        },
+        "txt.utf-8": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "html": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "epub.noimages": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "epub.images": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "kindle.noimages": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "pdf": {
+          "error": "HTTP 404",
+          "success": false
+        }
+      },
+      "successful_formats": 1
+    },
+    "74": {
+      "title": "The Adventures of Tom Sawyer",
+      "author": "Twain",
+      "formats": {
+        "txt": {
+          "path": "data/gutenberg_corpus/74/74.txt",
+          "size_bytes": 405783,
+          "url": "https://www.gutenberg.org/files/74/74-0.txt",
+          "success": true
+        },
+        "txt.utf-8": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "html": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "epub.noimages": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "epub.images": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "kindle.noimages": {
+          "error": "HTTP 404",
+          "success": false
+        },
+        "pdf": {
+          "error": "HTTP 404",
+          "success": false
+        }
+      },
+      "successful_formats": 1
+    }
+  }
+}

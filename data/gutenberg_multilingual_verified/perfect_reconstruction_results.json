@@ -1,0 +1,189 @@
+{
+  "total_works": 6,
+  "successful_refinements": 6,
+  "average_quality_score": 0.5536,
+  "works_results": {
+    "alice_wonderland": {
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "languages": {
+        "en": {
+          "reconstructed_segments": [
+            "[COHERENCE] Inter-language convergence detected in MODAL, EVAL"
+          ],
+          "segment_count": 1,
+          "quality_metrics": {
+            "semantic_similarity": 0.05,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 1.0,
+            "overall_score": 0.54
+          }
+        },
+        "fr": {
+          "reconstructed_segments": [
+            "[SYNTHETIC-MODAL] Il se pourrait que the situation is complex",
+            "[SYNTHETIC-MODAL] Peut-être there are alternatives",
+            "[COHERENCE] Inter-language convergence detected in MODAL, EVAL"
+          ],
+          "segment_count": 3,
+          "quality_metrics": {
+            "semantic_similarity": 0.15,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 0.8,
+            "overall_score": 0.54
+          }
+        }
+      }
+    },
+    "frankenstein": {
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "languages": {
+        "en": {
+          "reconstructed_segments": [],
+          "segment_count": 0,
+          "quality_metrics": {
+            "semantic_similarity": 0.0,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 1.0,
+            "overall_score": 0.52
+          }
+        }
+      }
+    },
+    "pride_prejudice": {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "languages": {
+        "en": {
+          "reconstructed_segments": [
+            "[COHERENCE] Inter-language convergence detected in EVAL, COMM"
+          ],
+          "segment_count": 1,
+          "quality_metrics": {
+            "semantic_similarity": 0.05,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 1.0,
+            "overall_score": 0.54
+          }
+        },
+        "de": {
+          "reconstructed_segments": [
+            "[SYNTHETIC-RELATE] Dies verbindet sich mit the essential element",
+            "[SYNTHETIC-RELATE] Die Beziehung zwischen the first aspect und the second aspect",
+            "[SYNTHETIC-MODAL] Es könnte sein dass the situation is complex",
+            "[SYNTHETIC-MODAL] Vielleicht there are alternatives",
+            "[SYNTHETIC-EXIST] Es gibt a fundamental truth"
+          ],
+          "segment_count": 7,
+          "quality_metrics": {
+            "semantic_similarity": 0.35,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 0.7429,
+            "overall_score": 0.6086
+          }
+        }
+      }
+    },
+    "around_world_80_days": {
+      "title": "Around the World in Eighty Days",
+      "author": "Jules Verne",
+      "languages": {
+        "en": {
+          "reconstructed_segments": [
+            "[COHERENCE] Inter-language convergence detected in MODAL, EVAL"
+          ],
+          "segment_count": 1,
+          "quality_metrics": {
+            "semantic_similarity": 0.05,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 1.0,
+            "overall_score": 0.54
+          }
+        },
+        "fr": {
+          "reconstructed_segments": [
+            "[SYNTHETIC-MODAL] Il se pourrait que the situation is complex",
+            "[SYNTHETIC-MODAL] Peut-être there are alternatives",
+            "[COHERENCE] Inter-language convergence detected in MODAL, EVAL"
+          ],
+          "segment_count": 3,
+          "quality_metrics": {
+            "semantic_similarity": 0.15,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 0.8,
+            "overall_score": 0.54
+          }
+        }
+      }
+    },
+    "metamorphosis": {
+      "title": "Metamorphosis",
+      "author": "Franz Kafka",
+      "languages": {
+        "en": {
+          "reconstructed_segments": [
+            "[COHERENCE] Inter-language convergence detected in EVAL, COMM"
+          ],
+          "segment_count": 1,
+          "quality_metrics": {
+            "semantic_similarity": 0.05,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 1.0,
+            "overall_score": 0.54
+          }
+        },
+        "de": {
+          "reconstructed_segments": [
+            "[SYNTHETIC-RELATE] Dies verbindet sich mit the essential element",
+            "[SYNTHETIC-RELATE] Die Beziehung zwischen the first aspect und the second aspect",
+            "[SYNTHETIC-MODAL] Es könnte sein dass the situation is complex",
+            "[SYNTHETIC-MODAL] Vielleicht there are alternatives",
+            "[SYNTHETIC-EXIST] Es gibt a fundamental truth"
+          ],
+          "segment_count": 7,
+          "quality_metrics": {
+            "semantic_similarity": 0.35,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 0.7429,
+            "overall_score": 0.6086
+          }
+        }
+      }
+    },
+    "dracula": {
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "languages": {
+        "en": {
+          "reconstructed_segments": [
+            "[COHERENCE] Inter-language convergence detected in RELATE, MODAL"
+          ],
+          "segment_count": 1,
+          "quality_metrics": {
+            "semantic_similarity": 0.05,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 1.0,
+            "overall_score": 0.54
+          }
+        },
+        "fr": {
+          "reconstructed_segments": [
+            "[SYNTHETIC-MODAL] Il se pourrait que the situation is complex",
+            "[SYNTHETIC-MODAL] Peut-être there are alternatives",
+            "[SYNTHETIC-EXIST] Il existe a fundamental truth",
+            "[SYNTHETIC-EXIST] Être in harmony",
+            "[COHERENCE] Inter-language convergence detected in RELATE, MODAL"
+          ],
+          "segment_count": 5,
+          "quality_metrics": {
+            "semantic_similarity": 0.25,
+            "dhatu_fidelity": 0.8,
+            "linguistic_accuracy": 0.76,
+            "overall_score": 0.572
+          }
+        }
+      }
+    }
+  }
+}

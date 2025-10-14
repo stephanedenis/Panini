@@ -1,0 +1,335 @@
+{
+  "universals": {
+    "rel_containment": {
+      "id": "rel_containment",
+      "name": "Containment",
+      "category": "relation",
+      "abstract_form": "∈(x,y)",
+      "domains": [
+        "mathematics",
+        "physics",
+        "cognition",
+        "linguistics"
+      ],
+      "composition_level": 0,
+      "information_content": 1.5,
+      "universality_score": 0.95
+    },
+    "rel_causation": {
+      "id": "rel_causation",
+      "name": "Causation",
+      "category": "relation",
+      "abstract_form": "→(x,y)",
+      "domains": [
+        "physics",
+        "biology",
+        "cognition",
+        "social"
+      ],
+      "composition_level": 0,
+      "information_content": 2.1,
+      "universality_score": 0.92
+    },
+    "rel_similarity": {
+      "id": "rel_similarity",
+      "name": "Similarity",
+      "category": "relation",
+      "abstract_form": "≈(x,y)",
+      "domains": [
+        "mathematics",
+        "cognition",
+        "linguistics",
+        "aesthetic"
+      ],
+      "composition_level": 0,
+      "information_content": 1.8,
+      "universality_score": 0.88
+    },
+    "ent_boundary": {
+      "id": "ent_boundary",
+      "name": "Boundary",
+      "category": "entity",
+      "abstract_form": "∂(x)",
+      "domains": [
+        "mathematics",
+        "physics",
+        "biology",
+        "cognition"
+      ],
+      "composition_level": 0,
+      "information_content": 1.3,
+      "universality_score": 0.9
+    },
+    "ent_pattern": {
+      "id": "ent_pattern",
+      "name": "Pattern",
+      "category": "entity",
+      "abstract_form": "π(x)",
+      "domains": [
+        "mathematics",
+        "biology",
+        "cognition",
+        "aesthetic"
+      ],
+      "composition_level": 0,
+      "information_content": 2.5,
+      "universality_score": 0.94
+    },
+    "prop_intensity": {
+      "id": "prop_intensity",
+      "name": "Intensity",
+      "category": "property",
+      "abstract_form": "I(x)",
+      "domains": [
+        "physics",
+        "cognition",
+        "linguistics",
+        "aesthetic"
+      ],
+      "composition_level": 0,
+      "information_content": 1.7,
+      "universality_score": 0.87
+    },
+    "prop_continuity": {
+      "id": "prop_continuity",
+      "name": "Continuity",
+      "category": "property",
+      "abstract_form": "C(x)",
+      "domains": [
+        "mathematics",
+        "physics",
+        "cognition"
+      ],
+      "composition_level": 0,
+      "information_content": 2.0,
+      "universality_score": 0.89
+    },
+    "proc_transformation": {
+      "id": "proc_transformation",
+      "name": "Transformation",
+      "category": "process",
+      "abstract_form": "T(x→y)",
+      "domains": [
+        "mathematics",
+        "physics",
+        "biology",
+        "cognition"
+      ],
+      "composition_level": 0,
+      "information_content": 2.3,
+      "universality_score": 0.93
+    },
+    "proc_iteration": {
+      "id": "proc_iteration",
+      "name": "Iteration",
+      "category": "process",
+      "abstract_form": "Iter(x)",
+      "domains": [
+        "mathematics",
+        "computation",
+        "biology",
+        "cognition"
+      ],
+      "composition_level": 0,
+      "information_content": 1.9,
+      "universality_score": 0.85
+    }
+  },
+  "composition_rules": {
+    "comp_causal_containment": {
+      "id": "comp_causal_containment",
+      "name": "Causal Containment",
+      "input_universals": [
+        "rel_causation",
+        "rel_containment"
+      ],
+      "output_universal": "rel_causal_containment",
+      "composition_type": "emergent",
+      "fractal_depth": 1,
+      "information_transform": "∈(→(x,y), z) = ∈(x,z) ∧ →(y,z)",
+      "domains_preserved": [
+        "physics",
+        "cognition"
+      ],
+      "emergence_threshold": 0.7
+    },
+    "comp_iterative_pattern": {
+      "id": "comp_iterative_pattern",
+      "name": "Iterative Pattern",
+      "input_universals": [
+        "ent_pattern",
+        "proc_iteration"
+      ],
+      "output_universal": "ent_iterative_pattern",
+      "composition_type": "recursive",
+      "fractal_depth": 2,
+      "information_transform": "π(Iter(x)) = π(x)^n",
+      "domains_preserved": [
+        "mathematics",
+        "biology",
+        "aesthetic"
+      ],
+      "emergence_threshold": 0.8
+    },
+    "comp_boundary_transform": {
+      "id": "comp_boundary_transform",
+      "name": "Boundary Transformation",
+      "input_universals": [
+        "proc_transformation",
+        "ent_boundary"
+      ],
+      "output_universal": "proc_boundary_transform",
+      "composition_type": "linear",
+      "fractal_depth": 1,
+      "information_transform": "T(∂(x)) = ∂(T(x))",
+      "domains_preserved": [
+        "mathematics",
+        "physics",
+        "biology"
+      ],
+      "emergence_threshold": 0.6
+    },
+    "comp_intensive_similarity": {
+      "id": "comp_intensive_similarity",
+      "name": "Intensive Similarity",
+      "input_universals": [
+        "rel_similarity",
+        "prop_intensity"
+      ],
+      "output_universal": "rel_intensive_similarity",
+      "composition_type": "emergent",
+      "fractal_depth": 1,
+      "information_transform": "≈(I(x), I(y)) → ≈(x,y)",
+      "domains_preserved": [
+        "cognition",
+        "aesthetic"
+      ],
+      "emergence_threshold": 0.75
+    }
+  },
+  "domain_correspondences": {
+    "rel_containment": {
+      "universal_id": "rel_containment",
+      "domain_mappings": {
+        "mathematics": "x ∈ S (set membership)",
+        "physics": "particle in field region",
+        "cognition": "concept in mental space",
+        "linguistics": "morpheme in word"
+      },
+      "isomorphisms": {
+        "mathematics": [
+          "physics",
+          "cognition"
+        ],
+        "physics": [
+          "biology"
+        ],
+        "cognition": [
+          "linguistics"
+        ]
+      },
+      "transformation_rules": {
+        "mathematics->physics": "set_membership → spatial_containment",
+        "physics->cognition": "spatial → conceptual_space",
+        "cognition->linguistics": "mental_space → linguistic_structure"
+      }
+    },
+    "proc_transformation": {
+      "universal_id": "proc_transformation",
+      "domain_mappings": {
+        "mathematics": "f: X → Y (function)",
+        "physics": "state transition",
+        "biology": "metabolic process",
+        "cognition": "mental state change",
+        "computation": "algorithm step"
+      },
+      "isomorphisms": {
+        "mathematics": [
+          "computation"
+        ],
+        "physics": [
+          "biology"
+        ],
+        "cognition": [
+          "linguistics"
+        ]
+      },
+      "transformation_rules": {
+        "mathematics->computation": "function → algorithm",
+        "physics->biology": "physical_process → biological_process",
+        "cognition->linguistics": "mental_change → grammatical_transform"
+      }
+    },
+    "ent_pattern": {
+      "universal_id": "ent_pattern",
+      "domain_mappings": {
+        "mathematics": "mathematical structure",
+        "physics": "wave interference",
+        "biology": "genetic sequence",
+        "cognition": "mental schema",
+        "aesthetic": "artistic motif"
+      },
+      "isomorphisms": {
+        "mathematics": [
+          "physics",
+          "computation"
+        ],
+        "biology": [
+          "cognition"
+        ],
+        "aesthetic": [
+          "cognition",
+          "linguistics"
+        ]
+      },
+      "transformation_rules": {
+        "mathematics->physics": "structure → wave_pattern",
+        "biology->cognition": "genetic_pattern → mental_schema",
+        "aesthetic->linguistics": "artistic_motif → linguistic_pattern"
+      }
+    }
+  },
+  "system_metrics": {
+    "universals_count": 9,
+    "composition_depth": 2,
+    "domain_coverage": 0.875,
+    "information_density": 1.9000000000000001,
+    "categories": {
+      "relation": {
+        "count": 3,
+        "total_information": 5.4,
+        "avg_universality": 0.9166666666666666,
+        "avg_information": 1.8
+      },
+      "entity": {
+        "count": 2,
+        "total_information": 3.8,
+        "avg_universality": 0.9199999999999999,
+        "avg_information": 1.9
+      },
+      "property": {
+        "count": 2,
+        "total_information": 3.7,
+        "avg_universality": 0.88,
+        "avg_information": 1.85
+      },
+      "process": {
+        "count": 2,
+        "total_information": 4.199999999999999,
+        "avg_universality": 0.89,
+        "avg_information": 2.0999999999999996
+      }
+    }
+  },
+  "domains": {
+    "mathematics": "Structures mathématiques",
+    "physics": "Phénomènes physiques",
+    "biology": "Processus biologiques",
+    "cognition": "Processus cognitifs",
+    "linguistics": "Structures linguistiques",
+    "computation": "Processus computationnels",
+    "social": "Structures sociales",
+    "aesthetic": "Patterns esthétiques"
+  },
+  "timestamp": "2025-09-28T20:15:20.201843"
+}

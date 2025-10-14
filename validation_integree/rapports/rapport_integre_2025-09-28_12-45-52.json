@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-09-28T12:45:52.599963",
+  "validation_results": {
+    "version_id": "v20250928_124552",
+    "timestamp": "2025-09-28T12:45:52.600032",
+    "architecture_hash": "2c8d9438ce5e198d",
+    "multilingual_coverage": 0.5,
+    "semantic_precision": 0.8806818181818181,
+    "compositional_coherence": 0.85,
+    "dhatu_utilization": 0.8,
+    "ambiguity_resolution_rate": 0.8,
+    "creative_generation_score": 0.75,
+    "cross_linguistic_consistency": 0.7,
+    "computational_efficiency": 0.8175,
+    "novel_combinations_discovered": 0,
+    "cultural_universality_score": 0.6,
+    "therapeutic_applicability": 1.0,
+    "overall_quality_score": 0.7641363636363635
+  },
+  "quality_assessment": {
+    "model_id": "panlang_panksepp_actuel",
+    "timestamp": "2025-09-28T12:45:52.607065",
+    "criterion_scores": {
+      "universalite_linguistique": 0.82,
+      "precision_semantique": 0.89,
+      "coherence_compositionnelle": 0.9,
+      "contraintes_cognitives": 0.85,
+      "intuitivite_utilisation": 0.8,
+      "richesse_expressive": 0.85,
+      "creativite_generative": 0.85,
+      "validation_neurobiologique": 0.92,
+      "robustesse_empirique": 0.84,
+      "efficacite_computationnelle": 0.83,
+      "extensibilite_maintenance": 0.8,
+      "applications_therapeutiques": 0.8
+    },
+    "overall_score": 0.8512307692307692,
+    "rank": null,
+    "strengths": [
+      "Cohérence Compositionnelle (0.900)",
+      "Intuitivité d'Utilisation (0.800)",
+      "Richesse Expressive (0.850)",
+      "Créativité Générative (0.850)",
+      "Validation Neurobiologique (0.920)",
+      "Efficacité Computationnelle (0.830)",
+      "Applications Thérapeutiques (0.800)"
+    ],
+    "weaknesses": [],
+    "improvement_priorities": [
+      "Universalité Linguistique: écart 0.080 (poids 0.14)",
+      "Respect Contraintes Cognitives: écart 0.100 (poids 0.09)"
+    ]
+  },
+  "integrated_score": 0.7989741258741259,
+  "priority_actions": [
+    "CRITIQUE: Étendre corpus multilingue (couverture 50%)",
+    "HAUTE: Améliorer consistance inter-lingue (70%)",
+    "QUALITÉ: Universalité Linguistique (écart 0.080)",
+    "QUALITÉ: Respect Contraintes Cognitives (écart 0.100)"
+  ],
+  "improvement_roadmap": {
+    "current_integrated_score": 0.7989741258741259,
+    "target_integrated_score": 0.9,
+    "estimated_timeline": "2-3 mois",
+    "effort_level": "Développements majeurs",
+    "validation_priorities": {
+      "multilingual_coverage": 0.85,
+      "semantic_precision": 0.9,
+      "cross_linguistic_consistency": 0.85,
+      "creative_generation_score": 0.8
+    },
+    "quality_priorities": {
+      "universalite_linguistique": 0.9,
+      "precision_semantique": 0.92,
+      "contraintes_cognitives": 0.95
+    },
+    "success_criteria": [
+      "Score intégré > 0.90",
+      "Couverture multilingue > 85%",
+      "Précision sémantique > 90%",
+      "Tous critères qualité au-dessus seuils"
+    ]
+  },
+  "next_validation_trigger": "targeted_improvements"
+}

@@ -1,0 +1,277 @@
+{
+  "basic": {
+    "original": "Hello, this is a simple test.",
+    "compressed_size": 868,
+    "reconstructed": "Hello, this is a simple test.",
+    "fidelity": 1.0,
+    "identical": true
+  },
+  "multilingual": {
+    "EN": {
+      "original_size": 44,
+      "compressed_size": 796,
+      "fidelity": 1.0,
+      "preserved": true
+    },
+    "FR": {
+      "original_size": 58,
+      "compressed_size": 866,
+      "fidelity": 1.0,
+      "preserved": true
+    },
+    "DE": {
+      "original_size": 55,
+      "compressed_size": 838,
+      "fidelity": 1.0,
+      "preserved": true
+    }
+  },
+  "narrative": {
+    "original_length": 631,
+    "compressed_size": 2656,
+    "compression_ratio": 0.2375753012048193,
+    "fidelity": 1.0,
+    "structure_preserved": {
+      "dialogues": true,
+      "sentences": true
+    }
+  },
+  "technical": {
+    "original_length": 877,
+    "technical_terms": 6,
+    "terms_preserved": 6,
+    "fidelity": 1.0,
+    "identical": true
+  },
+  "massive_corpus": {
+    "corpus_size": 250,
+    "total_characters": 18105,
+    "compression_ratio": 0.08035595401890729,
+    "perfect_rate": 1.0,
+    "processing_time": 0.38893,
+    "texts_per_second": 642.7891908569666
+  },
+  "semantic_advanced": {
+    "causal_relation": {
+      "dhatu_signature": "CAUSE:1",
+      "context_markers": [
+        "EN",
+        "SENTENCE"
+      ],
+      "semantic_depth": 1,
+      "fidelity": 1.0,
+      "preserved": true
+    },
+    "temporal_sequence": {
+      "dhatu_signature": "",
+      "context_markers": [
+        "EN",
+        "FR",
+        "COMPLEX_NARRATIVE",
+        "SENTENCE"
+      ],
+      "semantic_depth": 2,
+      "fidelity": 1.0,
+      "preserved": true
+    },
+    "conditional_logic": {
+      "dhatu_signature": "MODAL:1",
+      "context_markers": [
+        "EN",
+        "FR",
+        "DE",
+        "SENTENCE"
+      ],
+      "semantic_depth": 1,
+      "fidelity": 1.0,
+      "preserved": true
+    },
+    "emotional_state": {
+      "dhatu_signature": "RELATE:1",
+      "context_markers": [
+        "EN",
+        "SENTENCE"
+      ],
+      "semantic_depth": 1,
+      "fidelity": 1.0,
+      "preserved": true
+    },
+    "comparative_analysis": {
+      "dhatu_signature": "",
+      "context_markers": [
+        "EN",
+        "FR",
+        "SENTENCE"
+      ],
+      "semantic_depth": 1,
+      "fidelity": 1.0,
+      "preserved": true
+    }
+  },
+  "anti_recursion": {
+    "repetition_factor": 2.3333333333333335,
+    "exploration_safe": true,
+    "compression_ratio": 0.19517241379310346,
+    "fidelity": 1.0,
+    "safe_explorations": 262
+  },
+  "performance": {
+    "Petit": {
+      "size": 100,
+      "compression_time": 0.00142,
+      "decompression_time": 0.000309,
+      "total_time": 0.001729,
+      "chars_per_second": 57836.899942163094,
+      "compression_ratio": 0.11350737797956867,
+      "fidelity": 1.0
+    },
+    "Moyen": {
+      "size": 1000,
+      "compression_time": 5.781856,
+      "decompression_time": 1.158219,
+      "total_time": 6.940075,
+      "chars_per_second": 144.0906618444325,
+      "compression_ratio": 1.1846736448604065e-05,
+      "fidelity": 1.0
+    },
+    "Grand": {
+      "size": 5000,
+      "compression_time": 269.959999,
+      "decompression_time": 55.158008,
+      "total_time": 325.118007,
+      "chars_per_second": 15.379031282016934,
+      "compression_ratio": 1.2789963278296458e-06,
+      "fidelity": 1.0
+    },
+    "Très Grand": {
+      "size": 10000,
+      "compression_time": 1295.945652,
+      "decompression_time": 582.847996,
+      "total_time": 1878.793648,
+      "chars_per_second": 5.322564301111582,
+      "compression_ratio": 5.978888722808115e-07,
+      "fidelity": 1.0
+    }
+  },
+  "workflow": {
+    "steps_completed": 8,
+    "total_duration": 0.014825,
+    "languages_processed": 3,
+    "workflow_results": {
+      "compression": {
+        "EN": {
+          "original_size": 44,
+          "compressed_size": 852,
+          "metadata": {
+            "metrics": "TripartiteMetrics(compression_ratio=0.051643192488262914, lossless_preservation=1.0, fractal_efficiency=0.0, anti_recursion_coverage=1.0, reconstruction_fidelity=0.0, processing_time=0.00981283187866211, memory_usage=852)",
+            "metadata": {
+              "lossless_data": "{\"compressed_content\": \"Alice's Adventur<EXIST_0> in Wonderland - Chapter 1\", \"substitutions\": {\"<EXIST_0>\": \"es\"}, \"fingerprint\": {\"dhatu_signature\": \"EXIST:1\", \"concept_hash\": \"79040db6a6ca8610f838a19646fdb3d41eb96825dbc0c8f4b720e31a65382d30\", \"context_markers\": [\"EN\", \"FR\", \"DE\", \"DIALOGUE\"], \"semantic_depth\": 1, \"cross_references\": [\"PRONOUN:es\", \"PRONOUN:er\"]}}",
+              "fractal_map": {},
+              "optimized_content": "Alice's Adventures in Wonderland - Chapter 1",
+              "fingerprint": {
+                "dhatu_signature": "EXIST:1",
+                "concept_hash": "79040db6a6ca8610f838a19646fdb3d41eb96825dbc0c8f4b720e31a65382d30",
+                "context_markers": [
+                  "EN",
+                  "FR",
+                  "DE",
+                  "DIALOGUE"
+                ],
+                "semantic_depth": 1,
+                "cross_references": [
+                  "PRONOUN:es",
+                  "PRONOUN:er"
+                ]
+              },
+              "exploration_success": true,
+              "compression_timestamp": "2025-09-24T23:37:13.024399"
+            }
+          }
+        },
+        "FR": {
+          "original_size": 57,
+          "compressed_size": 1014,
+          "metadata": {
+            "metrics": "TripartiteMetrics(compression_ratio=0.05621301775147929, lossless_preservation=1.0, fractal_efficiency=0.0, anti_recursion_coverage=1.0, reconstruction_fidelity=0.0, processing_time=0.0013289451599121094, memory_usage=1014)",
+            "metadata": {
+              "lossless_data": "{\"compressed_content\": \"L<EXIST_0> Aventur<EXIST_1> d'Alice au Pays d<EXIST_2> Merveill<EXIST_3> - Chapitre 1\", \"substitutions\": {\"<EXIST_0>\": \"es\", \"<EXIST_1>\": \"es\", \"<EXIST_2>\": \"es\", \"<EXIST_3>\": \"es\"}, \"fingerprint\": {\"dhatu_signature\": \"EXIST:4\", \"concept_hash\": \"472d568d550c66b86c6f2d99b3994299d44745f64bdb752bc4119c4fbe58c900\", \"context_markers\": [\"EN\", \"FR\", \"DIALOGUE\"], \"semantic_depth\": 1, \"cross_references\": [\"PRONOUN:er\", \"PRONOUN:es\", \"PRONOUN:it\", \"PRONOUN:il\"]}}",
+              "fractal_map": {},
+              "optimized_content": "Les Aventures d'Alice au Pays des Merveilles - Chapitre 1",
+              "fingerprint": {
+                "dhatu_signature": "EXIST:4",
+                "concept_hash": "472d568d550c66b86c6f2d99b3994299d44745f64bdb752bc4119c4fbe58c900",
+                "context_markers": [
+                  "EN",
+                  "FR",
+                  "DIALOGUE"
+                ],
+                "semantic_depth": 1,
+                "cross_references": [
+                  "PRONOUN:er",
+                  "PRONOUN:es",
+                  "PRONOUN:it",
+                  "PRONOUN:il"
+                ]
+              },
+              "exploration_success": true,
+              "compression_timestamp": "2025-09-24T23:37:13.027024"
+            }
+          }
+        },
+        "DE": {
+          "original_size": 31,
+          "compressed_size": 758,
+          "metadata": {
+            "metrics": "TripartiteMetrics(compression_ratio=0.040897097625329816, lossless_preservation=1.0, fractal_efficiency=0.0, anti_recursion_coverage=1.0, reconstruction_fidelity=0.0, processing_time=0.00140380859375, memory_usage=758)",
+            "metadata": {
+              "lossless_data": "{\"compressed_content\": \"Alice im Wunderland - Kapitel 1\", \"substitutions\": {}, \"fingerprint\": {\"dhatu_signature\": \"\", \"concept_hash\": \"3a6861b538083560de51ba066d3fda305fc001704c0da7ec6a54432a020ed848\", \"context_markers\": [\"EN\", \"FR\", \"DE\"], \"semantic_depth\": 1, \"cross_references\": [\"PRONOUN:er\", \"PRONOUN:it\"]}}",
+              "fractal_map": {},
+              "optimized_content": "Alice im Wunderland - Kapitel 1",
+              "fingerprint": {
+                "dhatu_signature": "",
+                "concept_hash": "3a6861b538083560de51ba066d3fda305fc001704c0da7ec6a54432a020ed848",
+                "context_markers": [
+                  "EN",
+                  "FR",
+                  "DE"
+                ],
+                "semantic_depth": 1,
+                "cross_references": [
+                  "PRONOUN:er",
+                  "PRONOUN:it"
+                ]
+              },
+              "exploration_success": true,
+              "compression_timestamp": "2025-09-24T23:37:13.028554"
+            }
+          }
+        }
+      },
+      "restitution": {
+        "EN": {
+          "fidelity": 1.0,
+          "verified": true
+        },
+        "FR": {
+          "fidelity": 1.0,
+          "verified": true
+        },
+        "DE": {
+          "fidelity": 1.0,
+          "verified": true
+        }
+      }
+    }
+  },
+  "revolutionary": {
+    "document_size": 2205,
+    "compressed_size": 6710,
+    "compression_ratio": 0.3286140089418778,
+    "compression_time": 12.103,
+    "decompression_time": 0.005392,
+    "fidelity": 0.95,
+    "perfect_preservation": true,
+    "complex_elements_preserved": 5,
+    "revolutionary_success": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "etat_modele": {
+    "version": "ULTIME-1.0",
+    "score": 0.614,
+    "concepts": 155,
+    "timestamp": "2025-09-27 10:56:56",
+    "hash_modele": "6219badd51a6"
+  },
+  "contexte_sauvegarde": {
+    "raison": "backtrack",
+    "iteration": 3699,
+    "statut_optimisation": "backtrack",
+    "date_sauvegarde": "2025-09-27 14:27:16"
+  },
+  "metadata_originale": {
+    "titre": "PanLang ULTIME - Dictionnaire Sémantique Universel Complet",
+    "version": "ULTIME-1.0",
+    "date_creation": "2025-09-26 20:26:05",
+    "objectif": "Reconstruction universelle complète de la pensée humaine",
+    "concepts_totaux": 155,
+    "sources_integrees": 17,
+    "conflits_resolus": 69,
+    "atoms_universels": [
+      "MOUVEMENT",
+      "COGNITION",
+      "PERCEPTION",
+      "COMMUNICATION",
+      "CREATION",
+      "EMOTION",
+      "EXISTENCE",
+      "DESTRUCTION",
+      "POSSESSION",
+      "DOMINATION"
+    ],
+    "methodologie": "Fusion intelligente multi-sources avec résolution automatique conflits",
+    "qualite_moyenne": 0.5335845161290322
+  }
+}

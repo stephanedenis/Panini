@@ -1,0 +1,21 @@
+{
+  "primary_domain": "paninifs",
+  "domains": {
+    "paninifs": {
+      "status": "available",
+      "target": "Panini Research Central",
+      "redirect_to": "/home/stephane/GitHub/Panini",
+      "description": "Domaine principal recherche Panini"
+    },
+    "ontowave.org": {
+      "status": "active",
+      "target": "Panini-OntoWave",
+      "redirect_config": "Panini-OntoWave interface",
+      "description": "Interface utilisateur OntoWave"
+    }
+  },
+  "nginx_config_template": {
+    "paninifs": "server { listen 80; server_name paninifs; location / { proxy_pass http://localhost:8000; } }",
+    "ontowave.org": "server { listen 80; server_name ontowave.org; location / { proxy_pass http://localhost:3000; } }"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "titre": "PanLang Lite - Primitives Essentielles",
+  "description": "Extraction rapide des primitives fondamentales",
+  "total_primitives": 654,
+  "domaines": {
+    "biologie": 32,
+    "chimie": 20,
+    "dhatu_racine": 538,
+    "etymologie": 63,
+    "taxonomie_biologique": 1
+  },
+  "langues": {
+    "en": 115,
+    "fr": 1,
+    "sa": 538
+  },
+  "timestamp": "2025-09-26 10:05:35",
+  "base_donnees": "panlang_primitives/panlang_primitives.db"
+}

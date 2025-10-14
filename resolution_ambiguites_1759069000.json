@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-09-28T10:30:00Z",
+  "resolution_method": "intelligent_semantic_analysis_v1.0",
+  "summary": {
+    "total_concepts_resolved": 154,
+    "successful_resolutions": 0,
+    "average_improvement": 0.7005844155844156,
+    "average_coherence": 0.030086580086580085
+  },
+  "detailed_resolutions": {
+    "CONSOLER": {
+      "original_state": "empty_definition",
+      "proposed_decomposition": [
+        "FEEL",
+        "EXIST"
+      ],
+      "improvement_score": 0.7,
+      "validation_passed": 

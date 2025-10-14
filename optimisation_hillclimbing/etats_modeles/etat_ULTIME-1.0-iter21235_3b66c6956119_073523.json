@@ -1,0 +1,24 @@
+{
+  "etat_modele": {
+    "version": "ULTIME-1.0-iter21235",
+    "score": 0.4154934433805111,
+    "concepts": 161,
+    "timestamp": "2025-09-28 07:35:23",
+    "hash_modele": "3b66c6956119"
+  },
+  "contexte_sauvegarde": {
+    "raison": "variation_testee",
+    "iteration": 21235,
+    "statut_optimisation": "stagnation",
+    "date_sauvegarde": "2025-09-28 07:35:23"
+  },
+  "metadata_originale": {
+    "version": "ULTIME-1.0-iter21235",
+    "date_creation": "2025-09-28 07:35:23",
+    "concepts_totaux": 161,
+    "source_variation": "expansion_aleatoire",
+    "concepts_ajoutes": 6,
+    "iteration_hill_climbing": 21235,
+    "modele_parent": "ULTIME-1.0"
+  }
+}

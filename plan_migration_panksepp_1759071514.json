@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-09-28T10:58:34Z",
+  "migration_name": "FEEL → Extended Panksepp Migration v1.0",
+  "step_1_critical_concepts": {
+    "description": "Migrer les 22 concepts critiques corrigés",
+    "concepts_to_migrate": [
+      "AMOUR",
+      "JOIE",
+      "TRISTESSE",
+      "PEUR",
+      "COLÈRE",
+      "DÉGOÛT",
+      "COMPRENDRE",
+      "APPRENDRE",
+      "EXPLORER",
+      "PARENT",
+      "GUERRE",
+      "FAMILLE",
+      "SENTIR",
+      "VOIR",
+      "ENTENDRE",
+      "TOUCHER"
+    ],
+    "estimated_time": "2 heures",
+    "risk_level": "Faible (concepts déjà validés)"
+  },
+  "step_2_extended_vocabulary": {
+    "description": "Ajouter concepts utilisant systèmes étendus",
+    "new_concepts": [
+      "DOMINATION",
+      "SOUMISSION",
+      "DÉFÉRENCE",
+      "ANTICIPATION",
+      "PRÉVOYANCE",
+      "PLANIFICATION",
+      "DÉGOÛT_MORAL",
+      "REJET",
+      "ÉVITEMENT"
+    ],
+    "estimated_time": "3 heures",
+    "risk_level": "Moyen (nouveaux dhātu)"
+  },
+  "step_3_validation": {
+    "description": "Validation cohérence globale nouvelle architecture",
+    "tasks": [
+      "Tests compatibilité avec dhātu existants",
+      "Validation combinaisons créatives",
+      "Vérification absence régression",
+      "Tests performance compositionnelle"
+    ],
+    "estimated_time": "2 heures",
+    "risk_level": "Élevé (cohérence système complet)"
+  },
+  "rollback_strategy": {
+    "backup_required": "dictionnaire_panlang_corrige_current.json",
+    "rollback_time": "30 minutes",
+    "rollback_triggers": [
+      "Cohérence globale < 0.8",
+      "Régression concepts critiques",
+      "Incompatibilité dhātu existants"
+    ]
+  }
+}

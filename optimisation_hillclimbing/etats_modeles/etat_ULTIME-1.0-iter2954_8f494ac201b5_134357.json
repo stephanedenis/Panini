@@ -1,0 +1,24 @@
+{
+  "etat_modele": {
+    "version": "ULTIME-1.0-iter2954",
+    "score": 0.40894993548387104,
+    "concepts": 155,
+    "timestamp": "2025-09-27 13:43:57",
+    "hash_modele": "8f494ac201b5"
+  },
+  "contexte_sauvegarde": {
+    "raison": "variation_testee",
+    "iteration": 2954,
+    "statut_optimisation": "stagnation",
+    "date_sauvegarde": "2025-09-27 13:43:57"
+  },
+  "metadata_originale": {
+    "version": "ULTIME-1.0-iter2954",
+    "date_creation": "2025-09-27 13:43:57",
+    "concepts_totaux": 155,
+    "source_variation": "corpus_analyse_ambiguites_dictionnaire_20250927_134112",
+    "concepts_ajoutes": 1,
+    "iteration_hill_climbing": 2954,
+    "modele_parent": "ULTIME-1.0"
+  }
+}

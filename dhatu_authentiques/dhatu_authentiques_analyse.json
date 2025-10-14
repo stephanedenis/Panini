@@ -1,0 +1,298 @@
+{
+  "titre": "Analyse Sémantique Authentique - Dhātu Sanskrit Vérifiés",
+  "description": "Identification d'atomes sémantiques universels à partir de vrais dhātu",
+  "methodologie": "Classification manuelle de dhātu authentiques par sens vérifié",
+  "dhatu_analyses": 49,
+  "concepts_universels": {
+    "MOUVEMENT": {
+      "dhatu_count": 6,
+      "dhatu_exemples": [
+        {
+          "racine": "गम्",
+          "sens": "aller"
+        },
+        {
+          "racine": "आ-गम्",
+          "sens": "venir"
+        },
+        {
+          "racine": "या",
+          "sens": "aller"
+        }
+      ]
+    },
+    "COGNITION": {
+      "dhatu_count": 6,
+      "dhatu_exemples": [
+        {
+          "racine": "ज्ञा",
+          "sens": "connaître"
+        },
+        {
+          "racine": "विद्",
+          "sens": "savoir"
+        },
+        {
+          "racine": "बुध्",
+          "sens": "s'éveiller"
+        }
+      ]
+    },
+    "PERCEPTION": {
+      "dhatu_count": 5,
+      "dhatu_exemples": [
+        {
+          "racine": "दृश्",
+          "sens": "voir"
+        },
+        {
+          "racine": "श्रु",
+          "sens": "entendre"
+        },
+        {
+          "racine": "स्पृश्",
+          "sens": "toucher"
+        }
+      ]
+    },
+    "COMMUNICATION": {
+      "dhatu_count": 5,
+      "dhatu_exemples": [
+        {
+          "racine": "वद्",
+          "sens": "dire"
+        },
+        {
+          "racine": "वच्",
+          "sens": "parler"
+        },
+        {
+          "racine": "ब्रू",
+          "sens": "dire"
+        }
+      ]
+    },
+    "CREATION": {
+      "dhatu_count": 5,
+      "dhatu_exemples": [
+        {
+          "racine": "कृ",
+          "sens": "faire"
+        },
+        {
+          "racine": "दा",
+          "sens": "donner"
+        },
+        {
+          "racine": "धा",
+          "sens": "placer"
+        }
+      ]
+    },
+    "EMOTION": {
+      "dhatu_count": 4,
+      "dhatu_exemples": [
+        {
+          "racine": "प्रीय्",
+          "sens": "aimer"
+        },
+        {
+          "racine": "द्विष्",
+          "sens": "haïr"
+        },
+        {
+          "racine": "भी",
+          "sens": "craindre"
+        }
+      ]
+    },
+    "EXISTENCE": {
+      "dhatu_count": 3,
+      "dhatu_exemples": [
+        {
+          "racine": "अस्",
+          "sens": "être"
+        },
+        {
+          "racine": "भू",
+          "sens": "devenir"
+        },
+        {
+          "racine": "स्था",
+          "sens": "se_tenir"
+        }
+      ]
+    },
+    "DESTRUCTION": {
+      "dhatu_count": 3,
+      "dhatu_exemples": [
+        {
+          "racine": "हन्",
+          "sens": "tuer"
+        },
+        {
+          "racine": "नश्",
+          "sens": "détruire"
+        },
+        {
+          "racine": "मृ",
+          "sens": "mourir"
+        }
+      ]
+    },
+    "POSSESSION": {
+      "dhatu_count": 3,
+      "dhatu_exemples": [
+        {
+          "racine": "गृह्",
+          "sens": "saisir"
+        },
+        {
+          "racine": "ति-ज्",
+          "sens": "abandonner"
+        },
+        {
+          "racine": "लभ्",
+          "sens": "obtenir"
+        }
+      ]
+    },
+    "DOMINATION": {
+      "dhatu_count": 3,
+      "dhatu_exemples": [
+        {
+          "racine": "राज्",
+          "sens": "régner"
+        },
+        {
+          "racine": "शास्",
+          "sens": "commander"
+        },
+        {
+          "racine": "जि",
+          "sens": "conquérir"
+        }
+      ]
+    },
+    "TEMPS": {
+      "dhatu_count": 2,
+      "dhatu_exemples": [
+        {
+          "racine": "कल्",
+          "sens": "compter"
+        },
+        {
+          "racine": "क्षि",
+          "sens": "demeurer"
+        }
+      ]
+    },
+    "INTENSITE": {
+      "dhatu_count": 2,
+      "dhatu_exemples": [
+        {
+          "racine": "वृध्",
+          "sens": "croître"
+        },
+        {
+          "racine": "क्षी",
+          "sens": "diminuer"
+        }
+      ]
+    },
+    "COOPERATION": {
+      "dhatu_count": 1,
+      "dhatu_exemples": [
+        {
+          "racine": "सह्",
+          "sens": "supporter"
+        }
+      ]
+    },
+    "MESURE": {
+      "dhatu_count": 1,
+      "dhatu_exemples": [
+        {
+          "racine": "तुल्",
+          "sens": "égaler"
+        }
+      ]
+    }
+  },
+  "atomes_irreductibles": {
+    "liste": [
+      "MOUVEMENT",
+      "COGNITION",
+      "PERCEPTION",
+      "COMMUNICATION",
+      "CREATION",
+      "EMOTION",
+      "EXISTENCE",
+      "DESTRUCTION",
+      "POSSESSION",
+      "DOMINATION"
+    ],
+    "count": 10,
+    "description": "Concepts cognitifs universaux irréductibles"
+  },
+  "tests_reconstruction": {
+    "ENSEIGNER": {
+      "atomes_requis": [
+        "COGNITION",
+        "COMMUNICATION",
+        "CREATION"
+      ],
+      "reconstruction_possible": true,
+      "dhatu_impliques": [
+        "ज्ञा",
+        "वद्",
+        "कृ"
+      ]
+    },
+    "VOYAGER": {
+      "atomes_requis": [
+        "MOUVEMENT",
+        "TEMPS",
+        "PERCEPTION"
+      ],
+      "reconstruction_possible": true,
+      "dhatu_impliques": [
+        "गम्",
+        "कल्",
+        "दृश्"
+      ]
+    },
+    "APPRENDRE": {
+      "atomes_requis": [
+        "PERCEPTION",
+        "COGNITION",
+        "POSSESSION"
+      ],
+      "reconstruction_possible": true,
+      "dhatu_impliques": [
+        "दृश्",
+        "ज्ञा",
+        "गृह्"
+      ]
+    },
+    "GOUVERNER": {
+      "atomes_requis": [
+        "DOMINATION",
+        "COMMUNICATION",
+        "CREATION"
+      ],
+      "reconstruction_possible": true,
+      "dhatu_impliques": [
+        "राज्",
+        "वद्",
+        "कृ"
+      ]
+    }
+  },
+  "implications_panlang": {
+    "base_semantique_solide": true,
+    "reconstruction_concepts_complexes": true,
+    "universalite_cognitive": true,
+    "reduction_conceptuelle": "49 dhātu → 10 atomes"
+  }
+}

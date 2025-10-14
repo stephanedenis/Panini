@@ -1,0 +1,315 @@
+{
+  "total_works": 6,
+  "total_language_pairs": 11,
+  "works_validations": {
+    "alice_wonderland": {
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "universality_scores": {
+        "ITER": 0.8003,
+        "DECIDE": 0.6545,
+        "EXIST": 0.7886,
+        "EVAL": 0.7273,
+        "FEEL": 0.5731,
+        "MODAL": 0.3046,
+        "CAUSE": 0.7551,
+        "COMM": 0.9694,
+        "RELATE": 0.712
+      },
+      "average_universality": 0.6983,
+      "language_validations": {
+        "en": {
+          "metrics": {
+            "dhatu_correlation": 0.9387,
+            "semantic_preservation": 0.05,
+            "linguistic_quality": 1.0,
+            "universality_score": 0.6983222222222222,
+            "perfection_percentage": 0.54
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        },
+        "fr": {
+          "metrics": {
+            "dhatu_correlation": 0.9557,
+            "semantic_preservation": 0.15,
+            "linguistic_quality": 0.8,
+            "universality_score": 0.6983222222222222,
+            "perfection_percentage": 0.54
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        }
+      }
+    },
+    "frankenstein": {
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "universality_scores": {
+        "ITER": 1.0,
+        "DECIDE": 1.0,
+        "EXIST": 1.0,
+        "EVAL": 1.0,
+        "FEEL": 1.0,
+        "MODAL": 1.0,
+        "CAUSE": 1.0,
+        "COMM": 1.0,
+        "RELATE": 1.0
+      },
+      "average_universality": 1.0,
+      "language_validations": {
+        "en": {
+          "metrics": {
+            "dhatu_correlation": 0.9278,
+            "semantic_preservation": 0.0,
+            "linguistic_quality": 1.0,
+            "universality_score": 1.0,
+            "perfection_percentage": 0.52
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": true,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        }
+      }
+    },
+    "pride_prejudice": {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "universality_scores": {
+        "ITER": 0,
+        "DECIDE": 0,
+        "EXIST": 0.0053,
+        "EVAL": 0,
+        "FEEL": 0.453,
+        "MODAL": 0,
+        "CAUSE": 0.0842,
+        "COMM": 0,
+        "RELATE": 0
+      },
+      "average_universality": 0.0603,
+      "language_validations": {
+        "en": {
+          "metrics": {
+            "dhatu_correlation": 0.9627,
+            "semantic_preservation": 0.05,
+            "linguistic_quality": 1.0,
+            "universality_score": 0.06027777777777778,
+            "perfection_percentage": 0.54
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        },
+        "de": {
+          "metrics": {
+            "dhatu_correlation": 0.9884,
+            "semantic_preservation": 0.35,
+            "linguistic_quality": 0.7429,
+            "universality_score": 0.06027777777777778,
+            "perfection_percentage": 0.6086
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": false,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        }
+      }
+    },
+    "around_world_80_days": {
+      "title": "Around the World in Eighty Days",
+      "author": "Jules Verne",
+      "universality_scores": {
+        "ITER": 0.9744,
+        "DECIDE": 0.4059,
+        "EXIST": 0.6863,
+        "EVAL": 0.4725,
+        "FEEL": 0.4562,
+        "MODAL": 0.2697,
+        "CAUSE": 0.6853,
+        "COMM": 0.9754,
+        "RELATE": 0.6987
+      },
+      "average_universality": 0.6249,
+      "language_validations": {
+        "en": {
+          "metrics": {
+            "dhatu_correlation": 0.9207,
+            "semantic_preservation": 0.05,
+            "linguistic_quality": 1.0,
+            "universality_score": 0.6249333333333333,
+            "perfection_percentage": 0.54
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        },
+        "fr": {
+          "metrics": {
+            "dhatu_correlation": 0.9705,
+            "semantic_preservation": 0.15,
+            "linguistic_quality": 0.8,
+            "universality_score": 0.6249333333333333,
+            "perfection_percentage": 0.54
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        }
+      }
+    },
+    "metamorphosis": {
+      "title": "Metamorphosis",
+      "author": "Franz Kafka",
+      "universality_scores": {
+        "ITER": 0,
+        "DECIDE": 0,
+        "EXIST": 0.1327,
+        "EVAL": 0,
+        "FEEL": 0,
+        "MODAL": 0,
+        "CAUSE": 0.0798,
+        "COMM": 0,
+        "RELATE": 0
+      },
+      "average_universality": 0.0236,
+      "language_validations": {
+        "en": {
+          "metrics": {
+            "dhatu_correlation": 0.9419,
+            "semantic_preservation": 0.05,
+            "linguistic_quality": 1.0,
+            "universality_score": 0.023611111111111114,
+            "perfection_percentage": 0.54
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        },
+        "de": {
+          "metrics": {
+            "dhatu_correlation": 0.9999,
+            "semantic_preservation": 0.35,
+            "linguistic_quality": 0.7429,
+            "universality_score": 0.023611111111111114,
+            "perfection_percentage": 0.6086
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": false,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        }
+      }
+    },
+    "dracula": {
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "universality_scores": {
+        "ITER": 0,
+        "DECIDE": 0.353,
+        "EXIST": 0,
+        "EVAL": 0.239,
+        "FEEL": 0,
+        "MODAL": 0.5304,
+        "CAUSE": 0.2829,
+        "COMM": 0,
+        "RELATE": 0.9382
+      },
+      "average_universality": 0.2604,
+      "language_validations": {
+        "en": {
+          "metrics": {
+            "dhatu_correlation": 0.9395,
+            "semantic_preservation": 0.05,
+            "linguistic_quality": 1.0,
+            "universality_score": 0.2603888888888889,
+            "perfection_percentage": 0.54
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        },
+        "fr": {
+          "metrics": {
+            "dhatu_correlation": 0.9061,
+            "semantic_preservation": 0.25,
+            "linguistic_quality": 0.76,
+            "universality_score": 0.2603888888888889,
+            "perfection_percentage": 0.572
+          },
+          "passed_thresholds": {
+            "dhatu_correlation": true,
+            "semantic_preservation": false,
+            "linguistic_quality": true,
+            "universality": false,
+            "perfection": false
+          },
+          "validation_status": "PARTIAL"
+        }
+      }
+    }
+  },
+  "global_metrics": {
+    "average_dhatu_correlation": 0.9502,
+    "average_semantic_preservation": 0.1364,
+    "average_linguistic_quality": 0.8951,
+    "average_universality_score": 0.3941,
+    "overall_perfection_score": 0.5536
+  },
+  "validation_summary": {
+    "passed_dhatu_correlation": 11,
+    "passed_semantic_preservation": 0,
+    "passed_linguistic_quality": 9,
+    "passed_universality": 1,
+    "achieved_perfection": 0
+  }
+}

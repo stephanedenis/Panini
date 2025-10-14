@@ -1,0 +1,73 @@
+{
+  "collection_date": "2025-09-24 18:50:38",
+  "collection_method": "direct_verified_urls",
+  "total_books": 8,
+  "successful_downloads": 8,
+  "total_bytes": 5339046,
+  "books_data": {
+    "2701": {
+      "success": true,
+      "title": "Moby Dick",
+      "author": "Melville, Herman",
+      "file_path": "data/gutenberg_direct_corpus/2701/2701.txt",
+      "file_size": 1256545,
+      "url": "https://www.gutenberg.org/files/2701/2701-0.txt"
+    },
+    "1342": {
+      "success": true,
+      "title": "Pride and Prejudice",
+      "author": "Austen, Jane",
+      "file_path": "data/gutenberg_direct_corpus/1342/1342.txt",
+      "file_size": 752583,
+      "url": "https://www.gutenberg.org/files/1342/1342-0.txt"
+    },
+    "84": {
+      "success": true,
+      "title": "Frankenstein",
+      "author": "Shelley, Mary",
+      "file_path": "data/gutenberg_direct_corpus/84/84.txt",
+      "file_size": 421633,
+      "url": "https://www.gutenberg.org/files/84/84-0.txt"
+    },
+    "35": {
+      "success": true,
+      "title": "The Time Machine",
+      "author": "Wells, H. G.",
+      "file_path": "data/gutenberg_direct_corpus/35/35.txt",
+      "file_size": 184747,
+      "url": "https://www.gutenberg.org/files/35/35-0.txt"
+    },
+    "1260": {
+      "success": true,
+      "title": "Jane Eyre",
+      "author": "Brontë, Charlotte",
+      "file_path": "data/gutenberg_direct_corpus/1260/1260.txt",
+      "file_size": 1065068,
+      "url": "https://www.gutenberg.org/files/1260/1260-0.txt"
+    },
+    "43": {
+      "success": true,
+      "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+      "author": "Stevenson, Robert Louis",
+      "file_path": "data/gutenberg_direct_corpus/43/43.txt",
+      "file_size": 141160,
+      "url": "https://www.gutenberg.org/files/43/43-0.txt"
+    },
+    "514": {
+      "success": true,
+      "title": "Little Women",
+      "author": "Alcott, Louisa May",
+      "file_path": "data/gutenberg_direct_corpus/514/514.txt",
+      "file_size": 1071220,
+      "url": "https://www.gutenberg.org/files/514/514-0.txt"
+    },
+    "174": {
+      "success": true,
+      "title": "The Picture of Dorian Gray",
+      "author": "Wilde, Oscar",
+      "file_path": "data/gutenberg_direct_corpus/174/174.txt",
+      "file_size": 446090,
+      "url": "https://www.gutenberg.org/files/174/174-0.txt"
+    }
+  }
+}

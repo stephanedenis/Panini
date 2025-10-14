@@ -1,0 +1,1411 @@
+{
+  "timestamp": "2025-09-27T13:45:00Z",
+  "detection_method": "automatic_scoring_v2.0",
+  "analysis_summary": {
+    "total_conflicts_analyzed": 154,
+    "critical_conflicts": 0,
+    "average_semantic_coherence": 0.39999999999999997,
+    "refinement_suggestions_generated": 0
+  },
+  "conflict_scores": [
+    {
+      "conflict_id": "incoherent_AMOUR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.8,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.67,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_COMMUNICATION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.8,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.67,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_JOIE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.8,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.67,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TRISTESSE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.8,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.67,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_PEUR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.8,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.67,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_MOUVEMENT",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.8,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.67,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_COMPRENDRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.8,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.67,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_APPRENDRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.8,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.67,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_MUSIQUE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.5,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.5800000000000001,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ART",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.5,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.5800000000000001,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ARCHITECTURE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.5,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.5800000000000001,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_NOSTALGIE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.5,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.5800000000000001,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_EUPHORIE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.5,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.5800000000000001,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_MÉLANCOLIE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.5,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.5800000000000001,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_PHILOSOPHIE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.5,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.5800000000000001,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_COLÈRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_EXPLORER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_EXISTENCE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_SENTIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_GUERRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_PARENT",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DÉGOÛT",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_LITTÉRATURE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_LIEU",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_PARTAGER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_INVENTER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DISTANCE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_NATION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_FUIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_BUT",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_GOUVERNER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_EMOTION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_IMAGINER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ILLUSION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_COGNITION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_RESSENTIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_REALISER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_POSSESSION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ÉTERNITÉ",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DESIRER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DANSER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_COMMANDER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_SOUFFRIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_GROUPE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_INSTRUMENT",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DOMINATION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_SE_SOUVENIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ARBRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_POISSON",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_VIVRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DESTRUCTION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_AIMER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONSOLER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DETRUIRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_SAISIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_SAVOIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_BEAU",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONSTRUIRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_PROXIMITÉ",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_OBSERVER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_SOLEIL",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ORGANISER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_FEU",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_RACONTER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CREATION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CHERCHER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_EXPLIQUER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_MORAL",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_MUR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_INQUIÉTUDE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DURÉE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ANIMAL",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_GOÛTER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_SATISFACTION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_LUNE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_AFFECTION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_INTIMIDER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_PERCEPTION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ACCUMULER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_HAIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ENSEIGNER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_SURPRISE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DEMEURER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_PAIX",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ARCHITECTURE_SEMANTIQUE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_STATISTIQUES_INTEGRATION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DICTIONNAIRE_UNIFIE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_GUIDE_UTILISATION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_REPRODUCTIBILITE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TITRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DESCRIPTION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_METHODOLOGIE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ATOMES_UNIVERSELS",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_RECONSTRUCTIONS_VALIDEES",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_COMPLETUDE_UNIVERSELLE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_IMPLICATIONS_MAJEURES",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONCLUSION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_METRIQUES_CONVERGENCE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DICTIONNAIRE_RECURSIF",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONCEPTS_NON_DEFINIS_ANALYSE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_IMPLICATIONS_PANLANG",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_VOIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ENTENDRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TOUCHER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_MARCHER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_MANGER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DORMIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_FAMILLE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_AMI",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ENNEMI",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_COMMUNAUTÉ",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_COOPÉRER",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_OBÉIR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_VÉRITÉ",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_BEAUTÉ",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_JUSTICE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_LIBERTÉ",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TEMPS",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CAUSE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_NARRATIF_GENERAL",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ACTION_DURATIVE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_EVALUATION_QUALITATIVE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_TEMPOREL",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_RELATION_CAUSALE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_OUVERTURE_CONTE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_OUVERTURE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_NARRATIF",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_ACTION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_TRANSFORMATION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_QUALITE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_JUGEMENT",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_DIALOGUE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_NARRATION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONTEXTE_SPATIAL",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TIMESTAMP",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_STATUS",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TEST_1_FR",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TEST_2_EN",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TEST_3_DE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_PERFORMANCE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_QUALITE_RESOLUTION",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_IMPACT_DICTIONNAIRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_CONCEPTS_INTEGRES",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_INTEGRATION_SUMMARY",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DETAILED_RESULTS",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_TRIPARTITE_PERFORMANCE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_DOMAINES",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_LANGUES",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_BASE_DONNEES",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.3,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.52,
+      "resolution_type": "high"
+    },
+    {
+      "conflict_id": "incoherent_ÉTOILE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.2,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.49000000000000005,
+      "resolution_type": "medium"
+    },
+    {
+      "conflict_id": "incoherent_FENÊTRE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.2,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.49000000000000005,
+      "resolution_type": "medium"
+    },
+    {
+      "conflict_id": "incoherent_RÉCIT",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.2,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.49000000000000005,
+      "resolution_type": "medium"
+    },
+    {
+      "conflict_id": "incoherent_LÉGENDE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.2,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.49000000000000005,
+      "resolution_type": "medium"
+    },
+    {
+      "conflict_id": "incoherent_RACINE",
+      "severity_raw": 0.8,
+      "semantic_coherence_score": 0.4,
+      "frequency_impact_score": 0.2,
+      "resolution_difficulty": 0.7,
+      "priority_score": 0.49000000000000005,
+      "resolution_type": "medium"
+    }
+  ],
+  "automatic_refinements": [],
+  "priority_actions": [
+    "Traiter immédiatement conflits CRITICAL (priorité >= 0.7)",
+    "Réviser définitions incohérentes majeures (AMOUR, MUSIQUE, etc.)",
+    "Ajouter dimensions contextuelles aux concepts sous-spécifiés",
+    "Tester raffinements sur corpus de validation"
+  ],
+  "methodology_notes": {
+    "coherence_scoring": "Basé sur patterns linguistiques et cohérence sémantique",
+    "frequency_weighting": "Concepts fréquents prioritaires pour impact utilisateur",
+    "difficulty_assessment": "Estimation complexité raffinement requis",
+    "confidence_levels": "Suggestions avec scores confiance pour validation"
+  }
+}

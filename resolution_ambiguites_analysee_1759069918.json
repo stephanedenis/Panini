@@ -1,0 +1,217 @@
+{
+  "timestamp": "2025-09-28T10:31:58Z",
+  "resolution_method": "intelligent_semantic_analysis_corrected_v1.1",
+  "summary": {
+    "total_priority_concepts_resolved": 22,
+    "average_decomposition_length": 2.6363636363636362,
+    "most_used_dhatu": "FEEL",
+    "overall_coherence": 0.8611111111111112
+  },
+  "category_analysis": {
+    "emotional_concepts": {
+      "count": 6,
+      "coherence_score": 0.8166666666666668,
+      "examples": {
+        "AMOUR": [
+          "FEEL",
+          "RELAT",
+          "EXIST"
+        ],
+        "JOIE": [
+          "FEEL",
+          "CREAT",
+          "EXIST"
+        ],
+        "TRISTESSE": [
+          "FEEL",
+          "DESTR"
+        ]
+      }
+    },
+    "creative_concepts": {
+      "count": 3,
+      "coherence_score": 0.8833333333333333,
+      "examples": {
+        "MUSIQUE": [
+          "CREAT",
+          "PERCEP",
+          "FEEL",
+          "MOVE"
+        ],
+        "ART": [
+          "CREAT",
+          "PERCEP",
+          "FEEL"
+        ],
+        "LITTÉRATURE": [
+          "CREAT",
+          "COMM",
+          "THINK",
+          "FEEL"
+        ]
+      }
+    },
+    "cognitive_concepts": {
+      "count": 3,
+      "coherence_score": 0.8833333333333333,
+      "examples": {
+        "COMPRENDRE": [
+          "THINK",
+          "PERCEP",
+          "RELAT"
+        ],
+        "APPRENDRE": [
+          "THINK",
+          "PERCEP",
+          "EXIST"
+        ],
+        "EXPLORER": [
+          "MOVE",
+          "PERCEP",
+          "THINK"
+        ]
+      }
+    }
+  },
+  "dhatu_usage_statistics": {
+    "FEEL": 12,
+    "RELAT": 6,
+    "EXIST": 7,
+    "CREAT": 5,
+    "DESTR": 5,
+    "PERCEP": 12,
+    "MOVE": 5,
+    "COMM": 2,
+    "THINK": 4
+  },
+  "complexity_distribution": {
+    "3": 11,
+    "2": 5,
+    "4": 3,
+    "1": 3
+  },
+  "detailed_resolutions": {
+    "AMOUR": [
+      "FEEL",
+      "RELAT",
+      "EXIST"
+    ],
+    "JOIE": [
+      "FEEL",
+      "CREAT",
+      "EXIST"
+    ],
+    "TRISTESSE": [
+      "FEEL",
+      "DESTR"
+    ],
+    "PEUR": [
+      "FEEL",
+      "DESTR",
+      "PERCEP"
+    ],
+    "COLÈRE": [
+      "FEEL",
+      "DESTR"
+    ],
+    "DÉGOÛT": [
+      "FEEL",
+      "DESTR",
+      "PERCEP"
+    ],
+    "MUSIQUE": [
+      "CREAT",
+      "PERCEP",
+      "FEEL",
+      "MOVE"
+    ],
+    "ART": [
+      "CREAT",
+      "PERCEP",
+      "FEEL"
+    ],
+    "LITTÉRATURE": [
+      "CREAT",
+      "COMM",
+      "THINK",
+      "FEEL"
+    ],
+    "COMPRENDRE": [
+      "THINK",
+      "PERCEP",
+      "RELAT"
+    ],
+    "APPRENDRE": [
+      "THINK",
+      "PERCEP",
+      "EXIST"
+    ],
+    "EXPLORER": [
+      "MOVE",
+      "PERCEP",
+      "THINK"
+    ],
+    "PARENT": [
+      "RELAT",
+      "EXIST",
+      "CREAT",
+      "FEEL"
+    ],
+    "GUERRE": [
+      "DESTR",
+      "RELAT",
+      "MOVE"
+    ],
+    "FAMILLE": [
+      "RELAT",
+      "EXIST",
+      "FEEL"
+    ],
+    "EXISTENCE": [
+      "EXIST"
+    ],
+    "VIVRE": [
+      "EXIST",
+      "MOVE",
+      "PERCEP"
+    ],
+    "MOUVEMENT": [
+      "MOVE"
+    ],
+    "SENTIR": [
+      "PERCEP",
+      "FEEL"
+    ],
+    "VOIR": [
+      "PERCEP"
+    ],
+    "ENTENDRE": [
+      "PERCEP",
+      "COMM"
+    ],
+    "TOUCHER": [
+      "PERCEP",
+      "RELAT"
+    ]
+  },
+  "validation_results": {
+    "concepts_with_high_coherence": [
+      "AMOUR",
+      "JOIE",
+      "PEUR",
+      "MUSIQUE",
+      "ART",
+      "LITTÉRATURE",
+      "COMPRENDRE",
+      "APPRENDRE",
+      "EXPLORER",
+      "PARENT",
+      "EXISTENCE",
+      "MOUVEMENT",
+      "SENTIR",
+      "VOIR",
+      "ENTENDRE"
+    ],
+    "concepts_needing_refinement": []
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "timestamp": "2025-09-28T11:28:28Z",
+  "validation_type": "Critical Concepts - Panksepp Migration",
+  "concepts_validated": [
+    "AMOUR",
+    "JOIE",
+    "TRISTESSE",
+    "COLÈRE",
+    "PEUR"
+  ],
+  "validation_results": {
+    "AMOUR": {
+      "concept": "AMOUR",
+      "scores": {
+        "primary_dhatu": 1.0,
+        "composition": 1.0,
+        "semantic": 1.0
+      },
+      "issues": [],
+      "overall_score": 1.0,
+      "details": {
+        "expected": {
+          "expected_primary_dhatu": "CARE",
+          "expected_composition": [
+            "CARE",
+            "RELAT",
+            "EXIST"
+          ],
+          "panksepp_system": "CARE",
+          "neural_basis": "Oxytocin, vasopressin, PFC",
+          "validation_criteria": "Amour = soin + relation + existence"
+        },
+        "actual": {
+          "old_decomposition": [
+            "FEEL",
+            "RELAT",
+            "EXIST"
+          ],
+          "new_decomposition": [
+            "CARE",
+            "RELAT",
+            "EXIST"
+          ],
+          "panksepp_system": "CARE",
+          "migration_rationale": "FEEL remplacé par CARE - Soin, tendresse, empathie, bienveillance"
+        },
+        "neural_validation": "Oxytocin, vasopressin, PFC"
+      }
+    },
+    "JOIE": {
+      "concept": "JOIE",
+      "scores": {
+        "primary_dhatu": 1.0,
+        "composition": 1.0,
+        "semantic": 1.0
+      },
+      "issues": [],
+      "overall_score": 1.0,
+      "details": {
+        "expected": {
+          "expected_primary_dhatu": "PLAY",
+          "expected_composition": [
+            "PLAY",
+            "CREAT",
+            "EXIST"
+          ],
+          "panksepp_system": "PLAY",
+          "neural_basis": "Cannabinoids, PFC, cerebellum",
+          "validation_criteria": "Joie = jeu + création + existence"
+        },
+        "actual": {
+          "old_decomposition": [
+            "FEEL",
+            "CREAT",
+            "EXIST"
+          ],
+          "new_decomposition": [
+            "PLAY",
+            "CREAT",
+            "EXIST"
+          ],
+          "panksepp_system": "PLAY",
+          "migration_rationale": "FEEL remplacé par PLAY - Jeu, joie, sociabilité, plaisir"
+        },
+        "neural_validation": "Cannabinoids, PFC, cerebellum"
+      }
+    },
+    "TRISTESSE": {
+      "concept": "TRISTESSE",
+      "scores": {
+        "primary_dhatu": 1.0,
+        "composition": 1.0,
+        "semantic": 1.0
+      },
+      "issues": [],
+      "overall_score": 1.0,
+      "details": {
+        "expected": {
+          "expected_primary_dhatu": "GRIEF",
+          "expected_composition": [
+            "GRIEF",
+            "DESTR"
+          ],
+          "panksepp_system": "GRIEF",
+          "neural_basis": "Opioid system, anterior cingulate",
+          "validation_criteria": "Tristesse = chagrin + destruction (perte)"
+        },
+        "actual": {
+          "old_decomposition": [
+            "FEEL",
+            "DESTR"
+          ],
+          "new_decomposition": [
+            "GRIEF",
+            "DESTR"
+          ],
+          "panksepp_system": "GRIEF",
+          "migration_rationale": "FEEL remplacé par GRIEF - Détresse séparation, chagrin, tristesse"
+        },
+        "neural_validation": "Opioid system, anterior cingulate"
+      }
+    },
+    "COLÈRE": {
+      "concept": "COLÈRE",
+      "scores": {
+        "primary_dhatu": 1.0,
+        "composition": 1.0,
+        "semantic": 1.0
+      },
+      "issues": [],
+      "overall_score": 1.0,
+      "details": {
+        "expected": {
+          "expected_primary_dhatu": "RAGE",
+          "expected_composition": [
+            "RAGE",
+            "DESTR"
+          ],
+          "panksepp_system": "RAGE",
+          "neural_basis": "Amygdala, hypothalamus, PAG",
+          "validation_criteria": "Colère = rage + destruction"
+        },
+        "actual": {
+          "old_decomposition": [
+            "FEEL",
+            "DESTR"
+          ],
+          "new_decomposition": [
+            "RAGE",
+            "DESTR"
+          ],
+          "panksepp_system": "RAGE",
+          "migration_rationale": "FEEL remplacé par RAGE - Colère, frustration face aux obstacles"
+        },
+        "neural_validation": "Amygdala, hypothalamus, PAG"
+      }
+    },
+    "PEUR": {
+      "concept": "PEUR",
+      "scores": {
+        "primary_dhatu": 1.0,
+        "composition": 0.6666666666666666,
+        "semantic": 1.0
+      },
+      "issues": [
+        "Composition: attendue {'PERCEP', 'FEAR'}, obtenue {'PERCEP', 'FEAR', 'DESTR'}"
+      ],
+      "overall_score": 0.9,
+      "details": {
+        "expected": {
+          "expected_primary_dhatu": "FEAR",
+          "expected_composition": [
+            "FEAR",
+            "PERCEP"
+          ],
+          "panksepp_system": "FEAR",
+          "neural_basis": "Amygdala, hippocampus, cingulate",
+          "validation_criteria": "Peur = peur + perception (menace)"
+        },
+        "actual": {
+          "old_decomposition": [
+            "FEEL",
+            "DESTR",
+            "PERCEP"
+          ],
+          "new_decomposition": [
+            "FEAR",
+            "DESTR",
+            "PERCEP"
+          ],
+          "panksepp_system": "FEAR",
+          "migration_rationale": "FEEL remplacé par FEAR - Peur, anxiété, évitement des menaces"
+        },
+        "neural_validation": "Amygdala, hippocampus, cingulate"
+      }
+    }
+  },
+  "overall_score": 0.9800000000000001,
+  "issues_detected": [],
+  "recommendations": [
+    "✅ Migration excellente - Tous concepts critiques validés",
+    "✨ Tester nouvelles combinaisons créatives (10 disponibles)"
+  ]
+}

@@ -1,0 +1,675 @@
+{
+  "metadata": {
+    "version": "RAFFINÉ-v3.0",
+    "timestamp": "2025-09-27 14:45:38",
+    "source_analysis": "analyse_ambiguites_dictionnaire_20250927_134112.json",
+    "refinement_count": 20,
+    "methodology": "ambiguity_resolution_with_contextual_enrichment"
+  },
+  "concepts_raffines": {
+    "AMOUR": {
+      "original_name": "AMOUR",
+      "refined_atoms": [
+        "EMOTION",
+        "COMMUNICATION",
+        "POSSESSION",
+        "CREATION"
+      ],
+      "contextual_dimensions": {
+        "romantic": {
+          "weight": 0.4,
+          "markers": [
+            "passion",
+            "intimité",
+            "exclusivité"
+          ]
+        },
+        "familial": {
+          "weight": 0.3,
+          "markers": [
+            "protection",
+            "inconditionalité",
+            "permanence"
+          ]
+        },
+        "platonique": {
+          "weight": 0.2,
+          "markers": [
+            "admiration",
+            "respect",
+            "spiritualité"
+          ]
+        },
+        "universel": {
+          "weight": 0.1,
+          "markers": [
+            "compassion",
+            "humanité",
+            "altruisme"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "positive": 0.8,
+        "intensity": 0.9,
+        "complexity": 0.7,
+        "universality": 0.8
+      },
+      "pragmatic_constraints": [
+        "Nécessite réciprocité contextuelle",
+        "Intensité variable selon relation",
+        "Aspectuel: peut être processuel ou statique",
+        "Culturellement variable dans expression"
+      ],
+      "usage_patterns": {
+        "romantic": [
+          "aimer passionnément",
+          "être amoureux de",
+          "éprouver de l'amour"
+        ],
+        "familial": [
+          "amour maternel",
+          "amour filial",
+          "amour fraternel"
+        ],
+        "platonique": [
+          "amour spirituel",
+          "amour pur",
+          "amour désintéressé"
+        ],
+        "universel": [
+          "amour de l'humanité",
+          "amour universel",
+          "amour divin"
+        ]
+      },
+      "confidence_score": 0.9,
+      "linguistic_justification": "Remplacement DESTRUCTION par CREATION + ajout dimensions contextuelles multiples pour capturer richesse sémantique"
+    },
+    "COMMUNICATION": {
+      "original_name": "COMMUNICATION",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de COMMUNICATION"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "JOIE": {
+      "original_name": "JOIE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de JOIE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "TRISTESSE": {
+      "original_name": "TRISTESSE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de TRISTESSE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "PEUR": {
+      "original_name": "PEUR",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de PEUR"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "MOUVEMENT": {
+      "original_name": "MOUVEMENT",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de MOUVEMENT"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "COMPRENDRE": {
+      "original_name": "COMPRENDRE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de COMPRENDRE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "APPRENDRE": {
+      "original_name": "APPRENDRE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de APPRENDRE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "MUSIQUE": {
+      "original_name": "MUSIQUE",
+      "refined_atoms": [
+        "COMMUNICATION",
+        "CREATION",
+        "EMOTION",
+        "MOUVEMENT"
+      ],
+      "contextual_dimensions": {
+        "performance": {
+          "weight": 0.3,
+          "markers": [
+            "exécution",
+            "virtuosité",
+            "live"
+          ]
+        },
+        "composition": {
+          "weight": 0.2,
+          "markers": [
+            "création",
+            "harmonie",
+            "structure"
+          ]
+        },
+        "reception": {
+          "weight": 0.3,
+          "markers": [
+            "écoute",
+            "émotion",
+            "interprétation"
+          ]
+        },
+        "cultural": {
+          "weight": 0.2,
+          "markers": [
+            "tradition",
+            "identité",
+            "social"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "positive": 0.7,
+        "intensity": 0.6,
+        "complexity": 0.8,
+        "universality": 0.9
+      },
+      "pragmatic_constraints": [
+        "Nécessite support/medium",
+        "Temporellement structurée",
+        "Socialement partageable",
+        "Techniquement produire"
+      ],
+      "usage_patterns": {
+        "performance": [
+          "jouer de la musique",
+          "interpréter",
+          "exécuter"
+        ],
+        "composition": [
+          "composer",
+          "créer",
+          "arranger"
+        ],
+        "reception": [
+          "écouter",
+          "apprécier",
+          "ressentir"
+        ],
+        "cultural": [
+          "tradition musicale",
+          "identité culturelle",
+          "patrimoine"
+        ]
+      },
+      "confidence_score": 0.8,
+      "linguistic_justification": "Ajout COMMUNICATION/CREATION/EMOTION pour capturer art complet vs DESTRUCTION/MOUVEMENT réducteur"
+    },
+    "ART": {
+      "original_name": "ART",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de ART"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "ARCHITECTURE": {
+      "original_name": "ARCHITECTURE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de ARCHITECTURE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "NOSTALGIE": {
+      "original_name": "NOSTALGIE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de NOSTALGIE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "EUPHORIE": {
+      "original_name": "EUPHORIE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de EUPHORIE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "MÉLANCOLIE": {
+      "original_name": "MÉLANCOLIE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de MÉLANCOLIE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "PHILOSOPHIE": {
+      "original_name": "PHILOSOPHIE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de PHILOSOPHIE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "COLÈRE": {
+      "original_name": "COLÈRE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de COLÈRE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "EXPLORER": {
+      "original_name": "EXPLORER",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de EXPLORER"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "EXISTENCE": {
+      "original_name": "EXISTENCE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de EXISTENCE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "SENTIR": {
+      "original_name": "SENTIR",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de SENTIR"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    },
+    "GUERRE": {
+      "original_name": "GUERRE",
+      "refined_atoms": [
+        "CONTEXT"
+      ],
+      "contextual_dimensions": {
+        "generic": {
+          "weight": 1.0,
+          "markers": [
+            "contextuel",
+            "variable"
+          ]
+        }
+      },
+      "connotative_aspects": {
+        "neutral": 0.5
+      },
+      "pragmatic_constraints": [
+        "Nécessite spécification contextuelle"
+      ],
+      "usage_patterns": {
+        "generic": [
+          "utilisation de GUERRE"
+        ]
+      },
+      "confidence_score": 0.4,
+      "linguistic_justification": "Raffinement générique avec ajout dimension contextuelle"
+    }
+  },
+  "operations_applied": [],
+  "validation_tests": []
+}

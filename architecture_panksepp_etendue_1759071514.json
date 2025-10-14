@@ -1,0 +1,166 @@
+{
+  "timestamp": "2025-09-28T10:58:34Z",
+  "model_name": "Extended Panksepp FEEL Architecture v2.0",
+  "total_systems": 11,
+  "philosophy": "Remplacement du dhātu générique FEEL par des primitives émotionnelles neurobiologiquement fondées",
+  "specialized_emotional_dhatus": {
+    "SEEK": {
+      "replaces": "FEEL (aspect exploration)",
+      "concepts_covered": [
+        "curiosité",
+        "exploration",
+        "apprentissage",
+        "découverte"
+      ],
+      "combinations_frequent": [
+        "SEEK + PERCEP",
+        "SEEK + THINK",
+        "SEEK + MOVE"
+      ]
+    },
+    "RAGE": {
+      "replaces": "FEEL (aspect destructeur)",
+      "concepts_covered": [
+        "colère",
+        "frustration",
+        "irritation",
+        "agression"
+      ],
+      "combinations_frequent": [
+        "RAGE + DESTR",
+        "RAGE + MOVE"
+      ]
+    },
+    "FEAR": {
+      "replaces": "FEEL (aspect protecteur)",
+      "concepts_covered": [
+        "peur",
+        "anxiété",
+        "prudence",
+        "évitement"
+      ],
+      "combinations_frequent": [
+        "FEAR + PERCEP",
+        "FEAR + MOVE"
+      ]
+    },
+    "CARE": {
+      "replaces": "FEEL (aspect relationnel positif)",
+      "concepts_covered": [
+        "amour",
+        "tendresse",
+        "empathie",
+        "protection"
+      ],
+      "combinations_frequent": [
+        "CARE + RELAT",
+        "CARE + EXIST"
+      ]
+    },
+    "GRIEF": {
+      "replaces": "FEEL (aspect perte)",
+      "concepts_covered": [
+        "tristesse",
+        "chagrin",
+        "deuil",
+        "nostalgie"
+      ],
+      "combinations_frequent": [
+        "GRIEF + RELAT",
+        "GRIEF + EXIST"
+      ]
+    },
+    "PLAY": {
+      "replaces": "FEEL (aspect créatif social)",
+      "concepts_covered": [
+        "joie",
+        "jeu",
+        "plaisir",
+        "amusement"
+      ],
+      "combinations_frequent": [
+        "PLAY + CREAT",
+        "PLAY + RELAT",
+        "PLAY + MOVE"
+      ]
+    }
+  },
+  "revised_concept_mappings": {
+    "AMOUR": [
+      "CARE",
+      "RELAT",
+      "EXIST"
+    ],
+    "JOIE": [
+      "PLAY",
+      "CREAT",
+      "EXIST"
+    ],
+    "TRISTESSE": [
+      "GRIEF",
+      "DESTR"
+    ],
+    "PEUR": [
+      "FEAR",
+      "PERCEP"
+    ],
+    "COLÈRE": [
+      "RAGE",
+      "DESTR"
+    ],
+    "DÉGOÛT": [
+      "DISGUST",
+      "PERCEP"
+    ],
+    "CURIOSITÉ": [
+      "SEEK",
+      "PERCEP"
+    ],
+    "EMPATHIE": [
+      "CARE",
+      "PERCEP",
+      "RELAT"
+    ]
+  },
+  "creative_combinations": {
+    "NOSTALGIE": [
+      "GRIEF",
+      "SEEK",
+      "EXIST"
+    ],
+    "ADMIRATION": [
+      "SEEK",
+      "CARE",
+      "PERCEP"
+    ],
+    "JALOUSIE": [
+      "RAGE",
+      "FEAR",
+      "CARE"
+    ],
+    "FIERTÉ": [
+      "DOMINANCE",
+      "CARE",
+      "EXIST"
+    ],
+    "HONTE": [
+      "SUBMISSION",
+      "FEAR",
+      "EXIST"
+    ]
+  },
+  "advantages": [
+    "Base neurobiologique solide (Panksepp validé)",
+    "Spécificité émotionnelle accrue",
+    "Résolution naturelle des ambiguïtés FEEL",
+    "Possibilités compositionnelles riches",
+    "Évolutivité développementale",
+    "Cohérence avec neurosciences affectives"
+  ],
+  "implementation_strategy": {
+    "phase_1": "Remplacer FEEL dans les 6 concepts critiques",
+    "phase_2": "Étendre à tous les concepts émotionnels",
+    "phase_3": "Intégrer les 4 systèmes étendus",
+    "phase_4": "Validation cohérence globale"
+  }
+}

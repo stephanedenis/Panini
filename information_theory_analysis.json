@@ -1,0 +1,66 @@
+{
+  "shannon": {
+    "core_principles": [
+      "H(X) = -Σ p(x) log p(x) (entropie)",
+      "Information = -log₂(probabilité)",
+      "Capacité canal = max I(X;Y)",
+      "Compression optimale ≈ entropie source"
+    ],
+    "implications_panini": [
+      "Universaux sémantiques = sources information",
+      "Composition fractale = codage hiérarchique",
+      "Gradations = probabilités universaux",
+      "Compression Panini = approche entropie sémantique"
+    ]
+  },
+  "huffman": {
+    "core_principles": [
+      "Codage variable longueur optimale",
+      "Symboles fréquents = codes courts",
+      "Arbre binaire construction bottom-up",
+      "Compression sans perte garantie"
+    ],
+    "implications_panini": [
+      "Universaux fréquents = représentation courte",
+      "Hiérarchie fractale = arbre Huffman sémantique",
+      "Gradation continue = codage variable adaptatif",
+      "Restitution identique garantie"
+    ]
+  },
+  "boltzmann": {
+    "core_principles": [
+      "S = k ln Ω (entropie statistique)",
+      "États microscopiques → propriétés macroscopiques",
+      "Principe maximum entropie",
+      "Distribution Boltzmann-Gibbs"
+    ],
+    "implications_panini": [
+      "Universaux = états microsémantiques",
+      "Sens émergent = propriétés macrosémantiques",
+      "Gradations = distribution Boltzmann sémantique",
+      "Température = paramètre fluidité sémantique"
+    ]
+  },
+  "compression": {
+    "lossless_techniques": {
+      "LZ77/LZ78": "Dictionnaire dynamique - parallèle composition fractale",
+      "DEFLATE": "Huffman + LZ77 - modèle Panini hybride",
+      "LZMA": "Chaînes Markov - gradations probabilistes",
+      "Arithmetic": "Codage arithmétique - gradations continues"
+    },
+    "lossy_techniques": {
+      "DCT": "Transformation fréquentielle - universaux orthogonaux",
+      "Wavelet": "Multi-résolution - fractales Panini",
+      "Vector Quantization": "Clustering - universaux prototypiques",
+      "Neural Compression": "Apprentissage - universaux émergents"
+    }
+  },
+  "panini_unified_theory": {
+    "premise": "Universaux sémantiques comme alphabet information universel",
+    "encoding": "Composition fractale = codage hiérarchique optimal",
+    "gradation": "Gradations continues = distributions probabilistes sémantiques",
+    "compression": "Panini = compression sémantique universelle lossless",
+    "information_measure": "I_panini(concept) = -log₂(P(universaux|concept))",
+    "optimal_representation": "Minimiser I_panini sous contrainte restitution parfaite"
+  }
+}

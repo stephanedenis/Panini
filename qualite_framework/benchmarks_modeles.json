@@ -1,0 +1,76 @@
+{
+  "panlang_feel_generique": {
+    "model_id": "panlang_feel_generique",
+    "description": "Architecture PanLang originale avec dhātu FEEL générique",
+    "architecture_features": {
+      "emotional_dhatu": [
+        "FEEL"
+      ],
+      "functional_dhatu": [
+        "MOVE",
+        "CREAT",
+        "PERCEP",
+        "THINK",
+        "RELAT",
+        "EXIST",
+        "DESTR"
+      ],
+      "total_dhatu": 8,
+      "composition_rules": "basic",
+      "validation_method": "linguistic"
+    },
+    "timestamp": "2025-09-27T00:00:00Z"
+  },
+  "panlang_panksepp_actuel": {
+    "model_id": "panlang_panksepp_actuel",
+    "description": "Architecture actuelle avec 7 dhātu Panksepp + 6 fonctionnels",
+    "architecture_features": {
+      "emotional_dhatu": [
+        "SEEK",
+        "RAGE",
+        "FEAR",
+        "LUST",
+        "CARE",
+        "GRIEF",
+        "PLAY"
+      ],
+      "functional_dhatu": [
+        "MOVE",
+        "CREAT",
+        "PERCEP",
+        "THINK",
+        "RELAT",
+        "EXIST",
+        "DESTR"
+      ],
+      "total_dhatu": 13,
+      "composition_rules": "neurobiological_constraints",
+      "antagonism_detection": true,
+      "oxymoron_generation": true,
+      "validation_method": "multilevel"
+    },
+    "timestamp": "2025-09-28T12:00:00Z"
+  },
+  "wordnet_conceptnet": {
+    "model_id": "wordnet_conceptnet",
+    "description": "Référence WordNet + ConceptNet pour sémantique",
+    "architecture_features": {
+      "approach": "graph_semantic",
+      "concepts_count": "~100000",
+      "relations_count": "~1000000",
+      "multilingual_support": "limited"
+    },
+    "timestamp": "2025-01-01T00:00:00Z"
+  },
+  "emotion_models_combined": {
+    "model_id": "emotion_models_combined",
+    "description": "Combinaison meilleurs modèles émotionnels (Russell + Panksepp + Ekman)",
+    "architecture_features": {
+      "emotional_dimensions": "valence_arousal_dominance",
+      "basic_emotions": "anger_fear_joy_sadness_disgust_surprise",
+      "neurobiological_basis": "mixed",
+      "cultural_validation": "western_focused"
+    },
+    "timestamp": "2025-01-01T00:00:00Z"
+  }
+}

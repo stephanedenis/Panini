@@ -1,0 +1,93 @@
+{
+  "test_results": [
+    {
+      "test_id": 1,
+      "original_length": 75,
+      "compressed_length": 916,
+      "reconstructed_length": 75,
+      "compression_ratio": 0.08187772925764192,
+      "reconstruction_fidelity": 1.0,
+      "is_perfect": false,
+      "processing_time": 0.00019407272338867188,
+      "content_preserved": true
+    },
+    {
+      "test_id": 2,
+      "original_length": 84,
+      "compressed_length": 992,
+      "reconstructed_length": 84,
+      "compression_ratio": 0.0846774193548387,
+      "reconstruction_fidelity": 1.0,
+      "is_perfect": false,
+      "processing_time": 0.00018787384033203125,
+      "content_preserved": true
+    },
+    {
+      "test_id": 3,
+      "original_length": 76,
+      "compressed_length": 920,
+      "reconstructed_length": 76,
+      "compression_ratio": 0.08260869565217391,
+      "reconstruction_fidelity": 1.0,
+      "is_perfect": false,
+      "processing_time": 0.0001652240753173828,
+      "content_preserved": true
+    },
+    {
+      "test_id": 4,
+      "original_length": 75,
+      "compressed_length": 888,
+      "reconstructed_length": 75,
+      "compression_ratio": 0.08445945945945946,
+      "reconstruction_fidelity": 1.0,
+      "is_perfect": false,
+      "processing_time": 0.0001533031463623047,
+      "content_preserved": true
+    },
+    {
+      "test_id": 5,
+      "original_length": 81,
+      "compressed_length": 844,
+      "reconstructed_length": 81,
+      "compression_ratio": 0.09597156398104266,
+      "reconstruction_fidelity": 1.0,
+      "is_perfect": false,
+      "processing_time": 0.000152587890625,
+      "content_preserved": true
+    },
+    {
+      "test_id": 6,
+      "original_length": 78,
+      "compressed_length": 1012,
+      "reconstructed_length": 78,
+      "compression_ratio": 0.07707509881422925,
+      "reconstruction_fidelity": 1.0,
+      "is_perfect": false,
+      "processing_time": 0.00017142295837402344,
+      "content_preserved": true
+    },
+    {
+      "test_id": 7,
+      "original_length": 86,
+      "compressed_length": 1046,
+      "reconstructed_length": 86,
+      "compression_ratio": 0.08221797323135756,
+      "reconstruction_fidelity": 1.0,
+      "is_perfect": false,
+      "processing_time": 0.00015807151794433594,
+      "content_preserved": true
+    }
+  ],
+  "performance_summary": {
+    "total_operations": 7,
+    "average_compression_ratio": 0.0841268485358205,
+    "average_fidelity": 0.0,
+    "average_processing_time": 0.0012941360473632812,
+    "perfect_reconstructions": 0,
+    "perfect_reconstruction_rate": 0.0,
+    "session_duration": 0.01438760757446289,
+    "unified_cache_size": 0
+  },
+  "timestamp": "2025-09-24T20:24:57.647909",
+  "status": "AUTONOMOUS_EXECUTION_COMPLETED"
+}
