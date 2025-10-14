@@ -1,6 +1,39 @@
-[submodule "copilotage/shared"]
-	path = copilotage/shared
+[submodule "research"]
+	path = research
+	url = https://github.com/stephanedenis/Panini-Research.git
+[submodule "shared/copilotage"]
+	path = shared/copilotage
 	url = https://github.com/stephanedenis/Panini-CopilotageShared.git
-[submodule "PaniniFS-Research"]
-	path = PaniniFS-Research
-	url = ssh://git@github.com/stephanedenis/Panini-Research.git
+[submodule "modules/infrastructure/reactive"]
+	path = modules/infrastructure/reactive
+	url = https://github.com/stephanedenis/Panini-UltraReactive.git
+[submodule "modules/infrastructure/autonomous"]
+	path = modules/infrastructure/autonomous
+	url = https://github.com/stephanedenis/Panini-AutonomousMissions.git
+[submodule "modules/core/semantic"]
+	path = modules/core/semantic
+	url = https://github.com/stephanedenis/Panini-SemanticCore.git
+[submodule "modules/services/colab"]
+	path = modules/services/colab
+	url = https://github.com/stephanedenis/Panini-CoLabController.git
+[submodule "modules/orchestration/execution"]
+	path = modules/orchestration/execution
+	url = https://github.com/stephanedenis/Panini-ExecutionOrchestrator.git
+[submodule "modules/services/datasets"]
+	path = modules/services/datasets
+	url = https://github.com/stephanedenis/Panini-DatasetsIngestion.git
+[submodule "modules/services/publication"]
+	path = modules/services/publication
+	url = https://github.com/stephanedenis/Panini-PublicationEngine.git
+[submodule "shared/attribution"]
+	path = shared/attribution
+	url = https://github.com/stephanedenis/Panini-AttributionRegistry.git
+[submodule "modules/core/filesystem"]
+	path = modules/core/filesystem
+	url = https://github.com/stephanedenis/Panini-FS.git
+[submodule "shared/speckit"]
+	path = shared/speckit
+	url = https://github.com/stephanedenis/Panini-SpecKit-Shared.git
+[submodule "modules/orchestration/cloud"]
+	path = modules/orchestration/cloud
+	url = https://github.com/stephanedenis/Panini-CloudOrchestrator.git
