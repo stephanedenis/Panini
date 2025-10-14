@@ -1,6 +1,6 @@
 [submodule "copilotage/shared"]
 	path = copilotage/shared
-	url = https://github.com/stephanedenis/PaniniFS-CopilotageShared.git
+	url = https://github.com/stephanedenis/Panini-CopilotageShared.git
 [submodule "PaniniFS-Research"]
 	path = PaniniFS-Research
-	url = ssh://git@github.com/stephanedenis/PaniniFS-Research.git
+	url = ssh://git@github.com/stephanedenis/Panini-Research.git
