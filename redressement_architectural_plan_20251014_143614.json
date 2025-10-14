@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "created": "2025-10-14T14:36:14.130440",
+    "version": "1.0",
+    "scope": "Complete Panini ecosystem architectural redressing"
+  },
+  "current_state": {
+    "repositories": {
+      "PaniniFS": {
+        "current_name": "PaniniFS",
+        "target_name": "Panini-FS",
+        "path": "/home/stephane/GitHub/PaniniFS",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "ssh://git@github.com/stephanedenis/Panini-Gest.git"
+      },
+      "PaniniFS-CopilotageShared": {
+        "current_name": "PaniniFS-CopilotageShared",
+        "target_name": "Panini-CopilotageShared",
+        "path": "/home/stephane/GitHub/PaniniFS-CopilotageShared",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "ssh://git@github.com/stephanedenis/PaniniFS-CopilotageShared.git"
+      },
+      "PaniniFS-AttributionRegistry": {
+        "current_name": "PaniniFS-AttributionRegistry",
+        "target_name": "Panini-AttributionRegistry",
+        "path": "/home/stephane/GitHub/PaniniFS-AttributionRegistry",
+        "exists": true,
+        "has_git": true,
+        "has_readme": false,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-AttributionRegistry.git"
+      },
+      "PaniniFS-DatasetsIngestion": {
+        "current_name": "PaniniFS-DatasetsIngestion",
+        "target_name": "Panini-DatasetsIngestion",
+        "path": "/home/stephane/GitHub/PaniniFS-DatasetsIngestion",
+        "exists": true,
+        "has_git": true,
+        "has_readme": false,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-DatasetsIngestion.git"
+      },
+      "Panini-Gest": {
+        "current_name": "Panini-Gest",
+        "target_name": "Panini-Gest",
+        "path": "/home/stephane/GitHub/Panini-Gest",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "CONVERT_TO_SUBMODULE",
+        "remote_url": "unknown"
+      },
+      "PaniniFS-ExecutionOrchestrator": {
+        "current_name": "PaniniFS-ExecutionOrchestrator",
+        "target_name": "Panini-ExecutionOrchestrator",
+        "path": "/home/stephane/GitHub/PaniniFS-ExecutionOrchestrator",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-ExecutionOrchestrator.git"
+      },
+      "PaniniFS-UltraReactive": {
+        "current_name": "PaniniFS-UltraReactive",
+        "target_name": "Panini-UltraReactive",
+        "path": "/home/stephane/GitHub/PaniniFS-UltraReactive",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-UltraReactive.git"
+      },
+      "PaniniFS-PublicationEngine": {
+        "current_name": "PaniniFS-PublicationEngine",
+        "target_name": "Panini-PublicationEngine",
+        "path": "/home/stephane/GitHub/PaniniFS-PublicationEngine",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-PublicationEngine.git"
+      },
+      "PaniniFS-SemanticCore": {
+        "current_name": "PaniniFS-SemanticCore",
+        "target_name": "Panini-SemanticCore",
+        "path": "/home/stephane/GitHub/PaniniFS-SemanticCore",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-SemanticCore.git"
+      },
+      "PaniniFS-AutonomousMissions": {
+        "current_name": "PaniniFS-AutonomousMissions",
+        "target_name": "Panini-AutonomousMissions",
+        "path": "/home/stephane/GitHub/PaniniFS-AutonomousMissions",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-AutonomousMissions.git"
+      },
+      "PaniniFS-CoLabController": {
+        "current_name": "PaniniFS-CoLabController",
+        "target_name": "Panini-CoLabController",
+        "path": "/home/stephane/GitHub/PaniniFS-CoLabController",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-CoLabController.git"
+      },
+      "PaniniFS-CloudOrchestrator": {
+        "current_name": "PaniniFS-CloudOrchestrator",
+        "target_name": "Panini-CloudOrchestrator",
+        "path": "/home/stephane/GitHub/PaniniFS-CloudOrchestrator",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-CloudOrchestrator.git"
+      },
+      "Panini": {
+        "current_name": "Panini",
+        "target_name": "Panini",
+        "path": "/home/stephane/GitHub/Panini",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "KEEP_AS_PARENT",
+        "remote_url": "ssh://git@github.com/stephanedenis/Panini.git"
+      },
+      "Panini-OntoWave": {
+        "current_name": "Panini-OntoWave",
+        "target_name": "Panini-OntoWave",
+        "path": "/home/stephane/GitHub/Panini-OntoWave",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "CONVERT_TO_SUBMODULE",
+        "remote_url": "ssh://git@github.com/stephanedenis/OntoWave.git"
+      },
+      "PaniniFS-SpecKit-Shared": {
+        "current_name": "PaniniFS-SpecKit-Shared",
+        "target_name": "Panini-SpecKit-Shared",
+        "path": "/home/stephane/GitHub/PaniniFS-SpecKit-Shared",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "RENAME_AND_SUBMODULE",
+        "remote_url": "git@github.com:stephanedenis/PaniniFS-SpecKit-Shared.git"
+      },
+      "Panini-Research": {
+        "current_name": "Panini-Research",
+        "target_name": "Panini-Research",
+        "path": "/home/stephane/GitHub/Panini-Research",
+        "exists": true,
+        "has_git": true,
+        "has_readme": true,
+        "action": "CONSOLIDATE_INTO_PARENT",
+        "remote_url": "git@github.com:stephanedenis/Panini-Research.git"
+      }
+    },
+    "total_repos": 16,
+    "parent_repo": "Panini"
+  },
+  "target_architecture": {
+    "parent": {
+      "name": "Panini",
+      "description": "Parent principal - Écosystème complet de compression sémantique universelle",
+      "role": "Orchestrateur principal et workspace de développement"
+    },
+    "submodules": {
+      "core": {
+        "Panini-FS": {
+          "path": "modules/core/filesystem",
+          "description": "Système de fichiers sémantique core",
+          "current": "PaniniFS"
+        },
+        "Panini-SemanticCore": {
+          "path": "modules/core/semantic",
+          "description": "Moteur sémantique principal",
+          "current": "PaniniFS-SemanticCore"
+        }
+      },
+      "orchestration": {
+        "Panini-CloudOrchestrator": {
+          "path": "modules/orchestration/cloud",
+          "description": "Orchestrateur cloud",
+          "current": "PaniniFS-CloudOrchestrator"
+        },
+        "Panini-ExecutionOrchestrator": {
+          "path": "modules/orchestration/execution",
+          "description": "Orchestrateur d'exécution",
+          "current": "PaniniFS-ExecutionOrchestrator"
+        }
+      },
+      "services": {
+        "Panini-CoLabController": {
+          "path": "modules/services/colab",
+          "description": "Contrôleur Google Colab",
+          "current": "PaniniFS-CoLabController"
+        },
+        "Panini-PublicationEngine": {
+          "path": "modules/services/publication",
+          "description": "Moteur de publication",
+          "current": "PaniniFS-PublicationEngine"
+        },
+        "Panini-DatasetsIngestion": {
+          "path": "modules/services/datasets",
+          "description": "Ingestion de datasets",
+          "current": "PaniniFS-DatasetsIngestion"
+        }
+      },
+      "infrastructure": {
+        "Panini-UltraReactive": {
+          "path": "modules/infrastructure/reactive",
+          "description": "Système ultra-réactif",
+          "current": "PaniniFS-UltraReactive"
+        },
+        "Panini-AutonomousMissions": {
+          "path": "modules/infrastructure/autonomous",
+          "description": "Missions autonomes",
+          "current": "PaniniFS-AutonomousMissions"
+        }
+      },
+      "shared": {
+        "Panini-CopilotageShared": {
+          "path": "shared/copilotage",
+          "description": "Configuration copilotage partagée",
+          "current": "PaniniFS-CopilotageShared"
+        },
+        "Panini-SpecKit-Shared": {
+          "path": "shared/speckit",
+          "description": "Kit de spécifications partagé",
+          "current": "PaniniFS-SpecKit-Shared"
+        },
+        "Panini-AttributionRegistry": {
+          "path": "shared/attribution",
+          "description": "Registre d'attribution",
+          "current": "PaniniFS-AttributionRegistry"
+        }
+      },
+      "projects": {
+        "Panini-Gest": {
+          "path": "projects/gest",
+          "description": "Gestionnaire Panini",
+          "current": "Panini-Gest"
+        },
+        "Panini-OntoWave": {
+          "path": "projects/ontowave",
+          "description": "Navigateur d'ontologies",
+          "current": "Panini-OntoWave"
+        }
+      }
+    }
+  },
+  "migration_phases": [
+    {
+      "phase": 1,
+      "name": "Préparation et sauvegarde",
+      "actions": [
+        "Sauvegarde complète de tous les repositories",
+        "Création des scripts de renommage GitHub",
+        "Validation de l'état Git de tous les repos",
+        "Export des GitHub Projects/Issues"
+      ],
+      "duration": "1-2 heures",
+      "risk": "Faible"
+    },
+    {
+      "phase": 2,
+      "name": "Renommage des repositories GitHub",
+      "actions": [
+        "Renommage PaniniFS → Panini-FS",
+        "Renommage tous PaniniFS-* → Panini-*",
+        "Mise à jour des URLs remotes locales",
+        "Vérification accessibilité repositories"
+      ],
+      "duration": "2-3 heures",
+      "risk": "Moyen"
+    },
+    {
+      "phase": 3,
+      "name": "Restructuration Panini parent",
+      "actions": [
+        "Consolidation Panini-Research dans Panini",
+        "Création structure modules/ avec catégories",
+        "Configuration .gitmodules pour tous les submodules",
+        "Mise à jour documentation principale"
+      ],
+      "duration": "3-4 heures",
+      "risk": "Moyen"
+    },
+    {
+      "phase": 4,
+      "name": "Configuration submodules",
+      "actions": [
+        "Ajout de tous les modules comme submodules",
+        "Configuration des chemins selon nouvelle architecture",
+        "Synchronisation et tests",
+        "Mise à jour des références croisées"
+      ],
+      "duration": "2-3 heures",
+      "risk": "Élevé"
+    },
+    {
+      "phase": 5,
+      "name": "Finalisation et documentation",
+      "actions": [
+        "Mise à jour de toute la documentation",
+        "Création guides migration pour utilisateurs",
+        "Tests complets de l'écosystème",
+        "Communication changements"
+      ],
+      "duration": "1-2 heures",
+      "risk": "Faible"
+    }
+  ],
+  "rename_script": "#!/bin/bash\n# Script automatique de renommage repositories GitHub\n# ATTENTION : Vérifiez les permissions GitHub avant exécution\n\nset -e\n\necho '🔄 DÉBUT RENOMMAGE REPOSITORIES GITHUB'\necho '======================================'\n\necho '📝 Renommage PaniniFS → Panini-FS'\ngh repo rename PaniniFS Panini-FS --repo stephanedenis/PaniniFS\ncd /home/stephane/GitHub/PaniniFS\ngit remote set-url origin git@github.com:stephanedenis/Panini-FS.git\ncd ..\nmv PaniniFS Panini-FS\n\necho '📝 Renommage PaniniFS-CopilotageShared → Panini-CopilotageShared'\ngh repo rename PaniniFS-CopilotageShared Panini-CopilotageShared --repo stephanedenis/PaniniFS-CopilotageShared\ncd /home/stephane/GitHub/PaniniFS-CopilotageShared\ngit remote set-url origin git@github.com:stephanedenis/Panini-CopilotageShared.git\ncd ..\nmv PaniniFS-CopilotageShared Panini-CopilotageShared\n\necho '📝 Renommage PaniniFS-AttributionRegistry → Panini-AttributionRegistry'\ngh repo rename PaniniFS-AttributionRegistry Panini-AttributionRegistry --repo stephanedenis/PaniniFS-AttributionRegistry\ncd /home/stephane/GitHub/PaniniFS-AttributionRegistry\ngit remote set-url origin git@github.com:stephanedenis/Panini-AttributionRegistry.git\ncd ..\nmv PaniniFS-AttributionRegistry Panini-AttributionRegistry\n\necho '📝 Renommage PaniniFS-DatasetsIngestion → Panini-DatasetsIngestion'\ngh repo rename PaniniFS-DatasetsIngestion Panini-DatasetsIngestion --repo stephanedenis/PaniniFS-DatasetsIngestion\ncd /home/stephane/GitHub/PaniniFS-DatasetsIngestion\ngit remote set-url origin git@github.com:stephanedenis/Panini-DatasetsIngestion.git\ncd ..\nmv PaniniFS-DatasetsIngestion Panini-DatasetsIngestion\n\necho '📝 Renommage PaniniFS-ExecutionOrchestrator → Panini-ExecutionOrchestrator'\ngh repo rename PaniniFS-ExecutionOrchestrator Panini-ExecutionOrchestrator --repo stephanedenis/PaniniFS-ExecutionOrchestrator\ncd /home/stephane/GitHub/PaniniFS-ExecutionOrchestrator\ngit remote set-url origin git@github.com:stephanedenis/Panini-ExecutionOrchestrator.git\ncd ..\nmv PaniniFS-ExecutionOrchestrator Panini-ExecutionOrchestrator\n\necho '📝 Renommage PaniniFS-UltraReactive → Panini-UltraReactive'\ngh repo rename PaniniFS-UltraReactive Panini-UltraReactive --repo stephanedenis/PaniniFS-UltraReactive\ncd /home/stephane/GitHub/PaniniFS-UltraReactive\ngit remote set-url origin git@github.com:stephanedenis/Panini-UltraReactive.git\ncd ..\nmv PaniniFS-UltraReactive Panini-UltraReactive\n\necho '📝 Renommage PaniniFS-PublicationEngine → Panini-PublicationEngine'\ngh repo rename PaniniFS-PublicationEngine Panini-PublicationEngine --repo stephanedenis/PaniniFS-PublicationEngine\ncd /home/stephane/GitHub/PaniniFS-PublicationEngine\ngit remote set-url origin git@github.com:stephanedenis/Panini-PublicationEngine.git\ncd ..\nmv PaniniFS-PublicationEngine Panini-PublicationEngine\n\necho '📝 Renommage PaniniFS-SemanticCore → Panini-SemanticCore'\ngh repo rename PaniniFS-SemanticCore Panini-SemanticCore --repo stephanedenis/PaniniFS-SemanticCore\ncd /home/stephane/GitHub/PaniniFS-SemanticCore\ngit remote set-url origin git@github.com:stephanedenis/Panini-SemanticCore.git\ncd ..\nmv PaniniFS-SemanticCore Panini-SemanticCore\n\necho '📝 Renommage PaniniFS-AutonomousMissions → Panini-AutonomousMissions'\ngh repo rename PaniniFS-AutonomousMissions Panini-AutonomousMissions --repo stephanedenis/PaniniFS-AutonomousMissions\ncd /home/stephane/GitHub/PaniniFS-AutonomousMissions\ngit remote set-url origin git@github.com:stephanedenis/Panini-AutonomousMissions.git\ncd ..\nmv PaniniFS-AutonomousMissions Panini-AutonomousMissions\n\necho '📝 Renommage PaniniFS-CoLabController → Panini-CoLabController'\ngh repo rename PaniniFS-CoLabController Panini-CoLabController --repo stephanedenis/PaniniFS-CoLabController\ncd /home/stephane/GitHub/PaniniFS-CoLabController\ngit remote set-url origin git@github.com:stephanedenis/Panini-CoLabController.git\ncd ..\nmv PaniniFS-CoLabController Panini-CoLabController\n\necho '📝 Renommage PaniniFS-CloudOrchestrator → Panini-CloudOrchestrator'\ngh repo rename PaniniFS-CloudOrchestrator Panini-CloudOrchestrator --repo stephanedenis/PaniniFS-CloudOrchestrator\ncd /home/stephane/GitHub/PaniniFS-CloudOrchestrator\ngit remote set-url origin git@github.com:stephanedenis/Panini-CloudOrchestrator.git\ncd ..\nmv PaniniFS-CloudOrchestrator Panini-CloudOrchestrator\n\necho '📝 Renommage PaniniFS-SpecKit-Shared → Panini-SpecKit-Shared'\ngh repo rename PaniniFS-SpecKit-Shared Panini-SpecKit-Shared --repo stephanedenis/PaniniFS-SpecKit-Shared\ncd /home/stephane/GitHub/PaniniFS-SpecKit-Shared\ngit remote set-url origin git@github.com:stephanedenis/Panini-SpecKit-Shared.git\ncd ..\nmv PaniniFS-SpecKit-Shared Panini-SpecKit-Shared\n\necho '✅ RENOMMAGE TERMINÉ'\necho 'Vérifiez manuellement que tous les repositories sont accessibles'",
+  "risks_and_mitigations": {
+    "GitHub API limits": "Utiliser authentification et espacer les requêtes",
+    "Broken links": "Maintenir redirections temporaires",
+    "Submodule conflicts": "Tests incrémentaux et rollback préparé",
+    "Documentation obsolète": "Mise à jour systématique"
+  },
+  "success_criteria": [
+    "Tous repositories renommés selon convention Panini-*",
+    "Panini comme parent avec submodules organisés",
+    "Toute la documentation mise à jour",
+    "Tests de fonctionnement réussis",
+    "Écosystème cohérent et navigable"
+  ]
+}
