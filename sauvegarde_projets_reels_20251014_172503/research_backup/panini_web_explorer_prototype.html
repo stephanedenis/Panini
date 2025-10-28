@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaniniFS Explorer - Prototype</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .dashboard {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .panel {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .graph-container {
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .controls {
+            margin-bottom: 15px;
+        }
+        
+        .controls button {
+            margin-right: 10px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .controls button:hover {
+            background: #0056b3;
+        }
+        
+        .node-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+        
+        .semantic-tag {
+            display: inline-block;
+            background: #e1f5fe;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin: 2px;
+            font-size: 12px;
+        }
+        
+        .generative-score {
+            color: #ff9800;
+            font-weight: bold;
+        }
+        
+        /* Styles D3.js */
+        .node {
+            cursor: pointer;
+            stroke: #fff;
+            stroke-width: 2px;
+        }
+        
+        .node:hover {
+            stroke: #333;
+            stroke-width: 3px;
+        }
+        
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+        
+        .link-duplicate {
+            stroke: #f44336;
+            stroke-dasharray: 5,5;
+        }
+        
+        .link-semantic {
+            stroke: #00bcd4;
+            stroke-dasharray: 2,2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 PaniniFS Explorer</h1>
+            <p>Interface d'exploration interactive du système de fichiers virtuel PaniniFS</p>
+        </div>
+        
+        <div class="dashboard">
+            <div class="panel">
+                <h2>📊 Graphe des Nœuds</h2>
+                <div class="controls">
+                    <button onclick="filterByType('all')">Tous</button>
+                    <button onclick="filterByType('content')">Contenu</button>
+                    <button onclick="filterByType('generative')">Génératif</button>
+                    <button onclick="resetZoom()">Reset Zoom</button>
+                </div>
+                <div id="graph" class="graph-container"></div>
+            </div>
+            
+            <div class="panel">
+                <h2>🔍 Détails du Nœud</h2>
+                <div id="node-details">
+                    <p>Cliquez sur un nœud pour voir ses détails</p>
+                </div>
+                
+                <h3>🚀 Actions Génératives</h3>
+                <div class="controls">
+                    <button onclick="decomposeNode()">Décomposer</button>
+                    <button onclick="combineNodes()">Combiner</button>
+                    <button onclick="analyzeSemantics()">Analyser</button>
+                </div>
+                
+                <h3>🏷️ Recherche Sémantique</h3>
+                <input type="text" id="semantic-search" placeholder="Rechercher par tags..." 
+                       style="width: 100%; padding: 8px; margin-bottom: 10px;">
+                <div id="search-results"></div>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <h2>📈 Statistiques VFS</h2>
+            <div id="stats-container">
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #4CAF50;">42</div>
+                        <div>Nœuds Uniques</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #f44336;">7</div>
+                        <div>Doublons</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #ff9800;">0.7</div>
+                        <div>Score Génératif Moyen</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #2196F3;">88%</div>
+                        <div>Efficacité Compression</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Données simulées pour prototype
+        const sampleData = {
+            nodes: [
+                {id: 'node_1', name: 'Samuel CD.pdf', type: 'content', size: 142000, generative_potential: 0.6, semantic_tags: ['person:samuel', 'media:cd']},
+                {id: 'node_2', name: 'Document A', type: 'content', size: 50000, generative_potential: 0.8, semantic_tags: ['document:pdf']},
+                {id: 'node_3', name: 'Generated Combo', type: 'generative', size: 75000, generative_potential: 0.9, semantic_tags: ['generated', 'composite']},
+                {id: 'node_4', name: 'Image Set', type: 'content', size: 200000, generative_potential: 0.4, semantic_tags: ['media:image', 'collection']},
+                {id: 'node_5', name: 'Archive Data', type: 'content', size: 500000, generative_potential: 0.7, semantic_tags: ['archive', 'compressed']}
+            ],
+            links: [
+                {source: 'node_1', target: 'node_3', type: 'generative'},
+                {source: 'node_2', target: 'node_3', type: 'generative'},
+                {source: 'node_1', target: 'node_1', type: 'duplicate'},
+                {source: 'node_4', target: 'node_5', type: 'semantic'}
+            ]
+        };
+        
+        let selectedNode = null;
+        
+        // Initialiser visualisation D3.js
+        function initGraph() {
+            const container = d3.select("#graph");
+            const width = 800;
+            const height = 550;
+            
+            const svg = container.append("svg")
+                .attr("width", width)
+                .attr("height", height);
+            
+            const simulation = d3.forceSimulation(sampleData.nodes)
+                .force("link", d3.forceLink(sampleData.links).id(d => d.id).distance(100))
+                .force("charge", d3.forceManyBody().strength(-300))
+                .force("center", d3.forceCenter(width / 2, height / 2));
+            
+            // Liens
+            const link = svg.append("g")
+                .selectAll("line")
+                .data(sampleData.links)
+                .enter().append("line")
+                .attr("class", d => `link link-${d.type}`)
+                .attr("stroke-width", 2);
+            
+            // Nœuds
+            const node = svg.append("g")
+                .selectAll("circle")
+                .data(sampleData.nodes)
+                .enter().append("circle")
+                .attr("class", "node")
+                .attr("r", d => Math.sqrt(d.size) / 100)
+                .attr("fill", d => {
+                    switch(d.type) {
+                        case 'content': return '#4CAF50';
+                        case 'generative': return '#FF9800';
+                        default: return '#2196F3';
+                    }
+                })
+                .on("click", function(event, d) {
+                    selectedNode = d;
+                    updateNodeDetails(d);
+                    
+                    // Highlighting
+                    d3.selectAll(".node").style("opacity", 0.3);
+                    d3.select(this).style("opacity", 1);
+                })
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+            
+            // Labels
+            const label = svg.append("g")
+                .selectAll("text")
+                .data(sampleData.nodes)
+                .enter().append("text")
+                .text(d => d.name.length > 15 ? d.name.substring(0, 15) + '...' : d.name)
+                .attr("font-size", "10px")
+                .attr("text-anchor", "middle")
+                .attr("dy", "0.35em");
+            
+            simulation.on("tick", () => {
+                link
+                    .attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+                
+                node
+                    .attr("cx", d => d.x)
+                    .attr("cy", d => d.y);
+                
+                label
+                    .attr("x", d => d.x)
+                    .attr("y", d => d.y + Math.sqrt(d.size) / 100 + 15);
+            });
+            
+            function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+            
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+            
+            function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+        }
+        
+        function updateNodeDetails(node) {
+            const detailsContainer = document.getElementById('node-details');
+            const tags = node.semantic_tags.map(tag => 
+                `<span class="semantic-tag">${tag}</span>`
+            ).join('');
+            
+            detailsContainer.innerHTML = `
+                <div class="node-info">
+                    <h4>${node.name}</h4>
+                    <p><strong>Type:</strong> ${node.type}</p>
+                    <p><strong>Taille:</strong> ${(node.size / 1024).toFixed(1)} KB</p>
+                    <p><strong>Potentiel Génératif:</strong> 
+                       <span class="generative-score">${(node.generative_potential * 100).toFixed(0)}%</span>
+                    </p>
+                    <p><strong>Tags Sémantiques:</strong></p>
+                    <div>${tags}</div>
+                </div>
+            `;
+        }
+        
+        function filterByType(type) {
+            d3.selectAll(".node").style("opacity", d => {
+                return type === 'all' || d.type === type ? 1 : 0.1;
+            });
+        }
+        
+        function resetZoom() {
+            d3.selectAll(".node").style("opacity", 1);
+            selectedNode = null;
+            document.getElementById('node-details').innerHTML = 
+                '<p>Cliquez sur un nœud pour voir ses détails</p>';
+        }
+        
+        function decomposeNode() {
+            if (selectedNode) {
+                alert(`Décomposition de ${selectedNode.name} en cours...\nStratégie: Structurelle\nComposants détectés: 3`);
+            } else {
+                alert('Sélectionnez d\'abord un nœud');
+            }
+        }
+        
+        function combineNodes() {
+            alert('Interface de combinaison de nœuds\n(Sélection multiple en développement)');
+        }
+        
+        function analyzeSemantics() {
+            if (selectedNode) {
+                alert(`Analyse sémantique de ${selectedNode.name}:\n` +
+                      `Tags: ${selectedNode.semantic_tags.join(', ')}\n` +
+                      `Relations potentielles: 3 trouvées`);
+            } else {
+                alert('Sélectionnez d\'abord un nœud');
+            }
+        }
+        
+        // Recherche sémantique
+        document.getElementById('semantic-search').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+            
+            if (query.length < 2) {
+                resultsContainer.innerHTML = '';
+                return;
+            }
+            
+            const matches = sampleData.nodes.filter(node => 
+                node.semantic_tags.some(tag => tag.toLowerCase().includes(query))
+            );
+            
+            resultsContainer.innerHTML = matches.map(node => 
+                `<div style="padding: 5px; border-left: 3px solid #4CAF50; margin: 5px 0; background: #f8f9fa;">
+                    <strong>${node.name}</strong><br>
+                    <small>Score génératif: ${(node.generative_potential * 100).toFixed(0)}%</small>
+                </div>`
+            ).join('');
+        });
+        
+        // Initialiser au chargement
+        document.addEventListener('DOMContentLoaded', initGraph);
+    </script>
+</body>
+</html>

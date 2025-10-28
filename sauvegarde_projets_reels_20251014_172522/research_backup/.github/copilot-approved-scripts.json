@@ -1,0 +1,667 @@
+{
+  "version": "2.1",
+  "description": "Scripts Python et commandes pré-approuvés pour développement PaniniFS avec GitHub Copilot - Digestion Universelle de Fichiers",
+  "timestamp": "2025-10-03T22:30:00Z",
+  "project": "PaniniFS-Research",
+  "strategic_directives": [
+    "CONSOLIDATION: Un seul serveur universel sur port 5000",
+    "UNIVERSALITÉ: Digestion de TOUS formats (binaire, texte, image, document)",
+    "GRAMMAIRES: Encyclopédie publique basée sur standards ISO/RFC",
+    "RECONSTRUCTION: 100% identique bit-perfect pour tous formats",
+    "PATTERNS: 100% des composantes grammaticales réutilisables",
+    "VOIR: PANINI_UNIVERSAL_DIGESTION_ARCHITECTURE.md",
+    "VOIR: .github/DIRECTIVE_CONSOLIDATION_SERVEUR_UNIVERSEL.md"
+  ],
+  "approved_patterns": {
+    "extractors": {
+      "pattern": "**/*_extractor.py",
+      "description": "Scripts extraction métadonnées corpus/traducteurs/dhātu",
+      "examples": [
+        "translator_metadata_extractor.py",
+        "corpus_metadata_extractor.py",
+        "dhatu_metadata_extractor.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 300,
+        "required_args": [],
+        "output_format": "json",
+        "read_only": false
+      }
+    },
+    "analyzers": {
+      "pattern": "**/*_analyzer.py",
+      "description": "Scripts analyse patterns biais/styles/symétries",
+      "examples": [
+        "translator_bias_style_analyzer.py",
+        "symmetry_detector_poc.py",
+        "ambiguity_analyzer_iterative.py",
+        "analyseur_molecules_semantiques.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 600,
+        "required_input": "json",
+        "output_format": "json",
+        "read_only": true
+      }
+    },
+    "validators": {
+      "pattern": "**/*_validator.py",
+      "description": "Scripts validation conformité ISO 8601/copilotage/PRs",
+      "examples": [
+        "validate_dates_iso.py",
+        "autonomous_system_validator.py",
+        "iso8601_compliance_validator.py",
+        "pr_compliance_validator.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 300,
+        "output_format": "json",
+        "read_only": true
+      }
+    },
+    "panini_servers": {
+      "pattern": "**/panini_*.py",
+      "description": "Serveurs et interfaces PaniniFS - Digestion universelle de fichiers",
+      "priority": "CONSOLIDATION EN COURS vers panini_universal_server.py",
+      "target_architecture": "Port 5000 unique pour tous endpoints",
+      "examples": [
+        "panini_universal_server.py (CIBLE)",
+        "panini_advanced_uhd_reconstructor.py (À MIGRER)",
+        "panini_binary_decomposer.py (À MIGRER)",
+        "panini_serveur_corrige.py (À ARCHIVER)",
+        "serveur_decomposition_complete.py (À ARCHIVER)"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 3600,
+        "network_access": true,
+        "background_execution": true,
+        "read_only": false,
+        "formats_supported": ["pdf", "png", "jpeg", "zip", "elf", "text"],
+        "reconstruction_accuracy": "100% bit-perfect"
+      }
+    },
+    "format_grammars": {
+      "pattern": "**/format_grammars/*.json",
+      "description": "Grammaires Panini extraites des standards ISO/RFC",
+      "examples": [
+        "format_grammars/pdf.json",
+        "format_grammars/png.json",
+        "format_grammars/jpeg.json",
+        "format_grammars/zip.json",
+        "format_grammars/generic_patterns.json"
+      ],
+      "constraints": {
+        "based_on_standards": true,
+        "reusable_patterns": "100%",
+        "read_only": false
+      }
+    },
+    "grammar_extractors": {
+      "pattern": "**/*extract*_grammar.py",
+      "description": "Scripts extraction de grammaires depuis standards",
+      "examples": [
+        "extract_pdf_grammar.py",
+        "extract_png_grammar.py",
+        "extract_jpeg_grammar.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 600,
+        "output_format": "json",
+        "read_only": false
+      }
+    },
+    "demo_interfaces": {
+      "pattern": "**/demo_*.py",
+      "description": "Interfaces de démonstration et visualisation",
+      "examples": [
+        "demo_virtual_reader_complete.py",
+        "demo_decomposition_detaillee.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 1800,
+        "network_access": true,
+        "read_only": false
+      }
+    },
+    "test_scripts": {
+      "pattern": "**/test_*.py",
+      "description": "Scripts de test et validation",
+      "examples": [
+        "test_layout_corpus.py",
+        "test_js_syntax.py",
+        "test_full_functionality.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 600,
+        "read_only": true
+      }
+    },
+    "generators": {
+      "pattern": "**/*_generator.py",
+      "description": "Générateurs de contenu et interfaces",
+      "examples": [
+        "panini_web_interface_generator.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 300,
+        "read_only": false
+      }
+    },
+    "scanners": {
+      "pattern": "scan_*.py",
+      "description": "Scripts scan/collecte données projet",
+      "examples": [
+        "scan_real_panini_data.py",
+        "activity_scanner_realtime.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 300,
+        "output_format": "json",
+        "read_only": true
+      }
+    },
+    "collectors": {
+      "pattern": "collecteur_*.py",
+      "description": "Scripts collecte corpus multilingues",
+      "examples": [
+        "collecteur_corpus_prescolaire.py",
+        "collecteur_multilingue_dev.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 1800,
+        "output_format": "json",
+        "read_only": false,
+        "network_access": true
+      }
+    },
+    "symmetry_detectors": {
+      "pattern": "symmetry_*.py",
+      "description": "Scripts détection symétries compose/decompose",
+      "examples": [
+        "symmetry_detector_poc.py",
+        "symmetry_detector_real_data.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 600,
+        "output_format": "json",
+        "read_only": true
+      }
+    },
+    "orchestrators": {
+      "pattern": "**/*_orchestrator.py",
+      "description": "Scripts orchestration multi-agent (humain/copilot/colab/autonomous)",
+      "examples": [
+        "multi_agent_orchestrator.py"
+      ],
+      "constraints": {
+        "max_execution_time_seconds": 10,
+        "output_format": "json",
+        "read_only": true,
+        "reports_only": true
+      }
+    }
+  },
+  "approved_commands": {
+    "python_execution": [
+      {
+        "pattern": "python3 {script_name}.py",
+        "condition": "script_name matches approved_patterns",
+        "auto_approve": true,
+        "notes": "Auto-approuvé si pattern reconnu"
+      },
+      {
+        "pattern": "python3 {script_name}.py {args}",
+        "condition": "script_name matches approved_patterns",
+        "auto_approve": true,
+        "notes": "Auto-approuvé avec arguments"
+      },
+      {
+        "pattern": "python3 {script_name}.py &",
+        "condition": "script_name matches panini_servers OR demo_interfaces",
+        "auto_approve": true,
+        "notes": "Exécution background pour serveurs"
+      },
+      {
+        "pattern": "python3 -c '{expression}'",
+        "condition": "len(expression) < 200",
+        "auto_approve": true,
+        "notes": "Expressions Python simples"
+      },
+      {
+        "pattern": "python3 -m http.server {port}",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Serveur HTTP simple"
+      },
+      {
+        "pattern": "timeout {seconds} python3 {script_name}.py",
+        "condition": "seconds <= 300 AND script_name matches approved_patterns",
+        "auto_approve": true,
+        "notes": "Exécution avec timeout"
+      },
+      {
+        "pattern": "python3 panini_*.py {args}",
+        "condition": "args safe for panini scripts",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Fréquemment utilisé: python3 panini_binary_decomposer.py --..."
+      },
+      {
+        "pattern": "python3 panini_*.py {args}",
+        "condition": "args safe for panini scripts",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Fréquemment utilisé: python3 panini_binary_decomposer.py --..."
+      },
+      {
+        "pattern": "python3 panini_*.py {args}",
+        "condition": "args safe for panini scripts",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Fréquemment utilisé: python3 panini_binary_decomposer.py --..."
+      },
+      {
+        "pattern": "python3 panini_*.py {args}",
+        "condition": "args safe for panini scripts",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Fréquemment utilisé: python3 panini_binary_decomposer.py..."
+      },
+      {
+        "pattern": "python3 panini_*.py {args}",
+        "condition": "args safe for panini scripts",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Fréquemment utilisé: python3 panini_binary_decomposer.py..."
+      }
+    ],
+    "process_management": [
+      {
+        "pattern": "pkill -f {process_pattern}",
+        "condition": "process_pattern contains 'panini' OR 'demo' OR 'test' OR 'serveur'",
+        "auto_approve": true,
+        "notes": "Arrêt processus PaniniFS uniquement"
+      },
+      {
+        "pattern": "ps aux | grep {pattern} | grep -v grep",
+        "condition": "pattern contains development keywords",
+        "auto_approve": true,
+        "notes": "Vérification processus"
+      },
+      {
+        "pattern": "sleep {seconds}",
+        "condition": "seconds <= 10",
+        "auto_approve": true,
+        "notes": "Pause courte"
+      },
+      {
+        "pattern": "lsof -ti:{port} | xargs kill -9",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Libération ports dev"
+      }
+    ],
+    "network_testing": [
+      {
+        "pattern": "curl -s \"http://127.0.0.1:{port}/{path}\"",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Test APIs locales"
+      },
+      {
+        "pattern": "curl -v \"http://127.0.0.1:{port}/{path}\"",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Debug APIs locales"
+      },
+      {
+        "pattern": "wget -qO- \"http://127.0.0.1:{port}/{path}\"",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Download contenu local"
+      },
+      {
+        "pattern": "curl -s \"{url}\" | jq {filter}",
+        "condition": "url starts with http://127.0.0.1 OR http://localhost",
+        "auto_approve": true,
+        "notes": "Test API avec parsing JSON"
+      },
+      {
+        "pattern": "curl -s http://127.0.0.1:{port}/{path}",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Test API local sans guillemets"
+      },
+      {
+        "pattern": "curl {options} \"http://127.0.0.1:{port}/{path}\"",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Test API local: http://127.0.0.1:9000/health..."
+      },
+      {
+        "pattern": "curl {options} \"http://127.0.0.1:{port}/{path}\"",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Test API local: http://127.0.0.1:9000/health..."
+      },
+      {
+        "pattern": "curl {options} \"http://127.0.0.1:{port}/{path}\"",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Test API local: http://127.0.0.1:9000/health..."
+      },
+      {
+        "pattern": "curl {options} \"http://127.0.0.1:{port}/{path}\"",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Test API local: -s http://127.0.0.1:9000/health..."
+      },
+      {
+        "pattern": "curl {options} \"http://127.0.0.1:{port}/{path}\"",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Test API local: http://127.0.0.1:9000/health..."
+      }
+    ],
+    "file_operations": [
+      {
+        "pattern": "ls -la {path}",
+        "condition": "path within project",
+        "auto_approve": true,
+        "notes": "Listing détaillé"
+      },
+      {
+        "pattern": "find {directory} -name \"{pattern}\"",
+        "condition": "directory within project AND no -exec",
+        "auto_approve": true,
+        "notes": "Recherche fichiers"
+      },
+      {
+        "pattern": "grep -r \"{text}\" {directory}",
+        "condition": "directory within project",
+        "auto_approve": true,
+        "notes": "Recherche texte"
+      },
+      {
+        "pattern": "head -{lines} {filename}",
+        "condition": "lines <= 100",
+        "auto_approve": true,
+        "notes": "Aperçu début fichier"
+      },
+      {
+        "pattern": "tail -{lines} {filename}",
+        "condition": "lines <= 100",
+        "auto_approve": true,
+        "notes": "Aperçu fin fichier"
+      },
+      {
+        "pattern": "cat {filename}",
+        "condition": "filename ends with .json OR .txt OR .md",
+        "auto_approve": true,
+        "notes": "Lecture fichiers texte"
+      },
+      {
+        "pattern": "wc -l {filename}",
+        "condition": "file exists",
+        "auto_approve": true,
+        "notes": "Compter lignes"
+      },
+      {
+        "pattern": "ls {args}",
+        "condition": "safe file operations only",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Opération lecture sûre: ls"
+      },
+      {
+        "pattern": "ls {args}",
+        "condition": "safe file operations only",
+        "auto_approve": true,
+        "notes": "Auto-ajouté: Opération lecture sûre: ls"
+      }
+    ],
+    "json_operations": [
+      {
+        "pattern": "jq '{filter}' {filename}",
+        "condition": "filename ends with .json AND file size < 10MB",
+        "auto_approve": true,
+        "notes": "Traitement JSON"
+      },
+      {
+        "pattern": "jq -r '{expression}' {filename}",
+        "condition": "filename ends with .json",
+        "auto_approve": true,
+        "notes": "Extraction données JSON"
+      }
+    ],
+    "git_operations": [
+      {
+        "pattern": "git add {files}",
+        "condition": "files generated by approved scripts OR new analysis files",
+        "auto_approve": true,
+        "notes": "Ajout fichiers générés"
+      },
+      {
+        "pattern": "git commit -m '{message}'",
+        "condition": "message includes timestamp ISO 8601",
+        "auto_approve": true,
+        "notes": "Commit avec timestamp conforme"
+      },
+      {
+        "pattern": "git push origin main",
+        "condition": "after successful commit",
+        "auto_approve": true,
+        "notes": "Push après commit validé"
+      },
+      {
+        "pattern": "git status",
+        "condition": "always",
+        "auto_approve": true,
+        "notes": "Status toujours approuvé"
+      },
+      {
+        "pattern": "git log --oneline -n {count}",
+        "condition": "count <= 20",
+        "auto_approve": true,
+        "notes": "Historique récent"
+      },
+      {
+        "pattern": "git diff {file}",
+        "condition": "file within project",
+        "auto_approve": true,
+        "notes": "Diff fichier"
+      }
+    ],
+    "system_info": [
+      {
+        "pattern": "python3 --version",
+        "condition": "always",
+        "auto_approve": true,
+        "notes": "Version Python"
+      },
+      {
+        "pattern": "ss -tlnp | grep :{port}",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Vérification ports"
+      },
+      {
+        "pattern": "netstat -tlnp | grep :{port}",
+        "condition": "port between 3000-9999",
+        "auto_approve": true,
+        "notes": "Vérification ports (legacy)"
+      }
+    ]
+  },
+  "safety_constraints": {
+    "forbidden_operations": [
+      "rm -rf /",
+      "rm -rf ~",
+      "sudo rm",
+      "chmod 777",
+      "eval.*exec",
+      "curl.*|.*bash",
+      "wget.*|.*sh"
+    ],
+    "allowed_with_restrictions": [
+      {
+        "operation": "background_processes",
+        "patterns": [
+          "python3 panini_*.py &",
+          "python3 demo_*.py &",
+          "python3 serveur_*.py &",
+          "python3 test_*.py &",
+          "python3 -m http.server {port} &"
+        ],
+        "restrictions": "PaniniFS development processes only"
+      },
+      {
+        "operation": "process_termination",
+        "patterns": [
+          "pkill -f panini",
+          "pkill -f demo",
+          "pkill -f serveur",
+          "pkill -f test",
+          "pkill -f python3",
+          "lsof -ti:{port} | xargs kill -9"
+        ],
+        "restrictions": "Development processes and ports 3000-9999 only"
+      },
+      {
+        "operation": "file_execution",
+        "patterns": [
+          "chmod +x *.sh",
+          "./launch_*.sh",
+          "./deploy_*.sh"
+        ],
+        "restrictions": "PaniniFS scripts only"
+      }
+    ],
+    "required_manual_approval": [
+      {
+        "operation": "file_deletion",
+        "pattern": "rm {file}",
+        "reason": "Deletion requires explicit confirmation",
+        "exceptions": [
+          "*.tmp",
+          "*.log",
+          "temp_*"
+        ]
+      },
+      {
+        "operation": "directory_deletion",
+        "pattern": "rmdir {dir}",
+        "reason": "Directory removal requires confirmation"
+      },
+      {
+        "operation": "external_network_calls",
+        "pattern": "curl {url}",
+        "reason": "Network access requires review",
+        "exceptions": [
+          "http://127.0.0.1:*",
+          "http://localhost:*",
+          "https://api.github.com",
+          "https://httpbin.org"
+        ]
+      },
+      {
+        "operation": "package_installation",
+        "pattern": "pip install {package}",
+        "reason": "Dependency changes require review"
+      },
+      {
+        "operation": "system_modifications",
+        "pattern": "apt install {package}",
+        "reason": "System changes require elevated review"
+      }
+    ],
+    "execution_limits": {
+      "max_file_size_read": "10485760 bytes (10MB)",
+      "max_file_size_write": "10485760 bytes (10MB)",
+      "max_execution_time": "3600 seconds (1h)",
+      "max_memory_usage": "4GB",
+      "allowed_directories": [
+        "/home/stephane/GitHub/PaniniFS-Research",
+        "/tmp/panini*"
+      ],
+      "allowed_ports": [
+        "3000-9999"
+      ],
+      "forbidden_directories": [
+        "/etc",
+        "/var/log",
+        "/usr",
+        "/bin",
+        "/sbin",
+        "/home/stephane/.ssh",
+        "/home/stephane/.config"
+      ]
+    }
+  },
+  "logging": {
+    "log_file": "autonomous_execution.log",
+    "log_format": "json",
+    "log_fields": [
+      "timestamp",
+      "command",
+      "script_name",
+      "approved_pattern",
+      "execution_time_seconds",
+      "exit_code",
+      "output_size_bytes"
+    ],
+    "retention_days": 30
+  },
+  "metadata": {
+    "maintainer": "Stéphane Denis",
+    "repository": "stephanedenis/PaniniFS-Research",
+    "last_updated": "2025-10-03T21:57:47.774352",
+    "version_history": [
+      {
+        "version": "1.0",
+        "date": "2025-10-01",
+        "changes": "Initial whitelist creation"
+      },
+      {
+        "version": "2.0",
+        "date": "2025-10-03",
+        "changes": "Extended patterns for PaniniFS development: added panini_servers, demo_interfaces, test_scripts, network_testing, process_management, background execution support"
+      }
+    ],
+    "coverage": {
+      "panini_scripts": "100%",
+      "development_commands": "95%",
+      "testing_operations": "100%",
+      "server_management": "100%",
+      "api_testing": "100%"
+    },
+    "optimization_count": 12
+  },
+  "security_constraints": {
+    "forbidden_operations": [
+      "rm -rf /",
+      "sudo rm",
+      "chmod 777",
+      "eval",
+      "exec",
+      "| bash",
+      "| sh",
+      "/etc/",
+      "/var/",
+      "/usr/bin/",
+      "wget | bash",
+      "curl | bash"
+    ],
+    "allowed_directories": [
+      "/home/stephane/GitHub/PaniniFS-Research",
+      "/tmp",
+      "/var/tmp"
+    ],
+    "max_file_size_mb": 100,
+    "max_execution_time_seconds": 300,
+    "require_explicit_approval": [
+      "system_modification",
+      "network_external",
+      "file_deletion_bulk"
+    ],
+    "context_validation": {
+      "require_panini_context": true,
+      "allow_localhost_only": true,
+      "validate_file_extensions": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+  📦 semantic
+  📦 colab
+  📦 publication
+  📦 autonomous
+  📦 reactive
+  📦 cloud
+  📦 copilotage

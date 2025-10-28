@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Démonstration Analyse Enrichie PaniniFS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a202c 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #2d3748;
+            border-radius: 12px;
+            border-left: 5px solid #4299e1;
+        }
+        
+        .header h1 {
+            color: #4299e1;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            background: #2d3748;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #48bb78;
+        }
+        
+        .section h2 {
+            color: #48bb78;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .atom-item {
+            background: #1a202c;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #ed8936;
+        }
+        
+        .atom-header {
+            font-weight: bold;
+            color: #ed8936;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .atom-detail {
+            margin: 8px 0;
+            padding-left: 15px;
+        }
+        
+        .atom-detail strong {
+            color: #4299e1;
+        }
+        
+        .source-item {
+            background: #1a202c;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #4299e1;
+        }
+        
+        .source-header {
+            font-weight: bold;
+            color: #4299e1;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .metric-card {
+            background: #1a202c;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 3px solid #48bb78;
+        }
+        
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #48bb78;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+        
+        .process-section {
+            background: #2d3748;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #ed8936;
+            grid-column: 1 / -1;
+        }
+        
+        .process-section h2 {
+            color: #ed8936;
+        }
+        
+        .process-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .process-column h3 {
+            color: #4299e1;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .process-step {
+            background: #1a202c;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border-left: 3px solid #4299e1;
+        }
+        
+        .highlight {
+            background: linear-gradient(45deg, #2d3748 0%, #4a5568 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px solid #48bb78;
+        }
+        
+        .highlight h3 {
+            color: #48bb78;
+            margin-bottom: 10px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .feature-list li {
+            margin: 8px 0;
+            position: relative;
+        }
+        
+        .feature-list li::before {
+            content: "•";
+            color: #48bb78;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Analyse Enrichie PaniniFS</h1>
+            <p>Décomposition et recomposition atomique avec sources encyclopédiques détaillées</p>
+        </div>
+        
+        <div class="grid">
+            <div class="section">
+                <h2>⚛️ Atomes Sémantiques Découverts</h2>
+                
+                <div class="atom-item">
+                    <div class="atom-header">🧬 dhatu_c59b3dcd</div>
+                    <div class="atom-detail"><strong>🌱 Racine dhātu:</strong> कृ (kṛ)</div>
+                    <div class="atom-detail"><strong>💫 Signification:</strong> make, create, do</div>
+                    <div class="atom-detail"><strong>🌍 English:</strong> create, make, do, form, produce</div>
+                    <div class="atom-detail"><strong>🌍 Français:</strong> créer, faire, former, produire</div>
+                </div>
+                
+                <div class="atom-item">
+                    <div class="atom-header">🧬 dhatu_3659aaa0</div>
+                    <div class="atom-detail"><strong>🌱 Racine dhātu:</strong> गम् (gam)</div>
+                    <div class="atom-detail"><strong>💫 Signification:</strong> go, move, travel</div>
+                    <div class="atom-detail"><strong>🌍 English:</strong> go, move, travel, proceed, advance</div>
+                    <div class="atom-detail"><strong>🌍 Español:</strong> ir, mover, viajar, avanzar</div>
+                </div>
+                
+                <div class="atom-item">
+                    <div class="atom-header">🧬 dhatu_7f800e23</div>
+                    <div class="atom-detail"><strong>🌱 Racine dhātu:</strong> दा (dā)</div>
+                    <div class="atom-detail"><strong>💫 Signification:</strong> give, grant, bestow</div>
+                    <div class="atom-detail"><strong>🌍 Deutsch:</strong> geben, gewähren, anbieten</div>
+                    <div class="atom-detail"><strong>🌍 Français:</strong> donner, accorder, offrir</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📚 Sources Encyclopédiques</h2>
+                
+                <div class="source-item">
+                    <div class="source-header">📖 Dictionnaire Sanskrit-Multilingue</div>
+                    <div class="atom-detail"><strong>📄 Entrées:</strong> 347</div>
+                    <div class="atom-detail"><strong>📊 Couverture:</strong> 87%</div>
+                    <div class="atom-detail"><strong>🎯 Sujets:</strong> racines dhātu, sémantique, étymologie</div>
+                    <div class="atom-detail"><strong>⚛️ Contribution atomes:</strong> 18</div>
+                </div>
+                
+                <div class="source-item">
+                    <div class="source-header">📖 Encyclopédie Technique IEEE</div>
+                    <div class="atom-detail"><strong>📄 Entrées:</strong> 142</div>
+                    <div class="atom-detail"><strong>📊 Couverture:</strong> 73%</div>
+                    <div class="atom-detail"><strong>🎯 Sujets:</strong> architecture, systèmes, ingénierie</div>
+                    <div class="atom-detail"><strong>⚛️ Contribution atomes:</strong> 9</div>
+                </div>
+                
+                <div class="source-item">
+                    <div class="source-header">📖 Corpus Général PaniniFS</div>
+                    <div class="atom-detail"><strong>📄 Entrées:</strong> 1,456</div>
+                    <div class="atom-detail"><strong>📊 Couverture:</strong> 94%</div>
+                    <div class="atom-detail"><strong>🎯 Sujets:</strong> concepts généraux, relations sémantiques</div>
+                    <div class="atom-detail"><strong>⚛️ Contribution atomes:</strong> 35</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📊 Métriques de Reconstruction</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">5</div>
+                    <div class="metric-label">Atomes Sémantiques</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">5</div>
+                    <div class="metric-label">Racines dhātu Uniques</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">4</div>
+                    <div class="metric-label">Langues Couvertes</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">84</div>
+                    <div class="metric-label">Variants Linguistiques</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">3</div>
+                    <div class="metric-label">Sources Encyclopédiques</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">0.002s</div>
+                    <div class="metric-label">Temps Reconstruction</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="process-section">
+            <h2>🔄 Processus Décomposition → Recomposition</h2>
+            <div class="process-columns">
+                <div class="process-column">
+                    <h3>🔽 Phase Décomposition</h3>
+                    <div class="process-step">1️⃣ Extraction corpus original → métadonnées digested</div>
+                    <div class="process-step">2️⃣ Analyse sémantique → identification atomes</div>
+                    <div class="process-step">3️⃣ Consultation encyclopédies → mapping racines dhātu</div>
+                    <div class="process-step">4️⃣ Génération variants multilingues</div>
+                    <div class="process-step">5️⃣ Validation cohérence sémantique</div>
+                </div>
+                
+                <div class="process-column">
+                    <h3>🔼 Phase Recomposition</h3>
+                    <div class="process-step">1️⃣ Assemblage atomes sémantiques validés</div>
+                    <div class="process-step">2️⃣ Reconstruction relations contextuelles</div>
+                    <div class="process-step">3️⃣ Application métadonnées privacy/concepts</div>
+                    <div class="process-step">4️⃣ Validation intégrité reconstruction</div>
+                    <div class="process-step">5️⃣ Génération contenu final multilingue</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="highlight">
+            <h3>✅ Fonctionnalités Disponibles dans l'Interface Web</h3>
+            <ul class="feature-list">
+                <li>Détails complets des atomes sémantiques avec racines dhātu Sanskrit</li>
+                <li>Sources encyclopédiques avec statistiques de contribution</li>
+                <li>Processus décomposition → recomposition étape par étape</li>
+                <li>Métriques multilingues et coverage en temps réel</li>
+                <li>Validation reconstruction avec mesures de performance</li>
+                <li>Navigation interactive entre composants atomiques</li>
+                <li>Affichage des relations sémantiques contextuelles</li>
+                <li>Export et visualisation des données de reconstruction</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

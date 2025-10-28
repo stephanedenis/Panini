@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧬 PaniniFS - Décomposition Atomique Détaillée</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a202c 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            border-radius: 20px;
+            border: 3px solid #4299e1;
+            box-shadow: 0 8px 32px rgba(66, 153, 225, 0.3);
+        }
+        
+        .header h1 {
+            color: #4299e1;
+            font-size: 3.2em;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        }
+        
+        .header p {
+            font-size: 1.4em;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+        
+        .demo-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .demo-panel {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            border-radius: 20px;
+            padding: 30px;
+            border-left: 6px solid #ed8936;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .demo-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+        }
+        
+        .demo-panel.encyclopedia {
+            border-left-color: #48bb78;
+        }
+        
+        .demo-panel.atoms {
+            border-left-color: #4299e1;
+        }
+        
+        .panel-title {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: bold;
+        }
+        
+        .source-title {
+            color: #ed8936;
+        }
+        
+        .encyclopedia-title {
+            color: #48bb78;
+        }
+        
+        .atoms-title {
+            color: #4299e1;
+        }
+        
+        .decomposition-flow {
+            background: #2d3748;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 2px solid #4299e1;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .decomposition-flow::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ed8936, #4299e1, #48bb78);
+        }
+        
+        .flow-title {
+            color: #4299e1;
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        
+        .flow-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .flow-step {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #4299e1;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .flow-step::before {
+            content: attr(data-step);
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #4299e1;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .step-title {
+            color: #4299e1;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .step-description {
+            color: #e2e8f0;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .step-details {
+            background: #0f1419;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #4a5568;
+        }
+        
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #2d3748;
+        }
+        
+        .detail-label {
+            color: #a0aec0;
+            font-weight: 500;
+        }
+        
+        .detail-value {
+            color: #48bb78;
+            font-weight: bold;
+        }
+        
+        .atom-showcase {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 3px solid #ed8936;
+            position: relative;
+        }
+        
+        .atom-showcase::before {
+            content: '⚛️';
+            position: absolute;
+            top: -20px;
+            left: 40px;
+            background: #ed8936;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+        }
+        
+        .showcase-title {
+            color: #ed8936;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-left: 40px;
+        }
+        
+        .atoms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        
+        .atom-detail {
+            background: #1a202c;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 6px solid #ed8936;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .atom-detail:hover {
+            transform: scale(1.02);
+            border-left-width: 8px;
+        }
+        
+        .atom-id {
+            color: #ed8936;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .dhatu-section {
+            background: #0f1419;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border: 2px solid #4299e1;
+        }
+        
+        .dhatu-root {
+            color: #4299e1;
+            font-size: 2.2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: 'Devanagari', serif;
+        }
+        
+        .dhatu-meaning {
+            color: #48bb78;
+            font-size: 1.2em;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .variants-section {
+            margin-top: 20px;
+        }
+        
+        .variants-title {
+            color: #4299e1;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .variants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+        
+        .variant-card {
+            background: #0f1419;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #4a5568;
+            transition: all 0.2s ease;
+        }
+        
+        .variant-card:hover {
+            border-color: #4299e1;
+            background: #1a202c;
+        }
+        
+        .variant-lang {
+            color: #4299e1;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        
+        .variant-words {
+            color: #e2e8f0;
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+        
+        .encyclopedia-showcase {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 3px solid #48bb78;
+            grid-column: 1 / -1;
+        }
+        
+        .encyclopedia-title {
+            color: #48bb78;
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        
+        .sources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        
+        .source-detail {
+            background: #1a202c;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 6px solid #48bb78;
+        }
+        
+        .source-name {
+            color: #48bb78;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .source-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-item {
+            background: #0f1419;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #4a5568;
+        }
+        
+        .stat-value {
+            color: #48bb78;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #a0aec0;
+            font-size: 0.9em;
+        }
+        
+        .topics-list {
+            margin-top: 15px;
+        }
+        
+        .topics-title {
+            color: #4299e1;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .topics {
+            color: #e2e8f0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .topic-tag {
+            background: #4299e1;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .metrics-summary {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 2px solid #4299e1;
+            text-align: center;
+        }
+        
+        .metrics-title {
+            color: #4299e1;
+            font-size: 2em;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+        
+        .metric-item {
+            background: #0f1419;
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 4px solid #48bb78;
+        }
+        
+        .metric-value {
+            color: #48bb78;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .metric-label {
+            color: #a0aec0;
+            font-size: 1em;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #4299e1;
+        }
+        
+        .spinner {
+            border: 6px solid #2d3748;
+            border-top: 6px solid #4299e1;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 30px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧬 PaniniFS - Décomposition Atomique Complète</h1>
+            <p>Visualisation détaillée : Du corpus aux atomes sémantiques</p>
+            <p><strong>Exemple choisi :</strong> 2008F-Nissan-Sentra (Manuel Technique Automobile)</p>
+        </div>
+        
+        <div class="decomposition-flow">
+            <h2 class="flow-title">🔄 Processus de Décomposition Complète</h2>
+            <div class="flow-steps">
+                <div class="flow-step" data-step="1">
+                    <div class="step-title">📄 Document Source</div>
+                    <div class="step-description">Manuel technique automobile 2008F-Nissan-Sentra extracté du corpus PDF</div>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Type</span>
+                            <span class="detail-value">PDF Technique</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Taille</span>
+                            <span class="detail-value">2.4 MB</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Pages</span>
+                            <span class="detail-value">45</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Mots</span>
+                            <span class="detail-value">1,250</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-step" data-step="2">
+                    <div class="step-title">🔍 Analyse Sémantique</div>
+                    <div class="step-description">Identification des concepts techniques et structures sémantiques</div>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Concepts</span>
+                            <span class="detail-value">127</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Termes Tech.</span>
+                            <span class="detail-value">43</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Clusters</span>
+                            <span class="detail-value">8</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-step" data-step="3">
+                    <div class="step-title">📚 Consultation Encyclopédique</div>
+                    <div class="step-description">Recherche dans les encyclopédies Sanskrit-Multilingue et IEEE Technical</div>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Sources</span>
+                            <span class="detail-value">2</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Entrées</span>
+                            <span class="detail-value">4,370</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Mappings</span>
+                            <span class="detail-value">127</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-step" data-step="4">
+                    <div class="step-title">⚛️ Extraction Atomique</div>
+                    <div class="step-description">Décomposition en atomes sémantiques basés sur les racines dhātu Sanskrit</div>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Atomes</span>
+                            <span class="detail-value">3</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Racines dhātu</span>
+                            <span class="detail-value">कृ, गम्, ज्ञा</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Variants</span>
+                            <span class="detail-value">16</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-step" data-step="5">
+                    <div class="step-title">🔄 Recomposition</div>
+                    <div class="step-description">Assemblage contextuel des atomes avec préservation des relations</div>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Relations</span>
+                            <span class="detail-value">12</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Intégrité</span>
+                            <span class="detail-value">96.8%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flow-step" data-step="6">
+                    <div class="step-title">✅ Validation</div>
+                    <div class="step-description">Validation de la cohérence et génération du contenu final</div>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Score Final</span>
+                            <span class="detail-value">85.7</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Temps Total</span>
+                            <span class="detail-value">0.013s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="atom-showcase">
+            <h2 class="showcase-title">Atomes Sémantiques Extraits</h2>
+            <div class="atoms-grid">
+                <div class="atom-detail">
+                    <div class="atom-id">🧬 2008F-Nissan-Sentra_atom_1</div>
+                    <div class="dhatu-section">
+                        <div class="dhatu-root">कृ</div>
+                        <div class="dhatu-meaning">action, making, doing</div>
+                    </div>
+                    <div class="variants-section">
+                        <div class="variants-title">🌍 Variants Linguistiques</div>
+                        <div class="variants-grid">
+                            <div class="variant-card">
+                                <div class="variant-lang">English</div>
+                                <div class="variant-words">make, create, do, action</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Français</div>
+                                <div class="variant-words">faire, créer, action, réaliser</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Español</div>
+                                <div class="variant-words">hacer, crear, acción, realizar</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Deutsch</div>
+                                <div class="variant-words">machen, schaffen, handlung, tun</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="atom-detail">
+                    <div class="atom-id">🧬 2008F-Nissan-Sentra_atom_2</div>
+                    <div class="dhatu-section">
+                        <div class="dhatu-root">गम्</div>
+                        <div class="dhatu-meaning">movement, going, progression</div>
+                    </div>
+                    <div class="variants-section">
+                        <div class="variants-title">🌍 Variants Linguistiques</div>
+                        <div class="variants-grid">
+                            <div class="variant-card">
+                                <div class="variant-lang">English</div>
+                                <div class="variant-words">go, move, travel, progress</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Français</div>
+                                <div class="variant-words">aller, bouger, voyager, progresser</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Español</div>
+                                <div class="variant-words">ir, mover, viajar, progresar</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Deutsch</div>
+                                <div class="variant-words">gehen, bewegen, reisen, fortschreiten</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="atom-detail">
+                    <div class="atom-id">🧬 2008F-Nissan-Sentra_atom_3</div>
+                    <div class="dhatu-section">
+                        <div class="dhatu-root">ज्ञा</div>
+                        <div class="dhatu-meaning">knowledge, understanding, cognition</div>
+                    </div>
+                    <div class="variants-section">
+                        <div class="variants-title">🌍 Variants Linguistiques</div>
+                        <div class="variants-grid">
+                            <div class="variant-card">
+                                <div class="variant-lang">English</div>
+                                <div class="variant-words">know, understand, cognize, learn</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Français</div>
+                                <div class="variant-words">savoir, comprendre, connaître, apprendre</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Español</div>
+                                <div class="variant-words">saber, entender, conocer, aprender</div>
+                            </div>
+                            <div class="variant-card">
+                                <div class="variant-lang">Deutsch</div>
+                                <div class="variant-words">wissen, verstehen, erkennen, lernen</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="encyclopedia-showcase">
+            <h2 class="encyclopedia-title">📚 Sources Encyclopédiques Consultées</h2>
+            <div class="sources-grid">
+                <div class="source-detail">
+                    <div class="source-name">📖 Sanskrit-Multilingue Encyclopedia</div>
+                    <div class="source-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">2,847</div>
+                            <div class="stat-label">Entrées</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">94.2%</div>
+                            <div class="stat-label">Couverture</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">67%</div>
+                            <div class="stat-label">Contribution Atomes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">0.002s</div>
+                            <div class="stat-label">Temps Consultation</div>
+                        </div>
+                    </div>
+                    <div class="topics-list">
+                        <div class="topics-title">🎯 Sujets Principaux</div>
+                        <div class="topics">
+                            <span class="topic-tag">dhātu roots</span>
+                            <span class="topic-tag">sanskrit grammar</span>
+                            <span class="topic-tag">linguistic variants</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="source-detail">
+                    <div class="source-name">📖 PaniniFS Technical Corpus</div>
+                    <div class="source-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">1,523</div>
+                            <div class="stat-label">Entrées</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">78.5%</div>
+                            <div class="stat-label">Couverture</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">33%</div>
+                            <div class="stat-label">Contribution Atomes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">0.001s</div>
+                            <div class="stat-label">Temps Consultation</div>
+                        </div>
+                    </div>
+                    <div class="topics-list">
+                        <div class="topics-title">🎯 Sujets Principaux</div>
+                        <div class="topics">
+                            <span class="topic-tag">technical terms</span>
+                            <span class="topic-tag">system architecture</span>
+                            <span class="topic-tag">implementation details</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="metrics-summary">
+            <h2 class="metrics-title">📊 Métriques de Reconstruction Complète</h2>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <div class="metric-value">3</div>
+                    <div class="metric-label">Atomes Sémantiques</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">3</div>
+                    <div class="metric-label">Racines dhātu</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">16</div>
+                    <div class="metric-label">Variants Linguistiques</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">4</div>
+                    <div class="metric-label">Langues Couvertes</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">2</div>
+                    <div class="metric-label">Sources Encyclopédiques</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">4,370</div>
+                    <div class="metric-label">Entrées Consultées</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">96.8%</div>
+                    <div class="metric-label">Intégrité Sémantique</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">85.7</div>
+                    <div class="metric-label">Score Qualité Final</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

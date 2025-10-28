@@ -1,0 +1,462 @@
+{
+  "timestamp": "2025-10-03T22:09:14.844178",
+  "statistics": {
+    "total_servers": 6,
+    "total_endpoints": 26,
+    "unique_endpoints": 15,
+    "duplicated_endpoints": 8,
+    "ports_used": 1
+  },
+  "servers": [
+    {
+      "name": "panini_webdav_server.py",
+      "path": "/home/stephane/GitHub/PaniniFS-Research/panini_webdav_server.py",
+      "size": 11777,
+      "modified": "2025-10-03T16:11:59.551967",
+      "endpoints": [],
+      "port": null,
+      "server_type": "HTTPServer",
+      "classes": [
+        "PaniniVFSHandler",
+        "WebDAVRequestHandler",
+        "BoundHandler",
+        "import",
+        "PaniniWebDAVServer"
+      ],
+      "functions": [
+        "load_vfs_architecture",
+        "get_content",
+        "get_virtual_path_info",
+        "do_PROPFIND",
+        "_generate_propfind_response",
+        "create_handler_class",
+        "main",
+        "do_GET",
+        "do_OPTIONS",
+        "__init__",
+        "_generate_directory_listing",
+        "start"
+      ]
+    },
+    {
+      "name": "panini_simple_server.py",
+      "path": "/home/stephane/GitHub/PaniniFS-Research/panini_simple_server.py",
+      "size": 20665,
+      "modified": "2025-10-03T16:11:59.554967",
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/api/nodes",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/api/generate",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/api/graph",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/api/health",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/api/semantic/search",
+          "type": "HTTPServer"
+        }
+      ],
+      "port": null,
+      "server_type": "HTTPServer",
+      "classes": [
+        "PaniniSimpleServer",
+        "BoundHandler",
+        "PaniniSimpleAPIHandler"
+      ],
+      "functions": [
+        "_handle_get_content",
+        "_send_json",
+        "_handle_generate",
+        "load_vfs_data",
+        "create_handler_class",
+        "_handle_semantic_search",
+        "main",
+        "_handle_decompose",
+        "_handle_get_graph",
+        "open_browser",
+        "do_GET",
+        "_handle_get_nodes",
+        "__init__",
+        "log_message",
+        "_serve_web_interface",
+        "do_POST",
+        "start"
+      ]
+    },
+    {
+      "name": "panini_web_backend.py",
+      "path": "/home/stephane/GitHub/PaniniFS-Research/panini_web_backend.py",
+      "size": 9824,
+      "modified": "2025-10-03T13:56:53.213538",
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/api/health",
+          "type": "FastAPI"
+        },
+        {
+          "method": "GET",
+          "path": "/api/nodes/",
+          "type": "FastAPI"
+        },
+        {
+          "method": "GET",
+          "path": "/api/graph/",
+          "type": "FastAPI"
+        },
+        {
+          "method": "GET",
+          "path": "/api/content/{node_id}",
+          "type": "FastAPI"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decompose/{node_id}",
+          "type": "FastAPI"
+        },
+        {
+          "method": "GET",
+          "path": "/api/semantic/search",
+          "type": "FastAPI"
+        },
+        {
+          "method": "POST",
+          "path": "/api/generate/",
+          "type": "FastAPI"
+        }
+      ],
+      "port": null,
+      "server_type": "FastAPI",
+      "classes": [
+        "GraphResponse",
+        "NodeResponse"
+      ],
+      "functions": [
+        "semantic_search",
+        "get_graph_structure",
+        "load_vfs_data",
+        "get_node_content",
+        "health_check",
+        "generate_content",
+        "get_all_nodes",
+        "decompose_node"
+      ]
+    },
+    {
+      "name": "panini_web_interface_generator.py",
+      "path": "/home/stephane/GitHub/PaniniFS-Research/panini_web_interface_generator.py",
+      "size": 34467,
+      "modified": "2025-10-03T16:11:59.552967",
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/api/health",
+          "type": "FastAPI"
+        },
+        {
+          "method": "GET",
+          "path": "/api/nodes/",
+          "type": "FastAPI"
+        },
+        {
+          "method": "GET",
+          "path": "/api/graph/",
+          "type": "FastAPI"
+        },
+        {
+          "method": "GET",
+          "path": "/api/content/{node_id}",
+          "type": "FastAPI"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decompose/{node_id}",
+          "type": "FastAPI"
+        },
+        {
+          "method": "GET",
+          "path": "/api/semantic/search",
+          "type": "FastAPI"
+        },
+        {
+          "method": "POST",
+          "path": "/api/generate/",
+          "type": "FastAPI"
+        }
+      ],
+      "port": null,
+      "server_type": "FastAPI",
+      "classes": [
+        "PaniniWebExplorerGenerator",
+        "GraphResponse",
+        "NodeResponse",
+        "import"
+      ],
+      "functions": [
+        "semantic_search",
+        "get_graph_structure",
+        "generate_react_frontend_specs",
+        "load_vfs_data",
+        "generate_deployment_guide",
+        "generate_html_prototype",
+        "get_node_content",
+        "__init__",
+        "generate_fastapi_backend",
+        "health_check",
+        "generate_content",
+        "get_all_nodes",
+        "run_complete_web_interface_generation",
+        "decompose_node"
+      ]
+    },
+    {
+      "name": "panini_uhd_interface.py",
+      "path": "/home/stephane/GitHub/PaniniFS-Research/panini_uhd_interface.py",
+      "size": 36252,
+      "modified": "2025-10-03T16:11:59.576273",
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/api/tree",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "type": "HTTPServer"
+        }
+      ],
+      "port": null,
+      "server_type": "HTTPServer",
+      "classes": [
+        "PaniniUHDInterfaceHandler"
+      ],
+      "functions": [
+        "_send_json",
+        "_serve_uhd_interface",
+        "start_uhd_server",
+        "_serve_content_tree",
+        "_serve_document_content",
+        "_serve_node_graph",
+        "do_GET",
+        "__init__",
+        "_serve_static_file",
+        "handler",
+        "_serve_404"
+      ]
+    },
+    {
+      "name": "serveur_decomposition_complete.py",
+      "path": "/home/stephane/GitHub/PaniniFS-Research/serveur_decomposition_complete.py",
+      "size": 20640,
+      "modified": "2025-10-03T21:47:12.790139",
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/demo",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/api/decomposition-process",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/api/corpus",
+          "type": "HTTPServer"
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "type": "HTTPServer"
+        }
+      ],
+      "port": 5000,
+      "server_type": "HTTPServer",
+      "classes": [
+        "PaniniDecompositionHandler"
+      ],
+      "functions": [
+        "_api_document_details",
+        "_has_analysis_data",
+        "__init__",
+        "_send_error",
+        "_api_document_analysis",
+        "_api_decomposition_process",
+        "run_server",
+        "_get_atoms_extraction_data",
+        "find_free_port",
+        "_find_digested_file",
+        "_get_decomposition_steps",
+        "_send_response",
+        "_get_encyclopedia_sources",
+        "_estimate_word_count",
+        "_get_semantic_analysis_data",
+        "_api_corpus",
+        "_get_extraction_data",
+        "do_GET",
+        "log_message",
+        "_get_encyclopedia_consultation_data",
+        "_get_validation_data",
+        "_handle_api_request",
+        "_get_semantic_atoms",
+        "_get_recomposition_data",
+        "_send_json_response",
+        "_get_reconstruction_validation",
+        "_serve_html_file"
+      ]
+    }
+  ],
+  "duplications": {
+    "/": [
+      "panini_simple_server.py",
+      "panini_uhd_interface.py",
+      "serveur_decomposition_complete.py"
+    ],
+    "/api/health": [
+      "panini_simple_server.py",
+      "panini_web_backend.py",
+      "panini_web_interface_generator.py"
+    ],
+    "/api/semantic/search": [
+      "panini_simple_server.py",
+      "panini_web_backend.py",
+      "panini_web_interface_generator.py"
+    ],
+    "/api/nodes/": [
+      "panini_web_backend.py",
+      "panini_web_interface_generator.py"
+    ],
+    "/api/graph/": [
+      "panini_web_backend.py",
+      "panini_web_interface_generator.py"
+    ],
+    "/api/content/{node_id}": [
+      "panini_web_backend.py",
+      "panini_web_interface_generator.py"
+    ],
+    "/api/decompose/{node_id}": [
+      "panini_web_backend.py",
+      "panini_web_interface_generator.py"
+    ],
+    "/api/generate/": [
+      "panini_web_backend.py",
+      "panini_web_interface_generator.py"
+    ]
+  },
+  "consolidation_matrix": [
+    {
+      "server": "panini_web_backend.py",
+      "port": null,
+      "type": "FastAPI",
+      "endpoints_count": 7,
+      "unique_endpoints": [],
+      "shared_endpoints": [
+        "/api/health",
+        "/api/nodes/",
+        "/api/graph/",
+        "/api/content/{node_id}",
+        "/api/decompose/{node_id}",
+        "/api/semantic/search",
+        "/api/generate/"
+      ],
+      "priority": 3
+    },
+    {
+      "server": "panini_web_interface_generator.py",
+      "port": null,
+      "type": "FastAPI",
+      "endpoints_count": 7,
+      "unique_endpoints": [],
+      "shared_endpoints": [
+        "/api/health",
+        "/api/nodes/",
+        "/api/graph/",
+        "/api/content/{node_id}",
+        "/api/decompose/{node_id}",
+        "/api/semantic/search",
+        "/api/generate/"
+      ],
+      "priority": 3
+    },
+    {
+      "server": "panini_simple_server.py",
+      "port": null,
+      "type": "HTTPServer",
+      "endpoints_count": 6,
+      "unique_endpoints": [
+        "/api/nodes",
+        "/api/generate",
+        "/api/graph"
+      ],
+      "shared_endpoints": [
+        "/",
+        "/api/health",
+        "/api/semantic/search"
+      ],
+      "priority": 2
+    },
+    {
+      "server": "serveur_decomposition_complete.py",
+      "port": 5000,
+      "type": "HTTPServer",
+      "endpoints_count": 4,
+      "unique_endpoints": [
+        "/demo",
+        "/api/decomposition-process",
+        "/api/corpus"
+      ],
+      "shared_endpoints": [
+        "/"
+      ],
+      "priority": 2
+    },
+    {
+      "server": "panini_webdav_server.py",
+      "port": null,
+      "type": "HTTPServer",
+      "endpoints_count": 0,
+      "unique_endpoints": [],
+      "shared_endpoints": [],
+      "priority": 1
+    },
+    {
+      "server": "panini_uhd_interface.py",
+      "port": null,
+      "type": "HTTPServer",
+      "endpoints_count": 2,
+      "unique_endpoints": [
+        "/api/tree"
+      ],
+      "shared_endpoints": [
+        "/"
+      ],
+      "priority": 1
+    }
+  ],
+  "recommendations": [
+    "1. Utiliser 'panini_web_backend.py' comme base (le plus complet)",
+    "3. Migrer 8 endpoints dupliqués",
+    "4. Archiver 2 serveurs obsolètes"
+  ]
+}

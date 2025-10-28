@@ -1,0 +1,154 @@
+{
+  "timestamp": 1759520023.791096,
+  "summary": {
+    "total_tests": 5,
+    "successful_tests": 3,
+    "success_rate": 0.6
+  },
+  "test_results": [
+    {
+      "test": "corpus_loading",
+      "status": "success",
+      "documents_count": 20,
+      "privacy_distribution": {
+        "confidential": 5,
+        "private": 12,
+        "public": 3
+      }
+    },
+    {
+      "test": "document_reconstruction",
+      "results": [
+        {
+          "document": "genaipromptingguide.pdf",
+          "reconstruction_time": 0.003704547882080078,
+          "components_count": 4,
+          "privacy_level": "confidential",
+          "status": "success"
+        },
+        {
+          "document": "tiaatoolkitforinstitutionalarchitecture.pdf",
+          "reconstruction_time": 0.003656625747680664,
+          "components_count": 4,
+          "privacy_level": "confidential",
+          "status": "success"
+        },
+        {
+          "document": "togaf10quickstartguide-sample.pdf",
+          "reconstruction_time": 0.003544330596923828,
+          "components_count": 4,
+          "privacy_level": "confidential",
+          "status": "success"
+        },
+        {
+          "document": "visualising-software-architecture-sample.epub",
+          "reconstruction_time": 0.0035033226013183594,
+          "components_count": 4,
+          "privacy_level": "confidential",
+          "status": "success"
+        },
+        {
+          "document": "visualising-software-architecture-sample.pdf",
+          "reconstruction_time": 0.004576921463012695,
+          "components_count": 4,
+          "privacy_level": "confidential",
+          "status": "success"
+        }
+      ],
+      "success_rate": 1.0
+    },
+    {
+      "test": "pdf_serving",
+      "results": [
+        {
+          "document": "genaipromptingguide.pdf",
+          "status": "error",
+          "http_status": 501
+        },
+        {
+          "document": "tiaatoolkitforinstitutionalarchitecture.pdf",
+          "status": "error",
+          "http_status": 501
+        },
+        {
+          "document": "togaf10quickstartguide-sample.pdf",
+          "status": "error",
+          "http_status": 501
+        }
+      ],
+      "success_rate": 0.0
+    },
+    {
+      "test": "analysis_graphs",
+      "results": [
+        {
+          "document": "genaipromptingguide.pdf",
+          "status": "success",
+          "components_count": 5,
+          "links_count": 5,
+          "privacy_distribution": {
+            "public": 2,
+            "private": 1,
+            "confidential": 2
+          }
+        },
+        {
+          "document": "tiaatoolkitforinstitutionalarchitecture.pdf",
+          "status": "success",
+          "components_count": 5,
+          "links_count": 5,
+          "privacy_distribution": {
+            "public": 2,
+            "private": 1,
+            "confidential": 2
+          }
+        },
+        {
+          "document": "togaf10quickstartguide-sample.pdf",
+          "status": "success",
+          "components_count": 5,
+          "links_count": 5,
+          "privacy_distribution": {
+            "public": 2,
+            "private": 1,
+            "confidential": 2
+          }
+        },
+        {
+          "document": "visualising-software-architecture-sample.epub",
+          "status": "success",
+          "components_count": 5,
+          "links_count": 5,
+          "privacy_distribution": {
+            "public": 2,
+            "private": 1,
+            "confidential": 2
+          }
+        },
+        {
+          "document": "visualising-software-architecture-sample.pdf",
+          "status": "success",
+          "components_count": 5,
+          "links_count": 5,
+          "privacy_distribution": {
+            "public": 2,
+            "private": 1,
+            "confidential": 2
+          }
+        }
+      ],
+      "success_rate": 1.0
+    },
+    {
+      "test": "privacy_classification",
+      "accuracy": 1.0,
+      "correct_classifications": 20,
+      "total_documents": 20,
+      "distribution": {
+        "private": 12,
+        "confidential": 5,
+        "public": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "timestamp": "2025-10-03T00:39:54.016581+00:00",
+    "engine_version": "1.0.0",
+    "issue_reference": "#13 - Atomes Sémantiques + Multilinguisme",
+    "analysis_type": "semantic_atom_discovery"
+  },
+  "atom_discovery_summary": {
+    "total_atoms_discovered": 5,
+    "dhatu_based_atoms": 5,
+    "corpus_mined_atoms": 0,
+    "language_coverage": {
+      "english": 5,
+      "french": 5,
+      "spanish": 5,
+      "german": 5
+    },
+    "unique_languages": 4,
+    "validation_status_distribution": {
+      "discovered": 0,
+      "validated": 5,
+      "rejected": 0
+    }
+  },
+  "corpus_analysis": {
+    "total_samples": 8,
+    "language_pairs": 6,
+    "average_alignment_quality": 0.6126742180720117
+  },
+  "translator_analysis": {
+    "translator_61cda44a": {
+      "name": "Marie Dubois",
+      "language_pairs": 1,
+      "samples_contributed": 1,
+      "reliability_score": 0.5291666666666666,
+      "detected_biases": 2
+    },
+    "translator_5585ca08": {
+      "name": "Carlos Rodriguez",
+      "language_pairs": 1,
+      "samples_contributed": 1,
+      "reliability_score": 0.7,
+      "detected_biases": 1
+    },
+    "translator_347db4ca": {
+      "name": "Klaus Mueller",
+      "language_pairs": 1,
+      "samples_contributed": 1,
+      "reliability_score": 0.63,
+      "detected_biases": 1
+    },
+    "translator_5793355e": {
+      "name": "Sarah Johnson",
+      "language_pairs": 1,
+      "samples_contributed": 1,
+      "reliability_score": 0.6766666666666666,
+      "detected_biases": 1
+    },
+    "translator_5c42d6e9": {
+      "name": "Michael Brown",
+      "language_pairs": 1,
+      "samples_contributed": 1,
+      "reliability_score": 0.6181818181818182,
+      "detected_biases": 0
+    },
+    "translator_23d1538f": {
+      "name": "Emma Thompson",
+      "language_pairs": 1,
+      "samples_contributed": 1,
+      "reliability_score": 0.5920454545454544,
+      "detected_biases": 2
+    },
+    "translator_bf926077": {
+      "name": "Dr. Laurent Petit",
+      "language_pairs": 1,
+      "samples_contributed": 1,
+      "reliability_score": 0.602155172413793,
+      "detected_biases": 1
+    },
+    "translator_b9111c21": {
+      "name": "Dr. Ana García",
+      "language_pairs": 1,
+      "samples_contributed": 1,
+      "reliability_score": 0.5531779661016949,
+      "detected_biases": 2
+    }
+  },
+  "discovered_atoms": [
+    {
+      "atom_id": "dhatu_c59b3dcd",
+      "dhatu_root": "कृ",
+      "semantic_signature": "88881207fdd27f7aad157c863c2b06729eb635e6cb2ad216311854b4fe885335",
+      "core_meaning": "make, create, do",
+      "language_variants": {
+        "english": [
+          "create",
+          "make",
+          "do",
+          "form",
+          "produce"
+        ],
+        "french": [
+          "créer",
+          "faire",
+          "former",
+          "produire"
+        ],
+        "spanish": [
+          "crear",
+          "hacer",
+          "formar",
+          "producir"
+        ],
+        "german": [
+          "machen",
+          "schaffen",
+          "erstellen",
+          "bilden"
+        ]
+      },
+      "frequency_scores": {
+        "english": 0.5,
+        "french": 0.5,
+        "spanish": 0.5,
+        "german": 0.5
+      },
+      "discovery_method": "dhatu_based",
+      "confidence_score": 0.9,
+      "validation_status": "validated",
+      "cross_references": [],
+      "metadata": {
+        "semantic_category": "action_creation",
+        "priority": 1,
+        "discovery_timestamp": "2025-10-03T00:39:54.016097+00:00"
+      }
+    },
+    {
+      "atom_id": "dhatu_3659aaa0",
+      "dhatu_root": "गम्",
+      "semantic_signature": "9420c564a9f72ac45baa6050763f5222bacac260ad07de92b40947bfd83f5c2b",
+      "core_meaning": "go, move, travel",
+      "language_variants": {
+        "english": [
+          "go",
+          "move",
+          "travel",
+          "proceed",
+          "advance"
+        ],
+        "french": [
+          "aller",
+          "bouger",
+          "voyager",
+          "avancer"
+        ],
+        "spanish": [
+          "ir",
+          "mover",
+          "viajar",
+          "avanzar"
+        ],
+        "german": [
+          "gehen",
+          "bewegen",
+          "reisen",
+          "fortschreiten"
+        ]
+      },
+      "frequency_scores": {
+        "english": 0.5,
+        "french": 0.5,
+        "spanish": 0.5,
+        "german": 0.5
+      },
+      "discovery_method": "dhatu_based",
+      "confidence_score": 0.9,
+      "validation_status": "validated",
+      "cross_references": [],
+      "metadata": {
+        "semantic_category": "movement",
+        "priority": 1,
+        "discovery_timestamp": "2025-10-03T00:39:54.016137+00:00"
+      }
+    },
+    {
+      "atom_id": "dhatu_7f800e23",
+      "dhatu_root": "दा",
+      "semantic_signature": "61a192a29456a99e5522292e1746b41d1cd67a376cc8df0908c35f106e118217",
+      "core_meaning": "give, grant, bestow",
+      "language_variants": {
+        "english": [
+          "give",
+          "grant",
+          "bestow",
+          "offer",
+          "provide"
+        ],
+        "french": [
+          "donner",
+          "accorder",
+          "offrir",
+          "fournir"
+        ],
+        "spanish": [
+          "dar",
+          "conceder",
+          "ofrecer",
+          "proporcionar"
+        ],
+        "german": [
+          "geben",
+          "gewähren",
+          "anbieten",
+          "bereitstellen"
+        ]
+      },
+      "frequency_scores": {
+        "english": 0.5,
+        "french": 0.5,
+        "spanish": 0.5,
+        "german": 0.5
+      },
+      "discovery_method": "dhatu_based",
+      "confidence_score": 0.9,
+      "validation_status": "validated",
+      "cross_references": [],
+      "metadata": {
+        "semantic_category": "transfer",
+        "priority": 1,
+        "discovery_timestamp": "2025-10-03T00:39:54.016176+00:00"
+      }
+    },
+    {
+      "atom_id": "dhatu_429c6331",
+      "dhatu_root": "ज्ञा",
+      "semantic_signature": "23c448b6451e1c9a8e25a479e64dc0c7e7324e2b90f533d904bf27c8eca86e4a",
+      "core_meaning": "know, understand, perceive",
+      "language_variants": {
+        "english": [
+          "know",
+          "understand",
+          "perceive",
+          "recognize"
+        ],
+        "french": [
+          "savoir",
+          "comprendre",
+          "percevoir",
+          "reconnaître"
+        ],
+        "spanish": [
+          "saber",
+          "entender",
+          "percibir",
+          "reconocer"
+        ],
+        "german": [
+          "wissen",
+          "verstehen",
+          "wahrnehmen",
+          "erkennen"
+        ]
+      },
+      "frequency_scores": {
+        "english": 0.5,
+        "french": 0.5,
+        "spanish": 0.5,
+        "german": 0.5
+      },
+      "discovery_method": "dhatu_based",
+      "confidence_score": 0.9,
+      "validation_status": "validated",
+      "cross_references": [],
+      "metadata": {
+        "semantic_category": "cognition",
+        "priority": 1,
+        "discovery_timestamp": "2025-10-03T00:39:54.016199+00:00"
+      }
+    },
+    {
+      "atom_id": "dhatu_52f08507",
+      "dhatu_root": "भू",
+      "semantic_signature": "b5b4345ead1f0c957ebfbdec30909649a864db49ae3c987e330a722a69561530",
+      "core_meaning": "be, become, exist",
+      "language_variants": {
+        "english": [
+          "be",
+          "become",
+          "exist",
+          "arise",
+          "occur"
+        ],
+        "french": [
+          "être",
+          "devenir",
+          "exister",
+          "surgir"
+        ],
+        "spanish": [
+          "ser",
+          "estar",
+          "llegar a ser",
+          "existir"
+        ],
+        "german": [
+          "sein",
+          "werden",
+          "existieren",
+          "entstehen"
+        ]
+      },
+      "frequency_scores": {
+        "english": 0.5,
+        "french": 0.5,
+        "spanish": 0.5,
+        "german": 0.5
+      },
+      "discovery_method": "dhatu_based",
+      "confidence_score": 0.9,
+      "validation_status": "validated",
+      "cross_references": [],
+      "metadata": {
+        "semantic_category": "existence",
+        "priority": 1,
+        "discovery_timestamp": "2025-10-03T00:39:54.016221+00:00"
+      }
+    }
+  ],
+  "recommendations": {
+    "expansion_priorities": [
+      "Enrichir corpus avec langues sous-représentées",
+      "Valider atomes découverts via experts linguistiques",
+      "Implémenter validation automatique cross-références",
+      "Développer métriques confiance plus sophistiquées"
+    ],
+    "quality_improvements": [
+      "Algorithmes alignement mots plus précis",
+      "Détection biais traducteur plus fine",
+      "Validation sémantique automatique",
+      "Intégration avec bases étymologiques existantes"
+    ]
+  }
+}

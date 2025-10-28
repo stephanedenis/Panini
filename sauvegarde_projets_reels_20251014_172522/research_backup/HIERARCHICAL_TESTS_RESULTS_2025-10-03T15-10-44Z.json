@@ -1,0 +1,585 @@
+{
+  "session_id": "2025-10-03T15-10-44Z",
+  "tests_executed": [],
+  "hierarchy_validation": {},
+  "confidentiality_tests": {},
+  "performance_metrics": {},
+  "corpus_analysis": {
+    "downloads_files": [
+      {
+        "name": "2008F-Nissan-Sentra.pdf",
+        "size": 5023504,
+        "type": "application",
+        "hash": "a31a81b36eefe8a6",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "arc42-faq.pdf",
+        "size": 3241833,
+        "type": "application",
+        "hash": "ede87271fd0f4613",
+        "privacy_level": "team_shareable"
+      },
+      {
+        "name": "delayinsensitivecircuits.pdf",
+        "size": 119860925,
+        "type": "application",
+        "hash": "f94408adf16112b7",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "genaipromptingguide.pdf",
+        "size": 18654917,
+        "type": "application",
+        "hash": "1ba717ac6092e1b3",
+        "privacy_level": "team_shareable"
+      },
+      {
+        "name": "metapatterns.pdf",
+        "size": 57672218,
+        "type": "application",
+        "hash": "6e81defe414cc784",
+        "privacy_level": "public_concepts"
+      },
+      {
+        "name": "onlineStatement (1).pdf",
+        "size": 168043,
+        "type": "application",
+        "hash": "b088fb579a5efc3d",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "onlineStatement.pdf",
+        "size": 145484,
+        "type": "application",
+        "hash": "c0d64972cfe6ba29",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "proactivehuman.pdf",
+        "size": 6378781,
+        "type": "application",
+        "hash": "8fa183fbecfce714",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "RISKrobustinnovativesafe-keeping.pdf",
+        "size": 32363738,
+        "type": "application",
+        "hash": "8b7ce3fbd00c91a2",
+        "privacy_level": "public_concepts"
+      },
+      {
+        "name": "Samuel CD (1).pdf",
+        "size": 146091,
+        "type": "application",
+        "hash": "85f6fd513612fd6c",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "Samuel CD Aug 1.pdf",
+        "size": 145747,
+        "type": "application",
+        "hash": "9b889dd366f2c12c",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "Samuel CD Aug 22.pdf",
+        "size": 145791,
+        "type": "application",
+        "hash": "bc13fed074ab8852",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "Samuel CD Jul 23 (1).pdf",
+        "size": 145462,
+        "type": "application",
+        "hash": "f272186b993fd5c6",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "Samuel CD Jul 23.pdf",
+        "size": 145462,
+        "type": "application",
+        "hash": "f272186b993fd5c6",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "Samuel CD.pdf",
+        "size": 146091,
+        "type": "application",
+        "hash": "85f6fd513612fd6c",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "Samuel CD Sepp 14 (1).pdf",
+        "size": 145555,
+        "type": "application",
+        "hash": "8e7c7acb16cb8e75",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "Samuel CD Sepp 14 (2).pdf",
+        "size": 145555,
+        "type": "application",
+        "hash": "8e7c7acb16cb8e75",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "Samuel CD Sepp 14.pdf",
+        "size": 145555,
+        "type": "application",
+        "hash": "8e7c7acb16cb8e75",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "tiaatoolkitforinstitutionalarchitecture.pdf",
+        "size": 10799912,
+        "type": "application",
+        "hash": "bdd38f28be90efa5",
+        "privacy_level": "team_shareable"
+      },
+      {
+        "name": "togaf10quickstartguide-sample.pdf",
+        "size": 5208064,
+        "type": "application",
+        "hash": "cd586a050d184721",
+        "privacy_level": "team_shareable"
+      },
+      {
+        "name": "visualising-software-architecture-sample.pdf",
+        "size": 7928768,
+        "type": "application",
+        "hash": "c87041df00fd22b9",
+        "privacy_level": "team_shareable"
+      },
+      {
+        "name": "WhoisagileSouthAfrica.pdf",
+        "size": 4558120,
+        "type": "application",
+        "hash": "39c1b8b6b76b5638",
+        "privacy_level": "public_concepts"
+      },
+      {
+        "name": "arc42-faq.epub",
+        "size": 2843788,
+        "type": "application",
+        "hash": "048602f11e2152f9",
+        "privacy_level": "team_shareable"
+      },
+      {
+        "name": "metapatterns.epub",
+        "size": 71244290,
+        "type": "application",
+        "hash": "37af1180a88cc8a6",
+        "privacy_level": "public_concepts"
+      },
+      {
+        "name": "visualising-software-architecture-sample.epub",
+        "size": 8339305,
+        "type": "application",
+        "hash": "c369f245e898a2a6",
+        "privacy_level": "team_shareable"
+      },
+      {
+        "name": "WhoisagileSouthAfrica.epub",
+        "size": 4414955,
+        "type": "application",
+        "hash": "7f1b12e23a41c855",
+        "privacy_level": "public_concepts"
+      },
+      {
+        "name": "baby-sign-gallery-2025-09-09.json",
+        "size": 2622,
+        "type": "application",
+        "hash": "c2227665c903342a",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "client_secret_294630322025-bls6djp1o5444mr45nnk4dp6ipfedlbo.apps.googleusercontent.com.json",
+        "size": 413,
+        "type": "application",
+        "hash": "890e7d9c85400ab9",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "panini_dhatu_analysis_panini_gpu_1758590373.json",
+        "size": 4106,
+        "type": "application",
+        "hash": "0cf6200cb78cdf39",
+        "privacy_level": "private_exclusive"
+      },
+      {
+        "name": "panini_dhatu_analysis_panini_gpu_1758590574.json",
+        "size": 4121,
+        "type": "application",
+        "hash": "2bc2a4e8fec4f29b",
+        "privacy_level": "private_exclusive"
+      }
+    ],
+    "panini_corpus": {
+      "text": [
+        {
+          "name": "test_simple.txt",
+          "relative_path": "test_simple.txt",
+          "size": 6400,
+          "type": "text"
+        },
+        {
+          "name": "test_markdown.md",
+          "relative_path": "test_markdown.md",
+          "size": 431,
+          "type": "text"
+        },
+        {
+          "name": "test_complex.json",
+          "relative_path": "test_complex.json",
+          "size": 14660,
+          "type": "application"
+        },
+        {
+          "name": "test_page.html",
+          "relative_path": "test_page.html",
+          "size": 646,
+          "type": "text"
+        },
+        {
+          "name": "project_lancer_dashboard_web.py",
+          "relative_path": "project_lancer_dashboard_web.py",
+          "size": 3957,
+          "type": "text"
+        },
+        {
+          "name": "project_monitor_real_content.py",
+          "relative_path": "project_monitor_real_content.py",
+          "size": 9836,
+          "type": "text"
+        },
+        {
+          "name": "project_scan_real_panini_data.py",
+          "relative_path": "project_scan_real_panini_data.py",
+          "size": 14655,
+          "type": "text"
+        },
+        {
+          "name": "project_dashboard_real_data.json",
+          "relative_path": "project_dashboard_real_data.json",
+          "size": 973,
+          "type": "application"
+        },
+        {
+          "name": "project_copilotage_date_iso_standard.json",
+          "relative_path": "project_copilotage_date_iso_standard.json",
+          "size": 6791,
+          "type": "application"
+        },
+        {
+          "name": "project_COPILOTAGE_DATES_ISO_APPLIQUE.md",
+          "relative_path": "project_COPILOTAGE_DATES_ISO_APPLIQUE.md",
+          "size": 3345,
+          "type": "text"
+        },
+        {
+          "name": "project_COPILOTAGE_DATES_ISO_VALIDATION_FINALE.md",
+          "relative_path": "project_COPILOTAGE_DATES_ISO_VALIDATION_FINALE.md",
+          "size": 2414,
+          "type": "text"
+        },
+        {
+          "name": "project_VUE_MODELE_PANINI_COMPLET.md",
+          "relative_path": "project_VUE_MODELE_PANINI_COMPLET.md",
+          "size": 5401,
+          "type": "text"
+        },
+        {
+          "name": "project_start_phase1_monitoring.sh",
+          "relative_path": "project_start_phase1_monitoring.sh",
+          "size": 873,
+          "type": "application"
+        },
+        {
+          "name": "project_deploy_phase1_dashboard.sh",
+          "relative_path": "project_deploy_phase1_dashboard.sh",
+          "size": 3134,
+          "type": "application"
+        },
+        {
+          "name": "project_auto_update_dashboard.sh",
+          "relative_path": "project_auto_update_dashboard.sh",
+          "size": 1053,
+          "type": "application"
+        },
+        {
+          "name": "project_phase1_monitoring.log",
+          "relative_path": "project_phase1_monitoring.log",
+          "size": 35499,
+          "type": "text"
+        },
+        {
+          "name": "project_auto_update_dashboard.log",
+          "relative_path": "project_auto_update_dashboard.log",
+          "size": 2207,
+          "type": "text"
+        },
+        {
+          "name": "project_autonomous_execution.log",
+          "relative_path": "project_autonomous_execution.log",
+          "size": 4196,
+          "type": "text"
+        },
+        {
+          "name": "stress_test_001.txt",
+          "relative_path": "stress_test_001.txt",
+          "size": 81717,
+          "type": "text"
+        },
+        {
+          "name": "stress_test_002.txt",
+          "relative_path": "stress_test_002.txt",
+          "size": 51421,
+          "type": "text"
+        },
+        {
+          "name": "stress_test_003.txt",
+          "relative_path": "stress_test_003.txt",
+          "size": 49004,
+          "type": "text"
+        },
+        {
+          "name": "stress_test_004.txt",
+          "relative_path": "stress_test_004.txt",
+          "size": 60892,
+          "type": "text"
+        },
+        {
+          "name": "stress_test_005.txt",
+          "relative_path": "stress_test_005.txt",
+          "size": 37466,
+          "type": "text"
+        }
+      ],
+      "audio": [
+        {
+          "name": "synthetic_tone.wav",
+          "relative_path": "synthetic_tone.wav",
+          "size": 16044,
+          "type": "audio"
+        }
+      ],
+      "video": [],
+      "image": [
+        {
+          "name": "synthetic_test.ppm",
+          "relative_path": "synthetic_test.ppm",
+          "size": 108119,
+          "type": "image"
+        }
+      ],
+      "binary": [
+        {
+          "name": "random_small.bin",
+          "relative_path": "random_small.bin",
+          "size": 1024,
+          "type": "application"
+        },
+        {
+          "name": "pattern_data.bin",
+          "relative_path": "pattern_data.bin",
+          "size": 2048,
+          "type": "application"
+        },
+        {
+          "name": "repetitive.bin",
+          "relative_path": "repetitive.bin",
+          "size": 10240,
+          "type": "application"
+        }
+      ],
+      "edge_cases": [
+        {
+          "name": "empty.txt",
+          "relative_path": "empty.txt",
+          "size": 0,
+          "type": "text"
+        },
+        {
+          "name": "unicode_test.txt",
+          "relative_path": "unicode_test.txt",
+          "size": 71,
+          "type": "text"
+        },
+        {
+          "name": "test_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_.txt",
+          "relative_path": "test_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_very_long_filename_.txt",
+          "size": 46,
+          "type": "text"
+        },
+        {
+          "name": "all_bytes.bin",
+          "relative_path": "all_bytes.bin",
+          "size": 256,
+          "type": "application"
+        },
+        {
+          "name": "malformed.json",
+          "relative_path": "malformed.json",
+          "size": 34,
+          "type": "application"
+        }
+      ]
+    },
+    "total_files": 63,
+    "file_types": {
+      "application": 30
+    },
+    "size_distribution": {}
+  },
+  "private_to_teams_flow": {
+    "files_processed": 10,
+    "private_kept": 10,
+    "shared_to_team_a": 2,
+    "shared_to_team_b": 3,
+    "sharing_decisions": [
+      {
+        "keep_private": true,
+        "share_to_team_a": false,
+        "share_to_team_b": false,
+        "reason": "strictly_private_content"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": false,
+        "share_to_team_b": false,
+        "reason": "default_private_policy"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": false,
+        "share_to_team_b": false,
+        "reason": "strictly_private_content"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": false,
+        "share_to_team_b": true,
+        "reason": "default_private_policy",
+        "team_b_reason": "management_concepts_relevant"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": true,
+        "share_to_team_b": true,
+        "reason": "default_private_policy",
+        "team_a_reason": "public_concepts_safe",
+        "team_b_reason": "public_concepts_safe"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": false,
+        "share_to_team_b": false,
+        "reason": "strictly_private_content"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": false,
+        "share_to_team_b": false,
+        "reason": "strictly_private_content"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": false,
+        "share_to_team_b": false,
+        "reason": "strictly_private_content"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": true,
+        "share_to_team_b": true,
+        "reason": "default_private_policy",
+        "team_a_reason": "public_concepts_safe",
+        "team_b_reason": "public_concepts_safe"
+      },
+      {
+        "keep_private": true,
+        "share_to_team_a": false,
+        "share_to_team_b": false,
+        "reason": "strictly_private_content"
+      }
+    ]
+  },
+  "teams_isolation": {
+    "team_a_files": 5,
+    "team_b_files": 5,
+    "isolation_violations": 0,
+    "cross_access_attempts": [
+      {
+        "from": "team_a",
+        "to": "team_b",
+        "content": "confidential_algorithm",
+        "status": "BLOCKED",
+        "reason": "strict_teams_isolation_policy",
+        "timestamp": "2025-10-03T15-10-44Z"
+      },
+      {
+        "from": "team_b",
+        "to": "team_a",
+        "content": "project_strategy",
+        "status": "BLOCKED",
+        "reason": "strict_teams_isolation_policy",
+        "timestamp": "2025-10-03T15-10-44Z"
+      },
+      {
+        "from": "team_a",
+        "to": "team_b",
+        "content": "technical_specs",
+        "status": "BLOCKED",
+        "reason": "strict_teams_isolation_policy",
+        "timestamp": "2025-10-03T15-10-44Z"
+      }
+    ]
+  },
+  "teams_to_public_anonymization": {
+    "team_concepts_processed": 5,
+    "public_concepts_created": 5,
+    "anonymization_applied": [
+      {
+        "original_file": "PANINI_REPOSITORY_CONFIG.json",
+        "anonymized_id": "public_concept_804833",
+        "concepts_generalized": 0,
+        "privacy_safe": true
+      },
+      {
+        "original_file": "confidential_project.json",
+        "anonymized_id": "public_concept_550648",
+        "concepts_generalized": 0,
+        "privacy_safe": true
+      },
+      {
+        "original_file": "technical_concepts.json",
+        "anonymized_id": "public_concept_682492",
+        "concepts_generalized": 3,
+        "privacy_safe": true
+      },
+      {
+        "original_file": "team_a_6e81defe.json",
+        "anonymized_id": "public_concept_872797",
+        "concepts_generalized": 1,
+        "privacy_safe": true
+      },
+      {
+        "original_file": "team_a_8b7ce3fb.json",
+        "anonymized_id": "public_concept_635246",
+        "concepts_generalized": 0,
+        "privacy_safe": true
+      }
+    ],
+    "privacy_violations": 0
+  },
+  "hierarchy_compliance": {
+    "private_exclusivity_maintained": true,
+    "teams_isolation_verified": true,
+    "public_anonymization_verified": true,
+    "no_upward_flow_confirmed": true,
+    "confidentiality_independence_confirmed": true
+  }
+}

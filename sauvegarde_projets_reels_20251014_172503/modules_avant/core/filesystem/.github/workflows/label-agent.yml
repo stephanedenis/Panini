@@ -1,0 +1,105 @@
+name: Label PRs by Agent
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  label-by-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Derive agent/session from PR and add labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const number = pr.number;
+
+            const title = pr.title || '';
+            const headRef = pr.head && pr.head.ref ? pr.head.ref : '';
+
+            // Lire les métadonnées depuis le label "provenance:..." si présent
+            const labels = (context.payload.pull_request.labels || []).map(l => l.name);
+            const provenanceLabel = labels.find(n => /^provenance:/i.test(n));
+            // Extract identifiers from title: [agent:HOST] et [model:NOM] (compat)
+            let agent = null;
+            let model = null;
+            let ownerType = null;
+            if (provenanceLabel) {
+              const kv = provenanceLabel.replace(/^provenance:/i,'').split(/[\,\s]+/);
+              const obj = {};
+              kv.forEach(pair => { const [k,v] = pair.split('='); if (k && v) obj[k.trim()]=v.trim(); });
+              if (obj.agent) agent = obj.agent;
+              if (obj.model) model = obj.model;
+              if (obj.owner) ownerType = obj.owner;
+            }
+            // New: if agent label missing but prov:host exists, mirror host as agent
+            if (!agent) {
+              const provHost = labels.find(n => /^prov:host=/i.test(n));
+              if (provHost) {
+                const hostVal = provHost.split('=')[1] || '';
+                if (hostVal) agent = hostVal;
+              }
+            }
+
+            const agentMatch = title.match(/\[agent:([A-Za-z0-9._-]+)\]/i);
+            if (!agent && agentMatch) {
+              agent = agentMatch[1];
+            }
+
+            const modelMatch = title.match(/\[model:([A-Za-z0-9._-]+)\]/i);
+            if (modelMatch) {
+              model = modelMatch[1];
+            }
+
+            // Fallbacks: branch patterns like agents/ID/... or agent-ID/...
+            if (!agent && headRef) {
+              let m = headRef.match(/^agents?\/([^\/]+)/i);
+              if (!m) m = headRef.match(/^agent-([^\/]+)/i);
+              if (m) agent = m[1];
+            }
+
+            // Nothing detected? Skip gracefully
+            if (!agent && !model && !ownerType) {
+              core.info('No agent/model/owner identifier found; skipping labels.');
+              return;
+            }
+
+            // Compute labels to apply
+            const labelsToApply = [];
+            if (agent) labelsToApply.push(`agent:${agent.toLowerCase()}`);
+            if (model) labelsToApply.push(`model:${model.toLowerCase()}`);
+            if (ownerType) labelsToApply.push(`owner:${ownerType.toLowerCase()}`);
+
+            if (!labelsToApply.length) {
+              core.info('Nothing to label.');
+              return;
+            }
+
+            // Ensure label exists
+            async function ensureLabel(name) {
+              try {
+                await github.rest.issues.getLabel({ owner, repo, name });
+                return;
+              } catch (e) {
+                // Create label with a default color; ignore if already exists due to race
+                try {
+                  await github.rest.issues.createLabel({ owner, repo, name, color: 'BFD4F2', description: 'Labels dérivés du label provenance' });
+                } catch (e2) {
+                  core.info(`Label create ignored: ${e2.message}`);
+                }
+              }
+            }
+
+            for (const lbl of labelsToApply) {
+              await ensureLabel(lbl);
+            }
+            await github.rest.issues.addLabels({ owner, repo, issue_number: number, labels: labelsToApply });
+            core.info(`Applied labels ${labelsToApply.join(', ')} to PR #${number}`);

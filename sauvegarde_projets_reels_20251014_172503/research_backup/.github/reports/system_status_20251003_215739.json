@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-10-03T21:57:39.880560",
+  "system_version": "2.0",
+  "components": {
+    "validation": {
+      "exists": true,
+      "executable": true,
+      "size": 12534,
+      "last_modified": "2025-10-03T21:56:44.718359"
+    },
+    "optimization": {
+      "exists": true,
+      "executable": true,
+      "size": 15100,
+      "last_modified": "2025-10-03T21:52:11.411342"
+    },
+    "monitoring": {
+      "exists": true,
+      "executable": true,
+      "size": 13596,
+      "last_modified": "2025-10-03T21:53:57.870128"
+    },
+    "configuration": {
+      "status": "valid",
+      "version": "2.0",
+      "total_patterns": 33,
+      "last_updated": "2025-10-03T21:35:00Z",
+      "optimization_count": 0
+    }
+  },
+  "file_structure": {
+    "logs": {
+      "exists": true,
+      "is_directory": true,
+      "file_count": 4
+    },
+    "scripts": {
+      "exists": true,
+      "is_directory": true,
+      "file_count": 5
+    },
+    "docs": {
+      "exists": true,
+      "is_directory": true,
+      "file_count": 0
+    },
+    "reports": {
+      "exists": true,
+      "is_directory": true,
+      "file_count": 0
+    }
+  },
+  "recommendations": [
+    "Configurer la tâche cron pour l'optimisation automatique"
+  ]
+}

@@ -1,0 +1,988 @@
+{
+  "meta": {
+    "version": "3.0.0",
+    "timestamp": "2025-10-03T10:58:57.908785",
+    "description": "Encyclopédie d'optimisation PaniniFS basée sur données réelles",
+    "data_source": "51 fichiers réels",
+    "total_data_analyzed": 13774497158,
+    "compression_achieved": 0.8827894253067295
+  },
+  "performance_patterns": {
+    "by_extension": {
+      "json": {
+        "files": [
+          {
+            "extension": "json",
+            "category": "configuration",
+            "original_size": 2622,
+            "compressed_size": 1070,
+            "compression_ratio": 0.4080854309687262,
+            "compression_time": 0.001901,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/json",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "json",
+            "category": "configuration",
+            "original_size": 413,
+            "compressed_size": 294,
+            "compression_ratio": 0.711864406779661,
+            "compression_time": 0.001259,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/json",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "json",
+            "category": "configuration",
+            "original_size": 4106,
+            "compressed_size": 915,
+            "compression_ratio": 0.22284461763273258,
+            "compression_time": 0.002628,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/json",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "json",
+            "category": "configuration",
+            "original_size": 4121,
+            "compressed_size": 924,
+            "compression_ratio": 0.2242174229555933,
+            "compression_time": 0.002001,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/json",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          }
+        ],
+        "avg_ratio": 0.39175296958417827,
+        "avg_time": 0.00194725,
+        "best_ratio": 0.22284461763273258,
+        "worst_ratio": 0.711864406779661,
+        "total_saving": 8059,
+        "file_count": 4,
+        "std_ratio": 0.1995847390592073,
+        "consistency_score": 0.8004152609407927
+      },
+      "pdf": {
+        "files": [
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 6378781,
+            "compressed_size": 5845780,
+            "compression_ratio": 0.9164415583479038,
+            "compression_time": 0.280164,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 18654917,
+            "compressed_size": 17455637,
+            "compression_ratio": 0.9357123915373089,
+            "compression_time": 0.851101,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 57672218,
+            "compressed_size": 50041897,
+            "compression_ratio": 0.8676950312540433,
+            "compression_time": 2.53345,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 5023504,
+            "compressed_size": 3431794,
+            "compression_ratio": 0.6831474604180667,
+            "compression_time": 0.176331,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 146091,
+            "compressed_size": 136679,
+            "compression_ratio": 0.935574402256128,
+            "compression_time": 0.00987,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 145462,
+            "compressed_size": 136174,
+            "compression_ratio": 0.9361482724010395,
+            "compression_time": 0.010005,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 145555,
+            "compressed_size": 136228,
+            "compression_ratio": 0.9359211294699598,
+            "compression_time": 0.010294,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 119860925,
+            "compressed_size": 116758128,
+            "compression_ratio": 0.9741133567924659,
+            "compression_time": 5.877241,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 4558120,
+            "compressed_size": 4490158,
+            "compression_ratio": 0.9850899054873501,
+            "compression_time": 0.227794,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 3241833,
+            "compressed_size": 2891694,
+            "compression_ratio": 0.8919935110784547,
+            "compression_time": 0.171457,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 10799912,
+            "compressed_size": 10024510,
+            "compression_ratio": 0.9282029335053841,
+            "compression_time": 0.477721,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 32363738,
+            "compressed_size": 30197309,
+            "compression_ratio": 0.9330599883116097,
+            "compression_time": 1.409316,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 5208064,
+            "compressed_size": 3814313,
+            "compression_ratio": 0.7323859691432363,
+            "compression_time": 0.188215,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 7928768,
+            "compressed_size": 7675257,
+            "compression_ratio": 0.9680264323536771,
+            "compression_time": 0.366731,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 145484,
+            "compressed_size": 101147,
+            "compression_ratio": 0.6952448379203211,
+            "compression_time": 0.007175,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 168043,
+            "compressed_size": 119826,
+            "compression_ratio": 0.713067488678493,
+            "compression_time": 0.007942,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 146091,
+            "compressed_size": 136679,
+            "compression_ratio": 0.935574402256128,
+            "compression_time": 0.008243,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 145462,
+            "compressed_size": 136174,
+            "compression_ratio": 0.9361482724010395,
+            "compression_time": 0.008679,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 145791,
+            "compressed_size": 136506,
+            "compression_ratio": 0.9363129411280532,
+            "compression_time": 0.008261,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 145555,
+            "compressed_size": 136228,
+            "compression_ratio": 0.9359211294699598,
+            "compression_time": 0.008188,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 145555,
+            "compressed_size": 136228,
+            "compression_ratio": 0.9359211294699598,
+            "compression_time": 0.008717,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "pdf",
+            "category": "documents",
+            "original_size": 145747,
+            "compressed_size": 136496,
+            "compression_ratio": 0.9365269954098541,
+            "compression_time": 0.009417,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/pdf",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          }
+        ],
+        "avg_ratio": 0.893101342685929,
+        "avg_time": 0.5752869090909091,
+        "best_ratio": 0.6831474604180667,
+        "worst_ratio": 0.9850899054873501,
+        "total_saving": 19240774,
+        "file_count": 22,
+        "std_ratio": 0.09157998993112118,
+        "consistency_score": 0.9084200100688788
+      },
+      "epub": {
+        "files": [
+          {
+            "extension": "epub",
+            "category": "documents",
+            "original_size": 71244290,
+            "compressed_size": 71177560,
+            "compression_ratio": 0.9990633635341162,
+            "compression_time": 3.107479,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/epub+zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "epub",
+            "category": "documents",
+            "original_size": 4414955,
+            "compressed_size": 4410717,
+            "compression_ratio": 0.9990400808162258,
+            "compression_time": 0.189903,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/epub+zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "epub",
+            "category": "documents",
+            "original_size": 2843788,
+            "compressed_size": 2841722,
+            "compression_ratio": 0.9992735042133942,
+            "compression_time": 0.124332,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/epub+zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "epub",
+            "category": "documents",
+            "original_size": 8339305,
+            "compressed_size": 8338089,
+            "compression_ratio": 0.9998541844913935,
+            "compression_time": 0.366761,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/epub+zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          }
+        ],
+        "avg_ratio": 0.9993077832637824,
+        "avg_time": 0.94711875,
+        "best_ratio": 0.9990400808162258,
+        "worst_ratio": 0.9998541844913935,
+        "total_saving": 74250,
+        "file_count": 4,
+        "std_ratio": 0.00032830434032631196,
+        "consistency_score": 0.9996716956596737
+      },
+      "zip": {
+        "files": [
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 2355536,
+            "compressed_size": 2045964,
+            "compression_ratio": 0.8685768334680515,
+            "compression_time": 0.100255,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 5299561,
+            "compressed_size": 5182181,
+            "compression_ratio": 0.9778509955824642,
+            "compression_time": 0.25572,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 751771,
+            "compressed_size": 591481,
+            "compression_ratio": 0.7867834752870222,
+            "compression_time": 0.032399,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 49412713,
+            "compressed_size": 30571143,
+            "compression_ratio": 0.6186898298824434,
+            "compression_time": 1.543311,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 52949579,
+            "compressed_size": 46627741,
+            "compression_ratio": 0.88060645392478,
+            "compression_time": 2.471257,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 803148467,
+            "compressed_size": 801630662,
+            "compression_ratio": 0.9981101812898063,
+            "compression_time": 34.848681,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 713076,
+            "compressed_size": 189987,
+            "compression_ratio": 0.26643303098126986,
+            "compression_time": 0.015676,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 152916205,
+            "compressed_size": 61477372,
+            "compression_ratio": 0.40203307425789175,
+            "compression_time": 3.300186,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 1796468455,
+            "compressed_size": 1639046503,
+            "compression_ratio": 0.9123714354338607,
+            "compression_time": 77.709992,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 266079854,
+            "compressed_size": 148139336,
+            "compression_ratio": 0.556747659670619,
+            "compression_time": 7.389273,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 49412713,
+            "compressed_size": 30571147,
+            "compression_ratio": 0.6186899108332707,
+            "compression_time": 1.537844,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 100539,
+            "compressed_size": 19251,
+            "compression_ratio": 0.1914779339360845,
+            "compression_time": 0.003271,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 17028664,
+            "compressed_size": 12722813,
+            "compression_ratio": 0.7471409970858548,
+            "compression_time": 0.630494,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 7038988441,
+            "compressed_size": 6368162584,
+            "compression_ratio": 0.9046985426069689,
+            "compression_time": 310.214823,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 1382224675,
+            "compressed_size": 1033107120,
+            "compression_ratio": 0.7474234389572013,
+            "compression_time": 49.324176,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 615,
+            "compressed_size": 349,
+            "compression_ratio": 0.567479674796748,
+            "compression_time": 0.00264,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "zip",
+            "category": "archive_compression",
+            "original_size": 1796468455,
+            "compressed_size": 1639046372,
+            "compression_ratio": 0.9123713625130144,
+            "compression_time": 77.151822,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/zip",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          }
+        ],
+        "avg_ratio": 0.7033814606180795,
+        "avg_time": 33.32540117647059,
+        "best_ratio": 0.1914779339360845,
+        "worst_ratio": 0.9981101812898063,
+        "total_saving": 1595187313,
+        "file_count": 17,
+        "std_ratio": 0.23734877509040184,
+        "consistency_score": 0.7626512249095981
+      },
+      "url": {
+        "files": [
+          {
+            "extension": "url",
+            "category": "discovered",
+            "original_size": 69,
+            "compressed_size": 89,
+            "compression_ratio": 1.289855072463768,
+            "compression_time": 0.00177,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "text/x-uri",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          }
+        ],
+        "avg_ratio": 1.289855072463768,
+        "avg_time": 0.00177,
+        "best_ratio": 1.289855072463768,
+        "worst_ratio": 1.289855072463768,
+        "total_saving": -20,
+        "file_count": 1,
+        "std_ratio": 0.0,
+        "consistency_score": 1.0
+      },
+      "onetoc2": {
+        "files": [
+          {
+            "extension": "onetoc2",
+            "category": "discovered",
+            "original_size": 7416,
+            "compressed_size": 1421,
+            "compression_ratio": 0.19161272923408845,
+            "compression_time": 0.001983,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "application/onenote",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          }
+        ],
+        "avg_ratio": 0.19161272923408845,
+        "avg_time": 0.001983,
+        "best_ratio": 0.19161272923408845,
+        "worst_ratio": 0.19161272923408845,
+        "total_saving": 5995,
+        "file_count": 1,
+        "std_ratio": 0.0,
+        "consistency_score": 1.0
+      },
+      "md": {
+        "files": [
+          {
+            "extension": "md",
+            "category": "documents",
+            "original_size": 566,
+            "compressed_size": 389,
+            "compression_ratio": 0.6872791519434629,
+            "compression_time": 0.001593,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "text/markdown",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          },
+          {
+            "extension": "md",
+            "category": "documents",
+            "original_size": 572,
+            "compressed_size": 392,
+            "compression_ratio": 0.6853146853146853,
+            "compression_time": 0.001948,
+            "algorithm": "gzip_fast",
+            "entropy": 0,
+            "mime_type": "text/markdown",
+            "compression_hints": [],
+            "predicted_ratio": 0.6
+          }
+        ],
+        "avg_ratio": 0.6862969186290742,
+        "avg_time": 0.0017705,
+        "best_ratio": 0.6853146853146853,
+        "worst_ratio": 0.6872791519434629,
+        "total_saving": 357,
+        "file_count": 2,
+        "std_ratio": 0.0009822333143887918,
+        "consistency_score": 0.9990177666856113
+      }
+    },
+    "cross_format": {
+      "cluster_0.7": {
+        "extensions": [
+          "zip",
+          "md"
+        ],
+        "avg_ratio": 0.7,
+        "categories": [
+          "documents",
+          "archive_compression"
+        ],
+        "algorithms": [
+          "gzip_fast"
+        ],
+        "optimization_opportunity": false
+      }
+    },
+    "size_correlations": {},
+    "optimization_opportunities": []
+  },
+  "predictive_intelligence": {
+    "size_based": {
+      "json": {
+        "coefficients": [
+          -0.20680044342191692,
+          1.9708026659500637
+        ],
+        "r_squared": 0.9636235972535145,
+        "sample_size": 4
+      },
+      "pdf": {
+        "coefficients": [
+          0.002674999218999792,
+          0.855359664704547
+        ],
+        "r_squared": 0.004684447529521713,
+        "sample_size": 22
+      },
+      "epub": {
+        "coefficients": [
+          -5.185589036845669e-05,
+          1.0001398015883574
+        ],
+        "r_squared": 0.03814970651177434,
+        "sample_size": 4
+      },
+      "zip": {
+        "coefficients": [
+          0.028068331414637184,
+          0.22446997011531156
+        ],
+        "r_squared": 0.23275685481567088,
+        "sample_size": 17
+      }
+    },
+    "category_based": {
+      "discovered": {
+        "avg_ratio": 0.7407339008489282,
+        "std_ratio": 0.5491211716148398,
+        "sample_count": 2,
+        "confidence": 0.2
+      },
+      "documents": {
+        "avg_ratio": 0.8935019467644185,
+        "std_ratio": 0.10609377911698295,
+        "sample_count": 28,
+        "confidence": 1.0
+      },
+      "configuration": {
+        "avg_ratio": 0.39175296958417827,
+        "std_ratio": 0.1995847390592073,
+        "sample_count": 4,
+        "confidence": 0.4
+      },
+      "archive_compression": {
+        "avg_ratio": 0.7033814606180795,
+        "std_ratio": 0.23734877509040184,
+        "sample_count": 17,
+        "confidence": 1.0
+      }
+    },
+    "algorithm_effectiveness": {
+      "gzip_fast": {
+        "usage_count": 51,
+        "avg_ratio": 0.6862969186290742,
+        "avg_time": 0,
+        "best_for_extensions": [
+          "json",
+          "pdf",
+          "epub",
+          "zip",
+          "url",
+          "onetoc2",
+          "md"
+        ]
+      }
+    }
+  },
+  "optimization_strategies": {
+    "by_category": {
+      "discovered": {
+        "recommended_strategy": "balanced_compression",
+        "expected_ratio": 0.7407339008489282,
+        "confidence": 0.2,
+        "rationale": "Basé sur 2 échantillons"
+      },
+      "documents": {
+        "recommended_strategy": "fast_compression",
+        "expected_ratio": 0.8935019467644185,
+        "confidence": 1.0,
+        "rationale": "Basé sur 28 échantillons"
+      },
+      "configuration": {
+        "recommended_strategy": "aggressive_compression",
+        "expected_ratio": 0.39175296958417827,
+        "confidence": 0.4,
+        "rationale": "Basé sur 4 échantillons"
+      },
+      "archive_compression": {
+        "recommended_strategy": "balanced_compression",
+        "expected_ratio": 0.7033814606180795,
+        "confidence": 1.0,
+        "rationale": "Basé sur 17 échantillons"
+      }
+    },
+    "by_file_size": {
+      "small_files": {
+        "threshold": 1048576,
+        "strategy": "fast_compression",
+        "rationale": "Temps compression plus important que gain espace"
+      },
+      "medium_files": {
+        "threshold": 104857600,
+        "strategy": "balanced_compression",
+        "rationale": "Équilibre temps/espace optimal"
+      },
+      "large_files": {
+        "threshold": Infinity,
+        "strategy": "aggressive_compression",
+        "rationale": "Gain espace prioritaire sur temps"
+      }
+    },
+    "by_performance_target": {
+      "maximum_compression": "Use aggressive algorithms, accept longer times",
+      "maximum_speed": "Use fast algorithms, accept lower compression",
+      "balanced": "Optimize for best time/compression ratio"
+    }
+  },
+  "recommendations": {
+    "immediate_improvements": [
+      {
+        "type": "algorithm_upgrade",
+        "target": "PDF files",
+        "current_ratio": 0.893101342685929,
+        "improvement_potential": "15-25%",
+        "method": "Analyse structure PDF pour optimisation spécialisée"
+      },
+      {
+        "type": "preprocessing",
+        "target": "ZIP files",
+        "current_ratio": 0.7033814606180795,
+        "improvement_potential": "5-10%",
+        "method": "Analyse contenu ZIP pour éviter double compression"
+      }
+    ],
+    "algorithm_optimizations": [
+      {
+        "optimization": "Dynamic algorithm selection",
+        "description": "Sélection automatique algorithme optimal basée sur prédictions",
+        "expected_improvement": "10-20%",
+        "implementation_complexity": "medium"
+      },
+      {
+        "optimization": "Content-aware preprocessing",
+        "description": "Préprocessing adaptatif selon type contenu détecté",
+        "expected_improvement": "15-30%",
+        "implementation_complexity": "high"
+      }
+    ],
+    "new_research_directions": [
+      {
+        "direction": "Machine Learning compression",
+        "description": "Modèles ML pour prédiction et optimisation compression",
+        "potential_impact": "high",
+        "research_priority": "high"
+      },
+      {
+        "direction": "Cross-format pattern mining",
+        "description": "Découverte patterns cachés entre différents formats",
+        "potential_impact": "medium",
+        "research_priority": "medium"
+      }
+    ]
+  },
+  "global_optimization_potential": {
+    "current_performance": {
+      "files_processed": 51,
+      "overall_ratio": 0.8827894253067295,
+      "space_saved_gb": 1.5036358758807182
+    },
+    "improvement_opportunities": [
+      {
+        "extension": "pdf",
+        "current_ratio": 0.893101342685929,
+        "files_count": 22,
+        "improvement_potential": "-21.6%"
+      },
+      {
+        "extension": "epub",
+        "current_ratio": 0.9993077832637824,
+        "files_count": 4,
+        "improvement_potential": "-30.0%"
+      },
+      {
+        "extension": "zip",
+        "current_ratio": 0.7033814606180795,
+        "files_count": 17,
+        "improvement_potential": "-0.5%"
+      },
+      {
+        "extension": "url",
+        "current_ratio": 1.289855072463768,
+        "files_count": 1,
+        "improvement_potential": "-45.7%"
+      }
+    ],
+    "estimated_additional_savings": "500MB - 1.5GB potential additional savings"
+  }
+}

@@ -1,0 +1,666 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-10-03T13:56:49.912265",
+    "session_id": "20251003_135649",
+    "description": "PaniniFS Virtual Filesystem Architecture"
+  },
+  "virtual_filesystem": {
+    "node_count": 11,
+    "root_nodes": 15,
+    "deduplication_mappings": 15,
+    "structure": {
+      "root_nodes": [
+        "node_9bc6c49da02d5bb9",
+        "node_9bc6c49da02d5bb9",
+        "node_e81791eb2d9e9a63",
+        "node_e81791eb2d9e9a63",
+        "node_bceec7c9dc7b5bd7",
+        "node_bceec7c9dc7b5bd7",
+        "node_bceec7c9dc7b5bd7",
+        "node_1a01ea5b055c89bc",
+        "node_777c7453b2eb6378",
+        "node_c5d3d37f3f72aba2",
+        "node_df6ea4804a8983ae",
+        "node_9536a69808dd1a55",
+        "node_7e8232901f8ea989",
+        "node_749a1a9616d92851",
+        "node_f79e2f8d57af53a4"
+      ],
+      "node_registry": {
+        "node_9bc6c49da02d5bb9": {
+          "node_id": "node_9bc6c49da02d5bb9",
+          "content_hash": "9bc6c49da02d5bb9e650295b3b2ee26924e8810ac8dd30822bcc975f434598ef",
+          "content_type": ".pdf",
+          "size_original": 142700,
+          "size_compressed": 133567,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-03T13:56:46.015681",
+            "integrity_check": "passed",
+            "file_category": "personal_documents",
+            "semantic_hints": [
+              "person:samuel",
+              "media:cd",
+              "versioned",
+              "duplicate_copy",
+              "document",
+              "textual_content"
+            ]
+          },
+          "decomposition_level": 0,
+          "generative_potential": 1.0,
+          "semantic_tags": [
+            "person:samuel",
+            "media:cd",
+            "document:pdf",
+            "content:textual"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.911487",
+          "last_accessed": "2025-10-03T13:56:49.911492"
+        },
+        "node_e81791eb2d9e9a63": {
+          "node_id": "node_e81791eb2d9e9a63",
+          "content_hash": "e81791eb2d9e9a63816d287db7e81b3778bd48eb1e5c3ecfa9c39e67d53d56fa",
+          "content_type": ".pdf",
+          "size_original": 142100,
+          "size_compressed": 133005,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-07T13:56:46.015768",
+            "integrity_check": "passed",
+            "file_category": "personal_documents",
+            "semantic_hints": [
+              "person:samuel",
+              "media:cd",
+              "temporal:dated",
+              "versioned",
+              "duplicate_copy",
+              "document",
+              "textual_content"
+            ]
+          },
+          "decomposition_level": 0,
+          "generative_potential": 1.0,
+          "semantic_tags": [
+            "person:samuel",
+            "media:cd",
+            "temporal:dated",
+            "document:pdf",
+            "content:textual"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.911586",
+          "last_accessed": "2025-10-03T13:56:49.911589"
+        },
+        "node_bceec7c9dc7b5bd7": {
+          "node_id": "node_bceec7c9dc7b5bd7",
+          "content_hash": "bceec7c9dc7b5bd79647f19aae50f91ebe0969f9eb8681af3fac6f45332cebbf",
+          "content_type": ".pdf",
+          "size_original": 142100,
+          "size_compressed": 133005,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-28T13:56:46.015874",
+            "integrity_check": "passed",
+            "file_category": "personal_documents",
+            "semantic_hints": [
+              "person:samuel",
+              "media:cd",
+              "temporal:dated",
+              "versioned",
+              "duplicate_copy",
+              "document",
+              "textual_content"
+            ]
+          },
+          "decomposition_level": 0,
+          "generative_potential": 1.0,
+          "semantic_tags": [
+            "person:samuel",
+            "media:cd",
+            "temporal:dated",
+            "document:pdf",
+            "content:textual"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.911736",
+          "last_accessed": "2025-10-03T13:56:49.911740"
+        },
+        "node_1a01ea5b055c89bc": {
+          "node_id": "node_1a01ea5b055c89bc",
+          "content_hash": "1a01ea5b055c89bc81b47c4f85388c9377018aa25d2a7380c0d83ef4f3780e3b",
+          "content_type": ".pptx",
+          "size_original": 2500000,
+          "size_compressed": 2125000,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-29T13:56:46.015906",
+            "integrity_check": "passed",
+            "file_category": "presentations",
+            "semantic_hints": []
+          },
+          "decomposition_level": 0,
+          "generative_potential": 0.7,
+          "semantic_tags": [
+            "size:large"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.911781",
+          "last_accessed": "2025-10-03T13:56:49.911785"
+        },
+        "node_777c7453b2eb6378": {
+          "node_id": "node_777c7453b2eb6378",
+          "content_hash": "777c7453b2eb6378f06f65044037b79b2e445af197d755f86375e3cfa003d1f2",
+          "content_type": ".zip",
+          "size_original": 15000000,
+          "size_compressed": 14250000,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-20T13:56:46.015934",
+            "integrity_check": "passed",
+            "file_category": "archives",
+            "semantic_hints": [
+              "archive",
+              "compressed"
+            ]
+          },
+          "decomposition_level": 0,
+          "generative_potential": 0.7,
+          "semantic_tags": [
+            "size:large"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.911825",
+          "last_accessed": "2025-10-03T13:56:49.911829"
+        },
+        "node_c5d3d37f3f72aba2": {
+          "node_id": "node_c5d3d37f3f72aba2",
+          "content_hash": "c5d3d37f3f72aba22c4e6ceadf40398d8d44216479558067e0721342bd5e7d80",
+          "content_type": ".xlsx",
+          "size_original": 850000,
+          "size_compressed": 680000,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-27T13:56:46.015960",
+            "integrity_check": "passed",
+            "file_category": "spreadsheets",
+            "semantic_hints": []
+          },
+          "decomposition_level": 0,
+          "generative_potential": 0.7,
+          "semantic_tags": [],
+          "creation_timestamp": "2025-10-03T13:56:49.911869",
+          "last_accessed": "2025-10-03T13:56:49.911873"
+        },
+        "node_df6ea4804a8983ae": {
+          "node_id": "node_df6ea4804a8983ae",
+          "content_hash": "df6ea4804a8983ae2ebc8d5e075cbcc2c33319657d534642b5c23b532fe77127",
+          "content_type": ".txt",
+          "size_original": 1250,
+          "size_compressed": 500,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-25T13:56:46.015982",
+            "integrity_check": "passed",
+            "file_category": "miscellaneous",
+            "semantic_hints": []
+          },
+          "decomposition_level": 0,
+          "generative_potential": 1.0,
+          "semantic_tags": [
+            "size:micro"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.911922",
+          "last_accessed": "2025-10-03T13:56:49.911926"
+        },
+        "node_9536a69808dd1a55": {
+          "node_id": "node_9536a69808dd1a55",
+          "content_hash": "9536a69808dd1a553dac59fe5266a0cc0d4224d66dbb13762b587bc77f1425d2",
+          "content_type": ".json",
+          "size_original": 156,
+          "size_compressed": 46,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-28T13:56:46.016005",
+            "integrity_check": "passed",
+            "file_category": "miscellaneous",
+            "semantic_hints": []
+          },
+          "decomposition_level": 0,
+          "generative_potential": 0.7,
+          "semantic_tags": [
+            "size:micro"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.911968",
+          "last_accessed": "2025-10-03T13:56:49.911972"
+        },
+        "node_7e8232901f8ea989": {
+          "node_id": "node_7e8232901f8ea989",
+          "content_hash": "7e8232901f8ea989ae2a344cad238d6b99cba687ca3fba2d369e7c4731b4d67e",
+          "content_type": ".pdf",
+          "size_original": 890000,
+          "size_compressed": 833040,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-25T13:56:46.016027",
+            "integrity_check": "passed",
+            "file_category": "documents",
+            "semantic_hints": [
+              "document",
+              "textual_content"
+            ]
+          },
+          "decomposition_level": 0,
+          "generative_potential": 1.0,
+          "semantic_tags": [
+            "document:pdf",
+            "content:textual"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.912014",
+          "last_accessed": "2025-10-03T13:56:49.912018"
+        },
+        "node_749a1a9616d92851": {
+          "node_id": "node_749a1a9616d92851",
+          "content_hash": "749a1a9616d928514350ac4478cdb23efc81e3f1abe5788cbfafcfddbe4eaa14",
+          "content_type": ".jpg",
+          "size_original": 125000,
+          "size_compressed": 122500,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-18T13:56:46.016050",
+            "integrity_check": "passed",
+            "file_category": "images",
+            "semantic_hints": [
+              "image",
+              "visual_content"
+            ]
+          },
+          "decomposition_level": 0,
+          "generative_potential": 0.7999999999999999,
+          "semantic_tags": [
+            "media:image",
+            "content:visual"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.912059",
+          "last_accessed": "2025-10-03T13:56:49.912063"
+        },
+        "node_f79e2f8d57af53a4": {
+          "node_id": "node_f79e2f8d57af53a4",
+          "content_hash": "f79e2f8d57af53a40613f41935d6e51decf0f40e9246b10839cde28b76116a72",
+          "content_type": ".mp4",
+          "size_original": 45000000,
+          "size_compressed": 44550000,
+          "parent_nodes": [],
+          "child_nodes": [],
+          "metadata": {
+            "panini_version": "2.1.0",
+            "compression_algorithm": "gzip",
+            "timestamp": "2025-09-09T13:56:46.016072",
+            "integrity_check": "passed",
+            "file_category": "videos",
+            "semantic_hints": [
+              "versioned"
+            ]
+          },
+          "decomposition_level": 0,
+          "generative_potential": 0.7,
+          "semantic_tags": [
+            "size:large"
+          ],
+          "creation_timestamp": "2025-10-03T13:56:49.912103",
+          "last_accessed": "2025-10-03T13:56:49.912106"
+        }
+      },
+      "content_store": {},
+      "deduplication_map": {
+        "Samuel CD.pdf": "node_9bc6c49da02d5bb9",
+        "Samuel CD (1).pdf": "node_9bc6c49da02d5bb9",
+        "Samuel CD Jul 23.pdf": "node_e81791eb2d9e9a63",
+        "Samuel CD Jul 23 (1).pdf": "node_e81791eb2d9e9a63",
+        "Samuel CD Sepp 14.pdf": "node_bceec7c9dc7b5bd7",
+        "Samuel CD Sepp 14 (1).pdf": "node_bceec7c9dc7b5bd7",
+        "Samuel CD Sepp 14 (2).pdf": "node_bceec7c9dc7b5bd7",
+        "presentation_slides.pptx": "node_1a01ea5b055c89bc",
+        "image_collection.zip": "node_777c7453b2eb6378",
+        "data_analysis.xlsx": "node_c5d3d37f3f72aba2",
+        "readme.txt": "node_df6ea4804a8983ae",
+        "config.json": "node_9536a69808dd1a55",
+        "rapport_mensuel.pdf": "node_7e8232901f8ea989",
+        "photo_profile.jpg": "node_749a1a9616d92851",
+        "video_demo.mp4": "node_f79e2f8d57af53a4"
+      },
+      "generative_rules": {
+        "content_combination": {
+          "rule": "combine_similar_types",
+          "trigger": "semantic_similarity > 0.8",
+          "action": "create_composite_node"
+        },
+        "temporal_evolution": {
+          "rule": "track_version_evolution",
+          "trigger": "filename_pattern_match",
+          "action": "create_timeline_node"
+        },
+        "content_decomposition": {
+          "rule": "extract_components",
+          "trigger": "size > 1MB",
+          "action": "analyze_internal_structure"
+        },
+        "semantic_clustering": {
+          "rule": "group_by_semantics",
+          "trigger": "tag_overlap > 2",
+          "action": "create_cluster_node"
+        }
+      },
+      "access_patterns": {}
+    }
+  },
+  "webdav_interface": {
+    "server": {
+      "host": "0.0.0.0",
+      "port": 8080,
+      "ssl": false,
+      "max_connections": 100
+    },
+    "authentication": {
+      "type": "basic",
+      "users": {
+        "panini": "explorer"
+      }
+    },
+    "virtual_paths": {
+      "/panini/": {
+        "type": "virtual_filesystem",
+        "handler": "PaniniVFSHandler",
+        "readonly": true
+      },
+      "/panini/by-type/": {
+        "type": "content_type_view",
+        "handler": "ContentTypeHandler"
+      },
+      "/panini/by-semantic/": {
+        "type": "semantic_view",
+        "handler": "SemanticHandler"
+      },
+      "/panini/generative/": {
+        "type": "generative_view",
+        "handler": "GenerativeHandler"
+      }
+    },
+    "features": {
+      "content_on_demand": true,
+      "deduplication_transparent": true,
+      "generative_nodes": true,
+      "semantic_navigation": true
+    }
+  },
+  "web_exploration_interface": {
+    "frontend": {
+      "framework": "React + D3.js",
+      "components": {
+        "node_graph": {
+          "type": "interactive_graph",
+          "features": [
+            "zoom",
+            "drag",
+            "filter",
+            "search"
+          ],
+          "layout": "force_directed"
+        },
+        "content_viewer": {
+          "type": "multi_format_viewer",
+          "supports": [
+            "pdf",
+            "images",
+            "text",
+            "binary"
+          ]
+        },
+        "decomposition_explorer": {
+          "type": "hierarchical_tree",
+          "features": [
+            "expand",
+            "collapse",
+            "drill_down"
+          ]
+        },
+        "generative_panel": {
+          "type": "rule_engine_ui",
+          "features": [
+            "rule_editor",
+            "simulation",
+            "preview"
+          ]
+        }
+      }
+    },
+    "backend": {
+      "api_server": "FastAPI",
+      "endpoints": {
+        "/api/nodes/": "Node CRUD operations",
+        "/api/graph/": "Graph structure queries",
+        "/api/content/{node_id}": "Content delivery",
+        "/api/decompose/{node_id}": "Decomposition analysis",
+        "/api/generate/": "Generative operations",
+        "/api/semantic/search": "Semantic search"
+      }
+    },
+    "visualization": {
+      "node_types": {
+        "content": {
+          "color": "#4CAF50",
+          "shape": "circle"
+        },
+        "composite": {
+          "color": "#2196F3",
+          "shape": "square"
+        },
+        "generative": {
+          "color": "#FF9800",
+          "shape": "diamond"
+        },
+        "cluster": {
+          "color": "#9C27B0",
+          "shape": "hexagon"
+        }
+      },
+      "edge_types": {
+        "parent_child": {
+          "color": "#666",
+          "style": "solid"
+        },
+        "duplicate": {
+          "color": "#F44336",
+          "style": "dashed"
+        },
+        "semantic": {
+          "color": "#00BCD4",
+          "style": "dotted"
+        },
+        "generative": {
+          "color": "#FF5722",
+          "style": "curved"
+        }
+      }
+    }
+  },
+  "generative_engine": {
+    "decomposition_strategies": {
+      "structural": {
+        "description": "Décomposer par structure interne",
+        "applicable_to": [
+          "pdf",
+          "doc",
+          "archive"
+        ],
+        "output": "component_nodes"
+      },
+      "semantic": {
+        "description": "Décomposer par sens/thème",
+        "applicable_to": [
+          "text",
+          "document"
+        ],
+        "output": "topic_nodes"
+      },
+      "temporal": {
+        "description": "Décomposer par chronologie",
+        "applicable_to": [
+          "versioned_files"
+        ],
+        "output": "timeline_nodes"
+      },
+      "feature_based": {
+        "description": "Décomposer par caractéristiques",
+        "applicable_to": [
+          "images",
+          "media"
+        ],
+        "output": "feature_nodes"
+      }
+    },
+    "generation_operations": {
+      "combine": {
+        "input": "multiple_nodes",
+        "operation": "merge_content",
+        "output": "composite_node"
+      },
+      "extract": {
+        "input": "single_node",
+        "operation": "extract_components",
+        "output": "component_nodes"
+      },
+      "transform": {
+        "input": "single_node",
+        "operation": "format_conversion",
+        "output": "transformed_node"
+      },
+      "synthesize": {
+        "input": "pattern + nodes",
+        "operation": "generate_new_content",
+        "output": "synthetic_node"
+      }
+    },
+    "ai_capabilities": {
+      "content_analysis": "NLP pour analyse sémantique",
+      "pattern_recognition": "ML pour détecter patterns",
+      "similarity_matching": "Embeddings pour similarité",
+      "generative_modeling": "LLM pour création contenu"
+    }
+  },
+  "implementation_roadmap": {
+    "phase_1_core_vfs": {
+      "duration": "2-3 semaines",
+      "tasks": [
+        "Implémenter VirtualFilesystem class",
+        "Créer ContentNode registry",
+        "Développer déduplication engine",
+        "Tests unitaires VFS core"
+      ],
+      "deliverables": [
+        "VFS fonctionnel",
+        "API de base"
+      ]
+    },
+    "phase_2_webdav": {
+      "duration": "2-3 semaines",
+      "tasks": [
+        "Développer serveur WebDAV",
+        "Implémenter handlers virtuels",
+        "Intégrer VFS avec WebDAV",
+        "Tests navigation WebDAV"
+      ],
+      "deliverables": [
+        "Serveur WebDAV",
+        "Navigation fichiers"
+      ]
+    },
+    "phase_3_web_interface": {
+      "duration": "3-4 semaines",
+      "tasks": [
+        "Développer frontend React",
+        "Créer API FastAPI",
+        "Implémenter visualisation D3.js",
+        "Intégrer avec VFS"
+      ],
+      "deliverables": [
+        "Interface web complète",
+        "Visualisation interactive"
+      ]
+    },
+    "phase_4_generative_engine": {
+      "duration": "4-5 semaines",
+      "tasks": [
+        "Implémenter stratégies décomposition",
+        "Développer moteur génératif",
+        "Intégrer AI/ML capabilities",
+        "Tests générativité"
+      ],
+      "deliverables": [
+        "Moteur génératif",
+        "Décomposition automatique"
+      ]
+    },
+    "phase_5_advanced_features": {
+      "duration": "2-3 semaines",
+      "tasks": [
+        "Optimisations performance",
+        "Fonctionnalités avancées",
+        "Documentation complète",
+        "Déploiement production"
+      ],
+      "deliverables": [
+        "Système complet",
+        "Documentation"
+      ]
+    }
+  },
+  "technical_stack": {
+    "backend": [
+      "Python",
+      "FastAPI",
+      "WebDAV"
+    ],
+    "frontend": [
+      "React",
+      "D3.js",
+      "TypeScript"
+    ],
+    "storage": [
+      "Virtual FS",
+      "Content-addressable"
+    ],
+    "ai_ml": [
+      "NLP",
+      "Embeddings",
+      "LLM Integration"
+    ]
+  }
+}

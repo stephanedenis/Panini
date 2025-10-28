@@ -1,0 +1,615 @@
+{
+  "meta": {
+    "timestamp": "2025-10-02T22:17:32.752822+00:00",
+    "validator_version": "1.0.0",
+    "framework": "PaniniFS Multi-Format Validator",
+    "issue_reference": "#11 - Validateurs PaniniFS CRITIQUE"
+  },
+  "summary": {
+    "total_files": 20,
+    "successful_validations": 20,
+    "failed_validations": 0,
+    "integrity_rate": 1.0,
+    "average_compression_ratio": 0.42099525751225964,
+    "total_processing_time": 0.03921389579772949,
+    "supported_formats": [
+      "unknown.json",
+      "text.py",
+      "text.html",
+      "text.log",
+      "text.md",
+      "text.txt",
+      "unknown.sh"
+    ],
+    "validation_errors": {
+      "Format non supporté: .json": 3,
+      "Format non supporté: .sh": 3
+    },
+    "performance_metrics": {
+      "avg_processing_time": 0.0019606947898864746,
+      "max_processing_time": 0.006942033767700195,
+      "min_processing_time": 0.0006628036499023438,
+      "avg_compression_ratio": 0.42099525751225964,
+      "total_data_processed_mb": 0.23804569244384766
+    }
+  },
+  "detailed_results": [
+    {
+      "file_path": "test_corpus_panini/text/test_simple.txt",
+      "file_type": "text.txt",
+      "file_size": 6400,
+      "original_hash": "10be65f2470e30d0864f76bd2cc1f642c9626ab16dec4f23c21cdb5973efcbe4",
+      "restituted_hash": "10be65f2470e30d0864f76bd2cc1f642c9626ab16dec4f23c21cdb5973efcbe4",
+      "integrity_preserved": true,
+      "compression_ratio": 0.021875,
+      "processing_time": 0.006704092025756836,
+      "validation_timestamp": "2025-10-02T22:17:32.706911+00:00",
+      "metadata": {
+        "file_size": 6400,
+        "created_time": 1759443118.790355,
+        "modified_time": 1759443118.790355,
+        "category": "text",
+        "char_count": 6200,
+        "line_count": 201,
+        "word_count": 800,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/test_markdown.md",
+      "file_type": "text.md",
+      "file_size": 431,
+      "original_hash": "64635462c3c06505e50b6099caaa2502a2343f4b31f8e18722966f48613075bb",
+      "restituted_hash": "64635462c3c06505e50b6099caaa2502a2343f4b31f8e18722966f48613075bb",
+      "integrity_preserved": true,
+      "compression_ratio": 0.6960556844547564,
+      "processing_time": 0.0011181831359863281,
+      "validation_timestamp": "2025-10-02T22:17:32.709047+00:00",
+      "metadata": {
+        "file_size": 431,
+        "created_time": 1759443118.7906156,
+        "modified_time": 1759443118.7906156,
+        "category": "text",
+        "char_count": 422,
+        "line_count": 23,
+        "word_count": 60,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/test_complex.json",
+      "file_type": "unknown.json",
+      "file_size": 14660,
+      "original_hash": "a63c0446220139abdb8e7ed9ecee5991a8fa7ac0fbda0c6833aa1a8350fcd491",
+      "restituted_hash": "a63c0446220139abdb8e7ed9ecee5991a8fa7ac0fbda0c6833aa1a8350fcd491",
+      "integrity_preserved": true,
+      "compression_ratio": 0.17871759890859482,
+      "processing_time": 0.0013761520385742188,
+      "validation_timestamp": "2025-10-02T22:17:32.710485+00:00",
+      "metadata": {
+        "file_size": 14660,
+        "created_time": 1759443118.791268,
+        "modified_time": 1759443118.791268,
+        "category": "unknown"
+      },
+      "errors": [
+        "Format non supporté: .json"
+      ]
+    },
+    {
+      "file_path": "test_corpus_panini/text/test_page.html",
+      "file_type": "text.html",
+      "file_size": 646,
+      "original_hash": "f0903c9015e39897af12e5e68d92e7072dc1d9987d1227f4ee5e1a7976c4d7d7",
+      "restituted_hash": "f0903c9015e39897af12e5e68d92e7072dc1d9987d1227f4ee5e1a7976c4d7d7",
+      "integrity_preserved": true,
+      "compression_ratio": 0.6160990712074303,
+      "processing_time": 0.001058340072631836,
+      "validation_timestamp": "2025-10-02T22:17:32.712503+00:00",
+      "metadata": {
+        "file_size": 646,
+        "created_time": 1759443118.7914753,
+        "modified_time": 1759443118.7914753,
+        "category": "text",
+        "char_count": 643,
+        "line_count": 25,
+        "word_count": 55,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_lancer_dashboard_web.py",
+      "file_type": "text.py",
+      "file_size": 3957,
+      "original_hash": "79fb37fd0c2fa69589b2b09c20001933e434c255634b6f1892ec3dc0ce9e90ce",
+      "restituted_hash": "79fb37fd0c2fa69589b2b09c20001933e434c255634b6f1892ec3dc0ce9e90ce",
+      "integrity_preserved": true,
+      "compression_ratio": 0.4068738943644175,
+      "processing_time": 0.001337289810180664,
+      "validation_timestamp": "2025-10-02T22:17:32.714807+00:00",
+      "metadata": {
+        "file_size": 3957,
+        "created_time": 1759443118.8128588,
+        "modified_time": 1759177776.5262928,
+        "category": "text",
+        "char_count": 3836,
+        "line_count": 111,
+        "word_count": 338,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_monitor_real_content.py",
+      "file_type": "text.py",
+      "file_size": 9836,
+      "original_hash": "753431d4e5b904d398d39e71d4ce898a848c5a72435c5c4d85e8cc563e2a7d3d",
+      "restituted_hash": "753431d4e5b904d398d39e71d4ce898a848c5a72435c5c4d85e8cc563e2a7d3d",
+      "integrity_preserved": true,
+      "compression_ratio": 0.30195201301342006,
+      "processing_time": 0.0017502307891845703,
+      "validation_timestamp": "2025-10-02T22:17:32.717539+00:00",
+      "metadata": {
+        "file_size": 9836,
+        "created_time": 1759443118.81323,
+        "modified_time": 1759177776.533293,
+        "category": "text",
+        "char_count": 9763,
+        "line_count": 241,
+        "word_count": 745,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_scan_real_panini_data.py",
+      "file_type": "text.py",
+      "file_size": 14655,
+      "original_hash": "800fd239659daf8bd9fbc61dc0653056a22e2e47d0089c8390f7f7bec40c20f6",
+      "restituted_hash": "800fd239659daf8bd9fbc61dc0653056a22e2e47d0089c8390f7f7bec40c20f6",
+      "integrity_preserved": true,
+      "compression_ratio": 0.26605254179460935,
+      "processing_time": 0.0019202232360839844,
+      "validation_timestamp": "2025-10-02T22:17:32.720418+00:00",
+      "metadata": {
+        "file_size": 14655,
+        "created_time": 1759443118.8136425,
+        "modified_time": 1759177776.533293,
+        "category": "text",
+        "char_count": 14576,
+        "line_count": 338,
+        "word_count": 1096,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_dashboard_real_data.json",
+      "file_type": "unknown.json",
+      "file_size": 973,
+      "original_hash": "50d984d1c25a8a3c0a868562ec57f88396488b6440d0e964bfb0141d79d09cb4",
+      "restituted_hash": "50d984d1c25a8a3c0a868562ec57f88396488b6440d0e964bfb0141d79d09cb4",
+      "integrity_preserved": true,
+      "compression_ratio": 0.4563206577595067,
+      "processing_time": 0.0006825923919677734,
+      "validation_timestamp": "2025-10-02T22:17:32.721156+00:00",
+      "metadata": {
+        "file_size": 973,
+        "created_time": 1759443118.8146815,
+        "modified_time": 1759176711.1460514,
+        "category": "unknown"
+      },
+      "errors": [
+        "Format non supporté: .json"
+      ]
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_copilotage_date_iso_standard.json",
+      "file_type": "unknown.json",
+      "file_size": 6791,
+      "original_hash": "39dd6dc5e9d3ab006531b6aba0ac4341eb4d7c2cbcdece791b6b1837518ecb22",
+      "restituted_hash": "39dd6dc5e9d3ab006531b6aba0ac4341eb4d7c2cbcdece791b6b1837518ecb22",
+      "integrity_preserved": true,
+      "compression_ratio": 0.34825504343984687,
+      "processing_time": 0.0009984970092773438,
+      "validation_timestamp": "2025-10-02T22:17:32.722210+00:00",
+      "metadata": {
+        "file_size": 6791,
+        "created_time": 1759443118.8149803,
+        "modified_time": 1759177776.533293,
+        "category": "unknown"
+      },
+      "errors": [
+        "Format non supporté: .json"
+      ]
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_COPILOTAGE_DATES_ISO_APPLIQUE.md",
+      "file_type": "text.md",
+      "file_size": 3345,
+      "original_hash": "feabad0d5664e518c9c077953bd5ed19d28437db23dcdf4e4ff5ebadbcae9571",
+      "restituted_hash": "feabad0d5664e518c9c077953bd5ed19d28437db23dcdf4e4ff5ebadbcae9571",
+      "integrity_preserved": true,
+      "compression_ratio": 0.46816143497757845,
+      "processing_time": 0.0011143684387207031,
+      "validation_timestamp": "2025-10-02T22:17:32.724276+00:00",
+      "metadata": {
+        "file_size": 3345,
+        "created_time": 1759443118.8158674,
+        "modified_time": 1759177776.533293,
+        "category": "text",
+        "char_count": 3226,
+        "line_count": 100,
+        "word_count": 382,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_COPILOTAGE_DATES_ISO_VALIDATION_FINALE.md",
+      "file_type": "text.md",
+      "file_size": 2414,
+      "original_hash": "5953024978d03c51b2cd8f28e5583434b608034333db96d6117c1fcc8035cabf",
+      "restituted_hash": "5953024978d03c51b2cd8f28e5583434b608034333db96d6117c1fcc8035cabf",
+      "integrity_preserved": true,
+      "compression_ratio": 0.5422535211267606,
+      "processing_time": 0.0010952949523925781,
+      "validation_timestamp": "2025-10-02T22:17:32.726428+00:00",
+      "metadata": {
+        "file_size": 2414,
+        "created_time": 1759443118.8161564,
+        "modified_time": 1759177776.533293,
+        "category": "text",
+        "char_count": 2306,
+        "line_count": 71,
+        "word_count": 283,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_VUE_MODELE_PANINI_COMPLET.md",
+      "file_type": "text.md",
+      "file_size": 5401,
+      "original_hash": "636db41a33bffc30315e702e8ad6a7fd25264e7eb7adc0f71e54631bc29cdedf",
+      "restituted_hash": "636db41a33bffc30315e702e8ad6a7fd25264e7eb7adc0f71e54631bc29cdedf",
+      "integrity_preserved": true,
+      "compression_ratio": 0.4299203851138678,
+      "processing_time": 0.0017943382263183594,
+      "validation_timestamp": "2025-10-02T22:17:32.729220+00:00",
+      "metadata": {
+        "file_size": 5401,
+        "created_time": 1759443118.8164885,
+        "modified_time": 1759246185.702513,
+        "category": "text",
+        "char_count": 5262,
+        "line_count": 156,
+        "word_count": 553,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_start_phase1_monitoring.sh",
+      "file_type": "unknown.sh",
+      "file_size": 873,
+      "original_hash": "44983c33d609f335e010b5fe0a13d74c24ac89762ad072e90fda95abd6407379",
+      "restituted_hash": "44983c33d609f335e010b5fe0a13d74c24ac89762ad072e90fda95abd6407379",
+      "integrity_preserved": true,
+      "compression_ratio": 0.6059564719358533,
+      "processing_time": 0.0007593631744384766,
+      "validation_timestamp": "2025-10-02T22:17:32.730040+00:00",
+      "metadata": {
+        "file_size": 873,
+        "created_time": 1759443118.8173308,
+        "modified_time": 1759371838.6450038,
+        "category": "unknown"
+      },
+      "errors": [
+        "Format non supporté: .sh"
+      ]
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_deploy_phase1_dashboard.sh",
+      "file_type": "unknown.sh",
+      "file_size": 3134,
+      "original_hash": "06e23af013dc073d6137ba2edfe3bf7fbb9cf0d53bdf2f296fff930bfdff884f",
+      "restituted_hash": "06e23af013dc073d6137ba2edfe3bf7fbb9cf0d53bdf2f296fff930bfdff884f",
+      "integrity_preserved": true,
+      "compression_ratio": 0.39183152520740266,
+      "processing_time": 0.0008144378662109375,
+      "validation_timestamp": "2025-10-02T22:17:32.730911+00:00",
+      "metadata": {
+        "file_size": 3134,
+        "created_time": 1759443118.817712,
+        "modified_time": 1759371838.649004,
+        "category": "unknown"
+      },
+      "errors": [
+        "Format non supporté: .sh"
+      ]
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_auto_update_dashboard.sh",
+      "file_type": "unknown.sh",
+      "file_size": 1053,
+      "original_hash": "ff3d3c94cab6bc46cf52145588c7b6f22ccf0473df663ef88a9fa42336f7db85",
+      "restituted_hash": "ff3d3c94cab6bc46cf52145588c7b6f22ccf0473df663ef88a9fa42336f7db85",
+      "integrity_preserved": true,
+      "compression_ratio": 0.5726495726495726,
+      "processing_time": 0.0006628036499023438,
+      "validation_timestamp": "2025-10-02T22:17:32.731629+00:00",
+      "metadata": {
+        "file_size": 1053,
+        "created_time": 1759443118.8179848,
+        "modified_time": 1759371838.649004,
+        "category": "unknown"
+      },
+      "errors": [
+        "Format non supporté: .sh"
+      ]
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_phase1_monitoring.log",
+      "file_type": "text.log",
+      "file_size": 35499,
+      "original_hash": "14f26df95b835bcda3060c22417ed0081bd524580fa16c1e9c4e54a21bcf9825",
+      "restituted_hash": "14f26df95b835bcda3060c22417ed0081bd524580fa16c1e9c4e54a21bcf9825",
+      "integrity_preserved": true,
+      "compression_ratio": 0.03315586354545198,
+      "processing_time": 0.0023965835571289062,
+      "validation_timestamp": "2025-10-02T22:17:32.735024+00:00",
+      "metadata": {
+        "file_size": 35499,
+        "created_time": 1759443118.8187408,
+        "modified_time": 1759355192.8000815,
+        "category": "text",
+        "char_count": 31316,
+        "line_count": 1275,
+        "word_count": 3199,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_auto_update_dashboard.log",
+      "file_type": "text.log",
+      "file_size": 2207,
+      "original_hash": "70edd4b91de85da3310830669a7f7f961195b354015a8784a8c4f170f92cc30c",
+      "restituted_hash": "70edd4b91de85da3310830669a7f7f961195b354015a8784a8c4f170f92cc30c",
+      "integrity_preserved": true,
+      "compression_ratio": 0.21884911644766653,
+      "processing_time": 0.0010695457458496094,
+      "validation_timestamp": "2025-10-02T22:17:32.737112+00:00",
+      "metadata": {
+        "file_size": 2207,
+        "created_time": 1759443118.819016,
+        "modified_time": 1759360158.3737047,
+        "category": "text",
+        "char_count": 2095,
+        "line_count": 63,
+        "word_count": 298,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/project_autonomous_execution.log",
+      "file_type": "text.log",
+      "file_size": 4196,
+      "original_hash": "5c882a3823eca9bc09be65d2a0d6eb305b06f58b254c17548817744f39f252c6",
+      "restituted_hash": "5c882a3823eca9bc09be65d2a0d6eb305b06f58b254c17548817744f39f252c6",
+      "integrity_preserved": true,
+      "compression_ratio": 0.3224499523355577,
+      "processing_time": 0.001173257827758789,
+      "validation_timestamp": "2025-10-02T22:17:32.739245+00:00",
+      "metadata": {
+        "file_size": 4196,
+        "created_time": 1759443118.819289,
+        "modified_time": 1759409451.284099,
+        "category": "text",
+        "char_count": 3957,
+        "line_count": 2,
+        "word_count": 322,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/stress_test_001.txt",
+      "file_type": "text.txt",
+      "file_size": 81717,
+      "original_hash": "b6f57c19627294ac2bd86fd999b3d3d86fce4ecf7e0c808089592926b84541c4",
+      "restituted_hash": "b6f57c19627294ac2bd86fd999b3d3d86fce4ecf7e0c808089592926b84541c4",
+      "integrity_preserved": true,
+      "compression_ratio": 0.7718956887795685,
+      "processing_time": 0.006942033767700195,
+      "validation_timestamp": "2025-10-02T22:17:32.747186+00:00",
+      "metadata": {
+        "file_size": 81717,
+        "created_time": 1759443118.8312814,
+        "modified_time": 1759443118.8312814,
+        "category": "text",
+        "char_count": 81717,
+        "line_count": 1259,
+        "word_count": 2452,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    },
+    {
+      "file_path": "test_corpus_panini/text/stress_test_002.txt",
+      "file_type": "text.txt",
+      "file_size": 51421,
+      "original_hash": "438eb527aaef562666fe8256c880c58c3ad1a06ed428633dc8b44c04cc6bc674",
+      "restituted_hash": "438eb527aaef562666fe8256c880c58c3ad1a06ed428633dc8b44c04cc6bc674",
+      "integrity_preserved": true,
+      "compression_ratio": 0.7705801131833298,
+      "processing_time": 0.004446268081665039,
+      "validation_timestamp": "2025-10-02T22:17:32.752578+00:00",
+      "metadata": {
+        "file_size": 51421,
+        "created_time": 1759443118.838613,
+        "modified_time": 1759443118.838613,
+        "category": "text",
+        "char_count": 51421,
+        "line_count": 830,
+        "word_count": 1563,
+        "encoding": "utf-8",
+        "language_detection_unavailable": true,
+        "semantic_analysis_available": true,
+        "semantic_analysis_source": "semantic_coherence_analysis_2025-10-02T21-16-38Z.json",
+        "semantic_patterns_detected": 0,
+        "semantic_analysis_timestamp": "2025-10-02T21:16:38.877030+00:00"
+      },
+      "errors": []
+    }
+  ],
+  "format_analysis": {
+    "text.txt": {
+      "count": 3,
+      "successful": 3,
+      "avg_compression": 0.5214502673209661,
+      "avg_time": 0.0060307979583740234,
+      "success_rate": 1.0
+    },
+    "text.md": {
+      "count": 4,
+      "successful": 4,
+      "avg_compression": 0.5340977564182409,
+      "avg_time": 0.0012805461883544922,
+      "success_rate": 1.0
+    },
+    "unknown.json": {
+      "count": 3,
+      "successful": 3,
+      "avg_compression": 0.32776443336931615,
+      "avg_time": 0.0010190804799397786,
+      "success_rate": 1.0
+    },
+    "text.html": {
+      "count": 1,
+      "successful": 1,
+      "avg_compression": 0.6160990712074303,
+      "avg_time": 0.001058340072631836,
+      "success_rate": 1.0
+    },
+    "text.py": {
+      "count": 3,
+      "successful": 3,
+      "avg_compression": 0.3249594830574823,
+      "avg_time": 0.0016692479451497395,
+      "success_rate": 1.0
+    },
+    "unknown.sh": {
+      "count": 3,
+      "successful": 3,
+      "avg_compression": 0.5234791899309429,
+      "avg_time": 0.0007455348968505859,
+      "success_rate": 1.0
+    },
+    "text.log": {
+      "count": 3,
+      "successful": 3,
+      "avg_compression": 0.19148497744289206,
+      "avg_time": 0.0015464623769124348,
+      "success_rate": 1.0
+    }
+  },
+  "integrity_analysis": {
+    "perfect_integrity_count": 20,
+    "integrity_violations": [],
+    "hash_mismatches": [],
+    "critical_failures": []
+  },
+  "performance_analysis": {
+    "processing_time_stats": {
+      "mean": 0.0019606947898864746,
+      "min": 0.0006628036499023438,
+      "max": 0.006942033767700195,
+      "total": 0.03921389579772949
+    },
+    "compression_stats": {
+      "mean": 0.42099525751225964,
+      "min": 0.021875,
+      "max": 0.7718956887795685,
+      "best_compression_file": "test_corpus_panini/text/test_simple.txt"
+    },
+    "throughput_stats": {
+      "total_mb_processed": 0.23804569244384766,
+      "mb_per_second": 6.0704423164614685,
+      "files_per_second": 510.02328621371026
+    }
+  },
+  "recommendations": [
+    "✅ Intégrité 100% validée - PaniniFS robuste"
+  ]
+}

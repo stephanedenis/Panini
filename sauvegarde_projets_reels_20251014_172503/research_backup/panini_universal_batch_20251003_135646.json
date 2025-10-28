@@ -1,0 +1,312 @@
+{
+  "metadata": {
+    "batch_id": "demo_batch_20251003_135646",
+    "created": "2025-10-03T13:56:46.015577",
+    "purpose": "demonstration",
+    "total_files": 15,
+    "simulated": true
+  },
+  "files": [
+    {
+      "original_filename": "Samuel CD.pdf",
+      "content_hash": "9bc6c49da02d5bb9e650295b3b2ee26924e8810ac8dd30822bcc975f434598ef",
+      "original_size": 142700,
+      "compressed_size": 133567,
+      "compression_ratio": 0.936,
+      "content_type": "pdf",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-10-02T13:56:46.015614",
+        "integrity_check": "passed",
+        "file_category": "personal_documents",
+        "semantic_hints": [
+          "person:samuel",
+          "media:cd",
+          "document",
+          "textual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "Samuel CD (1).pdf",
+      "content_hash": "9bc6c49da02d5bb9e650295b3b2ee26924e8810ac8dd30822bcc975f434598ef",
+      "original_size": 142700,
+      "compressed_size": 133567,
+      "compression_ratio": 0.936,
+      "content_type": "pdf",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-03T13:56:46.015681",
+        "integrity_check": "passed",
+        "file_category": "personal_documents",
+        "semantic_hints": [
+          "person:samuel",
+          "media:cd",
+          "versioned",
+          "duplicate_copy",
+          "document",
+          "textual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "Samuel CD Jul 23.pdf",
+      "content_hash": "e81791eb2d9e9a63816d287db7e81b3778bd48eb1e5c3ecfa9c39e67d53d56fa",
+      "original_size": 142100,
+      "compressed_size": 133005,
+      "compression_ratio": 0.936,
+      "content_type": "pdf",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-26T13:56:46.015722",
+        "integrity_check": "passed",
+        "file_category": "personal_documents",
+        "semantic_hints": [
+          "person:samuel",
+          "media:cd",
+          "temporal:dated",
+          "versioned",
+          "document",
+          "textual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "Samuel CD Jul 23 (1).pdf",
+      "content_hash": "e81791eb2d9e9a63816d287db7e81b3778bd48eb1e5c3ecfa9c39e67d53d56fa",
+      "original_size": 142100,
+      "compressed_size": 133005,
+      "compression_ratio": 0.936,
+      "content_type": "pdf",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-07T13:56:46.015768",
+        "integrity_check": "passed",
+        "file_category": "personal_documents",
+        "semantic_hints": [
+          "person:samuel",
+          "media:cd",
+          "temporal:dated",
+          "versioned",
+          "duplicate_copy",
+          "document",
+          "textual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "Samuel CD Sepp 14.pdf",
+      "content_hash": "bceec7c9dc7b5bd79647f19aae50f91ebe0969f9eb8681af3fac6f45332cebbf",
+      "original_size": 142100,
+      "compressed_size": 133005,
+      "compression_ratio": 0.936,
+      "content_type": "pdf",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-06T13:56:46.015805",
+        "integrity_check": "passed",
+        "file_category": "personal_documents",
+        "semantic_hints": [
+          "person:samuel",
+          "media:cd",
+          "temporal:dated",
+          "versioned",
+          "document",
+          "textual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "Samuel CD Sepp 14 (1).pdf",
+      "content_hash": "bceec7c9dc7b5bd79647f19aae50f91ebe0969f9eb8681af3fac6f45332cebbf",
+      "original_size": 142100,
+      "compressed_size": 133005,
+      "compression_ratio": 0.936,
+      "content_type": "pdf",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-30T13:56:46.015836",
+        "integrity_check": "passed",
+        "file_category": "personal_documents",
+        "semantic_hints": [
+          "person:samuel",
+          "media:cd",
+          "temporal:dated",
+          "versioned",
+          "duplicate_copy",
+          "document",
+          "textual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "Samuel CD Sepp 14 (2).pdf",
+      "content_hash": "bceec7c9dc7b5bd79647f19aae50f91ebe0969f9eb8681af3fac6f45332cebbf",
+      "original_size": 142100,
+      "compressed_size": 133005,
+      "compression_ratio": 0.936,
+      "content_type": "pdf",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-28T13:56:46.015874",
+        "integrity_check": "passed",
+        "file_category": "personal_documents",
+        "semantic_hints": [
+          "person:samuel",
+          "media:cd",
+          "temporal:dated",
+          "versioned",
+          "duplicate_copy",
+          "document",
+          "textual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "presentation_slides.pptx",
+      "content_hash": "1a01ea5b055c89bc81b47c4f85388c9377018aa25d2a7380c0d83ef4f3780e3b",
+      "original_size": 2500000,
+      "compressed_size": 2125000,
+      "compression_ratio": 0.85,
+      "content_type": "pptx",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-29T13:56:46.015906",
+        "integrity_check": "passed",
+        "file_category": "presentations",
+        "semantic_hints": []
+      }
+    },
+    {
+      "original_filename": "image_collection.zip",
+      "content_hash": "777c7453b2eb6378f06f65044037b79b2e445af197d755f86375e3cfa003d1f2",
+      "original_size": 15000000,
+      "compressed_size": 14250000,
+      "compression_ratio": 0.95,
+      "content_type": "zip",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-20T13:56:46.015934",
+        "integrity_check": "passed",
+        "file_category": "archives",
+        "semantic_hints": [
+          "archive",
+          "compressed"
+        ]
+      }
+    },
+    {
+      "original_filename": "data_analysis.xlsx",
+      "content_hash": "c5d3d37f3f72aba22c4e6ceadf40398d8d44216479558067e0721342bd5e7d80",
+      "original_size": 850000,
+      "compressed_size": 680000,
+      "compression_ratio": 0.8,
+      "content_type": "xlsx",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-27T13:56:46.015960",
+        "integrity_check": "passed",
+        "file_category": "spreadsheets",
+        "semantic_hints": []
+      }
+    },
+    {
+      "original_filename": "readme.txt",
+      "content_hash": "df6ea4804a8983ae2ebc8d5e075cbcc2c33319657d534642b5c23b532fe77127",
+      "original_size": 1250,
+      "compressed_size": 500,
+      "compression_ratio": 0.4,
+      "content_type": "txt",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-25T13:56:46.015982",
+        "integrity_check": "passed",
+        "file_category": "miscellaneous",
+        "semantic_hints": []
+      }
+    },
+    {
+      "original_filename": "config.json",
+      "content_hash": "9536a69808dd1a553dac59fe5266a0cc0d4224d66dbb13762b587bc77f1425d2",
+      "original_size": 156,
+      "compressed_size": 46,
+      "compression_ratio": 0.3,
+      "content_type": "json",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-28T13:56:46.016005",
+        "integrity_check": "passed",
+        "file_category": "miscellaneous",
+        "semantic_hints": []
+      }
+    },
+    {
+      "original_filename": "rapport_mensuel.pdf",
+      "content_hash": "7e8232901f8ea989ae2a344cad238d6b99cba687ca3fba2d369e7c4731b4d67e",
+      "original_size": 890000,
+      "compressed_size": 833040,
+      "compression_ratio": 0.936,
+      "content_type": "pdf",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-25T13:56:46.016027",
+        "integrity_check": "passed",
+        "file_category": "documents",
+        "semantic_hints": [
+          "document",
+          "textual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "photo_profile.jpg",
+      "content_hash": "749a1a9616d928514350ac4478cdb23efc81e3f1abe5788cbfafcfddbe4eaa14",
+      "original_size": 125000,
+      "compressed_size": 122500,
+      "compression_ratio": 0.98,
+      "content_type": "jpg",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-18T13:56:46.016050",
+        "integrity_check": "passed",
+        "file_category": "images",
+        "semantic_hints": [
+          "image",
+          "visual_content"
+        ]
+      }
+    },
+    {
+      "original_filename": "video_demo.mp4",
+      "content_hash": "f79e2f8d57af53a40613f41935d6e51decf0f40e9246b10839cde28b76116a72",
+      "original_size": 45000000,
+      "compressed_size": 44550000,
+      "compression_ratio": 0.99,
+      "content_type": "mp4",
+      "metadata": {
+        "panini_version": "2.1.0",
+        "compression_algorithm": "gzip",
+        "timestamp": "2025-09-09T13:56:46.016072",
+        "integrity_check": "passed",
+        "file_category": "videos",
+        "semantic_hints": [
+          "versioned"
+        ]
+      }
+    }
+  ]
+}

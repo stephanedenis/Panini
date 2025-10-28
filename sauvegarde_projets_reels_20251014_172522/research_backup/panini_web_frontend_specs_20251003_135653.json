@@ -1,0 +1,118 @@
+{
+  "package_json": {
+    "name": "panini-fs-explorer",
+    "version": "1.0.0",
+    "description": "Interface web d'exploration PaniniFS",
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "d3": "^7.8.5",
+      "axios": "^1.4.0",
+      "react-router-dom": "^6.11.0",
+      "@mui/material": "^5.13.0",
+      "@emotion/react": "^11.11.0",
+      "@emotion/styled": "^11.11.0"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    }
+  },
+  "components": {
+    "App.js": {
+      "description": "Composant principal avec routing",
+      "features": [
+        "Navigation",
+        "Layout",
+        "State management"
+      ]
+    },
+    "NodeGraph.js": {
+      "description": "Visualisation D3.js du graphe de nœuds",
+      "features": [
+        "Force layout",
+        "Zoom",
+        "Interactions",
+        "Filtering"
+      ]
+    },
+    "ContentViewer.js": {
+      "description": "Visualiseur multi-format de contenu",
+      "features": [
+        "PDF preview",
+        "Image display",
+        "Text rendering"
+      ]
+    },
+    "DecompositionExplorer.js": {
+      "description": "Explorateur hiérarchique décomposition",
+      "features": [
+        "Tree view",
+        "Drill-down",
+        "Strategy selection"
+      ]
+    },
+    "GenerativePanel.js": {
+      "description": "Interface de génération de contenu",
+      "features": [
+        "Operation selection",
+        "Node combination",
+        "Preview"
+      ]
+    },
+    "SemanticSearch.js": {
+      "description": "Interface de recherche sémantique",
+      "features": [
+        "Live search",
+        "Tag filtering",
+        "Score display"
+      ]
+    }
+  },
+  "api_client": {
+    "description": "Client API pour communication backend",
+    "endpoints": {
+      "getNodes": "GET /api/nodes/",
+      "getGraph": "GET /api/graph/",
+      "getContent": "GET /api/content/{id}",
+      "decomposeNode": "POST /api/decompose/{id}",
+      "semanticSearch": "GET /api/semantic/search",
+      "generateContent": "POST /api/generate/"
+    }
+  },
+  "d3_visualizations": {
+    "node_graph": {
+      "layout": "force-directed",
+      "features": [
+        "Drag nodes",
+        "Zoom/pan",
+        "Node filtering",
+        "Edge styling"
+      ],
+      "node_types": {
+        "content": {
+          "color": "#4CAF50",
+          "radius": "size-based"
+        },
+        "generative": {
+          "color": "#FF9800",
+          "radius": "potential-based"
+        },
+        "composite": {
+          "color": "#2196F3",
+          "radius": "fixed"
+        }
+      }
+    },
+    "decomposition_tree": {
+      "layout": "hierarchical",
+      "features": [
+        "Collapsible",
+        "Level highlighting",
+        "Component details"
+      ]
+    }
+  }
+}

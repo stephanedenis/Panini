@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧬 PaniniFS - Décomposition Atomique Complète</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a202c 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            border-radius: 15px;
+            border: 2px solid #4299e1;
+        }
+        
+        .header h1 {
+            color: #4299e1;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .document-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .doc-button {
+            background: #4299e1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        
+        .doc-button:hover {
+            background: #3182ce;
+            transform: translateY(-2px);
+        }
+        
+        .doc-button.active {
+            background: #48bb78;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .process-panel {
+            background: #2d3748;
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 5px solid #ed8936;
+        }
+        
+        .analysis-panel {
+            background: #2d3748;
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 5px solid #48bb78;
+        }
+        
+        .panel-title {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .decomposition-title {
+            color: #ed8936;
+        }
+        
+        .analysis-title {
+            color: #48bb78;
+        }
+        
+        .step {
+            background: #1a202c;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4299e1;
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: -15px;
+            top: 20px;
+            background: #4299e1;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .step-title {
+            color: #4299e1;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        
+        .step-content {
+            margin-left: 20px;
+        }
+        
+        .step-details {
+            background: #0f1419;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 1px solid #4a5568;
+        }
+        
+        .atom-card {
+            background: #1a202c;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border-left: 4px solid #ed8936;
+            transition: all 0.3s ease;
+        }
+        
+        .atom-card:hover {
+            transform: translateX(5px);
+            border-left-width: 6px;
+        }
+        
+        .atom-id {
+            color: #ed8936;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .dhatu-root {
+            color: #4299e1;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        
+        .meaning {
+            color: #48bb78;
+            font-style: italic;
+            margin: 8px 0;
+        }
+        
+        .variants {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .variant {
+            background: #0f1419;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #4a5568;
+        }
+        
+        .variant-lang {
+            color: #4299e1;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .variant-words {
+            color: #e2e8f0;
+            font-size: 0.9em;
+        }
+        
+        .source-card {
+            background: #1a202c;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border-left: 4px solid #48bb78;
+        }
+        
+        .source-name {
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .source-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .stat {
+            background: #0f1419;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-align: center;
+            border: 1px solid #4a5568;
+        }
+        
+        .stat-value {
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .stat-label {
+            color: #a0aec0;
+            font-size: 0.9em;
+        }
+        
+        .timeline {
+            background: #2d3748;
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 5px solid #4299e1;
+            grid-column: 1 / -1;
+        }
+        
+        .timeline-title {
+            color: #4299e1;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .timeline-steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin: 40px 0;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ed8936, #4299e1, #48bb78);
+            z-index: 1;
+        }
+        
+        .timeline-step {
+            background: #2d3748;
+            border: 3px solid #4299e1;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-step:hover {
+            transform: scale(1.1);
+        }
+        
+        .timeline-step.active {
+            background: #4299e1;
+            color: white;
+        }
+        
+        .timeline-step.decomposition {
+            border-color: #ed8936;
+        }
+        
+        .timeline-step.recomposition {
+            border-color: #48bb78;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #4299e1;
+        }
+        
+        .spinner {
+            border: 4px solid #2d3748;
+            border-top: 4px solid #4299e1;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .metric {
+            background: #1a202c;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 3px solid #48bb78;
+        }
+        
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #48bb78;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            color: #a0aec0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧬 PaniniFS - Décomposition Atomique Complète</h1>
+            <p>Visualisation complète du processus de décomposition et recomposition sémantique</p>
+            <div class="document-selector">
+                <button class="doc-button active" onclick="loadDocument('2008F-Nissan-Sentra')">🚗 Nissan Sentra</button>
+                <button class="doc-button" onclick="loadDocument('arc42-faq')">📋 Arc42 FAQ</button>
+                <button class="doc-button" onclick="loadDocument('genaipromptingguide')">🤖 GenAI Guide</button>
+                <button class="doc-button" onclick="loadDocument('metapatterns')">🔄 Metapatterns</button>
+            </div>
+        </div>
+        
+        <div class="timeline">
+            <h2 class="timeline-title">🔄 Processus de Transformation Complète</h2>
+            <div class="timeline-steps">
+                <div class="timeline-line"></div>
+                <div class="timeline-step decomposition active" onclick="showStep(1)" data-step="1">
+                    <span>📄</span>
+                </div>
+                <div class="timeline-step decomposition" onclick="showStep(2)" data-step="2">
+                    <span>🔍</span>
+                </div>
+                <div class="timeline-step decomposition" onclick="showStep(3)" data-step="3">
+                    <span>📚</span>
+                </div>
+                <div class="timeline-step decomposition" onclick="showStep(4)" data-step="4">
+                    <span>⚛️</span>
+                </div>
+                <div class="timeline-step recomposition" onclick="showStep(5)" data-step="5">
+                    <span>🔄</span>
+                </div>
+                <div class="timeline-step recomposition" onclick="showStep(6)" data-step="6">
+                    <span>✅</span>
+                </div>
+            </div>
+            <div id="step-details">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Chargement du processus de décomposition...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="process-panel">
+                <h2 class="panel-title decomposition-title">🔽 Décomposition Sémantique</h2>
+                <div id="decomposition-content">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Analyse en cours...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analysis-panel">
+                <h2 class="panel-title analysis-title">⚛️ Atomes Sémantiques Découverts</h2>
+                <div id="atoms-content">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Extraction des atomes...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="analysis-panel" style="grid-column: 1 / -1;">
+            <h2 class="panel-title analysis-title">📚 Sources Encyclopédiques Consultées</h2>
+            <div id="sources-content">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Consultation des encyclopédies...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline">
+            <h2 class="timeline-title">📊 Métriques de Reconstruction</h2>
+            <div id="metrics-content" class="metrics">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Calcul des métriques...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let currentDocument = '2008F-Nissan-Sentra';
+        let currentStep = 1;
+        let decompositionData = null;
+        let analysisData = null;
+        
+        // Données des étapes de décomposition
+        const decompositionSteps = {
+            1: {
+                title: "📄 Extraction du Corpus Original",
+                content: "Lecture et extraction du document source avec métadonnées de base",
+                details: "Le document est lu et ses métadonnées sont extraites : nom, taille, type, classification privacy. Cette étape identifie les caractéristiques de base du document."
+            },
+            2: {
+                title: "🔍 Analyse Sémantique Préliminaire",
+                content: "Identification des concepts et structures sémantiques principales",
+                details: "Analyse du contenu pour identifier les concepts principaux, la structure du document, et les termes techniques significatifs. Cette étape prépare l'extraction atomique."
+            },
+            3: {
+                title: "📚 Consultation des Encyclopédies",
+                content: "Consultation des sources encyclopédiques pour mapping sémantique",
+                details: "Les concepts identifiés sont recherchés dans les différentes encyclopédies (Sanskrit-Multilingue, IEEE, Corpus Général) pour établir les liens sémantiques."
+            },
+            4: {
+                title: "⚛️ Extraction des Atomes Sémantiques",
+                content: "Décomposition en atomes sémantiques basés sur les racines dhātu",
+                details: "Les concepts sont décomposés en atomes sémantiques fondamentaux basés sur les racines dhātu Sanskrit, avec génération des variants multilingues."
+            },
+            5: {
+                title: "🔄 Recomposition Contextuelle",
+                content: "Assemblage des atomes avec reconstruction des relations",
+                details: "Les atomes sémantiques sont assemblés en préservant les relations contextuelles et en appliquant les métadonnées de classification et de privacy."
+            },
+            6: {
+                title: "✅ Validation et Finalisation",
+                content: "Validation de l'intégrité et génération du contenu final",
+                details: "Validation de la cohérence de la reconstruction, vérification de l'intégrité sémantique, et génération du contenu final reconstruit."
+            }
+        };
+        
+        function loadDocument(docId) {
+            currentDocument = docId;
+            
+            // Mettre à jour les boutons
+            document.querySelectorAll('.doc-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Charger les données
+            Promise.all([
+                fetch(`/api/documents/${docId}`).then(r => r.json()),
+                fetch(`/api/analysis/${docId}`).then(r => r.json())
+            ]).then(([docData, analysisData]) => {
+                decompositionData = docData;
+                this.analysisData = analysisData;
+                
+                updateDecompositionContent();
+                updateAtomsContent();
+                updateSourcesContent();
+                updateMetricsContent();
+                showStep(currentStep);
+            }).catch(error => {
+                console.error('Erreur chargement:', error);
+            });
+        }
+        
+        function showStep(stepNumber) {
+            currentStep = stepNumber;
+            
+            // Mettre à jour timeline
+            document.querySelectorAll('.timeline-step').forEach(step => {
+                step.classList.remove('active');
+            });
+            document.querySelector(`[data-step="${stepNumber}"]`).classList.add('active');
+            
+            // Afficher détails de l'étape
+            const step = decompositionSteps[stepNumber];
+            const stepDetails = document.getElementById('step-details');
+            
+            stepDetails.innerHTML = `
+                <div class="step">
+                    <div class="step-number">${stepNumber}</div>
+                    <div class="step-title">${step.title}</div>
+                    <div class="step-content">
+                        <p><strong>Processus:</strong> ${step.content}</p>
+                        <div class="step-details">
+                            <p><strong>Détails techniques:</strong> ${step.details}</p>
+                            <div id="step-data-${stepNumber}"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Ajouter données spécifiques à l'étape
+            updateStepData(stepNumber);
+        }
+        
+        function updateStepData(stepNumber) {
+            const container = document.getElementById(`step-data-${stepNumber}`);
+            if (!container) return;
+            
+            switch(stepNumber) {
+                case 1:
+                    if (decompositionData) {
+                        container.innerHTML = `
+                            <div style="margin-top: 15px;">
+                                <p><strong>📄 Document:</strong> ${decompositionData.name}</p>
+                                <p><strong>🆔 ID:</strong> ${decompositionData.id}</p>
+                                <p><strong>📊 Composants PaniniFS:</strong> ${decompositionData.panini_components || 'N/A'}</p>
+                                <p><strong>🔄 Méthode:</strong> ${decompositionData.reconstruction_method || 'panini_semantic_atoms'}</p>
+                            </div>
+                        `;
+                    }
+                    break;
+                case 3:
+                    if (analysisData && analysisData.encyclopedia_sources) {
+                        container.innerHTML = `
+                            <div style="margin-top: 15px;">
+                                <p><strong>📚 Sources consultées:</strong> ${analysisData.encyclopedia_sources.length}</p>
+                                ${analysisData.encyclopedia_sources.map(source => `
+                                    <p>• ${source.name}: ${source.entries_count} entrées, ${source.coverage} couverture</p>
+                                `).join('')}
+                            </div>
+                        `;
+                    }
+                    break;
+                case 4:
+                    if (analysisData && analysisData.semantic_atoms) {
+                        container.innerHTML = `
+                            <div style="margin-top: 15px;">
+                                <p><strong>⚛️ Atomes extraits:</strong> ${analysisData.semantic_atoms.length}</p>
+                                <p><strong>🌱 Racines dhātu:</strong> ${analysisData.reconstruction_details?.atoms_count || 'N/A'}</p>
+                                <p><strong>🌍 Langues:</strong> ${Object.keys(analysisData.semantic_atoms[0]?.language_variants || {}).join(', ')}</p>
+                            </div>
+                        `;
+                    }
+                    break;
+            }
+        }
+        
+        function updateDecompositionContent() {
+            const content = document.getElementById('decomposition-content');
+            if (!decompositionData) return;
+            
+            content.innerHTML = `
+                <div class="step">
+                    <div class="step-title">📄 Document Source</div>
+                    <div class="step-content">
+                        <p><strong>Nom:</strong> ${decompositionData.name}</p>
+                        <p><strong>Type:</strong> ${decompositionData.type}</p>
+                        <p><strong>Composants PaniniFS:</strong> ${decompositionData.panini_components}</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">🔍 Contenu Extrait</div>
+                    <div class="step-content">
+                        <div class="step-details">
+                            ${decompositionData.content.substring(0, 500)}...
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function updateAtomsContent() {
+            const content = document.getElementById('atoms-content');
+            if (!analysisData || !analysisData.semantic_atoms) return;
+            
+            content.innerHTML = analysisData.semantic_atoms.map(atom => `
+                <div class="atom-card">
+                    <div class="atom-id">🧬 ${atom.atom_id}</div>
+                    <div class="dhatu-root">🌱 ${atom.dhatu_root}</div>
+                    <div class="meaning">💫 ${atom.core_meaning}</div>
+                    <div class="variants">
+                        ${Object.entries(atom.language_variants || {}).map(([lang, words]) => `
+                            <div class="variant">
+                                <div class="variant-lang">🌍 ${lang.charAt(0).toUpperCase() + lang.slice(1)}</div>
+                                <div class="variant-words">${words.slice(0, 3).join(', ')}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function updateSourcesContent() {
+            const content = document.getElementById('sources-content');
+            if (!analysisData || !analysisData.encyclopedia_sources) return;
+            
+            content.innerHTML = analysisData.encyclopedia_sources.map(source => `
+                <div class="source-card">
+                    <div class="source-name">📖 ${source.name}</div>
+                    <div class="source-stats">
+                        <div class="stat">
+                            <div class="stat-value">${source.entries_count}</div>
+                            <div class="stat-label">Entrées</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">${source.coverage}</div>
+                            <div class="stat-label">Couverture</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">${source.atom_contribution}</div>
+                            <div class="stat-label">Atomes</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px; color: #a0aec0;">
+                        <strong>Sujets:</strong> ${source.main_topics.join(', ')}
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function updateMetricsContent() {
+            const content = document.getElementById('metrics-content');
+            if (!analysisData) return;
+            
+            content.innerHTML = `
+                <div class="metric">
+                    <div class="metric-value">${analysisData.semantic_atoms?.length || 0}</div>
+                    <div class="metric-label">Atomes Sémantiques</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">${analysisData.encyclopedia_sources?.length || 0}</div>
+                    <div class="metric-label">Sources Encyclopédiques</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">${analysisData.word_count || 0}</div>
+                    <div class="metric-label">Mots Analysés</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">${analysisData.score || 0}</div>
+                    <div class="metric-label">Score Qualité</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">${Object.keys(analysisData.semantic_atoms?.[0]?.language_variants || {}).length}</div>
+                    <div class="metric-label">Langues Couvertes</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">0.002s</div>
+                    <div class="metric-label">Temps Reconstruction</div>
+                </div>
+            `;
+        }
+        
+        // Chargement initial
+        window.addEventListener('DOMContentLoaded', function() {
+            loadDocument(currentDocument);
+        });
+    </script>
+</body>
+</html>
