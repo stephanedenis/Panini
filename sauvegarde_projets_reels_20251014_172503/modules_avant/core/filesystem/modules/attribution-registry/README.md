@@ -1,1 +1,0 @@
-# PaniniFS Attribution Registry

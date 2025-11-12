@@ -1,9 +1,0 @@
-[submodule "research"]
-	path = research
-	url = https://github.com/stephanedenis/Panini-Research.git
-[submodule "modules/core/filesystem"]
-	path = modules/core/filesystem
-	url = https://github.com/stephanedenis/Panini-FS.git
-[submodule "projects/ontowave"]
-	path = projects/ontowave
-	url = https://github.com/stephanedenis/OntoWave.git
