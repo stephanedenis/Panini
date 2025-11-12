@@ -1,0 +1,50 @@
+================================================================================
+📋 RAPPORT DE VALIDATION - COHÉRENCE INTER-MODULES
+================================================================================
+
+✅ SUCCÈS (25):
+   ✅ modules/core: README.md présent
+   ✅ modules/core: docs/ présent
+   ✅ modules/orchestration: README.md présent
+   ✅ modules/orchestration: docs/ présent
+   ✅ modules/services: README.md présent
+   ✅ modules/services: docs/ présent
+   ✅ modules/infrastructure: README.md présent
+   ✅ modules/infrastructure: docs/ présent
+   ✅ modules/ontowave: README.md présent
+   ✅ modules/ontowave: docs/ présent
+   ... et 15 autres
+
+⚠️  AVERTISSEMENTS (28):
+   Fichier dupliqué: README.md (760 copies)
+   Fichier dupliqué: SYNTHESE_CONCEPTUELLE_INTEGRATIVE.md (2 copies)
+   Fichier dupliqué: DONNEES_PHONETIQUE_DEVELOPPEMENTALE.md (2 copies)
+   Fichier dupliqué: EVOLUTION_PANINI_SPEAK_SESSIONS.md (2 copies)
+   Fichier dupliqué: TESTS_OPTIMISES.md (2 copies)
+   ⚠️  Possible doc projet dans copilotage/: maintenance/last_health_report.md
+   ⚠️  Possible doc projet dans copilotage/: protocols/handoff_procedures.md
+   ⚠️  Possible doc projet dans copilotage/: regles/REGLES_COPILOTAGE_v0.0.1.md
+   ⚠️  Possible doc projet dans copilotage/: organization/auto_organization.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-11_214241_hauru_test_installation.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-11_220000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-11_230000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_000000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_010000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_020000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_030000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_040000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_050000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_060000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_070000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_080000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_090000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_100000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_110000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: snapshots/snapshot_2025-11-12_120000_hauru_auto.md
+   ⚠️  Possible doc projet dans copilotage/: copilotage/README.md
+   ⚠️  Possible doc projet dans copilotage/: copilotage/INTRODUCTION_AGENTS_IA.md
+   ⚠️  Possible doc projet dans copilotage/: autonomie/strategies/shared_strategy.md
+
+================================================================================
+📊 SCORE DE COHÉRENCE: 47.2%
+================================================================================
