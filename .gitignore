@@ -95,3 +95,9 @@ auto_save_*/
 !demo_*.json
 !test_*.json
 !sample_*.json
+
+# Wikipedia data (228GB) - externalized to avoid bloating repo
+wikipedia_dumps/
+wikipedia_decompressed/
+wikipedia_metadata/
+wikipedia_classifications/
