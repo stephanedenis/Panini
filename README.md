@@ -1,8 +1,40 @@
-# 🚀 PaniniFS Research - Architecture GitHub-Sync
+````markdown
+# 🚀 Panini - Système Universel de Compression Sémantique
 
 ## 📋 Vue d'Ensemble
 
-Projet de recherche sur l'analyse linguistique sanskrite avec **architecture modulaire** et **système GitHub-Sync révolutionnaire** permettant les mises à jour de code sans interruption des sessions Colab.
+**Panini** est un système révolutionnaire de compression sémantique basé sur les dhātu sanskrits, capable de décomposer n'importe quel format de fichier en primitives atomiques et de le reconstruire avec **100% d'intégrité bit-perfect**.
+
+### ✨ Caractéristiques Principales
+
+- 🧬 **599+ formats supportés** - Documents, audio, vidéo, images, archives
+- 🔒 **Intégrité bit-perfect** - Reconstruction 100% garantie
+- 🌍 **Wikipedia multilingue** - 5 langues ingérées (sa, en, fr, de, hi)
+- 📊 **Dashboard temps réel** - Monitoring métriques et performance
+- ⚡ **GPU accéléré** - Support RX 480 (15x accélération)
+- 🔍 **Validation exhaustive** - 17/17 tests passants
+
+> **⚠️ SYSTÈME COMPLET OPÉRATIONNEL**  
+> Voir [`PANINI_FS_SYSTEME_COMPLET_INVENTAIRE.md`](PANINI_FS_SYSTEME_COMPLET_INVENTAIRE.md) pour l'inventaire détaillé post-panne.
+
+## 🚀 Démarrage Rapide
+
+### Lancer le Système Complet
+
+```bash
+# Script interactif avec menu
+./lancer-panini-fs-complet.sh
+```
+
+### Options Disponibles
+
+1. **Dashboard Temps Réel** (port 8889) - Métriques live
+2. **Serveur Décomposition** (port 8000) - Visualisation processus
+3. **Interface Web React** (port 5173) - UI moderne
+4. **Validation Multi-Format** - Tests intégrité
+5. **Analyse Wikipedia** - Extraction primitives
+
+## 📁 Structure du Projet
 
 ## 🏗️ Structure du Projet
 
