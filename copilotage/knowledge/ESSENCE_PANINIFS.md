@@ -1,8 +1,19 @@
-# ESSENCE DE PANINIFS — (copie migrée 2025-09-05)
+# ESSENCE DE PANINIFS — (copie migrée 2025-09-05, mise à jour 2025-11-12)
 
 Copie de `Copilotage/knowledge/ESSENCE_PANINIFS.md` lors de la fusion.
 
 But: plateforme modulaire pour compression sémantique universelle et publication, appuyée par des agents IA outillés, avec séparation stricte mémoire interne (Copilotage) vs docs publiques.
+
+## 🎯 Ressources Cloud Disponibles
+
+**Abonnements actifs**:
+- **Google One**: Stockage premium pour datasets, backups, corpus linguistiques
+- **Google Colab Pro**: GPU prioritaire (T4/P100/V100/A100), RAM étendue, sessions longues
+
+**Usage stratégique**: Voir détails complets dans `RESSOURCES_CLOUD_DISPONIBLES.md`
+- Entraînement modèles sur Colab Pro
+- Stockage datasets volumineux sur Google One
+- Pipeline automatisé: Local dev → Colab training → Cloud backup
 
 Piliers
 - Recherche: dhātu informationnels (7 universaux), datasets et validation.
