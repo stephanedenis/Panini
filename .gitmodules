@@ -5,5 +5,32 @@
 	path = modules/core/filesystem
 	url = https://github.com/stephanedenis/Panini-FS.git
 [submodule "projects/ontowave"]
-	path = projects/ontowave
+	path = modules/ontowave
 	url = https://github.com/stephanedenis/OntoWave.git
+[submodule "modules/core/semantic"]
+	path = modules/core/semantic
+	url = https://github.com/stephanedenis/Panini-SemanticCore.git
+[submodule "modules/orchestration/cloud"]
+	path = modules/orchestration/cloud
+	url = https://github.com/stephanedenis/Panini-CloudOrchestrator.git
+[submodule "modules/orchestration/colab"]
+	path = modules/orchestration/colab
+	url = https://github.com/stephanedenis/Panini-CoLabController.git
+[submodule "modules/reactive/ultra-reactive"]
+	path = modules/reactive/ultra-reactive
+	url = https://github.com/stephanedenis/Panini-UltraReactive.git
+[submodule "modules/publication/engine"]
+	path = modules/publication/engine
+	url = https://github.com/stephanedenis/Panini-PublicationEngine.git
+[submodule "modules/missions/autonomous"]
+	path = modules/missions/autonomous
+	url = https://github.com/stephanedenis/Panini-AutonomousMissions.git
+[submodule "modules/data/attribution"]
+	path = modules/data/attribution
+	url = https://github.com/stephanedenis/Panini-AttributionRegistry.git
+[submodule "shared/spec-kit"]
+	path = shared/spec-kit
+	url = https://github.com/stephanedenis/Panini-SpecKit-Shared.git
+[submodule "shared/copilotage"]
+	path = shared/copilotage
+	url = https://github.com/stephanedenis/Panini-CopilotageShared.git
