@@ -1,9 +1,13 @@
 name: Async Semantic Compression Pipeline
 
+# DISABLED: Workflow désactivé temporairement
+# Attente: Implémentation complète de la compression sémantique
+# À réactiver: Après mise en place de l'infrastructure Colab Pro
+
 on:
-  push:
-    paths:
-      - 'pending_compression/*/chunk_*/**'
+  # push:
+  #   paths:
+  #     - 'pending_compression/*/chunk_*/**'
   workflow_dispatch:
     inputs:
       chunk_pattern:
@@ -220,11 +224,10 @@ jobs:
             echo "ℹ️ No changes to commit"
           else
             git add pending_compression/
-            git commit -m "chore: update chunk metadata - status queued
-
-Chunks dispatched to Colab Pro for compression
-Run ID: ${{ github.run_id }}
-Commit: ${{ github.sha }}"
+            git commit -m "chore: update chunk metadata - status queued" \
+                       -m "Chunks dispatched to Colab Pro for compression" \
+                       -m "Run ID: ${{ github.run_id }}" \
+                       -m "Commit: ${{ github.sha }}"
             
             git push
             echo "✅ Committed status updates"
