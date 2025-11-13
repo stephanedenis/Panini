@@ -1,0 +1,270 @@
+name: Async Semantic Compression Pipeline
+
+on:
+  push:
+    paths:
+      - 'pending_compression/*/chunk_*/**'
+  workflow_dispatch:
+    inputs:
+      chunk_pattern:
+        description: 'Chunk pattern to process (e.g., "pending_compression/test_image/*")'
+        required: false
+        default: 'pending_compression/*/chunk_*'
+
+env:
+  COLAB_WEBHOOK_URL: ${{ secrets.COLAB_WEBHOOK_URL }}
+
+jobs:
+  detect-new-chunks:
+    name: Detect New Chunks
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.detect.outputs.chunks }}
+      has_chunks: ${{ steps.detect.outputs.has_chunks }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Need previous commit for diff
+      
+      - name: Detect new or modified chunks
+        id: detect
+        run: |
+          echo "🔍 Detecting new/modified chunks..."
+          
+          # Find all metadata.json files that are "pending" or "queued"
+          NEW_CHUNKS=$(find pending_compression -type f -name 'metadata.json' 2>/dev/null | while read meta; do
+            STATUS=$(jq -r '.status' "$meta" 2>/dev/null || echo "unknown")
+            if [ "$STATUS" = "pending" ] || [ "$STATUS" = "queued" ]; then
+              CHUNK_DIR=$(dirname "$meta")
+              CHUNK_ID=$(jq -r '.chunk_id' "$meta")
+              BASE_DIR=$(dirname "$CHUNK_DIR")
+              echo "$BASE_DIR|$CHUNK_ID"
+            fi
+          done)
+          
+          if [ -z "$NEW_CHUNKS" ]; then
+            echo "✅ No chunks to process"
+            echo "has_chunks=false" >> $GITHUB_OUTPUT
+            echo "chunks=[]" >> $GITHUB_OUTPUT
+          else
+            echo "📦 Found chunks to process:"
+            echo "$NEW_CHUNKS" | while IFS='|' read base chunk_id; do
+              echo "   - $base/chunk_$(printf '%04d' $chunk_id)"
+            done
+            
+            # Convert to JSON array
+            CHUNKS_JSON=$(echo "$NEW_CHUNKS" | jq -R -s -c 'split("\n") | map(select(length > 0) | split("|") | {base: .[0], chunk_id: (.[1] | tonumber)})')
+            echo "has_chunks=true" >> $GITHUB_OUTPUT
+            echo "chunks=$CHUNKS_JSON" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Summary
+        run: |
+          if [ "${{ steps.detect.outputs.has_chunks }}" = "true" ]; then
+            CHUNK_COUNT=$(echo '${{ steps.detect.outputs.chunks }}' | jq 'length')
+            echo "✅ Detected $CHUNK_COUNT chunks ready for processing"
+          else
+            echo "ℹ️ No chunks to process"
+          fi
+
+  dispatch-to-colab:
+    name: Dispatch Chunks to Colab
+    needs: detect-new-chunks
+    if: needs.detect-new-chunks.outputs.has_chunks == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        chunk: ${{ fromJson(needs.detect-new-chunks.outputs.chunks) }}
+      max-parallel: 5  # Process up to 5 chunks in parallel
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Prepare chunk info
+        id: prep
+        run: |
+          BASE_DIR="${{ matrix.chunk.base }}"
+          CHUNK_ID="${{ matrix.chunk.chunk_id }}"
+          CHUNK_DIR="$BASE_DIR/chunk_$(printf '%04d' $CHUNK_ID)"
+          
+          echo "chunk_dir=$CHUNK_DIR" >> $GITHUB_OUTPUT
+          echo "chunk_path=$CHUNK_DIR" >> $GITHUB_OUTPUT
+          
+          # Read metadata
+          META_FILE="$CHUNK_DIR/metadata.json"
+          if [ -f "$META_FILE" ]; then
+            PATTERN_TYPE=$(jq -r '.pattern_type' "$META_FILE")
+            SIZE=$(jq -r '.size' "$META_FILE")
+            HASH=$(jq -r '.original_hash' "$META_FILE")
+            
+            echo "pattern_type=$PATTERN_TYPE" >> $GITHUB_OUTPUT
+            echo "size=$SIZE" >> $GITHUB_OUTPUT
+            echo "hash=$HASH" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Dispatch to Colab via Webhook
+        if: env.COLAB_WEBHOOK_URL != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const webhookUrl = process.env.COLAB_WEBHOOK_URL;
+            
+            const payload = {
+              action: 'compress_chunk',
+              chunk_info: {
+                base_dir: '${{ matrix.chunk.base }}',
+                chunk_id: ${{ matrix.chunk.chunk_id }},
+                chunk_path: '${{ steps.prep.outputs.chunk_path }}',
+                pattern_type: '${{ steps.prep.outputs.pattern_type }}',
+                size: ${{ steps.prep.outputs.size }},
+                hash: '${{ steps.prep.outputs.hash }}'
+              },
+              repository: {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                commit_sha: context.sha,
+                ref: context.ref
+              },
+              workflow: {
+                run_id: context.runId,
+                run_number: context.runNumber
+              },
+              priority: 'normal'
+            };
+            
+            console.log('🚀 Dispatching chunk to Colab:', payload.chunk_info.chunk_path);
+            
+            try {
+              const response = await fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'X-GitHub-Event': 'compression-dispatch',
+                  'X-GitHub-Delivery': context.runId.toString()
+                },
+                body: JSON.stringify(payload)
+              });
+              
+              if (response.ok) {
+                console.log('✅ Successfully dispatched to Colab');
+                const result = await response.json();
+                console.log('Response:', result);
+              } else {
+                console.error('❌ Failed to dispatch:', response.status, response.statusText);
+                const error = await response.text();
+                console.error('Error details:', error);
+                core.setFailed(`Webhook dispatch failed: ${response.statusText}`);
+              }
+            } catch (error) {
+              console.error('❌ Exception during dispatch:', error.message);
+              core.setFailed(`Webhook dispatch error: ${error.message}`);
+            }
+      
+      - name: Fallback - Mark as queued (no webhook)
+        if: env.COLAB_WEBHOOK_URL == ''
+        run: |
+          echo "⚠️ COLAB_WEBHOOK_URL not configured"
+          echo "Marking chunk as queued for manual processing"
+          
+          CHUNK_DIR="${{ steps.prep.outputs.chunk_dir }}"
+          META_FILE="$CHUNK_DIR/metadata.json"
+          
+          # Update status to queued
+          jq '.status = "queued" | .queued_at = now | tostring' "$META_FILE" > "$META_FILE.tmp"
+          mv "$META_FILE.tmp" "$META_FILE"
+          
+          echo "✅ Chunk marked as queued"
+      
+      - name: Update chunk status
+        run: |
+          CHUNK_DIR="${{ steps.prep.outputs.chunk_dir }}"
+          META_FILE="$CHUNK_DIR/metadata.json"
+          
+          # Update metadata with dispatch info
+          jq --arg sha "${{ github.sha }}" \
+             --arg run_id "${{ github.run_id }}" \
+             --arg dispatched "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+             '.status = "queued" | .dispatched_at = $dispatched | .github_run_id = $run_id | .github_commit = $sha' \
+             "$META_FILE" > "$META_FILE.tmp"
+          mv "$META_FILE.tmp" "$META_FILE"
+          
+          echo "✅ Updated metadata: status=queued"
+
+  commit-status-updates:
+    name: Commit Status Updates
+    needs: [detect-new-chunks, dispatch-to-colab]
+    if: needs.detect-new-chunks.outputs.has_chunks == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Pull latest changes
+        run: |
+          git pull origin ${{ github.ref_name }}
+      
+      - name: Commit metadata updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are changes
+          if git diff --quiet pending_compression; then
+            echo "ℹ️ No changes to commit"
+          else
+            git add pending_compression/
+            git commit -m "chore: update chunk metadata - status queued
+
+Chunks dispatched to Colab Pro for compression
+Run ID: ${{ github.run_id }}
+Commit: ${{ github.sha }}"
+            
+            git push
+            echo "✅ Committed status updates"
+          fi
+
+  summary:
+    name: Pipeline Summary
+    needs: [detect-new-chunks, dispatch-to-colab, commit-status-updates]
+    if: always()
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Generate summary
+        run: |
+          echo "# 🚀 Async Compression Pipeline Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ needs.detect-new-chunks.outputs.has_chunks }}" = "true" ]; then
+            CHUNK_COUNT=$(echo '${{ needs.detect-new-chunks.outputs.chunks }}' | jq 'length')
+            echo "## ✅ Chunks Dispatched: $CHUNK_COUNT" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            echo "| Chunk | Pattern | Status |" >> $GITHUB_STEP_SUMMARY
+            echo "|-------|---------|--------|" >> $GITHUB_STEP_SUMMARY
+            
+            echo '${{ needs.detect-new-chunks.outputs.chunks }}' | jq -r '.[] | "| \(.base)/chunk_\(.chunk_id | @text | tonumber | tostring | . + "0000" | .[0:4]) | - | ✅ Queued |"' >> $GITHUB_STEP_SUMMARY
+            
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "**Next Steps:**" >> $GITHUB_STEP_SUMMARY
+            echo "- Chunks sent to Colab Pro workers" >> $GITHUB_STEP_SUMMARY
+            echo "- GPU-accelerated semantic compression" >> $GITHUB_STEP_SUMMARY
+            echo "- Results will be uploaded to Google One" >> $GITHUB_STEP_SUMMARY
+            echo "- Webhook callbacks will update status" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ℹ️ No Chunks to Process" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "All chunks are already processed or no pending chunks found." >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Pipeline:** Local Chunking → GitHub Actions → Colab Pro → Google One → Validation" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Architecture:** [See docs/architecture/ASYNC_SEMANTIC_COMPRESSION_PIPELINE.md](docs/architecture/ASYNC_SEMANTIC_COMPRESSION_PIPELINE.md)" >> $GITHUB_STEP_SUMMARY
