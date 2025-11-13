@@ -599,3 +599,183 @@ Date:   Thu Nov 13 00:44:10 2025 -0500
 
 ---
 
+
+## [00:50:11] Commit `5fe15cc1`
+
+**Message**: 📚 Documentation: Ajout guides techniques Architecture v2.0
+
+Nouveaux guides:
+- CHUNKER_API.md - API du chunker sémantique
+- COLAB_PRO_SETUP.md - Configuration Colab Pro+
+- GITHUB_ACTIONS_SETUP.md - CI/CD avec GitHub Actions
+- RECONSTRUCTION_RECIPES.md - Recettes de reconstruction
+
+Journal:
+- Mise à jour JOURNAL_AUTO_2025-11-13_hauru.md
+
+Complément à l'Architecture v2.0 (14 dossiers, 12 submodules)
+
+**Hash complet**: `5fe15cc15b1cc84229265d7a5ca93abc23d5761d`
+
+### Fichiers modifiés
+
+```
+M	copilotage/journal/JOURNAL_AUTO_2025-11-13_hauru.md
+A	docs/guides/CHUNKER_API.md
+A	docs/guides/COLAB_PRO_SETUP.md
+A	docs/guides/GITHUB_ACTIONS_SETUP.md
+A	docs/guides/RECONSTRUCTION_RECIPES.md
+```
+
+### Statistiques
+
+```
+commit 5fe15cc15b1cc84229265d7a5ca93abc23d5761d
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 00:50:11 2025 -0500
+
+    📚 Documentation: Ajout guides techniques Architecture v2.0
+    
+    Nouveaux guides:
+    - CHUNKER_API.md - API du chunker sémantique
+    - COLAB_PRO_SETUP.md - Configuration Colab Pro+
+    - GITHUB_ACTIONS_SETUP.md - CI/CD avec GitHub Actions
+    - RECONSTRUCTION_RECIPES.md - Recettes de reconstruction
+    
+    Journal:
+    - Mise à jour JOURNAL_AUTO_2025-11-13_hauru.md
+    
+    Complément à l'Architecture v2.0 (14 dossiers, 12 submodules)
+
+ .../journal/JOURNAL_AUTO_2025-11-13_hauru.md       | 333 +++++++++++
+ docs/guides/CHUNKER_API.md                         | 619 ++++++++++++++++++++
+ docs/guides/COLAB_PRO_SETUP.md                     | 586 +++++++++++++++++++
+ docs/guides/GITHUB_ACTIONS_SETUP.md                | 600 +++++++++++++++++++
+ docs/guides/RECONSTRUCTION_RECIPES.md              | 639 +++++++++++++++++++++
+ 5 files changed, 2777 insertions(+)
+```
+
+---
+
+
+## [00:54:31] Commit `5a891660`
+
+**Message**: test: Add comprehensive tests for advanced video parsing
+
+Tests cover:
+- VINT decoder (1, 2, 4 byte integers)
+- MP4 keyframe extraction from stss table
+- WebM EBML parsing with VINT support
+
+All tests passing (3/3) ✅
+
+Related to filesystem submodule commit becc5b2
+
+**Hash complet**: `5a8916603077320184e79539aa6382c6e7eb57dd`
+
+### Fichiers modifiés
+
+```
+A	tests/test_video_keyframes.py
+```
+
+### Statistiques
+
+```
+commit 5a8916603077320184e79539aa6382c6e7eb57dd
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 00:54:31 2025 -0500
+
+    test: Add comprehensive tests for advanced video parsing
+    
+    Tests cover:
+    - VINT decoder (1, 2, 4 byte integers)
+    - MP4 keyframe extraction from stss table
+    - WebM EBML parsing with VINT support
+    
+    All tests passing (3/3) ✅
+    
+    Related to filesystem submodule commit becc5b2
+
+ tests/test_video_keyframes.py | 233 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 233 insertions(+)
+```
+
+---
+
+
+## [00:54:35] Commit `fd84d941`
+
+**Message**: chore: Update filesystem submodule to becc5b2
+
+Advanced video parsing with keyframes extraction and EBML VINT support
+
+**Hash complet**: `fd84d9418225ddd66d3272b22de423a597a9396b`
+
+### Fichiers modifiés
+
+```
+M	modules/core/filesystem
+```
+
+### Statistiques
+
+```
+commit fd84d9418225ddd66d3272b22de423a597a9396b
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 00:54:35 2025 -0500
+
+    chore: Update filesystem submodule to becc5b2
+    
+    Advanced video parsing with keyframes extraction and EBML VINT support
+
+ modules/core/filesystem | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+---
+
+
+## [00:56:04] Commit `dba91260`
+
+**Message**: docs: Add comprehensive v0.2.1 achievement report
+
+Complete report covering:
+- Phase 1: 4 documentation guides (~1450 lines)
+- Phase 2: Advanced video parsing (keyframes + VINT)
+- Metrics: 3/3 tests passing, 400 LOC added
+- Next steps: compression implementation, infrastructure
+
+Includes technical details, code samples, and success metrics
+
+**Hash complet**: `dba912604627113bc72bea6530e1059b1760b73a`
+
+### Fichiers modifiés
+
+```
+A	docs/RAPPORT_REALISATION_v0.2.1.md
+```
+
+### Statistiques
+
+```
+commit dba912604627113bc72bea6530e1059b1760b73a
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 00:56:04 2025 -0500
+
+    docs: Add comprehensive v0.2.1 achievement report
+    
+    Complete report covering:
+    - Phase 1: 4 documentation guides (~1450 lines)
+    - Phase 2: Advanced video parsing (keyframes + VINT)
+    - Metrics: 3/3 tests passing, 400 LOC added
+    - Next steps: compression implementation, infrastructure
+    
+    Includes technical details, code samples, and success metrics
+
+ docs/RAPPORT_REALISATION_v0.2.1.md | 212 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 212 insertions(+)
+```
+
+---
+
