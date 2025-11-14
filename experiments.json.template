@@ -1,0 +1,16 @@
+[
+  {
+    "name": "example_audio_fingerprinting_gpu",
+    "command": "python tests/test_audio_fingerprinting.py",
+    "status": "pending",
+    "timeout": 600,
+    "description": "Test audio fingerprinting sur GPU"
+  },
+  {
+    "name": "example_batch_processing",
+    "command": "python experiments/audio_batch_processing.py --batch-size 1000",
+    "status": "pending",
+    "timeout": 1800,
+    "description": "Traitement batch de 1000 fichiers audio"
+  }
+]

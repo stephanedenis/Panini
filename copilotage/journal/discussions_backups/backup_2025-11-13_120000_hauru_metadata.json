@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-11-13T12:00:00-05:00",
+  "host": "hauru",
+  "user": "stephane",
+  "backup_type": "copilot_discussions",
+  "git_branch": "main",
+  "git_commit": "6e3ff4ae3508c11d24865ff71498130eeb5eb962",
+  "git_status": "19 fichiers modifiés",
+  "disk_usage": "234G",
+  "backups_created": [
+    "none",
+    "commandEmbeddings.json
+debugCommand
+logContextRecordings
+settingEmbeddings.json"
+  ]
+}
