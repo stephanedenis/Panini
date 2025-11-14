@@ -1,0 +1,16 @@
+[
+  {
+    "name": "audio_fingerprint_basic_test",
+    "command": "python tests/test_audio_fingerprinting.py -v",
+    "status": "pending",
+    "timeout": 300,
+    "description": "Test basique du système de fingerprinting audio (5 tests)"
+  },
+  {
+    "name": "audio_fingerprint_performance_benchmark",
+    "command": "python experiments/benchmark_audio_fingerprinting.py --num-samples 100",
+    "status": "pending",
+    "timeout": 600,
+    "description": "Benchmark performance: 100 fichiers audio, mesure temps CPU vs GPU"
+  }
+]
