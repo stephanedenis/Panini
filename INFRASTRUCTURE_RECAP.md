@@ -183,14 +183,21 @@ Panini/
 
 ## 🚀 Quick Start
 
+### 🔗 Liens Directs - One-Click Setup
+
+**Solution 1 (Debugging Interactif)**:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_vscode_tunnel.ipynb)
+
+**Solution 2 (Batch Processing)**:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_gpu_daemon.ipynb)
+
+> 💡 Cliquez un badge → Runtime → GPU → Run all
+
 ### Test Solution 2 (Daemon) - 5 minutes
 
 ```bash
-# 1. Upload sur Colab
-# Fichier: notebooks/colab_gpu_daemon.ipynb
-
+# 1. Cliquer badge "Batch Processing" ci-dessus
 # 2. Colab: Runtime → GPU → Run all
-
 # 3. Local: Attendre résultats
 ./tools/sync_colab_results.sh
 
@@ -202,16 +209,12 @@ ls outputs/
 ### Test Solution 1 (Tunnel) - 5 minutes
 
 ```bash
-# 1. Upload sur Colab  
-# Fichier: notebooks/colab_vscode_tunnel.ipynb
-
+# 1. Cliquer badge "Debugging Interactif" ci-dessus
 # 2. Colab: Runtime → GPU → Run all
-
 # 3. Local VSCode: Connect to Tunnel
 # Ctrl+Shift+P → "Remote-Tunnels: Connect to Tunnel"
 
 # 4. Nouvelle fenêtre VSCode: Ouvrir debug_gpu_example.py
-
 # 5. F5 pour debugger!
 ```
 

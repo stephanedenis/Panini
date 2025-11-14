@@ -1,14 +1,19 @@
-# 🚀 Panini - Système Universel de Compression Sémantique# 🚀 Panini - Système Universel de Compression Sémantique
+# 🚀 Panini - Système Universel de Compression Sémantique
 
+[![Architecture](https://img.shields.io/badge/Architecture-Modulaire-blue)](docs/rapports/)
+[![Submodules](https://img.shields.io/badge/Submodules-12-green)](https://github.com/stephanedenis)
+[![Structure](https://img.shields.io/badge/Root_Folders-14-brightgreen)](docs/rapports/SESSION_CONSOLIDATION_FINALE_2025-11-13.md)
+[![Documentation](https://img.shields.io/badge/Docs-Complete-orange)](docs/)
 
+## 🎯 Quick Start - Colab GPU
 
-[![Architecture](https://img.shields.io/badge/Architecture-Modulaire-blue)](docs/rapports/)[![Architecture](https://img.shields.io/badge/Architecture-Modulaire-blue)](docs/rapports/)
+**Debugging Interactif avec VSCode**:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_vscode_tunnel.ipynb)
 
-[![Submodules](https://img.shields.io/badge/Submodules-12-green)](https://github.com/stephanedenis)[![Submodules](https://img.shields.io/badge/Submodules-12-green)](https://github.com/stephanedenis)
+**Batch Processing Automatisé**:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_gpu_daemon.ipynb)
 
-[![Structure](https://img.shields.io/badge/Root_Folders-14-brightgreen)](docs/rapports/SESSION_CONSOLIDATION_FINALE_2025-11-13.md)[![Structure](https://img.shields.io/badge/Root_Folders-14-brightgreen)](docs/rapports/SESSION_CONSOLIDATION_FINALE_2025-11-13.md)
-
-[![Documentation](https://img.shields.io/badge/Docs-Complete-orange)](docs/)[![Documentation](https://img.shields.io/badge/Docs-Complete-orange)](docs/)
+> 💡 **Infrastructure Colab Pro**: Documentation complète dans [`docs/infrastructure/`](docs/infrastructure/) | [Quick Reference](QUICK_REFERENCE.md)
 
 
 

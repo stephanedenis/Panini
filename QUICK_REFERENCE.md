@@ -3,7 +3,17 @@
 ## ⚡ TL;DR
 
 **Question**: Comment debugger du code GPU sur Colab avec VSCode?  
-**Réponse**: Upload `notebooks/colab_vscode_tunnel.ipynb` → Run all → Connect VSCode → F5 pour debugger
+**Réponse**: Cliquez le badge → Run all → Connect VSCode → F5 pour debugger
+
+### 🔗 Liens Directs Colab
+
+**Debugging Interactif**:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_vscode_tunnel.ipynb)
+
+**Batch Processing**:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_gpu_daemon.ipynb)
+
+> 📝 Tous les liens: [`COLAB_DIRECT_LINKS.md`](COLAB_DIRECT_LINKS.md)
 
 ---
 
