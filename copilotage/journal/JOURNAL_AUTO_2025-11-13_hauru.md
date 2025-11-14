@@ -1431,3 +1431,135 @@ Date:   Thu Nov 13 22:29:56 2025 -0500
 
 ---
 
+
+## [23:59:28] Commit `6a4e2a57`
+
+**Message**: feat: VSCode Remote Tunnel debugging pour Colab GPU
+
+Solution 1 (Tunnel) implémentée pour debugging interactif:
+
+Nouveau notebook:
+- colab_vscode_tunnel.ipynb (13 cellules)
+- Setup VSCode CLI + tunnel
+- Authentification GitHub (device flow)
+- Instructions connexion VSCode
+
+Script exemple debugging:
+- debug_gpu_example.py (400+ lignes)
+- Exemples: tensor ops, batch processing, model forward
+- Profiling GPU avec torch.profiler
+- Memory debugging et leak detection
+- Tips pour breakpoints, watch, debug console
+
+Configuration VSCode:
+- .vscode/launch.json avec 6 configs debug
+- Debug GPU example, audio fingerprinting, tests
+- Profiling et memory tracking configs
+- Support CUDA_LAUNCH_BLOCKING
+
+Documentation:
+- DEBUG_GPU_GUIDE.md (guide complet)
+- Workflow: breakpoints, step trace, inspection
+- Conditional breakpoints, logpoints
+- Watch expressions pour GPU monitoring
+- Troubleshooting complet
+
+Comparaison solutions:
+- SOLUTION_COMPARISON.md mis à jour
+- Solution 1 (Tunnel) = debugging interactif
+- Solution 2 (Daemon) = batch processing
+- Recommandation: utiliser les 2 selon besoin
+
+Workflow complet:
+1. Dev local (CPU) avec mock GPU
+2. Debug Colab (GPU) avec tunnel + breakpoints
+3. Validation batch avec daemon
+4. Production après tests
+
+Avec ces 2 solutions, vous avez:
+✅ Debugging interactif (breakpoints, step trace)
+✅ Batch processing asynchrone (daemon)
+✅ Best of both worlds!
+
+**Hash complet**: `6a4e2a57a59fb471780027144063f9989698dffc`
+
+### Fichiers modifiés
+
+```
+A	QUICK_START_COLAB.md
+M	copilotage/journal/JOURNAL_AUTO_2025-11-13_hauru.md
+A	copilotage/snapshots/snapshot_2025-11-13_220000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_230000_hauru_auto.md
+A	docs/infrastructure/DEBUG_GPU_GUIDE.md
+A	docs/infrastructure/SOLUTION_COMPARISON.md
+A	experiments/debug_gpu_example.py
+A	notebooks/colab_vscode_tunnel.ipynb
+```
+
+### Statistiques
+
+```
+commit 6a4e2a57a59fb471780027144063f9989698dffc
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 23:59:28 2025 -0500
+
+    feat: VSCode Remote Tunnel debugging pour Colab GPU
+    
+    Solution 1 (Tunnel) implémentée pour debugging interactif:
+    
+    Nouveau notebook:
+    - colab_vscode_tunnel.ipynb (13 cellules)
+    - Setup VSCode CLI + tunnel
+    - Authentification GitHub (device flow)
+    - Instructions connexion VSCode
+    
+    Script exemple debugging:
+    - debug_gpu_example.py (400+ lignes)
+    - Exemples: tensor ops, batch processing, model forward
+    - Profiling GPU avec torch.profiler
+    - Memory debugging et leak detection
+    - Tips pour breakpoints, watch, debug console
+    
+    Configuration VSCode:
+    - .vscode/launch.json avec 6 configs debug
+    - Debug GPU example, audio fingerprinting, tests
+    - Profiling et memory tracking configs
+    - Support CUDA_LAUNCH_BLOCKING
+    
+    Documentation:
+    - DEBUG_GPU_GUIDE.md (guide complet)
+    - Workflow: breakpoints, step trace, inspection
+    - Conditional breakpoints, logpoints
+    - Watch expressions pour GPU monitoring
+    - Troubleshooting complet
+    
+    Comparaison solutions:
+    - SOLUTION_COMPARISON.md mis à jour
+    - Solution 1 (Tunnel) = debugging interactif
+    - Solution 2 (Daemon) = batch processing
+    - Recommandation: utiliser les 2 selon besoin
+    
+    Workflow complet:
+    1. Dev local (CPU) avec mock GPU
+    2. Debug Colab (GPU) avec tunnel + breakpoints
+    3. Validation batch avec daemon
+    4. Production après tests
+    
+    Avec ces 2 solutions, vous avez:
+    ✅ Debugging interactif (breakpoints, step trace)
+    ✅ Batch processing asynchrone (daemon)
+    ✅ Best of both worlds!
+
+ QUICK_START_COLAB.md                               | 178 +++++++++
+ .../journal/JOURNAL_AUTO_2025-11-13_hauru.md       | 238 ++++++++++++
+ .../snapshot_2025-11-13_220000_hauru_auto.md       | 142 +++++++
+ .../snapshot_2025-11-13_230000_hauru_auto.md       | 142 +++++++
+ docs/infrastructure/DEBUG_GPU_GUIDE.md             | 390 +++++++++++++++++++
+ docs/infrastructure/SOLUTION_COMPARISON.md         | 309 +++++++++++++++
+ experiments/debug_gpu_example.py                   | 271 +++++++++++++
+ notebooks/colab_vscode_tunnel.ipynb                | 427 +++++++++++++++++++++
+ 8 files changed, 2097 insertions(+)
+```
+
+---
+
