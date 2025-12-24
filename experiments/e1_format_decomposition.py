@@ -32,10 +32,11 @@ from typing import Dict, List, Any, Tuple
 
 # Détection automatique du corpus
 CORPUS_CANDIDATES = [
-    Path("/content/work/test_corpus/e1_phase1"),      # Colab daemon
-    Path("./test_corpus/e1_phase1"),                  # Local (relative)
-    Path("../Panini-Research/test_corpus/e1_phase1"), # Local (relative)
+    Path("/content/work/research/test_corpus/e1_phase1"),  # Colab
+    Path("./research/test_corpus/e1_phase1"),              # Local
 ]
+
+
 
 # Seuils de validation (Phase 4)
 THRESHOLDS = {
