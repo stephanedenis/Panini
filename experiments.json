@@ -1,5 +1,12 @@
 [
   {
+    "name": "E1_FORMAT_DECOMPOSITION",
+    "command": "python experiments/e1_format_decomposition.py --phase all",
+    "status": "pending",
+    "timeout": 1800,
+    "description": "E1: Format Decomposition Analysis - Test hypothèse FORMAT-SEMANTIC UNIVERSALITY sur corpus 450 fichiers (5 formats). Phase 1-4: structure, intégrité, timing, validation."
+  },
+  {
     "name": "audio_fingerprint_basic_test",
     "command": "python tests/test_audio_fingerprinting.py -v",
     "status": "pending",
