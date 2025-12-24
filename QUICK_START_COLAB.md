@@ -3,10 +3,18 @@
 ## Step-by-Step Guide
 
 ### 1. Upload Notebook to Colab
+
+**Option A - Lien Direct (Recommandé)** ⚡:
+1. Cliquez: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_gpu_daemon_lite.ipynb)
+2. ✅ Notebook ouvert dans Colab !
+
+**Option B - Upload Manuel**:
 1. Open **Google Colab**: https://colab.research.google.com/
 2. Click **File → Upload notebook**
-3. Select: `notebooks/colab_gpu_daemon.ipynb` from your local Panini folder
+3. Select: `notebooks/colab_gpu_daemon_lite.ipynb` from your local Panini folder
 4. ✅ Notebook uploaded!
+
+**Avantage Lite**: Clone partiel = **10x plus rapide** (25MB vs 500MB)
 
 ### 2. Select GPU Runtime
 1. Click **Runtime → Change runtime type**

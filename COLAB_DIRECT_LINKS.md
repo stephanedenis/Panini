@@ -28,6 +28,18 @@
 - ✅ Exécution automatique expériences
 - ✅ Lancer et oublier
 
+### Solution 2B: Git Daemon Lite (Clone Partiel ⚡)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_gpu_daemon_lite.ipynb)
+
+**Lien direct**: https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_gpu_daemon_lite.ipynb
+
+**Ce que ça fait**:
+- ✅ Clone **uniquement fichiers audio** (sparse checkout)
+- ✅ **95% plus rapide** que clone complet (~25MB vs ~500MB)
+- ✅ Parfait pour expériences audio fingerprinting
+- ✅ Même fonctionnalités que Solution 2
+
 ---
 
 ## 📋 Instructions Post-Ouverture
