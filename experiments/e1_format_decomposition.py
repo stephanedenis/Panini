@@ -47,8 +47,43 @@ THRESHOLDS = {
 }
 
 # ============================================================================
-# LOGGING & METRICS
+# CORPUS AUTO-GENERATION
 # ============================================================================
+
+def generate_minimal_corpus(corpus_dir: Path) -> None:
+    """Generate minimal corpus if it doesn't exist (for Colab compatibility)"""
+    corpus_dir.mkdir(parents=True, exist_ok=True)
+    
+    formats = {
+        "csv": ("format", "value", "100", "200"),
+        "json": ('{"key": "value"}',),
+        "png": (b'\x89PNG\r\n\x1a\n' + b'\x00' * 100,),
+        "pdf": (b'%PDF-1.4' + b'\x00' * 100,),
+        "edge_cases": ("①②③", "émoji", "unicode"),
+    }
+    
+    for fmt, samples in formats.items():
+        fmt_dir = corpus_dir / fmt
+        fmt_dir.mkdir(exist_ok=True)
+        
+        for i in range(max(5, 100 // len(formats))):
+            fname = fmt_dir / f"sample_{i:03d}"
+            if fmt == "png":
+                fname = fname.with_suffix(".png")
+                fname.write_bytes(samples[0])
+            elif fmt == "pdf":
+                fname = fname.with_suffix(".pdf")
+                fname.write_bytes(samples[0])
+            elif fmt == "json":
+                fname = fname.with_suffix(".json")
+                fname.write_text(samples[0])
+            else:
+                fname = fname.with_suffix(f".{fmt}" if fmt != "edge_cases" else "")
+                fname.write_text(", ".join(samples))
+    
+    print(f"✅ Minimal corpus created at {corpus_dir}")
+
+
 
 class ExperimentLogger:
     def __init__(self, output_dir: Path):
@@ -314,16 +349,20 @@ def main():
     if args.corpus_dir:
         corpus_dir = Path(args.corpus_dir)
     else:
-        for candidate in CORPUS_CANDIDATES:
-            if candidate.exists():
+        print(f"🔍 Searching corpus in {len(CORPUS_CANDIDATES)} candidates...")
+        for i, candidate in enumerate(CORPUS_CANDIDATES, 1):
+            exists = candidate.exists()
+            print(f"   [{i}] {candidate} → {'✅' if exists else '❌'}")
+            if exists:
                 corpus_dir = candidate
                 break
     
     if not corpus_dir:
-        print("❌ Corpus not found! Checked:")
-        for c in CORPUS_CANDIDATES:
-            print(f"   {c}")
-        raise FileNotFoundError("E1 corpus directory not found")
+        print("\n⚠️  E1 corpus not found in candidates!")
+        print("📦 Auto-generating minimal corpus...")
+        corpus_dir = CORPUS_CANDIDATES[1]  # Use local path
+        corpus_dir.parent.mkdir(parents=True, exist_ok=True)
+        generate_minimal_corpus(corpus_dir)
     
     print(f"📁 Using corpus: {corpus_dir}")
     
