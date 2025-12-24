@@ -340,3 +340,141 @@ Date:   Fri Nov 14 00:04:05 2025 -0500
 
 ---
 
+
+## [14:32:05] Commit `93334e02`
+
+**Message**: feat: Liens directs Colab avec badges one-click
+
+Ajout COLAB_DIRECT_LINKS.md:
+- URLs directes vers notebooks sur GitHub
+- Badges 'Open in Colab' cliquables
+- Pattern URL générique documenté
+- Instructions post-ouverture
+- Exemples intégration README
+
+Mise à jour avec badges:
+- README.md: Section Quick Start avec badges Colab
+- QUICK_REFERENCE.md: Badges en haut (TL;DR)
+- INFRASTRUCTURE_RECAP.md: Badges dans Quick Start
+
+URLs créées:
+🔗 Solution 1 (Tunnel):
+https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_vscode_tunnel.ipynb
+
+🔗 Solution 2 (Daemon):
+https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_gpu_daemon.ipynb
+
+Avantages:
+✅ One-click: Pas besoin upload manuel
+✅ Toujours à jour: Pointe vers GitHub
+✅ Partageable: Envoi lien direct
+✅ Version control: Suit commits
+✅ Documentation: Badges dans README
+
+Usage:
+Cliquer badge → Notebook s'ouvre dans Colab
+Runtime → GPU → Run all → Suivre instructions
+
+Perfect pour onboarding rapide! 🚀
+
+**Hash complet**: `93334e02c566fbf93e5dbe816d0797e6702ed044`
+
+### Fichiers modifiés
+
+```
+A	COLAB_DIRECT_LINKS.md
+M	INFRASTRUCTURE_RECAP.md
+M	QUICK_REFERENCE.md
+M	README.md
+M	copilotage/journal/JOURNAL_AUTO_2025-11-14_hauru.md
+A	copilotage/journal/discussions_backups/backup_2025-11-14_120000_hauru_metadata.json
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-14_120000_hauru/commandEmbeddings.json
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-14_120000_hauru/debugCommand/copilot-debug
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-14_120000_hauru/debugCommand/copilotDebugCommand.js
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-14_120000_hauru/settingEmbeddings.json
+A	copilotage/snapshots/snapshot_2025-11-14_010000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_020000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_030000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_040000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_050000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_060000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_070000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_080000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_090000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_100000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_110000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_120000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_130000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-14_140000_hauru_auto.md
+```
+
+### Statistiques
+
+```
+commit 93334e02c566fbf93e5dbe816d0797e6702ed044
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Fri Nov 14 14:32:05 2025 -0500
+
+    feat: Liens directs Colab avec badges one-click
+    
+    Ajout COLAB_DIRECT_LINKS.md:
+    - URLs directes vers notebooks sur GitHub
+    - Badges 'Open in Colab' cliquables
+    - Pattern URL générique documenté
+    - Instructions post-ouverture
+    - Exemples intégration README
+    
+    Mise à jour avec badges:
+    - README.md: Section Quick Start avec badges Colab
+    - QUICK_REFERENCE.md: Badges en haut (TL;DR)
+    - INFRASTRUCTURE_RECAP.md: Badges dans Quick Start
+    
+    URLs créées:
+    🔗 Solution 1 (Tunnel):
+    https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_vscode_tunnel.ipynb
+    
+    🔗 Solution 2 (Daemon):
+    https://colab.research.google.com/github/stephanedenis/Panini/blob/gpu-experiments/notebooks/colab_gpu_daemon.ipynb
+    
+    Avantages:
+    ✅ One-click: Pas besoin upload manuel
+    ✅ Toujours à jour: Pointe vers GitHub
+    ✅ Partageable: Envoi lien direct
+    ✅ Version control: Suit commits
+    ✅ Documentation: Badges dans README
+    
+    Usage:
+    Cliquer badge → Notebook s'ouvre dans Colab
+    Runtime → GPU → Run all → Suivre instructions
+    
+    Perfect pour onboarding rapide! 🚀
+
+ COLAB_DIRECT_LINKS.md                              | 148 ++++++++++++
+ INFRASTRUCTURE_RECAP.md                            |  21 +-
+ QUICK_REFERENCE.md                                 |  12 +-
+ README.md                                          |  17 +-
+ .../journal/JOURNAL_AUTO_2025-11-14_hauru.md       | 268 +++++++++++++++++++++
+ .../backup_2025-11-14_120000_hauru_metadata.json   |  17 ++
+ .../commandEmbeddings.json                         |   1 +
+ .../debugCommand/copilot-debug                     |   3 +
+ .../debugCommand/copilotDebugCommand.js            |   6 +
+ .../settingEmbeddings.json                         |   1 +
+ .../snapshot_2025-11-14_010000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_020000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_030000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_040000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_050000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_060000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_070000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_080000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_090000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_100000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_110000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_120000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_130000_hauru_auto.md       | 142 +++++++++++
+ .../snapshot_2025-11-14_140000_hauru_auto.md       | 142 +++++++++++
+ 24 files changed, 2466 insertions(+), 16 deletions(-)
+```
+
+---
+
