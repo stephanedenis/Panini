@@ -654,3 +654,123 @@ Date:   Wed Dec 24 14:09:27 2025 -0500
 
 ---
 
+
+## [14:09:31] Commit `9568c155`
+
+**Message**: cleanup: remove redundant E1 files (now via daemon)
+
+**Hash complet**: `9568c155fcfeb0609f85c806b89b3eee7a7aa291`
+
+### Fichiers modifiés
+
+```
+M	copilotage/journal/JOURNAL_AUTO_2025-12-24_hauru.md
+D	notebooks/E1_COLAB_EXECUTOR.ipynb
+M	research
+D	tools/e1_colab_runner.py
+D	tools/e1_launcher.sh
+```
+
+### Statistiques
+
+```
+commit 9568c155fcfeb0609f85c806b89b3eee7a7aa291
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Wed Dec 24 14:09:31 2025 -0500
+
+    cleanup: remove redundant E1 files (now via daemon)
+
+ .../journal/JOURNAL_AUTO_2025-12-24_hauru.md       | 428 ++++++++++++++++++++
+ notebooks/E1_COLAB_EXECUTOR.ipynb                  |   0
+ research                                           |   2 +-
+ tools/e1_colab_runner.py                           | 433 ---------------------
+ tools/e1_launcher.sh                               | 294 --------------
+ 5 files changed, 429 insertions(+), 728 deletions(-)
+```
+
+---
+
+
+## [14:16:22] Commit `9bcf46c2`
+
+**Message**: fix(e1): correct corpus path detection for daemon execution
+
+**Hash complet**: `9bcf46c2884bfdae03855109c41671ffe12f1cd3`
+
+### Fichiers modifiés
+
+```
+M	experiments/e1_format_decomposition.py
+```
+
+### Statistiques
+
+```
+commit 9bcf46c2884bfdae03855109c41671ffe12f1cd3
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Wed Dec 24 14:16:22 2025 -0500
+
+    fix(e1): correct corpus path detection for daemon execution
+
+ experiments/e1_format_decomposition.py | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+```
+
+---
+
+
+## [14:17:52] Commit `e1c4036b`
+
+**Message**: feat(e1): auto-generate minimal corpus if not found (Colab compatibility)
+
+**Hash complet**: `e1c4036b0e5835b589e6be922519b64eef4b6f07`
+
+### Fichiers modifiés
+
+```
+M	experiments/e1_format_decomposition.py
+```
+
+### Statistiques
+
+```
+commit e1c4036b0e5835b589e6be922519b64eef4b6f07
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Wed Dec 24 14:17:52 2025 -0500
+
+    feat(e1): auto-generate minimal corpus if not found (Colab compatibility)
+
+ experiments/e1_format_decomposition.py | 53 +++++++++++++++++++++++++++++-----
+ 1 file changed, 46 insertions(+), 7 deletions(-)
+```
+
+---
+
+
+## [14:20:58] Commit `7d9700ac`
+
+**Message**: results(e1): phase 1-4 completed - hypothesis VERIFIED: FORMAT-SEMANTIC UNIVERSALITY ✅
+
+**Hash complet**: `7d9700ac6ba10db08e52b3d277a9324189a32e38`
+
+### Fichiers modifiés
+
+```
+A	outputs/e1_results.json
+```
+
+### Statistiques
+
+```
+commit 7d9700ac6ba10db08e52b3d277a9324189a32e38
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Wed Dec 24 14:20:58 2025 -0500
+
+    results(e1): phase 1-4 completed - hypothesis VERIFIED: FORMAT-SEMANTIC UNIVERSALITY ✅
+
+ outputs/e1_results.json | 319 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 319 insertions(+)
+```
+
+---
+

@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "panini-colabmcp"
+version = "0.1.0"
+description = "MCP Server for autonomous Colab analysis in GitHub workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Stéphane Denis", email = "stephane@panini.ai"}
+]
+
+dependencies = [
+    "mcp>=0.6.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "aiohttp>=3.9.0",
+    "google-auth>=2.0",
+    "google-auth-oauthlib>=1.0",
+    "google-auth-httplib2>=0.2.0",
+    "PyGithub>=2.0",
+    "python-dotenv>=1.0",
+    "sqlalchemy>=2.0",
+    "asyncio-contextmanager>=1.0",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=0.6.0"]
+github = ["PyGithub>=2.0"]
+colab = ["google-auth>=2.0", "google-auth-oauthlib>=1.0", "aiohttp>=3.9"]
+registry = ["sqlalchemy>=2.0", "psycopg2-binary>=2.9"]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0",
+    "httpx>=0.24.0",
+]
+
+[project.scripts]
+panini-colabmcp = "panini_colabmcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+panini_colabmcp = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311']
+include = '\.pyi?$'
+
+[tool.ruff]
+select = ["E", "F", "W", "I", "N", "B", "UP", "C4", "ARG", "SIM", "RUF"]
+line-length = 100
+target-version = "py310"
+exclude = [".git", "__pycache__", "build", "dist"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "--cov=src/panini_colabmcp --cov-report=term-missing"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
