@@ -883,3 +883,683 @@ Date:   Thu Nov 13 00:58:01 2025 -0500
 
 ---
 
+
+## [00:58:12] Commit `42ef7a66`
+
+**Message**: chore: Update journal with latest commits
+
+Final journal update for v0.2.1 release
+
+**Hash complet**: `42ef7a66b380f7ccc6a3f5e2f7139d8a13e95ad4`
+
+### Fichiers modifiés
+
+```
+M	copilotage/journal/JOURNAL_AUTO_2025-11-13_hauru.md
+```
+
+### Statistiques
+
+```
+commit 42ef7a66b380f7ccc6a3f5e2f7139d8a13e95ad4
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 00:58:12 2025 -0500
+
+    chore: Update journal with latest commits
+    
+    Final journal update for v0.2.1 release
+
+ .../journal/JOURNAL_AUTO_2025-11-13_hauru.md       | 104 +++++++++++++++++++++
+ 1 file changed, 104 insertions(+)
+```
+
+---
+
+
+## [00:58:53] Commit `6570a0f3`
+
+**Message**: chore: Bump version to 0.2.2
+
+Update filesystem submodule to 06cca98
+Prepare next development cycle after v0.2.1 release
+
+**Hash complet**: `6570a0f3fad772298f54356156eeb61765545b63`
+
+### Fichiers modifiés
+
+```
+M	modules/core/filesystem
+```
+
+### Statistiques
+
+```
+commit 6570a0f3fad772298f54356156eeb61765545b63
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 00:58:53 2025 -0500
+
+    chore: Bump version to 0.2.2
+    
+    Update filesystem submodule to 06cca98
+    Prepare next development cycle after v0.2.1 release
+
+ modules/core/filesystem | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+---
+
+
+## [01:05:54] Commit `6e3ff4ae`
+
+**Message**: feat: Audio fingerprinting & similarity index (Shazam-like)
+
+Complete implementation:
+- AudioFingerprintExtractor: constellation map + hash pairs
+- AudioSimilarityIndex: inverted index O(1) lookup
+- Comprehensive tests (5/5 passing)
+- Full documentation guide
+
+Features:
+- Spectral analysis (STFT, peak detection)
+- Perceptual features (centroid, ZCR)
+- Jaccard similarity scoring
+- WAV PCM support (16/24/32-bit)
+
+Tests:
+✅ WAV parsing (1000ms @ 44.1kHz)
+✅ Fingerprint uniqueness (<1% overlap)
+✅ Similarity matching (score=1.0 for identical)
+✅ Noise robustness (SNR 20dB)
+✅ Complex signals (chords)
+
+Use cases:
+- Audio deduplication (different encodings)
+- Similarity search (covers, remixes)
+- Semantic compression (10-40% ratio)
+
+Submodule: Panini-FS 10286e2
+Version: 0.3.0
+
+**Hash complet**: `6e3ff4ae3508c11d24865ff71498130eeb5eb962`
+
+### Fichiers modifiés
+
+```
+A	docs/guides/AUDIO_FINGERPRINTING.md
+M	modules/core/filesystem
+A	tests/test_audio_fingerprinting.py
+```
+
+### Statistiques
+
+```
+commit 6e3ff4ae3508c11d24865ff71498130eeb5eb962
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 01:05:54 2025 -0500
+
+    feat: Audio fingerprinting & similarity index (Shazam-like)
+    
+    Complete implementation:
+    - AudioFingerprintExtractor: constellation map + hash pairs
+    - AudioSimilarityIndex: inverted index O(1) lookup
+    - Comprehensive tests (5/5 passing)
+    - Full documentation guide
+    
+    Features:
+    - Spectral analysis (STFT, peak detection)
+    - Perceptual features (centroid, ZCR)
+    - Jaccard similarity scoring
+    - WAV PCM support (16/24/32-bit)
+    
+    Tests:
+    ✅ WAV parsing (1000ms @ 44.1kHz)
+    ✅ Fingerprint uniqueness (<1% overlap)
+    ✅ Similarity matching (score=1.0 for identical)
+    ✅ Noise robustness (SNR 20dB)
+    ✅ Complex signals (chords)
+    
+    Use cases:
+    - Audio deduplication (different encodings)
+    - Similarity search (covers, remixes)
+    - Semantic compression (10-40% ratio)
+    
+    Submodule: Panini-FS 10286e2
+    Version: 0.3.0
+
+ docs/guides/AUDIO_FINGERPRINTING.md | 415 ++++++++++++++++++++++++++++++++++++
+ modules/core/filesystem             |   2 +-
+ tests/test_audio_fingerprinting.py  | 279 ++++++++++++++++++++++++
+ 3 files changed, 695 insertions(+), 1 deletion(-)
+```
+
+---
+
+
+## [17:27:11] Commit `87b5daf4`
+
+**Message**: fix: Disable async compression workflow temporarily
+
+Issues fixed:
+- Workflow disabled on push events (commented out)
+- Fixed YAML syntax error in commit message (multi-line)
+- Prevents errors when pending_compression/ doesn't exist
+
+Reason:
+- Infrastructure Colab Pro not yet implemented
+- Waiting for complete semantic compression setup
+
+Status: Manual dispatch still available for testing
+To reactivate: Uncomment push trigger after infrastructure ready
+
+**Hash complet**: `87b5daf4ba465bf5eb88d07cea704ab77b2086c0`
+
+### Fichiers modifiés
+
+```
+M	.github/workflows/async_compression.yml
+```
+
+### Statistiques
+
+```
+commit 87b5daf4ba465bf5eb88d07cea704ab77b2086c0
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 17:27:11 2025 -0500
+
+    fix: Disable async compression workflow temporarily
+    
+    Issues fixed:
+    - Workflow disabled on push events (commented out)
+    - Fixed YAML syntax error in commit message (multi-line)
+    - Prevents errors when pending_compression/ doesn't exist
+    
+    Reason:
+    - Infrastructure Colab Pro not yet implemented
+    - Waiting for complete semantic compression setup
+    
+    Status: Manual dispatch still available for testing
+    To reactivate: Uncomment push trigger after infrastructure ready
+
+ .github/workflows/async_compression.yml | 19 +++++++++++--------
+ 1 file changed, 11 insertions(+), 8 deletions(-)
+```
+
+---
+
+
+## [17:29:17] Commit `39290bf4`
+
+**Message**: fix: Update filesystem submodule - workflows disabled
+
+Submodule Panini-FS updated to d35d557
+- 27/29 workflows disabled (.yml.disabled)
+- Only codeql + minimal-status remain active
+- Prevents GitHub Actions errors from missing dependencies
+
+This completes the workflow cleanup across the project
+
+**Hash complet**: `39290bf40b238c4e30ca5ae821af8e402765ea39`
+
+### Fichiers modifiés
+
+```
+M	modules/core/filesystem
+```
+
+### Statistiques
+
+```
+commit 39290bf40b238c4e30ca5ae821af8e402765ea39
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 17:29:17 2025 -0500
+
+    fix: Update filesystem submodule - workflows disabled
+    
+    Submodule Panini-FS updated to d35d557
+    - 27/29 workflows disabled (.yml.disabled)
+    - Only codeql + minimal-status remain active
+    - Prevents GitHub Actions errors from missing dependencies
+    
+    This completes the workflow cleanup across the project
+
+ modules/core/filesystem | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+---
+
+
+## [17:30:13] Commit `4c1dc694`
+
+**Message**: docs: Add workflow cleanup report and tools
+
+Report includes:
+- Complete list of 27 disabled workflows in Panini-FS
+- 2 workflows kept active (CodeQL + minimal-status)
+- async_compression.yml disabled in main repo
+- Reactivation instructions for each type
+
+Tools added:
+- disable_workflows_simple.sh (batch disable)
+- Instructions for manual workflow management
+
+Impact:
+✅ Zero workflow errors on GitHub
+✅ Clean Actions tab
+✅ Security scanning still active (CodeQL)
+✅ Easy reactivation when needed
+
+**Hash complet**: `4c1dc694fb29124c0d991e57ee2f9a0ced08e501`
+
+### Fichiers modifiés
+
+```
+A	docs/maintenance/WORKFLOW_CLEANUP_REPORT.md
+A	tools/disable_problematic_workflows.sh
+A	tools/disable_workflows_simple.sh
+```
+
+### Statistiques
+
+```
+commit 4c1dc694fb29124c0d991e57ee2f9a0ced08e501
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 17:30:13 2025 -0500
+
+    docs: Add workflow cleanup report and tools
+    
+    Report includes:
+    - Complete list of 27 disabled workflows in Panini-FS
+    - 2 workflows kept active (CodeQL + minimal-status)
+    - async_compression.yml disabled in main repo
+    - Reactivation instructions for each type
+    
+    Tools added:
+    - disable_workflows_simple.sh (batch disable)
+    - Instructions for manual workflow management
+    
+    Impact:
+    ✅ Zero workflow errors on GitHub
+    ✅ Clean Actions tab
+    ✅ Security scanning still active (CodeQL)
+    ✅ Easy reactivation when needed
+
+ docs/maintenance/WORKFLOW_CLEANUP_REPORT.md | 241 ++++++++++++++++++++++++++++
+ tools/disable_problematic_workflows.sh      | 103 ++++++++++++
+ tools/disable_workflows_simple.sh           |  61 +++++++
+ 3 files changed, 405 insertions(+)
+```
+
+---
+
+
+## [21:38:54] Commit `f067befd`
+
+**Message**: feat: Solution 2 - Hybrid Local Dev + Remote Exec (Colab GPU)
+
+Implémentation complète de la stratégie hybride:
+- Développement 100% local (VSCode + Copilot)
+- Exécution automatique sur Colab GPU
+- Workflow Git-based (zéro SSH fragile)
+
+Fichiers ajoutés:
+- tools/colab_daemon_setup.py (400+ lines): Daemon qui surveille repo et exécute expériences
+- utils/gpu_mock.py (300+ lines): Mock GPU pour dev local CPU
+- experiments.json.template: Template pour définir expériences
+- tools/sync_colab_results.sh: Script pour pull résultats
+- notebooks/colab_gpu_daemon.ipynb: Notebook Colab ready-to-use
+- docs/infrastructure/SOLUTION_2_HYBRID_DEV_GUIDE.md: Guide complet avec troubleshooting
+
+Workflow:
+1. Développer localement avec Copilot
+2. Commit + Push experiments.json
+3. Daemon Colab détecte → exécute sur GPU
+4. Pull résultats automatiquement
+
+Features:
+✅ Async naturel (background execution)
+✅ Persistance Google Drive
+✅ Logging complet
+✅ Checkpoints automatiques
+✅ Multi-experiments support
+✅ Timeout handling
+✅ Error recovery
+✅ GPU monitoring
+
+**Hash complet**: `f067befd0033e2e27b8576b95b3a03a4bb7ac519`
+
+### Fichiers modifiés
+
+```
+M	copilotage/journal/JOURNAL_AUTO_2025-11-13_hauru.md
+A	copilotage/journal/discussions_backups/backup_2025-11-13_120000_hauru_metadata.json
+A	copilotage/journal/discussions_backups/backup_2025-11-13_180000_hauru_metadata.json
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-13_120000_hauru/commandEmbeddings.json
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-13_120000_hauru/debugCommand/copilot-debug
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-13_120000_hauru/debugCommand/copilotDebugCommand.js
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-13_120000_hauru/settingEmbeddings.json
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-13_180000_hauru/commandEmbeddings.json
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-13_180000_hauru/debugCommand/copilot-debug
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-13_180000_hauru/debugCommand/copilotDebugCommand.js
+A	copilotage/journal/discussions_backups/copilot_chat_2025-11-13_180000_hauru/settingEmbeddings.json
+A	copilotage/snapshots/snapshot_2025-11-13_010000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_020000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_030000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_040000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_050000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_060000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_070000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_080000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_090000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_100000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_110000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_120000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_130000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_140000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_150000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_160000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_170000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_180000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_190000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_200000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_210000_hauru_auto.md
+A	docs/infrastructure/COLAB_PRO_VSCODE_STRATEGIES.md
+A	docs/infrastructure/SOLUTION_2_HYBRID_DEV_GUIDE.md
+A	experiments.json.template
+A	notebooks/colab_gpu_daemon.ipynb
+M	research
+A	tools/colab_daemon_setup.py
+A	tools/sync_colab_results.sh
+A	utils/gpu_mock.py
+```
+
+### Statistiques
+
+```
+commit f067befd0033e2e27b8576b95b3a03a4bb7ac519
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 21:38:54 2025 -0500
+
+    feat: Solution 2 - Hybrid Local Dev + Remote Exec (Colab GPU)
+    
+    Implémentation complète de la stratégie hybride:
+    - Développement 100% local (VSCode + Copilot)
+    - Exécution automatique sur Colab GPU
+    - Workflow Git-based (zéro SSH fragile)
+    
+    Fichiers ajoutés:
+    - tools/colab_daemon_setup.py (400+ lines): Daemon qui surveille repo et exécute expériences
+    - utils/gpu_mock.py (300+ lines): Mock GPU pour dev local CPU
+    - experiments.json.template: Template pour définir expériences
+    - tools/sync_colab_results.sh: Script pour pull résultats
+    - notebooks/colab_gpu_daemon.ipynb: Notebook Colab ready-to-use
+    - docs/infrastructure/SOLUTION_2_HYBRID_DEV_GUIDE.md: Guide complet avec troubleshooting
+    
+    Workflow:
+    1. Développer localement avec Copilot
+    2. Commit + Push experiments.json
+    3. Daemon Colab détecte → exécute sur GPU
+    4. Pull résultats automatiquement
+    
+    Features:
+    ✅ Async naturel (background execution)
+    ✅ Persistance Google Drive
+    ✅ Logging complet
+    ✅ Checkpoints automatiques
+    ✅ Multi-experiments support
+    ✅ Timeout handling
+    ✅ Error recovery
+    ✅ GPU monitoring
+
+ .../journal/JOURNAL_AUTO_2025-11-13_hauru.md       | 310 +++++++++++
+ .../backup_2025-11-13_120000_hauru_metadata.json   |  17 +
+ .../backup_2025-11-13_180000_hauru_metadata.json   |  17 +
+ .../commandEmbeddings.json                         |   1 +
+ .../debugCommand/copilot-debug                     |   3 +
+ .../debugCommand/copilotDebugCommand.js            |   6 +
+ .../settingEmbeddings.json                         |   1 +
+ .../commandEmbeddings.json                         |   1 +
+ .../debugCommand/copilot-debug                     |   3 +
+ .../debugCommand/copilotDebugCommand.js            |   6 +
+ .../settingEmbeddings.json                         |   1 +
+ .../snapshot_2025-11-13_010000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_020000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_030000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_040000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_050000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_060000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_070000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_080000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_090000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_100000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_110000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_120000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_130000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_140000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_150000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_160000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_170000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_180000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_190000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_200000_hauru_auto.md       | 142 +++++
+ .../snapshot_2025-11-13_210000_hauru_auto.md       | 142 +++++
+ docs/infrastructure/COLAB_PRO_VSCODE_STRATEGIES.md | 578 +++++++++++++++++++++
+ docs/infrastructure/SOLUTION_2_HYBRID_DEV_GUIDE.md | 437 ++++++++++++++++
+ experiments.json.template                          |  16 +
+ notebooks/colab_gpu_daemon.ipynb                   | 295 +++++++++++
+ research                                           |   2 +-
+ tools/colab_daemon_setup.py                        | 353 +++++++++++++
+ tools/sync_colab_results.sh                        | 141 +++++
+ utils/gpu_mock.py                                  | 289 +++++++++++
+ 40 files changed, 5458 insertions(+), 1 deletion(-)
+```
+
+---
+
+
+## [22:29:56] Commit `05406553`
+
+**Message**: exp: Audio fingerprinting benchmark GPU
+
+Première expérience pour tester Solution 2:
+- experiments.json avec 2 expériences:
+  1. Tests basiques (5 tests unitaires)
+  2. Benchmark performance (100 fichiers)
+
+Script benchmark:
+- Génère audio synthétique
+- Mesure extraction, indexation, recherche
+- Sauvegarde métriques JSON
+- Support variables env Colab
+
+À lancer sur Colab:
+1. Importer colab_gpu_daemon.ipynb
+2. Run all
+3. Ce commit sera détecté automatiquement
+4. Expériences s'exécuteront sur GPU
+
+Expected results:
+- Tests: ~30s
+- Benchmark: ~2min (100 files)
+- Outputs dans Google Drive
+
+**Hash complet**: `054065534fff310f7d7e825b36d727062ad6b73e`
+
+### Fichiers modifiés
+
+```
+A	experiments.json
+A	experiments/benchmark_audio_fingerprinting.py
+```
+
+### Statistiques
+
+```
+commit 054065534fff310f7d7e825b36d727062ad6b73e
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 22:29:56 2025 -0500
+
+    exp: Audio fingerprinting benchmark GPU
+    
+    Première expérience pour tester Solution 2:
+    - experiments.json avec 2 expériences:
+      1. Tests basiques (5 tests unitaires)
+      2. Benchmark performance (100 fichiers)
+    
+    Script benchmark:
+    - Génère audio synthétique
+    - Mesure extraction, indexation, recherche
+    - Sauvegarde métriques JSON
+    - Support variables env Colab
+    
+    À lancer sur Colab:
+    1. Importer colab_gpu_daemon.ipynb
+    2. Run all
+    3. Ce commit sera détecté automatiquement
+    4. Expériences s'exécuteront sur GPU
+    
+    Expected results:
+    - Tests: ~30s
+    - Benchmark: ~2min (100 files)
+    - Outputs dans Google Drive
+
+ experiments.json                              |  16 ++
+ experiments/benchmark_audio_fingerprinting.py | 279 ++++++++++++++++++++++++++
+ 2 files changed, 295 insertions(+)
+```
+
+---
+
+
+## [23:59:28] Commit `6a4e2a57`
+
+**Message**: feat: VSCode Remote Tunnel debugging pour Colab GPU
+
+Solution 1 (Tunnel) implémentée pour debugging interactif:
+
+Nouveau notebook:
+- colab_vscode_tunnel.ipynb (13 cellules)
+- Setup VSCode CLI + tunnel
+- Authentification GitHub (device flow)
+- Instructions connexion VSCode
+
+Script exemple debugging:
+- debug_gpu_example.py (400+ lignes)
+- Exemples: tensor ops, batch processing, model forward
+- Profiling GPU avec torch.profiler
+- Memory debugging et leak detection
+- Tips pour breakpoints, watch, debug console
+
+Configuration VSCode:
+- .vscode/launch.json avec 6 configs debug
+- Debug GPU example, audio fingerprinting, tests
+- Profiling et memory tracking configs
+- Support CUDA_LAUNCH_BLOCKING
+
+Documentation:
+- DEBUG_GPU_GUIDE.md (guide complet)
+- Workflow: breakpoints, step trace, inspection
+- Conditional breakpoints, logpoints
+- Watch expressions pour GPU monitoring
+- Troubleshooting complet
+
+Comparaison solutions:
+- SOLUTION_COMPARISON.md mis à jour
+- Solution 1 (Tunnel) = debugging interactif
+- Solution 2 (Daemon) = batch processing
+- Recommandation: utiliser les 2 selon besoin
+
+Workflow complet:
+1. Dev local (CPU) avec mock GPU
+2. Debug Colab (GPU) avec tunnel + breakpoints
+3. Validation batch avec daemon
+4. Production après tests
+
+Avec ces 2 solutions, vous avez:
+✅ Debugging interactif (breakpoints, step trace)
+✅ Batch processing asynchrone (daemon)
+✅ Best of both worlds!
+
+**Hash complet**: `6a4e2a57a59fb471780027144063f9989698dffc`
+
+### Fichiers modifiés
+
+```
+A	QUICK_START_COLAB.md
+M	copilotage/journal/JOURNAL_AUTO_2025-11-13_hauru.md
+A	copilotage/snapshots/snapshot_2025-11-13_220000_hauru_auto.md
+A	copilotage/snapshots/snapshot_2025-11-13_230000_hauru_auto.md
+A	docs/infrastructure/DEBUG_GPU_GUIDE.md
+A	docs/infrastructure/SOLUTION_COMPARISON.md
+A	experiments/debug_gpu_example.py
+A	notebooks/colab_vscode_tunnel.ipynb
+```
+
+### Statistiques
+
+```
+commit 6a4e2a57a59fb471780027144063f9989698dffc
+Author: stephanedenis <stephane@sdenis.com>
+Date:   Thu Nov 13 23:59:28 2025 -0500
+
+    feat: VSCode Remote Tunnel debugging pour Colab GPU
+    
+    Solution 1 (Tunnel) implémentée pour debugging interactif:
+    
+    Nouveau notebook:
+    - colab_vscode_tunnel.ipynb (13 cellules)
+    - Setup VSCode CLI + tunnel
+    - Authentification GitHub (device flow)
+    - Instructions connexion VSCode
+    
+    Script exemple debugging:
+    - debug_gpu_example.py (400+ lignes)
+    - Exemples: tensor ops, batch processing, model forward
+    - Profiling GPU avec torch.profiler
+    - Memory debugging et leak detection
+    - Tips pour breakpoints, watch, debug console
+    
+    Configuration VSCode:
+    - .vscode/launch.json avec 6 configs debug
+    - Debug GPU example, audio fingerprinting, tests
+    - Profiling et memory tracking configs
+    - Support CUDA_LAUNCH_BLOCKING
+    
+    Documentation:
+    - DEBUG_GPU_GUIDE.md (guide complet)
+    - Workflow: breakpoints, step trace, inspection
+    - Conditional breakpoints, logpoints
+    - Watch expressions pour GPU monitoring
+    - Troubleshooting complet
+    
+    Comparaison solutions:
+    - SOLUTION_COMPARISON.md mis à jour
+    - Solution 1 (Tunnel) = debugging interactif
+    - Solution 2 (Daemon) = batch processing
+    - Recommandation: utiliser les 2 selon besoin
+    
+    Workflow complet:
+    1. Dev local (CPU) avec mock GPU
+    2. Debug Colab (GPU) avec tunnel + breakpoints
+    3. Validation batch avec daemon
+    4. Production après tests
+    
+    Avec ces 2 solutions, vous avez:
+    ✅ Debugging interactif (breakpoints, step trace)
+    ✅ Batch processing asynchrone (daemon)
+    ✅ Best of both worlds!
+
+ QUICK_START_COLAB.md                               | 178 +++++++++
+ .../journal/JOURNAL_AUTO_2025-11-13_hauru.md       | 238 ++++++++++++
+ .../snapshot_2025-11-13_220000_hauru_auto.md       | 142 +++++++
+ .../snapshot_2025-11-13_230000_hauru_auto.md       | 142 +++++++
+ docs/infrastructure/DEBUG_GPU_GUIDE.md             | 390 +++++++++++++++++++
+ docs/infrastructure/SOLUTION_COMPARISON.md         | 309 +++++++++++++++
+ experiments/debug_gpu_example.py                   | 271 +++++++++++++
+ notebooks/colab_vscode_tunnel.ipynb                | 427 +++++++++++++++++++++
+ 8 files changed, 2097 insertions(+)
+```
+
+---
+

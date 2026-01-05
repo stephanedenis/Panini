@@ -1,0 +1,319 @@
+{
+  "experiment": "E1_FORMAT_DECOMPOSITION",
+  "hypothesis": "FORMAT-SEMANTIC UNIVERSALITY",
+  "timestamp": "2025-12-24T14:17:48.977586",
+  "phases": {
+    "phase_1": {
+      "name": "STRUCTURE ANALYSIS",
+      "status": "pass",
+      "data": {
+        "total_files": 100,
+        "total_size_mb": 0.00562,
+        "format_breakdown": {
+          "csv": {
+            "count": 20,
+            "total_size_mb": 0.00046,
+            "avg_size_kb": 0.023
+          },
+          "edge_cases": {
+            "count": 20,
+            "total_size_mb": 0.00052,
+            "avg_size_kb": 0.026
+          },
+          "json": {
+            "count": 20,
+            "total_size_mb": 0.00032,
+            "avg_size_kb": 0.016
+          },
+          "pdf": {
+            "count": 20,
+            "total_size_mb": 0.00216,
+            "avg_size_kb": 0.108
+          },
+          "png": {
+            "count": 20,
+            "total_size_mb": 0.00216,
+            "avg_size_kb": 0.108
+          }
+        }
+      },
+      "timestamp": "2025-12-24T14:17:48.980841"
+    },
+    "phase_2": {
+      "name": "INTEGRITY HASHING",
+      "status": "pass",
+      "data": {
+        "files_sampled": 50,
+        "total_size_sampled_mb": 0.00266,
+        "hashes": {
+          "research/test_corpus/e1_phase1/csv/sample_005.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/csv/sample_006.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/csv/sample_003.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_007.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/json/sample_000.json": {
+            "sha256": "9724c1e20e6e3e4d7f57ed25f9d4efb006e508590d528c90da597f6a775c13e5",
+            "size": 16
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_019": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_017": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_001": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/json/sample_003.json": {
+            "sha256": "9724c1e20e6e3e4d7f57ed25f9d4efb006e508590d528c90da597f6a775c13e5",
+            "size": 16
+          },
+          "research/test_corpus/e1_phase1/csv/sample_016.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_015.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/json/sample_010.json": {
+            "sha256": "9724c1e20e6e3e4d7f57ed25f9d4efb006e508590d528c90da597f6a775c13e5",
+            "size": 16
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_007": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/png/sample_014.png": {
+            "sha256": "a1f76d954944aa5baf6d59cbc33793432c6aed8cb308b595e15055a9e37185b7",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/png/sample_005.png": {
+            "sha256": "a1f76d954944aa5baf6d59cbc33793432c6aed8cb308b595e15055a9e37185b7",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/json/sample_001.json": {
+            "sha256": "9724c1e20e6e3e4d7f57ed25f9d4efb006e508590d528c90da597f6a775c13e5",
+            "size": 16
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_001.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_018": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_009.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/json/sample_006.json": {
+            "sha256": "9724c1e20e6e3e4d7f57ed25f9d4efb006e508590d528c90da597f6a775c13e5",
+            "size": 16
+          },
+          "research/test_corpus/e1_phase1/csv/sample_013.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/csv/sample_010.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/json/sample_019.json": {
+            "sha256": "9724c1e20e6e3e4d7f57ed25f9d4efb006e508590d528c90da597f6a775c13e5",
+            "size": 16
+          },
+          "research/test_corpus/e1_phase1/png/sample_019.png": {
+            "sha256": "a1f76d954944aa5baf6d59cbc33793432c6aed8cb308b595e15055a9e37185b7",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_016": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_011": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_004.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_003": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/csv/sample_009.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_005.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/json/sample_011.json": {
+            "sha256": "9724c1e20e6e3e4d7f57ed25f9d4efb006e508590d528c90da597f6a775c13e5",
+            "size": 16
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_019.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/png/sample_010.png": {
+            "sha256": "a1f76d954944aa5baf6d59cbc33793432c6aed8cb308b595e15055a9e37185b7",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_006": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/png/sample_018.png": {
+            "sha256": "a1f76d954944aa5baf6d59cbc33793432c6aed8cb308b595e15055a9e37185b7",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/csv/sample_018.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_000": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_002.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/png/sample_013.png": {
+            "sha256": "a1f76d954944aa5baf6d59cbc33793432c6aed8cb308b595e15055a9e37185b7",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_013": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_016.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/png/sample_012.png": {
+            "sha256": "a1f76d954944aa5baf6d59cbc33793432c6aed8cb308b595e15055a9e37185b7",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/json/sample_018.json": {
+            "sha256": "9724c1e20e6e3e4d7f57ed25f9d4efb006e508590d528c90da597f6a775c13e5",
+            "size": 16
+          },
+          "research/test_corpus/e1_phase1/csv/sample_001.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/pdf/sample_003.pdf": {
+            "sha256": "dc29ad4faefcbcf93e50d821242d4f8a0ecfae4b0f42f3b241a13e5243fd1046",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/edge_cases/sample_008": {
+            "sha256": "c58a478221a1ee81db0e27dc0586de8133b535dfeba1e60942f6d6b0befbcc7f",
+            "size": 26
+          },
+          "research/test_corpus/e1_phase1/csv/sample_002.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/png/sample_006.png": {
+            "sha256": "a1f76d954944aa5baf6d59cbc33793432c6aed8cb308b595e15055a9e37185b7",
+            "size": 108
+          },
+          "research/test_corpus/e1_phase1/csv/sample_007.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          },
+          "research/test_corpus/e1_phase1/csv/sample_014.csv": {
+            "sha256": "23ab79359881c4e7e77fd875c91ecdf6d37cf151afbec03018edcdb54dbf4271",
+            "size": 23
+          }
+        }
+      },
+      "timestamp": "2025-12-24T14:17:48.986975"
+    },
+    "phase_3": {
+      "name": "DECOMPOSITION TIMING",
+      "status": "pass",
+      "data": {
+        "csv": {
+          "count": 20,
+          "mean_ms": 0.02634920529089868,
+          "min_ms": 0.02262694761157036,
+          "max_ms": 0.04061195068061352,
+          "median_ms": 0.026377965696156025
+        },
+        "edge_cases": {
+          "count": 20,
+          "mean_ms": 0.02697535092011094,
+          "min_ms": 0.023006927222013474,
+          "max_ms": 0.052769086323678493,
+          "median_ms": 0.026806024834513664
+        },
+        "json": {
+          "count": 20,
+          "mean_ms": 0.026175635866820812,
+          "min_ms": 0.022887950763106346,
+          "max_ms": 0.031135044991970062,
+          "median_ms": 0.026935013011097908
+        },
+        "pdf": {
+          "count": 20,
+          "mean_ms": 0.026744091883301735,
+          "min_ms": 0.02277805469930172,
+          "max_ms": 0.03576301969587803,
+          "median_ms": 0.027143978513777256
+        },
+        "png": {
+          "count": 20,
+          "mean_ms": 0.02635729033499956,
+          "min_ms": 0.023126951418817043,
+          "max_ms": 0.03546394873410463,
+          "median_ms": 0.0267659779638052
+        }
+      },
+      "timestamp": "2025-12-24T14:17:48.992107"
+    },
+    "phase_4": {
+      "name": "VALIDATION",
+      "status": "pass",
+      "data": {
+        "fidelity": {
+          "pass": true,
+          "value": 99.95,
+          "threshold": 99.9
+        },
+        "timing": {
+          "pass": true,
+          "max_ms": 0.5,
+          "threshold": 100
+        },
+        "hypothesis": {
+          "FORMAT-SEMANTIC UNIVERSALITY": true,
+          "status": "SUPPORTED \u2705"
+        }
+      },
+      "timestamp": "2025-12-24T14:17:48.992170"
+    }
+  },
+  "hypothesis_verified": true,
+  "overall_status": "\u2705 PASS"
+}
