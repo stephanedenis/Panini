@@ -4,9 +4,6 @@
 [submodule "modules/core/filesystem"]
 	path = modules/core/filesystem
 	url = https://github.com/stephanedenis/Panini-FS.git
-[submodule "projects/ontowave"]
-	path = modules/ontowave
-	url = https://github.com/stephanedenis/OntoWave.git
 [submodule "modules/core/semantic"]
 	path = modules/core/semantic
 	url = https://github.com/stephanedenis/Panini-SemanticCore.git
@@ -34,3 +31,6 @@
 [submodule "shared/copilotage"]
 	path = shared/copilotage
 	url = https://github.com/stephanedenis/Panini-CopilotageShared.git
+[submodule "modules/ontowave"]
+	path = modules/ontowave
+	url = https://github.com/stephanedenis/OntoWave.git
