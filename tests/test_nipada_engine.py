@@ -220,7 +220,8 @@ def catalog():
 
 class TestCatalogLoading:
     def test_total_entries(self, catalog):
-        assert len(catalog) == 32
+        """§74 : catalogue complet = 15 Z+ + 15 Z- + 15 iZ."""
+        assert len(catalog) == 45
 
     def test_z_positive(self, catalog):
         assert len(catalog.by_domain(Domain.Z_POS)) == 15
@@ -229,7 +230,8 @@ class TestCatalogLoading:
         assert len(catalog.by_domain(Domain.Z_NEG)) == 15
 
     def test_iz(self, catalog):
-        assert len(catalog.by_domain(Domain.IZ)) == 2
+        """§74 : toutes les 15 molécules ont une entrée iZ (ni = n×i)."""
+        assert len(catalog.by_domain(Domain.IZ)) == 15
 
 
 class TestCatalogAccess:
@@ -271,9 +273,16 @@ class TestCatalogAccess:
         assert e.domain == Domain.IZ
 
     def test_imaginary_of_no_entry(self, catalog):
-        # EXISTENCE n'a pas d'entrée iZ connue pour l'instant
-        e = catalog.imaginary_of(6)
+        # Produit invalide (CAUSER=11, hors système nipada 4 bits)
+        e = catalog.imaginary_of(11)
         assert e is None
+
+    def test_imaginary_of_existence(self, catalog):
+        # §74 : EXISTENCE (6) a maintenant un iZ → CONSCIENCE
+        e = catalog.imaginary_of(6)
+        assert e is not None
+        assert e.name == "CONSCIENCE"
+        assert e.domain == Domain.IZ
 
 
 class TestCatalogQueries:
@@ -347,3 +356,177 @@ class TestFormalInvariants:
         assert e is not None
         assert e.name == "INTÉGRATION"
         assert e.mask == MAX_MASK
+
+
+# ---------------------------------------------------------------------------
+# Domaine iZ — 15 entrées (§74 : ni = molécule n × i, auto-référence productive)
+# ---------------------------------------------------------------------------
+
+class TestCatalogIZ:
+    """
+    Valide les 15 entrées iZ du catalogue (§74).
+    Principe : ni = molécule n appliquée à elle-même (Bateson : double contrainte productive).
+    Chaque masque 1-15 doit avoir une entrée Z+, Z- et iZ.
+    """
+
+    def test_all_masks_have_iz(self, catalog):
+        """Les 15 masques 1..15 ont tous une entrée iZ."""
+        iz_masks = {e.mask for e in catalog.by_domain(Domain.IZ)}
+        assert iz_masks == set(range(1, 16))
+
+    def test_iz_masks_match_z_pos(self, catalog):
+        """Chaque iZ partage son masque avec un Z+ (même encodage 4 bits)."""
+        pos_masks = {e.mask for e in catalog.by_domain(Domain.Z_POS)}
+        for e in catalog.by_domain(Domain.IZ):
+            assert e.mask in pos_masks, f"{e.name} mask {e.mask} absent de Z+"
+
+    # --- Atomes iZ (mask = 1 bit) ---
+
+    def test_iz_vide(self, catalog):
+        """ÊTRE×i = VIDE (śūnyatā) — mask=1, ÊTRE appliqué à lui-même."""
+        e = catalog.imaginary_of(2)   # ÊTRE = product 2 = mask 1
+        assert e is not None
+        assert e.name == "VIDE"
+        assert e.mask == 1
+        assert e.domain == Domain.IZ
+
+    def test_iz_paradoxe(self, catalog):
+        """DIFFÉRENCE×i = PARADOXE (Russell) — mask=2."""
+        e = catalog.imaginary_of(3)   # DIFFÉRENCE = product 3 = mask 2
+        assert e is not None
+        assert e.name == "PARADOXE"
+        assert e.mask == 2
+
+    def test_iz_recursion(self, catalog):
+        """RAPPORT×i = RÉCURSION (Hofstadter) — mask=4."""
+        e = catalog.imaginary_of(5)   # RAPPORT = product 5 = mask 4
+        assert e is not None
+        assert e.name == "RÉCURSION"
+        assert e.mask == 4
+
+    def test_iz_retour(self, catalog):
+        """ORIENTATION×i = RETOUR (Nietzsche) — mask=8."""
+        e = catalog.imaginary_of(7)   # ORIENTATION = product 7 = mask 8
+        assert e is not None
+        assert e.name == "RETOUR"
+        assert e.mask == 8
+
+    # --- Binaires iZ (mask = 2 bits) ---
+
+    def test_iz_conscience(self, catalog):
+        """EXISTENCE×i = CONSCIENCE (cogito) — mask=3."""
+        e = catalog.imaginary_of(6)   # EXISTENCE = product 6 = mask 3
+        assert e is not None
+        assert e.name == "CONSCIENCE"
+        assert e.mask == 3
+
+    def test_iz_autopoiese(self, catalog):
+        """COMPOSITION×i = AUTOPOÏÈSE (Maturana) — mask=5."""
+        e = catalog.imaginary_of(10)  # COMPOSITION = product 10 = mask 5
+        assert e is not None
+        assert e.name == "AUTOPOÏÈSE"
+        assert e.mask == 5
+
+    def test_iz_trace(self, catalog):
+        """MESURE×i = TRACE (existant §72) — mask=6."""
+        e = catalog.imaginary_of(15)  # MESURE = product 15 = mask 6
+        assert e is not None
+        assert e.name == "TRACE"
+        assert e.mask == 6
+
+    def test_iz_cycle(self, catalog):
+        """DEVENIR×i = CYCLE (saṃsāra) — mask=9."""
+        e = catalog.imaginary_of(14)  # DEVENIR = product 14 = mask 9
+        assert e is not None
+        assert e.name == "CYCLE"
+        assert e.mask == 9
+
+    def test_iz_ambivalence(self, catalog):
+        """OPPOSITION×i = AMBIVALENCE (Freud) — mask=10."""
+        e = catalog.imaginary_of(21)  # OPPOSITION = product 21 = mask 10
+        assert e is not None
+        assert e.name == "AMBIVALENCE"
+        assert e.mask == 10
+
+    def test_iz_metalangage(self, catalog):
+        """RÉFÉRENCE×i = MÉTALANGAGE (Tarski/Gödel) — mask=12."""
+        e = catalog.imaginary_of(35)  # RÉFÉRENCE = product 35 = mask 12
+        assert e is not None
+        assert e.name == "MÉTALANGAGE"
+        assert e.mask == 12
+
+    # --- Ternaires iZ (mask = 3 bits) ---
+
+    def test_iz_individuation(self, catalog):
+        """VIE×i = INDIVIDUATION (Jung/Simondon) — mask=7."""
+        e = catalog.imaginary_of(30)  # VIE = product 30 = mask 7
+        assert e is not None
+        assert e.name == "INDIVIDUATION"
+        assert e.mask == 7
+
+    def test_iz_apprentissage(self, catalog):
+        """TRANSFORMATION×i = APPRENTISSAGE (Bateson) — mask=11."""
+        e = catalog.imaginary_of(42)  # TRANSFORMATION = product 42 = mask 11
+        assert e is not None
+        assert e.name == "APPRENTISSAGE"
+        assert e.mask == 11
+
+    def test_iz_moi(self, catalog):
+        """INTENTION×i = MOI (existant §72) — mask=13."""
+        e = catalog.imaginary_of(70)  # INTENTION = product 70 = mask 13
+        assert e is not None
+        assert e.name == "MOI"
+        assert e.mask == 13
+
+    def test_iz_memoire(self, catalog):
+        """TEMPS×i = MÉMOIRE (Bergson/smṛti) — mask=14."""
+        e = catalog.imaginary_of(105)  # TEMPS = product 105 = mask 14
+        assert e is not None
+        assert e.name == "MÉMOIRE"
+        assert e.mask == 14
+
+    # --- Quaternaire iZ (mask = 4 bits) ---
+
+    def test_iz_absolu(self, catalog):
+        """INTÉGRATION×i = ABSOLU (Hegel/brahman) — mask=15."""
+        e = catalog.imaginary_of(210)  # INTÉGRATION = product 210 = mask 15
+        assert e is not None
+        assert e.name == "ABSOLU"
+        assert e.mask == 15
+
+    # --- Invariants structurels iZ ---
+
+    def test_iz_domain_all_correct(self, catalog):
+        """Toutes les entrées iZ ont domain == Domain.IZ."""
+        for e in catalog.by_domain(Domain.IZ):
+            assert e.domain == Domain.IZ, f"{e.name} a domain={e.domain}"
+
+    def test_iz_by_level_distribution(self, catalog):
+        """
+        Distribution des iZ par niveau :
+          level 1 (1 bit) = 4 atomes iZ  : VIDE, PARADOXE, RÉCURSION, RETOUR
+          level 1-2 (2 bits) = 6 binaires : CONSCIENCE, AUTOPOÏÈSE, TRACE, CYCLE, AMBIVALENCE, MÉTALANGAGE
+          level 2-3 (3 bits) = 4 ternaires : INDIVIDUATION, APPRENTISSAGE, MOI, MÉMOIRE
+          level 3-4 (4 bits) = 1 quaternaire : ABSOLU
+        Note: le level JSON des iZ est level 0 pour les atomes, level 1 pour binaires, etc.
+        Les masques 1-bit ont popcount=1, etc.
+        """
+        iz_entries = catalog.by_domain(Domain.IZ)
+        # 4 entrées avec mask à 1 bit (atomes iZ)
+        one_bit = [e for e in iz_entries if bin(e.mask).count('1') == 1]
+        assert len(one_bit) == 4
+        # 6 entrées avec mask à 2 bits (binaires iZ)
+        two_bit = [e for e in iz_entries if bin(e.mask).count('1') == 2]
+        assert len(two_bit) == 6
+        # 4 entrées avec mask à 3 bits (ternaires iZ)
+        three_bit = [e for e in iz_entries if bin(e.mask).count('1') == 3]
+        assert len(three_bit) == 4
+        # 1 entrée avec mask à 4 bits (quaternaire iZ)
+        four_bit = [e for e in iz_entries if bin(e.mask).count('1') == 4]
+        assert len(four_bit) == 1
+        assert four_bit[0].name == "ABSOLU"
+
+    def test_iz_no_duplicate_masks(self, catalog):
+        """Chaque mask est unique dans le domaine iZ."""
+        iz_masks = [e.mask for e in catalog.by_domain(Domain.IZ)]
+        assert len(iz_masks) == len(set(iz_masks))
