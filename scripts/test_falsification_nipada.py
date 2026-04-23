@@ -385,6 +385,101 @@ def test_h2_rstar(matrix: np.ndarray, ids: list) -> dict:
     }
 
 
+def _prime_set(molecule_id: int) -> set:
+    """Ensemble des primes actives dans une molécule (atomes ou composés)."""
+    if molecule_id in ATOM_IDS:
+        return {molecule_id}
+    return set(MOLECULES.get(molecule_id, {}).get("atoms", []))
+
+
+def _jaccard_nipada(id_a: int, id_b: int) -> float:
+    """Similarité de Jaccard sur les ensembles de primes (prédit depuis la théorie)."""
+    sa = _prime_set(id_a)
+    sb = _prime_set(id_b)
+    inter = len(sa & sb)
+    union = len(sa | sb)
+    return inter / union if union > 0 else 0.0
+
+
+def test_h2_cosine_coherence(matrix: np.ndarray, ids: list) -> dict:
+    """
+    H2 v2 — Cohérence cosinus : la similarité observée entre deux concepts
+    (cosinus des embeddings) est-elle prédite par le chevauchement d'atomes
+    (similarité de Jaccard sur les masques 4 bits) ?
+
+    Méthode :
+      Pour chaque paire (i, j) de molécules :
+        - predicted_sim(i,j) = Jaccard(atomes_i, atomes_j)
+        - observed_sim(i,j)  = cosine(embed_i, embed_j)
+      Spearman(predicted, observed) sur toutes les paires.
+
+    Verdict :
+      ρ > 0.50 → RENFORCÉ (structure atomique explique les similarités)
+      ρ > 0.30 → AMBIGU
+      ρ ≤ 0.30 → FALSIFIÉ
+    """
+    mol_ids = [m for m in MOLECULE_IDS if m in ids]
+    if len(mol_ids) < 5:
+        return {"status": "missing_data", "n_molecules": len(mol_ids)}
+
+    mol_indices = [ids.index(m) for m in mol_ids]
+    mol_matrix = matrix[mol_indices]
+
+    n = len(mol_ids)
+    predicted = []
+    observed  = []
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            jac = _jaccard_nipada(mol_ids[i], mol_ids[j])
+            cos = float(cosine_similarity(
+                mol_matrix[i].reshape(1, -1),
+                mol_matrix[j].reshape(1, -1)
+            )[0, 0])
+            predicted.append(jac)
+            observed.append(cos)
+
+    rho, pval = spearmanr(predicted, observed)
+    rho  = float(rho)
+    pval = float(pval)
+
+    # Distribution des paires par Jaccard (qualité de signal)
+    bucket_stats = {}
+    for bucket in [0.0, 0.25, 0.5, 0.75, 1.0]:
+        pairs = [(p, o) for p, o in zip(predicted, observed) if abs(p - bucket) < 0.13]
+        if pairs:
+            bucket_stats[f"jaccard≈{bucket:.2f}"] = {
+                "n_pairs": len(pairs),
+                "mean_cosine": float(np.mean([o for _, o in pairs])),
+                "std_cosine":  float(np.std([o for _, o in pairs])),
+            }
+
+    if rho > 0.50:
+        verdict = f"RENFORCÉ — ρ={rho:.3f} (p={pval:.3e}) : chevauchement atomique prédit les similarités"
+    elif rho > 0.30:
+        verdict = f"AMBIGU — ρ={rho:.3f} (p={pval:.3e}) : corrélation modérée"
+    else:
+        verdict = f"FALSIFIÉ — ρ={rho:.3f} (p={pval:.3e}) : structure atomique n'explique pas les similarités"
+
+    return {
+        "method": "Spearman(Jaccard_théorique, cosine_observé) sur toutes les paires",
+        "n_molecules": n,
+        "n_pairs": len(predicted),
+        "spearman_rho": rho,
+        "spearman_pval": pval,
+        "predicted_range": [float(min(predicted)), float(max(predicted))],
+        "observed_range":  [float(min(observed)),  float(max(observed))],
+        "mean_observed_cosine": float(np.mean(observed)),
+        "bucket_analysis": bucket_stats,
+        "verdict": verdict,
+        "note": (
+            "H2 v2 : prédit=Jaccard(atomes_A∩atomes_B / atomes_A∪atomes_B), "
+            "observé=cosine(embed_A, embed_B). "
+            "Si ρ élevé → la géométrie sémantique est cohérente avec l'algèbre nipada."
+        ),
+    }
+
+
 def test_h3_complex_crossings(model: SentenceTransformer) -> dict:
     """
     H3 — Crossings complexes ℂ* : le poids |c_k|² dans la superposition
@@ -446,8 +541,11 @@ def run_all_tests():
     h1 = test_h1_causer(matrix, ids)
     print(f"\n  H1 (CAUSER=11) : {h1.get('verdict', h1.get('status', '?'))}")
 
-    h2 = test_h2_rstar(matrix, ids)
-    print(f"\n  H2 (Extension ℝ*) : {h2.get('verdict', h2.get('status', '?'))}")
+    h2_pca = test_h2_rstar(matrix, ids)
+    print(f"\n  H2 PCA (ℝ*) : {h2_pca.get('verdict', h2_pca.get('status', '?'))}")
+
+    h2_cos = test_h2_cosine_coherence(matrix, ids)
+    print(f"\n  H2 Cosinus   : {h2_cos.get('verdict', h2_cos.get('status', '?'))}")
 
     h3 = test_h3_complex_crossings(model)
     print(f"\n  H3 (Crossings ℂ*) : {h3.get('verdict', h3.get('status', '?'))}")
@@ -456,16 +554,17 @@ def run_all_tests():
     results = {
         "date": "2026-04-23",
         "system": "nipada",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "model": MODEL_NAME,
         "n_languages": len(LANGUAGES),
         "n_molecules": len(MOLECULE_IDS),
         "H1_causer_11": h1,
-        "H2_rstar_extension": h2,
+        "H2_pca_rstar": h2_pca,
+        "H2_cosine_coherence": h2_cos,
         "H3_complex_crossings": h3,
     }
 
-    out_path = FALSI_DIR / "RESULTATS_FALSIFICATION_v0.1.json"
+    out_path = FALSI_DIR / "RESULTATS_FALSIFICATION_v0.2.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print(f"\n  → Résultats sauvegardés : {out_path}")
@@ -474,7 +573,7 @@ def run_all_tests():
     print("\n" + "=" * 60)
     print("RÉSUMÉ")
     print("=" * 60)
-    for key, data in [("H1 CAUSER=11", h1), ("H2 ℝ*", h2), ("H3 ℂ*", h3)]:
+    for key, data in [("H1 CAUSER=11", h1), ("H2 PCA ℝ*", h2_pca), ("H2 cosinus", h2_cos), ("H3 ℂ*", h3)]:
         print(f"  {key:15s} : {data.get('verdict', data.get('status', 'N/A'))}")
     print()
 
