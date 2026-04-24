@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """
-§86/§90 — Lacunes nipada : corpus étendu multi-genre + matrice de confusion
+§86/§90/§92 — Lacunes nipada : corpus étendu multi-genre + matrice de confusion
 ===========================================================================
 Version §90 : utilise NipadaV6Synthesizer (6 atomes : +TEMPS(13)) et MODES_V6
   §87 — narration : [13, 78, 273]  TEMPS+DEVENIR+SUCCESSION (vs §86 [462,1155])
   §88 — question  : [143, 165, 11] INTERROGATION(11×13)+JUGEMENT+SUJET
   §89 — introspection : [2310, 22, 26] +ÉVOLUTION(2×13)
+  §91 — pré-filtre syntaxique QUESTION(?/wh) +0.12 + INTROSPECTION(1re pers.) +0.06
+  §92 — copule définitoire (est la/le/l'/ce qui) → DÉFINITION +0.10
+         introspection 1p sans "?" → +0.12 (vs +0.06 §91) ; avec "?" → +0.02
 
 Corpus : 10 phrases × 7 types × FR/EN  +  5 phrases × 7 types × DE/ES/ZH
          = 245 phrases de test
@@ -504,8 +507,10 @@ ADVERSARIAL: list[dict] = [
 # entre QUESTION et ORDRE (~0.08-0.11 dans §90).
 
 SYNTACTIC_BONUS = {
-    "question":      0.12,   # bonus si marqueur interrogatif présent
-    "introspection": 0.06,   # bonus si marqueur 1re personne présent
+    "question":         0.12,  # bonus si marqueur interrogatif présent
+    "introspection_1p": 0.12,  # §92 : bonus 1re pers. SANS "?" (introspectif pur)
+    "introspection_wq": 0.02,  # §92 : bonus 1re pers. AVEC "?" (auto-interrogatif)
+    "définition":       0.10,  # §92 : bonus si copule définitoire (est la/le/l'/ce qui)
 }
 
 # Marqueurs interrogatifs : point d'interrogation ou mot-wh initial
@@ -526,6 +531,15 @@ _I_1P = re.compile(
     r'\b(je |j\'|i |ich |yo |我|mich\b|mir\b|myself\b|me\b)',
     re.IGNORECASE)
 
+# §92 — Copule définitoire (article défini après est/is/ist/es)
+# Distingue les définitions ("est la faculté", "is the capacity")
+# des descriptions ("est une molécule") et proclamations ("est garanti")
+_DEF_COPULA_FR = re.compile(r"\best\s+(la\b|le\b|l'|ce\s+qui\b|ce\s+que\b)", re.IGNORECASE)
+_DEF_COPULA_EN = re.compile(r'\bis\s+(the\b|what\b|that\s+which\b)', re.IGNORECASE)
+_DEF_COPULA_DE = re.compile(r'\bist\s+(die\b|der\b|das\b|das,?\s+was\b)', re.IGNORECASE)
+_DEF_COPULA_ES = re.compile(r'\bes\s+(la\b|el\b|lo\s+que\b)', re.IGNORECASE)
+_DEF_COPULA_ZH = re.compile(r'是.*的|指的是|意味着|被定义为')
+
 
 def _has_question_marker(text: str) -> bool:
     return bool(
@@ -539,6 +553,17 @@ def _has_question_marker(text: str) -> bool:
 
 def _has_introspection_marker(text: str) -> bool:
     return bool(_I_1P.search(text))
+
+
+def _has_definition_marker(text: str) -> bool:
+    """§92 — Détecte une copule définitoire (article défini après être/to be)."""
+    return bool(
+        _DEF_COPULA_FR.search(text)
+        or _DEF_COPULA_EN.search(text)
+        or _DEF_COPULA_DE.search(text)
+        or _DEF_COPULA_ES.search(text)
+        or _DEF_COPULA_ZH.search(text)
+    )
 
 
 # ── Utilitaires ───────────────────────────────────────────────────────────────
@@ -557,24 +582,33 @@ def classify(emb: np.ndarray, centroids: dict[str, np.ndarray]) -> tuple[str, di
 
 def classify_with_syntax(text: str, emb: np.ndarray,
                          centroids: dict[str, np.ndarray]) -> tuple[str, dict[str, float]]:
-    """§91 — Classification cosinus + bonus syntaxique.
+    """§92 — Classification cosinus + bonus syntaxique (définition + introspection affinée).
 
-    Ajoute SYNTACTIC_BONUS[mode] au score cosinus pour chaque mode
-    dont un marqueur syntaxique est détecté dans `text`.
-    Les scores retournés incluent le bonus pour traçabilité.
+    §91 : question +0.12 si "?" / mot-wh initial
+    §92 : introspection +0.12 si 1re pers. SANS "?"  (introspectif pur)
+                        +0.02 si 1re pers. AVEC "?"  (auto-interrogatif → laisser gagner question)
+          définition   +0.10 si copule définitoire (est la/le/l'/ce qui — article défini)
     """
     sims = {m: cosine(emb, c) for m, c in centroids.items()}
-    if _has_question_marker(text):
+    has_q  = _has_question_marker(text)
+    has_1p = _has_introspection_marker(text)
+    if has_q:
         sims["question"] = sims["question"] + SYNTACTIC_BONUS["question"]
-    if _has_introspection_marker(text):
-        sims["introspection"] = sims["introspection"] + SYNTACTIC_BONUS["introspection"]
+        if has_1p:
+            # 1re pers. + "?" : auto-interrogatif → petit bonus introspection
+            sims["introspection"] = sims["introspection"] + SYNTACTIC_BONUS["introspection_wq"]
+    elif has_1p:
+        # 1re pers. sans "?" : introspectif pur → bonus fort
+        sims["introspection"] = sims["introspection"] + SYNTACTIC_BONUS["introspection_1p"]
+    if _has_definition_marker(text):
+        sims["définition"] = sims["définition"] + SYNTACTIC_BONUS["définition"]
     return max(sims, key=sims.__getitem__), sims
 
 
 def main() -> None:
     W = 74
     print("═" * W)
-    print("  §91 — Pré-filtre syntaxique : bonus QUESTION(?/wh) + INTROSPECTION(1re pers.)")
+    print("  §92 — Copule définitoire (DÉFINITION) + introspection 1p/wq affinée")
     print(f"  245 phrases × 7 types × 5 langues  +  14 cas adversariaux")
     print("═" * W)
 
@@ -767,7 +801,7 @@ def main() -> None:
     # ── 9. Sauvegarde JSON ────────────────────────────────────────────────────
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "benchmark": "§91 pré-filtre syntaxique nipada — bonus question/introspection",
+        "benchmark": "§92 copule définitoire + introspection 1p/wq — DÉFINITION +0.10, INTROSPECTION 1p +0.12",
         "model": "paraphrase-multilingual-MiniLM-L12-v2",
         "global_accuracy": float(global_accuracy),
         "type_accuracy": _to_native(type_accuracy),
