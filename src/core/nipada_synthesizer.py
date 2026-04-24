@@ -418,3 +418,168 @@ class NipadaSynthesizer:
             tokens.append(f", {conn} {parts[i]}")
         result = "".join(tokens)
         return result[0].upper() + result[1:] + "."
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# §81 — Synthèse adaptative
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Connecteur de transition cross-type (def → kernel ou kernel → def)
+_CROSS_CONNECTORS: dict[str, str] = {
+    "fr": "en outre,",
+    "en": "moreover,",
+    "de": "außerdem",
+    "es": "además,",
+    "zh": "此外",
+}
+
+# Primes RAPPORT et ORIENTATION
+_RAPPORT_PRIME = 5
+
+
+def _is_architectural(mol_id: int) -> bool:
+    """
+    Retourne True si la molécule est "architecturale" : définition > noyau.
+
+    Règle empirique issue de §80A :
+        - 4 atomes → INTÉGRATION (210)  : abstraction maximale, defs gagnent
+        - 3 atomes, RAPPORT(5) ET ORIENTATION(7) présents → TEMPS (105), INTENTION (70)
+          Ces molécules combinent structure et direction, leur définition est
+          sémanticquement plus dense que le noyau court.
+
+    Pour toutes les autres molécules, le noyau court donne un cycle_sim
+    égal ou supérieur à la définition complète.
+    """
+    mask = product_to_mask(mol_id) or 0
+    primes = set(atoms_in(mask))
+    n = len(primes)
+    return n >= 4 or (n == 3 and _RAPPORT_PRIME in primes and _ORIENT_PRIME in primes)
+
+
+def _mol_type(mol_id: int) -> str:
+    """Retourne 'def' (architectural) ou 'kernel' (naturel)."""
+    return "def" if _is_architectural(mol_id) else "kernel"
+
+
+# Catalogue des types par mol_id (pour référence rapide)
+MOL_TYPES: dict[int, str] = {m: _mol_type(m) for m in [
+    2, 3, 5, 7, 6, 10, 14, 15, 21, 35, 30, 42, 70, 105, 210
+]}
+
+
+class NipadaAdaptiveSynthesizer:
+    """
+    §81 — Synthèse adaptative nipada.
+
+    Sélectionne automatiquement la meilleure stratégie *par molécule* selon
+    son niveau d'abstraction structurale, puis assemble les fragments avec des
+    connecteurs appropriés.
+
+    Règle de sélection (issue de §80A) :
+        - Molécule "architecturale" (n_atomes≥4 ou RAPPORT+ORIENTATION à n≥3)
+          → phrase définitionnelle complète
+        - Molécule "naturelle" (tous les autres cas)
+          → noyau sémantique court
+
+    Molécules architecturales : TEMPS(105), INTENTION(70), INTÉGRATION(210).
+    Molécules naturelles       : les 12 restantes.
+
+    L'assemblage est hybride :
+        - Bloc tout-kernel     → connecteurs kernel_structured (Jaccard-aware)
+        - Bloc tout-def        → séparateur " | "
+        - Blocs mixtes kernel/def → connecteur cross-type + ponctuation adaptée
+
+    Usage :
+        synth = NipadaAdaptiveSynthesizer()
+        text = synth.synthesize([105, 30, 3], lang="fr")
+        # 105 → def (TEMPS), 30 → kernel (VIE), 3 → kernel (DIFFÉRENCE)
+        # → "Le temps est l'articulation de la différence, du rapport et de l'orientation…
+        #    en outre, un vivant existe, se différencie et maintient des relations
+        #    structurées, et deux choses se distinguent irréductiblement."
+    """
+
+    def __init__(self) -> None:
+        self._base = NipadaSynthesizer()
+
+    def synthesize(self, mol_ids: list[int], lang: str) -> str:
+        """
+        Génère un texte adaptatif depuis les molécules `mol_ids` en langue `lang`.
+
+        Retourne une phrase complète avec ponctuation finale.
+        """
+        if not mol_ids:
+            return ""
+        if lang not in KERNELS:
+            raise ValueError(f"Langue inconnue: {lang!r}. Disponibles: {list(KERNELS)}")
+
+        types = [_mol_type(m) for m in mol_ids]
+
+        # Cas uniforme → déléguer directement
+        if all(t == "kernel" for t in types):
+            return self._base.synthesize(mol_ids, lang, strategy="kernel_structured")
+        if all(t == "def" for t in types):
+            return self._base.synthesize(mol_ids, lang, strategy="concat_defs")
+
+        # Cas mixte → assemblage hybride
+        return self._hybrid(mol_ids, types, lang)
+
+    def _hybrid(self, mol_ids: list[int], types: list[str], lang: str) -> str:
+        """
+        Assemble des fragments kernel et def en alternance.
+
+        Stratégie :
+            1. Regrouper les molécules en runs consécutifs de même type.
+            2. Générer le texte de chaque run (kernel_structured ou concat_defs).
+            3. Joindre les runs avec le connecteur cross-type.
+        """
+        # Construire les runs
+        runs: list[tuple[str, list[int]]] = []
+        current_type = types[0]
+        current_run: list[int] = [mol_ids[0]]
+
+        for mol_id, t in zip(mol_ids[1:], types[1:]):
+            if t == current_type:
+                current_run.append(mol_id)
+            else:
+                runs.append((current_type, current_run))
+                current_type = t
+                current_run = [mol_id]
+        runs.append((current_type, current_run))
+
+        # Générer chaque run
+        parts: list[tuple[str, str]] = []  # (type, text)
+        for run_type, run_mols in runs:
+            if run_type == "kernel":
+                text = self._base.synthesize(run_mols, lang, strategy="kernel_structured")
+                # Retirer la ponctuation finale pour la jointure
+                text = text.rstrip(".。")
+            else:  # def
+                defs_dict = DEFINITIONS.get(lang, DEFINITIONS["en"])
+                texts = [defs_dict[m] for m in run_mols if m in defs_dict]
+                sep = " | "
+                text = sep.join(t.rstrip(".。") for t in texts)
+            parts.append((run_type, text))
+
+        if not parts:
+            return ""
+
+        # Assembler les runs
+        cross_conn = _CROSS_CONNECTORS[lang]
+        result_parts: list[str] = [parts[0][1]]
+
+        for prev_type, curr_text in parts[1:]:
+            if lang == "zh":
+                result_parts.append(cross_conn + curr_text)
+            else:
+                result_parts.append(f" {cross_conn} {curr_text}")
+
+        result = "".join(result_parts)
+
+        # Capitaliser et ponctuer
+        if lang == "zh":
+            return result + "。"
+        return result[0].upper() + result[1:] + "."
+
+    def explain(self, mol_ids: list[int]) -> dict[int, str]:
+        """Retourne le type sélectionné pour chaque molécule (pour diagnostic)."""
+        return {m: _mol_type(m) for m in mol_ids}
