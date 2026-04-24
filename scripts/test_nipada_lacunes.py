@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import itertools
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -497,6 +498,49 @@ ADVERSARIAL: list[dict] = [
 ]
 
 
+# ── §91 — Pré-filtre syntaxique ─────────────────────────────────────────────
+# Bonus additif sur le score cosinus pour les modes dont un marqueur syntaxique
+# est détecté dans la phrase source. Calibré pour combler l'écart empirique
+# entre QUESTION et ORDRE (~0.08-0.11 dans §90).
+
+SYNTACTIC_BONUS = {
+    "question":      0.12,   # bonus si marqueur interrogatif présent
+    "introspection": 0.06,   # bonus si marqueur 1re personne présent
+}
+
+# Marqueurs interrogatifs : point d'interrogation ou mot-wh initial
+_Q_MARK = re.compile(r'[?？]')
+_Q_WH_FR = re.compile(
+    r'^\s*(qu[\'\'\-]|est[- ]ce|peut[- ]on|pourquoi|comment|quand|quel(le)?|y a[- ]t[- ]il|qui\b)',
+    re.IGNORECASE)
+_Q_WH_EN = re.compile(
+    r'^\s*(what|why|how|when|where|who|which|is |are |do |does |did |can |could |should |would |may |might )',
+    re.IGNORECASE)
+_Q_WH_DE = re.compile(
+    r'^\s*(was |warum|wie |wer |welch|gibt es|ist |sind |kann |darf )',
+    re.IGNORECASE)
+_Q_WH_ZH = re.compile(r'[吗呢为什么怎么是否如何]')
+
+# Marqueurs 1re personne (introspection)
+_I_1P = re.compile(
+    r'\b(je |j\'|i |ich |yo |我|mich\b|mir\b|myself\b|me\b)',
+    re.IGNORECASE)
+
+
+def _has_question_marker(text: str) -> bool:
+    return bool(
+        _Q_MARK.search(text)
+        or _Q_WH_FR.search(text)
+        or _Q_WH_EN.search(text)
+        or _Q_WH_DE.search(text)
+        or _Q_WH_ZH.search(text)
+    )
+
+
+def _has_introspection_marker(text: str) -> bool:
+    return bool(_I_1P.search(text))
+
+
 # ── Utilitaires ───────────────────────────────────────────────────────────────
 def cosine(a: np.ndarray, b: np.ndarray) -> float:
     na, nb = np.linalg.norm(a), np.linalg.norm(b)
@@ -506,14 +550,31 @@ def cosine(a: np.ndarray, b: np.ndarray) -> float:
 
 
 def classify(emb: np.ndarray, centroids: dict[str, np.ndarray]) -> tuple[str, dict[str, float]]:
+    """Classification cosinus pure (sans bonus syntaxique)."""
     sims = {m: cosine(emb, c) for m, c in centroids.items()}
+    return max(sims, key=sims.__getitem__), sims
+
+
+def classify_with_syntax(text: str, emb: np.ndarray,
+                         centroids: dict[str, np.ndarray]) -> tuple[str, dict[str, float]]:
+    """§91 — Classification cosinus + bonus syntaxique.
+
+    Ajoute SYNTACTIC_BONUS[mode] au score cosinus pour chaque mode
+    dont un marqueur syntaxique est détecté dans `text`.
+    Les scores retournés incluent le bonus pour traçabilité.
+    """
+    sims = {m: cosine(emb, c) for m, c in centroids.items()}
+    if _has_question_marker(text):
+        sims["question"] = sims["question"] + SYNTACTIC_BONUS["question"]
+    if _has_introspection_marker(text):
+        sims["introspection"] = sims["introspection"] + SYNTACTIC_BONUS["introspection"]
     return max(sims, key=sims.__getitem__), sims
 
 
 def main() -> None:
     W = 74
     print("═" * W)
-    print("  §90 — Re-benchmark V6 : TEMPS(13) + kernels §88/§89 [= §86 avec V6]")
+    print("  §91 — Pré-filtre syntaxique : bonus QUESTION(?/wh) + INTROSPECTION(1re pers.)")
     print(f"  245 phrases × 7 types × 5 langues  +  14 cas adversariaux")
     print("═" * W)
 
@@ -554,7 +615,7 @@ def main() -> None:
         for lang, sentences in lang_sentences.items():
             for idx, sent in enumerate(sentences):
                 emb = model.encode(sent, show_progress_bar=False)
-                detected, sims = classify(emb, centroids)
+                detected, sims = classify_with_syntax(sent, emb, centroids)
                 align = cosine(emb, centroids[expected_type])
                 confusion_counts[expected_type][detected] += 1
                 alignment_scores[expected_type].append(align)
@@ -645,9 +706,9 @@ def main() -> None:
     for case in ADVERSARIAL:
         # Test FR (primary)
         emb_fr = model.encode(case["fr"], show_progress_bar=False)
-        detected_fr, sims_fr = classify(emb_fr, centroids)
+        detected_fr, sims_fr = classify_with_syntax(case["fr"], emb_fr, centroids)
         emb_en = model.encode(case["en"], show_progress_bar=False)
-        detected_en, _ = classify(emb_en, centroids)
+        detected_en, _ = classify_with_syntax(case["en"], emb_en, centroids)
         exp = case["expected"]
         conf = case["confusible_with"]
         correct_fr = detected_fr == exp
@@ -706,7 +767,7 @@ def main() -> None:
     # ── 9. Sauvegarde JSON ────────────────────────────────────────────────────
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "benchmark": "§90 re-benchmark V6 nipada — 6 atomes +TEMPS(13)",
+        "benchmark": "§91 pré-filtre syntaxique nipada — bonus question/introspection",
         "model": "paraphrase-multilingual-MiniLM-L12-v2",
         "global_accuracy": float(global_accuracy),
         "type_accuracy": _to_native(type_accuracy),
