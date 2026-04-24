@@ -9,6 +9,7 @@ Version §90 : utilise NipadaV6Synthesizer (6 atomes : +TEMPS(13)) et MODES_V6
   §91 — pré-filtre syntaxique QUESTION(?/wh) +0.12 + INTROSPECTION(1re pers.) +0.06
   §92 — copule définitoire (est la/le/l'/ce qui) → DÉFINITION +0.10
          introspection 1p sans "?" → +0.12 (vs +0.06 §91) ; avec "?" → +0.02
+  §93 — bonus définition +0.14 (vs +0.10 §92) + c'est+inf (FR) + to+V+is+to+V (EN)
 
 Corpus : 10 phrases × 7 types × FR/EN  +  5 phrases × 7 types × DE/ES/ZH
          = 245 phrases de test
@@ -510,7 +511,7 @@ SYNTACTIC_BONUS = {
     "question":         0.12,  # bonus si marqueur interrogatif présent
     "introspection_1p": 0.12,  # §92 : bonus 1re pers. SANS "?" (introspectif pur)
     "introspection_wq": 0.02,  # §92 : bonus 1re pers. AVEC "?" (auto-interrogatif)
-    "définition":       0.10,  # §92 : bonus si copule définitoire (est la/le/l'/ce qui)
+    "définition":       0.14,  # §93 : bonus copule définitoire (haussé de 0.10→0.14)
 }
 
 # Marqueurs interrogatifs : point d'interrogation ou mot-wh initial
@@ -531,11 +532,18 @@ _I_1P = re.compile(
     r'\b(je |j\'|i |ich |yo |我|mich\b|mir\b|myself\b|me\b)',
     re.IGNORECASE)
 
-# §92 — Copule définitoire (article défini après est/is/ist/es)
+# §92/§93 — Copule définitoire (article défini après est/is/ist/es)
 # Distingue les définitions ("est la faculté", "is the capacity")
 # des descriptions ("est une molécule") et proclamations ("est garanti")
-_DEF_COPULA_FR = re.compile(r"\best\s+(la\b|le\b|l'|ce\s+qui\b|ce\s+que\b)", re.IGNORECASE)
-_DEF_COPULA_EN = re.compile(r'\bis\s+(the\b|what\b|that\s+which\b)', re.IGNORECASE)
+# §93 : + c'est+inf ("Connaître, c'est ramener...") et to+V+is+to+V ("To know is to bring...")
+_DEF_COPULA_FR = re.compile(
+    r"\best\s+(la\b|le\b|l'|ce\s+qui\b|ce\s+que\b)"
+    r"|c[\u2019\']\s*est\s+[a-z\u00c0-\u017e-]+(?:er|re|ir)\b",
+    re.IGNORECASE)
+_DEF_COPULA_EN = re.compile(
+    r'\bis\s+(the\b|what\b|that\s+which\b)'
+    r'|\bto\s+\w+\s+is\s+to\s+\w+',
+    re.IGNORECASE)
 _DEF_COPULA_DE = re.compile(r'\bist\s+(die\b|der\b|das\b|das,?\s+was\b)', re.IGNORECASE)
 _DEF_COPULA_ES = re.compile(r'\bes\s+(la\b|el\b|lo\s+que\b)', re.IGNORECASE)
 _DEF_COPULA_ZH = re.compile(r'是.*的|指的是|意味着|被定义为')
@@ -608,7 +616,7 @@ def classify_with_syntax(text: str, emb: np.ndarray,
 def main() -> None:
     W = 74
     print("═" * W)
-    print("  §92 — Copule définitoire (DÉFINITION) + introspection 1p/wq affinée")
+    print("  §93 — Bonus définition +0.14 + copule étendue (c'est+inf, to+V+is+to+V)")
     print(f"  245 phrases × 7 types × 5 langues  +  14 cas adversariaux")
     print("═" * W)
 
@@ -801,7 +809,7 @@ def main() -> None:
     # ── 9. Sauvegarde JSON ────────────────────────────────────────────────────
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "benchmark": "§92 copule définitoire + introspection 1p/wq — DÉFINITION +0.10, INTROSPECTION 1p +0.12",
+        "benchmark": "§93 bonus définition +0.14 + copule étendue (c'est+inf, to+V+is+to+V)",
         "model": "paraphrase-multilingual-MiniLM-L12-v2",
         "global_accuracy": float(global_accuracy),
         "type_accuracy": _to_native(type_accuracy),
