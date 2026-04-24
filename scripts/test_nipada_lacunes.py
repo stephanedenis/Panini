@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 """
-§86 — Lacunes nipada : corpus étendu multi-genre + matrice de confusion
-=======================================================================
+§86/§90 — Lacunes nipada : corpus étendu multi-genre + matrice de confusion
+===========================================================================
+Version §90 : utilise NipadaV6Synthesizer (6 atomes : +TEMPS(13)) et MODES_V6
+  §87 — narration : [13, 78, 273]  TEMPS+DEVENIR+SUCCESSION (vs §86 [462,1155])
+  §88 — question  : [143, 165, 11] INTERROGATION(11×13)+JUGEMENT+SUJET
+  §89 — introspection : [2310, 22, 26] +ÉVOLUTION(2×13)
+
 Corpus : 10 phrases × 7 types × FR/EN  +  5 phrases × 7 types × DE/ES/ZH
          = 245 phrases de test
        + 14 cas adversariaux (borderline entre paires confusibles)
-
-Protocole :
-  Pour chaque phrase, on calcule le cosinus avec chaque centroïde nipada.
-  Le mode détecté = argmax. On compare au type attendu.
-
-Métriques :
-  1. confusion_matrix 7×7  (quelle fraction de type X est détectée comme Y)
-  2. accuracy par type + global
-  3. alignment moyen (cosine phrase ↔ centroïde nipada de son type)
-  4. cas adversariaux : vers quel mode nipada dérive-t-il ?
 
 Output → research/nipada/falsification/nipada_lacunes_report.json
 """
@@ -33,7 +28,7 @@ from sentence_transformers import SentenceTransformer
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from src.core.nipada_subject import NipadaExtendedSynthesizer  # noqa: E402
+from src.core.nipada_v6 import NipadaV6Synthesizer, MODES_V6  # noqa: E402
 
 OUTPUT = REPO_ROOT / "research" / "nipada" / "falsification" / "nipada_lacunes_report.json"
 
@@ -54,16 +49,8 @@ def _to_native(obj):
     if isinstance(obj, np.bool_): return bool(obj)
     return obj
 
-# ── Modes ─────────────────────────────────────────────────────────────────────
-MODES = {
-    "description":   [2, 5, 3],
-    "définition":    [385, 66],
-    "proclamation":  [33, 55, 77],
-    "question":      [165, 11],
-    "ordre":         [154, 231],
-    "narration":     [462, 1155],
-    "introspection": [2310, 22],
-}
+# ── Modes V6 (§87/§88/§89) ────────────────────────────────────────────────────
+MODES = MODES_V6   # §90 : utilise MODES_V6 de nipada_v6
 MODE_NAMES = list(MODES.keys())
 LANGS = ["fr", "en", "de", "es", "zh"]
 
@@ -526,12 +513,12 @@ def classify(emb: np.ndarray, centroids: dict[str, np.ndarray]) -> tuple[str, di
 def main() -> None:
     W = 74
     print("═" * W)
-    print("  §86 — Lacunes nipada : corpus étendu multi-genre + confusion matrix")
+    print("  §90 — Re-benchmark V6 : TEMPS(13) + kernels §88/§89 [= §86 avec V6]")
     print(f"  245 phrases × 7 types × 5 langues  +  14 cas adversariaux")
     print("═" * W)
 
     model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
-    synth = NipadaExtendedSynthesizer()
+    synth = NipadaV6Synthesizer()   # §90 : V6
 
     # ── 1. Centroïdes nipada par mode ─────────────────────────────────────────
     print("\n  [1] Calcul des centroïdes nipada…")
@@ -719,7 +706,7 @@ def main() -> None:
     # ── 9. Sauvegarde JSON ────────────────────────────────────────────────────
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "benchmark": "§86 lacunes nipada — corpus étendu 245 phrases",
+        "benchmark": "§90 re-benchmark V6 nipada — 6 atomes +TEMPS(13)",
         "model": "paraphrase-multilingual-MiniLM-L12-v2",
         "global_accuracy": float(global_accuracy),
         "type_accuracy": _to_native(type_accuracy),
