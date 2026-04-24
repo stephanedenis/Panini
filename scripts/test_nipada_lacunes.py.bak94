@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-§86→§95 — Lacunes nipada : corpus étendu multi-genre + matrice de confusion
+§86→§94 — Lacunes nipada : corpus étendu multi-genre + matrice de confusion
 ===========================================================================
-Version §95 : corpus §94 (630 phrases) ; hypothèse bug-regex réfutée
+Version §94 : corpus massivement étendu (FR/EN 20 + DE/ES/ZH/IT/PT 10)
   §87 — narration : [13, 78, 273]  TEMPS+DEVENIR+SUCCESSION
   §88 — question  : [143, 165, 11] INTERROGATION(11×13)+JUGEMENT+SUJET
   §89 — introspection : [2310, 22, 26] +ÉVOLUTION(2×13)
@@ -10,10 +10,8 @@ Version §95 : corpus §94 (630 phrases) ; hypothèse bug-regex réfutée
   §92 — copule définitoire (est la/le/l'/ce qui) → DÉFINITION +0.10
          introspection 1p sans "?" → +0.12 ; avec "?" → +0.02
   §93 — bonus définition +0.14 + c'est+inf (FR) + to+V+is+to+V (EN)
-  §94 — corpus 245→630 ; +IT +PT ; 14→30 adversariaux ;
+  §94 — corpus 245→(630+) ; +IT +PT ; 14→30 adversariaux ;
          copule IT/PT (è/é + article), wh-mot IT/PT, 1re pers. io/eu
-  §95 — bug-fix _I_1P : drop me\\b/mi\\b/i\\s (clitiques-objet ambigus) ;
-         ne garde que les pronoms-sujet et réflexifs sans ambiguïté
 
 Corpus : 20 phrases × 7 types × FR/EN  +  10 × 7 types × DE/ES/ZH/IT/PT
          = 630 phrases de test + 30 cas adversariaux (15 FR + 15 EN testés)
@@ -1274,14 +1272,7 @@ _Q_WH_PT = re.compile(
     re.IGNORECASE)
 _Q_WH_ZH = re.compile(r'[吗呢为什么怎么是否如何]')
 
-# Marqueurs 1re personne (introspection) — §94/§95
-# §94 : version inclusive avec me\b/mi\b/eu\b pour les langues pro-drop (IT/PT)
-# §95 : tentative de bug-fix (drop me/mi/eu) RÉFUTÉE empiriquement —
-#       global 52.1% → 50.3%, introspection 54.4% → 42.2% (−12.2pp).
-#       Les faux-positifs description→introspection (23) et proclamation→
-#       introspection (21) venaient du cosinus MiniLM, pas du regex.
-#       Conclusion : me/mi/eu sont une régularisation utile pour IT/PT/ES
-#       pro-drop ("Mi sento confuso", "Me preocupa…"). Régression annulée.
+# Marqueurs 1re personne (introspection) — §94 : +io (IT) +eu (PT)
 _I_1P = re.compile(
     r'\b(je |j\'|i |ich |yo |我|mich\b|mir\b|myself\b|me\b|io\b|mi\b|eu\b)',
     re.IGNORECASE)
@@ -1367,7 +1358,7 @@ def main() -> None:
     W = 74
     n_corpus_sentences = sum(len(v) for ms in CORPUS.values() for v in ms.values())
     print("═" * W)
-    print("  §95 — Hypothèse bug-regex réfutée (corpus §94, regex §94 conservé)")
+    print("  §94 — Corpus massivement étendu (FR/EN 20 + DE/ES/ZH/IT/PT 10)")
     print(f"  {n_corpus_sentences} phrases × 7 types × 7 langues  +  {len(ADVERSARIAL)} cas adversariaux")
     print("═" * W)
 
@@ -1538,7 +1529,7 @@ def main() -> None:
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "benchmark": "§95 hypothèse bug-regex réfutée — regex §94 conservé (corpus 630 phrases, 7 langues, 30 adversariaux)",
+        "benchmark": "§94 corpus massivement étendu (FR/EN 20 + DE/ES/ZH/IT/PT 10, 7 langues, 30 adversariaux)",
         "model": "paraphrase-multilingual-MiniLM-L12-v2",
         "n_sentences": global_total,
         "n_adversarial": len(ADVERSARIAL),
