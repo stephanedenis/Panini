@@ -1,0 +1,3 @@
+Acquisition Phase E pour voltaire_dict_phil en attente.
+Source : Wikisource fr
+Voir README.md pour les détails.
