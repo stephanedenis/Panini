@@ -1,0 +1,20 @@
+{
+  "id": "holbach_systeme",
+  "author": "d'Holbach",
+  "work": "Système de la nature",
+  "date": "1770",
+  "lang_primary": "fra",
+  "license": "PD",
+  "sources_attempted": [
+    {
+      "label": "source_fra",
+      "url": "https://www.gutenberg.org/cache/epub/8909/pg8909.txt",
+      "status": "ok",
+      "size": 750432,
+      "sha256_16": "b800a539a0634385",
+      "path": "corpus/protoatheism/holbach_systeme/source_fra.txt"
+    }
+  ],
+  "n_sources_ok": 1,
+  "n_fragments_embedded": 5
+}

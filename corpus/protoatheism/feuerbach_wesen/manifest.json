@@ -1,0 +1,20 @@
+{
+  "id": "feuerbach_wesen",
+  "author": "Feuerbach",
+  "work": "Das Wesen des Christenthums",
+  "date": "1841",
+  "lang_primary": "deu",
+  "license": "PD",
+  "sources_attempted": [
+    {
+      "label": "source_deu",
+      "url": "https://www.gutenberg.org/cache/epub/35103/pg35103.txt",
+      "status": "ok",
+      "size": 393300,
+      "sha256_16": "ca129093dfb0d5b6",
+      "path": "corpus/protoatheism/feuerbach_wesen/source_deu.txt"
+    }
+  ],
+  "n_sources_ok": 1,
+  "n_fragments_embedded": 5
+}

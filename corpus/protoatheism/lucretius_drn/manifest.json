@@ -1,0 +1,20 @@
+{
+  "id": "lucretius_drn",
+  "author": "Lucrèce",
+  "work": "De rerum natura",
+  "date": "-55",
+  "lang_primary": "lat",
+  "license": "PD",
+  "sources_attempted": [
+    {
+      "label": "source_lat",
+      "url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml",
+      "status": "ok",
+      "size": 83829,
+      "sha256_16": "3b586e2e0f6b00fe",
+      "path": "corpus/protoatheism/lucretius_drn/source_lat.html"
+    }
+  ],
+  "n_sources_ok": 1,
+  "n_fragments_embedded": 5
+}

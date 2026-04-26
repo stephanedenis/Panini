@@ -1,0 +1,18 @@
+{
+  "id": "hume_dialogues",
+  "author": "David Hume",
+  "work": "Dialogues concerning Natural Religion",
+  "date": "1779",
+  "lang_primary": "eng",
+  "license": "PD",
+  "sources_attempted": [
+    {
+      "label": "source_eng",
+      "url": "https://www.gutenberg.org/files/4583/4583-0.txt",
+      "status": "failed",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "n_sources_ok": 0,
+  "n_fragments_embedded": 5
+}

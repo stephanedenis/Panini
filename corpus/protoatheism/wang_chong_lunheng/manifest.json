@@ -1,0 +1,20 @@
+{
+  "id": "wang_chong_lunheng",
+  "author": "Wang Chong",
+  "work": "Lùnhéng 論衡",
+  "date": "+80",
+  "lang_primary": "lzh",
+  "license": "PD",
+  "sources_attempted": [
+    {
+      "label": "source_lzh",
+      "url": "https://ctext.org/lunheng/lun-heng",
+      "status": "ok",
+      "size": 81806,
+      "sha256_16": "1a56f3043b975ed5",
+      "path": "corpus/protoatheism/wang_chong_lunheng/source_lzh.txt"
+    }
+  ],
+  "n_sources_ok": 1,
+  "n_fragments_embedded": 5
+}

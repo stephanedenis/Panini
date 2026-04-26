@@ -1,0 +1,18 @@
+{
+  "id": "epicurus_letters",
+  "author": "Épicure",
+  "work": "Lettres et Maximes capitales",
+  "date": "-300",
+  "lang_primary": "grc",
+  "license": "PD",
+  "sources_attempted": [
+    {
+      "label": "source_grc",
+      "url": "https://www.epicurus.net/en/principal.html",
+      "status": "failed",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+    }
+  ],
+  "n_sources_ok": 0,
+  "n_fragments_embedded": 5
+}
