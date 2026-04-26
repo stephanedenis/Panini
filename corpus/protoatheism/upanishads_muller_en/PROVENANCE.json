@@ -1,0 +1,17 @@
+{
+  "work_id": "upanishads_muller_en",
+  "source_type": "Project Gutenberg",
+  "source_url": "https://www.gutenberg.org/cache/epub/17369/pg17369.txt",
+  "gutenberg_id": 17369,
+  "edition": "Max Müller, 'The Upanishads' (Sacred Books of the East vol. 1)",
+  "transcriber": "Project Gutenberg / Distributed Proofreaders",
+  "original_language": "san",
+  "text_language": "en",
+  "tradition": "hinduism_shruti",
+  "license": "Public Domain (PG)",
+  "retrieval_date_utc": "2026-04-26T22:59:04.453849+00:00",
+  "sha256": "beead12194de1fbc33365397312ec58220635ab3fab560f32d3f1e98c8822b36",
+  "byte_length": 619445,
+  "fragment_count": 505,
+  "completeness": "Chāndogya, Talavakāra, Aitareya, Kauṣītaki, Vājasaneyi"
+}

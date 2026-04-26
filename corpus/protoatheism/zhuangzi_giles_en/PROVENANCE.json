@@ -1,0 +1,17 @@
+{
+  "work_id": "zhuangzi_giles_en",
+  "source_type": "Project Gutenberg",
+  "source_url": "https://www.gutenberg.org/cache/epub/9774/pg9774.txt",
+  "gutenberg_id": 9774,
+  "edition": "Herbert A. Giles, 'Chuang Tzŭ: Mystic, Moralist, and Social Reformer' (1889)",
+  "transcriber": "Project Gutenberg / Distributed Proofreaders",
+  "original_language": "lzh",
+  "text_language": "en",
+  "tradition": "daoism",
+  "license": "Public Domain (PG)",
+  "retrieval_date_utc": "2026-04-26T22:59:03.579836+00:00",
+  "sha256": "80a82050da933331370b75ad19dbee56f12a689037128db3825bd842777afe53",
+  "byte_length": 891855,
+  "fragment_count": 807,
+  "completeness": "Chuang Tzŭ traduit sélections importantes"
+}

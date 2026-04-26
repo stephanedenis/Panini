@@ -1,0 +1,17 @@
+{
+  "work_id": "khayyam_rubaiyat_fitzgerald_en",
+  "source_type": "Project Gutenberg",
+  "source_url": "https://www.gutenberg.org/cache/epub/246/pg246.txt",
+  "gutenberg_id": 246,
+  "edition": "Edward FitzGerald translation, 5th ed. (1889)",
+  "transcriber": "Project Gutenberg / Distributed Proofreaders",
+  "original_language": "fa",
+  "text_language": "en",
+  "tradition": "islamic_skeptic",
+  "license": "Public Domain (PG)",
+  "retrieval_date_utc": "2026-04-26T22:59:02.846163+00:00",
+  "sha256": "99ad09d60092ac6f1958d75c621d703d4e0b92559c784473da67b05ea55494fa",
+  "byte_length": 71462,
+  "fragment_count": 63,
+  "completeness": "Rubaiyat complets (101 quatrains, 5e éd.)"
+}
