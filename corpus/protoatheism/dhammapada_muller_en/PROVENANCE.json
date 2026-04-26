@@ -1,0 +1,13 @@
+{
+  "work_id": "dhammapada_muller_en",
+  "title": "Dhammapada",
+  "author": "Buddhist canon (Pali)",
+  "translator": "Friedrich Max Müller",
+  "language": "eng",
+  "tradition": "buddhism_theravada",
+  "edition": "Müller 1881 — Project Gutenberg #2017",
+  "source_url": "https://www.gutenberg.org/cache/epub/2017/pg2017.txt",
+  "sha256": "93459b8a9219d026fd9a4d23296302ac06c7a2166d395d315f35521b9a33fbde",
+  "char_count": 69637,
+  "retrieval_date_utc": "2026-04-26T22:16:23.084927+00:00"
+}

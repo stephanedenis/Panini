@@ -1,0 +1,13 @@
+{
+  "work_id": "confucius_analects_en",
+  "title": "The Analects of Confucius",
+  "author": "Confucius",
+  "translator": "James Legge",
+  "language": "eng",
+  "tradition": "chinese_classics",
+  "edition": "Legge 1893 — Project Gutenberg #3330",
+  "source_url": "https://www.gutenberg.org/cache/epub/3330/pg3330.txt",
+  "sha256": "ec5b795cf2fa9a33e0d881c3d329703e6846275b5c5b8f240aa2273c9f9882fa",
+  "char_count": 172721,
+  "retrieval_date_utc": "2026-04-26T22:16:20.169027+00:00"
+}

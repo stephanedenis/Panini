@@ -1,0 +1,13 @@
+{
+  "work_id": "koran_rodwell_en",
+  "title": "The Koran (Al-Qur'an)",
+  "author": "Quranic canon",
+  "translator": "John Medows Rodwell",
+  "language": "eng",
+  "tradition": "islamic_canon",
+  "edition": "Rodwell 1861 — Project Gutenberg #3434",
+  "source_url": "https://www.gutenberg.org/cache/epub/3434/pg3434.txt",
+  "sha256": "05320216c88f0c1be126df4bdebd009e6fb4685bfda8878d4b58bd0017649b88",
+  "char_count": 1126075,
+  "retrieval_date_utc": "2026-04-26T22:16:28.421199+00:00"
+}
