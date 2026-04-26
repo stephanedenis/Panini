@@ -1,0 +1,20 @@
+{
+  "source_type": "Wikisource zh (chapitres concaténés)",
+  "source_url": "https://zh.wikisource.org/wiki/墨子",
+  "edition": "Édition Sun Yirang 孫詒讓 (Mozi Jiangu 墨子閒詁), Wikisource",
+  "transcriber": "Wikisource contributors",
+  "original_language": "zh",
+  "text_language": "zh",
+  "license": "Public Domain",
+  "retrieval_date_utc": "2026-04-26T14:45:52.042169+00:00",
+  "sha256": "feeeb1b3219dfde193f56ac63b23ff73d2ca5468c9bab769bca31118527c5b0b",
+  "byte_length": 32775,
+  "completeness": "5 chapitres anti-fatalisme/utilitaristes",
+  "chapters_found": [
+    "墨子/非命上",
+    "墨子/非命中",
+    "墨子/非命下",
+    "墨子/明鬼下",
+    "墨子/天志上"
+  ]
+}

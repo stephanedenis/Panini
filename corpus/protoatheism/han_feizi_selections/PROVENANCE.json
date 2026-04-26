@@ -1,0 +1,19 @@
+{
+  "source_type": "Wikisource zh (chapitres concaténés)",
+  "source_url": "https://zh.wikisource.org/wiki/韓非子",
+  "edition": "Wikisource zh, basée sur édition critique standard",
+  "transcriber": "Wikisource contributors",
+  "original_language": "zh",
+  "text_language": "zh",
+  "license": "Public Domain",
+  "retrieval_date_utc": "2026-04-26T14:45:54.444492+00:00",
+  "sha256": "45c7e6f6434d3ebbcd5da295167a9a1f09d9efba465e071522dee0542c214b1d",
+  "byte_length": 53392,
+  "completeness": "4 chapitres",
+  "chapters_found": [
+    "韓非子/顯學",
+    "韓非子/五蠹",
+    "韓非子/解老",
+    "韓非子/喻老"
+  ]
+}

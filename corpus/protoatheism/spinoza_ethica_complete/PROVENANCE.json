@@ -1,0 +1,14 @@
+{
+  "source_type": "Project Gutenberg",
+  "source_url": "https://www.gutenberg.org/cache/epub/3800/pg3800.txt",
+  "gutenberg_id": 3800,
+  "edition": "R.H.M. Elwes, *Ethics*, Bell & Sons, London 1883 (translation of Latin original 1677)",
+  "translator": "R.H.M. Elwes",
+  "original_language": "lat",
+  "text_language": "en",
+  "license": "Public Domain (Gutenberg)",
+  "retrieval_date_utc": "2026-04-26T14:45:39.760283+00:00",
+  "sha256": "42f5b7905ee7dd75330bfd63babee49097b41e83f36283a37dbac61bdc188423",
+  "byte_length": 511860,
+  "completeness": "PARTS I-V (entire Ethica)"
+}
