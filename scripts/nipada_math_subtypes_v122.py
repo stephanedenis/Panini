@@ -35,6 +35,10 @@ PATTERNS = {
     "axiome": [
         r"\baxiom(?:e|a|s)?\b",
         r"\bpostulat[s]?\b",
+        r"^\s*∀",  # énoncé universel = axiome canonique
+        r"^\s*∃",  # existentiel déclaratif = axiome
+        r"^\s*for\s+all\b",
+        r"^\s*pour\s+tout\b",
         r"\bon\s+postul",
         r"\bnous\s+postul",
         r"\bwe\s+postulate\b",
@@ -45,7 +49,11 @@ PATTERNS = {
     "definition_formelle": [
         r"\bd[ée]finition\b\s*[:.\-]",
         r"\bdefinition\b\s*[:.\-]",
+        r"\breaction\b\s*[:.\-]",
+        r"\br[ée]action\b\s*[:.\-]",
         r"\bsoit\s+[A-Zα-ω]",
+        r"\bdefined\s+by\b",
+        r"\bd[ée]fini\s+par\b",
         r"\blet\s+[A-Zα-ω][a-zA-Z]*\s+be\b",
         r"\bon\s+(?:appelle|d[ée]finit|note)\b",
         r"\bwe\s+(?:call|define|denote)\b",
@@ -81,11 +89,17 @@ PATTERNS = {
     ],
     "calcul": [
         r"=\s*[^=]+?\s*=",  # au moins deux égalités
+        r"\bcomputation\b\s*[:.\-]",
+        r"\bcalcul\b\s*[:.\-]",
+        r"\bberechnung\b\s*[:.\-]",
+        r"\bcalcolo\b\s*[:.\-]",
+        r"\bc[áa]lculo\b\s*[:.\-]",
         r"\bd[ée]riv(?:ons|er|ant|ation)\b",
         r"\bint[ée]gr(?:ons|er|ant|ation|ating)\b",
         r"\bsubstitu(?:ons|ant|tion|ting)\b",
         r"\bin\s+substituting\b",
         r"\bsetting\s+[A-Zα-ω]\s*=",
+        r"∫",  # intégrale = calcul
     ],
     "exemple": [
         r"\bexemple\b\s*[:.\-]",
@@ -114,6 +128,9 @@ PATTERNS = {
         r"\bit\s+immediately\s+follows\b",
     ],
     "heuristique": [
+        r"\bheuristic\b\s*[:.\-]",
+        r"\bheuristique\b\s*[:.\-]",
+        r"\bheuristik\b\s*[:.\-]",
         r"\bimaginons\b",
         r"\bimagine\b",
         r"\bpictorially\b",
