@@ -1,0 +1,132 @@
+{
+  "folders": [
+    {
+      "name": "🏠 Panini (racine)",
+      "path": "."
+    },
+    {
+      "name": "🎯 Copilotage",
+      "path": "./copilotage"
+    },
+    {
+      "name": "💻 Source",
+      "path": "./src"
+    },
+    {
+      "name": "🧩 Modules",
+      "path": "./modules"
+    },
+    {
+      "name": "📚 Documentation",
+      "path": "./docs"
+    },
+    {
+      "name": "📓 Notebooks",
+      "path": "./notebooks"
+    },
+    {
+      "name": "🔨 Scripts",
+      "path": "./scripts"
+    },
+    {
+      "name": "🧪 Tests",
+      "path": "./tests"
+    },
+    {
+      "name": "🔬 Research",
+      "path": "./research"
+    },
+    {
+      "name": "⚙️ Tech",
+      "path": "./tech"
+    },
+    {
+      "name": "🛠️ Tools",
+      "path": "./tools"
+    }
+  ],
+  "settings": {
+    "workbench.startupEditor": "readme",
+    "workbench.tree.expandMode": "singleClick",
+    "explorer.sortOrder": "foldersNestsFiles",
+
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.defaultLanguage": "markdown",
+    "files.associations": {
+      "*.md": "markdown",
+      "*.py": "python",
+      "*.ipynb": "jupyter-notebook",
+      "*.dhatu": "python",
+      "*.panini": "python"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.venv": true,
+      "**/temp/logs": true,
+      "**/colab_results_archive_full": true,
+      "**/__pycache__": true,
+      "**/*.pyc": true
+    },
+
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+      "*.md": "${capture}.json, ${capture}.yml, ${capture}.yaml",
+      "*.py": "${capture}.json, ${capture}.yml, ${capture}.yaml, ${capture}_test.py, test_${capture}.py",
+      "*.ipynb": "${capture}.py, ${capture}.json"
+    },
+
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.analysis.extraPaths": ["./", "./src", "./modules", "./shared"],
+    "python.analysis.include": ["./src", "./notebooks", "./modules"],
+    "python.analysis.exclude": ["./temp", "./legacy", "./.venv"],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.packageIndexDepths": [
+      { "name": "src", "depth": 3 },
+      { "name": "modules", "depth": 2 }
+    ],
+
+    "jupyter.notebookFileRoot": "${workspaceFolder}/notebooks",
+    "jupyter.defaultKernel": "python3",
+
+    "markdown.preview.breaks": true,
+    "markdown.preview.linkify": true,
+
+    "search.exclude": {
+      "**/temp": true,
+      "**/legacy": true,
+      "**/.venv": true,
+      "**/colab_results_archive_full": true
+    },
+
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.cwd": "${workspaceFolder}",
+
+    "git.ignoreLimitWarning": true,
+    "git.autofetch": true,
+
+    "github.copilot.enable": {
+      "*": true,
+      "markdown": true,
+      "python": true,
+      "jupyter": true
+    },
+    "github.copilot.chat.codeGeneration.instructions": [
+      {
+        "file": ".github/copilot-instructions.md"
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "ms-toolsai.jupyter",
+      "yzhang.markdown-all-in-one",
+      "ms-vscode.vscode-json",
+      "github.copilot",
+      "github.copilot-chat"
+    ]
+  }
+}
