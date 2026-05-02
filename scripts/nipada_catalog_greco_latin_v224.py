@@ -42,7 +42,7 @@ TARGET_AUTHORS = [
     "lucretius",
     "cicero",
 ]
-TARGET_OK = 10
+TARGET_OK = 16
 
 
 def _load_json(path: Path) -> dict[str, Any]:
@@ -51,6 +51,7 @@ def _load_json(path: Path) -> dict[str, Any]:
 
 
 def _safe(s: str) -> str:
+    s = s.replace("_", " ")
     return re.sub(r"\s+", " ", s.strip())
 
 
@@ -117,6 +118,12 @@ def _query_gutendex(title: str, author: str) -> dict[str, Any]:
 
 
 def main() -> int:
+    target_ok = TARGET_OK
+    if "--target-ok" in sys.argv:
+        i = sys.argv.index("--target-ok")
+        if i + 1 < len(sys.argv):
+            target_ok = max(1, int(sys.argv[i + 1]))
+
     src_axial = _load_json(SRC_GRECO_AXIAL)
     src_late = _load_json(SRC_GRECO_LATE)
     src_west = _load_json(SRC_WESTERN)
@@ -171,11 +178,11 @@ def main() -> int:
         evaluate_work(w, i)
 
     n_ok = sum(1 for r in rows if r["status"] == "OK")
-    if n_ok < TARGET_OK:
-        print(f"  Expansion scan: need {TARGET_OK - n_ok} additional Gutendex hits")
+    if n_ok < target_ok:
+        print(f"  Expansion scan: need {target_ok - n_ok} additional Gutendex hits")
         idx = len(rows)
         for w in all_works:
-            if sum(1 for r in rows if r["status"] == "OK") >= TARGET_OK:
+            if sum(1 for r in rows if r["status"] == "OK") >= target_ok:
                 break
             wid = str(w.get("id"))
             if wid in tested_ids:
@@ -195,7 +202,7 @@ def main() -> int:
         "n_catalog_works": len(all_works),
         "n_tested": len(rows),
         "n_gutendex_ok": n_ok,
-        "target_ok": TARGET_OK,
+        "target_ok": target_ok,
         "rows": rows,
     }
 

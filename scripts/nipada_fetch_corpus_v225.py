@@ -10,12 +10,14 @@ Produit:
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
 import time
 from pathlib import Path
 from typing import Any
+from collections import Counter
 
 import requests
 
@@ -76,20 +78,47 @@ def _top3(sig: dict[str, float]) -> list[list[Any]]:
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--target", type=int, default=10, help="nombre de textes a signer")
+    ap.add_argument("--max-per-author", type=int, default=2, help="borne max par auteur")
+    args = ap.parse_args()
+
     if not IN_PATH.exists():
         sys.exit(f"ERROR: missing input {IN_PATH}; run §224 first")
 
     with IN_PATH.open("r", encoding="utf-8") as f:
         v224 = json.load(f)
 
-    rows = [r for r in v224.get("rows", []) if r.get("status") == "OK" and (r.get("gutendex") or {}).get("best")]
-    rows = rows[:10]
+    rows_ok = [r for r in v224.get("rows", []) if r.get("status") == "OK" and (r.get("gutendex") or {}).get("best")]
+
+    rows = []
+    by_author = Counter()
+    for r in rows_ok:
+        author = str(r.get("author") or "unknown")
+        if by_author[author] >= args.max_per_author:
+            continue
+        rows.append(r)
+        by_author[author] += 1
+        if len(rows) >= args.target:
+            break
+
+    # Fallback fill if cap blocks reaching target.
+    if len(rows) < args.target:
+        selected_ids = {str(r.get("id")) for r in rows}
+        for r in rows_ok:
+            rid = str(r.get("id"))
+            if rid in selected_ids:
+                continue
+            rows.append(r)
+            selected_ids.add(rid)
+            if len(rows) >= args.target:
+                break
 
     signed: list[dict[str, Any]] = []
     report_rows: list[dict[str, Any]] = []
 
     print("§225 — Fetch + signature Greco-Latin")
-    print(f"  Entrées exploitables depuis §224: {len(rows)}")
+    print(f"  Entrées exploitables depuis §224: {len(rows)} (target={args.target}, max_per_author={args.max_per_author})")
 
     for idx, row in enumerate(rows, start=1):
         best = row["gutendex"]["best"]
