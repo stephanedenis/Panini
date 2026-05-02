@@ -42,6 +42,7 @@ TARGET_AUTHORS = [
     "lucretius",
     "cicero",
 ]
+TARGET_OK = 10
 
 
 def _load_json(path: Path) -> dict[str, Any]:
@@ -126,17 +127,20 @@ def main() -> int:
         + src_west.get("works", [])
     )
 
-    shortlist = _pick_priorities(all_works, k=10)
+    shortlist = _pick_priorities(all_works, k=12)
 
     rows = []
-    print("§224 — Catalogue Greco-Latin prioritaire")
-    print(f"  Sources: {len(all_works)} oeuvres cataloguées")
-    print(f"  Shortlist: {len(shortlist)}")
+    tested_ids: set[str] = set()
 
-    for i, w in enumerate(shortlist, start=1):
+    def evaluate_work(w: dict[str, Any], index: int) -> None:
+        wid = str(w.get("id"))
+        if wid in tested_ids:
+            return
+        tested_ids.add(wid)
+
         title = _safe(str(w.get("title_en") or w.get("title_original") or w.get("id")))
         author = _safe(str(w.get("author") or "unknown"))
-        print(f"  [{i:02d}] {w.get('id')} :: {title} :: {author}")
+        print(f"  [{index:03d}] {wid} :: {title} :: {author}")
         try:
             hit = _query_gutendex(title=title, author=author)
             status = "OK" if hit.get("best") else "MISS"
@@ -157,7 +161,27 @@ def main() -> int:
                 "status": status,
             }
         )
-        time.sleep(0.2)
+        time.sleep(0.15)
+
+    print("§224 — Catalogue Greco-Latin prioritaire")
+    print(f"  Sources: {len(all_works)} oeuvres cataloguées")
+    print(f"  Initial shortlist: {len(shortlist)}")
+
+    for i, w in enumerate(shortlist, start=1):
+        evaluate_work(w, i)
+
+    n_ok = sum(1 for r in rows if r["status"] == "OK")
+    if n_ok < TARGET_OK:
+        print(f"  Expansion scan: need {TARGET_OK - n_ok} additional Gutendex hits")
+        idx = len(rows)
+        for w in all_works:
+            if sum(1 for r in rows if r["status"] == "OK") >= TARGET_OK:
+                break
+            wid = str(w.get("id"))
+            if wid in tested_ids:
+                continue
+            idx += 1
+            evaluate_work(w, idx)
 
     n_ok = sum(1 for r in rows if r["status"] == "OK")
     out = {
@@ -169,8 +193,9 @@ def main() -> int:
             SRC_WESTERN.name,
         ],
         "n_catalog_works": len(all_works),
-        "n_shortlist": len(rows),
+        "n_tested": len(rows),
         "n_gutendex_ok": n_ok,
+        "target_ok": TARGET_OK,
         "rows": rows,
     }
 
@@ -179,7 +204,7 @@ def main() -> int:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
     print(f"\nÉcrit: {OUT_PATH}")
-    print(f"  Gutendex OK: {n_ok}/{len(rows)}")
+    print(f"  Gutendex OK: {n_ok}/{len(rows)} tested")
     return 0
 
 
