@@ -37,7 +37,9 @@ GRAPH_PATH = _NIPADA / "falsification/nipada_v219_graph_v13.json"
 V220_PATH = _NIPADA / "falsification/nipada_v220_vopt_calibration.json"
 C212_PATH = _NIPADA / "corpus/signed_corpus_v212f.json"
 C225_PATH = _NIPADA / "corpus/signed_corpus_v225_greco_latin.json"
+C225B_PATH = _NIPADA / "corpus/signed_corpus_v225b_greco_latin.json"
 OUT_PATH = _NIPADA / "falsification/nipada_v231_revalidation_v225.json"
+OUT_B_PATH = _NIPADA / "falsification/nipada_v231b_revalidation_v225b.json"
 
 V_OPT_FALLBACK = {"direct": 0.1, "translation": 0.1, "indirect": 1.0}
 V14_ATOMS = [
@@ -176,9 +178,30 @@ def main() -> int:
         if i + 1 < len(sys.argv):
             n_perm = int(sys.argv[i + 1])
 
+    # Allow pointing at a different extension corpus (e.g. v225b)
+    ext_path = C225_PATH
+    out_path  = OUT_PATH
+    label_ext = "v225"
+    if "--corpus-ext" in sys.argv:
+        idx = sys.argv.index("--corpus-ext")
+        if idx + 1 < len(sys.argv):
+            p = Path(sys.argv[idx + 1])
+            if not p.is_absolute():
+                p = _NIPADA / "corpus" / p
+            ext_path = p
+            stem = p.stem  # e.g. signed_corpus_v225b_greco_latin
+            tag = stem.replace("signed_corpus_", "").replace("_greco_latin", "").replace("_", "-")
+            label_ext = tag
+            out_path = FALSI_DIR / f"nipada_v231_revalidation_{tag}.json" if "FALSI_DIR" in dir() else \
+                        _NIPADA / "falsification" / f"nipada_v231_revalidation_{tag}.json"
+    if "--out" in sys.argv:
+        idx2 = sys.argv.index("--out")
+        if idx2 + 1 < len(sys.argv):
+            out_path = Path(sys.argv[idx2 + 1])
+
     graph = json.loads(GRAPH_PATH.read_text())
     c212 = json.loads(C212_PATH.read_text())
-    c225 = json.loads(C225_PATH.read_text())
+    c225 = json.loads(ext_path.read_text())
 
     if V220_PATH.exists():
         v220 = json.loads(V220_PATH.read_text())
@@ -193,16 +216,16 @@ def main() -> int:
     s225 = c225.get("signed", [])
     smerge = merge_corpora(s212, s225)
 
-    print("§231 — Revalidation v225")
-    print(f"  n212={len(s212)} n225={len(s225)} nmerge={len(smerge)}")
+    print(f"§231 — Revalidation {label_ext}")
+    print(f"  n212={len(s212)} n_ext={len(s225)} nmerge={len(smerge)}")
 
     m212 = eval_corpus(adj, s212)
     m225 = eval_corpus(adj, s225)
     mmerge = eval_corpus(adj, smerge)
 
-    print(f"  R² v212f   = {m212['r2']:.4f} ({m212['n_pairs_finite']} paires)")
-    print(f"  R² v225    = {m225['r2']:.4f} ({m225['n_pairs_finite']} paires)")
-    print(f"  R² merged  = {mmerge['r2']:.4f} ({mmerge['n_pairs_finite']} paires)")
+    print(f"  R² v212f        = {m212['r2']:.4f} ({m212['n_pairs_finite']} paires)")
+    print(f"  R² {label_ext:12s} = {m225['r2']:.4f} ({m225['n_pairs_finite']} paires)")
+    print(f"  R² merged       = {mmerge['r2']:.4f} ({mmerge['n_pairs_finite']} paires)")
 
     # Permutation sur merged
     n_cpu = os.cpu_count() or 4
@@ -234,7 +257,8 @@ def main() -> int:
 
     out = {
         "section": "§231",
-        "description": "Revalidation après extension Greco-Latin v225",
+        "description": f"Revalidation après extension Greco-Latin {label_ext}",
+        "corpus_ext": str(ext_path),
         "generated": time.strftime("%Y-%m-%d %H:%M:%S"),
         "graph": GRAPH_PATH.name,
         "vopt_weights": vopt,
@@ -245,13 +269,13 @@ def main() -> int:
                 "n_pairs_infinite": m212["n_pairs_infinite"],
                 "r2": m212["r2"],
             },
-            "v225_only": {
+            f"{label_ext}_only": {
                 "n_signed": m225["n_signed"],
                 "n_pairs_finite": m225["n_pairs_finite"],
                 "n_pairs_infinite": m225["n_pairs_infinite"],
                 "r2": m225["r2"],
             },
-            "merged_v212f_v225": {
+            f"merged_v212f_{label_ext}": {
                 "n_signed": mmerge["n_signed"],
                 "n_pairs_finite": mmerge["n_pairs_finite"],
                 "n_pairs_infinite": mmerge["n_pairs_infinite"],
@@ -272,8 +296,8 @@ def main() -> int:
         "elapsed_total_s": round(time.time() - t0, 1),
     }
 
-    OUT_PATH.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Écrit: {OUT_PATH}")
+    out_path.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Écrit: {out_path}")
     return 0
 
 
