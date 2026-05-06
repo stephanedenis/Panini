@@ -81,6 +81,26 @@ MANUAL_CACHE = {
 
     # Alias: Laozi / Tao Te Ching
     "laozi_taoteching_en": ["sacred_texts/daodejing.txt"],
+
+    # §261 Chantier #5 — Gutenberg plain-text fetches (nipada_gutenberg_fetcher.py)
+    "burnet_early_greek_philosophy": ["pg_31649.txt"],
+    "plato_parmenides":              ["pg_1687.txt"],
+    "spinoza_ttp":                   ["pg_989.txt"],
+    "paine_age_of_reason":           ["pg_3743.txt"],
+    "hume_enquiry":                  ["pg_9662.txt"],
+    "hume_dialogues_nhr":            ["pg_4583.txt"],
+    "holbach_systeme_en":            ["pg_8909.txt"],
+    "ingersoll_works":               ["pg_38802.txt"],
+    "volney_ruines":                 ["pg_27931.txt"],
+    "voltaire_candide":              ["pg_4650.txt"],
+    "marx_critique":                 ["pg_46423.txt"],
+    "koran_rodwell_en":              ["pg_16955.txt"],
+    "lucretius_drn":                 ["pg_785.txt"],
+    "spinoza_ethica_complete":       ["pg_3800.txt"],
+    "epicurus_letters":              ["pg_32.txt"],       # Diogenes Laertius X (Bailey)
+    "sextus_pyrrho":                 ["pg_sextus_pyrrho.txt"],   # Against the Professors #14417
+    "democritus_fragments":          ["pg_democritus.txt"],      # Presocratic anthology #38172
+    # ibn_rawandi_fragments: no free plain-text source — remains null
 }
 
 # ---------------------------------------------------------------------------
