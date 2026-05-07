@@ -38,6 +38,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from pathlib import Path
 from typing import Optional
 
@@ -213,40 +214,444 @@ ATOM_LEXICON_ENG: dict[str, list[str]] = {
     ],
 }
 
-# Build lookup: word → set of matching atoms
+# Build lookup: word → set of matching atoms  (English)
 _WORD_TO_ATOMS: dict[str, list[str]] = {}
 for atom, words in ATOM_LEXICON_ENG.items():
     for w in words:
         _WORD_TO_ATOMS.setdefault(w, []).append(atom)
 
+# ===========================================================================
+# Multilingual helpers
+# ===========================================================================
+
+def _norm(s: str) -> str:
+    """Lowercase + strip diacritics → ASCII-only (for multilingual matching)."""
+    return "".join(
+        c for c in unicodedata.normalize("NFD", s.lower())
+        if unicodedata.category(c) != "Mn"
+    )
+
+
+def _tokenize_multi(text: str) -> list[str]:
+    """Tokenize with diacritic normalization (French, Latin, German, etc.)."""
+    return re.findall(r"[a-z]+", _norm(text))
+
+
+# ===========================================================================
+# French single-word lexicon (v212f_fra)
+# Keys stored with accents; normalized to ASCII at index-build time.
+# ===========================================================================
+
+ATOM_LEXICON_FRA: dict[str, list[str]] = {
+    "ÊTRE": [
+        "être", "étant", "existence", "existant", "exister", "réalité", "réel",
+        "actuel", "actualité", "substance", "essence", "nature", "néant", "rien",
+        "vérité", "vrai", "fait", "présence", "absolu", "inexistant", "irréel",
+    ],
+    "DIFFÉRENCE": [
+        "différent", "différence", "distinction", "distinct", "contraire",
+        "opposé", "diversité", "divers", "contraste", "opposition", "séparé",
+        "division", "autre", "autrement", "négation", "négatif",
+    ],
+    "RAPPORT": [
+        "relation", "relatif", "rapport", "connexion", "lien", "entre",
+        "interaction", "dépendant", "dépendance", "ensemble", "correspondance",
+        "correspondre", "association", "union", "contact", "attachement", "lié",
+        "interdépendant",
+    ],
+    "ORIENTATION": [
+        "vers", "but", "objectif", "direction", "aspiration", "aspirer",
+        "intention", "chemin", "voie", "chercher", "viser", "tendre",
+        "approche", "progrès", "tendance", "tao", "dao",
+    ],
+    "SUJET": [
+        "soi", "âme", "esprit", "conscience", "personne", "personnes",
+        "individu", "individus", "sujet", "sujets", "agent", "moi", "ego",
+    ],
+    "TEMPS": [
+        "temps", "temporel", "impermanence", "impermanent", "permanent",
+        "éternel", "éternité", "moment", "moments", "durée", "période",
+        "âge", "ère", "passé", "futur", "changement", "transitoire",
+        "surgissement", "cessation", "origination", "passage", "transitoire",
+    ],
+    "MODALITÉ": [
+        "possible", "possibilité", "impossible", "nécessaire", "nécessité",
+        "potentiel", "liberté", "libre", "capacité", "contrainte", "permettre",
+        "autoriser", "devoir", "obligation", "obligé", "conditionné",
+    ],
+    "NOMBRE": [
+        "deux", "trois", "quatre", "cinq", "six", "sept", "huit",
+        "neuf", "dix", "cent", "mille", "million", "nombre", "nombreux",
+        "multiple", "pluriel", "innombrable",
+    ],
+    "ESPACE": [
+        "lieu", "espace", "monde", "univers", "terre", "ciel", "domaine",
+        "région", "champ", "sol", "corps", "frontière", "infini", "fini",
+    ],
+    "OPÉRATION": [
+        "action", "acte", "agir", "pratique", "cause", "effet",
+        "résultat", "transformation", "transformer", "créer", "création",
+        "travail", "produire", "production", "karma", "oeuvre", "réaliser",
+    ],
+    "FONCTION": [
+        "fonction", "rôle", "servir", "service", "utilité",
+        "utile", "méthode", "instrument", "outil", "tâche",
+    ],
+    "STRUCTURE": [
+        "forme", "structure", "ordre", "système", "élément", "composant",
+        "catégorie", "type", "modèle", "niveau", "hiérarchie",
+        "classe", "organisation", "rite", "rituel", "cérémonie",
+    ],
+    "SYMÉTRIE": [
+        "égal", "égalité", "également", "même", "semblable", "similaire",
+        "équilibre", "harmonie", "harmonieux", "équivalent", "parallèle",
+        "mutuel", "réciproque", "identique", "miroir",
+    ],
+    "ÉQUATION": [
+        "défini", "définition", "définir", "signifie", "signification",
+        "constituer", "appeler", "nommer", "principe", "loi", "règle",
+        "formule", "identité",
+    ],
+}
+
+# Build FR lookup: word (ASCII-normalized) → matching atoms
+_WORD_TO_ATOMS_FRA: dict[str, list[str]] = {}
+for _atom, _words in ATOM_LEXICON_FRA.items():
+    for _w in _words:
+        _key = _norm(_w)
+        _WORD_TO_ATOMS_FRA.setdefault(_key, []).append(_atom)
+
+
+# ===========================================================================
+# Multilingual phraseme lexicons (MWE → atoms)
+# Keys are natural-language strings (may include accents / apostrophes).
+# They are normalized at index-build time via _norm() + re.findall([a-z]+).
+# Phrasemes override their component token lookups (non-compositional meaning).
+# ===========================================================================
+
+PHRASEME_LEXICON: dict[str, dict[str, list[str]]] = {
+    # -----------------------------------------------------------------------
+    # English — Buddhist, Hindu/Vedic, Daoist, Greek, general philosophical
+    # -----------------------------------------------------------------------
+    "eng": {
+        # --- ÊTRE ---
+        "come into being":         ["ÊTRE", "TEMPS"],
+        "come to be":               ["ÊTRE", "TEMPS"],
+        "bring into existence":     ["ÊTRE", "OPÉRATION"],
+        "come into existence":      ["ÊTRE", "TEMPS"],
+        "cease to be":              ["ÊTRE", "TEMPS"],
+        "cease to exist":           ["ÊTRE", "TEMPS"],
+        "pass out of existence":    ["ÊTRE", "TEMPS"],
+        "human being":              ["ÊTRE", "SUJET"],
+        "living being":             ["ÊTRE", "SUJET"],
+        "sentient being":           ["ÊTRE", "SUJET"],
+        "conscious being":          ["ÊTRE", "SUJET"],
+        "in itself":                ["ÊTRE"],
+        "by itself":                ["ÊTRE"],
+        "as such":                  ["ÊTRE", "ÉQUATION"],
+        "true nature":              ["ÊTRE"],
+        # --- RAPPORT ---
+        "cause and effect":         ["OPÉRATION", "RAPPORT"],
+        "dependent origination":    ["RAPPORT", "TEMPS"],
+        "in relation to":           ["RAPPORT"],
+        "in relation with":         ["RAPPORT"],
+        "conditioned by":           ["RAPPORT", "MODALITÉ"],
+        "by virtue of":             ["RAPPORT", "ÉQUATION"],
+        "by reason of":             ["RAPPORT", "ÉQUATION"],
+        # --- ORIENTATION ---
+        "middle way":               ["ORIENTATION", "ESPACE"],
+        "noble eightfold path":     ["ORIENTATION", "MODALITÉ", "NOMBRE"],
+        "eightfold path":           ["ORIENTATION", "MODALITÉ", "NOMBRE"],
+        "right path":               ["ORIENTATION", "MODALITÉ"],
+        "right way":                ["ORIENTATION", "MODALITÉ"],
+        "way of life":              ["ORIENTATION", "OPÉRATION"],
+        "way of the tao":           ["ORIENTATION"],
+        "great way":                ["ORIENTATION"],
+        # --- SUJET ---
+        "inner self":               ["SUJET"],
+        "true self":                ["SUJET", "ÊTRE"],
+        "not self":                 ["SUJET", "DIFFÉRENCE"],
+        "no self":                  ["SUJET", "DIFFÉRENCE"],
+        "state of mind":            ["SUJET", "MODALITÉ"],
+        "peace of mind":            ["SUJET", "MODALITÉ"],
+        "frame of mind":            ["SUJET"],
+        "one s own nature":         ["SUJET", "ÊTRE"],   # "one's own nature" post-tokenize
+        # --- MODALITÉ ---
+        "free will":                ["MODALITÉ", "SUJET"],
+        "act of will":              ["MODALITÉ", "SUJET", "OPÉRATION"],
+        "natural law":              ["MODALITÉ", "ÊTRE"],
+        "moral law":                ["MODALITÉ"],
+        "divine law":               ["MODALITÉ"],
+        "eternal law":              ["MODALITÉ", "TEMPS"],
+        "cosmic law":               ["MODALITÉ", "ESPACE"],
+        "right conduct":            ["MODALITÉ", "OPÉRATION"],
+        "right action":             ["MODALITÉ", "OPÉRATION"],
+        "right speech":             ["MODALITÉ"],
+        "right livelihood":         ["MODALITÉ"],
+        "right effort":             ["MODALITÉ", "OPÉRATION"],
+        "right mindfulness":        ["MODALITÉ", "SUJET"],
+        "right concentration":      ["MODALITÉ", "SUJET"],
+        "right understanding":      ["MODALITÉ"],
+        "right intention":          ["MODALITÉ", "ORIENTATION"],
+        "right view":               ["MODALITÉ"],
+        # --- TEMPS ---
+        "arise and cease":          ["TEMPS"],
+        "arising and ceasing":      ["TEMPS"],
+        "arising and passing":      ["TEMPS"],
+        "arising and cessation":    ["TEMPS"],
+        "come to pass":             ["TEMPS"],
+        "comes to pass":            ["TEMPS"],
+        "pass away":                ["TEMPS", "ÊTRE"],
+        "at all times":             ["TEMPS"],
+        "for all time":             ["TEMPS"],
+        # --- STRUCTURE ---
+        "five aggregates":          ["STRUCTURE", "NOMBRE"],
+        "three marks":              ["STRUCTURE", "NOMBRE"],
+        "four noble truths":        ["ÊTRE", "NOMBRE", "STRUCTURE"],
+        "three jewels":             ["STRUCTURE", "NOMBRE"],
+        "ten commandments":         ["MODALITÉ", "NOMBRE"],
+        "natural order":            ["STRUCTURE", "ÊTRE"],
+        "social order":             ["STRUCTURE"],
+        "cosmic order":             ["STRUCTURE", "ESPACE"],
+        "moral order":              ["STRUCTURE", "MODALITÉ"],
+        "form and matter":          ["STRUCTURE", "ÊTRE"],
+        # --- NOMBRE ---
+        "ten thousand things":      ["NOMBRE", "ESPACE"],
+        "ten thousand":             ["NOMBRE"],
+        "three worlds":             ["NOMBRE", "ESPACE"],
+        # --- ESPACE ---
+        "heaven and earth":         ["ESPACE"],
+        "above and below":          ["ESPACE"],
+        "this world":               ["ESPACE"],
+        "other world":              ["ESPACE", "DIFFÉRENCE"],
+        "other worlds":             ["ESPACE", "DIFFÉRENCE"],
+        # --- OPÉRATION ---
+        "bring about":              ["OPÉRATION"],
+        "set in motion":            ["OPÉRATION"],
+        "act upon":                 ["OPÉRATION"],
+        "karma yoga":               ["OPÉRATION"],
+        "jnana yoga":               ["SUJET"],
+        "bhakti yoga":              ["SUJET", "RAPPORT"],
+        # --- ÉQUATION ---
+        "that is to say":           ["ÉQUATION"],
+        "in other words":           ["ÉQUATION"],
+        "what is called":           ["ÉQUATION"],
+        "so called":                ["ÉQUATION"],
+        "is defined as":            ["ÉQUATION"],
+        "by which is meant":        ["ÉQUATION"],
+        "namely":                   ["ÉQUATION"],   # single word but idiomatic
+        "the principle of":         ["ÉQUATION"],
+        # --- SYMÉTRIE ---
+        "one and the same":         ["SYMÉTRIE", "ÉQUATION"],
+        "the same as":              ["SYMÉTRIE", "ÉQUATION"],
+        "equal in":                 ["SYMÉTRIE"],
+        # --- DIFFÉRENCE ---
+        "other than":               ["DIFFÉRENCE"],
+        "as opposed to":            ["DIFFÉRENCE"],
+        "as distinct from":         ["DIFFÉRENCE"],
+        "as against":               ["DIFFÉRENCE"],
+        # --- FONCTION ---
+        "for the purpose of":       ["FONCTION", "ORIENTATION"],
+        "in the service of":        ["FONCTION"],
+        "in the capacity of":       ["FONCTION"],
+        # --- "less-known" compound expressions ---
+        "wu wei":                   ["MODALITÉ", "ÊTRE"],    # Daoist non-action
+        "te tao":                   ["ORIENTATION", "ÊTRE"],
+        "yin yang":                 ["SYMÉTRIE", "DIFFÉRENCE"],
+        "heaven s mandate":         ["MODALITÉ", "ESPACE"],  # 天命
+        "mandate of heaven":        ["MODALITÉ", "ESPACE"],
+        "original nature":          ["ÊTRE", "SUJET"],
+        "returning to the root":    ["ORIENTATION", "ÊTRE"],
+        "no action":                ["MODALITÉ", "ÊTRE"],
+        "non action":               ["MODALITÉ", "ÊTRE"],
+        "self nature":              ["SUJET", "ÊTRE"],
+        "buddha nature":            ["SUJET", "ÊTRE"],
+        "pure land":                ["ESPACE"],
+        "wheel of dharma":          ["OPÉRATION", "MODALITÉ"],
+        "turning of the wheel":     ["OPÉRATION", "TEMPS"],
+        "noble silence":            ["MODALITÉ"],
+        "skillful means":           ["FONCTION", "MODALITÉ"],
+        "empty of inherent existence": ["ÊTRE", "DIFFÉRENCE"],
+    },
+    # -----------------------------------------------------------------------
+    # French — phrasèmes philosophiques (Descartes, Bergson, Sartre, traductions)
+    # -----------------------------------------------------------------------
+    "fra": {
+        # --- ÊTRE ---
+        "en soi":                   ["ÊTRE"],
+        "pour soi":                 ["ÊTRE", "SUJET"],
+        "en soi et pour soi":       ["ÊTRE", "SUJET"],
+        "en tant que":              ["ÊTRE", "ÉQUATION"],
+        "venir à l existence":      ["ÊTRE", "TEMPS"],
+        "cesser d exister":         ["ÊTRE", "TEMPS"],
+        "prise en existence":       ["ÊTRE", "OPÉRATION"],
+        "être humain":              ["ÊTRE", "SUJET"],
+        "être vivant":              ["ÊTRE", "SUJET"],
+        "être conscient":           ["ÊTRE", "SUJET"],
+        "réalité ultime":           ["ÊTRE"],
+        "nature véritable":         ["ÊTRE"],
+        # --- RAPPORT ---
+        "cause et effet":           ["OPÉRATION", "RAPPORT"],
+        "en relation avec":         ["RAPPORT"],
+        "en rapport avec":          ["RAPPORT"],
+        "par l intermédiaire de":   ["RAPPORT"],
+        "co-origination dépendante": ["RAPPORT", "TEMPS"],
+        "production conditionnée":  ["RAPPORT", "TEMPS"],
+        "par le fait de":           ["RAPPORT", "ÉQUATION"],
+        # --- ORIENTATION ---
+        "voie du milieu":           ["ORIENTATION", "ESPACE"],
+        "noble chemin octuple":     ["ORIENTATION", "MODALITÉ", "NOMBRE"],
+        "chemin de la vertu":       ["ORIENTATION", "MODALITÉ"],
+        "mode de vie":              ["ORIENTATION", "OPÉRATION"],
+        "retour à la source":       ["ORIENTATION", "ÊTRE"],
+        # --- SUJET ---
+        "en soi-même":              ["SUJET"],
+        "moi profond":              ["SUJET"],
+        "état d esprit":            ["SUJET", "MODALITÉ"],
+        "paix de l esprit":         ["SUJET", "MODALITÉ"],
+        "nature propre":            ["SUJET", "ÊTRE"],
+        "non-soi":                  ["SUJET", "DIFFÉRENCE"],
+        "prise de conscience":      ["SUJET", "OPÉRATION"],
+        "for-soi":                  ["SUJET", "ÊTRE"],
+        # --- MODALITÉ ---
+        "libre arbitre":            ["MODALITÉ", "SUJET"],
+        "acte de volonté":          ["MODALITÉ", "SUJET", "OPÉRATION"],
+        "loi naturelle":            ["MODALITÉ", "ÊTRE"],
+        "loi morale":               ["MODALITÉ"],
+        "loi divine":               ["MODALITÉ"],
+        "loi éternelle":            ["MODALITÉ", "TEMPS"],
+        "bonne conduite":           ["MODALITÉ", "OPÉRATION"],
+        "juste action":             ["MODALITÉ", "OPÉRATION"],
+        "droit chemin":             ["MODALITÉ", "ORIENTATION"],
+        # --- TEMPS ---
+        "surgissement et disparition": ["TEMPS"],
+        "passage du temps":         ["TEMPS"],
+        "à tout moment":            ["TEMPS"],
+        "de tout temps":            ["TEMPS"],
+        "venir à être":             ["ÊTRE", "TEMPS"],
+        "cesser d être":            ["ÊTRE", "TEMPS"],
+        # --- STRUCTURE ---
+        "cinq agrégats":            ["STRUCTURE", "NOMBRE"],
+        "trois marques":            ["STRUCTURE", "NOMBRE"],
+        "quatre nobles vérités":    ["ÊTRE", "NOMBRE", "STRUCTURE"],
+        "triple joyau":             ["STRUCTURE", "NOMBRE"],
+        "ordre naturel":            ["STRUCTURE", "ÊTRE"],
+        "ordre social":             ["STRUCTURE"],
+        "ordre cosmique":           ["STRUCTURE", "ESPACE"],
+        "forme et matière":         ["STRUCTURE", "ÊTRE"],
+        # --- NOMBRE ---
+        "dix mille choses":         ["NOMBRE", "ESPACE"],
+        "trois mondes":             ["NOMBRE", "ESPACE"],
+        # --- ESPACE ---
+        "ciel et terre":            ["ESPACE"],
+        "ce monde":                 ["ESPACE"],
+        "l autre monde":            ["ESPACE", "DIFFÉRENCE"],
+        # --- OPÉRATION ---
+        "mettre en mouvement":      ["OPÉRATION"],
+        "mettre en oeuvre":         ["OPÉRATION"],
+        "wu wei":                   ["MODALITÉ", "ÊTRE"],
+        # --- ÉQUATION ---
+        "c est-à-dire":             ["ÉQUATION"],
+        "autrement dit":            ["ÉQUATION"],
+        "par définition":           ["ÉQUATION"],
+        "ce que l on entend par":   ["ÉQUATION"],
+        "c est à dire":             ["ÉQUATION"],
+        # --- SYMÉTRIE ---
+        "un seul et même":          ["SYMÉTRIE", "ÉQUATION"],
+        "le même que":              ["SYMÉTRIE", "ÉQUATION"],
+        "à égalité":                ["SYMÉTRIE"],
+        # --- DIFFÉRENCE ---
+        "autre que":                ["DIFFÉRENCE"],
+        "par opposition à":         ["DIFFÉRENCE"],
+        "à la différence de":       ["DIFFÉRENCE"],
+        # --- FONCTION ---
+        "dans le but de":           ["FONCTION", "ORIENTATION"],
+        "au service de":            ["FONCTION"],
+        "dans la mesure où":        ["RAPPORT", "MODALITÉ"],
+        # --- "less-known" compound expressions ---
+        "non-action":               ["MODALITÉ", "ÊTRE"],
+        "yin yang":                 ["SYMÉTRIE", "DIFFÉRENCE"],
+        "mandat du ciel":           ["MODALITÉ", "ESPACE"],
+        "nature de bouddha":        ["SUJET", "ÊTRE"],
+        "origination dépendante":   ["RAPPORT", "TEMPS"],
+        "vacuité inhérente":        ["ÊTRE", "DIFFÉRENCE"],
+    },
+}
+
+# Build phraseme index: {lang: {first_word: [(phrase_tuple, atoms), ...]}}
+# Keys are ASCII-normalized token tuples (via _norm + [a-z]+).
+# Sorted by phrase length (longest first) for greedy matching.
+_PHRASEME_INDEX: dict[str, dict[str, list[tuple[tuple[str, ...], list[str]]]]] = {}
+for _lang, _phrases in PHRASEME_LEXICON.items():
+    _idx: dict[str, list[tuple[tuple[str, ...], list[str]]]] = {}
+    for _phrase_str, _atoms in _phrases.items():
+        _toks = tuple(re.findall(r"[a-z]+", _norm(_phrase_str)))
+        if _toks:
+            _idx.setdefault(_toks[0], []).append((_toks, _atoms))
+    # Sort each first-word bucket: longest phrase first (greedy)
+    for _fw in _idx:
+        _idx[_fw].sort(key=lambda x: -len(x[0]))
+    _PHRASEME_INDEX[_lang] = _idx
+
 
 def freq_signature(text: str, lang: str = "eng") -> dict[str, float]:
     """
-    Compute V14 signature for an English text using v212f_lexicon.
+    Compute V14 signature for text, with multilingual support and MWE detection.
 
     Algorithm:
-      1. Tokenize to lowercase alpha tokens
-      2. For each token, check all V14 atom lexicons
-      3. Count atom matches (one token can match multiple atoms)
-      4. Normalize by total match count (L1 = 1.0)
+      1. Select single-word lexicon by lang (eng / fra; others → uniform)
+      2. Tokenize with appropriate normalizer
+      3. MWE pass: greedy longest-match phraseme detection (marks consumed)
+         Phrasemes override their components — non-compositional interpretation.
+      4. Single-token pass on unconsumed positions
+      5. Normalize atom counts (L1 = 1.0)
 
-    Returns dict {atom: frequency} with sum ≈ 1.0.
-    If no tokens match, returns uniform distribution.
+    Supported langs: "eng" (English), "fra" (French).
+    Others return uniform 1/14 distribution.
 
-    Note: This is a reconstructed lexicon (v212f). The original
-    nipada_calibration_v177.py script is unavailable (Colab-only, not committed).
-    Signatures computed here are self-consistent but may differ from v208 values.
+    Note: English tokenizer is kept identical to v212f original (ASCII [a-z]+)
+    so existing English signatures remain unchanged. French uses NFD-normalized
+    tokenizer to handle diacritics.
     """
-    if lang != "eng":
-        # Fallback: uniform distribution for unsupported languages
+    if lang == "eng":
+        tokens = re.findall(r"[a-z]+", text.lower())
+        word_lexicon = _WORD_TO_ATOMS
+    elif lang == "fra":
+        tokens = _tokenize_multi(text)
+        word_lexicon = _WORD_TO_ATOMS_FRA
+    else:
         return {a: 1.0 / 14 for a in V14_ATOMS}
 
-    tokens = re.findall(r"[a-z]+", text.lower())
     counts: dict[str, int] = {a: 0 for a in V14_ATOMS}
     total = 0
+    n = len(tokens)
+    consumed = [False] * n
 
-    for tok in tokens:
-        atoms_for_tok = _WORD_TO_ATOMS.get(tok)
+    # --- MWE / phraseme detection pass (greedy, longest-first) ---
+    phraseme_idx = _PHRASEME_INDEX.get(lang, {})
+    i = 0
+    while i < n:
+        candidates = phraseme_idx.get(tokens[i], [])
+        matched = False
+        for phrase_toks, atoms in candidates:   # already sorted longest-first
+            length = len(phrase_toks)
+            if i + length <= n and tuple(tokens[i:i + length]) == phrase_toks:
+                for atom in atoms:
+                    counts[atom] += 1
+                total += len(atoms)
+                for j in range(i, i + length):
+                    consumed[j] = True
+                i += length
+                matched = True
+                break
+        if not matched:
+            i += 1
+
+    # --- Single-token pass on unconsumed positions ---
+    for idx, tok in enumerate(tokens):
+        if consumed[idx]:
+            continue
+        atoms_for_tok = word_lexicon.get(tok)
         if atoms_for_tok:
             for atom in atoms_for_tok:
                 counts[atom] += 1
@@ -256,7 +661,6 @@ def freq_signature(text: str, lang: str = "eng") -> dict[str, float]:
         return {a: 1.0 / 14 for a in V14_ATOMS}
 
     sig = {a: counts[a] / total for a in V14_ATOMS}
-    # Verify sum ≈ 1.0
     s = sum(sig.values())
     assert abs(s - 1.0) < 1e-9, f"signature sum error: {s}"
     return sig
