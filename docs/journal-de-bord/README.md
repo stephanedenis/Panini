@@ -17,6 +17,7 @@
 | [2026-04-30](2026-04-30.md) | §206q-§209 | 224 | Sprint final densification corpus — phase catalogues complète |
 | [2026-05-01](2026-05-01.md) | §210-§216 | 299 | Graph v12, corpus v212f, V_OPT v4, LOO §214 |
 | [2026-05-02](2026-05-02.md) | §217-§230 | — | Graph v13, §219 densification, §220-§227 calculs |
+| [2026-05-05](2026-05-05.md) | §258-§259 | — | Scan exhaustif v15r (1684 nœuds, 15 positifs), combos k=9, graph v15s, R²=0.8231 RECORD |
 
 ## Structure d'un journal
 

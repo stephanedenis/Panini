@@ -199,7 +199,17 @@ def main() -> int:
         if idx2 + 1 < len(sys.argv):
             out_path = Path(sys.argv[idx2 + 1])
 
-    graph = json.loads(GRAPH_PATH.read_text())
+    graph_path = GRAPH_PATH
+    if "--graph" in sys.argv:
+        idx3 = sys.argv.index("--graph")
+        if idx3 + 1 < len(sys.argv):
+            gp = Path(sys.argv[idx3 + 1])
+            if gp.exists():
+                graph_path = gp
+            else:
+                print(f"WARNING: --graph path not found: {gp}, using default")
+
+    graph = json.loads(graph_path.read_text())
     c212 = json.loads(C212_PATH.read_text())
     c225 = json.loads(ext_path.read_text())
 
