@@ -7,6 +7,7 @@
 
 | Date | Sections | Lignes | Résumé |
 |------|----------|--------|--------|
+| [2025-09-07](2025-09-07.md) | prologue | — | Fondations pré-NIPADa : PaniniFS + dhātu géométrique + voie leibnizienne |
 | [2026-04-22](2026-04-22.md) | session initiale | 2173 | Contexte de session — fondations v0.4.0-α |
 | [2026-04-23](2026-04-23.md) | §71 | 846 | Premiers tests empiriques de falsification NIPADA |
 | [2026-04-24](2026-04-24.md) | §79-§93 | 1616 | Traduction circulaire multi-langues bit-perfect |
@@ -18,6 +19,8 @@
 | [2026-05-01](2026-05-01.md) | §210-§216 | 299 | Graph v12, corpus v212f, V_OPT v4, LOO §214 |
 | [2026-05-02](2026-05-02.md) | §217-§230 | — | Graph v13, §219 densification, §220-§227 calculs |
 | [2026-05-05](2026-05-05.md) | §258-§259 | — | Scan exhaustif v15r (1684 nœuds, 15 positifs), combos k=9, graph v15s, R²=0.8231 RECORD |
+| [2026-05-06](2026-05-06.md) | §260-§264 | — | Reconstruction corpus v260, extension prophétique 16 textes 9 traditions |
+| [2026-05-07](2026-05-07.md) | §265-§271 | — | Graph v18p tri-cluster R²=0.6248, LOO, phrasème V14, §271 grec R²=0.4751 |
 
 ## Structure d'un journal
 
@@ -45,5 +48,5 @@ Chaque journal suit la structure :
 ## Roadmap associé
 
 Voir [FONDAMENTAL_RESEARCH_ROADMAP_Q1_2026.md](../../FONDAMENTAL_RESEARCH_ROADMAP_Q1_2026.md)
-et [REPRISE_v0.5.0-alpha.md](../../research/REPRISE_v0.5.0-alpha.md)
+et [REPRISE_v0.4.0-alpha.md](../../REPRISE_v0.4.0-alpha.md)
 pour l'état courant du projet.
