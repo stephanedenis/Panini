@@ -1,8 +1,18 @@
+# Déplacé
+
+Ce document a été consolidé dans [docs/index.md](index.md).
+
+---
+
+> *Contenu original archivé ci-dessous — non maintenu*
+
+---
+
 # 🗺️ PANINI ECOSYSTEM - AI NAVIGATION INDEX
 
 **Updated**: January 1, 2026  
 **Purpose**: Quick lookup reference for AI agents navigating Panini ecosystem  
-**Audience**: Claude, Copilot, future AI agents, autonomous systems
+**Status**: ⚠️ ARCHIVÉ — voir [index.md](index.md)
 
 ---
 

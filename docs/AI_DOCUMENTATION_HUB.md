@@ -1,8 +1,18 @@
+# Déplacé
+
+Ce document a été consolidé dans [docs/index.md](index.md).
+
+---
+
+> *Contenu original archivé ci-dessous — non maintenu*
+
+---
+
 # 🎯 PANINI AI DOCUMENTATION HUB
 
 **Central Entry Point for AI Agents**  
 **Last Updated**: January 1, 2026  
-**Status**: ✅ READY FOR PRODUCTION
+**Status**: ⚠️ ARCHIVÉ — voir [index.md](index.md)
 
 ---
 

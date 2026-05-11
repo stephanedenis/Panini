@@ -1,8 +1,17 @@
+# Déplacé
+
+Ce document a été consolidé dans [docs/index.md](index.md).
+
+---
+
+> *Contenu original archivé ci-dessous — non maintenu*
+
+---
+
 # 📚 PANINI AI ECOSYSTEM - COMPLETE DOCUMENTATION INDEX
 
 **Created**: January 1, 2026  
-**Purpose**: Single source of truth for all AI documentation  
-**Status**: ✅ READY FOR PRODUCTION USE
+**Status**: ⚠️ ARCHIVÉ — voir [index.md](index.md)
 
 ---
 

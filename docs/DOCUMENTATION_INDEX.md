@@ -1,8 +1,18 @@
+# Déplacé
+
+Ce document a été consolidé dans [docs/index.md](index.md).
+
+---
+
+> *Contenu original archivé ci-dessous — non maintenu*
+
+---
+
 # 📚 PANINI ECOSYSTEM DOCUMENTATION INDEX
 
 **Version**: 1.0  
 **Date**: December 24, 2025  
-**Purpose**: Central navigation for all architecture & roadmap documents  
+**Status**: ⚠️ ARCHIVÉ — voir [index.md](index.md)  
 
 ---
 

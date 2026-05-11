@@ -1,15 +1,18 @@
 # 🌐 PANINI ECOSYSTEM - ARCHITECTURE MASTER DOCUMENT
 
 **Date**: January 1, 2026  
+**Mise à jour** : mai 2026 (section 2 et 2.6 réécrites pour reflet de l'architecture réelle)  
 **Status**: 🔍 Comprehensive Ecosystem Analysis & AI Navigation System Design  
 **Purpose**: Complete understanding of Panini ecosystem for AI agents (Copilot, future AIs)
+
+> ⚠️ **Document historique.** La référence canonique à jour est [ARCHITECTURE_REAL_6PROJECTS.md](ARCHITECTURE_REAL_6PROJECTS.md).
 
 ---
 
 ## 📑 TABLE OF CONTENTS
 
 1. [Ecosystem Overview](#1-ecosystem-overview)
-2. [16 Core Projects](#2-16-core-projects-detailed-analysis)
+2. [6 Projets Actifs (architecture réelle)](#2-16-core-projects-detailed-analysis)
 3. [Dependency Graph](#3-dependency-graph)
 4. [Data Flow Architecture](#4-data-flow-architecture)
 5. [AI Navigation System](#5-ai-navigation-system-for-new-agents)
@@ -66,37 +69,25 @@ This is NOT a simple file copy system. Panini-FS:
 
 ---
 
-## 2. 16 CORE PROJECTS - DETAILED ANALYSIS
+## 2. 6 PROJETS ACTIFS — ARCHITECTURE RÉELLE
 
-### Project Taxonomy
+> Ce document avait initialement modélisé 16 projets théoriques. La réalité est un écosystème de **6 projets actifs**.
+> Pour le détail complet et à jour, voir [ARCHITECTURE_REAL_6PROJECTS.md](ARCHITECTURE_REAL_6PROJECTS.md).
 
-**Core Infrastructure (3)**
-- Panini-FS
-- Panini-SemanticCore
-- Panini-OntoWave
+### Architecture réelle (6 projets)
 
-**Orchestration & Execution (4)**
-- Panini-CloudOrchestrator
-- Panini-ExecutionOrchestrator
-- Panini-CoLabController
-- Panini-AutonomousMissions
+| Projet | Rôle | Tech | Priorité |
+|--------|------|------|---------|
+| **Panini-FS** | Moteur de décomposition sémantique + lecteur FUSE3 | Rust/Python | 🔴 CORE |
+| **OntoWave** | Couche de visualisation ontologique | TypeScript/Node | 🟡 PRODUCTION |
+| **Pensine-Web** | Journal de connaissances (remplace Logseq) | JavaScript | 🔴 URGENT |
+| **Panini-Research** | Laboratoire d’exploration et prototypage | Python | 🟢 RECHERCHE |
+| **SemanticAutomation** | Workflows d’analyse sémantique | TBD | 🟡 FUTUR |
+| **Support** | Utilitaires partagés et infrastructure | Divers | 🟢 SUPPORT |
 
-**Features & Services (5)**
-- Panini-UltraReactive
-- Panini-PublicationEngine
-- Panini-AttributionRegistry
-- Panini-Gest
-- Panini-DatasetsIngestion
+---
 
-**Shared & Support (2)**
-- Panini-CopilotageShared
-- Panini-SpecKit-Shared
-
-**Research & Development (1)**
-- Panini-Research
-
-**Main Project (1)**
-- Panini
+### Submodules actifs dans le dépôt principal
 
 ---
 
@@ -645,35 +636,38 @@ Panini-CopilotageShared/
 - User-facing interfaces
 - Complete system deployment
 
-**Architecture**:
+**Architecture** (mai 2026) :
 ```
 Panini/
-├── config/              # System configuration
-├── copilotage/          # Automatic journaling & agent control
-├── data/                # Corpora, references, results
-├── docs/                # Complete documentation
-├── modules/             # 12 submodules (git submodules)
-├── notebooks/           # Jupyter dev notebooks
-├── research/            # Panini-Research submodule
-├── scripts/             # Utilities
-├── shared/              # Shared libraries (2 submodules)
-├── src/                 # Core source code
-└── tools/               # Development tools
+├── config/              # Configuration agents et système
+├── copilotage/          # Règles, directives et journaux d’agent
+├── data/                # Données (corpus, références, résultats)
+├── docs/                # Documentation complète et rapports
+├── modules/             # Submodules Git actifs (8 composants)
+├── notebooks/           # Jupyter notebooks (développement)
+├── research/            # Submodule Panini-Research (laboratoire)
+├── scripts/             # Scripts utilitaires
+├── src/                 # Code source principal
+├── tech/                # Prototypes et expérimentations techniques
+├── tests/               # Tests unitaires et d’intégration
+└── tools/               # Outils de développement
 ```
 
-**12 Integrated Submodules**:
-1. Panini-FS
-2. Panini-SemanticCore
-3. Panini-CloudOrchestrator
-4. Panini-CoLabController
-5. Panini-UltraReactive
-6. Panini-PublicationEngine
-7. Panini-AutonomousMissions
-8. Panini-AttributionRegistry
-9. OntoWave
-10. Panini-Research
-11. Panini-SpecKit-Shared
-12. Panini-CopilotageShared
+**Submodules actifs (9)** :
+
+| Chemin | Projet | Rôle |
+|--------|--------|------|
+| `modules/core` | Panini-FS | Moteur de décomposition (CORE) |
+| `modules/orchestration` | Panini-CloudOrchestrator | Orchestration cloud |
+| `modules/reactive` | Panini-UltraReactive | Système réactif |
+| `modules/publication` | Panini-PublicationEngine | Moteur de publication |
+| `modules/missions` | Panini-AutonomousMissions | Missions autonomes |
+| `modules/data` | Panini-AttributionRegistry | Registre d’attribution |
+| `modules/ontowave` | OntoWave | Visualisation ontologique |
+| `copilotage` | Panini-Copilotage | Outils de pilotage agent |
+| `research` | Panini-Research | Laboratoire d’exploration |
+
+> `shared/copilotage` et `shared/spec-kit` ont été retirés en mai 2026.
 
 ---
 
