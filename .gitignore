@@ -47,6 +47,11 @@ logs/
 autonomous_*.log
 gestionnaire_*.log
 
+# Environnement local (ne jamais commiter les secrets)
+.env
+.env.local
+.env.*.local
+
 # Cache et temporaires
 __pycache__/
 *.pyc

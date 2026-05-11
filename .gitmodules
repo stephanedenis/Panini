@@ -25,12 +25,6 @@
 [submodule "modules/data/attribution"]
 	path = modules/data/attribution
 	url = https://github.com/stephanedenis/Panini-AttributionRegistry.git
-[submodule "shared/spec-kit"]
-	path = shared/spec-kit
-	url = https://github.com/stephanedenis/Panini-SpecKit-Shared.git
-[submodule "shared/copilotage"]
-	path = shared/copilotage
-	url = https://github.com/stephanedenis/Panini-CopilotageShared.git
 [submodule "modules/ontowave"]
 	path = modules/ontowave
 	url = https://github.com/stephanedenis/OntoWave.git

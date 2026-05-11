@@ -2,25 +2,36 @@
 
 ## Contexte du projet
 
-**Panini** est un système de compression sémantique basé sur les dhātu sanskrits. Il décompose tout format de fichier en primitives atomiques et le reconstruit avec une intégrité bit-perfect.
+**Panini** est un système de **décomposition sémantique** basé sur les dhātu sanskrits. Il décompose le contenu en primitives sémantiques et le reconstruit avec une intégrité bit-perfect. Ce n'est PAS un outil de compression générique.
 
 - **Langage principal:** Python 3.10+
 - **Environnement:** `.venv/` (virtualenv local)
-- **Architecture:** Modulaire — 12 submodules indépendants sous `modules/`
+- **Architecture:** Écosystème de 6 projets (voir `docs/ARCHITECTURE_REAL_6PROJECTS.md`)
 - **Source principale:** `src/`
+
+## Les 6 projets de l'écosystème
+
+| Projet | Rôle | Priorité |
+|--------|------|----------|
+| **Panini-FS** | Moteur de décomposition sémantique + lecteur FUSE3 (Rust/Python) | 🔴 CORE |
+| **OntoWave** | Couche de visualisation ontologique (TypeScript/Node) | 🟡 PRODUCTION |
+| **Pensine-Web** | Journal de connaissances (remplace Logseq) (JavaScript) | 🔴 URGENT |
+| **Panini-Research** | Laboratoire d'exploration et prototypage (Python) | 🟢 RECHERCHE |
+| **SemanticAutomation** | Workflows d'analyse sémantique | 🟡 FUTUR |
+| **Support** | Utilitaires partagés et infrastructure | 🟢 SUPPORT |
 
 ## Structure du projet
 
 ```
 Panini/
 ├── copilotage/      # Règles, directives et journaux d'agent — lire en priorité
-├── src/             # Code source principal
-├── modules/         # 12 submodules (compression, corpus, dhatu, web, etc.)
-├── docs/            # Documentation et rapports
+├── src/             # Code source principal (package panini_colabmcp)
+├── modules/         # Submodules actifs (core, orchestration, reactive, publication, missions, data, ontowave)
+├── docs/            # Documentation, rapports et journaux (docs/journal-de-bord/)
 ├── notebooks/       # Jupyter notebooks (développement et expérimentation)
 ├── scripts/         # Scripts utilitaires
 ├── tests/           # Tests unitaires et d'intégration
-├── research/        # Submodule Panini-Research
+├── research/        # Submodule Panini-Research (laboratoire d'exploration)
 ├── tech/            # Prototypes et expérimentations techniques
 ├── tools/           # Outils de développement
 ├── data/            # Données (corpus, références, résultats)
@@ -80,5 +91,5 @@ Si une commande dépasse 3 paramètres, chaîne plusieurs outils, ou contient un
 
 - `copilotage/regles/REGLES_COPILOTAGE_v0.0.2.md` — règles d'autonomie agent
 - `copilotage/directives/architecture_modulaire.md` — conventions architecture
-- `ARCHITECTURE_STANDARD.md` — vue d'ensemble de l'architecture
+- `docs/ARCHITECTURE_REAL_6PROJECTS.md` — vue d'ensemble de l'architecture (6 projets)
 - `pyproject.toml` — dépendances et configuration Python

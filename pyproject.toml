@@ -43,7 +43,7 @@ dev = [
 ]
 
 [project.scripts]
-panini-colabmcp = "panini_colabmcp.server:main"
+panini-colabmcp = "panini_colabmcp:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

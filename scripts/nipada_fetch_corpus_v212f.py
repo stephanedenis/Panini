@@ -78,6 +78,15 @@ V14_ATOMS = [
     "FONCTION", "STRUCTURE", "SYMÉTRIE", "ÉQUATION",
 ]
 
+# V16 extends V14 with two new atoms derived from corpus gap analysis (§272, 2026-05-08)
+# CAUSALITÉ : causal relation as such (distinct from action = OPÉRATION)
+# ÉVÉNEMENT : event/state distinction (distinct from temporal sequence = TEMPS)
+V16_ATOMS = V14_ATOMS + ["CAUSALITÉ", "ÉVÉNEMENT"]
+
+# V17 extends V16 with MENTAL_STATE from §272 corpus gap analysis (2026-05-09)
+# MENTAL_STATE : propositional attitudes (know/believe/want/feel/think)
+V17_ATOMS = V16_ATOMS + ["MENTAL_STATE"]
+
 # ---------------------------------------------------------------------------
 # Reconstructed V14 keyword lexicon for English (v212f_lexicon)
 # Uses content words only (no grammatical function words like is/are/not)
@@ -211,6 +220,83 @@ ATOM_LEXICON_ENG: dict[str, list[str]] = {
         "called", "named", "principle", "principles",
         "law", "laws", "rule", "rules", "formula",
         "theorem", "identity", "namely",
+    ],
+    # -----------------------------------------------------------------------
+    # V16 extensions — added 2026-05-08 from §272 corpus gap analysis
+    # -----------------------------------------------------------------------
+    "CAUSALITÉ": [
+        # Causal relation as such — distinct from action (OPÉRATION)
+        # Evidence: causative/causation top-50 non-V14 corpus terms
+        # Theoretical: Wierzbicka NSM CAUSE, Jackendoff CAUSE(x,BECOME(y))
+        # Talmy force dynamics, Levin & Hovav causative alternations
+        "causation", "causative", "causatives", "causal", "causally",
+        "causality", "anticausative", "anticausatives",
+        "resultative", "resultatives",
+        "inchoative", "inceptive",
+        "volitional", "volition",
+        "force", "forces", "forcing",
+        "enable", "enables", "enabling",
+        "trigger", "triggers", "triggering",
+        "induce", "induces", "inducing",
+        "prevent", "prevents", "prevention",
+        "entail", "entails", "entailment", "entailments",
+        "consequence", "consequences", "consequent",
+        "compel", "compels", "compelled",
+        "allow", "allows", "permit", "permits",
+        "enforce", "enforces",
+    ],
+    "ÉVÉNEMENT": [
+        # Event/state distinction — distinct from temporal sequence (TEMPS)
+        # Evidence: event/events #1 non-V14 concept (2576 occ, 69 docs)
+        # Theoretical: Vendler Aktionsart, Davidson events, aspect theory
+        # Pustejovsky telic/agentive qualia, Jackendoff EVENT vs STATE
+        "event", "events", "eventuality", "eventualities", "eventive",
+        "state", "states", "stative",
+        "process", "processes",
+        "activity", "activities",
+        "accomplishment", "accomplishments",
+        "achievement", "achievements",
+        "aspect", "aspectual", "aspectuality", "aktionsart",
+        "telic", "telicity", "atelic", "atelicity",
+        "perfective", "imperfective", "progressive",
+        "durative", "punctual", "bounded", "unbounded",
+        "dynamic", "dynamicity",
+        "happen", "happens", "happening",
+        "occur", "occurs", "occurring", "occurrence", "occurrences",
+    ],
+    # -----------------------------------------------------------------------
+    # V17 extension — added 2026-05-09 from §272 corpus gap analysis
+    # MENTAL_STATE : propositional attitude verbs (know/believe/want/feel)
+    # Distinct from SUJET (self/person), ORIENTATION (goal/intend), MODALITÉ
+    # Theoretical: Wierzbicka NSM KNOW/WANT/FEEL, Jackendoff conceptual
+    # semantics mental predicates, Vendler propositional attitude verbs
+    # Evidence: know/want/think/belief top-50 non-V16 cluster terms (n=62)
+    # -----------------------------------------------------------------------
+    "MENTAL_STATE": [
+        # Epistemic verbs & nouns
+        "know", "knows", "knowing", "known", "knowledge",
+        "believe", "believes", "believed", "belief", "beliefs",
+        "think", "thinks", "thinking", "thought", "thoughts",
+        "understand", "understands", "understood", "understanding",
+        "realize", "realizes", "realized", "realization",
+        "perceive", "perceives", "perceived", "perception", "perceptions",
+        "remember", "remembers", "remembered", "memory", "memories",
+        "aware", "awareness", "unaware",
+        # Conative verbs & nouns
+        "want", "wants", "wanting", "wanted",
+        "desire", "desires", "desired", "desiring",
+        "wish", "wishes", "wishing", "wished",
+        "expect", "expects", "expected", "expecting", "expectation", "expectations",
+        # Affective states
+        "feel", "feels", "feeling", "feelings", "felt",
+        "emotion", "emotions", "emotional",
+        "sentiment", "sentiments",
+        # Cognitive adjectives & nouns
+        "cognitive", "cognition", "cognize", "cognizes",
+        "mental", "propositional", "attitude", "attitudes",
+        "epistemic", "doxastic", "noetic",
+        "opinion", "opinions", "view", "views",
+        "proposal", "propose", "propose", "proposed",
     ],
 }
 
