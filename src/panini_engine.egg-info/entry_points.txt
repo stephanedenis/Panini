@@ -1,0 +1,2 @@
+[console_scripts]
+panini-colabmcp = panini_colabmcp:main

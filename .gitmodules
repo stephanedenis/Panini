@@ -10,9 +10,6 @@
 [submodule "modules/orchestration/cloud"]
 	path = modules/orchestration/cloud
 	url = https://github.com/stephanedenis/Panini-CloudOrchestrator.git
-[submodule "modules/orchestration/colab"]
-	path = modules/orchestration/colab
-	url = https://github.com/stephanedenis/Panini-CoLabController.git
 [submodule "modules/reactive/ultra-reactive"]
 	path = modules/reactive/ultra-reactive
 	url = https://github.com/stephanedenis/Panini-UltraReactive.git

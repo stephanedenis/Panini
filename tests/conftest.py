@@ -1,5 +1,5 @@
 """
-Pytest configuration and fixtures for panini_colabmcp testing.
+Pytest configuration and fixtures for panini_engine testing.
 
 Provides:
 - Mock Google OAuth2 credentials
@@ -15,7 +15,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 from fastapi.testclient import TestClient
 
-from panini_colabmcp import (
+from panini_engine import (
     AnalyzerServer,
     ColabClient,
     Config,

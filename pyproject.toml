@@ -3,9 +3,9 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "panini-colabmcp"
+name = "panini-engine"
 version = "0.1.0"
-description = "MCP Server for autonomous Colab analysis in GitHub workflows"
+description = "Moteur de décomposition sémantique Panini"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -30,7 +30,6 @@ dependencies = [
 [project.optional-dependencies]
 mcp = ["mcp>=0.6.0"]
 github = ["PyGithub>=2.0"]
-colab = ["google-auth>=2.0", "google-auth-oauthlib>=1.0", "aiohttp>=3.9"]
 registry = ["sqlalchemy>=2.0", "psycopg2-binary>=2.9"]
 dev = [
     "pytest>=7.0",
@@ -40,6 +39,8 @@ dev = [
     "ruff>=0.1.0",
     "mypy>=1.0",
     "httpx>=0.24.0",
+    "fastapi>=0.100.0",
+    "numpy",
 ]
 
 [project.scripts]

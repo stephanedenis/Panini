@@ -175,7 +175,7 @@ class TestOAuthManagerMultipleAccounts:
 
     def test_multiple_accounts_isolated_tokens(self, test_config):
         """Each account should have isolated token storage."""
-        from panini_colabmcp import OAuthManager
+        from panini_engine import OAuthManager
 
         manager = OAuthManager(test_config)
         manager._token_store = {}
@@ -200,7 +200,7 @@ class TestOAuthManagerMultipleAccounts:
 
     def test_list_accounts(self, test_config):
         """Should enumerate all tracked accounts."""
-        from panini_colabmcp import OAuthManager
+        from panini_engine import OAuthManager
 
         manager = OAuthManager(test_config)
         manager._token_store = {

@@ -54,7 +54,7 @@ class TestGitHubConnectorRepoListing:
 
     def test_list_repos_handles_empty_results(self, test_config):
         """Should return empty list when no repos match pattern."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.list_repos = MagicMock(return_value=[])
@@ -65,7 +65,7 @@ class TestGitHubConnectorRepoListing:
 
     def test_list_repos_distinguishes_public_private(self, test_config):
         """Should identify private vs public repositories."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.list_repos = MagicMock(
@@ -112,7 +112,7 @@ class TestGitHubConnectorFileOperations:
 
     def test_get_file_content_handles_missing_file(self, test_config):
         """Should handle gracefully when file doesn't exist."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.get_file_content = MagicMock(return_value=None)
@@ -146,7 +146,7 @@ class TestGitHubConnectorFileOperations:
 
     def test_create_file_handles_duplicate_filenames(self, test_config):
         """Should handle existing files (update or error)."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.create_file = MagicMock(
@@ -201,7 +201,7 @@ class TestGitHubConnectorWorkflowDispatch:
 
     def test_dispatch_handles_invalid_event_type(self, test_config):
         """Should handle workflow events not configured in repo."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.dispatch = MagicMock(side_effect=ValueError("Unknown event type"))
@@ -254,7 +254,7 @@ class TestGitHubConnectorErrorHandling:
 
     def test_authentication_failure(self, test_config):
         """Should handle invalid or expired GitHub token."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.list_repos = MagicMock(
@@ -266,7 +266,7 @@ class TestGitHubConnectorErrorHandling:
 
     def test_rate_limit_handling(self, test_config):
         """Should handle GitHub API rate limits."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.get_file_content = MagicMock(
@@ -278,7 +278,7 @@ class TestGitHubConnectorErrorHandling:
 
     def test_invalid_repository_path(self, test_config):
         """Should validate repository path format."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.list_repos = MagicMock(side_effect=ValueError("Invalid repo format"))
@@ -288,7 +288,7 @@ class TestGitHubConnectorErrorHandling:
 
     def test_network_failure_handling(self, test_config):
         """Should handle network/connection errors."""
-        from panini_colabmcp import GitHubConnector
+        from panini_engine import GitHubConnector
 
         connector = GitHubConnector(test_config)
         connector.dispatch = MagicMock(

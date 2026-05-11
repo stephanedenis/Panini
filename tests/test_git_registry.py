@@ -16,7 +16,7 @@ from pathlib import Path
 from datetime import datetime
 from unittest.mock import AsyncMock, MagicMock, patch
 
-from panini_colabmcp.git_registry import GitRegistry
+from panini_engine.git_registry import GitRegistry
 
 
 @pytest.fixture

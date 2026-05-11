@@ -14,7 +14,7 @@ import tempfile
 from pathlib import Path
 from datetime import datetime
 
-from panini_colabmcp.registry_writer import RegistryWriter
+from panini_engine.registry_writer import RegistryWriter
 
 
 @pytest.fixture
