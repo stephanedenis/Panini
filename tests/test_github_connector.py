@@ -19,40 +19,40 @@ from unittest.mock import MagicMock, patch
 class TestGitHubConnectorRepoListing:
     """Test GitHubConnector.list_repos() - discovers repositories."""
 
-    def test_list_repos_returns_matching_repos(self, mock_github_connector):
+    async def test_list_repos_returns_matching_repos(self, mock_github_connector):
         """Should return repos matching name pattern."""
         owner = "stephanedenis"
         pattern = "Panini-*"
 
-        result = mock_github_connector.list_repos(owner, pattern)
+        result = await mock_github_connector.list_repos(owner, pattern)
 
         assert result is not None
         assert len(result) > 0
         assert all("name" in repo for repo in result)
 
-    def test_list_repos_applies_fnmatch_pattern(self, mock_github_connector):
+    async def test_list_repos_applies_fnmatch_pattern(self, mock_github_connector):
         """Should filter repos using fnmatch pattern matching."""
         owner = "stephanedenis"
 
         # Match repos starting with "Panini-"
-        result = mock_github_connector.list_repos(owner, "Panini-*")
+        result = await mock_github_connector.list_repos(owner, "Panini-*")
 
         assert len(result) > 0
         for repo in result:
             assert repo["name"].startswith("Panini-")
 
-    def test_list_repos_includes_repo_metadata(self, mock_github_connector):
+    async def test_list_repos_includes_repo_metadata(self, mock_github_connector):
         """Should include essential repo metadata."""
         owner = "stephanedenis"
 
-        result = mock_github_connector.list_repos(owner, "Panini-*")
+        result = await mock_github_connector.list_repos(owner, "Panini-*")
 
         required_fields = ["name", "full_name", "url", "description", "private"]
         for repo in result:
             for field in required_fields:
                 assert field in repo
 
-    def test_list_repos_handles_empty_results(self, test_config):
+    async def test_list_repos_handles_empty_results(self, test_config):
         """Should return empty list when no repos match pattern."""
         from panini_engine import GitHubConnector
 
@@ -63,7 +63,7 @@ class TestGitHubConnectorRepoListing:
 
         assert result == []
 
-    def test_list_repos_distinguishes_public_private(self, test_config):
+    async def test_list_repos_distinguishes_public_private(self, test_config):
         """Should identify private vs public repositories."""
         from panini_engine import GitHubConnector
 
@@ -88,29 +88,29 @@ class TestGitHubConnectorRepoListing:
 class TestGitHubConnectorFileOperations:
     """Test GitHubConnector file read/write operations."""
 
-    def test_get_file_content_loads_analysis_config(self, mock_github_connector, mock_analysis_config):
+    async def test_get_file_content_loads_analysis_config(self, mock_github_connector, mock_analysis_config):
         """Should load analysis_config.json from repository."""
         repo = "stephanedenis/Panini-Analysis"
         path = "analysis_config.json"
 
-        result = mock_github_connector.get_file_content(repo, path)
+        result = await mock_github_connector.get_file_content(repo, path)
 
         assert result is not None
         assert result["enabled"] is True
         assert "machine_type" in result
         assert "timeout_minutes" in result
 
-    def test_get_file_content_supports_branches(self, mock_github_connector):
+    async def test_get_file_content_supports_branches(self, mock_github_connector):
         """Should read from specified branch."""
         repo = "stephanedenis/Panini-Analysis"
         path = "analysis_config.json"
         branch = "develop"
 
-        result = mock_github_connector.get_file_content(repo, path, branch)
+        result = await mock_github_connector.get_file_content(repo, path, branch)
 
         assert result is not None
 
-    def test_get_file_content_handles_missing_file(self, test_config):
+    async def test_get_file_content_handles_missing_file(self, test_config):
         """Should handle gracefully when file doesn't exist."""
         from panini_engine import GitHubConnector
 
@@ -121,30 +121,30 @@ class TestGitHubConnectorFileOperations:
 
         assert result is None
 
-    def test_create_file_writes_results_json(self, mock_github_connector):
+    async def test_create_file_writes_results_json(self, mock_github_connector):
         """Should write analysis results to repository."""
         repo = "stephanedenis/Panini-Analysis"
         path = "results/analysis_2025-12-25.json"
         content = '{"status": "completed", "duration": 45}'
 
-        result = mock_github_connector.create_file(repo, path, content)
+        result = await mock_github_connector.create_file(repo, path, content)
 
         assert result is not None
         assert "sha" in result  # File commit SHA
         assert "url" in result
 
-    def test_create_file_includes_commit_message(self, mock_github_connector):
+    async def test_create_file_includes_commit_message(self, mock_github_connector):
         """Should support custom commit messages."""
         repo = "stephanedenis/Panini-Analysis"
         path = "results.json"
         content = '{"status": "completed"}'
 
         # Mock should accept message parameter
-        result = mock_github_connector.create_file(repo, path, content)
+        result = await mock_github_connector.create_file(repo, path, content)
 
         assert result is not None
 
-    def test_create_file_handles_duplicate_filenames(self, test_config):
+    async def test_create_file_handles_duplicate_filenames(self, test_config):
         """Should handle existing files (update or error)."""
         from panini_engine import GitHubConnector
 
@@ -165,41 +165,41 @@ class TestGitHubConnectorFileOperations:
 class TestGitHubConnectorWorkflowDispatch:
     """Test GitHubConnector.dispatch() - triggers GitHub Actions."""
 
-    def test_dispatch_workflow_triggers_action(self, mock_github_connector):
+    async def test_dispatch_workflow_triggers_action(self, mock_github_connector):
         """Should dispatch workflow with event type and payload."""
         repo = "stephanedenis/Panini-Analysis"
         event_type = "analysis-complete"
         payload = {"analysis_id": "uuid_123", "status": "completed"}
 
-        result = mock_github_connector.dispatch(repo, event_type, payload)
+        result = await mock_github_connector.dispatch(repo, event_type, payload)
 
         assert result is not None
         assert "id" in result
         assert result["status"] == "queued"
 
-    def test_dispatch_includes_creation_timestamp(self, mock_github_connector):
+    async def test_dispatch_includes_creation_timestamp(self, mock_github_connector):
         """Should include dispatch timestamp."""
         repo = "stephanedenis/Panini-Analysis"
         event_type = "analysis-complete"
 
-        result = mock_github_connector.dispatch(repo, event_type, {})
+        result = await mock_github_connector.dispatch(repo, event_type, {})
 
         assert "created_at" in result
         created = datetime.fromisoformat(result["created_at"])
         assert created <= datetime.utcnow()
 
-    def test_dispatch_payload_passed_to_workflow(self, mock_github_connector):
+    async def test_dispatch_payload_passed_to_workflow(self, mock_github_connector):
         """Should make payload available to GitHub Actions workflow."""
         repo = "stephanedenis/Panini-Analysis"
         event_type = "analysis-complete"
         payload = {"analysis_id": "test_123", "results": {"score": 95}}
 
         # Mock accepts payload
-        result = mock_github_connector.dispatch(repo, event_type, payload)
+        result = await mock_github_connector.dispatch(repo, event_type, payload)
 
         assert result is not None
 
-    def test_dispatch_handles_invalid_event_type(self, test_config):
+    async def test_dispatch_handles_invalid_event_type(self, test_config):
         """Should handle workflow events not configured in repo."""
         from panini_engine import GitHubConnector
 
@@ -214,33 +214,33 @@ class TestGitHubConnectorWorkflowDispatch:
 class TestGitHubConnectorWorkflowMonitoring:
     """Test GitHubConnector.list_active_workflows() - monitors execution."""
 
-    def test_list_active_workflows_returns_workflow_status(self, mock_github_connector):
+    async def test_list_active_workflows_returns_workflow_status(self, mock_github_connector):
         """Should list active workflow runs."""
-        result = mock_github_connector.list_active_workflows()
+        result = await mock_github_connector.list_active_workflows()
 
         assert result is not None
         assert len(result) > 0
 
-    def test_list_active_workflows_includes_metadata(self, mock_github_connector):
+    async def test_list_active_workflows_includes_metadata(self, mock_github_connector):
         """Should include workflow ID, name, status, conclusion."""
-        result = mock_github_connector.list_active_workflows()
+        result = await mock_github_connector.list_active_workflows()
 
         required_fields = ["id", "name", "status", "conclusion"]
         for workflow in result:
             for field in required_fields:
                 assert field in workflow
 
-    def test_list_active_workflows_status_values(self, mock_github_connector):
+    async def test_list_active_workflows_status_values(self, mock_github_connector):
         """Status should be one of: queued, in_progress, completed."""
-        result = mock_github_connector.list_active_workflows()
+        result = await mock_github_connector.list_active_workflows()
 
         valid_statuses = ["queued", "in_progress", "completed"]
         for workflow in result:
             assert workflow["status"] in valid_statuses
 
-    def test_list_active_workflows_conclusion_values(self, mock_github_connector):
+    async def test_list_active_workflows_conclusion_values(self, mock_github_connector):
         """Conclusion should be one of: success, failure, cancelled, skipped."""
-        result = mock_github_connector.list_active_workflows()
+        result = await mock_github_connector.list_active_workflows()
 
         for workflow in result:
             if workflow["status"] == "completed":
@@ -252,7 +252,7 @@ class TestGitHubConnectorWorkflowMonitoring:
 class TestGitHubConnectorErrorHandling:
     """Test GitHubConnector error scenarios."""
 
-    def test_authentication_failure(self, test_config):
+    async def test_authentication_failure(self, test_config):
         """Should handle invalid or expired GitHub token."""
         from panini_engine import GitHubConnector
 
@@ -264,7 +264,7 @@ class TestGitHubConnectorErrorHandling:
         with pytest.raises(PermissionError):
             connector.list_repos("stephanedenis", "*")
 
-    def test_rate_limit_handling(self, test_config):
+    async def test_rate_limit_handling(self, test_config):
         """Should handle GitHub API rate limits."""
         from panini_engine import GitHubConnector
 
@@ -276,7 +276,7 @@ class TestGitHubConnectorErrorHandling:
         with pytest.raises(RuntimeError):
             connector.get_file_content("stephanedenis/Panini", "file.json")
 
-    def test_invalid_repository_path(self, test_config):
+    async def test_invalid_repository_path(self, test_config):
         """Should validate repository path format."""
         from panini_engine import GitHubConnector
 
@@ -286,7 +286,7 @@ class TestGitHubConnectorErrorHandling:
         with pytest.raises(ValueError):
             connector.list_repos("invalid-format", "*")
 
-    def test_network_failure_handling(self, test_config):
+    async def test_network_failure_handling(self, test_config):
         """Should handle network/connection errors."""
         from panini_engine import GitHubConnector
 
@@ -303,12 +303,12 @@ class TestGitHubConnectorErrorHandling:
 class TestGitHubConnectorIntegration:
     """Test GitHubConnector integration patterns."""
 
-    def test_read_config_execute_dispatch_workflow(self, mock_github_connector, mock_analysis_config):
+    async def test_read_config_execute_dispatch_workflow(self, mock_github_connector, mock_analysis_config):
         """Test typical workflow: read config, execute, dispatch."""
         repo = "stephanedenis/Panini-Analysis"
 
         # 1. Read analysis config
-        config = mock_github_connector.get_file_content(repo, "analysis_config.json")
+        config = await mock_github_connector.get_file_content(repo, "analysis_config.json")
         assert config["enabled"] is True
 
         # 2. Execute analysis (simulated)
@@ -329,11 +329,11 @@ class TestGitHubConnectorIntegration:
         )
         assert dispatched is not None
 
-    def test_monitor_workflow_completion(self, mock_github_connector):
+    async def test_monitor_workflow_completion(self, mock_github_connector):
         """Test polling workflow status until completion."""
         # Simulate checking workflow status repeatedly
         for _ in range(3):
-            workflows = mock_github_connector.list_active_workflows()
+            workflows = await mock_github_connector.list_active_workflows()
             assert workflows is not None
 
             # Check if any completed

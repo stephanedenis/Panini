@@ -177,20 +177,22 @@ def mock_github_connector(test_config, mock_github_repo, mock_analysis_config):
     connector = GitHubConnector(test_config)
 
     # Mock repository operations
-    connector.list_repos = MagicMock(
+    from unittest.mock import AsyncMock
+    connector.list_repos = AsyncMock(
         return_value=[
             mock_github_repo,
             {
                 "name": "Panini-Analysis-2",
                 "full_name": "stephanedenis/Panini-Analysis-2",
                 "url": "https://github.com/stephanedenis/Panini-Analysis-2",
+                "description": "Mock repo for testing", "private": False,
             },
         ]
     )
 
-    connector.get_file_content = MagicMock(return_value=mock_analysis_config)
+    connector.get_file_content = AsyncMock(return_value=mock_analysis_config)
 
-    connector.create_file = MagicMock(
+    connector.create_file = AsyncMock(
         return_value={
             "sha": "abc123def456",
             "url": (
@@ -200,7 +202,7 @@ def mock_github_connector(test_config, mock_github_repo, mock_analysis_config):
         }
     )
 
-    connector.dispatch = MagicMock(
+    connector.dispatch = AsyncMock(
         return_value={
             "id": 12345,
             "status": "queued",
@@ -208,7 +210,7 @@ def mock_github_connector(test_config, mock_github_repo, mock_analysis_config):
         }
     )
 
-    connector.list_active_workflows = MagicMock(
+    connector.list_active_workflows = AsyncMock(
         return_value=[
             {
                 "id": 1,
