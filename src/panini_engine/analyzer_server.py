@@ -62,7 +62,7 @@ class AnalyzerServer:
             """Health check endpoint."""
             return {"status": "healthy"}
         
-        @self.app.post("/api/analyze", response_model=AnalysisResponse)
+        @self.app.post("/api/analyze", response_model=AnalysisResponse, status_code=202)
         async def analyze(
             request: AnalysisRequest,
             background_tasks: BackgroundTasks
@@ -134,13 +134,13 @@ class AnalyzerServer:
         @self.app.get("/api/registry/recent")
         async def get_recent_analyses(repo: Optional[str] = None, limit: int = 10):
             """Get recent analyses from registry."""
-            analyses = await self.registry.list_recent(repo=repo, limit=limit)
+            analyses = self.registry.list_recent(repo=repo, limit=limit)
             return {"analyses": analyses, "count": len(analyses)}
         
         @self.app.get("/api/registry/summary")
         async def get_registry_summary(repo: Optional[str] = None):
-            """Get registry summary statistics."""
-            summary = await self.registry.get_summary(repo=repo)
+            """Get aggregation summary of registry."""
+            summary = self.registry.get_summary(repo=repo)
             return summary
     
     async def _run_analysis(
@@ -222,7 +222,7 @@ print(json.dumps(results, indent=2))
             logger.info(f"[{job_id}] Analysis complete, registering...")
             
             # Step 4: Register in AttributionRegistry
-            analysis_id = await self.registry.add_analysis(
+            analysis_id = self.registry.add_analysis(
                 repo=repo,
                 timestamp=timestamp,
                 machine_type="L4",
