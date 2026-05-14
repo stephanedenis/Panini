@@ -37,3 +37,6 @@
 [submodule "modules/shared/speckit"]
 	path = modules/shared/speckit
 	url = https://github.com/stephanedenis/Panini-SpecKit-Shared.git
+[submodule "modules/core/knowledge"]
+	path = modules/core/knowledge
+	url = https://github.com/stephanedenis/nipada-public.git
