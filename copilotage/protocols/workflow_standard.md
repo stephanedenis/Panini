@@ -1,14 +1,14 @@
-# 🔄 WORKFLOW STANDARD - Agents IA
+# Workflow standard — Agents IA
 
-## 📋 **PROCESSUS DE COLLABORATION**
+## Processus de collaboration
 
-### **1. Prise de Contexte**
-- ✅ **Lire** : `copilotage/regles/REGLES_COPILOTAGE_v0.0.1.md`
-- ✅ **Examiner** : État actuel du workspace
-- ✅ **Identifier** : Objectifs utilisateur
-- ✅ **Planifier** : Étapes d'intervention
+### 1. Prise de contexte
+- Lire : `copilotage/regles/REGLES_COPILOTAGE_v0.0.1.md`
+- Examiner : état actuel du workspace
+- Identifier : objectifs utilisateur
+- Planifier : étapes d'intervention
 
-### **2. Intervention Standard**
+### 2. Intervention standard
 ```
 1. ANALYSE → Comprendre la demande
 2. RECHERCHE → Explorer le contexte existant  
@@ -18,35 +18,35 @@
 6. DOCUMENTATION → Tracer les changements
 ```
 
-### **3. Coordination Multi-Agents**
-- **Handoff** : Transférer contexte complet
-- **Continuité** : Préserver l'état de travail
-- **Cohérence** : Respecter les conventions
-- **Traçabilité** : Documenter toute action
+### 3. Coordination multi-agents
+- Handoff : transférer contexte complet
+- Continuité : préserver l'état de travail
+- Cohérence : respecter les conventions
+- Traçabilité : documenter toute action
 
-## 🎯 **RÈGLES CRITIQUES**
+## Règles critiques
 
-### **Dossier Copilotage**
-- ⚠️ **JAMAIS supprimer** `/copilotage/`
-- ⚠️ **JAMAIS déplacer** vers archives
-- ⚠️ **TOUJOURS préserver** lors réorganisations
-- ⚠️ **POSITION RACINE** obligatoire
+### Dossier copilotage
+- Ne jamais supprimer `/copilotage/`
+- Ne jamais déplacer vers les archives
+- Toujours préserver lors des réorganisations
+- Position racine obligatoire
 
-### **Préservation Contexte**
-- 📝 Documenter chaque modification importante
-- 🔄 Maintenir cohérence structure 
-- 📋 Respecter conventions nommage
-- 🎯 Garder focus utilisateur
+### Préservation du contexte
+- Documenter chaque modification importante
+- Maintenir cohérence de structure
+- Respecter conventions de nommage
+- Garder focus utilisateur
 
-## 🚀 **EFFICACITÉ**
+## Efficacité
 
-### **Actions Prioritaires**
+### Actions prioritaires
 1. **Copilotage** → TOUJOURS accessible
 2. **Production** → Documents finaux prêts
 3. **Research** → Travail en cours
 4. **Archives** → Historique préservé
 
-### **Communication Inter-Agents**
+### Communication inter-agents
 - **État** : Documenter progression dans `/copilotage/shared/`
 - **Erreurs** : Tracer dans `/copilotage/protocols/`
 - **Succès** : Valider dans documentation

@@ -1,11 +1,11 @@
-# RÈGLES COPILOTAGE v0.0.2 - AUTONOMIE RENFORCÉE
+# RÈGLES COPILOTAGE v0.0.2 — Autonomie renforcée
 
 **Version:** v0.0.2  
 **Mise à jour:** 2025-09-20 11:02  
 **Source:** Mission mission_20250920_110201  
 **Évolution:** Intégration apprentissages infrastructure autonomie
 
-## 🤖 NOUVELLES RÈGLES AUTONOMIE
+## Nouvelles règles d'autonomie
 
 ### AUTO_TOOL_VALIDATION
 **Déclencheur:** Avant usage run_in_terminal ou subprocess direct  
@@ -22,12 +22,12 @@
 **Action:** Capturer patterns, erreurs, succès pour feedback loop  
 **Objectif:** Amélioration continue automatique  
 
-## 📊 MÉTRIQUES EFFICACITÉ
+## Métriques d'efficacité
 
-- **Violations prévenues:** 3 types identifiés
-- **Auto-résolutions:** 4/4 erreurs  
-- **Amélioration autonomie:** 95% prompts éliminés
-- **Missions longues:** Capacité 10h+ validée
+- Violations prévenues : 3 types identifiés
+- Auto-résolutions : 4 erreurs
+- Prompts éliminés : ~95%
+- Missions longues : capacité 10h+ validée
 
 ## 🔄 FEEDBACK LOOP ACTIF
 

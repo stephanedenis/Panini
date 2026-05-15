@@ -1,30 +1,30 @@
-# 🎯 DIRECTIVE COPILOTAGE - ARCHITECTURE MODULAIRE
+# DIRECTIVE COPILOTAGE — Architecture Modulaire
 
-## 📋 NOUVELLE DIRECTIVE STRATÉGIQUE
+## Directive
 
-### 🎯 Principe Central
-**Les notebooks doivent être PETITS et utiliser des modules Python spécialisés remplaçables dynamiquement.**
+### Principe Central
+Les notebooks doivent être petits et utiliser des modules Python spécialisés remplaçables dynamiquement.
 
-### 🔧 Architecture Cible
+## Architecture cible
 
-#### 1. **Notebooks Minimalistes**
+### 1. Notebooks minimalistes
 - Maximum 5-7 cellules par notebook
 - Rôle : Interface et orchestration uniquement
 - Import dynamique des modules selon le job
 - Pas de logique métier dans le notebook
 
-#### 2. **Modules Python Spécialisés**
+### 2. Modules Python spécialisés
 - Un module = Une responsabilité précise
 - Remplaçables à chaque cycle de traitement
 - Interface standardisée pour interchangeabilité
 - Optimisations GPU contextuelles
 
-#### 3. **Sélection Dynamique GPU**
+### 3. Sélection dynamique GPU
 - Détection automatique des ressources disponibles
 - Substitution des modules selon le contexte
 - Adaptation en temps réel des optimisations
 
-### 🏗️ Structure Modulaire
+## Structure modulaire
 
 ```
 src/

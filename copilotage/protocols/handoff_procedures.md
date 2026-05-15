@@ -1,6 +1,6 @@
-# 🤝 PROCÉDURES DE TRANSFERT - Handoff Inter-Agents
+# Procédures de transfert — Handoff inter-agents
 
-## 🔄 **TRANSFERT CONTEXTE**
+## Transfert de contexte
 
 ### **Information Critique à Transmettre**
 1. **État du projet** : Où en est-on ?
@@ -9,14 +9,14 @@
 4. **Problèmes identifiés** : Quels obstacles ?
 5. **Prochaines étapes** : Que faire ensuite ?
 
-### **Checklist Handoff**
-- ✅ **Copilotage intact** : `/copilotage/` préservé ?
-- ✅ **Structure workspace** : Organisation maintenue ?
-- ✅ **Documents production** : Fichiers finaux OK ?
-- ✅ **Conventions** : Nommage respecté ?
-- ✅ **Documentation** : Changements tracés ?
+### Checklist handoff
+- Copilotage intact : `/copilotage/` préservé ?
+- Structure workspace : organisation maintenue ?
+- Documents production : fichiers finaux OK ?
+- Conventions : nommage respecté ?
+- Documentation : changements tracés ?
 
-## 📝 **TEMPLATE TRANSFERT**
+## Template de transfert
 
 ### **Rapport Standard**
 ```markdown
@@ -48,33 +48,33 @@
 - Structure : [État]
 ```
 
-## ⚠️ **RÈGLES ABSOLUES**
+## Règles absolues
 
-### **INTERDICTIONS**
-- ❌ **JAMAIS** supprimer `/copilotage/`
-- ❌ **JAMAIS** ignorer conventions établies
-- ❌ **JAMAIS** perdre contexte utilisateur
-- ❌ **JAMAIS** casser structure organisée
+### Interdictions
+- Ne jamais supprimer `/copilotage/`
+- Ne jamais ignorer les conventions établies
+- Ne jamais perdre le contexte utilisateur
+- Ne jamais casser la structure organisée
 
-### **OBLIGATIONS**
-- ✅ **TOUJOURS** préserver `/copilotage/`
-- ✅ **TOUJOURS** documenter actions importantes
-- ✅ **TOUJOURS** respecter organisation logique
-- ✅ **TOUJOURS** maintenir continuité
+### Obligations
+- Toujours préserver `/copilotage/`
+- Toujours documenter les actions importantes
+- Toujours respecter l'organisation logique
+- Toujours maintenir la continuité
 
-## 🚀 **EFFICACITÉ TRANSFERT**
+## Efficacité du transfert
 
-### **Communication Rapide**
-- **État** : 1 phrase claire
-- **Actions** : Liste bullets
-- **Résultats** : Status ✅❌⚠️
-- **Suite** : Prochaines étapes numérotées
+### Communication rapide
+- État : 1 phrase claire
+- Actions : liste bullets
+- Résultats : statut (OK / KO / attention)
+- Suite : prochaines étapes numérotées
 
-### **Contexte Préservé**
-- **Historique** : Que s'est-il passé ?
-- **Situation** : Où en sommes-nous ?
-- **Objectif** : Que voulons-nous ?
-- **Méthode** : Comment y arriver ?
+### Contexte préservé
+- Historique : que s'est-il passé ?
+- Situation : où en sommes-nous ?
+- Objectif : que voulons-nous ?
+- Méthode : comment y arriver ?
 
 ---
 *Procédures handoff - Septembre 2025 - Coordination optimisée*

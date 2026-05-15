@@ -1,31 +1,31 @@
-# 🔄 DIRECTIVE COPILOTAGE - MODULES GITHUB DYNAMIQUES
+# DIRECTIVE COPILOTAGE — Modules GitHub Dynamiques
 
-## 🎯 NOUVELLE DIRECTIVE STRATÉGIQUE : MODULES GITHUB AUTO-SYNC
+## Directive stratégique : modules GitHub auto-sync
 
-### 🔄 Principe Central
-**Les modules doivent provenir de GitHub et être mis à jour automatiquement à chaque cycle sans interrompre l'exécution Colab.**
+### Principe Central
+Les modules doivent provenir de GitHub et être mis à jour automatiquement à chaque cycle sans interrompre l'exécution Colab.
 
 ### 🚀 Architecture GitHub-Sync
 
-#### 1. **Chargement Modules depuis GitHub**
+### 1. Chargement des modules depuis GitHub
 - Import direct depuis repository GitHub
 - Vérification version à chaque cycle
 - Cache local avec invalidation intelligente
 - Fallback en cas d'indisponibilité réseau
 
-#### 2. **Mise à Jour Sans Interruption**
+### 2. Mise à jour sans interruption
 - Rechargement des modules pendant les pauses
 - Hot-swapping des analyseurs
 - Synchronisation avec cycles de données
 - Rollback automatique en cas d'erreur
 
-#### 3. **Stratégie de Déploiement Continu**
+### 3. Stratégie de déploiement continu
 - Push GitHub → Détection automatique en Colab
 - Test des nouveaux modules en arrière-plan
 - Substitution progressive sans arrêt
 - Validation avant activation
 
-### 🏗️ Structure GitHub-Sync
+## Structure GitHub-Sync
 
 ```
 src/
@@ -40,7 +40,7 @@ src/
 │   └── _fallback/             # Modules de secours
 ```
 
-### 🔄 Cycle de Mise à Jour Intégré
+## Cycle de mise à jour intégré
 
 1. **Début de Cycle**
    - Vérification GitHub pour nouvelles versions
@@ -62,7 +62,7 @@ src/
    - Monitoring performance
    - Feedback GitHub si nécessaire
 
-### 📋 Spécifications Techniques
+## Spécifications techniques
 
 #### Interface GitHub-Loader
 ```python
