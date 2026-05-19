@@ -40,3 +40,6 @@
 [submodule "modules/core/knowledge"]
 	path = modules/core/knowledge
 	url = https://github.com/stephanedenis/nipada-public.git
+[submodule "copilotage"]
+	path = copilotage
+	url = https://github.com/stephanedenis/Panini-Copilotage.git

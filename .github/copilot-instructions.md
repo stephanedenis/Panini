@@ -24,7 +24,7 @@
 
 ```
 Panini/
-├── copilotage/      # Règles, directives et journaux d'agent — lire en priorité
+├── copilotage/      # Submodule Panini-Copilotage — directives et protocoles partagés de l'écosystème
 ├── src/             # Code source principal (package panini_colabmcp)
 ├── modules/         # Submodules actifs (core, orchestration, reactive, publication, missions, data, ontowave)
 ├── docs/            # Documentation, rapports et journaux (docs/journal-de-bord/)
@@ -43,7 +43,7 @@ Panini/
 ### Autonomie
 - **AUTO_TOOL_VALIDATION:** Avant tout `run_in_terminal` ou subprocess direct, proposer l'outil copilotage équivalent.
 - **MISSION_AUTONOMY_ENFORCER:** Pour toute mission estimée > 2h, éliminer toutes les micro-validations.
-- **CONTINUOUS_LEARNING_LOGGER:** Capturer patterns, erreurs et succès dans `copilotage/journal/`.
+- **CONTINUOUS_LEARNING_LOGGER:** Capturer patterns, erreurs et succès dans `docs/journal-de-bord/`.
 
 ### Commandes complexes
 Si une commande dépasse 3 paramètres, chaîne plusieurs outils, ou contient une logique conditionnelle → créer un fichier Python dédié plutôt qu'une commande inline.
@@ -68,16 +68,13 @@ Si une commande dépasse 3 paramètres, chaîne plusieurs outils, ou contient un
 
 **OBLIGATION — tout commit doit être accompagné d'une entrée de journal.**
 
-- **Emplacement :** `docs/journal-de-bord/YYYY-MM-DD.md`
-- **Format du nom :** date locale du jour, **un seul fichier par jour** (ex: `2026-04-25.md`). Pas de suffixe d'heure.
-- **Contenu minimal :**
-  - Résumé des décisions prises durant la session
-  - Raisonnements importants (pourquoi ce choix et pas un autre)
-  - Problèmes rencontrés et solutions retenues
-  - État des travaux en cours (ce qui reste à faire)
-- L'agent doit créer ou mettre à jour l'entrée de journal **avant** d'exécuter le commit.
-- **Avant tout commit, vérifier la date courante** (`date +%Y-%m-%d`) et basculer sur le fichier du jour si la session traverse minuit.
-- Toute nouvelle section dans la même journée s'ajoute au fichier existant — ne jamais créer un second fichier pour la même date.
+Chaque dépôt tient son propre journal dans `docs/journal-de-bord/`. Les règles complètes sont dans `copilotage/regles/REGLES_JOURNAL_v1.md` (submodule Panini-Copilotage).
+
+Résumé des règles :
+- **Emplacement :** `docs/journal-de-bord/YYYY-MM-DD.md` (un seul fichier par jour)
+- **Avant tout commit :** créer/mettre à jour le fichier du jour puis le stager
+- **Vérifier la date :** `date +%Y-%m-%d` — basculer sur le fichier du nouveau jour si la session traverse minuit
+- **Contenu minimal :** contexte, décisions (avec raisonnement), problèmes/solutions, état en fin de session
 
 ## Workflow standard
 
