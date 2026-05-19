@@ -106,3 +106,4 @@ wikipedia_dumps/
 wikipedia_decompressed/
 wikipedia_metadata/
 wikipedia_classifications/
+.coverage
