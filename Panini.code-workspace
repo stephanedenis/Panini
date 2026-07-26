@@ -6,43 +6,43 @@
     },
     {
       "name": "🎯 Copilotage",
-      "path": "./copilotage"
+      "path": "copilotage"
     },
     {
       "name": "💻 Source",
-      "path": "./src"
+      "path": "src"
     },
     {
       "name": "🧩 Modules",
-      "path": "./modules"
-    },
-    {
-      "name": "📚 Documentation",
-      "path": "./docs"
-    },
-    {
-      "name": "📓 Notebooks",
-      "path": "./notebooks"
-    },
-    {
-      "name": "🔨 Scripts",
-      "path": "./scripts"
-    },
-    {
-      "name": "🧪 Tests",
-      "path": "./tests"
+      "path": "modules"
     },
     {
       "name": "🔬 Research",
-      "path": "./research"
+      "path": "research"
+    },
+    {
+      "name": "📚 Documentation",
+      "path": "docs"
+    },
+    {
+      "name": "📓 Notebooks",
+      "path": "notebooks"
+    },
+    {
+      "name": "🔨 Scripts",
+      "path": "scripts"
+    },
+    {
+      "name": "🧪 Tests",
+      "path": "tests"
     },
     {
       "name": "⚙️ Tech",
-      "path": "./tech"
+      "path": "tech"
     },
     {
       "name": "🛠️ Tools",
-      "path": "./tools"
+      "path": "tools"
     }
   ],
   "settings": {
