@@ -1,6 +1,6 @@
 [submodule "research"]
 	path = research
-	url = https://github.com/stephanedenis/Panini-Research.git
+	url = https://github.com/PaniniResearch/Panini-Research.git
 [submodule "modules/core/filesystem"]
 	path = modules/core/filesystem
 	url = https://github.com/stephanedenis/Panini-FS.git
