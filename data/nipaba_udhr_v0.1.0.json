@@ -1,0 +1,8112 @@
+{
+  "format": "nipaba-v0.1.0",
+  "documents": {
+    "udhr_art1_en": {
+      "lang": "eng",
+      "source": "UN Universal Declaration of Human Rights, 1948",
+      "text": "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.",
+      "sentences": 2,
+      "tokens": 30,
+      "graphs": [
+        {
+          "tokens": [
+            {
+              "surface": "all",
+              "lemma": "all",
+              "pos": "DT",
+              "signature": {
+                "atoms": {
+                  "№": 0.5726,
+                  "∆": 0.0164,
+                  "≡": 0.274,
+                  "⊞": 0.137
+                },
+                "dominant": "№"
+              },
+              "index": 0
+            },
+            {
+              "surface": "human",
+              "lemma": "human",
+              "pos": "JJ",
+              "signature": {
+                "atoms": {
+                  "◇": 0.1936,
+                  "∆": 0.0481,
+                  "№": 0.024,
+                  "∃": 0.4005,
+                  "⊙": 0.3338
+                },
+                "dominant": "∃"
+              },
+              "index": 1
+            },
+            {
+              "surface": "beings",
+              "lemma": "being",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.7544,
+                  "⊙": 0.0421,
+                  "⊕": 0.0281,
+                  "≡": 0.1754
+                },
+                "dominant": "∃"
+              },
+              "index": 2,
+              "dhatu": "भू"
+            },
+            {
+              "surface": "are",
+              "lemma": "are",
+              "pos": "AUX",
+              "signature": {
+                "atoms": {
+                  "◇": 0.5556,
+                  "⧖": 0.4444
+                },
+                "dominant": "◇"
+              },
+              "index": 3
+            },
+            {
+              "surface": "born",
+              "lemma": "born",
+              "pos": "VBN",
+              "signature": {
+                "atoms": {
+                  "⊗": 0.3232,
+                  "⧖": 0.287,
+                  "∃": 0.3729,
+                  "◇": 0.0169
+                },
+                "dominant": "∃"
+              },
+              "index": 4,
+              "dhatu": "भू"
+            },
+            {
+              "surface": "free",
+              "lemma": "free",
+              "pos": "JJ",
+              "signature": {
+                "atoms": {
+                  "◇": 0.4944,
+                  "∆": 0.2954,
+                  "№": 0.0225,
+                  "∃": 0.1877
+                },
+                "dominant": "◇"
+              },
+              "index": 5
+            },
+            {
+              "surface": "and",
+              "lemma": "and",
+              "pos": "CC",
+              "signature": {
+                "atoms": {
+                  "≡": 0.5957,
+                  "∼": 0.4043
+                },
+                "dominant": "≡"
+              },
+              "index": 6
+            },
+            {
+              "surface": "equal",
+              "lemma": "equal",
+              "pos": "JJ",
+              "signature": {
+                "atoms": {
+                  "◇": 0.0563,
+                  "∆": 0.1702,
+                  "№": 0.0225,
+                  "≡": 0.438,
+                  "≍": 0.3129
+                },
+                "dominant": "≡"
+              },
+              "index": 7
+            },
+            {
+              "surface": "in",
+              "lemma": "in",
+              "pos": "IN",
+              "signature": {
+                "atoms": {
+                  "⊕": 0.7049,
+                  "∼": 0.2951
+                },
+                "dominant": "⊕"
+              },
+              "index": 8
+            },
+            {
+              "surface": "dignity",
+              "lemma": "dignity",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4907,
+                  "⊙": 0.0447,
+                  "⊕": 0.0298,
+                  "◇": 0.3106,
+                  "⊞": 0.1242
+                },
+                "dominant": "∃"
+              },
+              "index": 9
+            },
+            {
+              "surface": "and",
+              "lemma": "and",
+              "pos": "CC",
+              "signature": {
+                "atoms": {
+                  "≡": 0.5957,
+                  "∼": 0.4043
+                },
+                "dominant": "≡"
+              },
+              "index": 10
+            },
+            {
+              "surface": "rights",
+              "lemma": "right",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.0559,
+                  "⊙": 0.2311,
+                  "⊕": 0.0298,
+                  "◇": 0.3727,
+                  "≡": 0.3106
+                },
+                "dominant": "◇"
+              },
+              "index": 11
+            }
+          ],
+          "edges": [
+            {
+              "source": 0,
+              "target": 1,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 1,
+              "target": 2,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 2,
+              "target": 3,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 3,
+              "target": 4,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 4,
+              "target": 5,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 5,
+              "target": 6,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 6,
+              "target": 7,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 7,
+              "target": 8,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 8,
+              "target": 9,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 9,
+              "target": 10,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 10,
+              "target": 11,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 2,
+              "target": 1,
+              "type": "DEP",
+              "weight": 0.7291
+            },
+            {
+              "source": 2,
+              "target": 9,
+              "type": "DEP",
+              "weight": 0.8057
+            },
+            {
+              "source": 4,
+              "target": 9,
+              "type": "DEP",
+              "weight": 0.5527
+            },
+            {
+              "source": 6,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            }
+          ],
+          "token_count": 12,
+          "edge_count": 15
+        },
+        {
+          "tokens": [
+            {
+              "surface": "they",
+              "lemma": "they",
+              "pos": "PRP",
+              "signature": {
+                "atoms": {
+                  "⊙": 0.7887,
+                  "∃": 0.2113
+                },
+                "dominant": "⊙"
+              },
+              "index": 12
+            },
+            {
+              "surface": "are",
+              "lemma": "are",
+              "pos": "AUX",
+              "signature": {
+                "atoms": {
+                  "◇": 0.5556,
+                  "⧖": 0.4444
+                },
+                "dominant": "◇"
+              },
+              "index": 13
+            },
+            {
+              "surface": "endowed",
+              "lemma": "endowed",
+              "pos": "VBN",
+              "signature": {
+                "atoms": {
+                  "⊗": 0.4024,
+                  "⧖": 0.0647,
+                  "∃": 0.2156,
+                  "◇": 0.018,
+                  "∼": 0.2994
+                },
+                "dominant": "⊗"
+              },
+              "index": 14,
+              "dhatu": "दा"
+            },
+            {
+              "surface": "with",
+              "lemma": "with",
+              "pos": "IN",
+              "signature": {
+                "atoms": {
+                  "⊕": 0.4107,
+                  "∼": 0.5893
+                },
+                "dominant": "∼"
+              },
+              "index": 15
+            },
+            {
+              "surface": "reason",
+              "lemma": "reason",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.0559,
+                  "⊙": 0.2311,
+                  "⊕": 0.0298,
+                  "λ": 0.3727,
+                  "◇": 0.3106
+                },
+                "dominant": "λ"
+              },
+              "index": 16,
+              "dhatu": "ज्ञा"
+            },
+            {
+              "surface": "and",
+              "lemma": "and",
+              "pos": "CC",
+              "signature": {
+                "atoms": {
+                  "≡": 0.5957,
+                  "∼": 0.4043
+                },
+                "dominant": "≡"
+              },
+              "index": 17
+            },
+            {
+              "surface": "conscience",
+              "lemma": "conscience",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.2865,
+                  "⊙": 0.3345,
+                  "⊕": 0.0281,
+                  "◇": 0.3509
+                },
+                "dominant": "◇"
+              },
+              "index": 18
+            },
+            {
+              "surface": "and",
+              "lemma": "and",
+              "pos": "CC",
+              "signature": {
+                "atoms": {
+                  "≡": 0.5957,
+                  "∼": 0.4043
+                },
+                "dominant": "≡"
+              },
+              "index": 19
+            },
+            {
+              "surface": "should",
+              "lemma": "should",
+              "pos": "AUX",
+              "signature": {
+                "atoms": {
+                  "◇": 0.7528,
+                  "⧖": 0.0341,
+                  "⊗": 0.2131
+                },
+                "dominant": "◇"
+              },
+              "index": 20,
+              "dhatu": "मन्"
+            },
+            {
+              "surface": "act",
+              "lemma": "act",
+              "pos": "VB",
+              "signature": {
+                "atoms": {
+                  "⊗": 0.5833,
+                  "⧖": 0.1574,
+                  "∼": 0.0278,
+                  "⊙": 0.2315
+                },
+                "dominant": "⊗"
+              },
+              "index": 21,
+              "dhatu": "कृ"
+            },
+            {
+              "surface": "towards",
+              "lemma": "toward",
+              "pos": "IN",
+              "signature": {
+                "atoms": {
+                  "⊕": 0.0492,
+                  "∼": 0.2951,
+                  "↗": 0.6557
+                },
+                "dominant": "↗"
+              },
+              "index": 22
+            },
+            {
+              "surface": "one",
+              "lemma": "one",
+              "pos": "PRP",
+              "signature": {
+                "atoms": {
+                  "⊙": 0.3443,
+                  "№": 0.6557
+                },
+                "dominant": "№"
+              },
+              "index": 23
+            },
+            {
+              "surface": "another",
+              "lemma": "another",
+              "pos": "DT",
+              "signature": {
+                "atoms": {
+                  "№": 0.034,
+                  "∆": 0.5887,
+                  "⊙": 0.3774
+                },
+                "dominant": "∆"
+              },
+              "index": 24
+            },
+            {
+              "surface": "in",
+              "lemma": "in",
+              "pos": "IN",
+              "signature": {
+                "atoms": {
+                  "⊕": 0.7049,
+                  "∼": 0.2951
+                },
+                "dominant": "⊕"
+              },
+              "index": 25
+            },
+            {
+              "surface": "a",
+              "lemma": "a",
+              "pos": "DT",
+              "signature": {
+                "atoms": {
+                  "№": 0.85,
+                  "∆": 0.15
+                },
+                "dominant": "№"
+              },
+              "index": 26
+            },
+            {
+              "surface": "spirit",
+              "lemma": "spirit",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4184,
+                  "⊙": 0.0511,
+                  "⊕": 0.2468,
+                  "◇": 0.2837
+                },
+                "dominant": "∃"
+              },
+              "index": 27,
+              "dhatu": "बुध्"
+            },
+            {
+              "surface": "of",
+              "lemma": "of",
+              "pos": "IN",
+              "signature": {
+                "atoms": {
+                  "⊕": 0.2549,
+                  "∼": 0.7451
+                },
+                "dominant": "∼"
+              },
+              "index": 28
+            },
+            {
+              "surface": "brotherhood",
+              "lemma": "brotherhood",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.326,
+                  "⊙": 0.2608,
+                  "⊕": 0.0265,
+                  "∼": 0.3867
+                },
+                "dominant": "∼"
+              },
+              "index": 29
+            }
+          ],
+          "edges": [
+            {
+              "source": 0,
+              "target": 1,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 1,
+              "target": 2,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 2,
+              "target": 3,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 3,
+              "target": 4,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 4,
+              "target": 5,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 5,
+              "target": 6,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 6,
+              "target": 7,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 7,
+              "target": 8,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 8,
+              "target": 9,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 9,
+              "target": 10,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 10,
+              "target": 11,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 11,
+              "target": 12,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 12,
+              "target": 13,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 13,
+              "target": 14,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 14,
+              "target": 15,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 15,
+              "target": 16,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 16,
+              "target": 17,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 8,
+              "target": 1,
+              "type": "DEP",
+              "weight": 0.7779
+            },
+            {
+              "source": 2,
+              "target": 16,
+              "type": "DEP",
+              "weight": 0.515
+            },
+            {
+              "source": 2,
+              "target": 17,
+              "type": "DEP",
+              "weight": 0.5938
+            },
+            {
+              "source": 3,
+              "target": 16,
+              "type": "COORD",
+              "weight": 0.9613
+            },
+            {
+              "source": 4,
+              "target": 6,
+              "type": "DEP",
+              "weight": 0.6659
+            },
+            {
+              "source": 5,
+              "target": 7,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 6,
+              "type": "DEP",
+              "weight": 0.5983
+            },
+            {
+              "source": 15,
+              "target": 6,
+              "type": "DEP",
+              "weight": 0.7644
+            },
+            {
+              "source": 8,
+              "target": 9,
+              "type": "CTRL",
+              "weight": 0.85
+            }
+          ],
+          "token_count": 18,
+          "edge_count": 26
+        }
+      ]
+    },
+    "udhr_art1_fr": {
+      "lang": "fra",
+      "source": "Déclaration universelle des droits de l'homme, ONU 1948",
+      "text": "Tous les êtres humains naissent libres et égaux en dignité et en droits. Ils sont doués de raison et de conscience et doivent agir les uns envers les autres dans un esprit de fraternité.",
+      "sentences": 2,
+      "tokens": 34,
+      "graphs": [
+        {
+          "tokens": [
+            {
+              "surface": "tous",
+              "lemma": "tou",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 30
+            },
+            {
+              "surface": "les",
+              "lemma": "le",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 31
+            },
+            {
+              "surface": "êtres",
+              "lemma": "être",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 32
+            },
+            {
+              "surface": "humains",
+              "lemma": "humain",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 33
+            },
+            {
+              "surface": "naissent",
+              "lemma": "naissent",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 34
+            },
+            {
+              "surface": "libres",
+              "lemma": "libre",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 35
+            },
+            {
+              "surface": "et",
+              "lemma": "et",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 36
+            },
+            {
+              "surface": "égaux",
+              "lemma": "égaux",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 37
+            },
+            {
+              "surface": "en",
+              "lemma": "en",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 38
+            },
+            {
+              "surface": "dignité",
+              "lemma": "dignité",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 39
+            },
+            {
+              "surface": "et",
+              "lemma": "et",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 40
+            },
+            {
+              "surface": "en",
+              "lemma": "en",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 41
+            },
+            {
+              "surface": "droits",
+              "lemma": "droit",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 42
+            }
+          ],
+          "edges": [
+            {
+              "source": 0,
+              "target": 1,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 1,
+              "target": 2,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 2,
+              "target": 3,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 3,
+              "target": 4,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 4,
+              "target": 5,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 5,
+              "target": 6,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 6,
+              "target": 7,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 7,
+              "target": 8,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 8,
+              "target": 9,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 9,
+              "target": 10,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 10,
+              "target": 11,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 11,
+              "target": 12,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 0,
+              "target": 1,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 2,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 3,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 4,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 7,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 2,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 3,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 4,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 7,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 3,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 4,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 7,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 4,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 7,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 7,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 7,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 7,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 7,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 7,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 7,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 7,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 7,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            }
+          ],
+          "token_count": 13,
+          "edge_count": 90
+        },
+        {
+          "tokens": [
+            {
+              "surface": "ils",
+              "lemma": "il",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 43
+            },
+            {
+              "surface": "sont",
+              "lemma": "sont",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 44
+            },
+            {
+              "surface": "doués",
+              "lemma": "doué",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 45
+            },
+            {
+              "surface": "de",
+              "lemma": "de",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 46
+            },
+            {
+              "surface": "raison",
+              "lemma": "raison",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 47
+            },
+            {
+              "surface": "et",
+              "lemma": "et",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 48
+            },
+            {
+              "surface": "de",
+              "lemma": "de",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 49
+            },
+            {
+              "surface": "conscience",
+              "lemma": "conscience",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.2865,
+                  "⊙": 0.3345,
+                  "⊕": 0.0281,
+                  "◇": 0.3509
+                },
+                "dominant": "◇"
+              },
+              "index": 50
+            },
+            {
+              "surface": "et",
+              "lemma": "et",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 51
+            },
+            {
+              "surface": "doivent",
+              "lemma": "doivent",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 52
+            },
+            {
+              "surface": "agir",
+              "lemma": "agir",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 53
+            },
+            {
+              "surface": "les",
+              "lemma": "le",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 54
+            },
+            {
+              "surface": "uns",
+              "lemma": "un",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 55
+            },
+            {
+              "surface": "envers",
+              "lemma": "enver",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 56
+            },
+            {
+              "surface": "les",
+              "lemma": "le",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 57
+            },
+            {
+              "surface": "autres",
+              "lemma": "autre",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 58
+            },
+            {
+              "surface": "dans",
+              "lemma": "dan",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 59
+            },
+            {
+              "surface": "un",
+              "lemma": "un",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 60
+            },
+            {
+              "surface": "esprit",
+              "lemma": "esprit",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 61
+            },
+            {
+              "surface": "de",
+              "lemma": "de",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 62
+            },
+            {
+              "surface": "fraternité",
+              "lemma": "fraternité",
+              "pos": "NN",
+              "signature": {
+                "atoms": {
+                  "∃": 0.4286,
+                  "⊙": 0.3429,
+                  "⊕": 0.2286
+                },
+                "dominant": "∃"
+              },
+              "index": 63
+            }
+          ],
+          "edges": [
+            {
+              "source": 0,
+              "target": 1,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 1,
+              "target": 2,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 2,
+              "target": 3,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 3,
+              "target": 4,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 4,
+              "target": 5,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 5,
+              "target": 6,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 6,
+              "target": 7,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 7,
+              "target": 8,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 8,
+              "target": 9,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 9,
+              "target": 10,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 10,
+              "target": 11,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 11,
+              "target": 12,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 12,
+              "target": 13,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 13,
+              "target": 14,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 14,
+              "target": 15,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 15,
+              "target": 16,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 16,
+              "target": 17,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 18,
+              "target": 19,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 19,
+              "target": 20,
+              "type": "ORDER",
+              "weight": 0.99
+            },
+            {
+              "source": 0,
+              "target": 1,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 2,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 3,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 4,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 0,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 2,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 3,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 4,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 1,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 3,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 4,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 2,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 4,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 3,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 5,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 4,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 6,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 5,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 8,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 6,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 9,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 8,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 10,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 9,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 11,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 10,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 12,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 11,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 12,
+              "target": 13,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 12,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 12,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 12,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 12,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 12,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 12,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 12,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 13,
+              "target": 14,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 13,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 13,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 13,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 13,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 13,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 13,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 14,
+              "target": 15,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 14,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 14,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 14,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 14,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 14,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 15,
+              "target": 16,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 15,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 15,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 15,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 15,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 16,
+              "target": 17,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 16,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 16,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 16,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 17,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 17,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 18,
+              "target": 19,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 18,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            },
+            {
+              "source": 19,
+              "target": 20,
+              "type": "COORD",
+              "weight": 1.0
+            }
+          ],
+          "token_count": 21,
+          "edge_count": 210
+        }
+      ]
+    }
+  },
+  "global_graph": {
+    "tokens": [
+      {
+        "surface": "all",
+        "lemma": "all",
+        "pos": "DT",
+        "signature": {
+          "atoms": {
+            "№": 0.5726,
+            "∆": 0.0164,
+            "≡": 0.274,
+            "⊞": 0.137
+          },
+          "dominant": "№"
+        },
+        "index": 0
+      },
+      {
+        "surface": "human",
+        "lemma": "human",
+        "pos": "JJ",
+        "signature": {
+          "atoms": {
+            "◇": 0.1936,
+            "∆": 0.0481,
+            "№": 0.024,
+            "∃": 0.4005,
+            "⊙": 0.3338
+          },
+          "dominant": "∃"
+        },
+        "index": 1
+      },
+      {
+        "surface": "beings",
+        "lemma": "being",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.7544,
+            "⊙": 0.0421,
+            "⊕": 0.0281,
+            "≡": 0.1754
+          },
+          "dominant": "∃"
+        },
+        "index": 2,
+        "dhatu": "भू"
+      },
+      {
+        "surface": "are",
+        "lemma": "are",
+        "pos": "AUX",
+        "signature": {
+          "atoms": {
+            "◇": 0.5556,
+            "⧖": 0.4444
+          },
+          "dominant": "◇"
+        },
+        "index": 3
+      },
+      {
+        "surface": "born",
+        "lemma": "born",
+        "pos": "VBN",
+        "signature": {
+          "atoms": {
+            "⊗": 0.3232,
+            "⧖": 0.287,
+            "∃": 0.3729,
+            "◇": 0.0169
+          },
+          "dominant": "∃"
+        },
+        "index": 4,
+        "dhatu": "भू"
+      },
+      {
+        "surface": "free",
+        "lemma": "free",
+        "pos": "JJ",
+        "signature": {
+          "atoms": {
+            "◇": 0.4944,
+            "∆": 0.2954,
+            "№": 0.0225,
+            "∃": 0.1877
+          },
+          "dominant": "◇"
+        },
+        "index": 5
+      },
+      {
+        "surface": "and",
+        "lemma": "and",
+        "pos": "CC",
+        "signature": {
+          "atoms": {
+            "≡": 0.5957,
+            "∼": 0.4043
+          },
+          "dominant": "≡"
+        },
+        "index": 6
+      },
+      {
+        "surface": "equal",
+        "lemma": "equal",
+        "pos": "JJ",
+        "signature": {
+          "atoms": {
+            "◇": 0.0563,
+            "∆": 0.1702,
+            "№": 0.0225,
+            "≡": 0.438,
+            "≍": 0.3129
+          },
+          "dominant": "≡"
+        },
+        "index": 7
+      },
+      {
+        "surface": "in",
+        "lemma": "in",
+        "pos": "IN",
+        "signature": {
+          "atoms": {
+            "⊕": 0.7049,
+            "∼": 0.2951
+          },
+          "dominant": "⊕"
+        },
+        "index": 8
+      },
+      {
+        "surface": "dignity",
+        "lemma": "dignity",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4907,
+            "⊙": 0.0447,
+            "⊕": 0.0298,
+            "◇": 0.3106,
+            "⊞": 0.1242
+          },
+          "dominant": "∃"
+        },
+        "index": 9
+      },
+      {
+        "surface": "and",
+        "lemma": "and",
+        "pos": "CC",
+        "signature": {
+          "atoms": {
+            "≡": 0.5957,
+            "∼": 0.4043
+          },
+          "dominant": "≡"
+        },
+        "index": 10
+      },
+      {
+        "surface": "rights",
+        "lemma": "right",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.0559,
+            "⊙": 0.2311,
+            "⊕": 0.0298,
+            "◇": 0.3727,
+            "≡": 0.3106
+          },
+          "dominant": "◇"
+        },
+        "index": 11
+      },
+      {
+        "surface": "they",
+        "lemma": "they",
+        "pos": "PRP",
+        "signature": {
+          "atoms": {
+            "⊙": 0.7887,
+            "∃": 0.2113
+          },
+          "dominant": "⊙"
+        },
+        "index": 12
+      },
+      {
+        "surface": "are",
+        "lemma": "are",
+        "pos": "AUX",
+        "signature": {
+          "atoms": {
+            "◇": 0.5556,
+            "⧖": 0.4444
+          },
+          "dominant": "◇"
+        },
+        "index": 13
+      },
+      {
+        "surface": "endowed",
+        "lemma": "endowed",
+        "pos": "VBN",
+        "signature": {
+          "atoms": {
+            "⊗": 0.4024,
+            "⧖": 0.0647,
+            "∃": 0.2156,
+            "◇": 0.018,
+            "∼": 0.2994
+          },
+          "dominant": "⊗"
+        },
+        "index": 14,
+        "dhatu": "दा"
+      },
+      {
+        "surface": "with",
+        "lemma": "with",
+        "pos": "IN",
+        "signature": {
+          "atoms": {
+            "⊕": 0.4107,
+            "∼": 0.5893
+          },
+          "dominant": "∼"
+        },
+        "index": 15
+      },
+      {
+        "surface": "reason",
+        "lemma": "reason",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.0559,
+            "⊙": 0.2311,
+            "⊕": 0.0298,
+            "λ": 0.3727,
+            "◇": 0.3106
+          },
+          "dominant": "λ"
+        },
+        "index": 16,
+        "dhatu": "ज्ञा"
+      },
+      {
+        "surface": "and",
+        "lemma": "and",
+        "pos": "CC",
+        "signature": {
+          "atoms": {
+            "≡": 0.5957,
+            "∼": 0.4043
+          },
+          "dominant": "≡"
+        },
+        "index": 17
+      },
+      {
+        "surface": "conscience",
+        "lemma": "conscience",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.2865,
+            "⊙": 0.3345,
+            "⊕": 0.0281,
+            "◇": 0.3509
+          },
+          "dominant": "◇"
+        },
+        "index": 18
+      },
+      {
+        "surface": "and",
+        "lemma": "and",
+        "pos": "CC",
+        "signature": {
+          "atoms": {
+            "≡": 0.5957,
+            "∼": 0.4043
+          },
+          "dominant": "≡"
+        },
+        "index": 19
+      },
+      {
+        "surface": "should",
+        "lemma": "should",
+        "pos": "AUX",
+        "signature": {
+          "atoms": {
+            "◇": 0.7528,
+            "⧖": 0.0341,
+            "⊗": 0.2131
+          },
+          "dominant": "◇"
+        },
+        "index": 20,
+        "dhatu": "मन्"
+      },
+      {
+        "surface": "act",
+        "lemma": "act",
+        "pos": "VB",
+        "signature": {
+          "atoms": {
+            "⊗": 0.5833,
+            "⧖": 0.1574,
+            "∼": 0.0278,
+            "⊙": 0.2315
+          },
+          "dominant": "⊗"
+        },
+        "index": 21,
+        "dhatu": "कृ"
+      },
+      {
+        "surface": "towards",
+        "lemma": "toward",
+        "pos": "IN",
+        "signature": {
+          "atoms": {
+            "⊕": 0.0492,
+            "∼": 0.2951,
+            "↗": 0.6557
+          },
+          "dominant": "↗"
+        },
+        "index": 22
+      },
+      {
+        "surface": "one",
+        "lemma": "one",
+        "pos": "PRP",
+        "signature": {
+          "atoms": {
+            "⊙": 0.3443,
+            "№": 0.6557
+          },
+          "dominant": "№"
+        },
+        "index": 23
+      },
+      {
+        "surface": "another",
+        "lemma": "another",
+        "pos": "DT",
+        "signature": {
+          "atoms": {
+            "№": 0.034,
+            "∆": 0.5887,
+            "⊙": 0.3774
+          },
+          "dominant": "∆"
+        },
+        "index": 24
+      },
+      {
+        "surface": "in",
+        "lemma": "in",
+        "pos": "IN",
+        "signature": {
+          "atoms": {
+            "⊕": 0.7049,
+            "∼": 0.2951
+          },
+          "dominant": "⊕"
+        },
+        "index": 25
+      },
+      {
+        "surface": "a",
+        "lemma": "a",
+        "pos": "DT",
+        "signature": {
+          "atoms": {
+            "№": 0.85,
+            "∆": 0.15
+          },
+          "dominant": "№"
+        },
+        "index": 26
+      },
+      {
+        "surface": "spirit",
+        "lemma": "spirit",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4184,
+            "⊙": 0.0511,
+            "⊕": 0.2468,
+            "◇": 0.2837
+          },
+          "dominant": "∃"
+        },
+        "index": 27,
+        "dhatu": "बुध्"
+      },
+      {
+        "surface": "of",
+        "lemma": "of",
+        "pos": "IN",
+        "signature": {
+          "atoms": {
+            "⊕": 0.2549,
+            "∼": 0.7451
+          },
+          "dominant": "∼"
+        },
+        "index": 28
+      },
+      {
+        "surface": "brotherhood",
+        "lemma": "brotherhood",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.326,
+            "⊙": 0.2608,
+            "⊕": 0.0265,
+            "∼": 0.3867
+          },
+          "dominant": "∼"
+        },
+        "index": 29
+      },
+      {
+        "surface": "tous",
+        "lemma": "tou",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 30
+      },
+      {
+        "surface": "les",
+        "lemma": "le",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 31
+      },
+      {
+        "surface": "êtres",
+        "lemma": "être",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 32
+      },
+      {
+        "surface": "humains",
+        "lemma": "humain",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 33
+      },
+      {
+        "surface": "naissent",
+        "lemma": "naissent",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 34
+      },
+      {
+        "surface": "libres",
+        "lemma": "libre",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 35
+      },
+      {
+        "surface": "et",
+        "lemma": "et",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 36
+      },
+      {
+        "surface": "égaux",
+        "lemma": "égaux",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 37
+      },
+      {
+        "surface": "en",
+        "lemma": "en",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 38
+      },
+      {
+        "surface": "dignité",
+        "lemma": "dignité",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 39
+      },
+      {
+        "surface": "et",
+        "lemma": "et",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 40
+      },
+      {
+        "surface": "en",
+        "lemma": "en",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 41
+      },
+      {
+        "surface": "droits",
+        "lemma": "droit",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 42
+      },
+      {
+        "surface": "ils",
+        "lemma": "il",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 43
+      },
+      {
+        "surface": "sont",
+        "lemma": "sont",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 44
+      },
+      {
+        "surface": "doués",
+        "lemma": "doué",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 45
+      },
+      {
+        "surface": "de",
+        "lemma": "de",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 46
+      },
+      {
+        "surface": "raison",
+        "lemma": "raison",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 47
+      },
+      {
+        "surface": "et",
+        "lemma": "et",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 48
+      },
+      {
+        "surface": "de",
+        "lemma": "de",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 49
+      },
+      {
+        "surface": "conscience",
+        "lemma": "conscience",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.2865,
+            "⊙": 0.3345,
+            "⊕": 0.0281,
+            "◇": 0.3509
+          },
+          "dominant": "◇"
+        },
+        "index": 50
+      },
+      {
+        "surface": "et",
+        "lemma": "et",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 51
+      },
+      {
+        "surface": "doivent",
+        "lemma": "doivent",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 52
+      },
+      {
+        "surface": "agir",
+        "lemma": "agir",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 53
+      },
+      {
+        "surface": "les",
+        "lemma": "le",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 54
+      },
+      {
+        "surface": "uns",
+        "lemma": "un",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 55
+      },
+      {
+        "surface": "envers",
+        "lemma": "enver",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 56
+      },
+      {
+        "surface": "les",
+        "lemma": "le",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 57
+      },
+      {
+        "surface": "autres",
+        "lemma": "autre",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 58
+      },
+      {
+        "surface": "dans",
+        "lemma": "dan",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 59
+      },
+      {
+        "surface": "un",
+        "lemma": "un",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 60
+      },
+      {
+        "surface": "esprit",
+        "lemma": "esprit",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 61
+      },
+      {
+        "surface": "de",
+        "lemma": "de",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 62
+      },
+      {
+        "surface": "fraternité",
+        "lemma": "fraternité",
+        "pos": "NN",
+        "signature": {
+          "atoms": {
+            "∃": 0.4286,
+            "⊙": 0.3429,
+            "⊕": 0.2286
+          },
+          "dominant": "∃"
+        },
+        "index": 63
+      }
+    ],
+    "edges": [
+      {
+        "source": 0,
+        "target": 1,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 1,
+        "target": 2,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 2,
+        "target": 3,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 3,
+        "target": 4,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 4,
+        "target": 5,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 5,
+        "target": 6,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 6,
+        "target": 7,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 7,
+        "target": 8,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 8,
+        "target": 9,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 9,
+        "target": 10,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 10,
+        "target": 11,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 11,
+        "target": 12,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 12,
+        "target": 13,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 13,
+        "target": 14,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 14,
+        "target": 15,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 15,
+        "target": 16,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 16,
+        "target": 17,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 17,
+        "target": 18,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 18,
+        "target": 19,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 19,
+        "target": 20,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 20,
+        "target": 21,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 21,
+        "target": 22,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 22,
+        "target": 23,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 23,
+        "target": 24,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 24,
+        "target": 25,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 25,
+        "target": 26,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 26,
+        "target": 27,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 27,
+        "target": 28,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 28,
+        "target": 29,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 29,
+        "target": 30,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 30,
+        "target": 31,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 31,
+        "target": 32,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 32,
+        "target": 33,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 33,
+        "target": 34,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 34,
+        "target": 35,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 35,
+        "target": 36,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 36,
+        "target": 37,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 37,
+        "target": 38,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 38,
+        "target": 39,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 39,
+        "target": 40,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 40,
+        "target": 41,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 41,
+        "target": 42,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 42,
+        "target": 43,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 43,
+        "target": 44,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 44,
+        "target": 45,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 45,
+        "target": 46,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 46,
+        "target": 47,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 47,
+        "target": 48,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 48,
+        "target": 49,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 49,
+        "target": 50,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 50,
+        "target": 51,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 51,
+        "target": 52,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 52,
+        "target": 53,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 53,
+        "target": 54,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 54,
+        "target": 55,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 55,
+        "target": 56,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 56,
+        "target": 57,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 57,
+        "target": 58,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 58,
+        "target": 59,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 59,
+        "target": 60,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 60,
+        "target": 61,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 61,
+        "target": 62,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 62,
+        "target": 63,
+        "type": "ORDER",
+        "weight": 0.99
+      },
+      {
+        "source": 2,
+        "target": 1,
+        "type": "DEP",
+        "weight": 0.7291
+      },
+      {
+        "source": 16,
+        "target": 1,
+        "type": "DEP",
+        "weight": 0.5281
+      },
+      {
+        "source": 1,
+        "target": 18,
+        "type": "COORD",
+        "weight": 0.9343
+      },
+      {
+        "source": 27,
+        "target": 1,
+        "type": "DEP",
+        "weight": 0.759
+      },
+      {
+        "source": 1,
+        "target": 50,
+        "type": "COORD",
+        "weight": 0.9343
+      },
+      {
+        "source": 2,
+        "target": 9,
+        "type": "DEP",
+        "weight": 0.8057
+      },
+      {
+        "source": 2,
+        "target": 18,
+        "type": "DEP",
+        "weight": 0.5279
+      },
+      {
+        "source": 2,
+        "target": 29,
+        "type": "DEP",
+        "weight": 0.5827
+      },
+      {
+        "source": 2,
+        "target": 30,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 31,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 32,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 33,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 34,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 35,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 36,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 37,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 38,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 39,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 40,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 41,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 42,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 43,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 44,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 45,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 46,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 47,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 48,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 49,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 50,
+        "type": "DEP",
+        "weight": 0.5279
+      },
+      {
+        "source": 2,
+        "target": 51,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 52,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 53,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 54,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 55,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 56,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 57,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 58,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 59,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 60,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 61,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 62,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 2,
+        "target": 63,
+        "type": "DEP",
+        "weight": 0.7458
+      },
+      {
+        "source": 3,
+        "target": 13,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 20,
+        "target": 3,
+        "type": "DEP",
+        "weight": 0.7779
+      },
+      {
+        "source": 4,
+        "target": 9,
+        "type": "DEP",
+        "weight": 0.5527
+      },
+      {
+        "source": 16,
+        "target": 5,
+        "type": "DEP",
+        "weight": 0.5002
+      },
+      {
+        "source": 20,
+        "target": 5,
+        "type": "DEP",
+        "weight": 0.784
+      },
+      {
+        "source": 27,
+        "target": 5,
+        "type": "DEP",
+        "weight": 0.639
+      },
+      {
+        "source": 6,
+        "target": 10,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 6,
+        "target": 17,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 6,
+        "target": 19,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 8,
+        "target": 25,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 20,
+        "target": 9,
+        "type": "DEP",
+        "weight": 0.5007
+      },
+      {
+        "source": 27,
+        "target": 9,
+        "type": "DEP",
+        "weight": 0.8998
+      },
+      {
+        "source": 10,
+        "target": 17,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 10,
+        "target": 19,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 16,
+        "target": 11,
+        "type": "DEP",
+        "weight": 0.5915
+      },
+      {
+        "source": 20,
+        "target": 11,
+        "type": "DEP",
+        "weight": 0.6621
+      },
+      {
+        "source": 20,
+        "target": 13,
+        "type": "DEP",
+        "weight": 0.7779
+      },
+      {
+        "source": 14,
+        "target": 28,
+        "type": "DEP",
+        "weight": 0.515
+      },
+      {
+        "source": 14,
+        "target": 29,
+        "type": "DEP",
+        "weight": 0.5938
+      },
+      {
+        "source": 15,
+        "target": 28,
+        "type": "COORD",
+        "weight": 0.9613
+      },
+      {
+        "source": 16,
+        "target": 18,
+        "type": "DEP",
+        "weight": 0.6659
+      },
+      {
+        "source": 16,
+        "target": 50,
+        "type": "DEP",
+        "weight": 0.6659
+      },
+      {
+        "source": 17,
+        "target": 19,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 20,
+        "target": 18,
+        "type": "DEP",
+        "weight": 0.5983
+      },
+      {
+        "source": 27,
+        "target": 18,
+        "type": "DEP",
+        "weight": 0.7644
+      },
+      {
+        "source": 18,
+        "target": 50,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 20,
+        "target": 50,
+        "type": "DEP",
+        "weight": 0.5983
+      },
+      {
+        "source": 27,
+        "target": 30,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 31,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 32,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 33,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 34,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 35,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 36,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 37,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 38,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 39,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 40,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 41,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 42,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 43,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 44,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 45,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 46,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 47,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 48,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 49,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 50,
+        "type": "DEP",
+        "weight": 0.7644
+      },
+      {
+        "source": 27,
+        "target": 51,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 52,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 53,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 54,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 55,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 56,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 57,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 58,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 59,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 60,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 61,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 62,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 27,
+        "target": 63,
+        "type": "DEP",
+        "weight": 0.7541
+      },
+      {
+        "source": 30,
+        "target": 31,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 32,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 33,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 34,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 35,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 36,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 37,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 38,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 30,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 32,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 33,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 34,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 35,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 36,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 37,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 38,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 31,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 33,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 34,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 35,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 36,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 37,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 38,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 32,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 34,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 35,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 36,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 37,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 38,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 33,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 35,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 36,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 37,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 38,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 34,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 36,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 37,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 38,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 35,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 37,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 38,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 36,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 38,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 37,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 39,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 38,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 40,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 39,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 41,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 40,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 42,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 41,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 43,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 42,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 44,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 43,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 45,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 44,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 46,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 45,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 47,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 46,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 48,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 47,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 49,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 48,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 51,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 49,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 52,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 51,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 53,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 52,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 54,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 53,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 55,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 54,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 55,
+        "target": 56,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 55,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 55,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 55,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 55,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 55,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 55,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 55,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 56,
+        "target": 57,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 56,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 56,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 56,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 56,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 56,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 56,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 57,
+        "target": 58,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 57,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 57,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 57,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 57,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 57,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 58,
+        "target": 59,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 58,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 58,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 58,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 58,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 59,
+        "target": 60,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 59,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 59,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 59,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 60,
+        "target": 61,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 60,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 60,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 61,
+        "target": 62,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 61,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 62,
+        "target": 63,
+        "type": "COORD",
+        "weight": 1.0
+      },
+      {
+        "source": 5,
+        "target": 24,
+        "type": "OPP",
+        "weight": 0.5884
+      },
+      {
+        "source": 20,
+        "target": 21,
+        "type": "CTRL",
+        "weight": 0.85
+      }
+    ],
+    "token_count": 64,
+    "edge_count": 696
+  },
+  "global_stats": {
+    "documents": 2,
+    "total_tokens": 64,
+    "total_edges": 696
+  }
+}
