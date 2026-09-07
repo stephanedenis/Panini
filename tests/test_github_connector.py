@@ -11,7 +11,7 @@ Tests:
 """
 
 import pytest
-from datetime import datetime
+from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
 
@@ -186,7 +186,7 @@ class TestGitHubConnectorWorkflowDispatch:
 
         assert "created_at" in result
         created = datetime.fromisoformat(result["created_at"])
-        assert created <= datetime.utcnow()
+        assert created <= datetime.now(timezone.utc)
 
     async def test_dispatch_payload_passed_to_workflow(self, mock_github_connector):
         """Should make payload available to GitHub Actions workflow."""

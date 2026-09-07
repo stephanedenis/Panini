@@ -11,7 +11,7 @@ Tests:
 """
 
 import pytest
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from unittest.mock import AsyncMock, MagicMock, patch
 
 
@@ -105,14 +105,14 @@ class TestOAuthManagerTokenValidity:
 
         # Artificially set expiry to past
         mock_oauth_manager._token_store[account]["expiry"] = (
-            datetime.utcnow() - timedelta(hours=1)
+            datetime.now(timezone.utc) - timedelta(hours=1)
         ).isoformat()
 
         token = mock_oauth_manager._token_store[account]
         expiry = datetime.fromisoformat(token["expiry"])
 
         # Token is expired
-        assert expiry < datetime.utcnow()
+        assert expiry < datetime.now(timezone.utc)
 
     def test_is_token_valid_handles_missing_expiry(self, mock_oauth_manager):
         """Should handle tokens without expiry field gracefully."""
@@ -254,7 +254,7 @@ class TestOAuthManagerErrorHandling:
 
         # Set expiry 1 second in past (clock skew)
         mock_oauth_manager._token_store[account]["expiry"] = (
-            datetime.utcnow() - timedelta(seconds=1)
+            datetime.now(timezone.utc) - timedelta(seconds=1)
         ).isoformat()
 
         expiry = datetime.fromisoformat(
@@ -262,4 +262,4 @@ class TestOAuthManagerErrorHandling:
         )
 
         # Token should be considered expired (with no grace period)
-        assert expiry < datetime.utcnow()
+        assert expiry < datetime.now(timezone.utc)

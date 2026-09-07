@@ -14,7 +14,7 @@ import os
 import sqlite3
 from pathlib import Path
 from typing import Optional, Dict, Any, List
-from datetime import datetime
+from datetime import datetime, timezone
 import uuid
 from cryptography.fernet import Fernet
 
@@ -143,7 +143,7 @@ class GitRegistry:
             Analysis ID
         """
         analysis_id = str(uuid.uuid4())[:12]
-        timestamp = datetime.utcnow().isoformat()
+        timestamp = datetime.now(timezone.utc).isoformat()
 
         # Build analysis object
         analysis_obj = {

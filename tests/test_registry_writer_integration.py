@@ -12,7 +12,7 @@ import pytest
 import tempfile
 
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 from panini_engine.registry_writer import RegistryWriter
 
@@ -175,7 +175,7 @@ class TestRegistryWriterIntegration:
     
     def test_timestamp_generation(self, writer):
         """Test that timestamp is generated if not provided."""
-        before = datetime.utcnow().isoformat()
+        before = datetime.now(timezone.utc).isoformat()
         
         writer.add_analysis(
             repo="test-repo",
@@ -183,7 +183,7 @@ class TestRegistryWriterIntegration:
             ccu_consumed=1.0,
         )
         
-        after = datetime.utcnow().isoformat()
+        after = datetime.now(timezone.utc).isoformat()
         
         recent = writer.list_recent()
         timestamp = recent[0]["timestamp"]

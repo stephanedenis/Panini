@@ -6,7 +6,7 @@ Système de sélection et substitution automatique des modules selon contexte
 import importlib
 import time
 from typing import Dict, Any, Optional, Type
-from ..interfaces import AnalyzerInterface, LoaderInterface
+from .interfaces import AnalyzerInterface, LoaderInterface
 
 
 class ModuleRegistry:

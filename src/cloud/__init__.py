@@ -2,6 +2,9 @@
 Module d'initialisation pour l'intégration cloud
 """
 
-from .colab_integrator import ColabIntegrator
-
-__all__ = ['ColabIntegrator']
+try:
+    from .colab_integrator import ColabIntegrator
+    __all__ = ['ColabIntegrator']
+except ImportError:
+    # colab_integrator est en cours de migration depuis research/
+    __all__ = []

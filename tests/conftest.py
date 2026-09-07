@@ -9,7 +9,7 @@ Provides:
 """
 
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
@@ -57,7 +57,7 @@ def test_config():
 @pytest.fixture
 def mock_oauth_token():
     """Provide a mock OAuth2 access token response."""
-    expiry = datetime.utcnow() + timedelta(hours=1)
+    expiry = datetime.now(timezone.utc) + timedelta(hours=1)
     return {
         "access_token": "ya29.test_token_abc123",
         "refresh_token": "1//test_refresh_xyz789",
@@ -92,9 +92,9 @@ def mock_colab_response():
     return {
         "kernel_id": "kernel_test_12345",
         "machine_type": "gpu",
-        "assigned_at": datetime.utcnow().isoformat(),
+        "assigned_at": datetime.now(timezone.utc).isoformat(),
         "keep_alive_until": (
-            datetime.utcnow() + timedelta(minutes=30)
+            datetime.now(timezone.utc) + timedelta(minutes=30)
         ).isoformat(),
         "colab_url": "https://colab.research.google.com/user/test_session",
     }
@@ -109,7 +109,7 @@ def mock_colab_quota():
         "total_ccu": 100.0,
         "used_ccu": 25.5,
         "remaining_ccu": 74.5,
-        "quota_reset_time": (datetime.utcnow() + timedelta(days=1)).isoformat(),
+        "quota_reset_time": (datetime.now(timezone.utc) + timedelta(days=1)).isoformat(),
     }
 
 
@@ -206,7 +206,7 @@ def mock_github_connector(test_config, mock_github_repo, mock_analysis_config):
         return_value={
             "id": 12345,
             "status": "queued",
-            "created_at": datetime.utcnow().isoformat(),
+            "created_at": datetime.now(timezone.utc).isoformat(),
         }
     )
 
@@ -239,7 +239,7 @@ def mock_registry_writer(test_config, mock_github_connector):
         return_value={
             "analysis_id": "analysis_uuid_123",
             "repo": "stephanedenis/Panini-Analysis",
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "status": "registered",
         }
     )
@@ -249,7 +249,7 @@ def mock_registry_writer(test_config, mock_github_connector):
             {
                 "analysis_id": "analysis_uuid_123",
                 "repo": "stephanedenis/Panini-Analysis",
-                "timestamp": datetime.utcnow().isoformat(),
+                "timestamp": datetime.now(timezone.utc).isoformat(),
                 "machine_type": "gpu",
                 "ccu_consumed": 12.5,
             }
@@ -260,7 +260,7 @@ def mock_registry_writer(test_config, mock_github_connector):
         return_value={
             "analysis_id": "analysis_uuid_123",
             "repo": "stephanedenis/Panini-Analysis",
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "machine_type": "gpu",
             "ccu_consumed": 12.5,
             "results": {"status": "completed", "duration_seconds": 45},
@@ -272,7 +272,7 @@ def mock_registry_writer(test_config, mock_github_connector):
             {
                 "analysis_id": "analysis_uuid_123",
                 "event": "analysis_registered",
-                "timestamp": datetime.utcnow().isoformat(),
+                "timestamp": datetime.now(timezone.utc).isoformat(),
                 "actor": "system",
             }
         ]

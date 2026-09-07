@@ -11,7 +11,7 @@ Supports multiple storage backends:
 import logging
 import json
 from typing import Optional, Dict, Any
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import asyncio
 from abc import ABC, abstractmethod
 
@@ -79,8 +79,8 @@ class PostgreSQLTokenStore(TokenStore):
             Column('refresh_token', String, nullable=False),
             Column('expires_at', DateTime, nullable=False),
             Column('scopes', JSON, nullable=False),
-            Column('created_at', DateTime, default=datetime.utcnow),
-            Column('updated_at', DateTime, default=datetime.utcnow, onupdate=datetime.utcnow),
+            Column('created_at', DateTime, default=lambda: datetime.now(timezone.utc)),
+            Column('updated_at', DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc)),
         )
         
         self.metadata.create_all(self.engine)
@@ -189,7 +189,7 @@ class OAuthManager:
             
             # Check if refresh needed
             expires_at = datetime.fromisoformat(token_data["expires_at"])
-            refresh_threshold = datetime.utcnow() + timedelta(
+            refresh_threshold = datetime.now(timezone.utc) + timedelta(
                 seconds=self.TOKEN_REFRESH_MARGIN
             )
             
@@ -221,7 +221,7 @@ class OAuthManager:
             # Update storage
             token_data["access_token"] = credentials.token
             token_data["expires_at"] = (
-                datetime.utcnow() + 
+                datetime.now(timezone.utc) + 
                 timedelta(seconds=credentials.expiry.total_seconds())
             ).isoformat()
             
@@ -272,7 +272,7 @@ class OAuthManager:
                 "access_token": credentials["access_token"],
                 "refresh_token": credentials.get("refresh_token"),
                 "expires_at": (
-                    datetime.utcnow() + 
+                    datetime.now(timezone.utc) + 
                     timedelta(seconds=credentials.get("expires_in", 3600))
                 ).isoformat(),
                 "scopes": self.SCOPES,

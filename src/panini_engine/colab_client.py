@@ -13,7 +13,7 @@ import asyncio
 import aiohttp
 import logging
 from typing import Optional, Dict, Any
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import json
 
 logger = logging.getLogger(__name__)
@@ -135,7 +135,7 @@ class ColabClient:
                 self._assignments[kernel_id] = {
                     "account": account,
                     "machine_type": machine_type,
-                    "assigned_at": datetime.utcnow(),
+                    "assigned_at": datetime.now(timezone.utc),
                     "keep_alive_task": None,
                 }
                 
@@ -357,7 +357,7 @@ class ColabClient:
                     "kernel_id": kid,
                     "machine_type": v["machine_type"],
                     "uptime": (
-                        datetime.utcnow() - v["assigned_at"]
+                        datetime.now(timezone.utc) - v["assigned_at"]
                     ).total_seconds()
                 }
                 for kid, v in self._assignments.items()
