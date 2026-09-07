@@ -1,42 +1,102 @@
 # Instructions Copilot — Projet Panini
 
-## Contexte du projet
+## Les 4 projets de l'écosystème (architecture réelle, août 2026)
 
-**Panini** est un système de **décomposition sémantique** basé sur les dhātu sanskrits. Il décompose le contenu en primitives sémantiques et le reconstruit avec une intégrité bit-perfect. Ce n'est PAS un outil de compression générique.
+| Projet | Rôle | Repo | Langage | Priorité |
+|--------|------|------|---------|----------|
+| **NIPADA** | Moteur de sémantique computationnelle NP-complet | `Panini-Research/src/nipada/` | Python 3.13 | 🔴 LE PRODUIT |
+| **Panini-FS** | Stockage sémantique + FUSE3 (Rust) | `modules/core/filesystem/` | Rust/Python | 🔴 CORE |
+| **OntoWave** | Visualisation ontologique | `modules/ontowave/` | TypeScript/Node | 🟡 PRODUCTION |
+| **Pensine-Web** | Journal de connaissances (app finale) | repo séparé | JavaScript | 🔴 URGENT |
 
-- **Langage principal:** Python 3.10+
-- **Environnement:** `.venv/` (virtualenv local)
-- **Architecture:** Écosystème de 6 projets (voir `docs/ARCHITECTURE_REAL_6PROJECTS.md`)
-- **Source principale:** `src/`
+### Ce que chaque projet FAIT (et ne fait PAS)
 
-## Les 6 projets de l'écosystème
+- **NIPADA** = computation du sens. V14 + 9 Dhātus + SAT-solveur trinaire → décompose le texte et le reconstruit via DTP (0% WER). C'est LE produit.
+- **Panini-FS** = stockage sémantique. RocksDB + Tantivy + FUSE3 → stocke, versionne, synchronise les données sémantiques. Infrastructure, pas produit.
+- **OntoWave** = visualisation. Affiche les graphes ontologiques → consommé par Pensine-Web et l'Explorer. Infrastructure, pas produit.
+- **Pensine-Web** = application utilisateur. Journal de connaissances qui utilise l'API Panini-FS + OntoWave.
 
-| Projet | Rôle | Priorité |
-|--------|------|----------|
-| **Panini-FS** | Moteur de décomposition sémantique + lecteur FUSE3 (Rust/Python) | 🔴 CORE |
-| **OntoWave** | Couche de visualisation ontologique (TypeScript/Node) | 🟡 PRODUCTION |
-| **Pensine-Web** | Journal de connaissances (remplace Logseq) (JavaScript) | 🔴 URGENT |
-| **Panini-Research** | Laboratoire d'exploration et prototypage (Python) | 🟢 RECHERCHE |
-| **SemanticAutomation** | Workflows d'analyse sémantique | 🟡 FUTUR |
-| **Support** | Utilitaires partagés et infrastructure | 🟢 SUPPORT |
+### Flux de dépendances
+```
+Panini-FS (fondation) → OntoWave (affichage) → Pensine-Web (app)
+NIPADA (recherche) → résultats validés → Panini-FS (stockage)
+```
+
+## Ce qui distingue NIPADA (à savoir avant toute intervention)
+
+### NIPADA n'est PAS un LLM
+- **Fondation** : algébrique (14 atomes + 9 dhātus) ≠ statistique (100B+ paramètres)
+- **Déterminisme** : SAT-solveur déterministe ≠ stochastique
+- **Hallucination** : 0% ≠ 3.2% (GPT-4)
+- **Vitesse** : 10.9ms ≠ 1200ms GPT-4 (110× plus rapide)
+- **Coût** : $0 ≠ $100M+ entraînement
+- **Traçabilité** : chaîne de provenance complète ≠ boîte noire
+- **Source** : §614, journal 2026-06-30
+
+### NIPADA n'est PAS une grammaire générative chomskyenne
+- **Domaine** : sémantique ≠ syntaxe
+- **Génère** : texte depuis atomes V14 + Dhātus ≠ phrases depuis règles NP/VP
+- **Validation** : WER vs original ≠ jugement de grammaticalité
+- **Source** : §674, journal 2026-07-02
+
+### NIPADA n'est PAS un système expert
+- **Primitives** : 14 atomes universels ≠ règles métier spécifiques
+- **Domaine** : universel (tout texte) ≠ spécifique (MYCIN=médecine)
+- **Construction** : automatique (pipeline NLP) ≠ manuelle (experts)
+- **Réseau** : diachronique (généalogie) ≠ synchronique (état figé)
+- **Source** : §562-§568, journal 2026-06-28
+
+### Ce que NIPADA fait qu'aucun autre système ne fait
+1. Décomposition déterministe (texte → atomes de sens) — pas d'approximation
+2. Reconstruction par SAT-solver (atomes → DTP → texte identique) — pas de génération
+3. Graphe généalogique comme tissu computationnel — pas un dictionnaire
+4. NP-complétude comme architecture : décomposition polynomiale, reconstruction NP-difficile
+5. Vérifiabilité totale : chaque étape traçable, résultat comparé via WER
+
+## Machine Hauru
+
+- **OS** : openSUSE, kernel 7.1.4
+- **CPU** : 2× Intel Xeon E5-2687W v3 (40 cœurs)
+- **RAM** : 125 Go
+- **GPU** : 2× NVIDIA Quadro RTX 5000 (16 Go, CUDA 13.0)
+- **Python** : 3.13.14 → `.venv/` (virtualenv local)
+- **Rust** : 1.97.1 (rustup)
+- **FPGA** : Stratix V (Storey Peak) — IP PCIe pas programmée, via USB/JTAG
 
 ## Structure du projet
 
 ```
 Panini/
-├── copilotage/      # Submodule Panini-Copilotage — directives et protocoles partagés de l'écosystème
-├── src/             # Code source principal (package panini_colabmcp)
-├── modules/         # Submodules actifs (core, orchestration, reactive, publication, missions, data, ontowave)
-├── docs/            # Documentation, rapports et journaux (docs/journal-de-bord/)
-├── notebooks/       # Jupyter notebooks (développement et expérimentation)
+├── copilotage/      # Submodule Panini-Copilotage — directives partagées
+├── src/             # Code source Panini Hub (panini_colabmcp)
+├── modules/         # Submodules: core/filesystem, ontowave, orchestration...
+├── research/        # Submodule → Panini-Research = NIPADA (LE LABO PRINCIPAL)
+├── docs/            # Documentation, rapports, journaux (docs/journal-de-bord/)
+├── notebooks/       # Jupyter notebooks
 ├── scripts/         # Scripts utilitaires
 ├── tests/           # Tests unitaires et d'intégration
-├── research/        # Submodule Panini-Research (laboratoire d'exploration)
-├── tech/            # Prototypes et expérimentations techniques
+├── tech/            # Prototypes et expérimentations
 ├── tools/           # Outils de développement
 ├── data/            # Données (corpus, références, résultats)
 └── config/          # Configuration agents et système
 ```
+
+## Où est le code NIPADA ?
+
+⚠️ Le code principal NIPADA n'est PAS dans `src/` — il est dans le repo **Panini-Research** :
+- Chemin local : `~/Data13TB/stephane/GitHub/Panini-Research/src/nipada/`
+- Submodule : `Panini/research/` pointe vers ce repo
+- Le Hub (`src/`) contient le code d'orchestration (GitHub sync, Colab, cloud)
+
+## Référence rapide anti-hallucination
+
+La mémoire persistante `/memories/repo/nipada-cheat-sheet.md` contient :
+- Toutes les métriques exactes (R², WER, tailles de graphe)
+- Les 10 pièges critiques
+- Les chemins de fichiers exacts
+- La chronologie des percées
+
+**À consulter en début de chaque session.**
 
 ## Règles de copilotage
 
@@ -52,6 +112,11 @@ Si une commande dépasse 3 paramètres, chaîne plusieurs outils, ou contient un
 - Ne jamais modifier `legacy/` sauf demande explicite.
 - Les nouvelles fonctionnalités vont dans `src/` ou le module approprié sous `modules/`.
 - Toute expérimentation technique va dans `tech/` ou `notebooks/`.
+
+### Anti-ASCII
+- **INTERDIT** : ASCII art ou diagrammes en caractères dans le code, les documents, ou les réponses.
+- **OBLIGATOIRE** : utiliser diagram-as-code (Mermaid, Kroki) ou SVG externalisé (fichier `.svg` séparé, référencé via `![description](path.svg)` dans le markdown).
+- **Pas de SVG inline/embeddé** dans les fichiers `.md`.
 
 ## Conventions de nommage
 
