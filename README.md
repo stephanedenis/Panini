@@ -18,13 +18,11 @@ L'approche : décomposer → représenter sémantiquement → recomposer sans pe
 - **Primitives universelles** — Indépendant de la langue source
 - **Visualisation ontologique** — Interface OntoWave (TypeScript/Node)
 
-## Architecture sémantique — deux niveaux, jamais confondus
+## Architecture sémantique — deux niveaux (référence unique)
 
-- **Noyau (iso)** : moteur rigide / mathématique (V14, dhātus, logique trinaire Ł3, TrinarySAT, DTP) — il **infère**, déterministe, ne décrit jamais.
-- **NIPADA — couche descriptive** : encyclopédie en logique floue (Zadeh, poids [0,1]) — graphe encyclopédique de métadonnées, transmission généalogico-culturelle ; elle **décrit** la réalité observable et fournit les paramètres que le noyau n'infère pas (régime R4).
-- **NIPADA — produit** : instanciation complète du noyau dans le langage naturel = **noyau + couche descriptive** (développé dans `research/`).
-- **Principe de séparation** : *le noyau ne décrit jamais — il infère ; NIPADA décrit ce que le noyau ne peut inférer.* Seule la source des paramètres diffère (inférence vs description) ; versionnement couplé Kᵢ + NIPADAᵢ (jamais un noyau seul).
-- Référence : `research/docs/ARCHITECTURE_NOYAU_NIPADA_v1.0.md` (dérivée de `research/philosophy-theory/DOCUMENT_DE_CONTEXTE_v2.0.md` §2.1) ; instructions d'écosystème actualisées dans `.github/copilot-instructions.md`.
+**Noyau (iso)** : moteur rigide / mathématique — il infère, ne décrit jamais. **NIPADA — couche descriptive** : encyclopédie en logique floue — elle décrit la réalité observable. **NIPADA — produit** = noyau + couche descriptive.
+
+→ Vision et vocabulaire (source unique, pas de copies) : `research/docs/ARCHITECTURE_NOYAU_NIPADA_v1.0.md` (dérivée de `research/philosophy-theory/DOCUMENT_DE_CONTEXTE_v2.0.md` §2.1).
 
 ## Écosystème (vue 2025 — dépôts et rôles)
 
