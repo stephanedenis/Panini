@@ -11,7 +11,7 @@
 
 ### Ce que chaque projet FAIT (et ne fait PAS)
 
-- **NIPADA** = computation du sens. V14 + 9 Dhātus + SAT-solveur trinaire → décompose le texte et le reconstruit via DTP (0% WER). C'est LE produit.
+- **NIPADA** = computation du sens (LE produit) : **noyau iso** (14 atomes V14 + 9 dhātus + logique trinaire Ł3 + TrinarySAT + DTP) assisté de sa **couche descriptive** (graphe encyclopédique flou) → décompose le texte et le reconstruit via DTP (0 % WER). Dans le pipeline E2E, la synthèse DTP est un `compile()` déterministe ; TrinarySAT (SAT trinaire) est la voie `compute` pour la reconstruction difficile (action 1.6 — `research/philosophy-theory/VERIFICATION_FONDATIONS_PAR_NIVEAUX_v0.1.md`).
 - **Panini-FS** = stockage sémantique. RocksDB + Tantivy + FUSE3 → stocke, versionne, synchronise les données sémantiques. Infrastructure, pas produit.
 - **OntoWave** = visualisation. Affiche les graphes ontologiques → consommé par Pensine-Web et l'Explorer. Infrastructure, pas produit.
 - **Pensine-Web** = application utilisateur. Journal de connaissances qui utilise l'API Panini-FS + OntoWave.
