@@ -18,14 +18,22 @@ L'approche : décomposer → représenter sémantiquement → recomposer sans pe
 - **Primitives universelles** — Indépendant de la langue source
 - **Visualisation ontologique** — Interface OntoWave (TypeScript/Node)
 
-## Écosystème (6 Projets)
+## Architecture sémantique — deux niveaux, jamais confondus
+
+- **Noyau (iso)** : moteur rigide / mathématique (V14, dhātus, logique trinaire Ł3, TrinarySAT, DTP) — il **infère**, déterministe, ne décrit jamais.
+- **NIPADA — couche descriptive** : encyclopédie en logique floue (Zadeh, poids [0,1]) — graphe encyclopédique de métadonnées, transmission généalogico-culturelle ; elle **décrit** la réalité observable et fournit les paramètres que le noyau n'infère pas (régime R4).
+- **NIPADA — produit** : instanciation complète du noyau dans le langage naturel = **noyau + couche descriptive** (développé dans `research/`).
+- **Principe de séparation** : *le noyau ne décrit jamais — il infère ; NIPADA décrit ce que le noyau ne peut inférer.* Seule la source des paramètres diffère (inférence vs description) ; versionnement couplé Kᵢ + NIPADAᵢ (jamais un noyau seul).
+- Référence : `research/docs/ARCHITECTURE_NOYAU_NIPADA_v1.0.md` (dérivée de `research/philosophy-theory/DOCUMENT_DE_CONTEXTE_v2.0.md` §2.1) ; instructions d'écosystème actualisées dans `.github/copilot-instructions.md`.
+
+## Écosystème (vue 2025 — dépôts et rôles)
 
 | Projet | Rôle | Tech | Priorité |
 |--------|------|------|----------|
-| **Panini-FS** | Moteur de décomposition sémantique + lecteur FUSE3 | Rust/Python | 🔴 CORE |
+| **Panini-FS** | Stockage sémantique + lecteur FUSE3 (Rust) — infrastructure du noyau | Rust/Python | 🔴 CORE |
 | **OntoWave** | Couche de visualisation ontologique | TypeScript/Node | 🟡 PRODUCTION |
 | **Pensine-Web** | Journal de connaissances (remplace Logseq) | JavaScript | 🔴 URGENT |
-| **Panini-Research** | Laboratoire d'exploration et prototypage | Python | 🟢 RECHERCHE |
+| **Panini-Research** | Recherche fondamentale — noyau iso + NIPADA (produit sémantique) | Python | 🔴 CORE |
 | **SemanticAutomation** | Workflows d'analyse sémantique | TBD | 🟡 FUTUR |
 | **Support** | Utilitaires partagés et infrastructure | Divers | 🟢 SUPPORT |
 
@@ -97,10 +105,11 @@ git submodule update --init research
 
 ## État Actuel & Roadmap
 
-- ✅ Architecture 6-projets définie et documentée
+- ✅ Architecture sémantique documentée : noyau iso ↔ couche descriptive NIPADA (`research/docs/ARCHITECTURE_NOYAU_NIPADA_v1.0.md`)
+- ✅ **NIPADA** : porte d'entrée G1-G4 verte — 722 tests, benchmark DTP 48/48 (0 % WER), calibrage R² = 0.909139 reproduit, hold-out gelé
 - ✅ Submodule Panini-Research initialisé
 - ✅ Package Python `panini-colabmcp` v0.1.0 structuré
-- 🔜 Panini-FS : moteur de décomposition sémantique (MVP)
+- 🔜 Axes L/M/A/R du portefeuille de candidats au noyau (research)
 - 🔜 Pensine-Web : interface de journalisation (lancement urgent)
 - 🔜 Tests d'intégration cross-module
 
