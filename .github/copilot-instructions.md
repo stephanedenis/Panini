@@ -161,7 +161,7 @@ Résumé des règles :
 
 ## Architecture sémantique — deux niveaux (référence, ne pas dupliquer)
 
-**Noyau (iso)** = moteur rigide / mathématique (V14, Ł3, TrinarySAT, DTP) — il **infère**, déterministe, **ne décrit jamais**.
-**NIPADA — couche descriptive** = encyclopédie en logique floue (Zadeh, degrés [0,1]) — elle **décrit** la réalité observable.
+**Noyau** = système formel (termes, unification, inférence tri-état, fondations mathématiques) — il **infère**, déterministe, **ne décrit jamais** ; ses **certitudes** sont des énoncés clos et démontrés (V14, dhātus, DTP, graphes = instanciations candidates révisables).
+**NIPADA — couche descriptive** = description de la réalité observable (encyclopédie, corpus, lexiques candidats, hypothèses, degrés Ł3/[0,1]) — elle **décrit** ce que le noyau ne peut inférer.
 **NIPADA — produit** = noyau + couche descriptive.
-→ Vision et vocabulaire figé (source unique, pas de copies) : `PaniniResearch/Panini-Research` → `docs/ARCHITECTURE_NOYAU_NIPADA_v1.0.md` (dérivée de `philosophy-theory/DOCUMENT_DE_CONTEXTE_v2.0.md` §2.1). Toute mise à jour se fait à la source.
+→ Vision et vocabulaire figé (sources uniques, pas de copies) : `PaniniResearch/Panini-Research` → `philosophy-theory/DOCUMENT_DE_CONTEXTE_v3.0.md` (vision) et `docs/ARCHITECTURE_NOYAU_NIPADA_v2.0.md` (vocabulaire). Toute mise à jour se fait à la source.

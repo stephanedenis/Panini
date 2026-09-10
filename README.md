@@ -20,9 +20,11 @@ L'approche : décomposer → représenter sémantiquement → recomposer sans pe
 
 ## Architecture sémantique — deux niveaux (référence unique)
 
-**Noyau (iso)** : moteur rigide / mathématique — il infère, ne décrit jamais. **NIPADA — couche descriptive** : encyclopédie en logique floue — elle décrit la réalité observable. **NIPADA — produit** = noyau + couche descriptive.
+**Noyau** : système formel (termes, unification, inférence tri-état, fondations mathématiques) — il infère, ne décrit jamais ; ses **certitudes** sont des énoncés clos et démontrés (V14, dhātus, DTP, graphes = instanciations candidates révisables).
+**NIPADA — couche descriptive** : description de la réalité observable (encyclopédie, corpus, lexiques candidats, hypothèses, degrés) — elle décrit ce que le noyau ne peut inférer.
+**NIPADA — produit** = noyau + couche descriptive.
 
-→ Vision et vocabulaire (source unique, pas de copies) : `research/docs/ARCHITECTURE_NOYAU_NIPADA_v1.0.md` (dérivée de `research/philosophy-theory/DOCUMENT_DE_CONTEXTE_v2.0.md` §2.1).
+→ Vision et vocabulaire (sources uniques, pas de copies) : `research/philosophy-theory/DOCUMENT_DE_CONTEXTE_v3.0.md` (vision courante) et `research/docs/ARCHITECTURE_NOYAU_NIPADA_v2.0.md` (vocabulaire figé).
 
 ## Écosystème (vue 2025 — dépôts et rôles)
 
@@ -103,7 +105,7 @@ git submodule update --init research
 
 ## État Actuel & Roadmap
 
-- ✅ Architecture sémantique documentée : noyau iso ↔ couche descriptive NIPADA (`research/docs/ARCHITECTURE_NOYAU_NIPADA_v1.0.md`)
+- ✅ Architecture sémantique documentée : noyau iso ↔ couche descriptive NIPADA (`research/docs/ARCHITECTURE_NOYAU_NIPADA_v2.0.md`)
 - ✅ **NIPADA** : porte d'entrée G1-G4 verte — 722 tests, benchmark DTP 48/48 (0 % WER), calibrage R² = 0.909139 reproduit, hold-out gelé
 - ✅ Submodule Panini-Research initialisé
 - ✅ Package Python `panini-colabmcp` v0.1.0 structuré
