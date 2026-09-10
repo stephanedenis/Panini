@@ -140,6 +140,10 @@ Résumé des règles :
 - **Avant tout commit :** créer/mettre à jour le fichier du jour puis le stager
 - **Vérifier la date :** `date +%Y-%m-%d` — basculer sur le fichier du nouveau jour si la session traverse minuit
 - **Contenu minimal :** contexte, décisions (avec raisonnement), problèmes/solutions, état en fin de session
+- **Session log DSH (règle de contexte, durable) :** joindre l'instantané du log de session à
+  chaque entrée — copier `$DSH_SESSION_JSONL` (fichier `session.jsonl.zstd`) vers
+  `docs/journal-de-bord/session-logs/YYYY-MM-DD-<session-id>.jsonl.zstd` et référencer ce chemin
+  dans l'entrée du jour.
 
 ## Workflow standard
 
